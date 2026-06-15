@@ -5,7 +5,7 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://notchnest.app/</loc>
-    <lastmod>2026-06-13T00:00:00+00:00</lastmod>
+    <lastmod>2026-06-15T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://notchnest.app/"/>
@@ -159,6 +159,10 @@
   <url><loc>https://notchnest.app/learn/what-is-dynamic-island-on-mac/</loc><lastmod>2026-06-11T00:00:00+00:00</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://notchnest.app/learn/mac-notch-wallpaper/</loc><lastmod>2026-06-11T00:00:00+00:00</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://notchnest.app/learn/macos-tahoe-notch-features/</loc><lastmod>2026-06-11T00:00:00+00:00</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://notchnest.app/learn/customize-top-bar-mac/</loc><lastmod>2026-06-15T00:00:00+00:00</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://notchnest.app/learn/notch-menu-bar-replacement/</loc><lastmod>2026-06-15T00:00:00+00:00</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://notchnest.app/learn/notch-camera-on-mac/</loc><lastmod>2026-06-15T00:00:00+00:00</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://notchnest.app/learn/drop-files-into-macbook-notch/</loc><lastmod>2026-06-15T00:00:00+00:00</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://notchnest.app/for/students/</loc><lastmod>2026-06-11T00:00:00+00:00</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://notchnest.app/for/developers/</loc><lastmod>2026-06-11T00:00:00+00:00</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://notchnest.app/for/designers/</loc><lastmod>2026-06-11T00:00:00+00:00</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
