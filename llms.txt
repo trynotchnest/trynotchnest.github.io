@@ -1,6 +1,6 @@
 # NotchNest
 
-> NotchNest is a free macOS app that turns the MacBook notch into a productivity hub — AI clipboard, calendar briefings, notes, Pomodoro timer, music controls, file drop (AirDrop-style), and a camera mirror. Available on the Mac App Store.
+> NotchNest is a free macOS app that turns the MacBook notch into a productivity hub — AI clipboard, calendar briefings, notes, Pomodoro timer, music controls, file drop (AirDrop-style), a camera mirror, and a battery capsule. Available on the Mac App Store.
 
 Key facts:
 - Platform: macOS (MacBook Pro/Air with notch; also works on non-notch Macs)

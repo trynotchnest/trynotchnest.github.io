@@ -19,6 +19,7 @@
 - Drag-to-AirDrop and File-Tray — drop files onto the notch to send/stage them.
 - Instant camera mirror — live FaceTime-camera preview.
 - Bookmarks shelf.
+- Battery capsule — live charge percentage in the notch, with a toggle to show or hide it.
 - Infinity Run mini-game.
 - Works on notchless Macs as a top-bar panel.
 - Privacy-first: sandboxed, no data collection; clipboard/notes/briefings stay on-device.
