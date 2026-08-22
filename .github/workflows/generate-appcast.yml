@@ -11,6 +11,7 @@ on:
     paths:
       - '.github/workflows/generate-appcast.yml'
       - 'scripts/generate_appcast.py'
+      - 'scripts/generate_whatsnew.py'
 
 permissions:
   contents: write
@@ -36,17 +37,21 @@ jobs:
       - name: Generate appcast.xml
         run: |
           python scripts/generate_appcast.py
-          
+
+      - name: Render whats-new.html from appcast
+        run: |
+          python scripts/generate_whatsnew.py
+
       - name: Check for changes
         id: verify_diff
         run: |
-          git diff --quiet appcast.xml || echo "changed=true" >> $GITHUB_OUTPUT
-          
+          git diff --quiet appcast.xml whats-new.html || echo "changed=true" >> $GITHUB_OUTPUT
+
       - name: Commit and push if changed
         if: steps.verify_diff.outputs.changed == 'true'
         run: |
           git config --global user.name 'GitHub Actions Bot'
           git config --global user.email 'actions@github.com'
-          git add appcast.xml
-          git commit -m "Auto-update appcast.xml from App Store data"
+          git add appcast.xml whats-new.html
+          git commit -m "Auto-update appcast.xml + whats-new.html from App Store data"
           git push
