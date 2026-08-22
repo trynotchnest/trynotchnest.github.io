@@ -1,0 +1,50 @@
+# NotchNest
+
+> NotchNest is a free macOS app that turns the MacBook notch into a productivity hub — AI clipboard, calendar briefings, notes, Pomodoro timer, music controls, file drop (AirDrop-style), and a camera mirror. Available on the Mac App Store.
+
+Key facts:
+- Platform: macOS (MacBook Pro/Air with notch; also works on non-notch Macs)
+- Price: Free on the Mac App Store
+- Website: https://notchnest.app
+- Category: Menu bar / notch utility, productivity
+
+## Product
+
+- [NotchNest home](https://notchnest.app/): Overview, features, screenshots, and download link.
+- [What's new](https://notchnest.app/whats-new.html): Release notes and changelog.
+- [Privacy policy](https://notchnest.app/privacy-policy.html): Data handling and privacy details.
+
+## Guides & articles
+
+- [What is the macOS notch](https://notchnest.app/learn/what-is-the-macos-notch/): Explainer on the MacBook notch.
+- [How to use the MacBook notch](https://notchnest.app/learn/how-to-use-the-macbook-notch/): Practical uses for the notch.
+- [Does the Mac notch actually do anything](https://notchnest.app/learn/does-the-mac-notch-actually-do-anything/): The notch's real function.
+- [Best macOS notch apps](https://notchnest.app/learn/best-macos-notch-apps/): Roundup of notch utilities.
+- [Best Mac menu bar apps](https://notchnest.app/learn/best-mac-menu-bar-apps/): Menu bar utility roundup.
+- [How to hide the notch on Mac](https://notchnest.app/learn/how-to-hide-the-notch-on-mac/): Hiding/blacking-out the notch.
+- [Menu bar icons missing behind notch](https://notchnest.app/learn/menu-bar-icons-missing-behind-notch/): Fixing icons hidden by the notch.
+- [How to move menu bar icons on Mac](https://notchnest.app/learn/how-to-move-menu-bar-icons-on-mac/): Rearranging menu bar icons.
+- [How to customise the macOS menu bar](https://notchnest.app/learn/how-to-customise-macos-menu-bar/): Menu bar customization.
+- [Customize the top bar on Mac](https://notchnest.app/learn/customize-top-bar-mac/): Top-bar tweaks.
+- [Notch menu bar replacement](https://notchnest.app/learn/notch-menu-bar-replacement/): Using the notch as a menu bar alternative.
+- [Drop files into the MacBook notch](https://notchnest.app/learn/drop-files-into-macbook-notch/): File-drop / AirDrop workflow.
+- [Notch camera on Mac](https://notchnest.app/learn/notch-camera-on-mac/): Camera mirror feature.
+- [MacBook Air vs Pro notch](https://notchnest.app/learn/macbook-air-vs-pro-notch/): Notch differences across models.
+- [What is Dynamic Island on Mac](https://notchnest.app/learn/what-is-dynamic-island-on-mac/): Dynamic Island for macOS explained.
+- [macOS Tahoe notch features](https://notchnest.app/learn/macos-tahoe-notch-features/): Notch in macOS Tahoe.
+- [Mac notch wallpaper](https://notchnest.app/learn/mac-notch-wallpaper/): Wallpapers for the notch.
+- [All guides](https://notchnest.app/learn/): Full article index.
+
+## Comparisons
+
+- [NotchNest vs NotchNook](https://notchnest.app/compare/notchnest-vs-notchnook/)
+- [NotchNest vs Alcove](https://notchnest.app/compare/notchnest-vs-alcove/)
+- [NotchNest vs Boring Notch](https://notchnest.app/compare/notchnest-vs-boring-notch/)
+- [NotchNest vs Boring Notch vs NotchDrop](https://notchnest.app/learn/notch-nest-vs-boring-notch-vs-notchdrop/)
+- [Comparisons index](https://notchnest.app/compare/)
+
+## Use cases
+
+- [For developers](https://notchnest.app/for/developers/)
+- [For designers](https://notchnest.app/for/designers/)
+- [For students](https://notchnest.app/for/students/)

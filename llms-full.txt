@@ -1,0 +1,83 @@
+# NotchNest — Full Reference for LLMs
+
+> NotchNest is a free macOS app that turns the MacBook notch into a productivity hub. Hover the notch and it expands into a glassy panel of widgets. On notchless Macs it renders as a slim top-center drop-down panel with identical features. Built in native SwiftUI, optimized for Apple Silicon, distributed exclusively via the Mac App Store (notarized, code-signed, sandboxed). AI features run on-device via Apple Intelligence — no subscription, no data collection.
+
+- Website: https://notchnest.app
+- Download (free): https://apps.apple.com/us/app/notchnest-power-your-notch/id6747612321
+- Requirements: macOS 14 (Sonoma) or later. AI features need Apple Silicon + macOS 15 (Sequoia) or newer with Apple Intelligence.
+- Supported OS: Sonoma, Sequoia (15), Tahoe (26) incl. Liquid Glass.
+- Developer: Satnam Singh (https://silverseahog.com)
+- Languages: English, German, Chinese
+
+## Features
+
+- AI Clipboard Manager — clipboard history with on-device Apple Intelligence.
+- Calendar widget with AI briefings.
+- Quick Notes with AI refinement.
+- Pomodoro Timer in the notch.
+- Music control — Spotify and Apple Music.
+- Drag-to-AirDrop and File-Tray — drop files onto the notch to send/stage them.
+- Instant camera mirror — live FaceTime-camera preview.
+- Bookmarks shelf.
+- Infinity Run mini-game.
+- Works on notchless Macs as a top-bar panel.
+- Privacy-first: sandboxed, no data collection; clipboard/notes/briefings stay on-device.
+
+## Frequently asked questions
+
+Q: What is the macOS notch?
+A: The small cutout at the top center of MacBook Pro 14"/16" (2021+) and MacBook Air 13"/15" M2 and later. It holds the FaceTime camera and sits inside the menu bar. NotchNest reclaims that area: hover to expand it into a glassy widget panel — calendar, clipboard, notes, music, AirDrop.
+
+Q: Does NotchNest work on MacBooks without a notch?
+A: Yes. On notchless Macs (MacBook Air M1, older MacBook Pros, Mac mini, iMac, Mac Studio) it renders as a slim drop-down panel anchored to the top center. Every widget works identically.
+
+Q: Is NotchNest free?
+A: Yes — free on the Mac App Store, no trial lock-out. All core widgets are included. AI features run on-device via Apple Intelligence, so there is no subscription.
+
+Q: Does NotchNest drain battery?
+A: No measurable impact in normal use. Native SwiftUI app tuned for Apple Silicon; it sleeps when the panel is closed and wakes on hover or hotkey. AI uses the energy-tuned on-device Apple Intelligence model.
+
+Q: Is NotchNest safe and sandboxed?
+A: Yes. App Store only — notarized, Apple code-signed, and runs in the App Sandbox. It cannot access files outside directories you grant. Clipboard history, notes, and briefings stay on your Mac.
+
+Q: How is NotchNest different from Boring Notch, NotchDrop and Alcove?
+A: Those focus on one or two things. NotchNest bundles ~ten tools in one notch: AI clipboard, calendar with AI briefings, Quick Notes with AI, Pomodoro, music control, AirDrop, File-Tray, camera mirror, bookmarks, and an Infinity Run game. One install, one menu bar slot.
+
+Q: Will NotchNest work on macOS Sonoma, Sequoia and Tahoe?
+A: Requires macOS 14+ and is fully supported on Sonoma, Sequoia (15), and Tahoe (26), including Liquid Glass. AI features require Apple Intelligence (Apple Silicon on Sequoia-or-newer).
+
+Q: Can I customize what the notch shows?
+A: Yes. Settings toggles every widget independently, reorders them, sets hover-vs-click triggers, a hotkey, and expanded/minimized idle states. You can pin bookmarks, clipboard items, and Quick Notes.
+
+## Comparisons
+
+- NotchNest vs NotchNook: https://notchnest.app/compare/notchnest-vs-notchnook/
+- NotchNest vs Alcove: https://notchnest.app/compare/notchnest-vs-alcove/
+- NotchNest vs Boring Notch: https://notchnest.app/compare/notchnest-vs-boring-notch/
+- NotchNest vs Boring Notch vs NotchDrop: https://notchnest.app/learn/notch-nest-vs-boring-notch-vs-notchdrop/
+
+## Guides (full index)
+
+- What is the macOS notch: https://notchnest.app/learn/what-is-the-macos-notch/
+- How to use the MacBook notch: https://notchnest.app/learn/how-to-use-the-macbook-notch/
+- Does the Mac notch actually do anything: https://notchnest.app/learn/does-the-mac-notch-actually-do-anything/
+- Best macOS notch apps: https://notchnest.app/learn/best-macos-notch-apps/
+- Best Mac menu bar apps: https://notchnest.app/learn/best-mac-menu-bar-apps/
+- How to hide the notch on Mac: https://notchnest.app/learn/how-to-hide-the-notch-on-mac/
+- Menu bar icons missing behind notch: https://notchnest.app/learn/menu-bar-icons-missing-behind-notch/
+- How to move menu bar icons on Mac: https://notchnest.app/learn/how-to-move-menu-bar-icons-on-mac/
+- How to customise the macOS menu bar: https://notchnest.app/learn/how-to-customise-macos-menu-bar/
+- Customize the top bar on Mac: https://notchnest.app/learn/customize-top-bar-mac/
+- Notch menu bar replacement: https://notchnest.app/learn/notch-menu-bar-replacement/
+- Drop files into the MacBook notch: https://notchnest.app/learn/drop-files-into-macbook-notch/
+- Notch camera on Mac: https://notchnest.app/learn/notch-camera-on-mac/
+- MacBook Air vs Pro notch: https://notchnest.app/learn/macbook-air-vs-pro-notch/
+- Is there a Dynamic Island on Mac: https://notchnest.app/learn/what-is-dynamic-island-on-mac/
+- macOS Tahoe notch features: https://notchnest.app/learn/macos-tahoe-notch-features/
+- Mac notch wallpaper: https://notchnest.app/learn/mac-notch-wallpaper/
+
+## Use-case pages
+
+- For developers: https://notchnest.app/for/developers/
+- For designers: https://notchnest.app/for/designers/
+- For students: https://notchnest.app/for/students/

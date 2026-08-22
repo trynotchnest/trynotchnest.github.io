@@ -36,3 +36,7 @@ User-agent: cohere-ai
 Allow: /
 
 Sitemap: https://notchnest.app/sitemap.xml
+
+# LLM-friendly site summaries
+# https://notchnest.app/llms.txt
+# https://notchnest.app/llms-full.txt
