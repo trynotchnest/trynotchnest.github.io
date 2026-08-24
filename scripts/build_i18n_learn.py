@@ -1711,6 +1711,186 @@ DROP = {
 }
 
 
+# ── notch-camera-on-mac ─────────────────────────────────────────────────────
+CAMERA = {
+    "de": {"title": "Die Notch-Kamera auf dem Mac — NotchNest", "description": "Alles über die Notch-Kamera auf dem Mac — die 1080p-Webcam in der Notch, wie du sie vorschaust und ein Notch-Kamera-Spiegel für schnelle Checks.",
+           "og_title": "Die Notch-Kamera auf dem Mac", "og_desc": "Was die Notch-Kamera kann und wie du sie in der Notch spiegelst.",
+           "jsonld_headline": "Die Notch-Kamera auf dem Mac", "jsonld_desc": "Die 1080p-Kamera in der Mac-Notch, wie man sie vorschaut und in der Notch spiegelt.",
+           "kicker": KICK["explainer"]["de"], "h1": "Die Notch-Kamera auf dem Mac",
+           "lede": "Die Notch existiert, um die Kamera deines MacBooks zu beherbergen. Hier, was diese Kamera kann, wie du sie vor einem Call prüfst und in der Notch selbst spiegelst.",
+           "readtime": READ5["de"], "crumb_this": "Notch-Kamera",
+           "faq": [("Welche Kamera steckt in der Mac-Notch?", "Eine 1080p-FaceTime-HD-Kamera plus der Umgebungslichtsensor. Center Stage wird auf neueren Modellen unterstützt."),
+                   ("Wie sehe ich die Notch-Kamera vor einem Call?", "Öffne Photo Booth oder QuickTimes „Neue Videoaufnahme" für ein Live-Bild — oder nutze einen Notch-Kamera-Spiegel wie NotchNest, um sie per Hover vorzuschauen."),
+                   ("Kann man die Mac-Kamera in der Notch spiegeln?", "Ja. NotchNests Kamera-Spiegel zeigt ein Live-Webcam-Bild in der Notch selbst, sodass du das Bild ohne separate App prüfst."),
+                   ("Nimmt der Kamera-Spiegel etwas auf?", "Nein. Ein Spiegel zeigt dein eigenes Live-Bild lokal. Die grüne Datenschutz-LED leuchtet weiterhin per Hardware, sobald die Kamera an ist.")],
+           "body": """<p>Der ganze Grund für die Notch ist die Kamera. Apple verkleinerte den Rand und schob die FaceTime-HD-Webcam in eine kleine Aussparung oben am Bildschirm. Das ist die Notch-Kamera auf dem Mac — und sie kann mehr als Videocalls.</p>
+    <h2>Was die Notch-Kamera ist</h2>
+    <p>Auf MacBook Pro (ab 2021) und MacBook Air (ab 2022) hält die Notch eine 1080p-FaceTime-HD-Kamera plus den Umgebungslichtsensor. Sie unterstützt Center Stage auf unterstützten Modellen und speist jede App, die deine Webcam nutzt.</p>
+    <h2>So schaust du die Notch-Kamera schnell vor</h2>
+    <p>Normalerweise siehst du dich erst, wenn du schon im Call bist. Um Bildausschnitt und Licht vorher zu prüfen, öffne Photo Booth oder QuickTime → Neue Videoaufnahme. Beide zeigen ein Live-Bild der Notch-Kamera.</p>
+    <h2>Ein Notch-Kamera-Spiegel — check dich per Hover</h2>
+    <p>Eine ganze App nur zum Sehen deines Gesichts zu öffnen ist umständlich. NotchNest hat einen Kamera-Spiegel in der Notch: Hover und ein Live-Webcam-Bild erscheint genau dort, wo die Kamera physisch sitzt. Richte deine Haare, prüf den Hintergrund, dann schließ es — kein Photo Booth, kein Extra-Fenster. Sieh es im Notch-Playground.</p>
+    <h2>Privatsphäre</h2>
+    <p>Die grüne LED neben der Notch-Kamera leuchtet, sobald die Kamera aktiv ist — sie ist fest verdrahtet und kann per Software nicht umgangen werden. Ein Notch-Spiegel zeigt nur dein eigenes Bild lokal; nichts wird aufgezeichnet oder gesendet.</p>
+    <div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>Mach deine Notch nützlich</h3><p>NotchNest bringt zehn Tools in die Notch deines MacBooks. Kostenlos im Mac App Store.</p></div>
+      <a href="%STORE%" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="Im Mac App Store laden" /></a>
+    </div>""",
+           "related": _related("de", ("/learn/what-is-the-macos-notch/", "What is the macOS notch?", "Englisch — Grundlagen."))},
+    "zh": {"title": "Mac 上的刘海摄像头 — NotchNest", "description": "关于 Mac 刘海摄像头的一切——刘海里的 1080p 摄像头、如何预览，以及用于快速自查的刘海摄像头镜像。",
+           "og_title": "Mac 上的刘海摄像头", "og_desc": "刘海摄像头能做什么，以及如何在刘海里镜像它。",
+           "jsonld_headline": "Mac 上的刘海摄像头", "jsonld_desc": "Mac 刘海里的 1080p 摄像头、如何预览，以及如何在刘海里镜像。",
+           "kicker": KICK["explainer"]["zh"], "h1": "Mac 上的刘海摄像头",
+           "lede": "刘海存在就是为了容纳 MacBook 的摄像头。这里讲清这颗摄像头能做什么、通话前怎么检查，以及如何在刘海里镜像它。",
+           "readtime": READ5["zh"], "crumb_this": "刘海摄像头",
+           "faq": [("Mac 刘海里是什么摄像头？", "一颗 1080p FaceTime 高清摄像头，外加环境光传感器。较新机型支持“居中对焦”。"),
+                   ("通话前如何查看刘海摄像头？", "打开 Photo Booth 或 QuickTime 的“新建影片录制”查看实时画面——或用 NotchNest 这样的刘海摄像头镜像，悬停即可预览。"),
+                   ("有办法在刘海里镜像 Mac 摄像头吗？", "有。NotchNest 的摄像头镜像在刘海本身显示实时预览，无需另开应用即可检查取景。"),
+                   ("摄像头镜像会录制什么吗？", "不会。镜像仅在本地显示你自己的实时画面。只要摄像头开启，绿色隐私指示灯就会由硬件点亮。")],
+           "body": """<p>刘海存在的全部理由就是摄像头。Apple 缩小边框，把 FaceTime 高清摄像头塞进屏幕顶部的小缺口。这就是 Mac 上的刘海摄像头——而且它不止能用于视频通话。</p>
+    <h2>刘海摄像头是什么</h2>
+    <p>在 MacBook Pro（2021 年起）和 MacBook Air（2022 年起）上，刘海容纳一颗 1080p FaceTime 高清摄像头以及环境光传感器。在支持的机型上支持“居中对焦”，并为每个使用你摄像头的应用供画。</p>
+    <h2>如何快速预览刘海摄像头</h2>
+    <p>通常你要进了通话才看得到自己。想提前检查取景与光线，打开 Photo Booth 或 QuickTime →“新建影片录制”。两者都显示刘海摄像头的实时画面。</p>
+    <h2>刘海摄像头镜像——一次悬停自查</h2>
+    <p>只为看一眼自己的脸就开一整个应用很笨拙。NotchNest 内置了嵌在刘海里的摄像头镜像：悬停，实时预览就出现在摄像头实际所在之处。整理头发、检查背景，然后关掉——无需 Photo Booth，无需额外窗口。在刘海演示里看看。</p>
+    <h2>隐私</h2>
+    <p>只要摄像头启用，刘海摄像头旁的绿色 LED 就会亮起——它是硬连线的，软件无法绕过。刘海镜像只在本地显示你自己的画面；不录制，也不发往任何地方。</p>
+    <div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>让你的刘海有用</h3><p>NotchNest 把十个工具放进 MacBook 刘海。在 Mac App Store 免费。</p></div>
+      <a href="%STORE%" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="在 Mac App Store 下载" /></a>
+    </div>""",
+           "related": _related("zh", ("/learn/what-is-the-macos-notch/", "What is the macOS notch?", "英文——基础。"))},
+    "ar": {"title": "كاميرا النتش على الماك — NotchNest", "description": "كل شيء عن كاميرا النتش على الماك — كاميرا 1080p داخل النتش، وكيفية معاينتها، ومرآة كاميرا النتش للفحص السريع.",
+           "og_title": "كاميرا النتش على الماك", "og_desc": "ماذا تفعل كاميرا النتش وكيف تعكسها في النتش.",
+           "jsonld_headline": "كاميرا النتش على الماك", "jsonld_desc": "كاميرا 1080p داخل نتش الماك، وكيفية معاينتها وعكسها في النتش.",
+           "kicker": KICK["explainer"]["ar"], "h1": "كاميرا النتش على الماك",
+           "lede": "يوجد النتش ليحتضن كاميرا الماك بوك. إليك ماذا تفعل هذه الكاميرا، وكيف تفحصها قبل مكالمة، وكيف تعكسها في النتش نفسه.",
+           "readtime": READ5["ar"], "crumb_this": "كاميرا النتش",
+           "faq": [("ما الكاميرا الموجودة في نتش الماك؟", "كاميرا FaceTime HD بدقة 1080p، إضافةً إلى مستشعر الضوء المحيط. Center Stage مدعوم في الطُرز الأحدث."),
+                   ("كيف أرى كاميرا النتش قبل مكالمة؟", "افتح Photo Booth أو «تسجيل فيلم جديد» في QuickTime لرؤية بث مباشر — أو استخدم مرآة كاميرا نتش مثل NotchNest لمعاينتها بتمريرة واحدة."),
+                   ("هل توجد طريقة لعكس كاميرا الماك في النتش؟", "نعم. تعرض مرآة كاميرا NotchNest معاينة مباشرة في النتش نفسه لتفحص التأطير دون فتح تطبيق منفصل."),
+                   ("هل تسجّل مرآة الكاميرا شيئًا؟", "لا. تعرض المرآة بثّك المباشر محليًا. ويظل مؤشر الخصوصية الأخضر يُضيء عبر العتاد كلما كانت الكاميرا قيد التشغيل.")],
+           "body": """<p>سبب وجود النتش كله هو الكاميرا. صغّرت Apple الإطار ودفعت كاميرا FaceTime HD إلى فتحة صغيرة أعلى الشاشة. هذه هي كاميرا النتش على الماك — وفيها أكثر من مكالمات الفيديو.</p>
+    <h2>ما هي كاميرا النتش</h2>
+    <p>على MacBook Pro (من 2021) وMacBook Air (من 2022) يحتضن النتش كاميرا FaceTime HD بدقة 1080p إضافةً إلى مستشعر الضوء المحيط. تدعم Center Stage في الطُرز المدعومة وتغذّي كل تطبيق يستخدم كاميرتك.</p>
+    <h2>كيف تعاين كاميرا النتش بسرعة</h2>
+    <p>عادةً لا ترى نفسك إلا بعد أن تكون في المكالمة. لفحص التأطير والإضاءة مسبقًا، افتح Photo Booth أو QuickTime ← تسجيل فيلم جديد. كلاهما يعرض بثًا مباشرًا من كاميرا النتش.</p>
+    <h2>مرآة كاميرا نتش — افحص نفسك بتمريرة</h2>
+    <p>فتح تطبيق كامل لمجرد رؤية وجهك أمر أخرق. يتضمّن NotchNest مرآة كاميرا مدمجة في النتش: مرّر فتظهر معاينة مباشرة للكاميرا حيث تقع الكاميرا فعليًا. رتّب شعرك، وافحص خلفيتك، ثم أغلقها — بلا Photo Booth وبلا نافذة إضافية. شاهدها في عرض النتش.</p>
+    <h2>الخصوصية</h2>
+    <p>يُضيء مؤشر LED الأخضر بجانب كاميرا النتش كلما كانت الكاميرا نشطة — وهو موصول بالعتاد ولا يمكن للبرمجيات تجاوزه. تعرض مرآة النتش بثّك أنت فقط محليًا؛ لا يُسجَّل شيء ولا يُرسَل إلى أي مكان.</p>
+    <div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>اجعل نتشك مفيدًا</h3><p>يضع NotchNest عشر أدوات في نتش الماك بوك. مجانًا على Mac App Store.</p></div>
+      <a href="%STORE%" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="التنزيل من Mac App Store" /></a>
+    </div>""",
+           "related": _related("ar", ("/learn/what-is-the-macos-notch/", "What is the macOS notch?", "إنجليزي — الأساسيات."))},
+    "fr": {"title": "La caméra de l'encoche sur Mac — NotchNest", "description": "Tout sur la caméra de l'encoche sur Mac — la webcam 1080p dans l'encoche, comment la prévisualiser, et un miroir caméra dans l'encoche pour des vérifs rapides.",
+           "og_title": "La caméra de l'encoche sur Mac", "og_desc": "Ce que fait la caméra de l'encoche et comment la mettre en miroir dans l'encoche.",
+           "jsonld_headline": "La caméra de l'encoche sur Mac", "jsonld_desc": "La caméra 1080p dans l'encoche du Mac, comment la prévisualiser et la mettre en miroir dans l'encoche.",
+           "kicker": KICK["explainer"]["fr"], "h1": "La caméra de l'encoche sur Mac",
+           "lede": "L'encoche existe pour loger la caméra de votre MacBook. Voici ce que fait cette caméra, comment la vérifier avant un appel, et comment la mettre en miroir dans l'encoche même.",
+           "readtime": READ5["fr"], "crumb_this": "Caméra de l'encoche",
+           "faq": [("Quelle caméra se trouve dans l'encoche du Mac ?", "Une caméra FaceTime HD 1080p, plus le capteur de luminosité. Cadre centré est pris en charge sur les modèles récents."),
+                   ("Comment voir la caméra de l'encoche avant un appel ?", "Ouvrez Photo Booth ou « Nouvel enregistrement vidéo » de QuickTime pour un aperçu en direct — ou utilisez un miroir caméra comme NotchNest pour la prévisualiser au survol."),
+                   ("Peut-on mettre la caméra du Mac en miroir dans l'encoche ?", "Oui. Le miroir caméra de NotchNest affiche un aperçu webcam en direct dans l'encoche même, pour vérifier le cadrage sans lancer une app séparée."),
+                   ("Le miroir caméra enregistre-t-il quoi que ce soit ?", "Non. Un miroir affiche votre propre flux en local. Le voyant vert de confidentialité s'allume quand même par matériel dès que la caméra est active.")],
+           "body": """<p>La raison d'être de l'encoche, c'est la caméra. Apple a réduit la bordure et poussé la webcam FaceTime HD dans une petite découpe en haut de l'écran. C'est la caméra de l'encoche sur Mac — et elle sert à plus que les appels vidéo.</p>
+    <h2>Ce qu'est la caméra de l'encoche</h2>
+    <p>Sur MacBook Pro (depuis 2021) et MacBook Air (depuis 2022), l'encoche loge une caméra FaceTime HD 1080p plus le capteur de luminosité. Elle prend en charge Cadre centré sur les modèles compatibles et alimente chaque app qui utilise votre webcam.</p>
+    <h2>Comment prévisualiser vite la caméra de l'encoche</h2>
+    <p>Normalement, vous ne vous voyez qu'une fois déjà en appel. Pour vérifier cadrage et lumière avant, ouvrez Photo Booth ou QuickTime → Nouvel enregistrement vidéo. Les deux montrent un flux en direct de la caméra de l'encoche.</p>
+    <h2>Un miroir caméra dans l'encoche — vérifiez-vous en un survol</h2>
+    <p>Ouvrir une app entière juste pour voir votre visage est maladroit. NotchNest inclut un miroir caméra intégré à l'encoche : survolez et un aperçu webcam en direct apparaît là où la caméra se trouve physiquement. Recoiffez-vous, vérifiez l'arrière-plan, puis fermez — pas de Photo Booth, pas de fenêtre en plus. Voyez-le dans le terrain de jeu de l'encoche.</p>
+    <h2>Confidentialité</h2>
+    <p>Le voyant vert à côté de la caméra de l'encoche s'allume dès que la caméra est active — il est câblé en dur et ne peut être contourné par logiciel. Un miroir d'encoche ne montre que votre propre flux en local ; rien n'est enregistré ni envoyé.</p>
+    <div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>Rendez votre encoche utile</h3><p>NotchNest met dix outils dans l'encoche de votre MacBook. Gratuit sur le Mac App Store.</p></div>
+      <a href="%STORE%" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="Télécharger sur le Mac App Store" /></a>
+    </div>""",
+           "related": _related("fr", ("/learn/what-is-the-macos-notch/", "What is the macOS notch?", "Anglais — les bases."))},
+    "pt-BR": {"title": "A câmera do notch no Mac — NotchNest", "description": "Tudo sobre a câmera do notch no Mac — a webcam de 1080p dentro do notch, como visualizá-la e um espelho da câmera no notch para conferências rápidas.",
+              "og_title": "A câmera do notch no Mac", "og_desc": "O que a câmera do notch faz e como espelhá-la no notch.",
+              "jsonld_headline": "A câmera do notch no Mac", "jsonld_desc": "A câmera de 1080p dentro do notch do Mac, como visualizá-la e espelhá-la no notch.",
+              "kicker": KICK["explainer"]["pt-BR"], "h1": "A câmera do notch no Mac",
+              "lede": "O notch existe para abrigar a câmera do seu MacBook. Veja o que essa câmera faz, como conferi-la antes de uma call e como espelhá-la no próprio notch.",
+              "readtime": READ5["pt-BR"], "crumb_this": "Câmera do notch",
+              "faq": [("Que câmera há no notch do Mac?", "Uma câmera FaceTime HD de 1080p, mais o sensor de luz ambiente. Palco Central é suportado nos modelos mais novos."),
+                      ("Como vejo a câmera do notch antes de uma call?", "Abra o Photo Booth ou a Nova Gravação de Filme do QuickTime para um feed ao vivo — ou use um espelho da câmera como o NotchNest para visualizá-la ao passar o cursor."),
+                      ("Dá para espelhar a câmera do Mac no notch?", "Sim. O espelho da câmera do NotchNest mostra uma prévia ao vivo no próprio notch, para você conferir o enquadramento sem abrir um app separado."),
+                      ("O espelho da câmera grava algo?", "Não. Um espelho mostra o seu próprio feed localmente. O LED verde de privacidade ainda acende por hardware sempre que a câmera está ligada.")],
+              "body": """<p>A razão de o notch existir é a câmera. A Apple encolheu a borda e empurrou a webcam FaceTime HD para um pequeno recorte no topo da tela. Essa é a câmera do notch no Mac — e ela serve para mais do que chamadas de vídeo.</p>
+    <h2>O que é a câmera do notch</h2>
+    <p>No MacBook Pro (2021+) e MacBook Air (2022+), o notch abriga uma câmera FaceTime HD de 1080p mais o sensor de luz ambiente. Suporta Palco Central nos modelos compatíveis e alimenta todo app que usa a sua webcam.</p>
+    <h2>Como visualizar a câmera do notch rapidamente</h2>
+    <p>Normalmente você só se vê depois de já estar na call. Para conferir enquadramento e luz antes, abra o Photo Booth ou o QuickTime → Nova Gravação de Filme. Ambos mostram um feed ao vivo da câmera do notch.</p>
+    <h2>Um espelho da câmera no notch — confira-se em um hover</h2>
+    <p>Abrir um app inteiro só para ver o seu rosto é desajeitado. O NotchNest inclui um espelho da câmera embutido no notch: passe o cursor e uma prévia ao vivo aparece exatamente onde a câmera fica fisicamente. Ajeite o cabelo, confira o fundo, e feche — sem Photo Booth, sem janela extra. Veja no playground do notch.</p>
+    <h2>Privacidade</h2>
+    <p>O LED verde ao lado da câmera do notch acende sempre que a câmera está ativa — é ligado por hardware e não pode ser burlado por software. Um espelho do notch só mostra o seu próprio feed localmente; nada é gravado ou enviado a lugar nenhum.</p>
+    <div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>Torne seu notch útil</h3><p>O NotchNest coloca dez ferramentas no notch do seu MacBook. Grátis na Mac App Store.</p></div>
+      <a href="%STORE%" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="Baixar na Mac App Store" /></a>
+    </div>""",
+              "related": _related("pt-BR", ("/learn/what-is-the-macos-notch/", "What is the macOS notch?", "Inglês — o básico."))},
+    "pt-PT": {"title": "A câmara do notch no Mac — NotchNest", "description": "Tudo sobre a câmara do notch no Mac — a webcam de 1080p dentro do notch, como pré-visualizá-la e um espelho da câmara no notch para verificações rápidas.",
+              "og_title": "A câmara do notch no Mac", "og_desc": "O que a câmara do notch faz e como espelhá-la no notch.",
+              "jsonld_headline": "A câmara do notch no Mac", "jsonld_desc": "A câmara de 1080p dentro do notch do Mac, como pré-visualizá-la e espelhá-la no notch.",
+              "kicker": KICK["explainer"]["pt-PT"], "h1": "A câmara do notch no Mac",
+              "lede": "O notch existe para alojar a câmara do seu MacBook. Veja o que essa câmara faz, como verificá-la antes de uma chamada e como espelhá-la no próprio notch.",
+              "readtime": READ5["pt-PT"], "crumb_this": "Câmara do notch",
+              "faq": [("Que câmara há no notch do Mac?", "Uma câmara FaceTime HD de 1080p, mais o sensor de luz ambiente. O Palco Central é suportado nos modelos mais recentes."),
+                      ("Como vejo a câmara do notch antes de uma chamada?", "Abra o Photo Booth ou a Nova Gravação de Filme do QuickTime para um feed em direto — ou use um espelho da câmara como o NotchNest para a pré-visualizar ao passar o cursor."),
+                      ("Dá para espelhar a câmara do Mac no notch?", "Sim. O espelho da câmara do NotchNest mostra uma pré-visualização em direto no próprio notch, para verificar o enquadramento sem abrir uma app separada."),
+                      ("O espelho da câmara grava algo?", "Não. Um espelho mostra o seu próprio feed localmente. O LED verde de privacidade acende à mesma por hardware sempre que a câmara está ligada.")],
+              "body": """<p>A razão de o notch existir é a câmara. A Apple encolheu a moldura e empurrou a webcam FaceTime HD para um pequeno recorte no topo do ecrã. Essa é a câmara do notch no Mac — e serve para mais do que chamadas de vídeo.</p>
+    <h2>O que é a câmara do notch</h2>
+    <p>No MacBook Pro (2021+) e MacBook Air (2022+), o notch aloja uma câmara FaceTime HD de 1080p mais o sensor de luz ambiente. Suporta o Palco Central nos modelos compatíveis e alimenta todas as apps que usam a sua webcam.</p>
+    <h2>Como pré-visualizar a câmara do notch rapidamente</h2>
+    <p>Normalmente só se vê depois de já estar na chamada. Para verificar enquadramento e luz antes, abra o Photo Booth ou o QuickTime → Nova Gravação de Filme. Ambos mostram um feed em direto da câmara do notch.</p>
+    <h2>Um espelho da câmara no notch — verifique-se num hover</h2>
+    <p>Abrir uma app inteira só para ver o seu rosto é desajeitado. O NotchNest inclui um espelho da câmara integrado no notch: passe o cursor e uma pré-visualização em direto aparece exatamente onde a câmara está fisicamente. Ajeite o cabelo, verifique o fundo, e feche — sem Photo Booth, sem janela extra. Veja no playground do notch.</p>
+    <h2>Privacidade</h2>
+    <p>O LED verde ao lado da câmara do notch acende sempre que a câmara está ativa — é ligado por hardware e não pode ser contornado por software. Um espelho do notch só mostra o seu próprio feed localmente; nada é gravado ou enviado para lado nenhum.</p>
+    <div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>Torne o seu notch útil</h3><p>O NotchNest coloca dez ferramentas no notch do seu MacBook. Gratuito na Mac App Store.</p></div>
+      <a href="%STORE%" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="Descarregar na Mac App Store" /></a>
+    </div>""",
+              "related": _related("pt-PT", ("/learn/what-is-the-macos-notch/", "What is the macOS notch?", "Inglês — o básico."))},
+    "es-MX": {"title": "La cámara del notch en Mac — NotchNest", "description": "Todo sobre la cámara del notch en Mac — la webcam de 1080p dentro del notch, cómo previsualizarla y un espejo de cámara en el notch para revisiones rápidas.",
+              "og_title": "La cámara del notch en Mac", "og_desc": "Qué hace la cámara del notch y cómo reflejarla en el notch.",
+              "jsonld_headline": "La cámara del notch en Mac", "jsonld_desc": "La cámara de 1080p dentro del notch del Mac, cómo previsualizarla y reflejarla en el notch.",
+              "kicker": KICK["explainer"]["es-MX"], "h1": "La cámara del notch en Mac",
+              "lede": "El notch existe para alojar la cámara de tu MacBook. Aquí qué hace esa cámara, cómo revisarla antes de una llamada y cómo reflejarla en el propio notch.",
+              "readtime": READ5["es-MX"], "crumb_this": "Cámara del notch",
+              "faq": [("¿Qué cámara hay en el notch del Mac?", "Una cámara FaceTime HD de 1080p, más el sensor de luz ambiental. Encuadre Centrado es compatible en los modelos más nuevos."),
+                      ("¿Cómo veo la cámara del notch antes de una llamada?", "Abre Photo Booth o la Nueva grabación de película de QuickTime para un feed en vivo — o usa un espejo de cámara como NotchNest para previsualizarla al pasar el cursor."),
+                      ("¿Hay forma de reflejar la cámara del Mac en el notch?", "Sí. El espejo de cámara de NotchNest muestra una vista previa en vivo en el propio notch, para revisar el encuadre sin abrir una app aparte."),
+                      ("¿El espejo de cámara graba algo?", "No. Un espejo muestra tu propio feed localmente. El LED verde de privacidad se enciende igual por hardware siempre que la cámara está encendida.")],
+              "body": """<p>La razón entera de que exista el notch es la cámara. Apple encogió el marco y metió la webcam FaceTime HD en un pequeño recorte en la parte superior de la pantalla. Esa es la cámara del notch en Mac — y sirve para más que videollamadas.</p>
+    <h2>Qué es la cámara del notch</h2>
+    <p>En MacBook Pro (2021+) y MacBook Air (2022+), el notch aloja una cámara FaceTime HD de 1080p más el sensor de luz ambiental. Admite Encuadre Centrado en los modelos compatibles y alimenta a cada app que usa tu webcam.</p>
+    <h2>Cómo previsualizar la cámara del notch rápido</h2>
+    <p>Normalmente solo te ves una vez que ya estás en la llamada. Para revisar encuadre e iluminación antes, abre Photo Booth o QuickTime → Nueva grabación de película. Ambos muestran un feed en vivo de la cámara del notch.</p>
+    <h2>Un espejo de cámara en el notch — revísate en un hover</h2>
+    <p>Abrir una app entera solo para ver tu cara es torpe. NotchNest incluye un espejo de cámara integrado en el notch: pasa el cursor y una vista previa en vivo aparece justo donde está físicamente la cámara. Acomódate el cabello, revisa el fondo, y ciérralo — sin Photo Booth, sin ventana extra. Míralo en el playground del notch.</p>
+    <h2>Privacidad</h2>
+    <p>El LED verde junto a la cámara del notch se enciende siempre que la cámara está activa — está cableado por hardware y el software no puede eludirlo. Un espejo del notch solo muestra tu propio feed localmente; nada se graba ni se envía a ningún lado.</p>
+    <div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>Haz útil tu notch</h3><p>NotchNest pone diez herramientas en el notch de tu MacBook. Gratis en el Mac App Store.</p></div>
+      <a href="%STORE%" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="Descargar en el Mac App Store" /></a>
+    </div>""",
+              "related": _related("es-MX", ("/learn/what-is-the-macos-notch/", "What is the macOS notch?", "Inglés — lo básico."))},
+}
+
+
 LEARN_ARTICLES = {
     "what-is-the-macos-notch": _assemble(WHATIS),
     "does-the-mac-notch-actually-do-anything": _assemble(DOES),
@@ -1718,4 +1898,5 @@ LEARN_ARTICLES = {
     "how-to-hide-the-notch-on-mac": _assemble(HIDE),
     "what-is-dynamic-island-on-mac": _assemble(DYN),
     "drop-files-into-macbook-notch": _assemble(DROP),
+    "notch-camera-on-mac": _assemble(CAMERA),
 }
