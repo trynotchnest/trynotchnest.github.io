@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<title>استخدام النتش بديلًا لشريط القوائم — NotchNest</title>
+<meta name="description" content="هل يمكن لنتش الماك بوك أن يحلّ محلّ شريط قوائمك؟ كيف يعمل بديل شريط قوائم النتش وماذا يفعل وأين يظل شريط القوائم متفوّقًا." />
+<link rel="canonical" href="https://notchnest.app/ar/learn/notch-menu-bar-replacement/" />
+<meta name="robots" content="index,follow,max-image-preview:large" />
+<link rel="alternate" hreflang="en" href="https://notchnest.app/learn/notch-menu-bar-replacement/" />
+<link rel="alternate" hreflang="en-us" href="https://notchnest.app/learn/notch-menu-bar-replacement/" />
+<link rel="alternate" hreflang="en-gb" href="https://notchnest.app/learn/notch-menu-bar-replacement/" />
+<link rel="alternate" hreflang="en-in" href="https://notchnest.app/learn/notch-menu-bar-replacement/" />
+<link rel="alternate" hreflang="de" href="https://notchnest.app/de/learn/notch-menu-bar-replacement/" />
+<link rel="alternate" hreflang="zh" href="https://notchnest.app/zh/learn/notch-menu-bar-replacement/" />
+<link rel="alternate" hreflang="zh-cn" href="https://notchnest.app/zh/learn/notch-menu-bar-replacement/" />
+<link rel="alternate" hreflang="ar" href="https://notchnest.app/ar/learn/notch-menu-bar-replacement/" />
+<link rel="alternate" hreflang="fr" href="https://notchnest.app/fr/learn/notch-menu-bar-replacement/" />
+<link rel="alternate" hreflang="pt-BR" href="https://notchnest.app/pt-br/learn/notch-menu-bar-replacement/" />
+<link rel="alternate" hreflang="pt-PT" href="https://notchnest.app/pt-pt/learn/notch-menu-bar-replacement/" />
+<link rel="alternate" hreflang="es-MX" href="https://notchnest.app/es-mx/learn/notch-menu-bar-replacement/" />
+<link rel="alternate" hreflang="es-419" href="https://notchnest.app/es-mx/learn/notch-menu-bar-replacement/" />
+<link rel="alternate" hreflang="x-default" href="https://notchnest.app/learn/notch-menu-bar-replacement/" />
+<meta property="og:title" content="النتش بديلًا لشريط القوائم" />
+<meta property="og:description" content="ماذا يفعل بديل شريط قوائم النتش — وحدوده." />
+<meta property="og:url" content="https://notchnest.app/ar/learn/notch-menu-bar-replacement/" />
+<meta property="og:locale" content="ar_SA" />
+<meta property="og:type" content="article" />
+<meta property="og:image" content="https://notchnest.app/assets/og/notch-menu-bar-replacement.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@codetard" />
+<meta name="twitter:creator" content="@codetard" />
+<link rel="stylesheet" href="/styles.css" />
+<link rel="apple-touch-icon" href="/assets/notchnest-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<meta name="theme-color" content="#000000" />
+<meta name="color-scheme" content="dark" />
+<script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org", "@type": "Article",
+    "headline": "استخدام النتش بديلًا لشريط القوائم",
+    "description": "كيف يعمل بديل شريط قوائم النتش وأين يظل شريط القوائم متفوّقًا.",
+    "image": "https://notchnest.app/assets/og/notch-menu-bar-replacement.png",
+    "datePublished": "2026-06-10T00:00:00+00:00", "dateModified": "2026-06-13T00:00:00+00:00",
+    "inLanguage": "ar",
+    "author": { "@type": "Person", "name": "Satnam Singh", "url": "https://silverseahog.com/", "jobTitle": "Swift Developer",
+      "sameAs": ["https://silverseahog.com/","https://twitter.com/codetard","https://github.com/29satnam","https://www.linkedin.com/in/satnam-singh-948348aa/","https://instagram.com/codetard"] },
+    "publisher": { "@type": "Organization", "name": "NotchNest", "logo": { "@type": "ImageObject", "url": "https://notchnest.app/assets/notchnest-icon.png" } },
+    "mainEntityOfPage": "https://notchnest.app/ar/learn/notch-menu-bar-replacement/"
+  },
+  {
+    "@context": "https://schema.org", "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "الرئيسية", "item": "https://notchnest.app/ar/" },
+      { "@type": "ListItem", "position": 2, "name": "الأدلة", "item": "https://notchnest.app/ar/learn/" },
+      { "@type": "ListItem", "position": 3, "name": "بديل شريط القوائم", "item": "https://notchnest.app/ar/learn/notch-menu-bar-replacement/" }
+    ]
+  },
+  {
+    "@context": "https://schema.org", "@type": "FAQPage", "inLanguage": "ar",
+    "mainEntity": [
+      { "@type": "Question", "name": "هل يمكن للنتش أن يحلّ محلّ شريط قوائم macOS بالكامل؟", "acceptedAnswer": { "@type": "Answer", "text": "لا. تبقى قوائم النظام (واي فاي، البطارية، قوائم التطبيقات) في شريط القوائم. يستبدل النتش أيقونات حالة الطرف الثالث وأدوات الإجراءات السريعة — حيث يعيش معظم الازدحام." } },
+      { "@type": "Question", "name": "هل يزيل بديل شريط قوائم النتش شريط القوائم؟", "acceptedAnswer": { "@type": "Answer", "text": "لا — يبقى شريط القوائم. تقع لوحة النتش في الصف نفسه وتضيف سعة، فتخفّف الضغط عن الشريط لئلّا تختفي الأيقونات خلف النتش." } },
+      { "@type": "Question", "name": "هل NotchNest تطبيق شريط قوائم أم تطبيق نتش؟", "acceptedAnswer": { "@type": "Answer", "text": "الاثنان عمليًا. يعيش في النتش لكنه يعمل كسطح تحكّم بأسلوب شريط القوائم — أدوات وإجراءات سريعة على بُعد تمريرة." } },
+      { "@type": "Question", "name": "هل يعمل هذا على ماك بوك بلا نتش؟", "acceptedAnswer": { "@type": "Answer", "text": "صُمّم NotchNest لأجهزة الماك بوك بنتش (من 2021). وعلى الماك بلا نتش تُثبَّت اللوحة أعلى المنتصف بدلًا من ذلك." } }
+    ]
+  }
+]
+</script>
+<style>body{direction:rtl}.hero-grid,.cases-grid,.faq-grid,.footer-grid,.hero-meta,.stats{direction:rtl}.crumbs,.article-meta{direction:rtl}</style>
+</head>
+<body>
+<nav class="nn-nav"><div class="nn-nav-inner">
+  <a class="nn-brand" href="/ar/"><img class="nn-brand-mark" src="/assets/notchnest-icon.png" alt="" width="28" height="28"/><span>NotchNest</span></a>
+  <div class="nn-nav-links">
+    <a href="/learn/notch-menu-bar-replacement/">EN</a>
+    <a href="/ar/learn/" class="nn-nav-keep">الأدلة</a>
+  </div>
+</div></nav>
+
+<main class="main-container"><div class="learn-wrap">
+  <div class="crumbs"><a href="/ar/">الرئيسية</a><span class="sep">/</span><a href="/ar/learn/">الأدلة</a><span class="sep">/</span><span>بديل شريط القوائم</span></div>
+
+  <header class="article-head">
+    <span class="article-kicker">دليل</span>
+    <h1 class="article-h1">استخدام النتش بديلًا لشريط القوائم</h1>
+    <p class="article-lede">يقع النتش في الصف نفسه مع شريط قوائمك — فهل يمكنه أن يحلّ محلّه؟ إليك ما يفعله بديل شريط قوائم النتش فعلًا، وحدوده.</p>
+    <div class="article-meta"><span>تحديث 13 يونيو 2026</span><span class="dot"></span><span>قراءة 5 دقائق</span><span class="dot"></span><span>بقلم Satnam Singh</span></div>
+  </header>
+
+  <article class="article-body">
+    <p>شريط القوائم هو حيث يضع macOS أيقونات الحالة وعناصر التحكّم السريعة. ويقع النتش في منتصف هذا الشريط دون أن يفعل شيئًا. يقلب بديل شريط قوائم النتش ذلك: ينقل عناصر التحكّم الأكثر استخدامًا إلى النتش ويُفرغ الشريط نفسه.</p>
+    <h2>ماذا يمنحك بديل شريط قوائم النتش</h2>
+    <p>بدل صفّ من الأيقونات الصغيرة الدائمة، تمرّر فوق النتش فتنفتح لوحة بالأدوات التي تستخدمها فعلًا — تقويم وحافظة وموسيقى ومؤقت وإفلات ملفات. عناصر التحكّم أكبر ومجمّعة وبعيدة عن الأنظار حتى تحتاجها. وقد بُني NotchNest حول هذه الفكرة تحديدًا.</p>
+    <h2>ما يستبدله جيدًا</h2>
+    <ul>
+      <li><strong>أدوات النظرة السريعة</strong> — التقويم و«قيد التشغيل» والمؤقت التي كنت ستحشرها في الشريط.</li>
+      <li><strong>اختصارات الإجراءات</strong> — السحب إلى AirDrop وسجل الحافظة والملاحظات السريعة.</li>
+      <li><strong>الازدحام</strong> — أيقونات دائمة أقل يعني ألّا يختبئ شيء خلف النتش بعد الآن.</li>
+    </ul>
+    <h2>ما يظل شريط القوائم الأفضل فيه</h2>
+    <p>أساسيات النظام — واي فاي والبطارية ومركز التحكّم والساعة وقوائم كل تطبيق (ملف، تحرير، عرض) — تبقى في شريط القوائم. يكمّل بديل النتش هذه لا أن يزيلها. اعتبره تفريغًا لازدحام الطرف الثالث في النتش.</p>
+    <h2>جرّبه دون تثبيت</h2>
+    <p>يعرض عرض النتش اللوحة التي تتوسّع بالتمرير في متصفحك، لتحكم إن كان يستبدل ما يكفي من شريط قوائمك قبل التنزيل.</p>
+    <div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>اجعل نتشك مفيدًا</h3><p>يضع NotchNest عشر أدوات في نتش الماك بوك. مجانًا على Mac App Store.</p></div>
+      <a href="https://apps.apple.com/sa/app/notchnest-power-your-notch/id6747612321" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="التنزيل من Mac App Store" /></a>
+    </div>
+
+    <aside class="author-bio">
+      <img class="author-avatar" src="https://github.com/29satnam.png" alt="Satnam Singh" width="56" height="56" loading="lazy" />
+      <div>
+        <h3>عن المؤلف</h3>
+        <p><strong>Satnam Singh</strong> هو مطوّر Swift وراء NotchNest. يكتب عن إنتاجية macOS والذكاء الاصطناعي على Apple Silicon وحِرفة التطبيقات المستقلة. <a href="https://silverseahog.com/" target="_blank" rel="noopener">silverseahog.com</a> · <a href="https://twitter.com/codetard" target="_blank" rel="noopener nofollow">@codetard</a></p>
+      </div>
+    </aside>
+
+    <section class="related-section">
+      <h2>اقرأ أيضًا</h2>
+      <div class="related-grid">
+        <a class="related-card" href="/ar/learn/how-to-use-the-macbook-notch/"><h3>استخدام نتش الماك بوك</h3><p>ثلاث خطوات نحو نتش مفيد.</p></a>
+        <a class="related-card" href="/ar/learn/best-macos-notch-apps/"><h3>أفضل تطبيقات نتش macOS</h3><p>اختيارات 2026.</p></a>
+        <a class="related-card" href="/learn/how-to-customise-macos-menu-bar/"><h3>How to customise the macOS menu bar</h3><p>إنجليزي — دليل.</p></a>
+      </div>
+    </section>
+  </article>
+
+  <footer class="site-footer">
+    <div class="footer-bottom"><span>© <span id="yr"></span> NotchNest · Satnam Singh</span><div class="footer-lang"><a href="/learn/notch-menu-bar-replacement/" hreflang="en">English</a><a href="/de/learn/notch-menu-bar-replacement/" hreflang="de">Deutsch</a><a href="/zh/learn/notch-menu-bar-replacement/" hreflang="zh">中文</a><a href="/ar/learn/notch-menu-bar-replacement/" hreflang="ar" aria-current="page">العربية</a><a href="/fr/learn/notch-menu-bar-replacement/" hreflang="fr">Français</a><a href="/pt-br/learn/notch-menu-bar-replacement/" hreflang="pt-BR">Português (BR)</a><a href="/pt-pt/learn/notch-menu-bar-replacement/" hreflang="pt-PT">Português (PT)</a><a href="/es-mx/learn/notch-menu-bar-replacement/" hreflang="es-MX">Español (MX)</a></div></div>
+  </footer>
+</div></main>
+<script>var yr=document.getElementById('yr');if(yr)yr.textContent=new Date().getFullYear();</script>
+</body></html>

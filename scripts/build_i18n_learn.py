@@ -1711,6 +1711,214 @@ DROP = {
 }
 
 
+# ── notch-menu-bar-replacement ──────────────────────────────────────────────
+REPLACE = {
+    "de": {"title": "Die Notch als Menüleisten-Ersatz nutzen — NotchNest", "description": "Kann die MacBook-Notch deine Menüleiste ersetzen? Wie ein Notch-Menüleisten-Ersatz funktioniert, was er kann und wo die Menüleiste weiterhin gewinnt.",
+           "og_title": "Die Notch als Menüleisten-Ersatz", "og_desc": "Was ein Notch-Menüleisten-Ersatz kann — und seine Grenzen.",
+           "jsonld_headline": "Die Notch als Menüleisten-Ersatz nutzen", "jsonld_desc": "Wie ein Notch-Menüleisten-Ersatz funktioniert und wo die Menüleiste weiterhin gewinnt.",
+           "kicker": KICK["guide"]["de"], "h1": "Die Notch als Menüleisten-Ersatz nutzen",
+           "lede": "Die Notch sitzt in derselben Reihe wie deine Menüleiste — kann sie sie also ersetzen? Hier, was ein Notch-Menüleisten-Ersatz wirklich tut und seine Grenzen.",
+           "readtime": READ5["de"], "crumb_this": "Menüleisten-Ersatz",
+           "faq": [("Kann die Notch die macOS-Menüleiste ganz ersetzen?", "Nein. Systemmenüs (WLAN, Batterie, App-Menüs) bleiben in der Menüleiste. Die Notch ersetzt Drittanbieter-Status-Icons und Schnellaktions-Tools — dort lebt die meiste Unordnung."),
+                   ("Entfernt ein Notch-Menüleisten-Ersatz die Menüleiste?", "Nein — die Menüleiste bleibt. Das Notch-Panel sitzt in derselben Reihe und schafft Kapazität, nimmt der Leiste Druck, sodass keine Icons mehr hinter der Notch verschwinden."),
+                   ("Ist NotchNest eine Menüleisten-App oder eine Notch-App?", "Praktisch beides. Es lebt in der Notch, wirkt aber als menüleistenartige Steueroberfläche — Widgets und Schnellaktionen, einen Hover entfernt."),
+                   ("Funktioniert das auf einem MacBook ohne Notch?", "NotchNest ist für MacBooks mit Notch (ab 2021) gemacht. Auf notchlosen Macs verankert sich das Panel stattdessen oben in der Mitte.")],
+           "body": """<p>Die Menüleiste ist der Ort, an dem macOS Status-Icons und Schnellsteuerungen parkt. Die Notch sitzt mitten in dieser Leiste und tut nichts. Ein Notch-Menüleisten-Ersatz dreht das um: Er verschiebt deine meistgenutzten Steuerungen in die Notch und macht die Leiste selbst frei.</p>
+    <h2>Was dir ein Notch-Menüleisten-Ersatz gibt</h2>
+    <p>Statt einer Reihe winziger Dauer-Icons hoverst du die Notch, und ein Panel klappt mit den Tools auf, die du wirklich nutzt — Kalender, Zwischenablage, Musik, Timer, Dateidrop. Die Steuerungen sind größer, gruppiert und aus dem Blick, bis du sie brauchst. NotchNest ist genau um diese Idee gebaut.</p>
+    <h2>Was es gut ersetzt</h2>
+    <ul>
+      <li><strong>Kurzblick-Widgets</strong> — Kalender, Now Playing, Timer, die du sonst in die Leiste quetschst.</li>
+      <li><strong>Aktions-Shortcuts</strong> — Drag-to-AirDrop, Zwischenablage-Verlauf, Schnellnotizen.</li>
+      <li><strong>Unordnung</strong> — weniger Dauer-Icons heißt, nichts versteckt sich mehr hinter der Notch.</li>
+    </ul>
+    <h2>Was die Menüleiste weiterhin am besten kann</h2>
+    <p>System-Essentials — WLAN, Batterie, Kontrollzentrum, die Uhr und App-Menüs (Ablage, Bearbeiten, Darstellung) — bleiben in der Menüleiste. Ein Notch-Ersatz ergänzt sie, statt sie zu entfernen. Sieh es als Auslagern der Drittanbieter-Unordnung in die Notch.</p>
+    <h2>Probier es ohne Installation</h2>
+    <p>Der Notch-Playground zeigt das Aufklapp-Panel im Browser, damit du beurteilst, ob es genug von deiner Menüleiste ersetzt, bevor du herunterlädst.</p>
+    <div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>Mach deine Notch nützlich</h3><p>NotchNest bringt zehn Tools in die Notch deines MacBooks. Kostenlos im Mac App Store.</p></div>
+      <a href="%STORE%" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="Im Mac App Store laden" /></a>
+    </div>""",
+           "related": _related("de", ("/learn/how-to-customise-macos-menu-bar/", "How to customise the macOS menu bar", "Englisch — Leitfaden."))},
+    "zh": {"title": "把刘海用作菜单栏替代 — NotchNest", "description": "MacBook 刘海能替代你的菜单栏吗？刘海菜单栏替代如何工作、能做什么，以及菜单栏在哪些方面仍占优。",
+           "og_title": "把刘海用作菜单栏替代", "og_desc": "刘海菜单栏替代能做什么——以及它的局限。",
+           "jsonld_headline": "把刘海用作菜单栏替代", "jsonld_desc": "刘海菜单栏替代如何工作，以及菜单栏在哪些方面仍占优。",
+           "kicker": KICK["guide"]["zh"], "h1": "把刘海用作菜单栏替代",
+           "lede": "刘海和你的菜单栏在同一行——那它能替代菜单栏吗？这里讲清刘海菜单栏替代究竟做什么，以及它的局限。",
+           "readtime": READ5["zh"], "crumb_this": "菜单栏替代",
+           "faq": [("刘海能完全替代 macOS 菜单栏吗？", "不能。系统菜单（Wi-Fi、电池、应用菜单）留在菜单栏。刘海替代的是第三方状态图标和快捷操作工具——多数杂乱都在那里。"),
+                   ("刘海菜单栏替代会移除菜单栏吗？", "不会——菜单栏保留。刘海面板在同一行并增加容量，为菜单栏减压，让图标不再藏在刘海后面。"),
+                   ("NotchNest 是菜单栏应用还是刘海应用？", "实际上两者皆是。它住在刘海里，却像菜单栏式的控制界面那样工作——组件和快捷操作，悬停即达。"),
+                   ("在没有刘海的 MacBook 上能用吗？", "NotchNest 为带刘海的 MacBook（2021 年起）设计。在无刘海的 Mac 上，面板改为固定在顶部居中。")],
+           "body": """<p>菜单栏是 macOS 放置状态图标和快捷控制的地方。刘海就位于这条栏的正中，却什么都不做。刘海菜单栏替代把这翻转过来：它把你最常用的控制搬进刘海，腾出栏本身。</p>
+    <h2>刘海菜单栏替代给你什么</h2>
+    <p>不再是一排常亮的小图标，你悬停刘海，面板便展开出你真正会用的工具——日历、剪贴板、音乐、计时器、文件拖放。控制更大、成组，且在需要前隐于视线之外。NotchNest 正是围绕这一理念构建。</p>
+    <h2>它替代得好的部分</h2>
+    <ul>
+      <li><strong>速览组件</strong>——日历、正在播放、计时器，否则你会硬塞进栏里。</li>
+      <li><strong>操作快捷</strong>——拖拽 AirDrop、剪贴板历史、快速笔记。</li>
+      <li><strong>杂乱</strong>——常亮图标更少，意味着不再有东西藏在刘海后面。</li>
+    </ul>
+    <h2>菜单栏仍最擅长的部分</h2>
+    <p>系统要素——Wi-Fi、电池、控制中心、时钟，以及各应用菜单（文件、编辑、显示）——留在菜单栏。刘海替代是对它们的补充，而非移除。可把它理解为把第三方杂乱卸载进刘海。</p>
+    <h2>不安装先试试</h2>
+    <p>刘海演示在浏览器里展示悬停展开的面板，让你在下载前判断它替代了你菜单栏的多少。</p>
+    <div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>让你的刘海有用</h3><p>NotchNest 把十个工具放进 MacBook 刘海。在 Mac App Store 免费。</p></div>
+      <a href="%STORE%" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="在 Mac App Store 下载" /></a>
+    </div>""",
+           "related": _related("zh", ("/learn/how-to-customise-macos-menu-bar/", "How to customise the macOS menu bar", "英文——指南。"))},
+    "ar": {"title": "استخدام النتش بديلًا لشريط القوائم — NotchNest", "description": "هل يمكن لنتش الماك بوك أن يحلّ محلّ شريط قوائمك؟ كيف يعمل بديل شريط قوائم النتش وماذا يفعل وأين يظل شريط القوائم متفوّقًا.",
+           "og_title": "النتش بديلًا لشريط القوائم", "og_desc": "ماذا يفعل بديل شريط قوائم النتش — وحدوده.",
+           "jsonld_headline": "استخدام النتش بديلًا لشريط القوائم", "jsonld_desc": "كيف يعمل بديل شريط قوائم النتش وأين يظل شريط القوائم متفوّقًا.",
+           "kicker": KICK["guide"]["ar"], "h1": "استخدام النتش بديلًا لشريط القوائم",
+           "lede": "يقع النتش في الصف نفسه مع شريط قوائمك — فهل يمكنه أن يحلّ محلّه؟ إليك ما يفعله بديل شريط قوائم النتش فعلًا، وحدوده.",
+           "readtime": READ5["ar"], "crumb_this": "بديل شريط القوائم",
+           "faq": [("هل يمكن للنتش أن يحلّ محلّ شريط قوائم macOS بالكامل؟", "لا. تبقى قوائم النظام (واي فاي، البطارية، قوائم التطبيقات) في شريط القوائم. يستبدل النتش أيقونات حالة الطرف الثالث وأدوات الإجراءات السريعة — حيث يعيش معظم الازدحام."),
+                   ("هل يزيل بديل شريط قوائم النتش شريط القوائم؟", "لا — يبقى شريط القوائم. تقع لوحة النتش في الصف نفسه وتضيف سعة، فتخفّف الضغط عن الشريط لئلّا تختفي الأيقونات خلف النتش."),
+                   ("هل NotchNest تطبيق شريط قوائم أم تطبيق نتش؟", "الاثنان عمليًا. يعيش في النتش لكنه يعمل كسطح تحكّم بأسلوب شريط القوائم — أدوات وإجراءات سريعة على بُعد تمريرة."),
+                   ("هل يعمل هذا على ماك بوك بلا نتش؟", "صُمّم NotchNest لأجهزة الماك بوك بنتش (من 2021). وعلى الماك بلا نتش تُثبَّت اللوحة أعلى المنتصف بدلًا من ذلك.")],
+           "body": """<p>شريط القوائم هو حيث يضع macOS أيقونات الحالة وعناصر التحكّم السريعة. ويقع النتش في منتصف هذا الشريط دون أن يفعل شيئًا. يقلب بديل شريط قوائم النتش ذلك: ينقل عناصر التحكّم الأكثر استخدامًا إلى النتش ويُفرغ الشريط نفسه.</p>
+    <h2>ماذا يمنحك بديل شريط قوائم النتش</h2>
+    <p>بدل صفّ من الأيقونات الصغيرة الدائمة، تمرّر فوق النتش فتنفتح لوحة بالأدوات التي تستخدمها فعلًا — تقويم وحافظة وموسيقى ومؤقت وإفلات ملفات. عناصر التحكّم أكبر ومجمّعة وبعيدة عن الأنظار حتى تحتاجها. وقد بُني NotchNest حول هذه الفكرة تحديدًا.</p>
+    <h2>ما يستبدله جيدًا</h2>
+    <ul>
+      <li><strong>أدوات النظرة السريعة</strong> — التقويم و«قيد التشغيل» والمؤقت التي كنت ستحشرها في الشريط.</li>
+      <li><strong>اختصارات الإجراءات</strong> — السحب إلى AirDrop وسجل الحافظة والملاحظات السريعة.</li>
+      <li><strong>الازدحام</strong> — أيقونات دائمة أقل يعني ألّا يختبئ شيء خلف النتش بعد الآن.</li>
+    </ul>
+    <h2>ما يظل شريط القوائم الأفضل فيه</h2>
+    <p>أساسيات النظام — واي فاي والبطارية ومركز التحكّم والساعة وقوائم كل تطبيق (ملف، تحرير، عرض) — تبقى في شريط القوائم. يكمّل بديل النتش هذه لا أن يزيلها. اعتبره تفريغًا لازدحام الطرف الثالث في النتش.</p>
+    <h2>جرّبه دون تثبيت</h2>
+    <p>يعرض عرض النتش اللوحة التي تتوسّع بالتمرير في متصفحك، لتحكم إن كان يستبدل ما يكفي من شريط قوائمك قبل التنزيل.</p>
+    <div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>اجعل نتشك مفيدًا</h3><p>يضع NotchNest عشر أدوات في نتش الماك بوك. مجانًا على Mac App Store.</p></div>
+      <a href="%STORE%" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="التنزيل من Mac App Store" /></a>
+    </div>""",
+           "related": _related("ar", ("/learn/how-to-customise-macos-menu-bar/", "How to customise the macOS menu bar", "إنجليزي — دليل."))},
+    "fr": {"title": "Utiliser l'encoche comme remplacement de la barre des menus — NotchNest", "description": "L'encoche du MacBook peut-elle remplacer votre barre des menus ? Comment fonctionne un remplacement de barre des menus par l'encoche, ce qu'il fait, et où la barre gagne encore.",
+           "og_title": "L'encoche comme remplacement de la barre des menus", "og_desc": "Ce que fait un remplacement de barre des menus par l'encoche — et ses limites.",
+           "jsonld_headline": "Utiliser l'encoche comme remplacement de la barre des menus", "jsonld_desc": "Comment fonctionne un remplacement de barre des menus par l'encoche et où la barre gagne encore.",
+           "kicker": KICK["guide"]["fr"], "h1": "Utiliser l'encoche comme remplacement de la barre des menus",
+           "lede": "L'encoche est dans la même rangée que votre barre des menus — peut-elle donc la remplacer ? Voici ce qu'un remplacement par l'encoche fait vraiment, et ses limites.",
+           "readtime": READ5["fr"], "crumb_this": "Remplacement de la barre des menus",
+           "faq": [("L'encoche peut-elle remplacer entièrement la barre des menus macOS ?", "Non. Les menus système (Wi-Fi, batterie, menus d'app) restent dans la barre. L'encoche remplace les icônes d'état tierces et les outils d'action rapide — là où vit le plus de désordre."),
+                   ("Un remplacement par l'encoche supprime-t-il la barre des menus ?", "Non — la barre reste. Le panneau de l'encoche est dans la même rangée et ajoute de la capacité, soulageant la barre pour que les icônes cessent de se cacher derrière l'encoche."),
+                   ("NotchNest est-il une app de barre des menus ou une app d'encoche ?", "Les deux, en pratique. Elle vit dans l'encoche mais agit comme une surface de contrôle façon barre des menus — widgets et actions rapides, à un survol."),
+                   ("Cela marche-t-il sur un MacBook sans encoche ?", "NotchNest est conçu pour les MacBook à encoche (2021 et après). Sur les Mac sans encoche, le panneau s'ancre en haut au centre.")],
+           "body": """<p>La barre des menus est l'endroit où macOS gare les icônes d'état et les contrôles rapides. L'encoche est pile au milieu de cette barre sans rien faire. Un remplacement de barre des menus par l'encoche inverse ça : il déplace vos contrôles les plus utilisés dans l'encoche et libère la barre elle-même.</p>
+    <h2>Ce que vous donne un remplacement par l'encoche</h2>
+    <p>Au lieu d'une rangée de minuscules icônes toujours visibles, vous survolez l'encoche et un panneau se déploie avec les outils que vous utilisez vraiment — calendrier, presse-papiers, musique, minuteur, dépôt de fichiers. Les contrôles sont plus grands, groupés, et hors de vue jusqu'au besoin. NotchNest est bâti précisément sur cette idée.</p>
+    <h2>Ce qu'il remplace bien</h2>
+    <ul>
+      <li><strong>Widgets d'un coup d'œil</strong> — calendrier, now playing, minuteur que vous entasseriez sinon dans la barre.</li>
+      <li><strong>Raccourcis d'action</strong> — glisser-vers-AirDrop, historique du presse-papiers, notes rapides.</li>
+      <li><strong>Le désordre</strong> — moins d'icônes permanentes veut dire que plus rien ne se cache derrière l'encoche.</li>
+    </ul>
+    <h2>Ce que la barre des menus fait encore le mieux</h2>
+    <p>Les essentiels système — Wi-Fi, batterie, Centre de contrôle, l'horloge, et les menus par app (Fichier, Édition, Présentation) — restent dans la barre. Un remplacement par l'encoche les complète plutôt que de les retirer. Voyez ça comme décharger le désordre tiers dans l'encoche.</p>
+    <h2>Essayez-le sans installer</h2>
+    <p>Le terrain de jeu de l'encoche montre le panneau qui se déploie au survol dans votre navigateur, pour juger s'il remplace assez de votre barre des menus avant de télécharger.</p>
+    <div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>Rendez votre encoche utile</h3><p>NotchNest met dix outils dans l'encoche de votre MacBook. Gratuit sur le Mac App Store.</p></div>
+      <a href="%STORE%" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="Télécharger sur le Mac App Store" /></a>
+    </div>""",
+           "related": _related("fr", ("/learn/how-to-customise-macos-menu-bar/", "How to customise the macOS menu bar", "Anglais — guide."))},
+    "pt-BR": {"title": "Usar o notch como substituto da barra de menus — NotchNest", "description": "O notch do MacBook pode substituir a sua barra de menus? Como funciona um substituto da barra de menus no notch, o que ele faz e onde a barra ainda vence.",
+              "og_title": "O notch como substituto da barra de menus", "og_desc": "O que um substituto da barra de menus no notch faz — e seus limites.",
+              "jsonld_headline": "Usar o notch como substituto da barra de menus", "jsonld_desc": "Como funciona um substituto da barra de menus no notch e onde a barra ainda vence.",
+              "kicker": KICK["guide"]["pt-BR"], "h1": "Usar o notch como substituto da barra de menus",
+              "lede": "O notch fica na mesma linha da sua barra de menus — então ele pode substituí-la? Aqui está o que um substituto no notch realmente faz, e seus limites.",
+              "readtime": READ5["pt-BR"], "crumb_this": "Substituto da barra de menus",
+              "faq": [("O notch pode substituir totalmente a barra de menus do macOS?", "Não. Menus do sistema (Wi-Fi, bateria, menus de apps) ficam na barra de menus. O notch substitui ícones de status de terceiros e ferramentas de ação rápida — onde mora a maior parte da bagunça."),
+                      ("Um substituto no notch remove a barra de menus?", "Não — a barra de menus fica. O painel do notch fica na mesma linha e adiciona capacidade, tirando pressão da barra para os ícones pararem de se esconder atrás do notch."),
+                      ("O NotchNest é um app de barra de menus ou de notch?", "Os dois, na prática. Ele vive no notch, mas age como uma superfície de controle estilo barra de menus — widgets e ações rápidas, a um hover."),
+                      ("Isso funciona em um MacBook sem notch?", "O NotchNest é feito para MacBooks com notch (2021 em diante). Em Macs sem notch, o painel se ancora no topo central.")],
+              "body": """<p>A barra de menus é onde o macOS guarda ícones de status e controles rápidos. O notch fica bem no meio dessa barra sem fazer nada. Um substituto da barra de menus no notch inverte isso: move os seus controles mais usados para o notch e libera a própria barra.</p>
+    <h2>O que um substituto no notch te dá</h2>
+    <p>Em vez de uma fileira de ícones minúsculos sempre visíveis, você passa o cursor no notch e um painel se expande com as ferramentas que você realmente usa — calendário, área de transferência, música, timer, soltar arquivos. Os controles são maiores, agrupados e fora de vista até precisar. O NotchNest é construído exatamente em torno dessa ideia.</p>
+    <h2>O que ele substitui bem</h2>
+    <ul>
+      <li><strong>Widgets de olhada rápida</strong> — calendário, now playing, timer que você espremeria na barra.</li>
+      <li><strong>Atalhos de ação</strong> — arrastar para AirDrop, histórico da área de transferência, notas rápidas.</li>
+      <li><strong>Bagunça</strong> — menos ícones fixos significa que nada mais se esconde atrás do notch.</li>
+    </ul>
+    <h2>O que a barra de menus ainda faz melhor</h2>
+    <p>Essenciais do sistema — Wi-Fi, bateria, Central de Controle, o relógio e os menus por app (Arquivo, Editar, Visualizar) — ficam na barra de menus. Um substituto no notch complementa isso, em vez de remover. Pense nisso como descarregar a bagunça de terceiros no notch.</p>
+    <h2>Teste sem instalar</h2>
+    <p>O playground do notch mostra o painel que expande ao passar o cursor no navegador, para você julgar se substitui o bastante da sua barra de menus antes de baixar.</p>
+    <div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>Torne seu notch útil</h3><p>O NotchNest coloca dez ferramentas no notch do seu MacBook. Grátis na Mac App Store.</p></div>
+      <a href="%STORE%" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="Baixar na Mac App Store" /></a>
+    </div>""",
+              "related": _related("pt-BR", ("/learn/how-to-customise-macos-menu-bar/", "How to customise the macOS menu bar", "Inglês — guia."))},
+    "pt-PT": {"title": "Usar o notch como substituto da barra de menus — NotchNest", "description": "O notch do MacBook pode substituir a sua barra de menus? Como funciona um substituto da barra de menus no notch, o que faz e onde a barra ainda ganha.",
+              "og_title": "O notch como substituto da barra de menus", "og_desc": "O que um substituto da barra de menus no notch faz — e os seus limites.",
+              "jsonld_headline": "Usar o notch como substituto da barra de menus", "jsonld_desc": "Como funciona um substituto da barra de menus no notch e onde a barra ainda ganha.",
+              "kicker": KICK["guide"]["pt-PT"], "h1": "Usar o notch como substituto da barra de menus",
+              "lede": "O notch fica na mesma linha da sua barra de menus — então pode substituí-la? Aqui está o que um substituto no notch faz realmente, e os seus limites.",
+              "readtime": READ5["pt-PT"], "crumb_this": "Substituto da barra de menus",
+              "faq": [("O notch pode substituir totalmente a barra de menus do macOS?", "Não. Os menus do sistema (Wi-Fi, bateria, menus de apps) ficam na barra de menus. O notch substitui ícones de estado de terceiros e ferramentas de ação rápida — onde vive a maior parte da confusão."),
+                      ("Um substituto no notch remove a barra de menus?", "Não — a barra de menus fica. O painel do notch fica na mesma linha e adiciona capacidade, tirando pressão da barra para os ícones deixarem de se esconder atrás do notch."),
+                      ("O NotchNest é uma app de barra de menus ou de notch?", "Ambas, na prática. Vive no notch, mas age como uma superfície de controlo ao estilo barra de menus — widgets e ações rápidas, a um hover."),
+                      ("Isto funciona num MacBook sem notch?", "O NotchNest é feito para MacBooks com notch (2021 em diante). Em Macs sem notch, o painel ancora-se no topo central.")],
+              "body": """<p>A barra de menus é onde o macOS guarda ícones de estado e controlos rápidos. O notch fica mesmo no meio dessa barra sem fazer nada. Um substituto da barra de menus no notch inverte isso: move os seus controlos mais usados para o notch e liberta a própria barra.</p>
+    <h2>O que um substituto no notch lhe dá</h2>
+    <p>Em vez de uma fila de ícones minúsculos sempre visíveis, passa o cursor no notch e um painel expande-se com as ferramentas que usa mesmo — calendário, área de transferência, música, temporizador, largar ficheiros. Os controlos são maiores, agrupados e fora de vista até precisar. O NotchNest é construído exatamente à volta desta ideia.</p>
+    <h2>O que substitui bem</h2>
+    <ul>
+      <li><strong>Widgets de vista rápida</strong> — calendário, now playing, temporizador que de outro modo espremeria na barra.</li>
+      <li><strong>Atalhos de ação</strong> — arrastar para AirDrop, histórico da área de transferência, notas rápidas.</li>
+      <li><strong>Confusão</strong> — menos ícones fixos significa que nada mais se esconde atrás do notch.</li>
+    </ul>
+    <h2>O que a barra de menus ainda faz melhor</h2>
+    <p>Essenciais do sistema — Wi-Fi, bateria, Centro de Controlo, o relógio e os menus por app (Ficheiro, Editar, Ver) — ficam na barra de menus. Um substituto no notch complementa isso, em vez de o remover. Pense nisso como descarregar a confusão de terceiros no notch.</p>
+    <h2>Experimente sem instalar</h2>
+    <p>O playground do notch mostra o painel que expande ao passar o cursor no navegador, para julgar se substitui o suficiente da sua barra de menus antes de transferir.</p>
+    <div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>Torne o seu notch útil</h3><p>O NotchNest coloca dez ferramentas no notch do seu MacBook. Gratuito na Mac App Store.</p></div>
+      <a href="%STORE%" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="Descarregar na Mac App Store" /></a>
+    </div>""",
+              "related": _related("pt-PT", ("/learn/how-to-customise-macos-menu-bar/", "How to customise the macOS menu bar", "Inglês — guia."))},
+    "es-MX": {"title": "Usar el notch como reemplazo de la barra de menús — NotchNest", "description": "¿El notch del MacBook puede reemplazar tu barra de menús? Cómo funciona un reemplazo de la barra de menús en el notch, qué hace y dónde la barra sigue ganando.",
+              "og_title": "El notch como reemplazo de la barra de menús", "og_desc": "Qué hace un reemplazo de la barra de menús en el notch — y sus límites.",
+              "jsonld_headline": "Usar el notch como reemplazo de la barra de menús", "jsonld_desc": "Cómo funciona un reemplazo de la barra de menús en el notch y dónde la barra sigue ganando.",
+              "kicker": KICK["guide"]["es-MX"], "h1": "Usar el notch como reemplazo de la barra de menús",
+              "lede": "El notch está en la misma fila que tu barra de menús — ¿entonces puede reemplazarla? Aquí qué hace realmente un reemplazo en el notch, y sus límites.",
+              "readtime": READ5["es-MX"], "crumb_this": "Reemplazo de la barra de menús",
+              "faq": [("¿El notch puede reemplazar por completo la barra de menús de macOS?", "No. Los menús del sistema (Wi-Fi, batería, menús de apps) se quedan en la barra de menús. El notch reemplaza los iconos de estado de terceros y las herramientas de acción rápida — donde vive la mayor parte del desorden."),
+                      ("¿Un reemplazo en el notch quita la barra de menús?", "No — la barra de menús se queda. El panel del notch está en la misma fila y agrega capacidad, quitando presión a la barra para que los iconos dejen de esconderse detrás del notch."),
+                      ("¿NotchNest es una app de barra de menús o de notch?", "Ambas, en la práctica. Vive en el notch pero actúa como una superficie de control estilo barra de menús — widgets y acciones rápidas, a un hover."),
+                      ("¿Esto funciona en un MacBook sin notch?", "NotchNest está hecho para MacBooks con notch (2021 en adelante). En Macs sin notch, el panel se ancla en la parte superior central.")],
+              "body": """<p>La barra de menús es donde macOS coloca los iconos de estado y los controles rápidos. El notch está justo en medio de esa barra sin hacer nada. Un reemplazo de la barra de menús en el notch le da la vuelta: mueve tus controles más usados al notch y libera la propia barra.</p>
+    <h2>Qué te da un reemplazo en el notch</h2>
+    <p>En lugar de una fila de iconos minúsculos siempre visibles, pasas el cursor por el notch y se expande un panel con las herramientas que de verdad usas — calendario, portapapeles, música, temporizador, soltar archivos. Los controles son más grandes, agrupados y fuera de vista hasta que los necesitas. NotchNest está construido exactamente alrededor de esta idea.</p>
+    <h2>Qué reemplaza bien</h2>
+    <ul>
+      <li><strong>Widgets de vistazo rápido</strong> — calendario, now playing, temporizador que de otro modo apretujarías en la barra.</li>
+      <li><strong>Atajos de acción</strong> — arrastrar a AirDrop, historial del portapapeles, notas rápidas.</li>
+      <li><strong>Desorden</strong> — menos iconos fijos significa que ya nada se esconde detrás del notch.</li>
+    </ul>
+    <h2>Qué sigue haciendo mejor la barra de menús</h2>
+    <p>Los esenciales del sistema — Wi-Fi, batería, Centro de Control, el reloj y los menús por app (Archivo, Edición, Visualización) — se quedan en la barra de menús. Un reemplazo en el notch los complementa en lugar de quitarlos. Piénsalo como descargar el desorden de terceros en el notch.</p>
+    <h2>Pruébalo sin instalar</h2>
+    <p>El playground del notch muestra el panel que se expande al pasar el cursor en tu navegador, para que juzgues si reemplaza lo suficiente de tu barra de menús antes de descargar.</p>
+    <div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>Haz útil tu notch</h3><p>NotchNest pone diez herramientas en el notch de tu MacBook. Gratis en el Mac App Store.</p></div>
+      <a href="%STORE%" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="Descargar en el Mac App Store" /></a>
+    </div>""",
+              "related": _related("es-MX", ("/learn/how-to-customise-macos-menu-bar/", "How to customise the macOS menu bar", "Inglés — guía."))},
+}
+
+
 # ── macos-tahoe-notch-features ──────────────────────────────────────────────
 TAHOE = {
     "de": {"title": "macOS Tahoe & die Notch: was neu ist — NotchNest", "description": "Was macOS Tahoe (macOS 26) für MacBook-Notch und Menüleiste ändert — Liquid Glass, Transparenz und was Apps obendrauf bringen.",
@@ -2352,4 +2560,5 @@ LEARN_ARTICLES = {
     "notch-camera-on-mac": _assemble(CAMERA),
     "macbook-air-vs-pro-notch": _assemble(AIRPRO),
     "macos-tahoe-notch-features": _assemble(TAHOE),
+    "notch-menu-bar-replacement": _assemble(REPLACE),
 }

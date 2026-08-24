@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<title>把刘海用作菜单栏替代 — NotchNest</title>
+<meta name="description" content="MacBook 刘海能替代你的菜单栏吗？刘海菜单栏替代如何工作、能做什么，以及菜单栏在哪些方面仍占优。" />
+<link rel="canonical" href="https://notchnest.app/zh/learn/notch-menu-bar-replacement/" />
+<meta name="robots" content="index,follow,max-image-preview:large" />
+<link rel="alternate" hreflang="en" href="https://notchnest.app/learn/notch-menu-bar-replacement/" />
+<link rel="alternate" hreflang="en-us" href="https://notchnest.app/learn/notch-menu-bar-replacement/" />
+<link rel="alternate" hreflang="en-gb" href="https://notchnest.app/learn/notch-menu-bar-replacement/" />
+<link rel="alternate" hreflang="en-in" href="https://notchnest.app/learn/notch-menu-bar-replacement/" />
+<link rel="alternate" hreflang="de" href="https://notchnest.app/de/learn/notch-menu-bar-replacement/" />
+<link rel="alternate" hreflang="zh" href="https://notchnest.app/zh/learn/notch-menu-bar-replacement/" />
+<link rel="alternate" hreflang="zh-cn" href="https://notchnest.app/zh/learn/notch-menu-bar-replacement/" />
+<link rel="alternate" hreflang="ar" href="https://notchnest.app/ar/learn/notch-menu-bar-replacement/" />
+<link rel="alternate" hreflang="fr" href="https://notchnest.app/fr/learn/notch-menu-bar-replacement/" />
+<link rel="alternate" hreflang="pt-BR" href="https://notchnest.app/pt-br/learn/notch-menu-bar-replacement/" />
+<link rel="alternate" hreflang="pt-PT" href="https://notchnest.app/pt-pt/learn/notch-menu-bar-replacement/" />
+<link rel="alternate" hreflang="es-MX" href="https://notchnest.app/es-mx/learn/notch-menu-bar-replacement/" />
+<link rel="alternate" hreflang="es-419" href="https://notchnest.app/es-mx/learn/notch-menu-bar-replacement/" />
+<link rel="alternate" hreflang="x-default" href="https://notchnest.app/learn/notch-menu-bar-replacement/" />
+<meta property="og:title" content="把刘海用作菜单栏替代" />
+<meta property="og:description" content="刘海菜单栏替代能做什么——以及它的局限。" />
+<meta property="og:url" content="https://notchnest.app/zh/learn/notch-menu-bar-replacement/" />
+<meta property="og:locale" content="zh_CN" />
+<meta property="og:type" content="article" />
+<meta property="og:image" content="https://notchnest.app/assets/og/notch-menu-bar-replacement.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@codetard" />
+<meta name="twitter:creator" content="@codetard" />
+<link rel="stylesheet" href="/styles.css" />
+<link rel="apple-touch-icon" href="/assets/notchnest-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<meta name="theme-color" content="#000000" />
+<meta name="color-scheme" content="dark" />
+<script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org", "@type": "Article",
+    "headline": "把刘海用作菜单栏替代",
+    "description": "刘海菜单栏替代如何工作，以及菜单栏在哪些方面仍占优。",
+    "image": "https://notchnest.app/assets/og/notch-menu-bar-replacement.png",
+    "datePublished": "2026-06-10T00:00:00+00:00", "dateModified": "2026-06-13T00:00:00+00:00",
+    "inLanguage": "zh-Hans",
+    "author": { "@type": "Person", "name": "Satnam Singh", "url": "https://silverseahog.com/", "jobTitle": "Swift Developer",
+      "sameAs": ["https://silverseahog.com/","https://twitter.com/codetard","https://github.com/29satnam","https://www.linkedin.com/in/satnam-singh-948348aa/","https://instagram.com/codetard"] },
+    "publisher": { "@type": "Organization", "name": "NotchNest", "logo": { "@type": "ImageObject", "url": "https://notchnest.app/assets/notchnest-icon.png" } },
+    "mainEntityOfPage": "https://notchnest.app/zh/learn/notch-menu-bar-replacement/"
+  },
+  {
+    "@context": "https://schema.org", "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://notchnest.app/zh/" },
+      { "@type": "ListItem", "position": 2, "name": "学习", "item": "https://notchnest.app/zh/learn/" },
+      { "@type": "ListItem", "position": 3, "name": "菜单栏替代", "item": "https://notchnest.app/zh/learn/notch-menu-bar-replacement/" }
+    ]
+  },
+  {
+    "@context": "https://schema.org", "@type": "FAQPage", "inLanguage": "zh-Hans",
+    "mainEntity": [
+      { "@type": "Question", "name": "刘海能完全替代 macOS 菜单栏吗？", "acceptedAnswer": { "@type": "Answer", "text": "不能。系统菜单（Wi-Fi、电池、应用菜单）留在菜单栏。刘海替代的是第三方状态图标和快捷操作工具——多数杂乱都在那里。" } },
+      { "@type": "Question", "name": "刘海菜单栏替代会移除菜单栏吗？", "acceptedAnswer": { "@type": "Answer", "text": "不会——菜单栏保留。刘海面板在同一行并增加容量，为菜单栏减压，让图标不再藏在刘海后面。" } },
+      { "@type": "Question", "name": "NotchNest 是菜单栏应用还是刘海应用？", "acceptedAnswer": { "@type": "Answer", "text": "实际上两者皆是。它住在刘海里，却像菜单栏式的控制界面那样工作——组件和快捷操作，悬停即达。" } },
+      { "@type": "Question", "name": "在没有刘海的 MacBook 上能用吗？", "acceptedAnswer": { "@type": "Answer", "text": "NotchNest 为带刘海的 MacBook（2021 年起）设计。在无刘海的 Mac 上，面板改为固定在顶部居中。" } }
+    ]
+  }
+]
+</script>
+</head>
+<body>
+<nav class="nn-nav"><div class="nn-nav-inner">
+  <a class="nn-brand" href="/zh/"><img class="nn-brand-mark" src="/assets/notchnest-icon.png" alt="" width="28" height="28"/><span>NotchNest</span></a>
+  <div class="nn-nav-links">
+    <a href="/learn/notch-menu-bar-replacement/">EN</a>
+    <a href="/zh/learn/" class="nn-nav-keep">学习</a>
+  </div>
+</div></nav>
+
+<main class="main-container"><div class="learn-wrap">
+  <div class="crumbs"><a href="/zh/">首页</a><span class="sep">/</span><a href="/zh/learn/">学习</a><span class="sep">/</span><span>菜单栏替代</span></div>
+
+  <header class="article-head">
+    <span class="article-kicker">指南</span>
+    <h1 class="article-h1">把刘海用作菜单栏替代</h1>
+    <p class="article-lede">刘海和你的菜单栏在同一行——那它能替代菜单栏吗？这里讲清刘海菜单栏替代究竟做什么，以及它的局限。</p>
+    <div class="article-meta"><span>更新于 2026 年 6 月 13 日</span><span class="dot"></span><span>阅读 5 分钟</span><span class="dot"></span><span>作者 Satnam Singh</span></div>
+  </header>
+
+  <article class="article-body">
+    <p>菜单栏是 macOS 放置状态图标和快捷控制的地方。刘海就位于这条栏的正中，却什么都不做。刘海菜单栏替代把这翻转过来：它把你最常用的控制搬进刘海，腾出栏本身。</p>
+    <h2>刘海菜单栏替代给你什么</h2>
+    <p>不再是一排常亮的小图标，你悬停刘海，面板便展开出你真正会用的工具——日历、剪贴板、音乐、计时器、文件拖放。控制更大、成组，且在需要前隐于视线之外。NotchNest 正是围绕这一理念构建。</p>
+    <h2>它替代得好的部分</h2>
+    <ul>
+      <li><strong>速览组件</strong>——日历、正在播放、计时器，否则你会硬塞进栏里。</li>
+      <li><strong>操作快捷</strong>——拖拽 AirDrop、剪贴板历史、快速笔记。</li>
+      <li><strong>杂乱</strong>——常亮图标更少，意味着不再有东西藏在刘海后面。</li>
+    </ul>
+    <h2>菜单栏仍最擅长的部分</h2>
+    <p>系统要素——Wi-Fi、电池、控制中心、时钟，以及各应用菜单（文件、编辑、显示）——留在菜单栏。刘海替代是对它们的补充，而非移除。可把它理解为把第三方杂乱卸载进刘海。</p>
+    <h2>不安装先试试</h2>
+    <p>刘海演示在浏览器里展示悬停展开的面板，让你在下载前判断它替代了你菜单栏的多少。</p>
+    <div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>让你的刘海有用</h3><p>NotchNest 把十个工具放进 MacBook 刘海。在 Mac App Store 免费。</p></div>
+      <a href="https://apps.apple.com/cn/app/notchnest-power-your-notch/id6747612321" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="在 Mac App Store 下载" /></a>
+    </div>
+
+    <aside class="author-bio">
+      <img class="author-avatar" src="https://github.com/29satnam.png" alt="Satnam Singh" width="56" height="56" loading="lazy" />
+      <div>
+        <h3>关于作者</h3>
+        <p><strong>Satnam Singh</strong> 是 NotchNest 背后的 Swift 开发者。他撰写关于 macOS 生产力、Apple 芯片上的 AI 以及独立应用工艺的文章。<a href="https://silverseahog.com/" target="_blank" rel="noopener">silverseahog.com</a> · <a href="https://twitter.com/codetard" target="_blank" rel="noopener nofollow">@codetard</a></p>
+      </div>
+    </aside>
+
+    <section class="related-section">
+      <h2>继续阅读</h2>
+      <div class="related-grid">
+        <a class="related-card" href="/zh/learn/how-to-use-the-macbook-notch/"><h3>使用 MacBook 刘海</h3><p>三步让刘海有用。</p></a>
+        <a class="related-card" href="/zh/learn/best-macos-notch-apps/"><h3>最佳 macOS 刘海应用</h3><p>2026 盘点。</p></a>
+        <a class="related-card" href="/learn/how-to-customise-macos-menu-bar/"><h3>How to customise the macOS menu bar</h3><p>英文——指南。</p></a>
+      </div>
+    </section>
+  </article>
+
+  <footer class="site-footer">
+    <div class="footer-bottom"><span>© <span id="yr"></span> NotchNest · Satnam Singh</span><div class="footer-lang"><a href="/learn/notch-menu-bar-replacement/" hreflang="en">English</a><a href="/de/learn/notch-menu-bar-replacement/" hreflang="de">Deutsch</a><a href="/zh/learn/notch-menu-bar-replacement/" hreflang="zh" aria-current="page">中文</a><a href="/ar/learn/notch-menu-bar-replacement/" hreflang="ar">العربية</a><a href="/fr/learn/notch-menu-bar-replacement/" hreflang="fr">Français</a><a href="/pt-br/learn/notch-menu-bar-replacement/" hreflang="pt-BR">Português (BR)</a><a href="/pt-pt/learn/notch-menu-bar-replacement/" hreflang="pt-PT">Português (PT)</a><a href="/es-mx/learn/notch-menu-bar-replacement/" hreflang="es-MX">Español (MX)</a></div></div>
+  </footer>
+</div></main>
+<script>var yr=document.getElementById('yr');if(yr)yr.textContent=new Date().getFullYear();</script>
+</body></html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<title>Utiliser l'encoche comme remplacement de la barre des menus — NotchNest</title>
+<meta name="description" content="L'encoche du MacBook peut-elle remplacer votre barre des menus ? Comment fonctionne un remplacement de barre des menus par l'encoche, ce qu'il fait, et où la barre gagne encore." />
+<link rel="canonical" href="https://notchnest.app/fr/learn/notch-menu-bar-replacement/" />
+<meta name="robots" content="index,follow,max-image-preview:large" />
+<link rel="alternate" hreflang="en" href="https://notchnest.app/learn/notch-menu-bar-replacement/" />
+<link rel="alternate" hreflang="en-us" href="https://notchnest.app/learn/notch-menu-bar-replacement/" />
+<link rel="alternate" hreflang="en-gb" href="https://notchnest.app/learn/notch-menu-bar-replacement/" />
+<link rel="alternate" hreflang="en-in" href="https://notchnest.app/learn/notch-menu-bar-replacement/" />
+<link rel="alternate" hreflang="de" href="https://notchnest.app/de/learn/notch-menu-bar-replacement/" />
+<link rel="alternate" hreflang="zh" href="https://notchnest.app/zh/learn/notch-menu-bar-replacement/" />
+<link rel="alternate" hreflang="zh-cn" href="https://notchnest.app/zh/learn/notch-menu-bar-replacement/" />
+<link rel="alternate" hreflang="ar" href="https://notchnest.app/ar/learn/notch-menu-bar-replacement/" />
+<link rel="alternate" hreflang="fr" href="https://notchnest.app/fr/learn/notch-menu-bar-replacement/" />
+<link rel="alternate" hreflang="pt-BR" href="https://notchnest.app/pt-br/learn/notch-menu-bar-replacement/" />
+<link rel="alternate" hreflang="pt-PT" href="https://notchnest.app/pt-pt/learn/notch-menu-bar-replacement/" />
+<link rel="alternate" hreflang="es-MX" href="https://notchnest.app/es-mx/learn/notch-menu-bar-replacement/" />
+<link rel="alternate" hreflang="es-419" href="https://notchnest.app/es-mx/learn/notch-menu-bar-replacement/" />
+<link rel="alternate" hreflang="x-default" href="https://notchnest.app/learn/notch-menu-bar-replacement/" />
+<meta property="og:title" content="L'encoche comme remplacement de la barre des menus" />
+<meta property="og:description" content="Ce que fait un remplacement de barre des menus par l'encoche — et ses limites." />
+<meta property="og:url" content="https://notchnest.app/fr/learn/notch-menu-bar-replacement/" />
+<meta property="og:locale" content="fr_FR" />
+<meta property="og:type" content="article" />
+<meta property="og:image" content="https://notchnest.app/assets/og/notch-menu-bar-replacement.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@codetard" />
+<meta name="twitter:creator" content="@codetard" />
+<link rel="stylesheet" href="/styles.css" />
+<link rel="apple-touch-icon" href="/assets/notchnest-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<meta name="theme-color" content="#000000" />
+<meta name="color-scheme" content="dark" />
+<script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org", "@type": "Article",
+    "headline": "Utiliser l'encoche comme remplacement de la barre des menus",
+    "description": "Comment fonctionne un remplacement de barre des menus par l'encoche et où la barre gagne encore.",
+    "image": "https://notchnest.app/assets/og/notch-menu-bar-replacement.png",
+    "datePublished": "2026-06-10T00:00:00+00:00", "dateModified": "2026-06-13T00:00:00+00:00",
+    "inLanguage": "fr",
+    "author": { "@type": "Person", "name": "Satnam Singh", "url": "https://silverseahog.com/", "jobTitle": "Swift Developer",
+      "sameAs": ["https://silverseahog.com/","https://twitter.com/codetard","https://github.com/29satnam","https://www.linkedin.com/in/satnam-singh-948348aa/","https://instagram.com/codetard"] },
+    "publisher": { "@type": "Organization", "name": "NotchNest", "logo": { "@type": "ImageObject", "url": "https://notchnest.app/assets/notchnest-icon.png" } },
+    "mainEntityOfPage": "https://notchnest.app/fr/learn/notch-menu-bar-replacement/"
+  },
+  {
+    "@context": "https://schema.org", "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://notchnest.app/fr/" },
+      { "@type": "ListItem", "position": 2, "name": "Guides", "item": "https://notchnest.app/fr/learn/" },
+      { "@type": "ListItem", "position": 3, "name": "Remplacement de la barre des menus", "item": "https://notchnest.app/fr/learn/notch-menu-bar-replacement/" }
+    ]
+  },
+  {
+    "@context": "https://schema.org", "@type": "FAQPage", "inLanguage": "fr",
+    "mainEntity": [
+      { "@type": "Question", "name": "L'encoche peut-elle remplacer entièrement la barre des menus macOS ?", "acceptedAnswer": { "@type": "Answer", "text": "Non. Les menus système (Wi-Fi, batterie, menus d'app) restent dans la barre. L'encoche remplace les icônes d'état tierces et les outils d'action rapide — là où vit le plus de désordre." } },
+      { "@type": "Question", "name": "Un remplacement par l'encoche supprime-t-il la barre des menus ?", "acceptedAnswer": { "@type": "Answer", "text": "Non — la barre reste. Le panneau de l'encoche est dans la même rangée et ajoute de la capacité, soulageant la barre pour que les icônes cessent de se cacher derrière l'encoche." } },
+      { "@type": "Question", "name": "NotchNest est-il une app de barre des menus ou une app d'encoche ?", "acceptedAnswer": { "@type": "Answer", "text": "Les deux, en pratique. Elle vit dans l'encoche mais agit comme une surface de contrôle façon barre des menus — widgets et actions rapides, à un survol." } },
+      { "@type": "Question", "name": "Cela marche-t-il sur un MacBook sans encoche ?", "acceptedAnswer": { "@type": "Answer", "text": "NotchNest est conçu pour les MacBook à encoche (2021 et après). Sur les Mac sans encoche, le panneau s'ancre en haut au centre." } }
+    ]
+  }
+]
+</script>
+</head>
+<body>
+<nav class="nn-nav"><div class="nn-nav-inner">
+  <a class="nn-brand" href="/fr/"><img class="nn-brand-mark" src="/assets/notchnest-icon.png" alt="" width="28" height="28"/><span>NotchNest</span></a>
+  <div class="nn-nav-links">
+    <a href="/learn/notch-menu-bar-replacement/">EN</a>
+    <a href="/fr/learn/" class="nn-nav-keep">Guides</a>
+  </div>
+</div></nav>
+
+<main class="main-container"><div class="learn-wrap">
+  <div class="crumbs"><a href="/fr/">Accueil</a><span class="sep">/</span><a href="/fr/learn/">Guides</a><span class="sep">/</span><span>Remplacement de la barre des menus</span></div>
+
+  <header class="article-head">
+    <span class="article-kicker">Guide</span>
+    <h1 class="article-h1">Utiliser l'encoche comme remplacement de la barre des menus</h1>
+    <p class="article-lede">L'encoche est dans la même rangée que votre barre des menus — peut-elle donc la remplacer ? Voici ce qu'un remplacement par l'encoche fait vraiment, et ses limites.</p>
+    <div class="article-meta"><span>Mis à jour le 13 juin 2026</span><span class="dot"></span><span>5 min de lecture</span><span class="dot"></span><span>Par Satnam Singh</span></div>
+  </header>
+
+  <article class="article-body">
+    <p>La barre des menus est l'endroit où macOS gare les icônes d'état et les contrôles rapides. L'encoche est pile au milieu de cette barre sans rien faire. Un remplacement de barre des menus par l'encoche inverse ça : il déplace vos contrôles les plus utilisés dans l'encoche et libère la barre elle-même.</p>
+    <h2>Ce que vous donne un remplacement par l'encoche</h2>
+    <p>Au lieu d'une rangée de minuscules icônes toujours visibles, vous survolez l'encoche et un panneau se déploie avec les outils que vous utilisez vraiment — calendrier, presse-papiers, musique, minuteur, dépôt de fichiers. Les contrôles sont plus grands, groupés, et hors de vue jusqu'au besoin. NotchNest est bâti précisément sur cette idée.</p>
+    <h2>Ce qu'il remplace bien</h2>
+    <ul>
+      <li><strong>Widgets d'un coup d'œil</strong> — calendrier, now playing, minuteur que vous entasseriez sinon dans la barre.</li>
+      <li><strong>Raccourcis d'action</strong> — glisser-vers-AirDrop, historique du presse-papiers, notes rapides.</li>
+      <li><strong>Le désordre</strong> — moins d'icônes permanentes veut dire que plus rien ne se cache derrière l'encoche.</li>
+    </ul>
+    <h2>Ce que la barre des menus fait encore le mieux</h2>
+    <p>Les essentiels système — Wi-Fi, batterie, Centre de contrôle, l'horloge, et les menus par app (Fichier, Édition, Présentation) — restent dans la barre. Un remplacement par l'encoche les complète plutôt que de les retirer. Voyez ça comme décharger le désordre tiers dans l'encoche.</p>
+    <h2>Essayez-le sans installer</h2>
+    <p>Le terrain de jeu de l'encoche montre le panneau qui se déploie au survol dans votre navigateur, pour juger s'il remplace assez de votre barre des menus avant de télécharger.</p>
+    <div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>Rendez votre encoche utile</h3><p>NotchNest met dix outils dans l'encoche de votre MacBook. Gratuit sur le Mac App Store.</p></div>
+      <a href="https://apps.apple.com/fr/app/notchnest-power-your-notch/id6747612321" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="Télécharger sur le Mac App Store" /></a>
+    </div>
+
+    <aside class="author-bio">
+      <img class="author-avatar" src="https://github.com/29satnam.png" alt="Satnam Singh" width="56" height="56" loading="lazy" />
+      <div>
+        <h3>À propos de l'auteur</h3>
+        <p><strong>Satnam Singh</strong> est le développeur Swift derrière NotchNest. Il écrit sur la productivité macOS, l'IA sur Apple Silicon et l'artisanat des apps indépendantes. <a href="https://silverseahog.com/" target="_blank" rel="noopener">silverseahog.com</a> · <a href="https://twitter.com/codetard" target="_blank" rel="noopener nofollow">@codetard</a></p>
+      </div>
+    </aside>
+
+    <section class="related-section">
+      <h2>À lire aussi</h2>
+      <div class="related-grid">
+        <a class="related-card" href="/fr/learn/how-to-use-the-macbook-notch/"><h3>Utiliser l'encoche du MacBook</h3><p>Trois étapes vers une encoche utile.</p></a>
+        <a class="related-card" href="/fr/learn/best-macos-notch-apps/"><h3>Meilleures apps d'encoche macOS</h3><p>Sélection 2026.</p></a>
+        <a class="related-card" href="/learn/how-to-customise-macos-menu-bar/"><h3>How to customise the macOS menu bar</h3><p>Anglais — guide.</p></a>
+      </div>
+    </section>
+  </article>
+
+  <footer class="site-footer">
+    <div class="footer-bottom"><span>© <span id="yr"></span> NotchNest · Satnam Singh</span><div class="footer-lang"><a href="/learn/notch-menu-bar-replacement/" hreflang="en">English</a><a href="/de/learn/notch-menu-bar-replacement/" hreflang="de">Deutsch</a><a href="/zh/learn/notch-menu-bar-replacement/" hreflang="zh">中文</a><a href="/ar/learn/notch-menu-bar-replacement/" hreflang="ar">العربية</a><a href="/fr/learn/notch-menu-bar-replacement/" hreflang="fr" aria-current="page">Français</a><a href="/pt-br/learn/notch-menu-bar-replacement/" hreflang="pt-BR">Português (BR)</a><a href="/pt-pt/learn/notch-menu-bar-replacement/" hreflang="pt-PT">Português (PT)</a><a href="/es-mx/learn/notch-menu-bar-replacement/" hreflang="es-MX">Español (MX)</a></div></div>
+  </footer>
+</div></main>
+<script>var yr=document.getElementById('yr');if(yr)yr.textContent=new Date().getFullYear();</script>
+</body></html>
