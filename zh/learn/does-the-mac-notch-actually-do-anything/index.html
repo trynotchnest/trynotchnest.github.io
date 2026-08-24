@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<title>Mac 刘海到底有没有用？— NotchNest</title>
+<meta name="description" content="关于 MacBook 刘海默认是否有用、Apple 在它后面放了什么，以及第三方应用如何让它有用的直接答案。" />
+<link rel="canonical" href="https://notchnest.app/zh/learn/does-the-mac-notch-actually-do-anything/" />
+<meta name="robots" content="index,follow,max-image-preview:large" />
+<link rel="alternate" hreflang="en" href="https://notchnest.app/learn/does-the-mac-notch-actually-do-anything/" />
+<link rel="alternate" hreflang="en-us" href="https://notchnest.app/learn/does-the-mac-notch-actually-do-anything/" />
+<link rel="alternate" hreflang="en-gb" href="https://notchnest.app/learn/does-the-mac-notch-actually-do-anything/" />
+<link rel="alternate" hreflang="en-in" href="https://notchnest.app/learn/does-the-mac-notch-actually-do-anything/" />
+<link rel="alternate" hreflang="de" href="https://notchnest.app/de/learn/does-the-mac-notch-actually-do-anything/" />
+<link rel="alternate" hreflang="zh" href="https://notchnest.app/zh/learn/does-the-mac-notch-actually-do-anything/" />
+<link rel="alternate" hreflang="zh-cn" href="https://notchnest.app/zh/learn/does-the-mac-notch-actually-do-anything/" />
+<link rel="alternate" hreflang="ar" href="https://notchnest.app/ar/learn/does-the-mac-notch-actually-do-anything/" />
+<link rel="alternate" hreflang="fr" href="https://notchnest.app/fr/learn/does-the-mac-notch-actually-do-anything/" />
+<link rel="alternate" hreflang="pt-BR" href="https://notchnest.app/pt-br/learn/does-the-mac-notch-actually-do-anything/" />
+<link rel="alternate" hreflang="pt-PT" href="https://notchnest.app/pt-pt/learn/does-the-mac-notch-actually-do-anything/" />
+<link rel="alternate" hreflang="es-MX" href="https://notchnest.app/es-mx/learn/does-the-mac-notch-actually-do-anything/" />
+<link rel="alternate" hreflang="es-419" href="https://notchnest.app/es-mx/learn/does-the-mac-notch-actually-do-anything/" />
+<link rel="alternate" hreflang="x-default" href="https://notchnest.app/learn/does-the-mac-notch-actually-do-anything/" />
+<meta property="og:title" content="Mac 刘海到底有没有用？" />
+<meta property="og:description" content="刘海默认做什么，以及如何给它派活。" />
+<meta property="og:url" content="https://notchnest.app/zh/learn/does-the-mac-notch-actually-do-anything/" />
+<meta property="og:locale" content="zh_CN" />
+<meta property="og:type" content="article" />
+<meta property="og:image" content="https://notchnest.app/assets/og/does-the-mac-notch-actually-do-anything.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@codetard" />
+<meta name="twitter:creator" content="@codetard" />
+<link rel="stylesheet" href="/styles.css" />
+<link rel="apple-touch-icon" href="/assets/notchnest-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<meta name="theme-color" content="#000000" />
+<meta name="color-scheme" content="dark" />
+<script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org", "@type": "Article",
+    "headline": "Mac 刘海到底有没有用？",
+    "description": "MacBook 刘海默认做什么、里面有什么，以及应用如何让它有用。",
+    "image": "https://notchnest.app/assets/og/does-the-mac-notch-actually-do-anything.png",
+    "datePublished": "2026-06-10T00:00:00+00:00", "dateModified": "2026-06-13T00:00:00+00:00",
+    "inLanguage": "zh-Hans",
+    "author": { "@type": "Person", "name": "Satnam Singh", "url": "https://silverseahog.com/", "jobTitle": "Swift Developer",
+      "sameAs": ["https://silverseahog.com/","https://twitter.com/codetard","https://github.com/29satnam","https://www.linkedin.com/in/satnam-singh-948348aa/","https://instagram.com/codetard"] },
+    "publisher": { "@type": "Organization", "name": "NotchNest", "logo": { "@type": "ImageObject", "url": "https://notchnest.app/assets/notchnest-icon.png" } },
+    "mainEntityOfPage": "https://notchnest.app/zh/learn/does-the-mac-notch-actually-do-anything/"
+  },
+  {
+    "@context": "https://schema.org", "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://notchnest.app/zh/" },
+      { "@type": "ListItem", "position": 2, "name": "学习", "item": "https://notchnest.app/zh/learn/" },
+      { "@type": "ListItem", "position": 3, "name": "刘海有用吗？", "item": "https://notchnest.app/zh/learn/does-the-mac-notch-actually-do-anything/" }
+    ]
+  },
+  {
+    "@context": "https://schema.org", "@type": "FAQPage", "inLanguage": "zh-Hans",
+    "mainEntity": [
+      { "@type": "Question", "name": "Mac 刘海有 Face ID 吗？", "acceptedAnswer": { "@type": "Answer", "text": "没有。刘海只包含 1080p FaceTime 摄像头和一个环境光传感器——没有 TrueDepth 阵列，没有 Face ID。键盘上的触控 ID 负责身份验证。" } },
+      { "@type": "Question", "name": "刘海默认会做什么吗？", "acceptedAnswer": { "@type": "Answer", "text": "几乎不会。macOS 在摄像头启用时亮起绿点、在其周围排布菜单栏图标、并可为全屏视频加边。没有组件界面。" } },
+      { "@type": "Question", "name": "我能让刘海有用吗？", "acceptedAnswer": { "@type": "Answer", "text": "能，装一个应用即可。NotchNest 之类的应用会加入悬停触发的面板，含日历、AI 剪贴板、笔记、番茄钟、音乐和 AirDrop。" } }
+    ]
+  }
+]
+</script>
+</head>
+<body>
+<nav class="nn-nav"><div class="nn-nav-inner">
+  <a class="nn-brand" href="/zh/"><img class="nn-brand-mark" src="/assets/notchnest-icon.png" alt="" width="28" height="28"/><span>NotchNest</span></a>
+  <div class="nn-nav-links">
+    <a href="/learn/does-the-mac-notch-actually-do-anything/">EN</a>
+    <a href="/zh/learn/" class="nn-nav-keep">学习</a>
+  </div>
+</div></nav>
+
+<main class="main-container"><div class="learn-wrap">
+  <div class="crumbs"><a href="/zh/">首页</a><span class="sep">/</span><a href="/zh/learn/">学习</a><span class="sep">/</span><span>刘海有用吗？</span></div>
+
+  <header class="article-head">
+    <span class="article-kicker">解读</span>
+    <h1 class="article-h1">Mac 刘海到底有没有用？</h1>
+    <p class="article-lede">Apple 把刘海当作装饰空间。这里给出诚实答案：它开箱即用时做什么、里面有什么，以及如何给它派上真正的活。</p>
+    <div class="article-meta"><span>更新于 2026 年 6 月 13 日</span><span class="dot"></span><span>阅读 5 分钟</span><span class="dot"></span><span>作者 Satnam Singh</span></div>
+  </header>
+
+  <article class="article-body">
+    <p>简短答案：不，macOS 刘海默认什么都不做。它是一个容纳摄像头的缺口。macOS 在它周围绘制菜单栏，其余留作黑色空间。</p>
+    <p>放在 2026 年，这是个奇怪的答案——毕竟三年来 iPhone 一直把摄像头缺口变成手机上最有用的界面元素（灵动岛）。那么我们来拆解它里面究竟有什么、它能做什么，以及你能做什么。</p>
+    <h2>刘海里有什么？</h2>
+    <ul>
+      <li><strong>1080p FaceTime 高清摄像头。</strong>刘海存在的原因。传感器比之前的 720p 摄像头更大——弱光更好、更清晰。</li>
+      <li><strong>环境光传感器。</strong>调节原彩显示与屏幕亮度。</li>
+      <li><strong>就这些。</strong>没有 TrueDepth 阵列，没有 Face ID，没有红外，没有 LiDAR。</li>
+    </ul>
+    <p>没有 Face ID 是被问得最多、也最令人失望的答案。Apple 有这套硬件，只是选择不在 Mac 上提供——大概因为键盘上的触控 ID 已覆盖大多数身份验证需求。</p>
+    <h2>macOS 拿刘海做什么？</h2>
+    <p>几乎没有。总共三件事：</p>
+    <ul>
+      <li>摄像头启用时，在刘海右缘亮起一个绿点。</li>
+      <li>把菜单栏绕它排布。会落在刘海下方的图标会被隐藏，直到你点进菜单栏。</li>
+      <li>在全屏视频时为其加边。macOS 可选地为全屏内容顶部加黑边，以免被刘海裁切。</li>
+    </ul>
+    <p>没有组件界面。没有点按目标。没有拖拽目标。没有悬停行为。就系统而言，刘海是一个礼貌的洞。</p>
+    <div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body">
+        <h3>90 秒给你的刘海派个活</h3>
+        <p>NotchNest 为空刘海加入日历、AI 剪贴板、笔记、番茄钟、音乐和 AirDrop。免费。</p>
+      </div>
+      <a href="https://apps.apple.com/cn/app/notchnest-power-your-notch/id6747612321" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="在 Mac App Store 下载" /></a>
+    </div>
+    <h2>Apple 为何不在刘海里放界面？</h2>
+    <p>几个可能的原因：</p>
+    <ul>
+      <li><strong>光标。</strong>iPhone 的灵动岛好用是因为手指能触摸它。在 Mac 上你得把光标移到刘海——而 macOS 已有控制中心承担此事。</li>
+      <li><strong>可发现性。</strong>一个没有屏上提示的新交互区很难教会用户。大多数人永远不会发现它。</li>
+      <li><strong>多显示器。</strong>刘海只存在于笔记本内建屏幕上。只在一块屏幕上生效的界面会不一致。</li>
+    </ul>
+    <p>这些是不是好理由，取决于你多在意这块浪费的空间。第三方开发者显然不认同——参见最佳 macOS 刘海应用——并构建了 Apple 不做的交互层。</p>
+    <h2>刘海能变得有用吗？</h2>
+    <p>能，装一个即可。NotchNest 之类的应用加入悬停触发面板：把光标移到刘海，它便展开为玻璃质感的组件面板。这是个小小的 UX 妙招，解决了可发现性问题（你终会学会悬停手势），并利用了原本闲置的空间。</p>
+    <p>你能往里放什么：</p>
+    <ul>
+      <li>今日日历，含 AI 生成的会议摘要</li>
+      <li>AI 剪贴板历史，含改写与总结</li>
+      <li>快速笔记（含 AI 润色，同步到 iCloud）</li>
+      <li>番茄钟，含休息循环</li>
+      <li>Spotify 或 Apple Music 的“正在播放”</li>
+      <li>拖拽 AirDrop 与文件托盘，处理进行中的文件</li>
+      <li>摄像头镜像，一键预览摄像头</li>
+      <li>书签架，一键打开网站</li>
+    </ul>
+    <h2>有什么代价？</h2>
+    <p>说实话，几乎没有。刘海应用住在菜单栏，空闲时休眠，占用个位数 MB 内存。没有可测的电池影响。代价是你得记住刘海是可交互的——一旦记住，你就会不断用它。</p>
+    <h2>结论</h2>
+    <p>开箱即用时，Mac 刘海除了容纳摄像头什么都不做。这是实话。但硬件在那儿、屏幕空间在那儿，一次免费下载就能解决问题。如果过去几年你一直忽视刘海，值得花十分钟。</p>
+
+    <aside class="author-bio">
+      <img class="author-avatar" src="https://github.com/29satnam.png" alt="Satnam Singh" width="56" height="56" loading="lazy" />
+      <div>
+        <h3>关于作者</h3>
+        <p><strong>Satnam Singh</strong> 是 NotchNest 背后的 Swift 开发者。他撰写关于 macOS 生产力、Apple 芯片上的 AI 以及独立应用工艺的文章。<a href="https://silverseahog.com/" target="_blank" rel="noopener">silverseahog.com</a> · <a href="https://twitter.com/codetard" target="_blank" rel="noopener nofollow">@codetard</a></p>
+      </div>
+    </aside>
+
+    <section class="related-section">
+      <h2>继续阅读</h2>
+      <div class="related-grid">
+        <a class="related-card" href="/zh/learn/how-to-use-the-macbook-notch/"><h3>使用 MacBook 刘海</h3><p>三步让刘海有用。</p></a>
+        <a class="related-card" href="/zh/learn/best-macos-notch-apps/"><h3>最佳 macOS 刘海应用</h3><p>2026 盘点。</p></a>
+        <a class="related-card" href="/learn/best-macos-notch-apps/"><h3>Best macOS notch apps</h3><p>英文——2026 盘点。</p></a>
+      </div>
+    </section>
+  </article>
+
+  <footer class="site-footer">
+    <div class="footer-bottom"><span>© <span id="yr"></span> NotchNest · Satnam Singh</span><div class="footer-lang"><a href="/learn/does-the-mac-notch-actually-do-anything/" hreflang="en">English</a><a href="/de/learn/does-the-mac-notch-actually-do-anything/" hreflang="de">Deutsch</a><a href="/zh/learn/does-the-mac-notch-actually-do-anything/" hreflang="zh" aria-current="page">中文</a><a href="/ar/learn/does-the-mac-notch-actually-do-anything/" hreflang="ar">العربية</a><a href="/fr/learn/does-the-mac-notch-actually-do-anything/" hreflang="fr">Français</a><a href="/pt-br/learn/does-the-mac-notch-actually-do-anything/" hreflang="pt-BR">Português (BR)</a><a href="/pt-pt/learn/does-the-mac-notch-actually-do-anything/" hreflang="pt-PT">Português (PT)</a><a href="/es-mx/learn/does-the-mac-notch-actually-do-anything/" hreflang="es-MX">Español (MX)</a></div></div>
+  </footer>
+</div></main>
+<script>var yr=document.getElementById('yr');if(yr)yr.textContent=new Date().getFullYear();</script>
+</body></html>
