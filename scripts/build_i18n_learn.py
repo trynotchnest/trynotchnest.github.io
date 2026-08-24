@@ -1711,6 +1711,249 @@ DROP = {
 }
 
 
+# ── macbook-air-vs-pro-notch ────────────────────────────────────────────────
+AIRPRO = {
+    "de": {"title": "MacBook Air vs. Pro: die Notch im Vergleich — NotchNest", "description": "Unterscheiden sich die Notches von MacBook Air und Pro? Kamera, Größe, Display-Technik und welche Modelle eine Notch haben — erklärt für 2026.",
+           "og_title": "MacBook Air vs. Pro: die Notch", "og_desc": "Was sich zwischen Air- und Pro-Notch wirklich unterscheidet.",
+           "jsonld_headline": "MacBook Air vs. Pro: die Notch im Vergleich", "jsonld_desc": "Die Unterschiede zwischen den Notches von MacBook Air und Pro, erklärt für 2026.",
+           "kicker": KICK["explainer"]["de"], "h1": "MacBook Air vs. Pro: die Notch im Vergleich",
+           "lede": "Sowohl MacBook Air als auch MacBook Pro haben eine Notch — aber die Displays drumherum sind nicht identisch. Hier, was sich wirklich unterscheidet.",
+           "readtime": READ5["de"], "crumb_this": "Air vs. Pro Notch",
+           "faq": [("Ist die MacBook-Air-Notch dieselbe wie die Pro?", "Die Notch-Hardware — 1080p-Kamera und Umgebungslichtsensor — ist im Wesentlichen identisch. Der Unterschied ist das Display: Das Pro nutzt Mini-LED mit ProMotion und höherer Helligkeit, das Air ein normales 60-Hz-LED-Panel."),
+                   ("Hat das MacBook Air Face ID in der Notch?", "Nein. Weder Air noch Pro haben Face ID. Die Notch enthält nur die FaceTime-Kamera und einen Umgebungslichtsensor. Authentifizierung läuft über Touch ID auf der Tastatur."),
+                   ("Welche MacBook Airs haben eine Notch?", "Das MacBook Air 13\" M2 (2022) und neuer sowie das MacBook Air 15\" M2 (2023) und neuer. Das MacBook Air M1 (2020) hat keine Notch."),
+                   ("Funktionieren Notch-Apps auf Air und Pro gleich?", "Ja. Apps wie NotchNest rendern auf beiden identisch um die Notch und fallen auf notchlosen Macs auf ein Top-Bar-Panel zurück.")],
+           "body": """<p>Seit 2021 (Pro) und 2022 (Air) kommen Apples Laptops mit einer Notch. Oft wird gefragt, ob die Notch des Air anders ist als die des Pro. Kurze Antwort: die Notch selbst ist nahezu identisch; das Display drumherum ist der Unterschied.</p>
+    <h2>Die Notch ist im Grunde gleich</h2>
+    <p>Beide beherbergen eine 1080p-FaceTime-HD-Kamera und einen Umgebungslichtsensor. Keine hat Face ID. Die Ausschnittmaße sind über die Modelle sehr ähnlich, sodass Notch-Apps auf beiden gleich funktionieren.</p>
+    <h2>Wo sich Air und Pro unterscheiden</h2>
+    <ul>
+      <li><strong>Display-Technik:</strong> MacBook Pro 14"/16" nutzen Mini-LED (Liquid Retina XDR) mit bis zu 1000 Nits Dauerhelligkeit und ProMotion (120 Hz). Das Air nutzt ein normales LED-Liquid-Retina-Panel mit 60 Hz.</li>
+      <li><strong>Helligkeit:</strong> Das Pro erreicht viel höhere Spitzenhelligkeit für HDR; das Schwarz der Notch fügt sich in die tieferen Schwarztöne des Pro besser ein.</li>
+      <li><strong>Größen:</strong> Air in 13" und 15"; Pro in 14" und 16".</li>
+    </ul>
+    <h2>Welche Macs haben eine Notch?</h2>
+    <ul>
+      <li><strong>MacBook Pro 14" / 16"</strong> — ab 2021 (M1 Pro/Max).</li>
+      <li><strong>MacBook Air 13"</strong> — ab M2 (2022).</li>
+      <li><strong>MacBook Air 15"</strong> — ab M2 (2023).</li>
+    </ul>
+    <p>Das MacBook Air M1 (2020) und ältere Pros haben keine Notch. Lies „Was ist die macOS-Notch" für den vollen Hintergrund.</p>
+    <h2>Funktionieren Notch-Apps auf Air und Pro gleich?</h2>
+    <p>Ja. NotchNest und ähnliche Apps erkennen die Notch und rendern auf Air und Pro identisch um sie herum. Auf notchlosen Macs (Air M1, ältere Pros, Desktops) fällt NotchNest auf ein schmales Top-Bar-Panel zurück — du bist also so oder so abgedeckt. Probier den Notch-Playground im Browser.</p>
+    <div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>Mach deine Notch nützlich</h3><p>NotchNest bringt zehn Tools in die Notch deines MacBooks. Kostenlos im Mac App Store.</p></div>
+      <a href="%STORE%" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="Im Mac App Store laden" /></a>
+    </div>""",
+           "related": _related("de", ("/learn/what-is-the-macos-notch/", "What is the macOS notch?", "Englisch — Grundlagen."))},
+    "zh": {"title": "MacBook Air 与 Pro 刘海：有何不同？— NotchNest", "description": "MacBook Air 与 MacBook Pro 的刘海有区别吗？摄像头、尺寸、屏幕技术，以及哪些机型有刘海——2026 详解。",
+           "og_title": "MacBook Air 与 Pro 刘海", "og_desc": "Air 与 Pro 刘海之间究竟有何不同。",
+           "jsonld_headline": "MacBook Air 与 Pro 刘海：有何不同？", "jsonld_desc": "MacBook Air 与 Pro 刘海之间的差异，2026 详解。",
+           "kicker": KICK["explainer"]["zh"], "h1": "MacBook Air 与 Pro 刘海：有何不同？",
+           "lede": "MacBook Air 和 MacBook Pro 都有刘海——但周围的屏幕并不相同。这里讲清真正的差别。",
+           "readtime": READ5["zh"], "crumb_this": "Air 与 Pro 刘海",
+           "faq": [("MacBook Air 的刘海和 Pro 一样吗？", "刘海硬件——1080p 摄像头和环境光传感器——基本相同。差别在屏幕：Pro 用带 ProMotion、更高亮度的 mini-LED，Air 用标准 60Hz LED 面板。"),
+                   ("MacBook Air 的刘海里有 Face ID 吗？", "没有。Air 和 Pro 都没有 Face ID。刘海只含 FaceTime 摄像头和环境光传感器。身份验证靠键盘上的触控 ID。"),
+                   ("哪些 MacBook Air 有刘海？", "MacBook Air 13 英寸 M2（2022）及更新，以及 MacBook Air 15 英寸 M2（2023）及更新。MacBook Air M1（2020）没有刘海。"),
+                   ("刘海应用在 Air 和 Pro 上表现一样吗？", "一样。NotchNest 之类的应用在两者上围绕刘海的渲染相同，并在无刘海的 Mac 上回退为顶栏面板。")],
+           "body": """<p>自 2021 年（Pro）和 2022 年（Air）起，Apple 的笔记本都带刘海。人们常问 Air 的刘海是否和 Pro 不同。简短回答：刘海本身几乎相同；不同在于周围的屏幕。</p>
+    <h2>刘海基本一样</h2>
+    <p>两者都容纳一颗 1080p FaceTime 高清摄像头和一个环境光传感器。都没有 Face ID。各机型的缺口尺寸非常接近，因此刘海应用在两者上表现相同。</p>
+    <h2>Air 与 Pro 的差别</h2>
+    <ul>
+      <li><strong>屏幕技术：</strong>MacBook Pro 14/16 英寸使用 mini-LED（Liquid Retina XDR），持续亮度高达 1000 尼特并支持 ProMotion（120Hz）。Air 使用标准 LED Liquid Retina 面板，60Hz。</li>
+      <li><strong>亮度：</strong>Pro 在 HDR 下峰值亮度高得多；刘海的黑色在 Pro 更深的黑上融合得更好。</li>
+      <li><strong>尺寸：</strong>Air 有 13 和 15 英寸；Pro 有 14 和 16 英寸。</li>
+    </ul>
+    <h2>哪些 Mac 有刘海？</h2>
+    <ul>
+      <li><strong>MacBook Pro 14 / 16 英寸</strong>——2021 年（M1 Pro/Max）起。</li>
+      <li><strong>MacBook Air 13 英寸</strong>——M2（2022）起。</li>
+      <li><strong>MacBook Air 15 英寸</strong>——M2（2023）起。</li>
+    </ul>
+    <p>MacBook Air M1（2020）和更旧的 Pro 没有刘海。阅读“什么是 macOS 刘海”了解完整背景。</p>
+    <h2>刘海应用在 Air 和 Pro 上一样吗？</h2>
+    <p>一样。NotchNest 及类似应用会检测刘海，并在 Air 和 Pro 上围绕它做相同渲染。在无刘海的 Mac（Air M1、更旧的 Pro、台式机）上，NotchNest 回退为一个纤薄的顶栏面板，因此无论哪种都覆盖到了。在浏览器里试试刘海演示。</p>
+    <div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>让你的刘海有用</h3><p>NotchNest 把十个工具放进 MacBook 刘海。在 Mac App Store 免费。</p></div>
+      <a href="%STORE%" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="在 Mac App Store 下载" /></a>
+    </div>""",
+           "related": _related("zh", ("/learn/what-is-the-macos-notch/", "What is the macOS notch?", "英文——基础。"))},
+    "ar": {"title": "نتش MacBook Air مقابل Pro: ما الفرق؟ — NotchNest", "description": "هل يختلف نتش MacBook Air عن Pro؟ الكاميرا والحجم وتقنية الشاشة وأي الطُرز تملك نتشًا — شرح لعام 2026.",
+           "og_title": "نتش MacBook Air مقابل Pro", "og_desc": "ما يختلف فعلًا بين نتش Air وPro.",
+           "jsonld_headline": "نتش MacBook Air مقابل Pro: ما الفرق؟", "jsonld_desc": "الفروق بين نتش MacBook Air وPro، شرح لعام 2026.",
+           "kicker": KICK["explainer"]["ar"], "h1": "نتش MacBook Air مقابل Pro: ما الفرق؟",
+           "lede": "يملك كل من MacBook Air وMacBook Pro نتشًا — لكن الشاشات حوله ليست متطابقة. إليك ما يختلف فعلًا.",
+           "readtime": READ5["ar"], "crumb_this": "نتش Air مقابل Pro",
+           "faq": [("هل نتش MacBook Air هو نفسه Pro؟", "عتاد النتش — كاميرا 1080p ومستشعر ضوء محيط — متطابق جوهريًا. الفرق في الشاشة: يستخدم Pro تقنية mini-LED مع ProMotion وسطوع أعلى، ويستخدم Air لوحة LED عادية بتردد 60 هرتز."),
+                   ("هل يملك MacBook Air ‏Face ID في النتش؟", "لا. لا يملك Air ولا Pro ‏Face ID. يحتوي النتش على كاميرا FaceTime ومستشعر ضوء محيط فقط. والمصادقة عبر Touch ID في لوحة المفاتيح."),
+                   ("أي أجهزة MacBook Air تملك نتشًا؟", "MacBook Air مقاس 13 بوصة M2 (2022) وأحدث، وMacBook Air مقاس 15 بوصة M2 (2023) وأحدث. أما MacBook Air M1 (2020) فلا نتش له."),
+                   ("هل تعمل تطبيقات النتش بالطريقة نفسها على Air وPro؟", "نعم. تطبيقات مثل NotchNest ترسم حول النتش بشكل متطابق على الاثنين، وتعود إلى لوحة شريط علوي على أجهزة الماك بلا نتش.")],
+           "body": """<p>منذ 2021 (Pro) و2022 (Air)، تأتي حواسيب Apple المحمولة بنتش. كثيرًا ما يُسأل: هل نتش Air مختلف عن Pro؟ الجواب المختصر: النتش نفسه شبه متطابق؛ والاختلاف في الشاشة حوله.</p>
+    <h2>النتش متماثل أساسًا</h2>
+    <p>كلاهما يحتضن كاميرا FaceTime HD بدقة 1080p ومستشعر ضوء محيط. لا أحد منهما يملك Face ID. أبعاد الفتحة متقاربة جدًا عبر الطُرز، فتتصرّف تطبيقات النتش بالطريقة نفسها على الاثنين.</p>
+    <h2>أين يختلف Air وPro</h2>
+    <ul>
+      <li><strong>تقنية الشاشة:</strong> يستخدم MacBook Pro مقاس 14"/16" تقنية mini-LED (Liquid Retina XDR) بسطوع مستمر يصل إلى 1000 شمعة وProMotion (120 هرتز). ويستخدم Air لوحة LED Liquid Retina عادية بتردد 60 هرتز.</li>
+      <li><strong>السطوع:</strong> يبلغ Pro ذروة سطوع أعلى بكثير لـ HDR؛ ويندمج سواد النتش أفضل مع سواد Pro الأعمق.</li>
+      <li><strong>الأحجام:</strong> يأتي Air بمقاس 13" و15"؛ وPro بمقاس 14" و16".</li>
+    </ul>
+    <h2>أي أجهزة ماك تملك نتشًا؟</h2>
+    <ul>
+      <li><strong>MacBook Pro مقاس 14" / 16"</strong> — من 2021 (M1 Pro/Max).</li>
+      <li><strong>MacBook Air مقاس 13"</strong> — من M2 (2022).</li>
+      <li><strong>MacBook Air مقاس 15"</strong> — من M2 (2023).</li>
+    </ul>
+    <p>لا يملك MacBook Air M1 (2020) وأجهزة Pro الأقدم نتشًا. اقرأ «ما هو نتش macOS» للخلفية الكاملة.</p>
+    <h2>هل تعمل تطبيقات النتش بالطريقة نفسها على Air وPro؟</h2>
+    <p>نعم. يكتشف NotchNest والتطبيقات المشابهة النتش وترسم حوله بشكل متطابق على Air وPro. وعلى أجهزة الماك بلا نتش (Air M1، وPro الأقدم، والأجهزة المكتبية) يعود NotchNest إلى لوحة شريط علوي رفيعة، فأنت مغطّى في الحالتين. جرّب عرض النتش في متصفحك.</p>
+    <div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>اجعل نتشك مفيدًا</h3><p>يضع NotchNest عشر أدوات في نتش الماك بوك. مجانًا على Mac App Store.</p></div>
+      <a href="%STORE%" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="التنزيل من Mac App Store" /></a>
+    </div>""",
+           "related": _related("ar", ("/learn/what-is-the-macos-notch/", "What is the macOS notch?", "إنجليزي — الأساسيات."))},
+    "fr": {"title": "Encoche MacBook Air vs Pro : quelle différence ? — NotchNest", "description": "Les encoches des MacBook Air et Pro diffèrent-elles ? Caméra, taille, technologie d'écran et quels modèles ont une encoche — expliqué pour 2026.",
+           "og_title": "Encoche MacBook Air vs Pro", "og_desc": "Ce qui diffère réellement entre l'encoche de l'Air et du Pro.",
+           "jsonld_headline": "Encoche MacBook Air vs Pro : quelle différence ?", "jsonld_desc": "Les différences entre les encoches des MacBook Air et Pro, expliquées pour 2026.",
+           "kicker": KICK["explainer"]["fr"], "h1": "Encoche MacBook Air vs Pro : quelle différence ?",
+           "lede": "Le MacBook Air et le MacBook Pro ont tous deux une encoche — mais les écrans autour ne sont pas identiques. Voici ce qui diffère vraiment.",
+           "readtime": READ5["fr"], "crumb_this": "Encoche Air vs Pro",
+           "faq": [("L'encoche du MacBook Air est-elle la même que celle du Pro ?", "Le matériel de l'encoche — caméra 1080p et capteur de luminosité — est essentiellement identique. La différence, c'est l'écran : le Pro utilise du mini-LED avec ProMotion et une luminosité supérieure, l'Air un panneau LED standard 60 Hz."),
+                   ("Le MacBook Air a-t-il Face ID dans l'encoche ?", "Non. Ni l'Air ni le Pro n'ont Face ID. L'encoche ne contient que la caméra FaceTime et un capteur de luminosité. L'authentification passe par Touch ID sur le clavier."),
+                   ("Quels MacBook Air ont une encoche ?", "Le MacBook Air 13\" M2 (2022) et plus récents, et le MacBook Air 15\" M2 (2023) et plus récents. Le MacBook Air M1 (2020) n'a pas d'encoche."),
+                   ("Les apps d'encoche fonctionnent-elles pareil sur Air et Pro ?", "Oui. Des apps comme NotchNest s'affichent autour de l'encoche de façon identique sur les deux, et retombent sur un panneau haut d'écran sur les Mac sans encoche.")],
+           "body": """<p>Depuis 2021 (Pro) et 2022 (Air), les portables d'Apple ont une encoche. On demande souvent si l'encoche de l'Air diffère de celle du Pro. Réponse courte : l'encoche elle-même est quasi identique ; c'est l'écran autour qui diffère.</p>
+    <h2>L'encoche est en gros la même</h2>
+    <p>Les deux logent une caméra FaceTime HD 1080p et un capteur de luminosité. Aucun n'a Face ID. Les dimensions de la découpe sont très proches d'un modèle à l'autre, donc les apps d'encoche se comportent pareil sur les deux.</p>
+    <h2>Où l'Air et le Pro diffèrent</h2>
+    <ul>
+      <li><strong>Technologie d'écran :</strong> les MacBook Pro 14"/16" utilisent du mini-LED (Liquid Retina XDR) jusqu'à 1000 nits de luminosité soutenue et ProMotion (120 Hz). L'Air utilise un panneau LED Liquid Retina standard à 60 Hz.</li>
+      <li><strong>Luminosité :</strong> le Pro atteint une luminosité de pic bien plus élevée pour le HDR ; le noir de l'encoche se fond mieux dans les noirs plus profonds du Pro.</li>
+      <li><strong>Tailles :</strong> l'Air existe en 13" et 15" ; le Pro en 14" et 16".</li>
+    </ul>
+    <h2>Quels Mac ont une encoche ?</h2>
+    <ul>
+      <li><strong>MacBook Pro 14" / 16"</strong> — depuis 2021 (M1 Pro/Max).</li>
+      <li><strong>MacBook Air 13"</strong> — depuis M2 (2022).</li>
+      <li><strong>MacBook Air 15"</strong> — depuis M2 (2023).</li>
+    </ul>
+    <p>Le MacBook Air M1 (2020) et les Pro plus anciens n'ont pas d'encoche. Lisez « qu'est-ce que l'encoche macOS » pour le contexte complet.</p>
+    <h2>Les apps d'encoche fonctionnent-elles pareil sur Air et Pro ?</h2>
+    <p>Oui. NotchNest et les apps similaires détectent l'encoche et s'affichent autour de façon identique sur Air et Pro. Sur les Mac sans encoche (Air M1, Pro plus anciens, ordinateurs de bureau), NotchNest retombe sur un panneau haut d'écran fin, donc vous êtes couvert dans les deux cas. Essayez le terrain de jeu de l'encoche dans votre navigateur.</p>
+    <div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>Rendez votre encoche utile</h3><p>NotchNest met dix outils dans l'encoche de votre MacBook. Gratuit sur le Mac App Store.</p></div>
+      <a href="%STORE%" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="Télécharger sur le Mac App Store" /></a>
+    </div>""",
+           "related": _related("fr", ("/learn/what-is-the-macos-notch/", "What is the macOS notch?", "Anglais — les bases."))},
+    "pt-BR": {"title": "Notch do MacBook Air vs Pro: qual a diferença? — NotchNest", "description": "Os notches do MacBook Air e Pro diferem? Câmera, tamanho, tecnologia de tela e quais modelos têm notch — explicado para 2026.",
+              "og_title": "Notch do MacBook Air vs Pro", "og_desc": "O que realmente difere entre o notch do Air e do Pro.",
+              "jsonld_headline": "Notch do MacBook Air vs Pro: qual a diferença?", "jsonld_desc": "As diferenças entre os notches do MacBook Air e Pro, explicadas para 2026.",
+              "kicker": KICK["explainer"]["pt-BR"], "h1": "Notch do MacBook Air vs Pro: qual a diferença?",
+              "lede": "Tanto o MacBook Air quanto o MacBook Pro têm notch — mas as telas ao redor não são idênticas. Aqui está o que realmente difere.",
+              "readtime": READ5["pt-BR"], "crumb_this": "Notch Air vs Pro",
+              "faq": [("O notch do MacBook Air é o mesmo do Pro?", "O hardware do notch — câmera de 1080p e sensor de luz ambiente — é essencialmente idêntico. A diferença é a tela: o Pro usa mini-LED com ProMotion e brilho maior, o Air usa um painel LED padrão de 60Hz."),
+                      ("O MacBook Air tem Face ID no notch?", "Não. Nem o Air nem o Pro têm Face ID. O notch contém só a câmera FaceTime e um sensor de luz ambiente. A autenticação é via Touch ID no teclado."),
+                      ("Quais MacBook Air têm notch?", "O MacBook Air de 13\" M2 (2022) e posteriores, e o MacBook Air de 15\" M2 (2023) e posteriores. O MacBook Air M1 (2020) não tem notch."),
+                      ("Os apps de notch funcionam igual no Air e no Pro?", "Sim. Apps como o NotchNest renderizam ao redor do notch de forma idêntica nos dois, e recorrem a um painel superior em Macs sem notch.")],
+              "body": """<p>Desde 2021 (Pro) e 2022 (Air), os laptops da Apple vêm com notch. É comum perguntarem se o notch do Air é diferente do Pro. Resposta curta: o notch em si é quase idêntico; a diferença está na tela ao redor.</p>
+    <h2>O notch é basicamente o mesmo</h2>
+    <p>Ambos abrigam uma câmera FaceTime HD de 1080p e um sensor de luz ambiente. Nenhum tem Face ID. As dimensões do recorte são muito próximas entre os modelos, então os apps de notch se comportam igual nos dois.</p>
+    <h2>Onde Air e Pro diferem</h2>
+    <ul>
+      <li><strong>Tecnologia de tela:</strong> os MacBook Pro de 14"/16" usam mini-LED (Liquid Retina XDR) com até 1000 nits de brilho sustentado e ProMotion (120Hz). O Air usa um painel LED Liquid Retina padrão a 60Hz.</li>
+      <li><strong>Brilho:</strong> o Pro atinge um brilho de pico bem maior para HDR; o preto do notch se mistura melhor nos pretos mais profundos do Pro.</li>
+      <li><strong>Tamanhos:</strong> o Air vem em 13" e 15"; o Pro em 14" e 16".</li>
+    </ul>
+    <h2>Quais Macs têm notch?</h2>
+    <ul>
+      <li><strong>MacBook Pro de 14" / 16"</strong> — a partir de 2021 (M1 Pro/Max).</li>
+      <li><strong>MacBook Air de 13"</strong> — a partir do M2 (2022).</li>
+      <li><strong>MacBook Air de 15"</strong> — a partir do M2 (2023).</li>
+    </ul>
+    <p>O MacBook Air M1 (2020) e os Pro mais antigos não têm notch. Leia "o que é o notch do macOS" para o contexto completo.</p>
+    <h2>Os apps de notch funcionam igual no Air e no Pro?</h2>
+    <p>Sim. O NotchNest e apps similares detectam o notch e renderizam ao redor de forma idêntica no Air e no Pro. Em Macs sem notch (Air M1, Pro mais antigos, desktops), o NotchNest recorre a um painel superior fino, então você está coberto de qualquer jeito. Teste o playground do notch no navegador.</p>
+    <div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>Torne seu notch útil</h3><p>O NotchNest coloca dez ferramentas no notch do seu MacBook. Grátis na Mac App Store.</p></div>
+      <a href="%STORE%" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="Baixar na Mac App Store" /></a>
+    </div>""",
+              "related": _related("pt-BR", ("/learn/what-is-the-macos-notch/", "What is the macOS notch?", "Inglês — o básico."))},
+    "pt-PT": {"title": "Notch do MacBook Air vs Pro: qual a diferença? — NotchNest", "description": "Os notches do MacBook Air e Pro diferem? Câmara, tamanho, tecnologia de ecrã e que modelos têm notch — explicado para 2026.",
+              "og_title": "Notch do MacBook Air vs Pro", "og_desc": "O que realmente difere entre o notch do Air e do Pro.",
+              "jsonld_headline": "Notch do MacBook Air vs Pro: qual a diferença?", "jsonld_desc": "As diferenças entre os notches do MacBook Air e Pro, explicadas para 2026.",
+              "kicker": KICK["explainer"]["pt-PT"], "h1": "Notch do MacBook Air vs Pro: qual a diferença?",
+              "lede": "Tanto o MacBook Air como o MacBook Pro têm notch — mas os ecrãs à volta não são idênticos. Aqui está o que realmente difere.",
+              "readtime": READ5["pt-PT"], "crumb_this": "Notch Air vs Pro",
+              "faq": [("O notch do MacBook Air é o mesmo do Pro?", "O hardware do notch — câmara de 1080p e sensor de luz ambiente — é essencialmente idêntico. A diferença é o ecrã: o Pro usa mini-LED com ProMotion e brilho maior, o Air usa um painel LED padrão de 60Hz."),
+                      ("O MacBook Air tem Face ID no notch?", "Não. Nem o Air nem o Pro têm Face ID. O notch contém só a câmara FaceTime e um sensor de luz ambiente. A autenticação é via Touch ID no teclado."),
+                      ("Que MacBook Air têm notch?", "O MacBook Air de 13\" M2 (2022) e posteriores, e o MacBook Air de 15\" M2 (2023) e posteriores. O MacBook Air M1 (2020) não tem notch."),
+                      ("As apps de notch funcionam igual no Air e no Pro?", "Sim. Apps como o NotchNest desenham à volta do notch de forma idêntica nos dois, e recorrem a um painel superior em Macs sem notch.")],
+              "body": """<p>Desde 2021 (Pro) e 2022 (Air), os portáteis da Apple vêm com notch. É comum perguntarem se o notch do Air é diferente do Pro. Resposta curta: o notch em si é quase idêntico; a diferença está no ecrã à volta.</p>
+    <h2>O notch é basicamente o mesmo</h2>
+    <p>Ambos alojam uma câmara FaceTime HD de 1080p e um sensor de luz ambiente. Nenhum tem Face ID. As dimensões do recorte são muito próximas entre os modelos, por isso as apps de notch comportam-se igual nos dois.</p>
+    <h2>Onde Air e Pro diferem</h2>
+    <ul>
+      <li><strong>Tecnologia de ecrã:</strong> os MacBook Pro de 14"/16" usam mini-LED (Liquid Retina XDR) com até 1000 nits de brilho sustentado e ProMotion (120Hz). O Air usa um painel LED Liquid Retina padrão a 60Hz.</li>
+      <li><strong>Brilho:</strong> o Pro atinge um brilho de pico bem maior para HDR; o preto do notch mistura-se melhor nos pretos mais profundos do Pro.</li>
+      <li><strong>Tamanhos:</strong> o Air vem em 13" e 15"; o Pro em 14" e 16".</li>
+    </ul>
+    <h2>Que Macs têm notch?</h2>
+    <ul>
+      <li><strong>MacBook Pro de 14" / 16"</strong> — a partir de 2021 (M1 Pro/Max).</li>
+      <li><strong>MacBook Air de 13"</strong> — a partir do M2 (2022).</li>
+      <li><strong>MacBook Air de 15"</strong> — a partir do M2 (2023).</li>
+    </ul>
+    <p>O MacBook Air M1 (2020) e os Pro mais antigos não têm notch. Leia "o que é o notch do macOS" para o contexto completo.</p>
+    <h2>As apps de notch funcionam igual no Air e no Pro?</h2>
+    <p>Sim. O NotchNest e apps semelhantes detetam o notch e desenham à volta de forma idêntica no Air e no Pro. Em Macs sem notch (Air M1, Pro mais antigos, computadores de secretária), o NotchNest recorre a um painel superior fino, por isso está coberto de qualquer forma. Experimente o playground do notch no navegador.</p>
+    <div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>Torne o seu notch útil</h3><p>O NotchNest coloca dez ferramentas no notch do seu MacBook. Gratuito na Mac App Store.</p></div>
+      <a href="%STORE%" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="Descarregar na Mac App Store" /></a>
+    </div>""",
+              "related": _related("pt-PT", ("/learn/what-is-the-macos-notch/", "What is the macOS notch?", "Inglês — o básico."))},
+    "es-MX": {"title": "Notch del MacBook Air vs Pro: ¿cuál es la diferencia? — NotchNest", "description": "¿Los notches del MacBook Air y Pro difieren? Cámara, tamaño, tecnología de pantalla y qué modelos tienen notch — explicado para 2026.",
+              "og_title": "Notch del MacBook Air vs Pro", "og_desc": "Qué difiere realmente entre el notch del Air y el Pro.",
+              "jsonld_headline": "Notch del MacBook Air vs Pro: ¿cuál es la diferencia?", "jsonld_desc": "Las diferencias entre los notches del MacBook Air y Pro, explicadas para 2026.",
+              "kicker": KICK["explainer"]["es-MX"], "h1": "Notch del MacBook Air vs Pro: ¿cuál es la diferencia?",
+              "lede": "Tanto el MacBook Air como el MacBook Pro tienen notch — pero las pantallas alrededor no son idénticas. Aquí está lo que realmente difiere.",
+              "readtime": READ5["es-MX"], "crumb_this": "Notch Air vs Pro",
+              "faq": [("¿El notch del MacBook Air es el mismo que el del Pro?", "El hardware del notch — cámara de 1080p y sensor de luz ambiental — es esencialmente idéntico. La diferencia es la pantalla: el Pro usa mini-LED con ProMotion y más brillo, el Air usa un panel LED estándar de 60Hz."),
+                      ("¿El MacBook Air tiene Face ID en el notch?", "No. Ni el Air ni el Pro tienen Face ID. El notch contiene solo la cámara FaceTime y un sensor de luz ambiental. La autenticación es vía Touch ID en el teclado."),
+                      ("¿Qué MacBook Air tienen notch?", "El MacBook Air de 13\" M2 (2022) y posteriores, y el MacBook Air de 15\" M2 (2023) y posteriores. El MacBook Air M1 (2020) no tiene notch."),
+                      ("¿Las apps de notch funcionan igual en Air y Pro?", "Sí. Apps como NotchNest se renderizan alrededor del notch de forma idéntica en ambos, y recurren a un panel superior en Macs sin notch.")],
+              "body": """<p>Desde 2021 (Pro) y 2022 (Air), las laptops de Apple vienen con notch. Es común preguntar si el notch del Air es distinto del Pro. Respuesta corta: el notch en sí es casi idéntico; la diferencia está en la pantalla alrededor.</p>
+    <h2>El notch es básicamente el mismo</h2>
+    <p>Ambos alojan una cámara FaceTime HD de 1080p y un sensor de luz ambiental. Ninguno tiene Face ID. Las dimensiones del recorte son muy parecidas entre modelos, así que las apps de notch se comportan igual en ambos.</p>
+    <h2>Dónde difieren Air y Pro</h2>
+    <ul>
+      <li><strong>Tecnología de pantalla:</strong> los MacBook Pro de 14"/16" usan mini-LED (Liquid Retina XDR) con hasta 1000 nits de brillo sostenido y ProMotion (120Hz). El Air usa un panel LED Liquid Retina estándar a 60Hz.</li>
+      <li><strong>Brillo:</strong> el Pro alcanza un brillo pico mucho mayor para HDR; el negro del notch se mezcla mejor con los negros más profundos del Pro.</li>
+      <li><strong>Tamaños:</strong> el Air viene en 13" y 15"; el Pro en 14" y 16".</li>
+    </ul>
+    <h2>¿Qué Macs tienen notch?</h2>
+    <ul>
+      <li><strong>MacBook Pro de 14" / 16"</strong> — desde 2021 (M1 Pro/Max).</li>
+      <li><strong>MacBook Air de 13"</strong> — desde el M2 (2022).</li>
+      <li><strong>MacBook Air de 15"</strong> — desde el M2 (2023).</li>
+    </ul>
+    <p>El MacBook Air M1 (2020) y los Pro más antiguos no tienen notch. Lee "qué es el notch de macOS" para el contexto completo.</p>
+    <h2>¿Las apps de notch funcionan igual en Air y Pro?</h2>
+    <p>Sí. NotchNest y apps similares detectan el notch y se renderizan alrededor de forma idéntica en Air y Pro. En Macs sin notch (Air M1, Pro más antiguos, de escritorio), NotchNest recurre a un panel superior delgado, así que estás cubierto de cualquier forma. Prueba el playground del notch en tu navegador.</p>
+    <div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>Haz útil tu notch</h3><p>NotchNest pone diez herramientas en el notch de tu MacBook. Gratis en el Mac App Store.</p></div>
+      <a href="%STORE%" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="Descargar en el Mac App Store" /></a>
+    </div>""",
+              "related": _related("es-MX", ("/learn/what-is-the-macos-notch/", "What is the macOS notch?", "Inglés — lo básico."))},
+}
+
+
 # ── notch-camera-on-mac ─────────────────────────────────────────────────────
 CAMERA = {
     "de": {"title": "Die Notch-Kamera auf dem Mac — NotchNest", "description": "Alles über die Notch-Kamera auf dem Mac — die 1080p-Webcam in der Notch, wie du sie vorschaust und ein Notch-Kamera-Spiegel für schnelle Checks.",
@@ -1899,4 +2142,5 @@ LEARN_ARTICLES = {
     "what-is-dynamic-island-on-mac": _assemble(DYN),
     "drop-files-into-macbook-notch": _assemble(DROP),
     "notch-camera-on-mac": _assemble(CAMERA),
+    "macbook-air-vs-pro-notch": _assemble(AIRPRO),
 }
