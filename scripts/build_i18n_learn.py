@@ -1711,6 +1711,214 @@ DROP = {
 }
 
 
+# ── macos-tahoe-notch-features ──────────────────────────────────────────────
+TAHOE = {
+    "de": {"title": "macOS Tahoe & die Notch: was neu ist — NotchNest", "description": "Was macOS Tahoe (macOS 26) für MacBook-Notch und Menüleiste ändert — Liquid Glass, Transparenz und was Apps obendrauf bringen.",
+           "og_title": "macOS Tahoe & die Notch", "og_desc": "Was Tahoe für die Notch ändert — und was nicht.",
+           "jsonld_headline": "macOS Tahoe & die Notch: was neu ist", "jsonld_desc": "Was macOS Tahoe für die MacBook-Notch ändert und was Apps ergänzen.",
+           "kicker": KICK["explainer"]["de"], "h1": "macOS Tahoe & die Notch: was neu ist",
+           "lede": "macOS Tahoe hat den Look der Menüleiste mit Liquid Glass aufgefrischt. Hier, was das für die Notch bedeutet — und was sie weiterhin nicht tut.",
+           "readtime": READ5["de"], "crumb_this": "macOS Tahoe & die Notch",
+           "faq": [("Hat macOS Tahoe die Notch verändert?", "Visuell ja — Tahoes Liquid-Glass-Design macht die Menüleiste durchscheinender und die Notch fügt sich natürlicher ein. Funktional nein — die Notch hat weiterhin keine eingebaute interaktive UI."),
+                   ("Fügt macOS Tahoe Dynamic Island zur Notch hinzu?", "Nein. macOS Tahoe hat kein Dynamic-Island-artiges Panel und keine Notch-Widgets hinzugefügt. Dafür sind weiterhin Drittanbieter-Apps wie NotchNest nötig."),
+                   ("Funktioniert NotchNest auf macOS Tahoe?", "Ja. NotchNest unterstützt macOS Tahoe (26), Sequoia (15) und Sonoma (14). KI-Funktionen brauchen Sequoia oder neuer auf Apple Silicon."),
+                   ("Lohnt sich das Update auf Tahoe wegen der Notch?", "Tahoe verbessert, wie die Notch aussieht, aber nicht, was sie tut. Funktionalität kommt weiterhin aus einer Notch-App.")],
+           "body": """<p>macOS Tahoe (macOS 26) brachte Apples Liquid-Glass-Designsprache auf den Desktop, samt einer durchscheinenderen Menüleiste. Natürlich fragt man, was sich für die Notch geändert hat. Hier der praktische Überblick.</p>
+    <h2>Was Tahoe geändert hat</h2>
+    <ul>
+      <li><strong>Liquid-Glass-Menüleiste</strong> — durchscheinender, mit dezent durchschimmerndem Inhalt. Der Bereich um die Notch nimmt dieses Material auf.</li>
+      <li><strong>Aufgefrischtes Kontrollzentrum</strong> — neu gestaltet, mit denselben Modulen.</li>
+      <li><strong>Engere visuelle Integration</strong> — die Notch fügt sich natürlicher in die glasige Leiste ein.</li>
+    </ul>
+    <h2>Was Tahoe NICHT geändert hat</h2>
+    <p>Die Notch hat weiterhin keine eingebaute interaktive UI. macOS Tahoe hat kein Dynamic-Island-artiges Panel, kein Face ID und keine Notch-Widgets hinzugefügt. Sie bleibt eine passive Aussparung — siehe „Gibt es Dynamic Island auf dem Mac".</p>
+    <h2>Funktionieren Notch-Apps auf Tahoe?</h2>
+    <p>Ja. NotchNest unterstützt macOS Tahoe samt Liquid-Glass-Look und läuft weiter auf Sonoma (14) und Sequoia (15). On-Device-Apple-Intelligence-Funktionen (KI-Zwischenablage, Kalender-Briefings, Notiz-Verfeinerung) brauchen Sequoia oder neuer auf Apple Silicon.</p>
+    <h2>Solltest du wegen der Notch updaten?</h2>
+    <p>Tahoe lässt die Notch schöner aussehen, aber nicht funktionaler. Willst du, dass die Notch wirklich etwas tut, kommt das weiterhin aus einer App. Probier den Notch-Playground, um zu sehen, was möglich ist.</p>
+    <div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>Mach deine Notch nützlich</h3><p>NotchNest bringt zehn Tools in die Notch deines MacBooks. Kostenlos im Mac App Store.</p></div>
+      <a href="%STORE%" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="Im Mac App Store laden" /></a>
+    </div>""",
+           "related": _related("de", ("/learn/what-is-dynamic-island-on-mac/", "Is there a Dynamic Island on Mac?", "Englisch — die Antwort."))},
+    "zh": {"title": "macOS Tahoe 与刘海：有何新变化 — NotchNest", "description": "macOS Tahoe（macOS 26）为 MacBook 刘海和菜单栏带来了什么变化——Liquid Glass、透明度，以及应用在其上叠加了什么。",
+           "og_title": "macOS Tahoe 与刘海", "og_desc": "Tahoe 为刘海改了什么——以及没改什么。",
+           "jsonld_headline": "macOS Tahoe 与刘海：有何新变化", "jsonld_desc": "macOS Tahoe 为 MacBook 刘海改了什么，以及应用补充了什么。",
+           "kicker": KICK["explainer"]["zh"], "h1": "macOS Tahoe 与刘海：有何新变化",
+           "lede": "macOS Tahoe 用 Liquid Glass 刷新了菜单栏外观。这里讲清它对刘海意味着什么——以及它仍然不做什么。",
+           "readtime": READ5["zh"], "crumb_this": "macOS Tahoe 与刘海",
+           "faq": [("macOS Tahoe 改变了刘海吗？", "视觉上，是——Tahoe 的 Liquid Glass 设计让菜单栏更透，刘海融合得更自然。功能上，没有——刘海仍没有内建的交互界面。"),
+                   ("macOS Tahoe 给刘海加了灵动岛吗？", "没有。macOS Tahoe 没有加入灵动岛式面板或任何刘海组件。那仍需要 NotchNest 这样的第三方应用。"),
+                   ("NotchNest 能在 macOS Tahoe 上用吗？", "能。NotchNest 支持 macOS Tahoe（26）、Sequoia（15）和 Sonoma（14）。AI 功能需要 Apple 芯片上的 Sequoia 或更新。"),
+                   ("为刘海值得升级到 Tahoe 吗？", "Tahoe 让刘海看起来更好，但不改变它能做什么。功能仍来自刘海应用。")],
+           "body": """<p>macOS Tahoe（macOS 26）把 Apple 的 Liquid Glass 设计语言带到桌面，包括更半透明的菜单栏。人们自然会问刘海有什么变化。这里给出实用梳理。</p>
+    <h2>Tahoe 改了什么</h2>
+    <ul>
+      <li><strong>Liquid Glass 菜单栏</strong>——更半透明，内容微微透出。刘海周围的区域采用这种材质。</li>
+      <li><strong>刷新的控制中心</strong>——重新设计，模块相同。</li>
+      <li><strong>更紧密的视觉融合</strong>——刘海更自然地融入玻璃质感的栏中。</li>
+    </ul>
+    <h2>Tahoe 没有改什么</h2>
+    <p>刘海仍没有内建的交互界面。macOS Tahoe 没有加入灵动岛式面板、Face ID 或任何刘海组件。它仍是被动缺口——参见“Mac 上有灵动岛吗”。</p>
+    <h2>刘海应用能在 Tahoe 上用吗？</h2>
+    <p>能。NotchNest 支持 macOS Tahoe，包括 Liquid Glass 外观，并继续运行于 Sonoma（14）和 Sequoia（15）。本地 Apple Intelligence 功能（AI 剪贴板、日历摘要、笔记润色）需要 Apple 芯片上的 Sequoia 或更新。</p>
+    <h2>该为刘海升级吗？</h2>
+    <p>Tahoe 让刘海更好看，但不更实用。若想让刘海真正做点事，那仍来自应用。试试刘海演示看看有哪些可能。</p>
+    <div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>让你的刘海有用</h3><p>NotchNest 把十个工具放进 MacBook 刘海。在 Mac App Store 免费。</p></div>
+      <a href="%STORE%" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="在 Mac App Store 下载" /></a>
+    </div>""",
+           "related": _related("zh", ("/learn/what-is-dynamic-island-on-mac/", "Is there a Dynamic Island on Mac?", "英文——答案。"))},
+    "ar": {"title": "macOS Tahoe والنتش: ما الجديد — NotchNest", "description": "ما الذي يغيّره macOS Tahoe (macOS 26) لنتش الماك بوك وشريط القوائم — Liquid Glass والشفافية وما تضيفه التطبيقات فوقه.",
+           "og_title": "macOS Tahoe والنتش", "og_desc": "ما يغيّره Tahoe للنتش — وما لا يغيّره.",
+           "jsonld_headline": "macOS Tahoe والنتش: ما الجديد", "jsonld_desc": "ما يغيّره macOS Tahoe لنتش الماك بوك وما تضيفه التطبيقات.",
+           "kicker": KICK["explainer"]["ar"], "h1": "macOS Tahoe والنتش: ما الجديد",
+           "lede": "جدّد macOS Tahoe مظهر شريط القوائم بـ Liquid Glass. إليك ما يعنيه ذلك للنتش — وما لا يزال لا يفعله.",
+           "readtime": READ5["ar"], "crumb_this": "macOS Tahoe والنتش",
+           "faq": [("هل غيّر macOS Tahoe النتش؟", "بصريًا نعم — يجعل تصميم Liquid Glass شريط القوائم أكثر شفافية ويندمج النتش بشكل أطبع. وظيفيًا لا — لا يزال النتش بلا واجهة تفاعلية مدمجة."),
+                   ("هل أضاف macOS Tahoe ‏Dynamic Island إلى النتش؟", "لا. لم يُضِف macOS Tahoe لوحة بأسلوب Dynamic Island ولا أي أدوات نتش. لا تزال تطبيقات الطرف الثالث مثل NotchNest ضرورية لذلك."),
+                   ("هل يعمل NotchNest على macOS Tahoe؟", "نعم. يدعم NotchNest نظام macOS Tahoe (26) وSequoia (15) وSonoma (14). وتتطلب ميزات الذكاء الاصطناعي نظام Sequoia أو أحدث على Apple Silicon."),
+                   ("هل يستحق التحديث إلى Tahoe من أجل النتش؟", "يحسّن Tahoe مظهر النتش لكن ليس ما يفعله. لا تزال الوظيفة تأتي من تطبيق نتش.")],
+           "body": """<p>جلب macOS Tahoe (macOS 26) لغة تصميم Liquid Glass من Apple إلى سطح المكتب، بما في ذلك شريط قوائم أكثر شفافية. وبطبيعة الحال يُسأل: ما الذي تغيّر للنتش؟ إليك الملخص العملي.</p>
+    <h2>ما غيّره Tahoe</h2>
+    <ul>
+      <li><strong>شريط قوائم Liquid Glass</strong> — أكثر شفافية، مع ظهور خفيف للمحتوى من خلفه. وتأخذ المنطقة حول النتش هذه الخامة.</li>
+      <li><strong>مركز تحكّم مُجدَّد</strong> — بمظهر جديد ووحدات نفسها.</li>
+      <li><strong>تكامل بصري أوثق</strong> — يندمج النتش بشكل أطبع في الشريط الزجاجي.</li>
+    </ul>
+    <h2>ما لم يغيّره Tahoe</h2>
+    <p>لا يزال النتش بلا واجهة تفاعلية مدمجة. لم يُضِف macOS Tahoe لوحة بأسلوب Dynamic Island ولا Face ID ولا أي أدوات نتش. يبقى فتحة سلبية — راجع «هل يوجد Dynamic Island على الماك».</p>
+    <h2>هل تعمل تطبيقات النتش على Tahoe؟</h2>
+    <p>نعم. يدعم NotchNest نظام macOS Tahoe بما فيه مظهر Liquid Glass، ويستمر بالعمل على Sonoma (14) وSequoia (15). وتتطلب ميزات Apple Intelligence على الجهاز (حافظة الذكاء الاصطناعي وملخصات التقويم وتحسين الملاحظات) نظام Sequoia أو أحدث على Apple Silicon.</p>
+    <h2>هل ينبغي التحديث من أجل النتش؟</h2>
+    <p>يجعل Tahoe النتش أجمل لكن ليس أكثر وظيفية. إن أردت أن يفعل النتش شيئًا فعلًا، فذلك لا يزال يأتي من تطبيق. جرّب عرض النتش لترى ما هو ممكن.</p>
+    <div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>اجعل نتشك مفيدًا</h3><p>يضع NotchNest عشر أدوات في نتش الماك بوك. مجانًا على Mac App Store.</p></div>
+      <a href="%STORE%" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="التنزيل من Mac App Store" /></a>
+    </div>""",
+           "related": _related("ar", ("/learn/what-is-dynamic-island-on-mac/", "Is there a Dynamic Island on Mac?", "إنجليزي — الجواب."))},
+    "fr": {"title": "macOS Tahoe et l'encoche : les nouveautés — NotchNest", "description": "Ce que macOS Tahoe (macOS 26) change pour l'encoche du MacBook et la barre des menus — Liquid Glass, transparence et ce que les apps ajoutent par-dessus.",
+           "og_title": "macOS Tahoe et l'encoche", "og_desc": "Ce que Tahoe change pour l'encoche — et ce qu'il ne change pas.",
+           "jsonld_headline": "macOS Tahoe et l'encoche : les nouveautés", "jsonld_desc": "Ce que macOS Tahoe change pour l'encoche du MacBook et ce que les apps ajoutent.",
+           "kicker": KICK["explainer"]["fr"], "h1": "macOS Tahoe et l'encoche : les nouveautés",
+           "lede": "macOS Tahoe a rafraîchi le look de la barre des menus avec Liquid Glass. Voici ce que ça signifie pour l'encoche — et ce qu'elle ne fait toujours pas.",
+           "readtime": READ5["fr"], "crumb_this": "macOS Tahoe et l'encoche",
+           "faq": [("macOS Tahoe a-t-il changé l'encoche ?", "Visuellement oui — le design Liquid Glass de Tahoe rend la barre des menus plus translucide et l'encoche s'y fond plus naturellement. Fonctionnellement non — l'encoche n'a toujours pas d'interface interactive intégrée."),
+                   ("macOS Tahoe ajoute-t-il Dynamic Island à l'encoche ?", "Non. macOS Tahoe n'a pas ajouté de panneau façon Dynamic Island ni de widgets d'encoche. Des apps tierces comme NotchNest restent nécessaires pour cela."),
+                   ("NotchNest fonctionne-t-il sur macOS Tahoe ?", "Oui. NotchNest prend en charge macOS Tahoe (26), Sequoia (15) et Sonoma (14). Les fonctions IA nécessitent Sequoia ou plus récent sur Apple Silicon."),
+                   ("Vaut-il la peine de passer à Tahoe pour l'encoche ?", "Tahoe améliore l'apparence de l'encoche mais pas ce qu'elle fait. La fonctionnalité vient toujours d'une app d'encoche.")],
+           "body": """<p>macOS Tahoe (macOS 26) a apporté le langage de design Liquid Glass d'Apple au bureau, avec une barre des menus plus translucide. Naturellement, on demande ce qui a changé pour l'encoche. Voici le récapitulatif pratique.</p>
+    <h2>Ce que Tahoe a changé</h2>
+    <ul>
+      <li><strong>Barre des menus Liquid Glass</strong> — plus translucide, le contenu transparaissant subtilement. La zone autour de l'encoche adopte ce matériau.</li>
+      <li><strong>Centre de contrôle rafraîchi</strong> — restylé, avec les mêmes modules.</li>
+      <li><strong>Intégration visuelle plus serrée</strong> — l'encoche se fond plus naturellement dans la barre vitreuse.</li>
+    </ul>
+    <h2>Ce que Tahoe n'a PAS changé</h2>
+    <p>L'encoche n'a toujours pas d'interface interactive intégrée. macOS Tahoe n'a pas ajouté de panneau façon Dynamic Island, de Face ID, ni de widgets d'encoche. Ça reste une découpe passive — voyez « y a-t-il un Dynamic Island sur Mac ».</p>
+    <h2>Les apps d'encoche fonctionnent-elles sur Tahoe ?</h2>
+    <p>Oui. NotchNest prend en charge macOS Tahoe, y compris le look Liquid Glass, et continue de tourner sur Sonoma (14) et Sequoia (15). Les fonctions Apple Intelligence sur l'appareil (presse-papiers IA, briefings de calendrier, affinage de notes) nécessitent Sequoia ou plus récent sur Apple Silicon.</p>
+    <h2>Faut-il mettre à jour pour l'encoche ?</h2>
+    <p>Tahoe rend l'encoche plus jolie mais pas plus fonctionnelle. Si vous voulez que l'encoche fasse vraiment quelque chose, cela vient toujours d'une app. Essayez le terrain de jeu de l'encoche pour voir ce qui est possible.</p>
+    <div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>Rendez votre encoche utile</h3><p>NotchNest met dix outils dans l'encoche de votre MacBook. Gratuit sur le Mac App Store.</p></div>
+      <a href="%STORE%" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="Télécharger sur le Mac App Store" /></a>
+    </div>""",
+           "related": _related("fr", ("/learn/what-is-dynamic-island-on-mac/", "Is there a Dynamic Island on Mac?", "Anglais — la réponse."))},
+    "pt-BR": {"title": "macOS Tahoe e o notch: o que há de novo — NotchNest", "description": "O que o macOS Tahoe (macOS 26) muda para o notch do MacBook e a barra de menus — Liquid Glass, transparência e o que os apps adicionam por cima.",
+              "og_title": "macOS Tahoe e o notch", "og_desc": "O que o Tahoe muda para o notch — e o que não muda.",
+              "jsonld_headline": "macOS Tahoe e o notch: o que há de novo", "jsonld_desc": "O que o macOS Tahoe muda para o notch do MacBook e o que os apps adicionam.",
+              "kicker": KICK["explainer"]["pt-BR"], "h1": "macOS Tahoe e o notch: o que há de novo",
+              "lede": "O macOS Tahoe renovou o visual da barra de menus com o Liquid Glass. Aqui está o que isso significa para o notch — e o que ele ainda não faz.",
+              "readtime": READ5["pt-BR"], "crumb_this": "macOS Tahoe e o notch",
+              "faq": [("O macOS Tahoe mudou o notch?", "Visualmente, sim — o design Liquid Glass do Tahoe deixa a barra de menus mais translúcida e o notch se mistura de forma mais natural. Funcionalmente, não — o notch ainda não tem interface interativa embutida."),
+                      ("O macOS Tahoe adiciona Dynamic Island ao notch?", "Não. O macOS Tahoe não adicionou um painel estilo Dynamic Island nem widgets de notch. Apps de terceiros como o NotchNest ainda são necessários para isso."),
+                      ("O NotchNest funciona no macOS Tahoe?", "Sim. O NotchNest suporta macOS Tahoe (26), Sequoia (15) e Sonoma (14). Os recursos de IA precisam de Sequoia ou mais recente em Apple Silicon."),
+                      ("Vale a pena atualizar para o Tahoe pelo notch?", "O Tahoe melhora como o notch parece, mas não o que ele faz. A funcionalidade ainda vem de um app de notch.")],
+              "body": """<p>O macOS Tahoe (macOS 26) trouxe a linguagem de design Liquid Glass da Apple para o desktop, incluindo uma barra de menus mais translúcida. Naturalmente, perguntam o que mudou para o notch. Aqui está o resumo prático.</p>
+    <h2>O que o Tahoe mudou</h2>
+    <ul>
+      <li><strong>Barra de menus Liquid Glass</strong> — mais translúcida, com o conteúdo aparecendo sutilmente. A área ao redor do notch adota esse material.</li>
+      <li><strong>Central de Controle renovada</strong> — com novo estilo e os mesmos módulos.</li>
+      <li><strong>Integração visual mais próxima</strong> — o notch se mistura de forma mais natural à barra de vidro.</li>
+    </ul>
+    <h2>O que o Tahoe NÃO mudou</h2>
+    <p>O notch ainda não tem interface interativa embutida. O macOS Tahoe não adicionou um painel estilo Dynamic Island, Face ID ou quaisquer widgets de notch. Continua sendo um recorte passivo — veja "existe Dynamic Island no Mac".</p>
+    <h2>Os apps de notch funcionam no Tahoe?</h2>
+    <p>Sim. O NotchNest suporta o macOS Tahoe, incluindo o visual Liquid Glass, e continua rodando no Sonoma (14) e no Sequoia (15). Os recursos de Apple Intelligence no dispositivo (área de transferência com IA, briefings de calendário, refino de notas) precisam de Sequoia ou mais recente em Apple Silicon.</p>
+    <h2>Vale a pena atualizar pelo notch?</h2>
+    <p>O Tahoe deixa o notch mais bonito, mas não mais funcional. Se você quer que o notch realmente faça algo, isso ainda vem de um app. Teste o playground do notch para ver o que é possível.</p>
+    <div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>Torne seu notch útil</h3><p>O NotchNest coloca dez ferramentas no notch do seu MacBook. Grátis na Mac App Store.</p></div>
+      <a href="%STORE%" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="Baixar na Mac App Store" /></a>
+    </div>""",
+              "related": _related("pt-BR", ("/learn/what-is-dynamic-island-on-mac/", "Is there a Dynamic Island on Mac?", "Inglês — a resposta."))},
+    "pt-PT": {"title": "macOS Tahoe e o notch: o que há de novo — NotchNest", "description": "O que o macOS Tahoe (macOS 26) muda para o notch do MacBook e a barra de menus — Liquid Glass, transparência e o que as apps adicionam por cima.",
+              "og_title": "macOS Tahoe e o notch", "og_desc": "O que o Tahoe muda para o notch — e o que não muda.",
+              "jsonld_headline": "macOS Tahoe e o notch: o que há de novo", "jsonld_desc": "O que o macOS Tahoe muda para o notch do MacBook e o que as apps adicionam.",
+              "kicker": KICK["explainer"]["pt-PT"], "h1": "macOS Tahoe e o notch: o que há de novo",
+              "lede": "O macOS Tahoe renovou o visual da barra de menus com o Liquid Glass. Aqui está o que isso significa para o notch — e o que ele ainda não faz.",
+              "readtime": READ5["pt-PT"], "crumb_this": "macOS Tahoe e o notch",
+              "faq": [("O macOS Tahoe mudou o notch?", "Visualmente, sim — o design Liquid Glass do Tahoe deixa a barra de menus mais translúcida e o notch mistura-se de forma mais natural. Funcionalmente, não — o notch ainda não tem interface interativa integrada."),
+                      ("O macOS Tahoe adiciona Dynamic Island ao notch?", "Não. O macOS Tahoe não adicionou um painel ao estilo Dynamic Island nem widgets de notch. Apps de terceiros como o NotchNest continuam a ser necessários para isso."),
+                      ("O NotchNest funciona no macOS Tahoe?", "Sim. O NotchNest suporta macOS Tahoe (26), Sequoia (15) e Sonoma (14). As funcionalidades de IA precisam de Sequoia ou mais recente em Apple Silicon."),
+                      ("Vale a pena atualizar para o Tahoe pelo notch?", "O Tahoe melhora o aspeto do notch, mas não o que ele faz. A funcionalidade continua a vir de uma app de notch.")],
+              "body": """<p>O macOS Tahoe (macOS 26) trouxe a linguagem de design Liquid Glass da Apple para o ambiente de trabalho, incluindo uma barra de menus mais translúcida. Naturalmente, perguntam o que mudou para o notch. Aqui está o resumo prático.</p>
+    <h2>O que o Tahoe mudou</h2>
+    <ul>
+      <li><strong>Barra de menus Liquid Glass</strong> — mais translúcida, com o conteúdo a transparecer subtilmente. A área à volta do notch adota este material.</li>
+      <li><strong>Centro de Controlo renovado</strong> — com novo estilo e os mesmos módulos.</li>
+      <li><strong>Integração visual mais próxima</strong> — o notch mistura-se de forma mais natural na barra de vidro.</li>
+    </ul>
+    <h2>O que o Tahoe NÃO mudou</h2>
+    <p>O notch ainda não tem interface interativa integrada. O macOS Tahoe não adicionou um painel ao estilo Dynamic Island, Face ID ou quaisquer widgets de notch. Continua a ser um recorte passivo — veja "existe Dynamic Island no Mac".</p>
+    <h2>As apps de notch funcionam no Tahoe?</h2>
+    <p>Sim. O NotchNest suporta o macOS Tahoe, incluindo o visual Liquid Glass, e continua a correr no Sonoma (14) e no Sequoia (15). As funcionalidades de Apple Intelligence no dispositivo (área de transferência com IA, briefings de calendário, aperfeiçoamento de notas) precisam de Sequoia ou mais recente em Apple Silicon.</p>
+    <h2>Vale a pena atualizar pelo notch?</h2>
+    <p>O Tahoe deixa o notch mais bonito, mas não mais funcional. Se quer que o notch faça realmente algo, isso continua a vir de uma app. Experimente o playground do notch para ver o que é possível.</p>
+    <div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>Torne o seu notch útil</h3><p>O NotchNest coloca dez ferramentas no notch do seu MacBook. Gratuito na Mac App Store.</p></div>
+      <a href="%STORE%" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="Descarregar na Mac App Store" /></a>
+    </div>""",
+              "related": _related("pt-PT", ("/learn/what-is-dynamic-island-on-mac/", "Is there a Dynamic Island on Mac?", "Inglês — a resposta."))},
+    "es-MX": {"title": "macOS Tahoe y el notch: qué hay de nuevo — NotchNest", "description": "Qué cambia macOS Tahoe (macOS 26) para el notch del MacBook y la barra de menús — Liquid Glass, transparencia y qué agregan las apps encima.",
+              "og_title": "macOS Tahoe y el notch", "og_desc": "Qué cambia Tahoe para el notch — y qué no.",
+              "jsonld_headline": "macOS Tahoe y el notch: qué hay de nuevo", "jsonld_desc": "Qué cambia macOS Tahoe para el notch del MacBook y qué agregan las apps.",
+              "kicker": KICK["explainer"]["es-MX"], "h1": "macOS Tahoe y el notch: qué hay de nuevo",
+              "lede": "macOS Tahoe renovó el aspecto de la barra de menús con Liquid Glass. Aquí qué significa para el notch — y qué sigue sin hacer.",
+              "readtime": READ5["es-MX"], "crumb_this": "macOS Tahoe y el notch",
+              "faq": [("¿macOS Tahoe cambió el notch?", "Visualmente, sí — el diseño Liquid Glass de Tahoe hace la barra de menús más translúcida y el notch se integra de forma más natural. Funcionalmente, no — el notch sigue sin interfaz interactiva integrada."),
+                      ("¿macOS Tahoe agrega Dynamic Island al notch?", "No. macOS Tahoe no agregó un panel estilo Dynamic Island ni widgets de notch. Siguen haciendo falta apps de terceros como NotchNest para eso."),
+                      ("¿NotchNest funciona en macOS Tahoe?", "Sí. NotchNest es compatible con macOS Tahoe (26), Sequoia (15) y Sonoma (14). Las funciones de IA necesitan Sequoia o posterior en Apple Silicon."),
+                      ("¿Vale la pena actualizar a Tahoe por el notch?", "Tahoe mejora cómo se ve el notch, pero no lo que hace. La funcionalidad sigue viniendo de una app de notch.")],
+              "body": """<p>macOS Tahoe (macOS 26) trajo el lenguaje de diseño Liquid Glass de Apple al escritorio, incluyendo una barra de menús más translúcida. Naturalmente, se pregunta qué cambió para el notch. Aquí está el resumen práctico.</p>
+    <h2>Qué cambió Tahoe</h2>
+    <ul>
+      <li><strong>Barra de menús Liquid Glass</strong> — más translúcida, con el contenido asomando sutilmente. El área alrededor del notch adopta este material.</li>
+      <li><strong>Centro de Control renovado</strong> — con nuevo estilo y los mismos módulos.</li>
+      <li><strong>Integración visual más estrecha</strong> — el notch se integra de forma más natural en la barra de vidrio.</li>
+    </ul>
+    <h2>Qué NO cambió Tahoe</h2>
+    <p>El notch sigue sin interfaz interactiva integrada. macOS Tahoe no agregó un panel estilo Dynamic Island, Face ID ni widgets de notch. Sigue siendo un recorte pasivo — mira "¿hay Dynamic Island en Mac?".</p>
+    <h2>¿Las apps de notch funcionan en Tahoe?</h2>
+    <p>Sí. NotchNest es compatible con macOS Tahoe, incluido el aspecto Liquid Glass, y sigue corriendo en Sonoma (14) y Sequoia (15). Las funciones de Apple Intelligence en el dispositivo (portapapeles con IA, briefings de calendario, refinado de notas) necesitan Sequoia o posterior en Apple Silicon.</p>
+    <h2>¿Conviene actualizar por el notch?</h2>
+    <p>Tahoe hace que el notch se vea mejor, pero no más funcional. Si quieres que el notch haga algo de verdad, eso sigue viniendo de una app. Prueba el playground del notch para ver lo que es posible.</p>
+    <div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>Haz útil tu notch</h3><p>NotchNest pone diez herramientas en el notch de tu MacBook. Gratis en el Mac App Store.</p></div>
+      <a href="%STORE%" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="Descargar en el Mac App Store" /></a>
+    </div>""",
+              "related": _related("es-MX", ("/learn/what-is-dynamic-island-on-mac/", "Is there a Dynamic Island on Mac?", "Inglés — la respuesta."))},
+}
+
+
 # ── macbook-air-vs-pro-notch ────────────────────────────────────────────────
 AIRPRO = {
     "de": {"title": "MacBook Air vs. Pro: die Notch im Vergleich — NotchNest", "description": "Unterscheiden sich die Notches von MacBook Air und Pro? Kamera, Größe, Display-Technik und welche Modelle eine Notch haben — erklärt für 2026.",
@@ -2143,4 +2351,5 @@ LEARN_ARTICLES = {
     "drop-files-into-macbook-notch": _assemble(DROP),
     "notch-camera-on-mac": _assemble(CAMERA),
     "macbook-air-vs-pro-notch": _assemble(AIRPRO),
+    "macos-tahoe-notch-features": _assemble(TAHOE),
 }
