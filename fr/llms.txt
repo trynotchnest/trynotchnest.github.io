@@ -1,0 +1,9 @@
+# NotchNest
+
+> NotchNest transforme l'encoche du MacBook en centre de productivité avec presse-papiers IA, calendrier, notes, minuteur Pomodoro, contrôle de la musique et AirDrop.
+
+- NotchNest: https://notchnest.app/fr/
+- Guides: https://notchnest.app/fr/learn/
+- Comment utiliser l'encoche du MacBook: https://notchnest.app/fr/learn/how-to-use-the-macbook-notch/
+- Les meilleures apps d'encoche macOS (2026): https://notchnest.app/fr/learn/best-macos-notch-apps/
+- Mac App Store: https://apps.apple.com/fr/app/notchnest-power-your-notch/id6747612321

@@ -7,7 +7,7 @@
 - Requirements: macOS 14 (Sonoma) or later. AI features need Apple Silicon + macOS 15 (Sequoia) or newer with Apple Intelligence.
 - Supported OS: Sonoma, Sequoia (15), Tahoe (26) incl. Liquid Glass.
 - Developer: Satnam Singh (https://silverseahog.com)
-- Languages: English, German, Chinese
+- Languages: English, German, Chinese (Simplified), Arabic, French, Portuguese (Brazil), Portuguese (Portugal), Spanish (Mexico)
 
 ## Features
 
@@ -82,3 +82,14 @@ A: Yes. Settings toggles every widget independently, reorders them, sets hover-v
 - For developers: https://notchnest.app/for/developers/
 - For designers: https://notchnest.app/for/designers/
 - For students: https://notchnest.app/for/students/
+
+## Languages
+
+- English: https://notchnest.app/
+- Deutsch: https://notchnest.app/de/
+- 中文: https://notchnest.app/zh/
+- العربية: https://notchnest.app/ar/ (https://notchnest.app/ar/llms.txt)
+- Français: https://notchnest.app/fr/ (https://notchnest.app/fr/llms.txt)
+- Português (BR): https://notchnest.app/pt-br/ (https://notchnest.app/pt-br/llms.txt)
+- Português (PT): https://notchnest.app/pt-pt/ (https://notchnest.app/pt-pt/llms.txt)
+- Español (MX): https://notchnest.app/es-mx/ (https://notchnest.app/es-mx/llms.txt)

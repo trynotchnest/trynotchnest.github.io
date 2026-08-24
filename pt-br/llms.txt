@@ -1,0 +1,9 @@
+# NotchNest
+
+> O NotchNest transforma o notch do MacBook em uma central de produtividade com área de transferência com IA, calendário, notas, timer Pomodoro, controle de música e AirDrop.
+
+- NotchNest: https://notchnest.app/pt-br/
+- Guias: https://notchnest.app/pt-br/learn/
+- Como usar o notch do MacBook: https://notchnest.app/pt-br/learn/how-to-use-the-macbook-notch/
+- Os melhores apps de notch para macOS (2026): https://notchnest.app/pt-br/learn/best-macos-notch-apps/
+- Mac App Store: https://apps.apple.com/br/app/notchnest-power-your-notch/id6747612321

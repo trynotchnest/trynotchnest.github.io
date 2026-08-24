@@ -15,6 +15,12 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://notchnest.app/de/"/>
     <xhtml:link rel="alternate" hreflang="zh" href="https://notchnest.app/zh/"/>
     <xhtml:link rel="alternate" hreflang="zh-cn" href="https://notchnest.app/zh/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://notchnest.app/ar/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://notchnest.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://notchnest.app/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://notchnest.app/pt-pt/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://notchnest.app/es-mx/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://notchnest.app/es-mx/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://notchnest.app/"/>
     <image:image>
       <image:loc>https://notchnest.app/1200x630-banner.jpg</image:loc>
@@ -195,5 +201,405 @@
     <lastmod>2026-06-10T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://notchnest.app/ar/</loc>
+    <lastmod>2026-08-24T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://notchnest.app/"/>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://notchnest.app/"/>
+    <xhtml:link rel="alternate" hreflang="en-gb" href="https://notchnest.app/"/>
+    <xhtml:link rel="alternate" hreflang="en-in" href="https://notchnest.app/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://notchnest.app/de/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://notchnest.app/zh/"/>
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="https://notchnest.app/zh/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://notchnest.app/ar/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://notchnest.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://notchnest.app/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://notchnest.app/pt-pt/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://notchnest.app/es-mx/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://notchnest.app/es-mx/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://notchnest.app/"/>
+  </url>
+  <url>
+    <loc>https://notchnest.app/ar/learn/</loc>
+    <lastmod>2026-08-24T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://notchnest.app/learn/"/>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://notchnest.app/learn/"/>
+    <xhtml:link rel="alternate" hreflang="en-gb" href="https://notchnest.app/learn/"/>
+    <xhtml:link rel="alternate" hreflang="en-in" href="https://notchnest.app/learn/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://notchnest.app/de/learn/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://notchnest.app/zh/learn/"/>
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="https://notchnest.app/zh/learn/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://notchnest.app/ar/learn/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://notchnest.app/fr/learn/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://notchnest.app/pt-br/learn/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://notchnest.app/pt-pt/learn/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://notchnest.app/es-mx/learn/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://notchnest.app/es-mx/learn/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://notchnest.app/learn/"/>
+  </url>
+  <url>
+    <loc>https://notchnest.app/ar/learn/how-to-use-the-macbook-notch/</loc>
+    <lastmod>2026-08-24T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://notchnest.app/learn/how-to-use-the-macbook-notch/"/>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://notchnest.app/learn/how-to-use-the-macbook-notch/"/>
+    <xhtml:link rel="alternate" hreflang="en-gb" href="https://notchnest.app/learn/how-to-use-the-macbook-notch/"/>
+    <xhtml:link rel="alternate" hreflang="en-in" href="https://notchnest.app/learn/how-to-use-the-macbook-notch/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://notchnest.app/de/learn/how-to-use-the-macbook-notch/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://notchnest.app/zh/learn/how-to-use-the-macbook-notch/"/>
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="https://notchnest.app/zh/learn/how-to-use-the-macbook-notch/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://notchnest.app/ar/learn/how-to-use-the-macbook-notch/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://notchnest.app/fr/learn/how-to-use-the-macbook-notch/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://notchnest.app/pt-br/learn/how-to-use-the-macbook-notch/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://notchnest.app/pt-pt/learn/how-to-use-the-macbook-notch/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://notchnest.app/es-mx/learn/how-to-use-the-macbook-notch/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://notchnest.app/es-mx/learn/how-to-use-the-macbook-notch/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://notchnest.app/learn/how-to-use-the-macbook-notch/"/>
+  </url>
+  <url>
+    <loc>https://notchnest.app/ar/learn/best-macos-notch-apps/</loc>
+    <lastmod>2026-08-24T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://notchnest.app/learn/best-macos-notch-apps/"/>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://notchnest.app/learn/best-macos-notch-apps/"/>
+    <xhtml:link rel="alternate" hreflang="en-gb" href="https://notchnest.app/learn/best-macos-notch-apps/"/>
+    <xhtml:link rel="alternate" hreflang="en-in" href="https://notchnest.app/learn/best-macos-notch-apps/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://notchnest.app/de/learn/best-macos-notch-apps/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://notchnest.app/zh/learn/best-macos-notch-apps/"/>
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="https://notchnest.app/zh/learn/best-macos-notch-apps/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://notchnest.app/ar/learn/best-macos-notch-apps/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://notchnest.app/fr/learn/best-macos-notch-apps/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://notchnest.app/pt-br/learn/best-macos-notch-apps/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://notchnest.app/pt-pt/learn/best-macos-notch-apps/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://notchnest.app/es-mx/learn/best-macos-notch-apps/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://notchnest.app/es-mx/learn/best-macos-notch-apps/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://notchnest.app/learn/best-macos-notch-apps/"/>
+  </url>
+  <url>
+    <loc>https://notchnest.app/fr/</loc>
+    <lastmod>2026-08-24T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://notchnest.app/"/>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://notchnest.app/"/>
+    <xhtml:link rel="alternate" hreflang="en-gb" href="https://notchnest.app/"/>
+    <xhtml:link rel="alternate" hreflang="en-in" href="https://notchnest.app/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://notchnest.app/de/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://notchnest.app/zh/"/>
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="https://notchnest.app/zh/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://notchnest.app/ar/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://notchnest.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://notchnest.app/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://notchnest.app/pt-pt/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://notchnest.app/es-mx/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://notchnest.app/es-mx/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://notchnest.app/"/>
+  </url>
+  <url>
+    <loc>https://notchnest.app/fr/learn/</loc>
+    <lastmod>2026-08-24T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://notchnest.app/learn/"/>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://notchnest.app/learn/"/>
+    <xhtml:link rel="alternate" hreflang="en-gb" href="https://notchnest.app/learn/"/>
+    <xhtml:link rel="alternate" hreflang="en-in" href="https://notchnest.app/learn/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://notchnest.app/de/learn/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://notchnest.app/zh/learn/"/>
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="https://notchnest.app/zh/learn/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://notchnest.app/ar/learn/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://notchnest.app/fr/learn/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://notchnest.app/pt-br/learn/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://notchnest.app/pt-pt/learn/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://notchnest.app/es-mx/learn/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://notchnest.app/es-mx/learn/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://notchnest.app/learn/"/>
+  </url>
+  <url>
+    <loc>https://notchnest.app/fr/learn/how-to-use-the-macbook-notch/</loc>
+    <lastmod>2026-08-24T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://notchnest.app/learn/how-to-use-the-macbook-notch/"/>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://notchnest.app/learn/how-to-use-the-macbook-notch/"/>
+    <xhtml:link rel="alternate" hreflang="en-gb" href="https://notchnest.app/learn/how-to-use-the-macbook-notch/"/>
+    <xhtml:link rel="alternate" hreflang="en-in" href="https://notchnest.app/learn/how-to-use-the-macbook-notch/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://notchnest.app/de/learn/how-to-use-the-macbook-notch/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://notchnest.app/zh/learn/how-to-use-the-macbook-notch/"/>
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="https://notchnest.app/zh/learn/how-to-use-the-macbook-notch/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://notchnest.app/ar/learn/how-to-use-the-macbook-notch/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://notchnest.app/fr/learn/how-to-use-the-macbook-notch/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://notchnest.app/pt-br/learn/how-to-use-the-macbook-notch/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://notchnest.app/pt-pt/learn/how-to-use-the-macbook-notch/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://notchnest.app/es-mx/learn/how-to-use-the-macbook-notch/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://notchnest.app/es-mx/learn/how-to-use-the-macbook-notch/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://notchnest.app/learn/how-to-use-the-macbook-notch/"/>
+  </url>
+  <url>
+    <loc>https://notchnest.app/fr/learn/best-macos-notch-apps/</loc>
+    <lastmod>2026-08-24T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://notchnest.app/learn/best-macos-notch-apps/"/>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://notchnest.app/learn/best-macos-notch-apps/"/>
+    <xhtml:link rel="alternate" hreflang="en-gb" href="https://notchnest.app/learn/best-macos-notch-apps/"/>
+    <xhtml:link rel="alternate" hreflang="en-in" href="https://notchnest.app/learn/best-macos-notch-apps/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://notchnest.app/de/learn/best-macos-notch-apps/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://notchnest.app/zh/learn/best-macos-notch-apps/"/>
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="https://notchnest.app/zh/learn/best-macos-notch-apps/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://notchnest.app/ar/learn/best-macos-notch-apps/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://notchnest.app/fr/learn/best-macos-notch-apps/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://notchnest.app/pt-br/learn/best-macos-notch-apps/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://notchnest.app/pt-pt/learn/best-macos-notch-apps/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://notchnest.app/es-mx/learn/best-macos-notch-apps/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://notchnest.app/es-mx/learn/best-macos-notch-apps/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://notchnest.app/learn/best-macos-notch-apps/"/>
+  </url>
+  <url>
+    <loc>https://notchnest.app/pt-br/</loc>
+    <lastmod>2026-08-24T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://notchnest.app/"/>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://notchnest.app/"/>
+    <xhtml:link rel="alternate" hreflang="en-gb" href="https://notchnest.app/"/>
+    <xhtml:link rel="alternate" hreflang="en-in" href="https://notchnest.app/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://notchnest.app/de/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://notchnest.app/zh/"/>
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="https://notchnest.app/zh/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://notchnest.app/ar/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://notchnest.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://notchnest.app/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://notchnest.app/pt-pt/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://notchnest.app/es-mx/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://notchnest.app/es-mx/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://notchnest.app/"/>
+  </url>
+  <url>
+    <loc>https://notchnest.app/pt-br/learn/</loc>
+    <lastmod>2026-08-24T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://notchnest.app/learn/"/>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://notchnest.app/learn/"/>
+    <xhtml:link rel="alternate" hreflang="en-gb" href="https://notchnest.app/learn/"/>
+    <xhtml:link rel="alternate" hreflang="en-in" href="https://notchnest.app/learn/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://notchnest.app/de/learn/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://notchnest.app/zh/learn/"/>
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="https://notchnest.app/zh/learn/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://notchnest.app/ar/learn/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://notchnest.app/fr/learn/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://notchnest.app/pt-br/learn/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://notchnest.app/pt-pt/learn/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://notchnest.app/es-mx/learn/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://notchnest.app/es-mx/learn/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://notchnest.app/learn/"/>
+  </url>
+  <url>
+    <loc>https://notchnest.app/pt-br/learn/how-to-use-the-macbook-notch/</loc>
+    <lastmod>2026-08-24T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://notchnest.app/learn/how-to-use-the-macbook-notch/"/>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://notchnest.app/learn/how-to-use-the-macbook-notch/"/>
+    <xhtml:link rel="alternate" hreflang="en-gb" href="https://notchnest.app/learn/how-to-use-the-macbook-notch/"/>
+    <xhtml:link rel="alternate" hreflang="en-in" href="https://notchnest.app/learn/how-to-use-the-macbook-notch/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://notchnest.app/de/learn/how-to-use-the-macbook-notch/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://notchnest.app/zh/learn/how-to-use-the-macbook-notch/"/>
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="https://notchnest.app/zh/learn/how-to-use-the-macbook-notch/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://notchnest.app/ar/learn/how-to-use-the-macbook-notch/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://notchnest.app/fr/learn/how-to-use-the-macbook-notch/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://notchnest.app/pt-br/learn/how-to-use-the-macbook-notch/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://notchnest.app/pt-pt/learn/how-to-use-the-macbook-notch/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://notchnest.app/es-mx/learn/how-to-use-the-macbook-notch/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://notchnest.app/es-mx/learn/how-to-use-the-macbook-notch/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://notchnest.app/learn/how-to-use-the-macbook-notch/"/>
+  </url>
+  <url>
+    <loc>https://notchnest.app/pt-br/learn/best-macos-notch-apps/</loc>
+    <lastmod>2026-08-24T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://notchnest.app/learn/best-macos-notch-apps/"/>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://notchnest.app/learn/best-macos-notch-apps/"/>
+    <xhtml:link rel="alternate" hreflang="en-gb" href="https://notchnest.app/learn/best-macos-notch-apps/"/>
+    <xhtml:link rel="alternate" hreflang="en-in" href="https://notchnest.app/learn/best-macos-notch-apps/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://notchnest.app/de/learn/best-macos-notch-apps/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://notchnest.app/zh/learn/best-macos-notch-apps/"/>
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="https://notchnest.app/zh/learn/best-macos-notch-apps/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://notchnest.app/ar/learn/best-macos-notch-apps/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://notchnest.app/fr/learn/best-macos-notch-apps/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://notchnest.app/pt-br/learn/best-macos-notch-apps/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://notchnest.app/pt-pt/learn/best-macos-notch-apps/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://notchnest.app/es-mx/learn/best-macos-notch-apps/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://notchnest.app/es-mx/learn/best-macos-notch-apps/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://notchnest.app/learn/best-macos-notch-apps/"/>
+  </url>
+  <url>
+    <loc>https://notchnest.app/pt-pt/</loc>
+    <lastmod>2026-08-24T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://notchnest.app/"/>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://notchnest.app/"/>
+    <xhtml:link rel="alternate" hreflang="en-gb" href="https://notchnest.app/"/>
+    <xhtml:link rel="alternate" hreflang="en-in" href="https://notchnest.app/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://notchnest.app/de/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://notchnest.app/zh/"/>
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="https://notchnest.app/zh/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://notchnest.app/ar/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://notchnest.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://notchnest.app/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://notchnest.app/pt-pt/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://notchnest.app/es-mx/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://notchnest.app/es-mx/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://notchnest.app/"/>
+  </url>
+  <url>
+    <loc>https://notchnest.app/pt-pt/learn/</loc>
+    <lastmod>2026-08-24T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://notchnest.app/learn/"/>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://notchnest.app/learn/"/>
+    <xhtml:link rel="alternate" hreflang="en-gb" href="https://notchnest.app/learn/"/>
+    <xhtml:link rel="alternate" hreflang="en-in" href="https://notchnest.app/learn/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://notchnest.app/de/learn/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://notchnest.app/zh/learn/"/>
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="https://notchnest.app/zh/learn/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://notchnest.app/ar/learn/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://notchnest.app/fr/learn/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://notchnest.app/pt-br/learn/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://notchnest.app/pt-pt/learn/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://notchnest.app/es-mx/learn/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://notchnest.app/es-mx/learn/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://notchnest.app/learn/"/>
+  </url>
+  <url>
+    <loc>https://notchnest.app/pt-pt/learn/how-to-use-the-macbook-notch/</loc>
+    <lastmod>2026-08-24T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://notchnest.app/learn/how-to-use-the-macbook-notch/"/>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://notchnest.app/learn/how-to-use-the-macbook-notch/"/>
+    <xhtml:link rel="alternate" hreflang="en-gb" href="https://notchnest.app/learn/how-to-use-the-macbook-notch/"/>
+    <xhtml:link rel="alternate" hreflang="en-in" href="https://notchnest.app/learn/how-to-use-the-macbook-notch/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://notchnest.app/de/learn/how-to-use-the-macbook-notch/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://notchnest.app/zh/learn/how-to-use-the-macbook-notch/"/>
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="https://notchnest.app/zh/learn/how-to-use-the-macbook-notch/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://notchnest.app/ar/learn/how-to-use-the-macbook-notch/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://notchnest.app/fr/learn/how-to-use-the-macbook-notch/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://notchnest.app/pt-br/learn/how-to-use-the-macbook-notch/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://notchnest.app/pt-pt/learn/how-to-use-the-macbook-notch/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://notchnest.app/es-mx/learn/how-to-use-the-macbook-notch/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://notchnest.app/es-mx/learn/how-to-use-the-macbook-notch/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://notchnest.app/learn/how-to-use-the-macbook-notch/"/>
+  </url>
+  <url>
+    <loc>https://notchnest.app/pt-pt/learn/best-macos-notch-apps/</loc>
+    <lastmod>2026-08-24T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://notchnest.app/learn/best-macos-notch-apps/"/>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://notchnest.app/learn/best-macos-notch-apps/"/>
+    <xhtml:link rel="alternate" hreflang="en-gb" href="https://notchnest.app/learn/best-macos-notch-apps/"/>
+    <xhtml:link rel="alternate" hreflang="en-in" href="https://notchnest.app/learn/best-macos-notch-apps/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://notchnest.app/de/learn/best-macos-notch-apps/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://notchnest.app/zh/learn/best-macos-notch-apps/"/>
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="https://notchnest.app/zh/learn/best-macos-notch-apps/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://notchnest.app/ar/learn/best-macos-notch-apps/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://notchnest.app/fr/learn/best-macos-notch-apps/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://notchnest.app/pt-br/learn/best-macos-notch-apps/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://notchnest.app/pt-pt/learn/best-macos-notch-apps/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://notchnest.app/es-mx/learn/best-macos-notch-apps/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://notchnest.app/es-mx/learn/best-macos-notch-apps/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://notchnest.app/learn/best-macos-notch-apps/"/>
+  </url>
+  <url>
+    <loc>https://notchnest.app/es-mx/</loc>
+    <lastmod>2026-08-24T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://notchnest.app/"/>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://notchnest.app/"/>
+    <xhtml:link rel="alternate" hreflang="en-gb" href="https://notchnest.app/"/>
+    <xhtml:link rel="alternate" hreflang="en-in" href="https://notchnest.app/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://notchnest.app/de/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://notchnest.app/zh/"/>
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="https://notchnest.app/zh/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://notchnest.app/ar/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://notchnest.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://notchnest.app/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://notchnest.app/pt-pt/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://notchnest.app/es-mx/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://notchnest.app/es-mx/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://notchnest.app/"/>
+  </url>
+  <url>
+    <loc>https://notchnest.app/es-mx/learn/</loc>
+    <lastmod>2026-08-24T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://notchnest.app/learn/"/>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://notchnest.app/learn/"/>
+    <xhtml:link rel="alternate" hreflang="en-gb" href="https://notchnest.app/learn/"/>
+    <xhtml:link rel="alternate" hreflang="en-in" href="https://notchnest.app/learn/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://notchnest.app/de/learn/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://notchnest.app/zh/learn/"/>
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="https://notchnest.app/zh/learn/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://notchnest.app/ar/learn/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://notchnest.app/fr/learn/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://notchnest.app/pt-br/learn/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://notchnest.app/pt-pt/learn/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://notchnest.app/es-mx/learn/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://notchnest.app/es-mx/learn/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://notchnest.app/learn/"/>
+  </url>
+  <url>
+    <loc>https://notchnest.app/es-mx/learn/how-to-use-the-macbook-notch/</loc>
+    <lastmod>2026-08-24T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://notchnest.app/learn/how-to-use-the-macbook-notch/"/>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://notchnest.app/learn/how-to-use-the-macbook-notch/"/>
+    <xhtml:link rel="alternate" hreflang="en-gb" href="https://notchnest.app/learn/how-to-use-the-macbook-notch/"/>
+    <xhtml:link rel="alternate" hreflang="en-in" href="https://notchnest.app/learn/how-to-use-the-macbook-notch/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://notchnest.app/de/learn/how-to-use-the-macbook-notch/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://notchnest.app/zh/learn/how-to-use-the-macbook-notch/"/>
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="https://notchnest.app/zh/learn/how-to-use-the-macbook-notch/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://notchnest.app/ar/learn/how-to-use-the-macbook-notch/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://notchnest.app/fr/learn/how-to-use-the-macbook-notch/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://notchnest.app/pt-br/learn/how-to-use-the-macbook-notch/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://notchnest.app/pt-pt/learn/how-to-use-the-macbook-notch/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://notchnest.app/es-mx/learn/how-to-use-the-macbook-notch/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://notchnest.app/es-mx/learn/how-to-use-the-macbook-notch/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://notchnest.app/learn/how-to-use-the-macbook-notch/"/>
+  </url>
+  <url>
+    <loc>https://notchnest.app/es-mx/learn/best-macos-notch-apps/</loc>
+    <lastmod>2026-08-24T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://notchnest.app/learn/best-macos-notch-apps/"/>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://notchnest.app/learn/best-macos-notch-apps/"/>
+    <xhtml:link rel="alternate" hreflang="en-gb" href="https://notchnest.app/learn/best-macos-notch-apps/"/>
+    <xhtml:link rel="alternate" hreflang="en-in" href="https://notchnest.app/learn/best-macos-notch-apps/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://notchnest.app/de/learn/best-macos-notch-apps/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://notchnest.app/zh/learn/best-macos-notch-apps/"/>
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="https://notchnest.app/zh/learn/best-macos-notch-apps/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://notchnest.app/ar/learn/best-macos-notch-apps/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://notchnest.app/fr/learn/best-macos-notch-apps/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://notchnest.app/pt-br/learn/best-macos-notch-apps/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://notchnest.app/pt-pt/learn/best-macos-notch-apps/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://notchnest.app/es-mx/learn/best-macos-notch-apps/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://notchnest.app/es-mx/learn/best-macos-notch-apps/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://notchnest.app/learn/best-macos-notch-apps/"/>
   </url>
 </urlset>

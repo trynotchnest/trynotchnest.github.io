@@ -1,0 +1,9 @@
+# NotchNest
+
+> يحوّل NotchNest نتش الماك بوك إلى مركز إنتاجية مع حافظة بالذكاء الاصطناعي وتقويم وملاحظات ومؤقت بومودورو والتحكم بالموسيقى وAirDrop.
+
+- NotchNest: https://notchnest.app/ar/
+- الأدلة: https://notchnest.app/ar/learn/
+- كيفية استخدام نتش الماك بوك: https://notchnest.app/ar/learn/how-to-use-the-macbook-notch/
+- أفضل تطبيقات النتش لنظام macOS (2026): https://notchnest.app/ar/learn/best-macos-notch-apps/
+- Mac App Store: https://apps.apple.com/sa/app/notchnest-power-your-notch/id6747612321
