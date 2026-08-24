@@ -617,6 +617,225 @@ def build_article(loc, slug):
 """
 
 
+COMPARE_SLUGS = ["notchnest-vs-notchnook", "notchnest-vs-alcove", "notchnest-vs-boring-notch"]
+
+
+def build_compare(loc, slug):
+    from build_i18n_compare import CMP, CMP_UI, TOK, ROWS, FEATURES
+    t = CMP[slug][loc]
+    u = CMP_UI[loc]
+    tok = TOK[loc]
+    d = DIRS[loc]
+    su = store_url(loc)
+    url = f"{BASE}{d}compare/{slug}/"
+    comp = CMP[slug]["competitor"]
+    feats = FEATURES[slug][loc]
+    rows = ""
+    for i, (nc, nt, cc, ct) in enumerate(ROWS[slug]):
+        rows += (f'        <tr><td>{feats[i]}</td>'
+                 f'<td class="{nc}">{tok.get(nt, nt)}</td>'
+                 f'<td class="{cc}">{tok.get(ct, ct)}</td></tr>\n')
+    faq_cards = "\n    ".join(
+        f'<details class="faq-card"><summary class="faq-question">{q}<span class="faq-toggle"></span></summary><div class="faq-answer">{a}</div></details>'
+        for q, a in t["faq"])
+    faq_json = ",".join(
+        '{ "@type": "Question", "name": %s, "acceptedAnswer": { "@type": "Answer", "text": %s } }'
+        % (jstr(q), jstr(a)) for q, a in t["faq"])
+    others = [s for s in COMPARE_SLUGS if s != slug]
+    rel = []
+    for os_ in others:
+        rel.append((f"/{d}compare/{os_}/", f"NotchNest vs {CMP[os_]['competitor']}", u["related_blurb"]))
+    rel.append((f"/{d}learn/best-macos-notch-apps/", u["bestapps_h3"], u["bestapps_blurb"]))
+    related = "\n        ".join(
+        f'<a class="related-card" href="{r[0]}"><h3>{r[1]}</h3><p>{r[2]}</p></a>' for r in rel)
+    return f"""<!DOCTYPE html>
+<html lang="{LANG_ATTR[loc]}"{rtl_attrs(loc)}>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<title>{t['title']}</title>
+<meta name="description" content="{t['description']}" />
+<link rel="canonical" href="{url}" />
+<meta name="robots" content="index,follow,max-image-preview:large" />
+{hreflang(f'compare/{slug}/')}
+<meta property="og:title" content="{t['title']}" />
+<meta property="og:description" content="{t['description']}" />
+<meta property="og:url" content="{url}" />
+<meta property="og:locale" content="{OG_LOCALE[loc]}" />
+<meta property="og:type" content="article" />
+<meta property="og:image" content="{BASE}assets/og/best-macos-notch-apps.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@codetard" />
+<link rel="stylesheet" href="/styles.css" />
+<link rel="apple-touch-icon" href="/assets/notchnest-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<meta name="theme-color" content="#000000" />
+<meta name="color-scheme" content="dark" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<script type="application/ld+json">
+[
+  {{
+    "@context": "https://schema.org", "@type": "SoftwareApplication",
+    "name": "NotchNest", "operatingSystem": "macOS 14.0+", "applicationCategory": "ProductivityApplication",
+    "applicationSubCategory": "Mac notch utility", "softwareVersion": "1.2.5", "inLanguage": "{LANG_ATTR[loc]}",
+    "url": "{BASE}", "downloadUrl": "{su}", "image": "{BASE}assets/notchnest-icon.png",
+    "aggregateRating": {{ "@type": "AggregateRating", "ratingValue": "4.0", "ratingCount": "15", "bestRating": "5", "worstRating": "1" }},
+    "offers": {{ "@type": "Offer", "price": "0", "priceCurrency": "{CURRENCY[loc]}", "availability": "https://schema.org/InStock", "url": "{su}" }}
+  }},
+  {{
+    "@context": "https://schema.org", "@type": "Article",
+    "headline": {jstr(t['title'].split(' — ')[0])}, "description": {jstr(t['description'])},
+    "image": "{BASE}assets/og/best-macos-notch-apps.png",
+    "datePublished": "2026-06-11T00:00:00+00:00", "dateModified": "2026-06-13T00:00:00+00:00", "inLanguage": "{LANG_ATTR[loc]}",
+    "author": {{ "@type": "Person", "name": "Satnam Singh", "url": "https://silverseahog.com/", "jobTitle": "Swift Developer",
+      "sameAs": ["https://silverseahog.com/","https://twitter.com/codetard","https://github.com/29satnam","https://www.linkedin.com/in/satnam-singh-948348aa/","https://instagram.com/codetard"] }},
+    "publisher": {{ "@type": "Organization", "name": "NotchNest", "logo": {{ "@type": "ImageObject", "url": "{BASE}assets/notchnest-icon.png" }} }},
+    "mainEntityOfPage": "{url}"
+  }},
+  {{
+    "@context": "https://schema.org", "@type": "BreadcrumbList",
+    "itemListElement": [
+      {{ "@type": "ListItem", "position": 1, "name": {jstr(u['home'])}, "item": "{BASE}{d}" }},
+      {{ "@type": "ListItem", "position": 2, "name": {jstr(u['compare'])}, "item": "{BASE}{d}compare/" }},
+      {{ "@type": "ListItem", "position": 3, "name": "NotchNest vs {comp}", "item": "{url}" }}
+    ]
+  }},
+  {{
+    "@context": "https://schema.org", "@type": "FAQPage", "inLanguage": "{LANG_ATTR[loc]}",
+    "mainEntity": [{faq_json}]
+  }}
+]
+</script>{rtl_style(loc)}
+</head>
+<body>
+<nav class="nn-nav" aria-label="{u['nav_aria']}"><div class="nn-nav-inner">
+  <a class="nn-brand" href="/{d}"><img class="nn-brand-mark" src="/assets/notchnest-icon.png" alt="NotchNest" width="28" height="28" /><span>NotchNest</span></a>
+  <div class="nn-nav-links">
+    <a href="/{d}#features">{u['features']}</a><a href="/{d}compare/">{u['compare']}</a><a href="/{d}learn/" class="nn-nav-keep">{u['learn']}</a>
+  </div>
+</div></nav>
+<main class="main-container"><div class="learn-wrap">
+  <div class="crumbs"><a href="/{d}">{u['home']}</a><span class="sep">/</span><a href="/{d}compare/">{u['compare']}</a><span class="sep">/</span><span>NotchNest vs {comp}</span></div>
+  <header class="article-head">
+    <span class="article-kicker">{u['kicker']}</span>
+    <h1 class="article-h1">NotchNest vs {comp}</h1>
+    <p class="article-lede">{t['lede']}</p>
+    <div class="article-meta"><span>{u['updated']}</span><span class="dot"></span><span>{u['readtime']}</span><span class="dot"></span><span>{u['byline']}</span></div>
+  </header>
+  <article class="article-body">
+    <p>{t['intro']}</p>
+    <h2>{u['th_feature']}</h2>
+    <table class="cmp-table">
+      <thead><tr><th>{u['th_feature']}</th><th>NotchNest</th><th>{comp}</th></tr></thead>
+      <tbody>
+{rows}      </tbody>
+    </table>
+    <div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body">
+        <h3>{u['cta_h3']}</h3>
+        <p>{u['cta_p']}</p>
+      </div>
+      <a href="{su}" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="{u['badge_alt']}" /></a>
+    </div>
+    <h2>{u['verdict_h2']}</h2>
+    <p>{t['verdict']}</p>
+    <h2>{u['faq_h2']}</h2>
+    {faq_cards}
+    <aside class="author-bio">
+      <img class="author-avatar" src="https://github.com/29satnam.png" alt="Satnam Singh" width="56" height="56" loading="lazy" />
+      <div>
+        <h3>{u['author_h3']}</h3>
+        <p>{u['author_bio']}</p>
+      </div>
+    </aside>
+    <section class="related-section">
+      <h2>{u['related_h2']}</h2>
+      <div class="related-grid">
+        {related}
+      </div>
+    </section>
+  </article>
+  <footer class="site-footer">
+    <div class="footer-bottom"><span>&copy; <span id="yr"></span> NotchNest &middot; Satnam Singh</span>{footer_lang_inline(loc, f'compare/{slug}/')}</div>
+  </footer>
+</div></main>
+<script>var yr=document.getElementById('yr');if(yr)yr.textContent=new Date().getFullYear();</script>
+</body></html>
+"""
+
+
+def build_compare_index(loc):
+    from build_i18n_compare import CMP, CMP_UI
+    u = CMP_UI[loc]
+    d = DIRS[loc]
+    blurb = {"notchnest-vs-notchnook": u["hub_p"], "notchnest-vs-alcove": u["hub_p"], "notchnest-vs-boring-notch": u["hub_p"]}
+    cards = "\n    ".join(
+        f'<a class="learn-card" href="/{d}compare/{s}/"><span class="learn-card-tag">{u["kicker"]}</span><h2>NotchNest vs {CMP[s]["competitor"]}</h2><p>{CMP[s][loc]["lede"][:90]}…</p><span class="arrow">{u["compare_arrow"]}</span></a>'
+        for s in COMPARE_SLUGS)
+    cards += (f'\n    <a class="learn-card" href="/{d}learn/best-macos-notch-apps/"><span class="learn-card-tag">{u["kicker"]}</span>'
+              f'<h2>{u["bestapps_h3"]}</h2><p>{u["bestapps_blurb"]}</p><span class="arrow">{u["read_arrow"]}</span></a>')
+    return f"""<!DOCTYPE html>
+<html lang="{LANG_ATTR[loc]}"{rtl_attrs(loc)}>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<title>{u['hub_title']}</title>
+<meta name="description" content="{u['hub_desc']}" />
+<link rel="canonical" href="{BASE}{d}compare/" />
+<meta name="robots" content="index,follow,max-image-preview:large" />
+{hreflang('compare/')}
+<meta property="og:title" content="{u['hub_title']}" />
+<meta property="og:description" content="{u['hub_desc']}" />
+<meta property="og:url" content="{BASE}{d}compare/" />
+<meta property="og:locale" content="{OG_LOCALE[loc]}" />
+<meta property="og:image" content="{BASE}assets/og/best-macos-notch-apps.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="stylesheet" href="/styles.css" />
+<link rel="apple-touch-icon" href="/assets/notchnest-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<meta name="theme-color" content="#000000" />
+<meta name="color-scheme" content="dark" />
+<script type="application/ld+json">
+{{
+  "@context": "https://schema.org", "@type": "CollectionPage",
+  "name": {jstr(u['hub_title'])}, "url": "{BASE}{d}compare/", "inLanguage": "{LANG_ATTR[loc]}",
+  "breadcrumb": {{ "@type": "BreadcrumbList", "itemListElement": [
+    {{ "@type": "ListItem", "position": 1, "name": {jstr(u['home'])}, "item": "{BASE}{d}" }},
+    {{ "@type": "ListItem", "position": 2, "name": {jstr(u['compare'])}, "item": "{BASE}{d}compare/" }}
+  ] }}
+}}
+</script>{rtl_style(loc)}
+</head>
+<body>
+<nav class="nn-nav" aria-label="{u['nav_aria']}"><div class="nn-nav-inner">
+  <a class="nn-brand" href="/{d}"><img class="nn-brand-mark" src="/assets/notchnest-icon.png" alt="NotchNest" width="28" height="28" /><span>NotchNest</span></a>
+  <div class="nn-nav-links">
+    <a href="/{d}#features">{u['features']}</a><a href="/{d}compare/" class="nn-nav-keep">{u['compare']}</a><a href="/{d}learn/">{u['learn']}</a>
+  </div>
+</div></nav>
+<main class="main-container"><div class="content-wrapper">
+  <div class="crumbs"><a href="/{d}">{u['home']}</a><span class="sep">/</span><span>{u['compare']}</span></div>
+  <header class="learn-hero">
+    <h1>{u['hub_h1']}</h1>
+    <p>{u['hub_p']}</p>
+  </header>
+  <div class="learn-grid">
+    {cards}
+  </div>
+  <footer class="site-footer">
+    <div class="footer-bottom"><span>&copy; <span id="yr"></span> NotchNest &middot; Satnam Singh</span>{footer_lang_inline(loc, 'compare/')}</div>
+  </footer>
+</div></main>
+<script>var yr=document.getElementById('yr');if(yr)yr.textContent=new Date().getFullYear();</script>
+</body></html>
+"""
+
+
 def jstr(s):
     """JSON string literal (escape quotes/backslashes)."""
     return '"' + s.replace("\\", "\\\\").replace('"', '\\"') + '"'
@@ -726,6 +945,9 @@ def update_sitemap():
             pages.append((f"learn/{slug}/", "monthly", "0.7"))
         for slug in FOR_SLUGS:
             pages.append((f"for/{slug}/", "monthly", "0.6"))
+        pages.append(("compare/", "monthly", "0.7"))
+        for slug in COMPARE_SLUGS:
+            pages.append((f"compare/{slug}/", "monthly", "0.7"))
         for suffix, cf, pr in pages:
             url = BASE + d + suffix
             if f"<loc>{url}</loc>" in xml:
@@ -780,6 +1002,20 @@ def update_llms():
     print(f"  llms: wrote {len(GEN)} localized llms.txt + root Languages section")
 
 
+def patch_en_compare():
+    """English compare pages: fix stale rating and the outdated language row."""
+    for slug in COMPARE_SLUGS:
+        p = ROOT / "compare" / slug / "index.html"
+        if not p.exists():
+            continue
+        h = p.read_text(encoding="utf-8")
+        h = h.replace('"ratingValue": "4.7", "ratingCount": "1008"',
+                      '"ratingValue": "4.0", "ratingCount": "15"')
+        h = h.replace('<td>Localised (EN/DE/ZH)</td>', '<td>Localized (8 languages)</td>')
+        p.write_text(h, encoding="utf-8")
+    print("  patched en compare rating + language row")
+
+
 def patch_simple_hreflang(suffixes):
     """Patch the English original of pages that now exist in every locale."""
     for suffix in suffixes:
@@ -805,9 +1041,16 @@ def main():
     for loc in FULL:
         for slug in FOR_SLUGS:
             write(ROOT / DIRS[loc] / "for" / slug / "index.html", build_for(loc, slug))
+    print("compare/ pages:")
+    for loc in FULL:
+        write(ROOT / DIRS[loc] / "compare" / "index.html", build_compare_index(loc))
+        for slug in COMPARE_SLUGS:
+            write(ROOT / DIRS[loc] / "compare" / slug / "index.html", build_compare(loc, slug))
     patch_existing()
     patch_learn_hreflang()
-    patch_simple_hreflang([f"for/{s}/" for s in FOR_SLUGS])
+    patch_simple_hreflang([f"for/{s}/" for s in FOR_SLUGS]
+                          + ["compare/"] + [f"compare/{s}/" for s in COMPARE_SLUGS])
+    patch_en_compare()
     print("sitemap:")
     update_sitemap()
     print("llms:")
