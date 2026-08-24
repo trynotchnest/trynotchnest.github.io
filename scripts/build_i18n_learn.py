@@ -1510,10 +1510,212 @@ DYN = {
 }
 
 
+# ── drop-files-into-macbook-notch ───────────────────────────────────────────
+DROP = {
+    "de": {"title": "Dateien in die MacBook-Notch ziehen — NotchNest", "description": "Mach die Notch zum Drag-and-Drop-Regal — MacBook-Notch-Dateidrop für sofortiges AirDrop, ein Zwischenlager und schnelles Teilen ohne Finder-Fenster.",
+           "og_title": "Dateien in die MacBook-Notch ziehen", "og_desc": "So funktioniert der Notch-Dateidrop — und warum er schneller ist als Finder.",
+           "jsonld_headline": "Dateien in die MacBook-Notch ziehen", "jsonld_desc": "Wie MacBook-Notch-Dateidrop für AirDrop, Zwischenlager und schnelles Teilen funktioniert.",
+           "kicker": KICK["guide"]["de"], "h1": "Dateien in die MacBook-Notch ziehen",
+           "lede": "Die Notch fängt Dateien, die du auf sie ziehst — ein Tray für AirDrop und schnelles Teilen. So funktioniert der MacBook-Notch-Dateidrop und warum er schneller ist als Finder.",
+           "readtime": READ5["de"], "crumb_this": "Dateidrop in die Notch",
+           "faq": [("Kann man Dateien auf die MacBook-Notch ziehen?", "Ja, mit einer Notch-App wie NotchNest. Eine Datei auf die Notch zu ziehen öffnet ein Tray für AirDrop, ein Zwischenlager oder das Teilen-Menü."),
+                   ("Ist Notch-Dateidrop schneller als AirDrop aus dem Finder?", "Meist. Die Notch ist ein fester Punkt oben in der Mitte jedes Bildschirms — kein Fensterwechsel, kein Rechtsklick-Menü. Rauf ziehen und loslassen."),
+                   ("Behält das Notch-Tray meine Dateien?", "Das Datei-Tray hält zuletzt verwendete Dateien, damit du sie aus jeder App wieder greifst. Nichts wird hochgeladen; Dateien bleiben lokal auf deinem Mac."),
+                   ("Welche Macs unterstützen Notch-Dateidrop?", "Jedes MacBook mit Notch — MacBook Pro ab 2021 und MacBook Air ab 2022 — mit macOS 14 oder neuer und installiertem NotchNest.")],
+           "body": """<p>Eine Datei zum Teilen zu ziehen bedeutet meist, Finder-Fenster oder das Teilen-Menü zu jonglieren. MacBook-Notch-Dateidrop ersetzt das: Du ziehst eine Datei auf die Notch, und sie wird zum Startpunkt für AirDrop, zu einem Zwischenlager oder einer Schnellaktion.</p>
+    <h2>So funktioniert der Notch-Dateidrop</h2>
+    <p>Läuft NotchNest, wird die Notch zum Drop-Ziel. Nimm eine beliebige Datei — aus Finder, vom Schreibtisch oder aus einer App — zieh sie auf die Notch, und ein Tray öffnet sich:</p>
+    <ul>
+      <li><strong>AirDrop</strong> — auf einem nahen Gerät loslassen, um sofort zu senden.</li>
+      <li><strong>Datei-Tray</strong> — Dateien dort parken und später aus jeder App wieder greifen.</li>
+      <li><strong>Schnell teilen</strong> — ans Teilen-Menü übergeben, ohne es zu suchen.</li>
+    </ul>
+    <h2>Warum es den normalen Ablauf schlägt</h2>
+    <p>Die Notch ist immer oben in der Mitte deines Bildschirms, also ein fester, vorhersehbarer Punkt, egal welche App vorne ist. Kein Fensterwechsel, keine Rechtsklick-Menüs. Rauf ziehen, ablegen, fertig. Das Zuletzt-Verwendet-Tray sorgt dafür, dass du nicht den Überblick verlierst.</p>
+    <h2>Probier das Drop-Tray</h2>
+    <p>Der Notch-Playground zeigt das Aufklapp-Tray, damit du die Drop-Zone vor der Installation siehst.</p>
+    <div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>Mach deine Notch nützlich</h3><p>NotchNest bringt zehn Tools in die Notch deines MacBooks. Kostenlos im Mac App Store.</p></div>
+      <a href="%STORE%" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="Im Mac App Store laden" /></a>
+    </div>""",
+           "related": _related("de", ("/learn/best-macos-notch-apps/", "Best macOS notch apps", "Übersicht 2026."))},
+    "zh": {"title": "如何把文件拖进 MacBook 刘海 — NotchNest", "description": "把刘海变成拖放搁架——MacBook 刘海文件拖放，实现即时 AirDrop、暂存托盘和无需 Finder 窗口的快速分享。",
+           "og_title": "如何把文件拖进 MacBook 刘海", "og_desc": "刘海文件拖放怎么用——以及为何比 Finder 更快。",
+           "jsonld_headline": "如何把文件拖进 MacBook 刘海", "jsonld_desc": "MacBook 刘海文件拖放如何用于 AirDrop、暂存托盘和快速分享。",
+           "kicker": KICK["guide"]["zh"], "h1": "如何把文件拖进 MacBook 刘海",
+           "lede": "刘海能接住你拖上去的文件——一个用于 AirDrop 和快速分享的托盘。看看 MacBook 刘海文件拖放怎么用，以及为何比 Finder 更快。",
+           "readtime": READ5["zh"], "crumb_this": "把文件拖进刘海",
+           "faq": [("能把文件拖到 MacBook 刘海上吗？", "能，配合 NotchNest 这样的刘海应用。把文件拖到刘海会打开一个用于 AirDrop、暂存搁架或分享菜单的托盘。"),
+                   ("刘海文件拖放比从 Finder 用 AirDrop 更快吗？", "通常是。刘海是每块屏幕顶部居中的固定目标，无需切窗、无需右键菜单——往上拖，松手即可。"),
+                   ("刘海托盘会保留我的文件吗？", "文件托盘保留最近文件，你可从任意应用再取。什么都不会上传；文件留在你的 Mac 本地。"),
+                   ("哪些 Mac 支持刘海文件拖放？", "任何带刘海的 MacBook——2021 年起的 MacBook Pro 与 2022 年起的 MacBook Air——运行 macOS 14 或更新并安装 NotchNest。")],
+           "body": """<p>拖一个文件去分享，通常意味着在 Finder 窗口或分享菜单间来回折腾。MacBook 刘海文件拖放取而代之：你把文件拖到刘海，它便成为 AirDrop 的起点、一个暂存托盘或一个快捷操作。</p>
+    <h2>刘海文件拖放怎么用</h2>
+    <p>运行 NotchNest 后，刘海成为放置目标。拿起任意文件——来自 Finder、桌面或某个应用——拖到刘海，托盘随即打开：</p>
+    <ul>
+      <li><strong>AirDrop</strong>——松手落在附近设备上即刻发送。</li>
+      <li><strong>文件托盘</strong>——把文件停在那里，稍后从任意应用再取。</li>
+      <li><strong>快速分享</strong>——交给分享菜单，无需翻找。</li>
+    </ul>
+    <h2>它为何胜过常规流程</h2>
+    <p>刘海始终在屏幕顶部居中，因此无论哪个应用在前台，它都是固定、可预期的目标。无需切换窗口，无需右键菜单。往上拖、放下、搞定。最近文件托盘让你不会弄丢刚移动的东西。</p>
+    <h2>试试拖放托盘</h2>
+    <p>刘海演示会展示悬停展开的托盘，让你在安装前就看到放置区。</p>
+    <div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>让你的刘海有用</h3><p>NotchNest 把十个工具放进 MacBook 刘海。在 Mac App Store 免费。</p></div>
+      <a href="%STORE%" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="在 Mac App Store 下载" /></a>
+    </div>""",
+           "related": _related("zh", ("/learn/best-macos-notch-apps/", "Best macOS notch apps", "英文——2026 盘点。"))},
+    "ar": {"title": "كيفية إفلات الملفات في نتش الماك بوك — NotchNest", "description": "حوّل النتش إلى رفّ سحب وإفلات — إفلات ملفات نتش الماك بوك لـ AirDrop فوري ودرج تخزين ومشاركة سريعة بلا نافذة Finder.",
+           "og_title": "كيفية إفلات الملفات في نتش الماك بوك", "og_desc": "كيف يعمل إفلات ملفات النتش — ولماذا هو أسرع من Finder.",
+           "jsonld_headline": "كيفية إفلات الملفات في نتش الماك بوك", "jsonld_desc": "كيف يعمل إفلات ملفات نتش الماك بوك لـ AirDrop ودرج التخزين والمشاركة السريعة.",
+           "kicker": KICK["guide"]["ar"], "h1": "كيفية إفلات الملفات في نتش الماك بوك",
+           "lede": "يلتقط النتش الملفات التي تسحبها إليه — درج لـ AirDrop والمشاركة السريعة. إليك كيف يعمل إفلات ملفات نتش الماك بوك ولماذا هو أسرع من Finder.",
+           "readtime": READ5["ar"], "crumb_this": "إفلات الملفات في النتش",
+           "faq": [("هل يمكن سحب الملفات إلى نتش الماك بوك؟", "نعم، بتطبيق نتش مثل NotchNest. سحب ملف إلى النتش يفتح درجًا لـ AirDrop أو رفّ تخزين أو قائمة المشاركة."),
+                   ("هل إفلات ملفات النتش أسرع من AirDrop من Finder؟", "عادةً. النتش هدف ثابت أعلى منتصف كل شاشة، فلا تبديل نوافذ ولا قائمة نقر يمين — اسحب لأعلى وأفلت."),
+                   ("هل يحتفظ درج النتش بملفاتي؟", "يحتفظ درج الملفات بالأخيرة لتأخذها من أي تطبيق. لا يُرفع شيء؛ تبقى الملفات محليًا على جهاز الماك."),
+                   ("أي أجهزة ماك تدعم إفلات ملفات النتش؟", "أي ماك بوك بنتش — MacBook Pro من 2021 وMacBook Air من 2022 — يعمل بـ macOS 14 أو أحدث مع تثبيت NotchNest.")],
+           "body": """<p>سحب ملف لمشاركته يعني عادةً التنقّل بين نوافذ Finder أو قائمة المشاركة. يحلّ إفلات ملفات نتش الماك بوك محلّ ذلك: تسحب ملفًا إلى النتش فيصبح نقطة انطلاق لـ AirDrop أو درج تخزين أو إجراء سريع.</p>
+    <h2>كيف يعمل إفلات ملفات النتش</h2>
+    <p>مع تشغيل NotchNest، يصبح النتش هدف إفلات. التقط أي ملف — من Finder أو سطح المكتب أو تطبيق — واسحبه إلى النتش، فيفتح درج:</p>
+    <ul>
+      <li><strong>AirDrop</strong> — أفلت على جهاز قريب للإرسال فورًا.</li>
+      <li><strong>درج الملفات</strong> — خزّن الملفات هناك واسحبها لاحقًا من أي تطبيق.</li>
+      <li><strong>مشاركة سريعة</strong> — سلّم إلى قائمة المشاركة دون البحث عنها.</li>
+    </ul>
+    <h2>لماذا يتفوّق على المسار العادي</h2>
+    <p>النتش دائمًا أعلى منتصف شاشتك، فهو هدف ثابت ومتوقّع أيًّا كان التطبيق الأمامي. لا تبديل نوافذ ولا قوائم نقر يمين. اسحب لأعلى، أفلت، انتهى. درج الملفات الأخيرة يمنعك من فقدان ما نقلته.</p>
+    <h2>جرّب درج الإفلات</h2>
+    <p>يعرض عرض النتش درج التوسّع بالتمرير لترى منطقة الإفلات قبل التثبيت.</p>
+    <div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>اجعل نتشك مفيدًا</h3><p>يضع NotchNest عشر أدوات في نتش الماك بوك. مجانًا على Mac App Store.</p></div>
+      <a href="%STORE%" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="التنزيل من Mac App Store" /></a>
+    </div>""",
+           "related": _related("ar", ("/learn/best-macos-notch-apps/", "Best macOS notch apps", "إنجليزي — اختيارات 2026."))},
+    "fr": {"title": "Déposer des fichiers dans l'encoche du MacBook — NotchNest", "description": "Transformez l'encoche en étagère glisser-déposer — dépôt de fichiers pour AirDrop instantané, un bac de rétention et un partage rapide sans fenêtre Finder.",
+           "og_title": "Déposer des fichiers dans l'encoche du MacBook", "og_desc": "Comment fonctionne le dépôt de fichiers dans l'encoche — et pourquoi c'est plus rapide que le Finder.",
+           "jsonld_headline": "Déposer des fichiers dans l'encoche du MacBook", "jsonld_desc": "Comment le dépôt de fichiers dans l'encoche du MacBook fonctionne pour AirDrop, un bac de rétention et un partage rapide.",
+           "kicker": KICK["guide"]["fr"], "h1": "Déposer des fichiers dans l'encoche du MacBook",
+           "lede": "L'encoche attrape les fichiers que vous y glissez — un bac pour AirDrop et le partage rapide. Voici comment fonctionne le dépôt de fichiers dans l'encoche et pourquoi c'est plus rapide que le Finder.",
+           "readtime": READ5["fr"], "crumb_this": "Dépôt de fichiers dans l'encoche",
+           "faq": [("Peut-on glisser des fichiers sur l'encoche du MacBook ?", "Oui, avec une app d'encoche comme NotchNest. Glisser un fichier sur l'encoche ouvre un bac pour AirDrop, une étagère de rétention ou la feuille de partage."),
+                   ("Le dépôt dans l'encoche est-il plus rapide qu'AirDrop depuis le Finder ?", "En général. L'encoche est une cible fixe en haut au centre de chaque écran — pas de changement de fenêtre, pas de menu clic droit. Glissez vers le haut et relâchez."),
+                   ("Le bac de l'encoche conserve-t-il mes fichiers ?", "Le bac à fichiers garde les récents pour les reprendre depuis n'importe quelle app. Rien n'est envoyé ; les fichiers restent en local sur votre Mac."),
+                   ("Quels Mac prennent en charge le dépôt dans l'encoche ?", "Tout MacBook à encoche — MacBook Pro depuis 2021 et MacBook Air depuis 2022 — sous macOS 14 ou plus récent avec NotchNest installé.")],
+           "body": """<p>Glisser un fichier pour le partager signifie d'habitude jongler avec des fenêtres Finder ou la feuille de partage. Le dépôt de fichiers dans l'encoche du MacBook remplace cela : vous glissez un fichier sur l'encoche et elle devient un point de départ pour AirDrop, un bac de rétention ou une action rapide.</p>
+    <h2>Comment fonctionne le dépôt dans l'encoche</h2>
+    <p>Avec NotchNest lancé, l'encoche devient une cible de dépôt. Prenez n'importe quel fichier — du Finder, du Bureau ou d'une app — glissez-le vers l'encoche, et un bac s'ouvre :</p>
+    <ul>
+      <li><strong>AirDrop</strong> — relâchez sur un appareil proche pour envoyer instantanément.</li>
+      <li><strong>Bac à fichiers</strong> — garez-y des fichiers et reprenez-les plus tard depuis n'importe quelle app.</li>
+      <li><strong>Partage rapide</strong> — passez à la feuille de partage sans chercher le menu.</li>
+    </ul>
+    <h2>Pourquoi ça bat le flux normal</h2>
+    <p>L'encoche est toujours en haut au centre de votre écran, donc une cible fixe et prévisible quelle que soit l'app au premier plan. Pas de changement de fenêtre, pas de menus clic droit. Glissez vers le haut, déposez, c'est fait. Le bac des fichiers récents évite de perdre le fil de ce que vous avez déplacé.</p>
+    <h2>Essayez le bac de dépôt</h2>
+    <p>Le terrain de jeu de l'encoche montre le bac qui se déploie au survol, pour voir la zone de dépôt avant d'installer.</p>
+    <div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>Rendez votre encoche utile</h3><p>NotchNest met dix outils dans l'encoche de votre MacBook. Gratuit sur le Mac App Store.</p></div>
+      <a href="%STORE%" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="Télécharger sur le Mac App Store" /></a>
+    </div>""",
+           "related": _related("fr", ("/learn/best-macos-notch-apps/", "Best macOS notch apps", "Anglais — sélection 2026."))},
+    "pt-BR": {"title": "Como soltar arquivos no notch do MacBook — NotchNest", "description": "Transforme o notch em uma prateleira de arrastar e soltar — soltar arquivos no notch para AirDrop instantâneo, uma bandeja e compartilhamento rápido sem janela do Finder.",
+              "og_title": "Como soltar arquivos no notch do MacBook", "og_desc": "Como funciona soltar arquivos no notch — e por que é mais rápido que o Finder.",
+              "jsonld_headline": "Como soltar arquivos no notch do MacBook", "jsonld_desc": "Como soltar arquivos no notch do MacBook funciona para AirDrop, bandeja e compartilhamento rápido.",
+              "kicker": KICK["guide"]["pt-BR"], "h1": "Como soltar arquivos no notch do MacBook",
+              "lede": "O notch pega arquivos que você arrasta até ele — uma bandeja para AirDrop e compartilhamento rápido. Veja como soltar arquivos no notch funciona e por que é mais rápido que o Finder.",
+              "readtime": READ5["pt-BR"], "crumb_this": "Soltar arquivos no notch",
+              "faq": [("Dá para arrastar arquivos para o notch do MacBook?", "Sim, com um app de notch como o NotchNest. Arrastar um arquivo para o notch abre uma bandeja para AirDrop, uma prateleira ou a folha de compartilhamento."),
+                      ("Soltar no notch é mais rápido que AirDrop pelo Finder?", "Geralmente. O notch é um alvo fixo no topo central de toda tela — sem troca de janela, sem menu de clique direito. Arraste para cima e solte."),
+                      ("A bandeja do notch guarda meus arquivos?", "A bandeja de arquivos guarda os recentes para você pegá-los de qualquer app. Nada é enviado; os arquivos ficam locais no seu Mac."),
+                      ("Quais Macs suportam soltar arquivos no notch?", "Qualquer MacBook com notch — MacBook Pro 2021+ e MacBook Air 2022+ — rodando macOS 14 ou mais recente com o NotchNest instalado.")],
+              "body": """<p>Arrastar um arquivo para compartilhar normalmente significa fazer malabarismo com janelas do Finder ou a folha de compartilhamento. Soltar arquivos no notch do MacBook substitui isso: você arrasta um arquivo para o notch e ele vira um ponto de partida para AirDrop, uma bandeja ou uma ação rápida.</p>
+    <h2>Como soltar arquivos no notch funciona</h2>
+    <p>Com o NotchNest rodando, o notch vira um alvo de soltar. Pegue qualquer arquivo — do Finder, da Mesa ou de um app — arraste-o para o notch, e uma bandeja abre:</p>
+    <ul>
+      <li><strong>AirDrop</strong> — solte em um dispositivo próximo para enviar na hora.</li>
+      <li><strong>Bandeja de arquivos</strong> — estacione arquivos ali e pegue-os depois de qualquer app.</li>
+      <li><strong>Compartilhar rápido</strong> — entregue à folha de compartilhamento sem procurar o menu.</li>
+    </ul>
+    <h2>Por que supera o fluxo normal</h2>
+    <p>O notch está sempre no topo central da sua tela, então é um alvo fixo e previsível não importa qual app está na frente. Sem troca de janela, sem menus de clique direito. Arraste para cima, solte, pronto. A bandeja de recentes evita que você perca o rastro do que moveu.</p>
+    <h2>Teste a bandeja de soltar</h2>
+    <p>O playground do notch demonstra a bandeja que expande ao passar o cursor, para você ver a zona de soltar antes de instalar.</p>
+    <div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>Torne seu notch útil</h3><p>O NotchNest coloca dez ferramentas no notch do seu MacBook. Grátis na Mac App Store.</p></div>
+      <a href="%STORE%" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="Baixar na Mac App Store" /></a>
+    </div>""",
+              "related": _related("pt-BR", ("/learn/best-macos-notch-apps/", "Best macOS notch apps", "Inglês — seleção 2026."))},
+    "pt-PT": {"title": "Como largar ficheiros no notch do MacBook — NotchNest", "description": "Transforme o notch numa prateleira de arrastar e largar — largar ficheiros no notch para AirDrop instantâneo, um tabuleiro e partilha rápida sem janela do Finder.",
+              "og_title": "Como largar ficheiros no notch do MacBook", "og_desc": "Como funciona largar ficheiros no notch — e porque é mais rápido que o Finder.",
+              "jsonld_headline": "Como largar ficheiros no notch do MacBook", "jsonld_desc": "Como largar ficheiros no notch do MacBook funciona para AirDrop, tabuleiro e partilha rápida.",
+              "kicker": KICK["guide"]["pt-PT"], "h1": "Como largar ficheiros no notch do MacBook",
+              "lede": "O notch apanha ficheiros que arrasta até ele — um tabuleiro para AirDrop e partilha rápida. Veja como largar ficheiros no notch funciona e porque é mais rápido que o Finder.",
+              "readtime": READ5["pt-PT"], "crumb_this": "Largar ficheiros no notch",
+              "faq": [("Dá para arrastar ficheiros para o notch do MacBook?", "Sim, com uma app de notch como o NotchNest. Arrastar um ficheiro para o notch abre um tabuleiro para AirDrop, uma prateleira ou a folha de partilha."),
+                      ("Largar no notch é mais rápido que AirDrop pelo Finder?", "Geralmente. O notch é um alvo fixo no topo central de todos os ecrãs — sem troca de janela, sem menu de clique direito. Arraste para cima e largue."),
+                      ("O tabuleiro do notch guarda os meus ficheiros?", "O tabuleiro de ficheiros guarda os recentes para os apanhar de qualquer app. Nada é enviado; os ficheiros ficam locais no seu Mac."),
+                      ("Que Macs suportam largar ficheiros no notch?", "Qualquer MacBook com notch — MacBook Pro 2021+ e MacBook Air 2022+ — a correr macOS 14 ou mais recente com o NotchNest instalado.")],
+              "body": """<p>Arrastar um ficheiro para partilhar significa normalmente fazer malabarismo com janelas do Finder ou a folha de partilha. Largar ficheiros no notch do MacBook substitui isso: arrasta um ficheiro para o notch e ele torna-se um ponto de partida para AirDrop, um tabuleiro ou uma ação rápida.</p>
+    <h2>Como largar ficheiros no notch funciona</h2>
+    <p>Com o NotchNest a correr, o notch torna-se um alvo de largar. Pegue em qualquer ficheiro — do Finder, da Secretária ou de uma app — arraste-o para o notch, e um tabuleiro abre:</p>
+    <ul>
+      <li><strong>AirDrop</strong> — largue num dispositivo próximo para enviar de imediato.</li>
+      <li><strong>Tabuleiro de ficheiros</strong> — estacione ficheiros ali e apanhe-os depois de qualquer app.</li>
+      <li><strong>Partilha rápida</strong> — entregue à folha de partilha sem procurar o menu.</li>
+    </ul>
+    <h2>Porque supera o fluxo normal</h2>
+    <p>O notch está sempre no topo central do seu ecrã, por isso é um alvo fixo e previsível seja qual for a app à frente. Sem troca de janela, sem menus de clique direito. Arraste para cima, largue, pronto. O tabuleiro de recentes evita que perca o rasto do que moveu.</p>
+    <h2>Experimente o tabuleiro de largar</h2>
+    <p>O playground do notch demonstra o tabuleiro que expande ao passar o cursor, para ver a zona de largar antes de instalar.</p>
+    <div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>Torne o seu notch útil</h3><p>O NotchNest coloca dez ferramentas no notch do seu MacBook. Gratuito na Mac App Store.</p></div>
+      <a href="%STORE%" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="Descarregar na Mac App Store" /></a>
+    </div>""",
+              "related": _related("pt-PT", ("/learn/best-macos-notch-apps/", "Best macOS notch apps", "Inglês — seleção 2026."))},
+    "es-MX": {"title": "Cómo soltar archivos en el notch del MacBook — NotchNest", "description": "Convierte el notch en un estante de arrastrar y soltar — soltar archivos en el notch para AirDrop instantáneo, una bandeja y compartir rápido sin ventana del Finder.",
+              "og_title": "Cómo soltar archivos en el notch del MacBook", "og_desc": "Cómo funciona soltar archivos en el notch — y por qué es más rápido que el Finder.",
+              "jsonld_headline": "Cómo soltar archivos en el notch del MacBook", "jsonld_desc": "Cómo soltar archivos en el notch del MacBook funciona para AirDrop, bandeja y compartir rápido.",
+              "kicker": KICK["guide"]["es-MX"], "h1": "Cómo soltar archivos en el notch del MacBook",
+              "lede": "El notch atrapa archivos que arrastras hacia él — una bandeja para AirDrop y compartir rápido. Aquí cómo funciona soltar archivos en el notch y por qué es más rápido que el Finder.",
+              "readtime": READ5["es-MX"], "crumb_this": "Soltar archivos en el notch",
+              "faq": [("¿Se pueden arrastrar archivos al notch del MacBook?", "Sí, con una app de notch como NotchNest. Arrastrar un archivo al notch abre una bandeja para AirDrop, un estante o la hoja de compartir."),
+                      ("¿Soltar en el notch es más rápido que AirDrop desde el Finder?", "Normalmente. El notch es un objetivo fijo en la parte superior central de cada pantalla — sin cambiar de ventana, sin menú de clic derecho. Arrastra hacia arriba y suelta."),
+                      ("¿La bandeja del notch conserva mis archivos?", "La bandeja de archivos guarda los recientes para tomarlos desde cualquier app. Nada se sube; los archivos se quedan locales en tu Mac."),
+                      ("¿Qué Macs admiten soltar archivos en el notch?", "Cualquier MacBook con notch — MacBook Pro 2021+ y MacBook Air 2022+ — con macOS 14 o posterior y NotchNest instalado.")],
+              "body": """<p>Arrastrar un archivo para compartir suele significar hacer malabares con ventanas del Finder o la hoja de compartir. Soltar archivos en el notch del MacBook lo reemplaza: arrastras un archivo al notch y se convierte en un punto de partida para AirDrop, una bandeja o una acción rápida.</p>
+    <h2>Cómo funciona soltar archivos en el notch</h2>
+    <p>Con NotchNest en marcha, el notch se vuelve un objetivo para soltar. Toma cualquier archivo — del Finder, del Escritorio o de una app — arrástralo al notch, y se abre una bandeja:</p>
+    <ul>
+      <li><strong>AirDrop</strong> — suelta en un dispositivo cercano para enviar al instante.</li>
+      <li><strong>Bandeja de archivos</strong> — estaciona archivos ahí y tómalos después desde cualquier app.</li>
+      <li><strong>Compartir rápido</strong> — entrégalo a la hoja de compartir sin buscar el menú.</li>
+    </ul>
+    <h2>Por qué supera el flujo normal</h2>
+    <p>El notch siempre está en la parte superior central de tu pantalla, así que es un objetivo fijo y predecible sin importar qué app esté al frente. Sin cambiar de ventana, sin menús de clic derecho. Arrastra hacia arriba, suelta, listo. La bandeja de recientes evita que pierdas el rastro de lo que moviste.</p>
+    <h2>Prueba la bandeja de soltar</h2>
+    <p>El playground del notch muestra la bandeja que se expande al pasar el cursor, para que veas la zona de soltar antes de instalar.</p>
+    <div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>Haz útil tu notch</h3><p>NotchNest pone diez herramientas en el notch de tu MacBook. Gratis en el Mac App Store.</p></div>
+      <a href="%STORE%" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="Descargar en el Mac App Store" /></a>
+    </div>""",
+              "related": _related("es-MX", ("/learn/best-macos-notch-apps/", "Best macOS notch apps", "Inglés — selección 2026."))},
+}
+
+
 LEARN_ARTICLES = {
     "what-is-the-macos-notch": _assemble(WHATIS),
     "does-the-mac-notch-actually-do-anything": _assemble(DOES),
     "notch-nest-vs-boring-notch-vs-notchdrop": _assemble(BVBVD),
     "how-to-hide-the-notch-on-mac": _assemble(HIDE),
     "what-is-dynamic-island-on-mac": _assemble(DYN),
+    "drop-files-into-macbook-notch": _assemble(DROP),
 }

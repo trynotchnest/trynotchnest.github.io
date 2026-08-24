@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<title>如何把文件拖进 MacBook 刘海 — NotchNest</title>
+<meta name="description" content="把刘海变成拖放搁架——MacBook 刘海文件拖放，实现即时 AirDrop、暂存托盘和无需 Finder 窗口的快速分享。" />
+<link rel="canonical" href="https://notchnest.app/zh/learn/drop-files-into-macbook-notch/" />
+<meta name="robots" content="index,follow,max-image-preview:large" />
+<link rel="alternate" hreflang="en" href="https://notchnest.app/learn/drop-files-into-macbook-notch/" />
+<link rel="alternate" hreflang="en-us" href="https://notchnest.app/learn/drop-files-into-macbook-notch/" />
+<link rel="alternate" hreflang="en-gb" href="https://notchnest.app/learn/drop-files-into-macbook-notch/" />
+<link rel="alternate" hreflang="en-in" href="https://notchnest.app/learn/drop-files-into-macbook-notch/" />
+<link rel="alternate" hreflang="de" href="https://notchnest.app/de/learn/drop-files-into-macbook-notch/" />
+<link rel="alternate" hreflang="zh" href="https://notchnest.app/zh/learn/drop-files-into-macbook-notch/" />
+<link rel="alternate" hreflang="zh-cn" href="https://notchnest.app/zh/learn/drop-files-into-macbook-notch/" />
+<link rel="alternate" hreflang="ar" href="https://notchnest.app/ar/learn/drop-files-into-macbook-notch/" />
+<link rel="alternate" hreflang="fr" href="https://notchnest.app/fr/learn/drop-files-into-macbook-notch/" />
+<link rel="alternate" hreflang="pt-BR" href="https://notchnest.app/pt-br/learn/drop-files-into-macbook-notch/" />
+<link rel="alternate" hreflang="pt-PT" href="https://notchnest.app/pt-pt/learn/drop-files-into-macbook-notch/" />
+<link rel="alternate" hreflang="es-MX" href="https://notchnest.app/es-mx/learn/drop-files-into-macbook-notch/" />
+<link rel="alternate" hreflang="es-419" href="https://notchnest.app/es-mx/learn/drop-files-into-macbook-notch/" />
+<link rel="alternate" hreflang="x-default" href="https://notchnest.app/learn/drop-files-into-macbook-notch/" />
+<meta property="og:title" content="如何把文件拖进 MacBook 刘海" />
+<meta property="og:description" content="刘海文件拖放怎么用——以及为何比 Finder 更快。" />
+<meta property="og:url" content="https://notchnest.app/zh/learn/drop-files-into-macbook-notch/" />
+<meta property="og:locale" content="zh_CN" />
+<meta property="og:type" content="article" />
+<meta property="og:image" content="https://notchnest.app/assets/og/drop-files-into-macbook-notch.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@codetard" />
+<meta name="twitter:creator" content="@codetard" />
+<link rel="stylesheet" href="/styles.css" />
+<link rel="apple-touch-icon" href="/assets/notchnest-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<meta name="theme-color" content="#000000" />
+<meta name="color-scheme" content="dark" />
+<script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org", "@type": "Article",
+    "headline": "如何把文件拖进 MacBook 刘海",
+    "description": "MacBook 刘海文件拖放如何用于 AirDrop、暂存托盘和快速分享。",
+    "image": "https://notchnest.app/assets/og/drop-files-into-macbook-notch.png",
+    "datePublished": "2026-06-10T00:00:00+00:00", "dateModified": "2026-06-13T00:00:00+00:00",
+    "inLanguage": "zh-Hans",
+    "author": { "@type": "Person", "name": "Satnam Singh", "url": "https://silverseahog.com/", "jobTitle": "Swift Developer",
+      "sameAs": ["https://silverseahog.com/","https://twitter.com/codetard","https://github.com/29satnam","https://www.linkedin.com/in/satnam-singh-948348aa/","https://instagram.com/codetard"] },
+    "publisher": { "@type": "Organization", "name": "NotchNest", "logo": { "@type": "ImageObject", "url": "https://notchnest.app/assets/notchnest-icon.png" } },
+    "mainEntityOfPage": "https://notchnest.app/zh/learn/drop-files-into-macbook-notch/"
+  },
+  {
+    "@context": "https://schema.org", "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://notchnest.app/zh/" },
+      { "@type": "ListItem", "position": 2, "name": "学习", "item": "https://notchnest.app/zh/learn/" },
+      { "@type": "ListItem", "position": 3, "name": "把文件拖进刘海", "item": "https://notchnest.app/zh/learn/drop-files-into-macbook-notch/" }
+    ]
+  },
+  {
+    "@context": "https://schema.org", "@type": "FAQPage", "inLanguage": "zh-Hans",
+    "mainEntity": [
+      { "@type": "Question", "name": "能把文件拖到 MacBook 刘海上吗？", "acceptedAnswer": { "@type": "Answer", "text": "能，配合 NotchNest 这样的刘海应用。把文件拖到刘海会打开一个用于 AirDrop、暂存搁架或分享菜单的托盘。" } },
+      { "@type": "Question", "name": "刘海文件拖放比从 Finder 用 AirDrop 更快吗？", "acceptedAnswer": { "@type": "Answer", "text": "通常是。刘海是每块屏幕顶部居中的固定目标，无需切窗、无需右键菜单——往上拖，松手即可。" } },
+      { "@type": "Question", "name": "刘海托盘会保留我的文件吗？", "acceptedAnswer": { "@type": "Answer", "text": "文件托盘保留最近文件，你可从任意应用再取。什么都不会上传；文件留在你的 Mac 本地。" } },
+      { "@type": "Question", "name": "哪些 Mac 支持刘海文件拖放？", "acceptedAnswer": { "@type": "Answer", "text": "任何带刘海的 MacBook——2021 年起的 MacBook Pro 与 2022 年起的 MacBook Air——运行 macOS 14 或更新并安装 NotchNest。" } }
+    ]
+  }
+]
+</script>
+</head>
+<body>
+<nav class="nn-nav"><div class="nn-nav-inner">
+  <a class="nn-brand" href="/zh/"><img class="nn-brand-mark" src="/assets/notchnest-icon.png" alt="" width="28" height="28"/><span>NotchNest</span></a>
+  <div class="nn-nav-links">
+    <a href="/learn/drop-files-into-macbook-notch/">EN</a>
+    <a href="/zh/learn/" class="nn-nav-keep">学习</a>
+  </div>
+</div></nav>
+
+<main class="main-container"><div class="learn-wrap">
+  <div class="crumbs"><a href="/zh/">首页</a><span class="sep">/</span><a href="/zh/learn/">学习</a><span class="sep">/</span><span>把文件拖进刘海</span></div>
+
+  <header class="article-head">
+    <span class="article-kicker">指南</span>
+    <h1 class="article-h1">如何把文件拖进 MacBook 刘海</h1>
+    <p class="article-lede">刘海能接住你拖上去的文件——一个用于 AirDrop 和快速分享的托盘。看看 MacBook 刘海文件拖放怎么用，以及为何比 Finder 更快。</p>
+    <div class="article-meta"><span>更新于 2026 年 6 月 13 日</span><span class="dot"></span><span>阅读 5 分钟</span><span class="dot"></span><span>作者 Satnam Singh</span></div>
+  </header>
+
+  <article class="article-body">
+    <p>拖一个文件去分享，通常意味着在 Finder 窗口或分享菜单间来回折腾。MacBook 刘海文件拖放取而代之：你把文件拖到刘海，它便成为 AirDrop 的起点、一个暂存托盘或一个快捷操作。</p>
+    <h2>刘海文件拖放怎么用</h2>
+    <p>运行 NotchNest 后，刘海成为放置目标。拿起任意文件——来自 Finder、桌面或某个应用——拖到刘海，托盘随即打开：</p>
+    <ul>
+      <li><strong>AirDrop</strong>——松手落在附近设备上即刻发送。</li>
+      <li><strong>文件托盘</strong>——把文件停在那里，稍后从任意应用再取。</li>
+      <li><strong>快速分享</strong>——交给分享菜单，无需翻找。</li>
+    </ul>
+    <h2>它为何胜过常规流程</h2>
+    <p>刘海始终在屏幕顶部居中，因此无论哪个应用在前台，它都是固定、可预期的目标。无需切换窗口，无需右键菜单。往上拖、放下、搞定。最近文件托盘让你不会弄丢刚移动的东西。</p>
+    <h2>试试拖放托盘</h2>
+    <p>刘海演示会展示悬停展开的托盘，让你在安装前就看到放置区。</p>
+    <div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>让你的刘海有用</h3><p>NotchNest 把十个工具放进 MacBook 刘海。在 Mac App Store 免费。</p></div>
+      <a href="https://apps.apple.com/cn/app/notchnest-power-your-notch/id6747612321" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="在 Mac App Store 下载" /></a>
+    </div>
+
+    <aside class="author-bio">
+      <img class="author-avatar" src="https://github.com/29satnam.png" alt="Satnam Singh" width="56" height="56" loading="lazy" />
+      <div>
+        <h3>关于作者</h3>
+        <p><strong>Satnam Singh</strong> 是 NotchNest 背后的 Swift 开发者。他撰写关于 macOS 生产力、Apple 芯片上的 AI 以及独立应用工艺的文章。<a href="https://silverseahog.com/" target="_blank" rel="noopener">silverseahog.com</a> · <a href="https://twitter.com/codetard" target="_blank" rel="noopener nofollow">@codetard</a></p>
+      </div>
+    </aside>
+
+    <section class="related-section">
+      <h2>继续阅读</h2>
+      <div class="related-grid">
+        <a class="related-card" href="/zh/learn/how-to-use-the-macbook-notch/"><h3>使用 MacBook 刘海</h3><p>三步让刘海有用。</p></a>
+        <a class="related-card" href="/zh/learn/best-macos-notch-apps/"><h3>最佳 macOS 刘海应用</h3><p>2026 盘点。</p></a>
+        <a class="related-card" href="/learn/best-macos-notch-apps/"><h3>Best macOS notch apps</h3><p>英文——2026 盘点。</p></a>
+      </div>
+    </section>
+  </article>
+
+  <footer class="site-footer">
+    <div class="footer-bottom"><span>© <span id="yr"></span> NotchNest · Satnam Singh</span><div class="footer-lang"><a href="/learn/drop-files-into-macbook-notch/" hreflang="en">English</a><a href="/de/learn/drop-files-into-macbook-notch/" hreflang="de">Deutsch</a><a href="/zh/learn/drop-files-into-macbook-notch/" hreflang="zh" aria-current="page">中文</a><a href="/ar/learn/drop-files-into-macbook-notch/" hreflang="ar">العربية</a><a href="/fr/learn/drop-files-into-macbook-notch/" hreflang="fr">Français</a><a href="/pt-br/learn/drop-files-into-macbook-notch/" hreflang="pt-BR">Português (BR)</a><a href="/pt-pt/learn/drop-files-into-macbook-notch/" hreflang="pt-PT">Português (PT)</a><a href="/es-mx/learn/drop-files-into-macbook-notch/" hreflang="es-MX">Español (MX)</a></div></div>
+  </footer>
+</div></main>
+<script>var yr=document.getElementById('yr');if(yr)yr.textContent=new Date().getFullYear();</script>
+</body></html>
