@@ -602,4 +602,424 @@
     <xhtml:link rel="alternate" hreflang="es-419" href="https://notchnest.app/es-mx/learn/best-macos-notch-apps/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://notchnest.app/learn/best-macos-notch-apps/"/>
   </url>
+  <url>
+    <loc>https://notchnest.app/de/for/developers/</loc>
+    <lastmod>2026-08-24T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://notchnest.app/for/developers/"/>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://notchnest.app/for/developers/"/>
+    <xhtml:link rel="alternate" hreflang="en-gb" href="https://notchnest.app/for/developers/"/>
+    <xhtml:link rel="alternate" hreflang="en-in" href="https://notchnest.app/for/developers/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://notchnest.app/de/for/developers/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://notchnest.app/zh/for/developers/"/>
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="https://notchnest.app/zh/for/developers/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://notchnest.app/ar/for/developers/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://notchnest.app/fr/for/developers/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://notchnest.app/pt-br/for/developers/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://notchnest.app/pt-pt/for/developers/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://notchnest.app/es-mx/for/developers/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://notchnest.app/es-mx/for/developers/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://notchnest.app/for/developers/"/>
+  </url>
+  <url>
+    <loc>https://notchnest.app/de/for/designers/</loc>
+    <lastmod>2026-08-24T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://notchnest.app/for/designers/"/>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://notchnest.app/for/designers/"/>
+    <xhtml:link rel="alternate" hreflang="en-gb" href="https://notchnest.app/for/designers/"/>
+    <xhtml:link rel="alternate" hreflang="en-in" href="https://notchnest.app/for/designers/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://notchnest.app/de/for/designers/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://notchnest.app/zh/for/designers/"/>
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="https://notchnest.app/zh/for/designers/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://notchnest.app/ar/for/designers/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://notchnest.app/fr/for/designers/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://notchnest.app/pt-br/for/designers/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://notchnest.app/pt-pt/for/designers/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://notchnest.app/es-mx/for/designers/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://notchnest.app/es-mx/for/designers/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://notchnest.app/for/designers/"/>
+  </url>
+  <url>
+    <loc>https://notchnest.app/de/for/students/</loc>
+    <lastmod>2026-08-24T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://notchnest.app/for/students/"/>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://notchnest.app/for/students/"/>
+    <xhtml:link rel="alternate" hreflang="en-gb" href="https://notchnest.app/for/students/"/>
+    <xhtml:link rel="alternate" hreflang="en-in" href="https://notchnest.app/for/students/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://notchnest.app/de/for/students/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://notchnest.app/zh/for/students/"/>
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="https://notchnest.app/zh/for/students/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://notchnest.app/ar/for/students/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://notchnest.app/fr/for/students/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://notchnest.app/pt-br/for/students/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://notchnest.app/pt-pt/for/students/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://notchnest.app/es-mx/for/students/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://notchnest.app/es-mx/for/students/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://notchnest.app/for/students/"/>
+  </url>
+  <url>
+    <loc>https://notchnest.app/zh/for/developers/</loc>
+    <lastmod>2026-08-24T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://notchnest.app/for/developers/"/>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://notchnest.app/for/developers/"/>
+    <xhtml:link rel="alternate" hreflang="en-gb" href="https://notchnest.app/for/developers/"/>
+    <xhtml:link rel="alternate" hreflang="en-in" href="https://notchnest.app/for/developers/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://notchnest.app/de/for/developers/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://notchnest.app/zh/for/developers/"/>
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="https://notchnest.app/zh/for/developers/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://notchnest.app/ar/for/developers/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://notchnest.app/fr/for/developers/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://notchnest.app/pt-br/for/developers/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://notchnest.app/pt-pt/for/developers/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://notchnest.app/es-mx/for/developers/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://notchnest.app/es-mx/for/developers/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://notchnest.app/for/developers/"/>
+  </url>
+  <url>
+    <loc>https://notchnest.app/zh/for/designers/</loc>
+    <lastmod>2026-08-24T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://notchnest.app/for/designers/"/>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://notchnest.app/for/designers/"/>
+    <xhtml:link rel="alternate" hreflang="en-gb" href="https://notchnest.app/for/designers/"/>
+    <xhtml:link rel="alternate" hreflang="en-in" href="https://notchnest.app/for/designers/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://notchnest.app/de/for/designers/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://notchnest.app/zh/for/designers/"/>
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="https://notchnest.app/zh/for/designers/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://notchnest.app/ar/for/designers/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://notchnest.app/fr/for/designers/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://notchnest.app/pt-br/for/designers/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://notchnest.app/pt-pt/for/designers/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://notchnest.app/es-mx/for/designers/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://notchnest.app/es-mx/for/designers/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://notchnest.app/for/designers/"/>
+  </url>
+  <url>
+    <loc>https://notchnest.app/zh/for/students/</loc>
+    <lastmod>2026-08-24T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://notchnest.app/for/students/"/>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://notchnest.app/for/students/"/>
+    <xhtml:link rel="alternate" hreflang="en-gb" href="https://notchnest.app/for/students/"/>
+    <xhtml:link rel="alternate" hreflang="en-in" href="https://notchnest.app/for/students/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://notchnest.app/de/for/students/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://notchnest.app/zh/for/students/"/>
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="https://notchnest.app/zh/for/students/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://notchnest.app/ar/for/students/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://notchnest.app/fr/for/students/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://notchnest.app/pt-br/for/students/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://notchnest.app/pt-pt/for/students/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://notchnest.app/es-mx/for/students/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://notchnest.app/es-mx/for/students/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://notchnest.app/for/students/"/>
+  </url>
+  <url>
+    <loc>https://notchnest.app/ar/for/developers/</loc>
+    <lastmod>2026-08-24T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://notchnest.app/for/developers/"/>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://notchnest.app/for/developers/"/>
+    <xhtml:link rel="alternate" hreflang="en-gb" href="https://notchnest.app/for/developers/"/>
+    <xhtml:link rel="alternate" hreflang="en-in" href="https://notchnest.app/for/developers/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://notchnest.app/de/for/developers/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://notchnest.app/zh/for/developers/"/>
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="https://notchnest.app/zh/for/developers/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://notchnest.app/ar/for/developers/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://notchnest.app/fr/for/developers/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://notchnest.app/pt-br/for/developers/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://notchnest.app/pt-pt/for/developers/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://notchnest.app/es-mx/for/developers/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://notchnest.app/es-mx/for/developers/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://notchnest.app/for/developers/"/>
+  </url>
+  <url>
+    <loc>https://notchnest.app/ar/for/designers/</loc>
+    <lastmod>2026-08-24T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://notchnest.app/for/designers/"/>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://notchnest.app/for/designers/"/>
+    <xhtml:link rel="alternate" hreflang="en-gb" href="https://notchnest.app/for/designers/"/>
+    <xhtml:link rel="alternate" hreflang="en-in" href="https://notchnest.app/for/designers/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://notchnest.app/de/for/designers/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://notchnest.app/zh/for/designers/"/>
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="https://notchnest.app/zh/for/designers/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://notchnest.app/ar/for/designers/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://notchnest.app/fr/for/designers/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://notchnest.app/pt-br/for/designers/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://notchnest.app/pt-pt/for/designers/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://notchnest.app/es-mx/for/designers/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://notchnest.app/es-mx/for/designers/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://notchnest.app/for/designers/"/>
+  </url>
+  <url>
+    <loc>https://notchnest.app/ar/for/students/</loc>
+    <lastmod>2026-08-24T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://notchnest.app/for/students/"/>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://notchnest.app/for/students/"/>
+    <xhtml:link rel="alternate" hreflang="en-gb" href="https://notchnest.app/for/students/"/>
+    <xhtml:link rel="alternate" hreflang="en-in" href="https://notchnest.app/for/students/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://notchnest.app/de/for/students/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://notchnest.app/zh/for/students/"/>
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="https://notchnest.app/zh/for/students/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://notchnest.app/ar/for/students/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://notchnest.app/fr/for/students/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://notchnest.app/pt-br/for/students/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://notchnest.app/pt-pt/for/students/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://notchnest.app/es-mx/for/students/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://notchnest.app/es-mx/for/students/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://notchnest.app/for/students/"/>
+  </url>
+  <url>
+    <loc>https://notchnest.app/fr/for/developers/</loc>
+    <lastmod>2026-08-24T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://notchnest.app/for/developers/"/>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://notchnest.app/for/developers/"/>
+    <xhtml:link rel="alternate" hreflang="en-gb" href="https://notchnest.app/for/developers/"/>
+    <xhtml:link rel="alternate" hreflang="en-in" href="https://notchnest.app/for/developers/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://notchnest.app/de/for/developers/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://notchnest.app/zh/for/developers/"/>
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="https://notchnest.app/zh/for/developers/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://notchnest.app/ar/for/developers/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://notchnest.app/fr/for/developers/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://notchnest.app/pt-br/for/developers/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://notchnest.app/pt-pt/for/developers/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://notchnest.app/es-mx/for/developers/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://notchnest.app/es-mx/for/developers/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://notchnest.app/for/developers/"/>
+  </url>
+  <url>
+    <loc>https://notchnest.app/fr/for/designers/</loc>
+    <lastmod>2026-08-24T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://notchnest.app/for/designers/"/>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://notchnest.app/for/designers/"/>
+    <xhtml:link rel="alternate" hreflang="en-gb" href="https://notchnest.app/for/designers/"/>
+    <xhtml:link rel="alternate" hreflang="en-in" href="https://notchnest.app/for/designers/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://notchnest.app/de/for/designers/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://notchnest.app/zh/for/designers/"/>
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="https://notchnest.app/zh/for/designers/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://notchnest.app/ar/for/designers/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://notchnest.app/fr/for/designers/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://notchnest.app/pt-br/for/designers/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://notchnest.app/pt-pt/for/designers/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://notchnest.app/es-mx/for/designers/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://notchnest.app/es-mx/for/designers/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://notchnest.app/for/designers/"/>
+  </url>
+  <url>
+    <loc>https://notchnest.app/fr/for/students/</loc>
+    <lastmod>2026-08-24T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://notchnest.app/for/students/"/>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://notchnest.app/for/students/"/>
+    <xhtml:link rel="alternate" hreflang="en-gb" href="https://notchnest.app/for/students/"/>
+    <xhtml:link rel="alternate" hreflang="en-in" href="https://notchnest.app/for/students/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://notchnest.app/de/for/students/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://notchnest.app/zh/for/students/"/>
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="https://notchnest.app/zh/for/students/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://notchnest.app/ar/for/students/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://notchnest.app/fr/for/students/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://notchnest.app/pt-br/for/students/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://notchnest.app/pt-pt/for/students/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://notchnest.app/es-mx/for/students/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://notchnest.app/es-mx/for/students/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://notchnest.app/for/students/"/>
+  </url>
+  <url>
+    <loc>https://notchnest.app/pt-br/for/developers/</loc>
+    <lastmod>2026-08-24T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://notchnest.app/for/developers/"/>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://notchnest.app/for/developers/"/>
+    <xhtml:link rel="alternate" hreflang="en-gb" href="https://notchnest.app/for/developers/"/>
+    <xhtml:link rel="alternate" hreflang="en-in" href="https://notchnest.app/for/developers/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://notchnest.app/de/for/developers/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://notchnest.app/zh/for/developers/"/>
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="https://notchnest.app/zh/for/developers/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://notchnest.app/ar/for/developers/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://notchnest.app/fr/for/developers/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://notchnest.app/pt-br/for/developers/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://notchnest.app/pt-pt/for/developers/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://notchnest.app/es-mx/for/developers/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://notchnest.app/es-mx/for/developers/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://notchnest.app/for/developers/"/>
+  </url>
+  <url>
+    <loc>https://notchnest.app/pt-br/for/designers/</loc>
+    <lastmod>2026-08-24T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://notchnest.app/for/designers/"/>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://notchnest.app/for/designers/"/>
+    <xhtml:link rel="alternate" hreflang="en-gb" href="https://notchnest.app/for/designers/"/>
+    <xhtml:link rel="alternate" hreflang="en-in" href="https://notchnest.app/for/designers/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://notchnest.app/de/for/designers/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://notchnest.app/zh/for/designers/"/>
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="https://notchnest.app/zh/for/designers/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://notchnest.app/ar/for/designers/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://notchnest.app/fr/for/designers/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://notchnest.app/pt-br/for/designers/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://notchnest.app/pt-pt/for/designers/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://notchnest.app/es-mx/for/designers/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://notchnest.app/es-mx/for/designers/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://notchnest.app/for/designers/"/>
+  </url>
+  <url>
+    <loc>https://notchnest.app/pt-br/for/students/</loc>
+    <lastmod>2026-08-24T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://notchnest.app/for/students/"/>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://notchnest.app/for/students/"/>
+    <xhtml:link rel="alternate" hreflang="en-gb" href="https://notchnest.app/for/students/"/>
+    <xhtml:link rel="alternate" hreflang="en-in" href="https://notchnest.app/for/students/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://notchnest.app/de/for/students/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://notchnest.app/zh/for/students/"/>
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="https://notchnest.app/zh/for/students/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://notchnest.app/ar/for/students/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://notchnest.app/fr/for/students/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://notchnest.app/pt-br/for/students/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://notchnest.app/pt-pt/for/students/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://notchnest.app/es-mx/for/students/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://notchnest.app/es-mx/for/students/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://notchnest.app/for/students/"/>
+  </url>
+  <url>
+    <loc>https://notchnest.app/pt-pt/for/developers/</loc>
+    <lastmod>2026-08-24T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://notchnest.app/for/developers/"/>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://notchnest.app/for/developers/"/>
+    <xhtml:link rel="alternate" hreflang="en-gb" href="https://notchnest.app/for/developers/"/>
+    <xhtml:link rel="alternate" hreflang="en-in" href="https://notchnest.app/for/developers/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://notchnest.app/de/for/developers/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://notchnest.app/zh/for/developers/"/>
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="https://notchnest.app/zh/for/developers/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://notchnest.app/ar/for/developers/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://notchnest.app/fr/for/developers/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://notchnest.app/pt-br/for/developers/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://notchnest.app/pt-pt/for/developers/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://notchnest.app/es-mx/for/developers/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://notchnest.app/es-mx/for/developers/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://notchnest.app/for/developers/"/>
+  </url>
+  <url>
+    <loc>https://notchnest.app/pt-pt/for/designers/</loc>
+    <lastmod>2026-08-24T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://notchnest.app/for/designers/"/>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://notchnest.app/for/designers/"/>
+    <xhtml:link rel="alternate" hreflang="en-gb" href="https://notchnest.app/for/designers/"/>
+    <xhtml:link rel="alternate" hreflang="en-in" href="https://notchnest.app/for/designers/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://notchnest.app/de/for/designers/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://notchnest.app/zh/for/designers/"/>
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="https://notchnest.app/zh/for/designers/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://notchnest.app/ar/for/designers/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://notchnest.app/fr/for/designers/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://notchnest.app/pt-br/for/designers/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://notchnest.app/pt-pt/for/designers/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://notchnest.app/es-mx/for/designers/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://notchnest.app/es-mx/for/designers/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://notchnest.app/for/designers/"/>
+  </url>
+  <url>
+    <loc>https://notchnest.app/pt-pt/for/students/</loc>
+    <lastmod>2026-08-24T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://notchnest.app/for/students/"/>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://notchnest.app/for/students/"/>
+    <xhtml:link rel="alternate" hreflang="en-gb" href="https://notchnest.app/for/students/"/>
+    <xhtml:link rel="alternate" hreflang="en-in" href="https://notchnest.app/for/students/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://notchnest.app/de/for/students/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://notchnest.app/zh/for/students/"/>
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="https://notchnest.app/zh/for/students/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://notchnest.app/ar/for/students/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://notchnest.app/fr/for/students/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://notchnest.app/pt-br/for/students/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://notchnest.app/pt-pt/for/students/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://notchnest.app/es-mx/for/students/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://notchnest.app/es-mx/for/students/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://notchnest.app/for/students/"/>
+  </url>
+  <url>
+    <loc>https://notchnest.app/es-mx/for/developers/</loc>
+    <lastmod>2026-08-24T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://notchnest.app/for/developers/"/>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://notchnest.app/for/developers/"/>
+    <xhtml:link rel="alternate" hreflang="en-gb" href="https://notchnest.app/for/developers/"/>
+    <xhtml:link rel="alternate" hreflang="en-in" href="https://notchnest.app/for/developers/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://notchnest.app/de/for/developers/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://notchnest.app/zh/for/developers/"/>
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="https://notchnest.app/zh/for/developers/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://notchnest.app/ar/for/developers/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://notchnest.app/fr/for/developers/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://notchnest.app/pt-br/for/developers/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://notchnest.app/pt-pt/for/developers/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://notchnest.app/es-mx/for/developers/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://notchnest.app/es-mx/for/developers/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://notchnest.app/for/developers/"/>
+  </url>
+  <url>
+    <loc>https://notchnest.app/es-mx/for/designers/</loc>
+    <lastmod>2026-08-24T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://notchnest.app/for/designers/"/>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://notchnest.app/for/designers/"/>
+    <xhtml:link rel="alternate" hreflang="en-gb" href="https://notchnest.app/for/designers/"/>
+    <xhtml:link rel="alternate" hreflang="en-in" href="https://notchnest.app/for/designers/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://notchnest.app/de/for/designers/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://notchnest.app/zh/for/designers/"/>
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="https://notchnest.app/zh/for/designers/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://notchnest.app/ar/for/designers/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://notchnest.app/fr/for/designers/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://notchnest.app/pt-br/for/designers/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://notchnest.app/pt-pt/for/designers/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://notchnest.app/es-mx/for/designers/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://notchnest.app/es-mx/for/designers/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://notchnest.app/for/designers/"/>
+  </url>
+  <url>
+    <loc>https://notchnest.app/es-mx/for/students/</loc>
+    <lastmod>2026-08-24T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://notchnest.app/for/students/"/>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://notchnest.app/for/students/"/>
+    <xhtml:link rel="alternate" hreflang="en-gb" href="https://notchnest.app/for/students/"/>
+    <xhtml:link rel="alternate" hreflang="en-in" href="https://notchnest.app/for/students/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://notchnest.app/de/for/students/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://notchnest.app/zh/for/students/"/>
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="https://notchnest.app/zh/for/students/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://notchnest.app/ar/for/students/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://notchnest.app/fr/for/students/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://notchnest.app/pt-br/for/students/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://notchnest.app/pt-pt/for/students/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://notchnest.app/es-mx/for/students/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://notchnest.app/es-mx/for/students/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://notchnest.app/for/students/"/>
+  </url>
 </urlset>

@@ -25,14 +25,21 @@ EXTRA = {"en": ["en-us", "en-gb", "en-in"], "zh": ["zh-cn"], "es-MX": ["es-419"]
 SWITCH = {"en": "English", "de": "Deutsch", "zh": "中文", "ar": "العربية",
           "fr": "Français", "pt-BR": "Português (BR)", "pt-PT": "Português (PT)",
           "es-MX": "Español (MX)"}
-# generated locales only
+# locales generated from scratch (landing/learn); de+zh are hand-authored but
+# their for/ + compare/ + remaining articles are generated here too (backfill)
 GEN = ["ar", "fr", "pt-BR", "pt-PT", "es-MX"]
-LANG_ATTR = {"ar": "ar", "fr": "fr", "pt-BR": "pt-BR", "pt-PT": "pt-PT", "es-MX": "es-MX"}
+FULL = ["de", "zh", "ar", "fr", "pt-BR", "pt-PT", "es-MX"]  # every non-English locale
+LANG_ATTR = {"de": "de", "zh": "zh-Hans", "ar": "ar", "fr": "fr",
+             "pt-BR": "pt-BR", "pt-PT": "pt-PT", "es-MX": "es-MX"}
 HTML_DIR = {"ar": "rtl"}  # else ltr
-OG_LOCALE = {"ar": "ar_SA", "fr": "fr_FR", "pt-BR": "pt_BR", "pt-PT": "pt_PT", "es-MX": "es_MX"}
-STORE_CC = {"ar": "sa", "fr": "fr", "pt-BR": "br", "pt-PT": "pt", "es-MX": "mx"}
-CURRENCY = {"ar": "SAR", "fr": "EUR", "pt-BR": "BRL", "pt-PT": "EUR", "es-MX": "MXN"}
-RATING = {"ar": "4.0", "fr": "4,0", "pt-BR": "4,0", "pt-PT": "4,0", "es-MX": "4.0"}
+OG_LOCALE = {"de": "de_DE", "zh": "zh_CN", "ar": "ar_SA", "fr": "fr_FR",
+             "pt-BR": "pt_BR", "pt-PT": "pt_PT", "es-MX": "es_MX"}
+STORE_CC = {"de": "de", "zh": "cn", "ar": "sa", "fr": "fr",
+            "pt-BR": "br", "pt-PT": "pt", "es-MX": "mx"}
+CURRENCY = {"de": "EUR", "zh": "CNY", "ar": "SAR", "fr": "EUR",
+            "pt-BR": "BRL", "pt-PT": "EUR", "es-MX": "MXN"}
+RATING = {"de": "4,0", "zh": "4.0", "ar": "4.0", "fr": "4,0",
+          "pt-BR": "4,0", "pt-PT": "4,0", "es-MX": "4.0"}
 
 
 def store_url(loc):
@@ -283,6 +290,131 @@ def build_landing(loc):
 
 
 ARTICLE_SLUGS = ["how-to-use-the-macbook-notch", "best-macos-notch-apps"]
+FOR_SLUGS = ["developers", "designers", "students"]
+
+
+def build_for(loc, slug):
+    from build_i18n_for import FOR, FOR_UI
+    t = FOR[slug][loc]
+    u = FOR_UI[loc]
+    d = DIRS[loc]
+    su = store_url(loc)
+    url = f"{BASE}{d}for/{slug}/"
+    cases = "\n      ".join(
+        f'<div class="case"><span class="case-tag">{e}</span><h3>{h}</h3><p>{p}</p></div>'
+        for e, h, p in t["cases"])
+    faq_cards = "\n      ".join(
+        f'<details class="faq-card"><summary class="faq-question">{q}<span class="faq-toggle"></span></summary><div class="faq-answer">{a}</div></details>'
+        for q, a in t["faq"])
+    faq_json = ",\n      ".join(
+        '{ "@type": "Question", "name": %s, "acceptedAnswer": { "@type": "Answer", "text": %s } }'
+        % (jstr(q), jstr(a)) for q, a in t["faq"])
+    role_links = " &middot; ".join(
+        f'<a href="/{d}for/{s}/" style="color:var(--muted)">{u["roles"][s]}</a>' for s in FOR_SLUGS)
+    return f"""<!DOCTYPE html>
+<html lang="{LANG_ATTR[loc]}"{rtl_attrs(loc)}>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<title>{t['title']}</title>
+<meta name="description" content="{t['description']}" />
+<link rel="canonical" href="{url}" />
+<meta name="robots" content="index,follow,max-image-preview:large" />
+{hreflang(f'for/{slug}/')}
+<meta property="og:title" content="{t['title']}" />
+<meta property="og:description" content="{t['description']}" />
+<meta property="og:url" content="{url}" />
+<meta property="og:locale" content="{OG_LOCALE[loc]}" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="{BASE}1200x630-banner.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@codetard" />
+<link rel="stylesheet" href="/styles.css" />
+<link rel="apple-touch-icon" href="/assets/notchnest-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<meta name="theme-color" content="#000000" />
+<meta name="color-scheme" content="dark" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<script type="application/ld+json">
+[
+  {{
+    "@context": "https://schema.org", "@type": "WebPage",
+    "name": {jstr(t['title'])}, "url": "{url}", "inLanguage": "{LANG_ATTR[loc]}",
+    "description": {jstr(t['description'])},
+    "isPartOf": {{ "@type": "WebSite", "name": "NotchNest", "url": "{BASE}" }},
+    "primaryImageOfPage": {{ "@type": "ImageObject", "url": "{BASE}1200x630-banner.jpg" }}
+  }},
+  {{
+    "@context": "https://schema.org", "@type": "BreadcrumbList",
+    "itemListElement": [
+      {{ "@type": "ListItem", "position": 1, "name": {jstr(u['home'])}, "item": "{BASE}{d}" }},
+      {{ "@type": "ListItem", "position": 2, "name": {jstr(t['crumb'])}, "item": "{url}" }}
+    ]
+  }},
+  {{
+    "@context": "https://schema.org", "@type": "FAQPage", "inLanguage": "{LANG_ATTR[loc]}",
+    "mainEntity": [
+      {faq_json}
+    ]
+  }}
+]
+</script>{rtl_style(loc)}
+</head>
+<body>
+<nav class="nn-nav" aria-label="{u['nav_aria']}"><div class="nn-nav-inner">
+  <a class="nn-brand" href="/{d}"><img class="nn-brand-mark" src="/assets/notchnest-icon.png" alt="NotchNest" width="28" height="28" /><span>NotchNest</span></a>
+  <div class="nn-nav-links">
+    <a href="/{d}#features">{u['features']}</a><a href="/{d}compare/">{u['compare']}</a><a href="/{d}learn/" class="nn-nav-keep">{u['learn']}</a>
+  </div>
+</div></nav>
+<main class="main-container"><div class="content-wrapper">
+  <div class="crumbs"><a href="/{d}">{u['home']}</a><span class="sep">/</span><span>{t['crumb']}</span></div>
+  <section class="hero" aria-label="{t['crumb']}">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <span class="eyebrow"><span class="eyebrow-dot"></span> {u['eyebrow']}</span>
+        <h1 class="hero-h1">{t['h1']}</h1>
+        <p class="hero-lede">{t['lede']}</p>
+        <div class="hero-ctas">
+          <a class="mas-badge" href="{su}" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="{u['badge_alt']}" /></a>
+          <a class="btn-ghost" href="/{d}#features">{u['playground']}</a>
+        </div>
+      </div>
+      <div class="hero-stage">
+        <video class="hero-video" width="1920" height="1200" autoplay muted loop playsinline preload="metadata" poster="/assets/notchnest-poster.webp" aria-label="NotchNest demo">
+          <source src="/assets/notchnest-demo.webm" type="video/webm" />
+          <source src="/assets/notchnest-demo.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </div>
+  </section>
+  <section class="cases-section" aria-label="{t['crumb']}">
+    <header class="section-head"><span class="section-kicker">{t['crumb']}</span><h2 class="section-title">{u['section_title']}</h2></header>
+    <div class="cases-grid">
+      {cases}
+    </div>
+  </section>
+  <section class="faq-section">
+    <header class="section-head"><span class="section-kicker">FAQ</span><h2 class="section-title">{u['faq_title']}</h2></header>
+    <div class="faq-grid">
+      {faq_cards}
+    </div>
+  </section>
+  <section class="cta-band"><div class="cta-inner">
+    <h2 class="cta-title">{u['cta_title']}</h2>
+    <p class="cta-lede">{t['cta_lede']}</p>
+    <a class="mas-badge mas-badge-on-dark" href="{su}" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="{u['badge_alt']}" /></a>
+  </div></section>
+  <footer class="site-footer">
+    <div class="footer-bottom"><span>&copy; <span id="yr"></span> NotchNest &middot; Satnam Singh</span><span>{role_links}</span></div>
+  </footer>
+</div></main>
+<script>var yr=document.getElementById('yr');if(yr)yr.textContent=new Date().getFullYear();</script>
+</body></html>
+"""
 
 
 def build_learn_index(loc):
@@ -587,11 +719,13 @@ def update_sitemap():
         xml = xml.replace(old, xhtml_alts(""))
     # append the new locale pages if not already present
     entries = []
-    for loc in GEN:
+    for loc in FULL:
         d = DIRS[loc]
         pages = [("", "weekly", "0.9"), ("learn/", "monthly", "0.7")]
         for slug in ARTICLE_SLUGS:
             pages.append((f"learn/{slug}/", "monthly", "0.7"))
+        for slug in FOR_SLUGS:
+            pages.append((f"for/{slug}/", "monthly", "0.6"))
         for suffix, cf, pr in pages:
             url = BASE + d + suffix
             if f"<loc>{url}</loc>" in xml:
@@ -646,6 +780,18 @@ def update_llms():
     print(f"  llms: wrote {len(GEN)} localized llms.txt + root Languages section")
 
 
+def patch_simple_hreflang(suffixes):
+    """Patch the English original of pages that now exist in every locale."""
+    for suffix in suffixes:
+        p = ROOT / suffix / "index.html"
+        if not p.exists():
+            continue
+        h = p.read_text(encoding="utf-8")
+        h = patch_hreflang(h, suffix, indent="")
+        p.write_text(h, encoding="utf-8")
+    print(f"  patched en hreflang for {len(suffixes)} page(s)")
+
+
 def main():
     print("landing pages:")
     for loc in GEN:
@@ -655,8 +801,13 @@ def main():
         write(ROOT / DIRS[loc] / "learn" / "index.html", build_learn_index(loc))
         for slug in ARTICLE_SLUGS:
             write(ROOT / DIRS[loc] / "learn" / slug / "index.html", build_article(loc, slug))
+    print("for/ pages:")
+    for loc in FULL:
+        for slug in FOR_SLUGS:
+            write(ROOT / DIRS[loc] / "for" / slug / "index.html", build_for(loc, slug))
     patch_existing()
     patch_learn_hreflang()
+    patch_simple_hreflang([f"for/{s}/" for s in FOR_SLUGS])
     print("sitemap:")
     update_sitemap()
     print("llms:")

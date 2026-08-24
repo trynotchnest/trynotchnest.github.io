@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<title>NotchNest 开发者版 — Mac 刘海开发者应用</title>
+<meta name="description" content="面向开发者的 Mac 刘海应用——带历史与搜索的 AI 剪贴板、番茄钟、日历和拖拽 AirDrop，不占用你的工作区。" />
+<link rel="canonical" href="https://notchnest.app/zh/for/developers/" />
+<meta name="robots" content="index,follow,max-image-preview:large" />
+<link rel="alternate" hreflang="en" href="https://notchnest.app/for/developers/" />
+<link rel="alternate" hreflang="en-us" href="https://notchnest.app/for/developers/" />
+<link rel="alternate" hreflang="en-gb" href="https://notchnest.app/for/developers/" />
+<link rel="alternate" hreflang="en-in" href="https://notchnest.app/for/developers/" />
+<link rel="alternate" hreflang="de" href="https://notchnest.app/de/for/developers/" />
+<link rel="alternate" hreflang="zh" href="https://notchnest.app/zh/for/developers/" />
+<link rel="alternate" hreflang="zh-cn" href="https://notchnest.app/zh/for/developers/" />
+<link rel="alternate" hreflang="ar" href="https://notchnest.app/ar/for/developers/" />
+<link rel="alternate" hreflang="fr" href="https://notchnest.app/fr/for/developers/" />
+<link rel="alternate" hreflang="pt-BR" href="https://notchnest.app/pt-br/for/developers/" />
+<link rel="alternate" hreflang="pt-PT" href="https://notchnest.app/pt-pt/for/developers/" />
+<link rel="alternate" hreflang="es-MX" href="https://notchnest.app/es-mx/for/developers/" />
+<link rel="alternate" hreflang="es-419" href="https://notchnest.app/es-mx/for/developers/" />
+<link rel="alternate" hreflang="x-default" href="https://notchnest.app/for/developers/" />
+<meta property="og:title" content="NotchNest 开发者版 — Mac 刘海开发者应用" />
+<meta property="og:description" content="面向开发者的 Mac 刘海应用——带历史与搜索的 AI 剪贴板、番茄钟、日历和拖拽 AirDrop，不占用你的工作区。" />
+<meta property="og:url" content="https://notchnest.app/zh/for/developers/" />
+<meta property="og:locale" content="zh_CN" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="https://notchnest.app/1200x630-banner.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@codetard" />
+<link rel="stylesheet" href="/styles.css" />
+<link rel="apple-touch-icon" href="/assets/notchnest-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<meta name="theme-color" content="#000000" />
+<meta name="color-scheme" content="dark" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org", "@type": "WebPage",
+    "name": "NotchNest 开发者版 — Mac 刘海开发者应用", "url": "https://notchnest.app/zh/for/developers/", "inLanguage": "zh-Hans",
+    "description": "面向开发者的 Mac 刘海应用——带历史与搜索的 AI 剪贴板、番茄钟、日历和拖拽 AirDrop，不占用你的工作区。",
+    "isPartOf": { "@type": "WebSite", "name": "NotchNest", "url": "https://notchnest.app/" },
+    "primaryImageOfPage": { "@type": "ImageObject", "url": "https://notchnest.app/1200x630-banner.jpg" }
+  },
+  {
+    "@context": "https://schema.org", "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://notchnest.app/zh/" },
+      { "@type": "ListItem", "position": 2, "name": "开发者", "item": "https://notchnest.app/zh/for/developers/" }
+    ]
+  },
+  {
+    "@context": "https://schema.org", "@type": "FAQPage", "inLanguage": "zh-Hans",
+    "mainEntity": [
+      { "@type": "Question", "name": "NotchNest 有剪贴板管理器吗？", "acceptedAnswer": { "@type": "Answer", "text": "有——完整的剪贴板历史，支持搜索、置顶和本地 AI 改写，从刘海即可访问。" } },
+      { "@type": "Question", "name": "它占用资源多吗？", "acceptedAnswer": { "@type": "Answer", "text": "不。原生 SwiftUI，为 Apple 芯片优化，刘海面板关闭时休眠——占用个位数 MB 内存。" } },
+      { "@type": "Question", "name": "它是沙盒运行的吗？", "acceptedAnswer": { "@type": "Answer", "text": "是。NotchNest 通过 Mac App Store 发布，经 Apple 公证、签名并沙盒化。" } }
+    ]
+  }
+]
+</script>
+</head>
+<body>
+<nav class="nn-nav" aria-label="主导航"><div class="nn-nav-inner">
+  <a class="nn-brand" href="/zh/"><img class="nn-brand-mark" src="/assets/notchnest-icon.png" alt="NotchNest" width="28" height="28" /><span>NotchNest</span></a>
+  <div class="nn-nav-links">
+    <a href="/zh/#features">功能</a><a href="/zh/compare/">对比</a><a href="/zh/learn/" class="nn-nav-keep">学习</a>
+  </div>
+</div></nav>
+<main class="main-container"><div class="content-wrapper">
+  <div class="crumbs"><a href="/zh/">首页</a><span class="sep">/</span><span>开发者</span></div>
+  <section class="hero" aria-label="开发者">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <span class="eyebrow"><span class="eyebrow-dot"></span> Mac App Store · 免费 · macOS 14+</span>
+        <h1 class="hero-h1">NotchNest 面向<span class='grad'>开发者</span></h1>
+        <p class="hero-lede">保持心流。NotchNest 把剪贴板历史、专注计时器和日历放进刘海，让你的编辑器保持全屏。</p>
+        <div class="hero-ctas">
+          <a class="mas-badge" href="https://apps.apple.com/cn/app/notchnest-power-your-notch/id6747612321" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="在 Mac App Store 下载" /></a>
+          <a class="btn-ghost" href="/zh/#features">试用演示</a>
+        </div>
+      </div>
+      <div class="hero-stage">
+        <video class="hero-video" width="1920" height="1200" autoplay muted loop playsinline preload="metadata" poster="/assets/notchnest-poster.webp" aria-label="NotchNest demo">
+          <source src="/assets/notchnest-demo.webm" type="video/webm" />
+          <source src="/assets/notchnest-demo.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </div>
+  </section>
+  <section class="cases-section" aria-label="开发者">
+    <header class="section-head"><span class="section-kicker">开发者</span><h2 class="section-title">为你的工作方式而生。</h2></header>
+    <div class="cases-grid">
+      <div class="case"><span class="case-tag">📋</span><h3>AI 剪贴板历史</h3><p>复制的每段内容——可搜索、可置顶、带 AI 改写。不必再复制那条命令。</p></div>
+      <div class="case"><span class="case-tag">⏱</span><h3>番茄钟专注</h3><p>为深度工作和站会计时。记录休息、保持连胜、零额外窗口。</p></div>
+      <div class="case"><span class="case-tag">📅</span><h3>日历 + AI 摘要</h3><p>不离开终端就能看到下个会议。AI 概括会议内容。</p></div>
+      <div class="case"><span class="case-tag">📡</span><h3>拖拽 AirDrop</h3><p>一次拖拽把构建或日志文件发到手机或队友。</p></div>
+      <div class="case"><span class="case-tag">🗂</span><h3>文件托盘</h3><p>工作中把文件暂存到刘海，需要时再拖到目标位置。</p></div>
+      <div class="case"><span class="case-tag">🔖</span><h3>书签</h3><p>一键打开你的仪表盘、文档和仓库。</p></div>
+    </div>
+  </section>
+  <section class="faq-section">
+    <header class="section-head"><span class="section-kicker">FAQ</span><h2 class="section-title">常见问题。</h2></header>
+    <div class="faq-grid">
+      <details class="faq-card"><summary class="faq-question">NotchNest 有剪贴板管理器吗？<span class="faq-toggle"></span></summary><div class="faq-answer">有——完整的剪贴板历史，支持搜索、置顶和本地 AI 改写，从刘海即可访问。</div></details>
+      <details class="faq-card"><summary class="faq-question">它占用资源多吗？<span class="faq-toggle"></span></summary><div class="faq-answer">不。原生 SwiftUI，为 Apple 芯片优化，刘海面板关闭时休眠——占用个位数 MB 内存。</div></details>
+      <details class="faq-card"><summary class="faq-question">它是沙盒运行的吗？<span class="faq-toggle"></span></summary><div class="faq-answer">是。NotchNest 通过 Mac App Store 发布，经 Apple 公证、签名并沙盒化。</div></details>
+    </div>
+  </section>
+  <section class="cta-band"><div class="cta-inner">
+    <h2 class="cta-title">让刘海为你服务。</h2>
+    <p class="cta-lede">原生 SwiftUI，为 Apple 芯片优化，通过 Mac App Store 沙盒化。空闲时休眠——不耗 CPU。</p>
+    <a class="mas-badge mas-badge-on-dark" href="https://apps.apple.com/cn/app/notchnest-power-your-notch/id6747612321" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="在 Mac App Store 下载" /></a>
+  </div></section>
+  <footer class="site-footer">
+    <div class="footer-bottom"><span>&copy; <span id="yr"></span> NotchNest &middot; Satnam Singh</span><span><a href="/zh/for/developers/" style="color:var(--muted)">开发者</a> &middot; <a href="/zh/for/designers/" style="color:var(--muted)">设计师</a> &middot; <a href="/zh/for/students/" style="color:var(--muted)">学生</a></span></div>
+  </footer>
+</div></main>
+<script>var yr=document.getElementById('yr');if(yr)yr.textContent=new Date().getFullYear();</script>
+</body></html>
