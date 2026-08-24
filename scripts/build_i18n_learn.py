@@ -13,7 +13,25 @@ KICK = {  # kicker labels reused across articles
     "guide": {"de": "Anleitung", "zh": "指南", "ar": "دليل", "fr": "Guide", "pt-BR": "Guia", "pt-PT": "Guia", "es-MX": "Guía"},
     "explainer": {"de": "Erklärung", "zh": "解读", "ar": "شرح", "fr": "Explication", "pt-BR": "Explicação", "pt-PT": "Explicação", "es-MX": "Explicación"},
     "roundup": {"de": "Übersicht", "zh": "盘点", "ar": "اختيارات", "fr": "Sélection", "pt-BR": "Seleção", "pt-PT": "Seleção", "es-MX": "Selección"},
+    "comparison": {"de": "Vergleich", "zh": "对比", "ar": "مقارنة", "fr": "Comparatif", "pt-BR": "Comparativo", "pt-PT": "Comparação", "es-MX": "Comparativa"},
 }
+
+# fixed yes/no/partial classes for the 3-way table (language-independent)
+CLS3 = [("partial", "partial", "partial"), ("partial", "partial", "partial"), ("yes", "no", "partial"),
+        ("yes", "no", "no"), ("yes", "no", "no"), ("yes", "no", "no"), ("yes", "no", "no"),
+        ("yes", "partial", "no"), ("yes", "no", "partial"), ("yes", "no", "no"),
+        ("partial", "yes", "no"), ("yes", "no", "no"), ("yes", "no", "no"),
+        ("yes", "partial", "yes"), ("yes", "partial", "partial")]
+
+
+def _table3(loc, th, feats, cells):
+    head = f'<thead><tr><th>{th}</th><th>NotchNest</th><th>Boring Notch</th><th>NotchDrop</th></tr></thead>'
+    body = ""
+    for i, feat in enumerate(feats):
+        c = cells[i]; cl = CLS3[i]
+        body += (f'<tr><td>{feat}</td><td class="{cl[0]}">{c[0]}</td>'
+                 f'<td class="{cl[1]}">{c[1]}</td><td class="{cl[2]}">{c[2]}</td></tr>')
+    return f'<table class="cmp-table">{head}<tbody>{body}</tbody></table>'
 RELATED_H2 = {"de": "Weiterlesen", "zh": "继续阅读", "ar": "اقرأ أيضًا", "fr": "À lire aussi", "pt-BR": "Continue lendo", "pt-PT": "Continue a ler", "es-MX": "Sigue leyendo"}
 
 _LOCS = ["de", "zh", "ar", "fr", "pt-BR", "pt-PT", "es-MX"]
@@ -814,7 +832,249 @@ DOES = {
 }
 
 
+# ── notch-nest-vs-boring-notch-vs-notchdrop (3-way, has a table) ─────────────
+BV_TH = {"de": "Funktion", "zh": "功能", "ar": "الميزة", "fr": "Fonctionnalité", "pt-BR": "Recurso", "pt-PT": "Funcionalidade", "es-MX": "Función"}
+BV_FEAT = {
+    "de": ["Vertrieb", "Preis", "Von Apple sandboxed", "Kalender-Widget", "KI-Zwischenablage", "Schnellnotizen", "Pomodoro-Timer", "Spotify / Apple Music", "Drag-to-AirDrop / Datei-Tray", "Kamera-Spiegel", "AirPods-Akku", "Lesezeichen-Shelf", "Apple Intelligence (auf dem Gerät)", "Läuft ohne Notch", "Lokalisierung"],
+    "zh": ["分发", "价格", "Apple 沙盒", "日历组件", "AI 剪贴板", "快速笔记", "番茄钟", "Spotify / Apple Music", "拖拽 AirDrop / 文件托盘", "摄像头镜像", "AirPods 电量", "书签架", "Apple Intelligence（本地）", "无刘海也可用", "本地化"],
+    "ar": ["التوزيع", "السعر", "معزول من Apple", "أداة التقويم", "حافظة الذكاء الاصطناعي", "ملاحظات سريعة", "مؤقت بومودورو", "Spotify / Apple Music", "السحب إلى AirDrop / درج الملفات", "مرآة الكاميرا", "بطارية AirPods", "رف الإشارات", "Apple Intelligence (على الجهاز)", "يعمل بدون نتش", "التوطين"],
+    "fr": ["Distribution", "Prix", "Bac à sable Apple", "Widget calendrier", "Presse-papiers IA", "Notes rapides", "Minuteur Pomodoro", "Spotify / Apple Music", "Glisser vers AirDrop / Bac à fichiers", "Miroir caméra", "Batterie AirPods", "Étagère de favoris", "Apple Intelligence (sur l'appareil)", "Fonctionne sans encoche", "Localisation"],
+    "pt-BR": ["Distribuição", "Preço", "Sandbox da Apple", "Widget de calendário", "Área com IA", "Notas rápidas", "Timer Pomodoro", "Spotify / Apple Music", "Arrastar para AirDrop / Bandeja", "Espelho da câmera", "Bateria dos AirPods", "Prateleira de favoritos", "Apple Intelligence (no dispositivo)", "Funciona sem notch", "Localização"],
+    "pt-PT": ["Distribuição", "Preço", "Sandbox da Apple", "Widget de calendário", "Área com IA", "Notas rápidas", "Temporizador Pomodoro", "Spotify / Apple Music", "Arrastar para AirDrop / Tabuleiro", "Espelho da câmara", "Bateria dos AirPods", "Prateleira de favoritos", "Apple Intelligence (no dispositivo)", "Funciona sem notch", "Localização"],
+    "es-MX": ["Distribución", "Precio", "Sandbox de Apple", "Widget de calendario", "Portapapeles con IA", "Notas rápidas", "Temporizador Pomodoro", "Spotify / Apple Music", "Arrastrar a AirDrop / Bandeja", "Espejo de cámara", "Batería de AirPods", "Estante de favoritos", "Apple Intelligence (en el dispositivo)", "Funciona sin notch", "Localización"],
+}
+_YNP = {  # (yes, no, partial-ish base words)
+    "de": ("Ja", "Nein"), "zh": ("是", "否"), "ar": ("نعم", "لا"), "fr": ("Oui", "Non"),
+    "pt-BR": ("Sim", "Não"), "pt-PT": ("Sim", "Não"), "es-MX": ("Sí", "No"),
+}
+def _c3(loc):
+    y, n = _YNP[loc]
+    T = {"de": ["Mac App Store", "GitHub (direkt)", "Direkt / Setapp", "Kostenlos", "Kostenlos + Bezahlstufe", "Teilweise", f"{y} (KI-Briefings)", f"{y} (KI-Verfeinerung)", f"{y} (Spezialität)", "Über Bluetooth-Menü", f"{y} (Top-Bar)", "Eingeschränkt", "Viele Sprachen", "nur EN", "EN + einige"],
+         "zh": ["Mac App Store", "GitHub（直接）", "直接 / Setapp", "免费", "免费 + 付费档", "部分", f"{y}（AI 摘要）", f"{y}（AI 润色）", f"{y}（其专长）", "经蓝牙菜单", f"{y}（顶栏）", "有限", "多语言", "仅英文", "英文 + 少量"],
+         "ar": ["Mac App Store", "GitHub (مباشر)", "مباشر / Setapp", "مجانًا", "مجاني + مستوى مدفوع", "جزئي", f"{y} (ملخصات ذكية)", f"{y} (تحسين ذكي)", f"{y} (تخصصه)", "عبر قائمة البلوتوث", f"{y} (شريط علوي)", "محدود", "لغات كثيرة", "الإنجليزية فقط", "إنجليزي + قليل"],
+         "fr": ["Mac App Store", "GitHub (direct)", "Direct / Setapp", "Gratuit", "Gratuit + niveau payant", "Partiel", f"{y} (briefings IA)", f"{y} (affinage IA)", f"{y} (spécialité)", "Via menu Bluetooth", f"{y} (barre haute)", "Limité", "Plusieurs langues", "EN uniquement", "EN + quelques-unes"],
+         "pt-BR": ["Mac App Store", "GitHub (direto)", "Direto / Setapp", "Grátis", "Grátis + nível pago", "Parcial", f"{y} (briefings IA)", f"{y} (refino IA)", f"{y} (especialidade)", "Via menu Bluetooth", f"{y} (barra superior)", "Limitado", "Vários idiomas", "só EN", "EN + alguns"],
+         "pt-PT": ["Mac App Store", "GitHub (direto)", "Direto / Setapp", "Gratuito", "Gratuito + nível pago", "Parcial", f"{y} (briefings IA)", f"{y} (aperfeiçoamento IA)", f"{y} (especialidade)", "Via menu Bluetooth", f"{y} (barra superior)", "Limitado", "Vários idiomas", "só EN", "EN + alguns"],
+         "es-MX": ["Mac App Store", "GitHub (directo)", "Directo / Setapp", "Gratis", "Gratis + nivel de pago", "Parcial", f"{y} (briefings IA)", f"{y} (refinado IA)", f"{y} (especialidad)", "Vía menú Bluetooth", f"{y} (barra superior)", "Limitado", "Varios idiomas", "solo EN", "EN + algunos"]}[loc]
+    mas, gh, setapp, free, freepaid, partial, ycal, yqn, yspec, bt, ytop, limited, manylang, enonly, enfew = T
+    return [
+        (mas, gh, setapp), (free, free, freepaid), (y, n, partial), (ycal, n, n), (y, n, n), (yqn, n, n),
+        (y, n, n), (y, yspec, n), (y, n, yspec), (y, n, n), (bt, y, n), (y, n, n), (y, n, n),
+        (ytop, limited, y), (manylang, enonly, enfew),
+    ]
+BV_META = {
+    "de": {"title": "NotchNest vs. Boring Notch vs. NotchDrop (2026) — NotchNest", "description": "Direkter Vergleich der drei beliebtesten macOS-Notch-Apps 2026: NotchNest, Boring Notch und NotchDrop. Funktionen, Preis, KI, Performance.", "og_title": "NotchNest vs. Boring Notch vs. NotchDrop", "og_desc": "Die drei meistinstallierten Notch-Apps im direkten Vergleich.", "jsonld_headline": "NotchNest vs. Boring Notch vs. NotchDrop (2026)", "jsonld_desc": "Feature-Vergleich der drei meistinstallierten macOS-Notch-Apps 2026.", "h1": "NotchNest vs. Boring Notch vs. NotchDrop", "lede": "Ein Feature-Vergleich der drei meistinstallierten macOS-Notch-Apps 2026 — was jede am besten kann, wo sie sich überschneiden und welche zu deinem Workflow passt.", "crumb_this": "NotchNest vs. Boring Notch vs. NotchDrop", "readtime": READ6["de"],
+           "faq": [("Welche Notch-App ist die beste?", "Für den breitesten Funktionsumfang NotchNest — zehn Widgets, sandboxed, mit On-Device-KI. Für reine Mediensteuerung Boring Notch, für reine Datei-Tray NotchDrop."), ("Kann ich alle drei zusammen nutzen?", "Technisch ja, aber sie konkurrieren um dieselbe Hover-Region und lösen ständig das falsche Panel aus. Wähl eine."), ("Welche ist sandboxed?", "Nur NotchNest (Mac App Store). Boring Notch ist ein GitHub-Direkt-Download; NotchDrop ist teilweise abgedeckt.")]},
+    "zh": {"title": "NotchNest 对比 Boring Notch 对比 NotchDrop（2026）— NotchNest", "description": "2026 年三款最热门 macOS 刘海应用的直接对比：NotchNest、Boring Notch 和 NotchDrop。功能、价格、AI、性能。", "og_title": "NotchNest 对比 Boring Notch 对比 NotchDrop", "og_desc": "三款安装量最高的刘海应用直接对比。", "jsonld_headline": "NotchNest 对比 Boring Notch 对比 NotchDrop（2026）", "jsonld_desc": "2026 年三款安装量最高的 macOS 刘海应用功能对比。", "h1": "NotchNest 对比 Boring Notch 对比 NotchDrop", "lede": "2026 年三款安装量最高的 macOS 刘海应用逐项功能对比——各自最擅长什么、哪里重叠，以及哪个更契合你的工作流。", "crumb_this": "NotchNest 对比 Boring Notch 对比 NotchDrop", "readtime": READ6["zh"],
+           "faq": [("哪款刘海应用最好？", "论功能最全是 NotchNest——十个组件、沙盒、本地 AI。只要媒体控制选 Boring Notch，只要文件托盘选 NotchDrop。"), ("我能同时用三款吗？", "技术上可以，但它们争夺同一悬停区域，会不断触发错误面板。选一个。"), ("哪款是沙盒的？", "只有 NotchNest（Mac App Store）。Boring Notch 是 GitHub 直接下载；NotchDrop 部分覆盖。")]},
+    "ar": {"title": "NotchNest في مواجهة Boring Notch وNotchDrop (2026) — NotchNest", "description": "مقارنة مباشرة لأشهر ثلاثة تطبيقات نتش لنظام macOS في 2026: NotchNest وBoring Notch وNotchDrop. الميزات والسعر والذكاء الاصطناعي والأداء.", "og_title": "NotchNest في مواجهة Boring Notch وNotchDrop", "og_desc": "أكثر ثلاثة تطبيقات نتش تثبيتًا في مقارنة مباشرة.", "jsonld_headline": "NotchNest في مواجهة Boring Notch وNotchDrop (2026)", "jsonld_desc": "مقارنة ميزات أكثر ثلاثة تطبيقات نتش macOS تثبيتًا في 2026.", "h1": "NotchNest في مواجهة Boring Notch وNotchDrop", "lede": "مقارنة ميزة بميزة لأكثر ثلاثة تطبيقات نتش macOS تثبيتًا في 2026 — ما تجيده كل واحدة، وأين تتقاطع، وأيها يناسب سير عملك.", "crumb_this": "NotchNest في مواجهة Boring Notch وNotchDrop", "readtime": READ6["ar"],
+           "faq": [("أي تطبيق نتش هو الأفضل؟", "لأوسع مجموعة ميزات: NotchNest — عشر أدوات، معزول، بذكاء اصطناعي على الجهاز. للتحكم بالوسائط فقط: Boring Notch؛ ولدرج الملفات فقط: NotchDrop."), ("هل يمكنني استخدام الثلاثة معًا؟", "تقنيًا نعم، لكنها تتنافس على منطقة التمرير نفسها وتفتح اللوحة الخطأ باستمرار. اختر واحدًا."), ("أيها معزول؟", "NotchNest فقط (Mac App Store). Boring Notch تنزيل مباشر من GitHub؛ وNotchDrop مغطّى جزئيًا.")]},
+    "fr": {"title": "NotchNest vs Boring Notch vs NotchDrop (2026) — NotchNest", "description": "Comparatif direct des trois apps d'encoche macOS les plus populaires en 2026 : NotchNest, Boring Notch et NotchDrop. Fonctions, prix, IA, performances.", "og_title": "NotchNest vs Boring Notch vs NotchDrop", "og_desc": "Les trois apps d'encoche les plus installées, comparées.", "jsonld_headline": "NotchNest vs Boring Notch vs NotchDrop (2026)", "jsonld_desc": "Comparatif des fonctionnalités des trois apps d'encoche macOS les plus installées en 2026.", "h1": "NotchNest vs Boring Notch vs NotchDrop", "lede": "Un comparatif fonctionnalité par fonctionnalité des trois apps d'encoche macOS les plus installées en 2026 — ce que chacune fait de mieux, où elles se recoupent et laquelle correspond à votre workflow.", "crumb_this": "NotchNest vs Boring Notch vs NotchDrop", "readtime": READ6["fr"],
+           "faq": [("Quelle app d'encoche est la meilleure ?", "Pour l'éventail le plus large : NotchNest — dix widgets, en bac à sable, avec IA sur l'appareil. Pour la seule commande média : Boring Notch ; pour le seul bac à fichiers : NotchDrop."), ("Puis-je utiliser les trois ensemble ?", "Techniquement oui, mais elles se disputent la même zone de survol et déclenchent sans cesse le mauvais panneau. Choisissez-en une."), ("Laquelle est en bac à sable ?", "NotchNest seule (Mac App Store). Boring Notch est un téléchargement direct GitHub ; NotchDrop est partiellement couvert.")]},
+    "pt-BR": {"title": "NotchNest vs Boring Notch vs NotchDrop (2026) — NotchNest", "description": "Comparativo direto dos três apps de notch macOS mais populares em 2026: NotchNest, Boring Notch e NotchDrop. Recursos, preço, IA, desempenho.", "og_title": "NotchNest vs Boring Notch vs NotchDrop", "og_desc": "Os três apps de notch mais instalados, comparados.", "jsonld_headline": "NotchNest vs Boring Notch vs NotchDrop (2026)", "jsonld_desc": "Comparativo de recursos dos três apps de notch macOS mais instalados em 2026.", "h1": "NotchNest vs Boring Notch vs NotchDrop", "lede": "Um comparativo recurso a recurso dos três apps de notch macOS mais instalados em 2026 — o que cada um faz de melhor, onde se sobrepõem e qual combina com o seu fluxo.", "crumb_this": "NotchNest vs Boring Notch vs NotchDrop", "readtime": READ6["pt-BR"],
+              "faq": [("Qual app de notch é o melhor?", "Para o conjunto mais amplo: NotchNest — dez widgets, em sandbox, com IA no dispositivo. Só para controle de mídia: Boring Notch; só para bandeja de arquivos: NotchDrop."), ("Posso usar os três juntos?", "Tecnicamente sim, mas disputam a mesma região de hover e abrem o painel errado o tempo todo. Escolha um."), ("Qual é em sandbox?", "Só o NotchNest (Mac App Store). O Boring Notch é download direto do GitHub; o NotchDrop é parcialmente coberto.")]},
+    "pt-PT": {"title": "NotchNest vs Boring Notch vs NotchDrop (2026) — NotchNest", "description": "Comparação direta das três apps de notch macOS mais populares em 2026: NotchNest, Boring Notch e NotchDrop. Funcionalidades, preço, IA, desempenho.", "og_title": "NotchNest vs Boring Notch vs NotchDrop", "og_desc": "As três apps de notch mais instaladas, comparadas.", "jsonld_headline": "NotchNest vs Boring Notch vs NotchDrop (2026)", "jsonld_desc": "Comparação de funcionalidades das três apps de notch macOS mais instaladas em 2026.", "h1": "NotchNest vs Boring Notch vs NotchDrop", "lede": "Uma comparação funcionalidade a funcionalidade das três apps de notch macOS mais instaladas em 2026 — o que cada uma faz melhor, onde se sobrepõem e qual combina com o seu fluxo.", "crumb_this": "NotchNest vs Boring Notch vs NotchDrop", "readtime": READ6["pt-PT"],
+              "faq": [("Qual app de notch é a melhor?", "Para o conjunto mais amplo: NotchNest — dez widgets, em sandbox, com IA no dispositivo. Só para controlo de multimédia: Boring Notch; só para tabuleiro de ficheiros: NotchDrop."), ("Posso usar as três juntas?", "Tecnicamente sim, mas disputam a mesma região de hover e abrem o painel errado a toda a hora. Escolha uma."), ("Qual é em sandbox?", "Só o NotchNest (Mac App Store). O Boring Notch é transferência direta do GitHub; o NotchDrop é parcialmente coberto.")]},
+    "es-MX": {"title": "NotchNest vs Boring Notch vs NotchDrop (2026) — NotchNest", "description": "Comparativa directa de las tres apps de notch macOS más populares en 2026: NotchNest, Boring Notch y NotchDrop. Funciones, precio, IA, rendimiento.", "og_title": "NotchNest vs Boring Notch vs NotchDrop", "og_desc": "Las tres apps de notch más instaladas, comparadas.", "jsonld_headline": "NotchNest vs Boring Notch vs NotchDrop (2026)", "jsonld_desc": "Comparativa de funciones de las tres apps de notch macOS más instaladas en 2026.", "h1": "NotchNest vs Boring Notch vs NotchDrop", "lede": "Una comparativa función por función de las tres apps de notch macOS más instaladas en 2026 — qué hace mejor cada una, dónde se solapan y cuál encaja con tu flujo.", "crumb_this": "NotchNest vs Boring Notch vs NotchDrop", "readtime": READ6["es-MX"],
+              "faq": [("¿Qué app de notch es la mejor?", "Para el conjunto más amplio: NotchNest — diez widgets, en sandbox, con IA en el dispositivo. Solo para control de medios: Boring Notch; solo para bandeja de archivos: NotchDrop."), ("¿Puedo usar las tres juntas?", "Técnicamente sí, pero compiten por la misma región de hover y abren el panel equivocado todo el tiempo. Elige una."), ("¿Cuál está en sandbox?", "Solo NotchNest (Mac App Store). Boring Notch es descarga directa de GitHub; NotchDrop está parcialmente cubierto.")]},
+}
+BV_PRE = {
+    "de": """<p>Die Notch-App-Kategorie ist klein, aber deutlich. Drei Apps dominieren Mac-App-Store-Suchen und GitHub-Stars:</p>
+    <ul>
+      <li><strong>NotchNest</strong> — der Produktivitäts-Hub. Kalender, KI-Zwischenablage, Notizen, Pomodoro, Musik, AirDrop, Spiegel, Lesezeichen.</li>
+      <li><strong>Boring Notch</strong> — der Medien-Controller und Animator. Now Playing, AirPods-Akku, dezente Dynamic-Island-artige Animationen.</li>
+      <li><strong>NotchDrop</strong> — das Drag-and-Drop-Tray. Dateien auf die Notch ziehen, woanders wieder rausziehen.</li>
+    </ul>
+    <p>So schneiden sie ab.</p>
+    <h2>Feature-Vergleich</h2>
+    """,
+    "zh": """<p>刘海应用类别虽小却分明。三款应用主导着 Mac App Store 搜索和 GitHub 星标：</p>
+    <ul>
+      <li><strong>NotchNest</strong>——生产力中枢。日历、AI 剪贴板、笔记、番茄钟、音乐、AirDrop、镜像、书签。</li>
+      <li><strong>Boring Notch</strong>——媒体控制器与动画师。正在播放、AirPods 电量、含蓄的灵动岛式动画。</li>
+      <li><strong>NotchDrop</strong>——拖放托盘。把文件拖到刘海，再拖到别处。</li>
+    </ul>
+    <p>来看看它们的表现。</p>
+    <h2>功能对比</h2>
+    """,
+    "ar": """<p>فئة تطبيقات النتش صغيرة لكنها متمايزة. تهيمن ثلاثة تطبيقات على عمليات البحث في Mac App Store ونجوم GitHub:</p>
+    <ul>
+      <li><strong>NotchNest</strong> — مركز الإنتاجية. تقويم وحافظة بالذكاء الاصطناعي وملاحظات وبومودورو وموسيقى وAirDrop ومرآة وإشارات مرجعية.</li>
+      <li><strong>Boring Notch</strong> — متحكّم الوسائط والرسوم. «قيد التشغيل» وبطارية AirPods ورسوم خفيفة بأسلوب Dynamic Island.</li>
+      <li><strong>NotchDrop</strong> — درج السحب والإفلات. اسحب الملفات إلى النتش ثم أخرجها إلى مكان آخر.</li>
+    </ul>
+    <p>وإليك كيف تتقارن.</p>
+    <h2>مقارنة الميزات</h2>
+    """,
+    "fr": """<p>La catégorie des apps d'encoche est petite mais distincte. Trois apps dominent les recherches sur le Mac App Store et les étoiles GitHub :</p>
+    <ul>
+      <li><strong>NotchNest</strong> — le hub de productivité. Calendrier, presse-papiers IA, notes, Pomodoro, musique, AirDrop, miroir, favoris.</li>
+      <li><strong>Boring Notch</strong> — le contrôleur média et l'animateur. Now Playing, batterie AirPods, animations subtiles façon Dynamic Island.</li>
+      <li><strong>NotchDrop</strong> — le bac glisser-déposer. Déposez des fichiers sur l'encoche, ressortez-les ailleurs.</li>
+    </ul>
+    <p>Voici comment elles se comparent.</p>
+    <h2>Comparatif des fonctionnalités</h2>
+    """,
+    "pt-BR": """<p>A categoria de apps de notch é pequena, mas distinta. Três apps dominam as buscas na Mac App Store e as estrelas no GitHub:</p>
+    <ul>
+      <li><strong>NotchNest</strong> — a central de produtividade. Calendário, área com IA, notas, Pomodoro, música, AirDrop, espelho, favoritos.</li>
+      <li><strong>Boring Notch</strong> — o controlador de mídia e animador. Now Playing, bateria dos AirPods, animações sutis estilo Dynamic Island.</li>
+      <li><strong>NotchDrop</strong> — a bandeja de arrastar e soltar. Solte arquivos no notch, arraste-os para outro lugar.</li>
+    </ul>
+    <p>Veja como se comparam.</p>
+    <h2>Comparativo de recursos</h2>
+    """,
+    "pt-PT": """<p>A categoria de apps de notch é pequena, mas distinta. Três apps dominam as pesquisas na Mac App Store e as estrelas no GitHub:</p>
+    <ul>
+      <li><strong>NotchNest</strong> — a central de produtividade. Calendário, área com IA, notas, Pomodoro, música, AirDrop, espelho, favoritos.</li>
+      <li><strong>Boring Notch</strong> — o controlador de multimédia e animador. Now Playing, bateria dos AirPods, animações subtis ao estilo Dynamic Island.</li>
+      <li><strong>NotchDrop</strong> — o tabuleiro de arrastar e largar. Largue ficheiros no notch, arraste-os para outro lado.</li>
+    </ul>
+    <p>Veja como se comparam.</p>
+    <h2>Comparação de funcionalidades</h2>
+    """,
+    "es-MX": """<p>La categoría de apps de notch es pequeña pero distinta. Tres apps dominan las búsquedas en la Mac App Store y las estrellas de GitHub:</p>
+    <ul>
+      <li><strong>NotchNest</strong> — el centro de productividad. Calendario, portapapeles con IA, notas, Pomodoro, música, AirDrop, espejo, favoritos.</li>
+      <li><strong>Boring Notch</strong> — el controlador de medios y animador. Now Playing, batería de AirPods, animaciones sutiles estilo Dynamic Island.</li>
+      <li><strong>NotchDrop</strong> — la bandeja de arrastrar y soltar. Suelta archivos en el notch, arrástralos a otro lugar.</li>
+    </ul>
+    <p>Así se comparan.</p>
+    <h2>Comparativa de funciones</h2>
+    """,
+}
+BV_POST = {
+    "de": """<div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>NotchNest kostenlos holen</h3><p>Zehn Widgets, eine Notch, On-Device-Apple-Intelligence. macOS 14 oder neuer.</p></div>
+      <a href="%STORE%" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="Im Mac App Store laden" /></a>
+    </div>
+    <h2>Wann welche wählen</h2>
+    <h3>Wähle NotchNest, wenn…</h3>
+    <p>…du eine Notch-App willst, die alles macht. Kalender am Morgen, Zwischenablage-Suche mittags, Schnellnotizen bei einer Idee, Pomodoro nachmittags, Musik beim Fokussieren, AirDrop zum iPhone. Eine Installation, ein Menüleisten-Slot. Außerdem: dir sind App-Store-Sandboxing und Privatsphäre wichtig — NotchNest ist Apple-notarisiert und läuft vollständig auf dem Gerät, auch die KI.</p>
+    <h3>Wähle Boring Notch, wenn…</h3>
+    <p>…du den Großteil des Tages in Musik oder Video verbringst und einen schönen Dynamic-Island-artigen Medien-Controller willst. Boring Notch ist eine exzellente Einzweck-App — nur weißt du, dass du tauschst: kein Kalender, keine Notizen, keine KI, kein AirDrop, kein Sandbox.</p>
+    <h3>Wähle NotchDrop, wenn…</h3>
+    <p>…du den ganzen Tag Dateien zwischen Apps und Geräten bewegst. NotchDrops Tray-Modell ist das sauberste der Kategorie. Willst du aber auch einen Kalender in der Notch, installierst du eine zweite App.</p>
+    <h2>Kann ich sie zusammen laufen lassen?</h2>
+    <p>Technisch ja. macOS lässt alle drei gleichzeitig laufen. In der Praxis wird es chaotisch — sie kämpfen um dieselbe Hover-Region und du löst ständig das falsche Panel aus. Wähl eine. Das Nächste an „alle drei" in einer App ist NotchNest, das Medien-Controller und Datei-Tray neben seinen Produktivitäts-Widgets bündelt.</p>
+    <h2>Die ehrliche Zusammenfassung</h2>
+    <p>Boring Notch und NotchDrop sind jeweils exzellent in einer Sache. NotchNest will in zehn Dingen in einer Notch gut sein. Liebst du ein fokussiertes Einzweck-Tool schon, behalt es. Willst du, dass die Notch die halbe Menüleiste ersetzt, installiere NotchNest.</p>
+    """,
+    "zh": """<div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>免费获取 NotchNest</h3><p>十个组件，一个刘海，本地 Apple Intelligence。macOS 14 或更新。</p></div>
+      <a href="%STORE%" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="在 Mac App Store 下载" /></a>
+    </div>
+    <h2>各自何时选</h2>
+    <h3>选 NotchNest，如果……</h3>
+    <p>……你想要一款样样都行的刘海应用。早上看日历、中午搜剪贴板、灵感来了记快速笔记、下午番茄钟、专注时放音乐、发文件到 iPhone 用 AirDrop。一次安装，一个菜单栏位。此外：你在意 App Store 沙盒与隐私——NotchNest 经 Apple 公证，完全在本地运行，连 AI 也是。</p>
+    <h3>选 Boring Notch，如果……</h3>
+    <p>……你一天大部分时间在音乐或视频里，想要一个漂亮的灵动岛式媒体控制器。Boring Notch 是出色的单一用途应用——只是要知道你在取舍：没有日历、没有笔记、没有 AI、没有 AirDrop、没有沙盒。</p>
+    <h3>选 NotchDrop，如果……</h3>
+    <p>……你整天在应用和设备间搬文件。NotchDrop 的托盘模型是同类里最干净的。但若你也想在刘海里放个日历，那就得再装第二个应用。</p>
+    <h2>我能同时运行它们吗？</h2>
+    <p>技术上可以。macOS 乐意同时运行三款。但实际会很乱——它们争夺同一悬停区域，你会不断触发错误面板。选一个。最接近“三合一”的单一应用是 NotchNest，它在生产力组件之外还捆绑了媒体控制器和文件托盘。</p>
+    <h2>诚实的总结</h2>
+    <p>Boring Notch 和 NotchDrop 各自把一件事做得出色。NotchNest 力求在一个刘海里把十件事都做好。如果你已经钟爱某个专注的单一用途工具，就留着。如果你想让刘海取代半条菜单栏，装 NotchNest。</p>
+    """,
+    "ar": """<div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>احصل على NotchNest مجانًا</h3><p>عشر أدوات، نتش واحد، Apple Intelligence على الجهاز. macOS 14 أو أحدث.</p></div>
+      <a href="%STORE%" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="التنزيل من Mac App Store" /></a>
+    </div>
+    <h2>متى تختار كلًّا منها</h2>
+    <h3>اختر NotchNest إن…</h3>
+    <p>…أردت تطبيق نتش يفعل كل شيء. تقويم في الصباح، وبحث في الحافظة ظهرًا، وملاحظة سريعة عند فكرة، وبومودورو بعد الظهر، وموسيقى أثناء التركيز، وAirDrop إلى آيفونك. تثبيت واحد، مكان واحد في شريط القوائم. كذلك: تهتم بعزل App Store والخصوصية — NotchNest موثّق من Apple ويعمل بالكامل على الجهاز، حتى ميزات الذكاء الاصطناعي.</p>
+    <h3>اختر Boring Notch إن…</h3>
+    <p>…قضيت معظم يومك في الموسيقى أو الفيديو، وأردت متحكّم وسائط جميلًا بأسلوب Dynamic Island. Boring Notch تطبيق أحادي الغرض ممتاز — فقط اعلم أنك تبادل: لا تقويم ولا ملاحظات ولا ذكاء اصطناعي ولا AirDrop ولا عزل.</p>
+    <h3>اختر NotchDrop إن…</h3>
+    <p>…كنت تنقل الملفات بين التطبيقات والأجهزة طوال اليوم. نموذج درج NotchDrop هو الأنظف في الفئة. لكن إن أردت أيضًا تقويمًا في النتش، فستثبّت تطبيقًا ثانيًا.</p>
+    <h2>هل يمكنني تشغيلها معًا؟</h2>
+    <p>تقنيًا نعم. يشغّل macOS الثلاثة معًا بلا مشكلة. لكن عمليًا تصبح فوضى — تتنافس على منطقة التمرير نفسها وتفتح اللوحة الخطأ باستمرار. اختر واحدًا. أقرب شيء إلى «الثلاثة معًا» في تطبيق واحد هو NotchNest الذي يجمع متحكّم وسائط ودرج ملفات إلى جانب أدوات إنتاجيته.</p>
+    <h2>الخلاصة الصادقة</h2>
+    <p>Boring Notch وNotchDrop ممتازان كلٌّ في شيء واحد. أما NotchNest فيهدف إلى الإتقان في عشرة أشياء داخل نتش واحد. إن كنت تحبّ أداة أحادية الغرض مركّزة، احتفظ بها. وإن أردت أن يحلّ النتش محلّ نصف شريط القوائم، فثبّت NotchNest.</p>
+    """,
+    "fr": """<div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>Obtenez NotchNest gratuitement</h3><p>Dix widgets, une encoche, Apple Intelligence sur l'appareil. macOS 14 ou plus récent.</p></div>
+      <a href="%STORE%" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="Télécharger sur le Mac App Store" /></a>
+    </div>
+    <h2>Quand choisir chacune</h2>
+    <h3>Choisissez NotchNest si…</h3>
+    <p>…vous voulez une app d'encoche qui fait tout. Calendrier le matin, recherche du presse-papiers à midi, notes rapides quand une idée surgit, Pomodoro l'après-midi, musique pour vous concentrer, AirDrop vers votre iPhone. Une installation, un emplacement de barre des menus. Aussi : le bac à sable App Store et la confidentialité comptent pour vous — NotchNest est notarisé Apple et tourne entièrement sur l'appareil, IA comprise.</p>
+    <h3>Choisissez Boring Notch si…</h3>
+    <p>…vous passez l'essentiel de la journée dans la musique ou la vidéo et voulez un beau contrôleur média façon Dynamic Island. Boring Notch est une excellente app mono-usage — sachez juste que vous échangez : pas de calendrier, pas de notes, pas d'IA, pas d'AirDrop, pas de bac à sable.</p>
+    <h3>Choisissez NotchDrop si…</h3>
+    <p>…vous déplacez des fichiers entre apps et appareils toute la journée. Le modèle de bac de NotchDrop est le plus propre de la catégorie. Mais si vous voulez aussi un calendrier dans l'encoche, vous installez une deuxième app.</p>
+    <h2>Puis-je les faire tourner ensemble ?</h2>
+    <p>Techniquement, oui. macOS fait volontiers tourner les trois en même temps. En pratique, ça devient le bazar — elles se disputent la même zone de survol et vous déclenchez le mauvais panneau en permanence. Choisissez-en une. Le plus proche des « trois à la fois » dans une seule app, c'est NotchNest, qui réunit un contrôleur média et un bac à fichiers avec ses widgets de productivité.</p>
+    <h2>Le résumé honnête</h2>
+    <p>Boring Notch et NotchDrop excellent chacune dans une chose. NotchNest vise à être bonne en dix choses dans une encoche. Si vous adorez déjà un outil mono-usage focalisé, gardez-le. Si vous voulez que l'encoche remplace la moitié de votre barre des menus, installez NotchNest.</p>
+    """,
+    "pt-BR": """<div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>Baixe o NotchNest grátis</h3><p>Dez widgets, um notch, Apple Intelligence no dispositivo. macOS 14 ou mais recente.</p></div>
+      <a href="%STORE%" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="Baixar na Mac App Store" /></a>
+    </div>
+    <h2>Quando escolher cada um</h2>
+    <h3>Escolha o NotchNest se…</h3>
+    <p>…você quer um app de notch que faça tudo. Calendário de manhã, busca na área de transferência ao meio-dia, notas rápidas quando surge uma ideia, Pomodoro à tarde, música para focar, AirDrop para o iPhone. Uma instalação, um espaço na barra de menus. Além disso: você se importa com sandbox da App Store e privacidade — o NotchNest é notarizado pela Apple e roda totalmente no dispositivo, inclusive a IA.</p>
+    <h3>Escolha o Boring Notch se…</h3>
+    <p>…você passa a maior parte do dia em música ou vídeo e quer um belo controlador de mídia estilo Dynamic Island. O Boring Notch é um excelente app de propósito único — só saiba que você troca: sem calendário, sem notas, sem IA, sem AirDrop, sem sandbox.</p>
+    <h3>Escolha o NotchDrop se…</h3>
+    <p>…você move arquivos entre apps e dispositivos o dia todo. O modelo de bandeja do NotchDrop é o mais limpo da categoria. Mas se você também quer um calendário no notch, vai instalar um segundo app.</p>
+    <h2>Posso rodar os três juntos?</h2>
+    <p>Tecnicamente, sim. O macOS roda os três ao mesmo tempo. Na prática vira bagunça — eles disputam a mesma região de hover e você abre o painel errado o tempo todo. Escolha um. O mais próximo de "os três" num único app é o NotchNest, que reúne um controlador de mídia e uma bandeja de arquivos ao lado dos widgets de produtividade.</p>
+    <h2>O resumo honesto</h2>
+    <p>Boring Notch e NotchDrop são excelentes cada um em uma coisa. O NotchNest quer ser bom em dez coisas em um notch. Se você já ama uma ferramenta focada de propósito único, fique com ela. Se quer que o notch substitua metade da sua barra de menus, instale o NotchNest.</p>
+    """,
+    "pt-PT": """<div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>Obtenha o NotchNest grátis</h3><p>Dez widgets, um notch, Apple Intelligence no dispositivo. macOS 14 ou mais recente.</p></div>
+      <a href="%STORE%" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="Descarregar na Mac App Store" /></a>
+    </div>
+    <h2>Quando escolher cada uma</h2>
+    <h3>Escolha o NotchNest se…</h3>
+    <p>…quer uma app de notch que faça tudo. Calendário de manhã, pesquisa na área de transferência ao meio-dia, notas rápidas quando surge uma ideia, Pomodoro à tarde, música para se focar, AirDrop para o iPhone. Uma instalação, um espaço na barra de menus. Além disso: importa-se com sandbox da App Store e privacidade — o NotchNest é notarizado pela Apple e corre totalmente no dispositivo, incluindo a IA.</p>
+    <h3>Escolha o Boring Notch se…</h3>
+    <p>…passa a maior parte do dia em música ou vídeo e quer um belo controlador de multimédia ao estilo Dynamic Island. O Boring Notch é uma excelente app de propósito único — só saiba que troca: sem calendário, sem notas, sem IA, sem AirDrop, sem sandbox.</p>
+    <h3>Escolha o NotchDrop se…</h3>
+    <p>…move ficheiros entre apps e dispositivos o dia todo. O modelo de tabuleiro do NotchDrop é o mais limpo da categoria. Mas se também quer um calendário no notch, vai instalar uma segunda app.</p>
+    <h2>Posso correr as três juntas?</h2>
+    <p>Tecnicamente, sim. O macOS corre as três ao mesmo tempo. Na prática torna-se confuso — disputam a mesma região de hover e abre o painel errado a toda a hora. Escolha uma. O mais próximo de "as três" numa única app é o NotchNest, que reúne um controlador de multimédia e um tabuleiro de ficheiros ao lado dos widgets de produtividade.</p>
+    <h2>O resumo honesto</h2>
+    <p>Boring Notch e NotchDrop são excelentes cada uma numa coisa. O NotchNest quer ser bom em dez coisas num notch. Se já adora uma ferramenta focada de propósito único, fique com ela. Se quer que o notch substitua metade da sua barra de menus, instale o NotchNest.</p>
+    """,
+    "es-MX": """<div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>Obtén NotchNest gratis</h3><p>Diez widgets, un notch, Apple Intelligence en el dispositivo. macOS 14 o posterior.</p></div>
+      <a href="%STORE%" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="Descargar en el Mac App Store" /></a>
+    </div>
+    <h2>Cuándo elegir cada una</h2>
+    <h3>Elige NotchNest si…</h3>
+    <p>…quieres una app de notch que lo haga todo. Calendario en la mañana, búsqueda del portapapeles al mediodía, notas rápidas cuando llega una idea, Pomodoro en la tarde, música para concentrarte, AirDrop a tu iPhone. Una instalación, un espacio en la barra de menús. Además: te importa el sandbox de la App Store y la privacidad — NotchNest está notarizado por Apple y corre por completo en el dispositivo, incluida la IA.</p>
+    <h3>Elige Boring Notch si…</h3>
+    <p>…pasas la mayor parte del día en música o video y quieres un hermoso controlador de medios estilo Dynamic Island. Boring Notch es una excelente app de un solo propósito — solo ten en cuenta que cambias: sin calendario, sin notas, sin IA, sin AirDrop, sin sandbox.</p>
+    <h3>Elige NotchDrop si…</h3>
+    <p>…mueves archivos entre apps y dispositivos todo el día. El modelo de bandeja de NotchDrop es el más limpio de la categoría. Pero si además quieres un calendario en el notch, instalarás una segunda app.</p>
+    <h2>¿Puedo usarlas juntas?</h2>
+    <p>Técnicamente, sí. macOS corre las tres a la vez sin problema. En la práctica se vuelve un desorden — compiten por la misma región de hover y abres el panel equivocado todo el tiempo. Elige una. Lo más cercano a "las tres" en una sola app es NotchNest, que reúne un controlador de medios y una bandeja de archivos junto a sus widgets de productividad.</p>
+    <h2>El resumen honesto</h2>
+    <p>Boring Notch y NotchDrop son excelentes cada una en una cosa. NotchNest busca ser bueno en diez cosas en un notch. Si ya amas una herramienta enfocada de un solo propósito, quédatela. Si quieres que el notch reemplace la mitad de tu barra de menús, instala NotchNest.</p>
+    """,
+}
+BVBVD = {}
+for _loc in _LOCS:
+    _m = dict(BV_META[_loc])
+    _m["kicker"] = KICK["comparison"][_loc]
+    _m["body"] = BV_PRE[_loc] + _table3(_loc, BV_TH[_loc], BV_FEAT[_loc], _c3(_loc)) + "\n    " + BV_POST[_loc]
+    _m["related"] = _related(_loc, ("/learn/best-macos-notch-apps/", "Best macOS notch apps", "EN — 2026."))
+    BVBVD[_loc] = _m
+
+
 LEARN_ARTICLES = {
     "what-is-the-macos-notch": _assemble(WHATIS),
     "does-the-mac-notch-actually-do-anything": _assemble(DOES),
+    "notch-nest-vs-boring-notch-vs-notchdrop": _assemble(BVBVD),
 }
