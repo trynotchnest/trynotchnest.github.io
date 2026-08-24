@@ -1316,9 +1316,204 @@ HIDE = {
 }
 
 
+# ── what-is-dynamic-island-on-mac ───────────────────────────────────────────
+DYN = {
+    "de": {"title": "Gibt es Dynamic Island auf dem Mac? — NotchNest", "description": "Hat der Mac ein Dynamic Island wie das iPhone? Was macOS mit der Notch tut und nicht tut, und wie du Dynamic-Island-artige Funktionen auf dem Mac bekommst.",
+           "og_title": "Gibt es Dynamic Island auf dem Mac?", "og_desc": "Notch vs. Dynamic Island — und wie du das Erlebnis trotzdem bekommst.",
+           "jsonld_headline": "Gibt es Dynamic Island auf dem Mac?", "jsonld_desc": "Der Unterschied zwischen Mac-Notch und iPhone-Dynamic-Island, und wie man das Erlebnis auf den Mac holt.",
+           "kicker": KICK["explainer"]["de"], "h1": "Gibt es Dynamic Island auf dem Mac?",
+           "lede": "Der Mac hat eine Notch, aber kein eingebautes Dynamic Island. Hier der Unterschied — und wie du das Erlebnis trotzdem bekommst.",
+           "readtime": READ5["de"], "crumb_this": "Dynamic Island auf dem Mac?",
+           "faq": [("Hat der Mac ein Dynamic Island?", "Nicht eingebaut. Der Mac hat eine Notch, aber macOS platziert keine interaktive UI darin. Drittanbieter-Apps wie NotchNest fügen Dynamic-Island-artige Funktionen hinzu."),
+                   ("Ist die Mac-Notch dasselbe wie Dynamic Island?", "Nein. Dynamic Island ist eine aktive, animierte iPhone-UI für Live-Aktivitäten. Die Mac-Notch ist eine passive Hardware-Aussparung für die Kamera ohne eingebaute Interaktivität."),
+                   ("Wie bekomme ich Dynamic-Island-Funktionen auf meinem MacBook?", "Installiere eine Notch-App wie NotchNest, die die Notch in ein Hover-Panel für Kalender, Zwischenablage, Notizen, Musik, Pomodoro und AirDrop verwandelt."),
+                   ("Fügt Apple Dynamic Island zu macOS hinzu?", "Es gibt keinen angekündigten Plan. Vorerst sind Drittanbieter-Apps der einzige Weg, die Mac-Notch interaktiv zu machen.")],
+           "body": """<p>Das Dynamic Island des iPhones verwandelt die Kamera-Aussparung in eine lebendige UI für Timer, Musik, Anrufe und Live-Aktivitäten. Viele Mac-Besitzer fragen: Macht macOS dasselbe mit seiner Notch? Standardmäßig nicht — aber du kannst es hinzufügen.</p>
+    <h2>Notch vs. Dynamic Island</h2>
+    <ul>
+      <li><strong>iPhone Dynamic Island</strong> — eine aktive, animierte Software-UI, die Live-Aktivitäten hostet und sich bei Berührung ausdehnt.</li>
+      <li><strong>Mac-Notch</strong> — eine passive Hardware-Aussparung. macOS zeichnet die Menüleiste um sie und zeigt einen grünen Kamera-Punkt. Keine interaktive UI.</li>
+    </ul>
+    <p>Ab Werk ist die Mac-Notch also nur ein Loch für die Kamera. Siehe „Macht die Mac-Notch überhaupt etwas" für die volle Aufschlüsselung.</p>
+    <h2>Warum hat Apple keines hinzugefügt?</h2>
+    <p>Das Cursor-Modell unterscheidet sich von Touch, Auffindbarkeit ist ohne sichtbaren Hinweis schwerer, und die Notch existiert nur auf dem eingebauten Display. Wie auch immer der Grund — Apple liefert Stand macOS Tahoe keine Notch-UI.</p>
+    <h2>Wie du Dynamic Island auf den Mac holst</h2>
+    <p>Drittanbieter-Apps füllen die Lücke. NotchNest umhüllt die Notch mit einem hover-aktivierten Panel — Kalender, KI-Zwischenablage, Schnellnotizen, Pomodoro, Musiksteuerung und Drag-to-AirDrop — das Nächste an einem Mac-Dynamic-Island, plus viel mehr. Erst fühlen? Öffne den interaktiven Notch-Playground im Browser. Andere Apps fokussieren speziell auf medienartige Animationen; siehe unseren Vergleich NotchNest vs. Boring Notch.</p>
+    <div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>Mach deine Notch nützlich</h3><p>NotchNest bringt zehn Tools in die Notch deines MacBooks. Kostenlos im Mac App Store.</p></div>
+      <a href="%STORE%" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="Im Mac App Store laden" /></a>
+    </div>""",
+           "related": _related("de", ("/learn/does-the-mac-notch-actually-do-anything/", "Does the Mac notch actually do anything?", "Englisch — die Antwort."))},
+    "zh": {"title": "Mac 上有灵动岛吗？— NotchNest", "description": "Mac 有没有像 iPhone 那样的灵动岛？macOS 对刘海做什么、不做什么，以及如何在 Mac 上获得灵动岛式功能。",
+           "og_title": "Mac 上有灵动岛吗？", "og_desc": "刘海对比灵动岛——以及如何照样获得这种体验。",
+           "jsonld_headline": "Mac 上有灵动岛吗？", "jsonld_desc": "Mac 刘海与 iPhone 灵动岛的区别，以及如何在 Mac 上获得该体验。",
+           "kicker": KICK["explainer"]["zh"], "h1": "Mac 上有灵动岛吗？",
+           "lede": "Mac 有刘海，但没有内建灵动岛。这里讲清区别——以及如何照样获得那种体验。",
+           "readtime": READ5["zh"], "crumb_this": "Mac 上有灵动岛吗？",
+           "faq": [("Mac 有灵动岛吗？", "没有内建。Mac 有刘海，但 macOS 不在其中放置交互界面。NotchNest 之类的第三方应用可加入灵动岛式功能。"),
+                   ("Mac 刘海和灵动岛是一回事吗？", "不是。灵动岛是 iPhone 上用于实时活动的主动动画界面。Mac 刘海是容纳摄像头的被动硬件缺口，没有内建交互。"),
+                   ("如何在我的 MacBook 上获得灵动岛功能？", "安装 NotchNest 这样的刘海应用，把刘海变成日历、剪贴板、笔记、音乐、番茄钟和 AirDrop 的悬停面板。"),
+                   ("Apple 会给 macOS 加灵动岛吗？", "没有已公布的计划。目前第三方应用是让 Mac 刘海可交互的唯一途径。")],
+           "body": """<p>iPhone 的灵动岛把摄像头缺口变成计时器、音乐、通话和实时活动的活界面。很多 Mac 用户会问：macOS 对刘海也这么做吗？默认不会——但你可以加上。</p>
+    <h2>刘海对比灵动岛</h2>
+    <ul>
+      <li><strong>iPhone 灵动岛</strong>——主动、有动画的软件界面，承载实时活动并在触摸时展开。</li>
+      <li><strong>Mac 刘海</strong>——被动的硬件缺口。macOS 在其周围绘制菜单栏并显示绿色摄像头点。没有交互界面。</li>
+    </ul>
+    <p>所以开箱即用时，Mac 刘海只是摄像头的一个洞。完整拆解参见“Mac 刘海到底有没有用”。</p>
+    <h2>Apple 为何没加？</h2>
+    <p>光标模型不同于触摸，没有屏上提示则更难被发现，而且刘海只存在于内建屏幕上。无论原因如何，截至 macOS Tahoe，Apple 未提供任何刘海界面。</p>
+    <h2>如何在 Mac 上获得灵动岛</h2>
+    <p>第三方应用填补了空缺。NotchNest 用悬停触发面板包裹刘海——日历、AI 剪贴板、快速笔记、番茄钟、音乐控制和拖拽 AirDrop——这是最接近 Mac 灵动岛的东西，还远不止。想先感受？在浏览器里打开交互式刘海演示。其他应用则专注媒体式动画；参见我们的 NotchNest 对比 Boring Notch。</p>
+    <div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>让你的刘海有用</h3><p>NotchNest 把十个工具放进 MacBook 刘海。在 Mac App Store 免费。</p></div>
+      <a href="%STORE%" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="在 Mac App Store 下载" /></a>
+    </div>""",
+           "related": _related("zh", ("/learn/does-the-mac-notch-actually-do-anything/", "Does the Mac notch actually do anything?", "英文——答案。"))},
+    "ar": {"title": "هل يوجد Dynamic Island على الماك؟ — NotchNest", "description": "هل يملك الماك Dynamic Island مثل الآيفون؟ ما يفعله macOS وما لا يفعله بالنتش، وكيف تحصل على ميزات بأسلوب Dynamic Island على الماك.",
+           "og_title": "هل يوجد Dynamic Island على الماك؟", "og_desc": "النتش مقابل Dynamic Island — وكيف تحصل على التجربة رغم ذلك.",
+           "jsonld_headline": "هل يوجد Dynamic Island على الماك؟", "jsonld_desc": "الفرق بين نتش الماك وDynamic Island في الآيفون، وكيف تجلب التجربة إلى الماك.",
+           "kicker": KICK["explainer"]["ar"], "h1": "هل يوجد Dynamic Island على الماك؟",
+           "lede": "يملك الماك نتشًا لكن بلا Dynamic Island مدمج. إليك الفرق — وكيف تحصل على التجربة رغم ذلك.",
+           "readtime": READ5["ar"], "crumb_this": "Dynamic Island على الماك؟",
+           "faq": [("هل يملك الماك Dynamic Island؟", "ليس مدمجًا. يملك الماك نتشًا لكن macOS لا يضع فيه واجهة تفاعلية. تطبيقات الطرف الثالث مثل NotchNest تضيف وظائف بأسلوب Dynamic Island."),
+                   ("هل نتش الماك هو نفسه Dynamic Island؟", "لا. Dynamic Island واجهة آيفون نشطة متحركة للأنشطة المباشرة. أما نتش الماك ففتحة عتاد سلبية للكاميرا بلا تفاعل مدمج."),
+                   ("كيف أحصل على ميزات Dynamic Island على الماك بوك؟", "ثبّت تطبيق نتش مثل NotchNest يحوّل النتش إلى لوحة تمرير للتقويم والحافظة والملاحظات والموسيقى وبومودورو وAirDrop."),
+                   ("هل ستضيف Apple ‏Dynamic Island إلى macOS؟", "لا خطة معلنة. حاليًا تطبيقات الطرف الثالث هي الطريق الوحيد لجعل نتش الماك تفاعليًا.")],
+           "body": """<p>يحوّل Dynamic Island في الآيفون فتحة الكاميرا إلى واجهة حية للمؤقتات والموسيقى والمكالمات والأنشطة المباشرة. يسأل كثير من مالكي الماك: هل يفعل macOS الشيء نفسه بنتشه؟ ليس افتراضيًا — لكن يمكنك إضافته.</p>
+    <h2>النتش مقابل Dynamic Island</h2>
+    <ul>
+      <li><strong>Dynamic Island في الآيفون</strong> — واجهة برمجية نشطة متحركة تستضيف الأنشطة المباشرة وتتوسّع عند اللمس.</li>
+      <li><strong>نتش الماك</strong> — فتحة عتاد سلبية. يرسم macOS شريط القوائم حولها ويُظهر نقطة كاميرا خضراء. لا واجهة تفاعلية.</li>
+    </ul>
+    <p>فجاهزًا من العلبة، نتش الماك مجرد ثقب للكاميرا. راجع «هل يفعل نتش الماك شيئًا» للتفصيل الكامل.</p>
+    <h2>لماذا لم تضفه Apple؟</h2>
+    <p>نموذج المؤشر يختلف عن اللمس، والاكتشاف أصعب دون إشارة على الشاشة، والنتش موجود فقط على الشاشة المدمجة. أيًّا كان السبب، لا تقدّم Apple أي واجهة نتش حتى macOS Tahoe.</p>
+    <h2>كيف تجلب Dynamic Island إلى الماك</h2>
+    <p>تملأ تطبيقات الطرف الثالث الفراغ. يغلّف NotchNest النتش بلوحة تُفعَّل بالتمرير — تقويم وحافظة بالذكاء الاصطناعي وملاحظات سريعة وبومودورو والتحكم بالموسيقى والسحب إلى AirDrop — وهو أقرب شيء إلى Dynamic Island للماك، وأكثر بكثير. تريد أن تجرّبه أولًا؟ افتح عرض النتش التفاعلي في متصفحك. تركّز تطبيقات أخرى على رسوم بأسلوب الوسائط تحديدًا؛ راجع مقارنتنا NotchNest في مواجهة Boring Notch.</p>
+    <div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>اجعل نتشك مفيدًا</h3><p>يضع NotchNest عشر أدوات في نتش الماك بوك. مجانًا على Mac App Store.</p></div>
+      <a href="%STORE%" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="التنزيل من Mac App Store" /></a>
+    </div>""",
+           "related": _related("ar", ("/learn/does-the-mac-notch-actually-do-anything/", "Does the Mac notch actually do anything?", "إنجليزي — الجواب."))},
+    "fr": {"title": "Y a-t-il un Dynamic Island sur Mac ? — NotchNest", "description": "Le Mac a-t-il un Dynamic Island comme l'iPhone ? Ce que macOS fait et ne fait pas avec l'encoche, et comment obtenir des fonctions façon Dynamic Island sur Mac.",
+           "og_title": "Y a-t-il un Dynamic Island sur Mac ?", "og_desc": "Encoche vs Dynamic Island — et comment obtenir l'expérience quand même.",
+           "jsonld_headline": "Y a-t-il un Dynamic Island sur Mac ?", "jsonld_desc": "La différence entre l'encoche du Mac et le Dynamic Island de l'iPhone, et comment amener l'expérience sur Mac.",
+           "kicker": KICK["explainer"]["fr"], "h1": "Y a-t-il un Dynamic Island sur Mac ?",
+           "lede": "Le Mac a une encoche mais pas de Dynamic Island intégré. Voici la différence — et comment obtenir l'expérience quand même.",
+           "readtime": READ5["fr"], "crumb_this": "Dynamic Island sur Mac ?",
+           "faq": [("Le Mac a-t-il un Dynamic Island ?", "Pas en natif. Le Mac a une encoche mais macOS n'y met aucune interface interactive. Des apps tierces comme NotchNest ajoutent des fonctions façon Dynamic Island."),
+                   ("L'encoche du Mac est-elle la même chose que Dynamic Island ?", "Non. Dynamic Island est une interface iPhone active et animée pour les activités en direct. L'encoche du Mac est une découpe matérielle passive pour la caméra, sans interactivité intégrée."),
+                   ("Comment obtenir les fonctions Dynamic Island sur mon MacBook ?", "Installez une app d'encoche comme NotchNest, qui transforme l'encoche en panneau au survol pour calendrier, presse-papiers, notes, musique, Pomodoro et AirDrop."),
+                   ("Apple ajoutera-t-il Dynamic Island à macOS ?", "Aucun plan annoncé. Pour l'instant, les apps tierces sont le seul moyen de rendre l'encoche du Mac interactive.")],
+           "body": """<p>Le Dynamic Island de l'iPhone transforme la découpe de la caméra en interface vivante pour minuteurs, musique, appels et activités en direct. Beaucoup de propriétaires de Mac demandent : macOS fait-il de même avec son encoche ? Pas par défaut — mais vous pouvez l'ajouter.</p>
+    <h2>Encoche vs Dynamic Island</h2>
+    <ul>
+      <li><strong>Dynamic Island iPhone</strong> — une interface logicielle active et animée qui héberge les activités en direct et se déploie au toucher.</li>
+      <li><strong>Encoche du Mac</strong> — une découpe matérielle passive. macOS dessine la barre des menus autour et affiche un point vert de caméra. Aucune interface interactive.</li>
+    </ul>
+    <p>Donc d'origine, l'encoche du Mac n'est qu'un trou pour la caméra. Voyez « l'encoche du Mac sert-elle vraiment à quelque chose » pour le détail complet.</p>
+    <h2>Pourquoi Apple n'en a-t-il pas ajouté ?</h2>
+    <p>Le modèle du curseur diffère du toucher, la découvrabilité est plus difficile sans repère à l'écran, et l'encoche n'existe que sur l'écran intégré. Quelle que soit la raison, Apple ne livre aucune interface d'encoche jusqu'à macOS Tahoe.</p>
+    <h2>Comment obtenir Dynamic Island sur Mac</h2>
+    <p>Les apps tierces comblent le vide. NotchNest entoure l'encoche d'un panneau activé au survol — calendrier, presse-papiers IA, notes rapides, Pomodoro, contrôle de la musique et glisser-vers-AirDrop — ce qui est le plus proche d'un Dynamic Island Mac, et bien plus. Envie de l'essayer d'abord ? Ouvrez le terrain de jeu interactif de l'encoche dans votre navigateur. D'autres apps se concentrent sur les animations façon média ; voyez notre comparatif NotchNest vs Boring Notch.</p>
+    <div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>Rendez votre encoche utile</h3><p>NotchNest met dix outils dans l'encoche de votre MacBook. Gratuit sur le Mac App Store.</p></div>
+      <a href="%STORE%" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="Télécharger sur le Mac App Store" /></a>
+    </div>""",
+           "related": _related("fr", ("/learn/does-the-mac-notch-actually-do-anything/", "Does the Mac notch actually do anything?", "Anglais — la réponse."))},
+    "pt-BR": {"title": "Existe Dynamic Island no Mac? — NotchNest", "description": "O Mac tem Dynamic Island como o iPhone? O que o macOS faz e não faz com o notch, e como ter recursos estilo Dynamic Island no Mac.",
+              "og_title": "Existe Dynamic Island no Mac?", "og_desc": "Notch vs Dynamic Island — e como ter a experiência mesmo assim.",
+              "jsonld_headline": "Existe Dynamic Island no Mac?", "jsonld_desc": "A diferença entre o notch do Mac e o Dynamic Island do iPhone, e como trazer a experiência ao Mac.",
+              "kicker": KICK["explainer"]["pt-BR"], "h1": "Existe Dynamic Island no Mac?",
+              "lede": "O Mac tem notch, mas não tem Dynamic Island embutido. Aqui está a diferença — e como ter a experiência mesmo assim.",
+              "readtime": READ5["pt-BR"], "crumb_this": "Dynamic Island no Mac?",
+              "faq": [("O Mac tem Dynamic Island?", "Não de fábrica. O Mac tem notch, mas o macOS não coloca nenhuma interface interativa nele. Apps de terceiros como o NotchNest adicionam funcionalidades estilo Dynamic Island."),
+                      ("O notch do Mac é o mesmo que o Dynamic Island?", "Não. O Dynamic Island é uma interface ativa e animada do iPhone para Atividades ao Vivo. O notch do Mac é um recorte de hardware passivo para a câmera, sem interatividade embutida."),
+                      ("Como ter recursos do Dynamic Island no meu MacBook?", "Instale um app de notch como o NotchNest, que transforma o notch em um painel ao passar o cursor para calendário, área de transferência, notas, música, Pomodoro e AirDrop."),
+                      ("A Apple vai adicionar Dynamic Island ao macOS?", "Não há plano anunciado. Por ora, apps de terceiros são a única forma de tornar o notch do Mac interativo.")],
+              "body": """<p>O Dynamic Island do iPhone transforma o recorte da câmera em uma interface viva para timers, música, chamadas e Atividades ao Vivo. Muitos donos de Mac perguntam: o macOS faz o mesmo com o notch? Não por padrão — mas você pode adicionar.</p>
+    <h2>Notch vs Dynamic Island</h2>
+    <ul>
+      <li><strong>Dynamic Island do iPhone</strong> — uma interface de software ativa e animada que hospeda Atividades ao Vivo e se expande ao toque.</li>
+      <li><strong>Notch do Mac</strong> — um recorte de hardware passivo. O macOS desenha a barra de menus ao redor e mostra um ponto verde de câmera. Nenhuma interface interativa.</li>
+    </ul>
+    <p>Então, de fábrica, o notch do Mac é só um buraco para a câmera. Veja "o notch do Mac faz alguma coisa" para o detalhamento completo.</p>
+    <h2>Por que a Apple não adicionou um?</h2>
+    <p>O modelo do cursor difere do toque, a descoberta é mais difícil sem uma indicação na tela, e o notch só existe na tela embutida. Seja qual for o motivo, a Apple não entrega nenhuma interface de notch até o macOS Tahoe.</p>
+    <h2>Como ter Dynamic Island no Mac</h2>
+    <p>Apps de terceiros preenchem a lacuna. O NotchNest envolve o notch em um painel ativado ao passar o cursor — calendário, área de transferência com IA, notas rápidas, Pomodoro, controles de música e arrastar para AirDrop — o mais próximo de um Dynamic Island no Mac, e muito mais. Quer sentir primeiro? Abra o playground interativo do notch no navegador. Outros apps focam em animações estilo mídia especificamente; veja o comparativo NotchNest vs Boring Notch.</p>
+    <div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>Torne seu notch útil</h3><p>O NotchNest coloca dez ferramentas no notch do seu MacBook. Grátis na Mac App Store.</p></div>
+      <a href="%STORE%" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="Baixar na Mac App Store" /></a>
+    </div>""",
+              "related": _related("pt-BR", ("/learn/does-the-mac-notch-actually-do-anything/", "Does the Mac notch actually do anything?", "Inglês — a resposta."))},
+    "pt-PT": {"title": "Existe Dynamic Island no Mac? — NotchNest", "description": "O Mac tem Dynamic Island como o iPhone? O que o macOS faz e não faz com o notch, e como ter funcionalidades ao estilo Dynamic Island no Mac.",
+              "og_title": "Existe Dynamic Island no Mac?", "og_desc": "Notch vs Dynamic Island — e como ter a experiência mesmo assim.",
+              "jsonld_headline": "Existe Dynamic Island no Mac?", "jsonld_desc": "A diferença entre o notch do Mac e o Dynamic Island do iPhone, e como trazer a experiência ao Mac.",
+              "kicker": KICK["explainer"]["pt-PT"], "h1": "Existe Dynamic Island no Mac?",
+              "lede": "O Mac tem notch, mas não tem Dynamic Island integrado. Aqui está a diferença — e como ter a experiência mesmo assim.",
+              "readtime": READ5["pt-PT"], "crumb_this": "Dynamic Island no Mac?",
+              "faq": [("O Mac tem Dynamic Island?", "Não de origem. O Mac tem notch, mas o macOS não coloca nenhuma interface interativa nele. Apps de terceiros como o NotchNest adicionam funcionalidades ao estilo Dynamic Island."),
+                      ("O notch do Mac é o mesmo que o Dynamic Island?", "Não. O Dynamic Island é uma interface ativa e animada do iPhone para Atividades Live. O notch do Mac é um recorte de hardware passivo para a câmara, sem interatividade integrada."),
+                      ("Como ter funcionalidades do Dynamic Island no meu MacBook?", "Instale uma app de notch como o NotchNest, que transforma o notch num painel ao passar o cursor para calendário, área de transferência, notas, música, Pomodoro e AirDrop."),
+                      ("A Apple vai adicionar Dynamic Island ao macOS?", "Não há plano anunciado. Por agora, as apps de terceiros são a única forma de tornar o notch do Mac interativo.")],
+              "body": """<p>O Dynamic Island do iPhone transforma o recorte da câmara numa interface viva para temporizadores, música, chamadas e Atividades Live. Muitos donos de Mac perguntam: o macOS faz o mesmo com o notch? Não por predefinição — mas pode adicionar.</p>
+    <h2>Notch vs Dynamic Island</h2>
+    <ul>
+      <li><strong>Dynamic Island do iPhone</strong> — uma interface de software ativa e animada que aloja Atividades Live e se expande ao toque.</li>
+      <li><strong>Notch do Mac</strong> — um recorte de hardware passivo. O macOS desenha a barra de menus à volta e mostra um ponto verde de câmara. Nenhuma interface interativa.</li>
+    </ul>
+    <p>Então, de origem, o notch do Mac é só um buraco para a câmara. Veja "o notch do Mac faz alguma coisa" para o detalhe completo.</p>
+    <h2>Porque não adicionou a Apple um?</h2>
+    <p>O modelo do cursor difere do toque, a descoberta é mais difícil sem uma indicação no ecrã, e o notch só existe no ecrã integrado. Seja qual for a razão, a Apple não entrega nenhuma interface de notch até ao macOS Tahoe.</p>
+    <h2>Como ter Dynamic Island no Mac</h2>
+    <p>As apps de terceiros preenchem a lacuna. O NotchNest envolve o notch num painel ativado ao passar o cursor — calendário, área de transferência com IA, notas rápidas, Pomodoro, controlos de música e arrastar para AirDrop — o mais próximo de um Dynamic Island no Mac, e muito mais. Quer experimentar primeiro? Abra o playground interativo do notch no navegador. Outras apps focam-se em animações ao estilo multimédia especificamente; veja a comparação NotchNest vs Boring Notch.</p>
+    <div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>Torne o seu notch útil</h3><p>O NotchNest coloca dez ferramentas no notch do seu MacBook. Gratuito na Mac App Store.</p></div>
+      <a href="%STORE%" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="Descarregar na Mac App Store" /></a>
+    </div>""",
+              "related": _related("pt-PT", ("/learn/does-the-mac-notch-actually-do-anything/", "Does the Mac notch actually do anything?", "Inglês — a resposta."))},
+    "es-MX": {"title": "¿Hay Dynamic Island en Mac? — NotchNest", "description": "¿El Mac tiene Dynamic Island como el iPhone? Qué hace y qué no hace macOS con el notch, y cómo obtener funciones estilo Dynamic Island en Mac.",
+              "og_title": "¿Hay Dynamic Island en Mac?", "og_desc": "Notch vs Dynamic Island — y cómo obtener la experiencia de todos modos.",
+              "jsonld_headline": "¿Hay Dynamic Island en Mac?", "jsonld_desc": "La diferencia entre el notch del Mac y el Dynamic Island del iPhone, y cómo traer la experiencia al Mac.",
+              "kicker": KICK["explainer"]["es-MX"], "h1": "¿Hay Dynamic Island en Mac?",
+              "lede": "El Mac tiene notch, pero no un Dynamic Island integrado. Aquí está la diferencia — y cómo obtener la experiencia de todos modos.",
+              "readtime": READ5["es-MX"], "crumb_this": "¿Dynamic Island en Mac?",
+              "faq": [("¿El Mac tiene Dynamic Island?", "No de forma integrada. El Mac tiene notch, pero macOS no coloca ninguna interfaz interactiva en él. Apps de terceros como NotchNest agregan funciones estilo Dynamic Island."),
+                      ("¿El notch del Mac es lo mismo que el Dynamic Island?", "No. El Dynamic Island es una interfaz activa y animada del iPhone para Actividades en Vivo. El notch del Mac es un recorte de hardware pasivo para la cámara, sin interactividad integrada."),
+                      ("¿Cómo obtengo funciones de Dynamic Island en mi MacBook?", "Instala una app de notch como NotchNest, que convierte el notch en un panel al pasar el cursor para calendario, portapapeles, notas, música, Pomodoro y AirDrop."),
+                      ("¿Apple agregará Dynamic Island a macOS?", "No hay plan anunciado. Por ahora, las apps de terceros son la única forma de hacer interactivo el notch del Mac.")],
+              "body": """<p>El Dynamic Island del iPhone convierte el recorte de la cámara en una interfaz viva para temporizadores, música, llamadas y Actividades en Vivo. Muchos dueños de Mac preguntan: ¿macOS hace lo mismo con su notch? No por defecto — pero puedes agregarlo.</p>
+    <h2>Notch vs Dynamic Island</h2>
+    <ul>
+      <li><strong>Dynamic Island del iPhone</strong> — una interfaz de software activa y animada que aloja Actividades en Vivo y se expande al tocar.</li>
+      <li><strong>Notch del Mac</strong> — un recorte de hardware pasivo. macOS dibuja la barra de menús alrededor y muestra un punto verde de cámara. Ninguna interfaz interactiva.</li>
+    </ul>
+    <p>Así que de fábrica, el notch del Mac es solo un hueco para la cámara. Mira "¿el notch del Mac hace algo?" para el desglose completo.</p>
+    <h2>¿Por qué Apple no agregó uno?</h2>
+    <p>El modelo del cursor difiere del toque, la descubribilidad es más difícil sin una señal en pantalla, y el notch solo existe en la pantalla integrada. Sea cual sea la razón, Apple no entrega ninguna interfaz de notch hasta macOS Tahoe.</p>
+    <h2>Cómo obtener Dynamic Island en Mac</h2>
+    <p>Las apps de terceros llenan el vacío. NotchNest envuelve el notch en un panel activado al pasar el cursor — calendario, portapapeles con IA, notas rápidas, Pomodoro, controles de música y arrastrar a AirDrop — lo más cercano a un Dynamic Island de Mac, y mucho más. ¿Quieres sentirlo primero? Abre el playground interactivo del notch en tu navegador. Otras apps se enfocan en animaciones estilo medios específicamente; mira nuestra comparativa NotchNest vs Boring Notch.</p>
+    <div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>Haz útil tu notch</h3><p>NotchNest pone diez herramientas en el notch de tu MacBook. Gratis en el Mac App Store.</p></div>
+      <a href="%STORE%" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="Descargar en el Mac App Store" /></a>
+    </div>""",
+              "related": _related("es-MX", ("/learn/does-the-mac-notch-actually-do-anything/", "Does the Mac notch actually do anything?", "Inglés — la respuesta."))},
+}
+
+
 LEARN_ARTICLES = {
     "what-is-the-macos-notch": _assemble(WHATIS),
     "does-the-mac-notch-actually-do-anything": _assemble(DOES),
     "notch-nest-vs-boring-notch-vs-notchdrop": _assemble(BVBVD),
     "how-to-hide-the-notch-on-mac": _assemble(HIDE),
+    "what-is-dynamic-island-on-mac": _assemble(DYN),
 }
