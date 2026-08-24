@@ -68,6 +68,16 @@ def patch_hreflang(html, suffix, indent="    "):
 
 
 # ── footer language column (all 8 locales) ─────────────────────────────────
+def footer_lang_inline(current, suffix=""):
+    """Compact one-line language switcher for learn hub + article footers."""
+    out = []
+    for code in ORDER:
+        href = "/" + DIRS[code] + suffix
+        cur = ' aria-current="page"' if code == current else ""
+        out.append(f'<a href="{href}" hreflang="{code}"{cur}>{SWITCH[code]}</a>')
+    return '<div class="footer-lang">' + "".join(out) + "</div>"
+
+
 def footer_lang_links(current, suffix=""):
     out = []
     for code in ORDER:
@@ -338,7 +348,7 @@ def build_learn_index(loc):
     {cards}
   </div>
   <footer class="site-footer">
-    <div class="footer-bottom"><span>© <span id="yr"></span> NotchNest · Satnam Singh</span></div>
+    <div class="footer-bottom"><span>© <span id="yr"></span> NotchNest · Satnam Singh</span>{footer_lang_inline(loc, 'learn/')}</div>
   </footer>
 </div></main>
 <script>var yr=document.getElementById('yr');if(yr)yr.textContent=new Date().getFullYear();</script>
@@ -467,7 +477,7 @@ def build_article(loc, slug):
   </article>
 
   <footer class="site-footer">
-    <div class="footer-bottom"><span>© <span id="yr"></span> NotchNest · Satnam Singh</span></div>
+    <div class="footer-bottom"><span>© <span id="yr"></span> NotchNest · Satnam Singh</span>{footer_lang_inline(loc, f'learn/{slug}/')}</div>
   </footer>
 </div></main>
 <script>var yr=document.getElementById('yr');if(yr)yr.textContent=new Date().getFullYear();</script>

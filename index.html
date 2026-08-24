@@ -1059,23 +1059,49 @@ img,video,svg{display:block;max-width:100%;height:auto}
     <!-- Locale suggestion banner (no auto-redirect; SEO-safe) -->
     <script>
     (function(){
-      // Skip for bots
+      // Skip for bots — never cloak or auto-redirect crawlers
       if (/bot|crawl|spider|slurp|preview|index/i.test(navigator.userAgent)) return;
-      // Skip if user dismissed
       try { if (localStorage.getItem('nn_locale_dismissed') === '1') return; } catch(e){}
-      var langs = (navigator.languages || [navigator.language || '']).map(function(l){ return (l||'').toLowerCase(); });
+      // Already on a localized path? do nothing
       var path = window.location.pathname;
-      if (path.indexOf('/de') === 0 || path.indexOf('/zh') === 0) return;
-      var match = null;
-      for (var i = 0; i < langs.length; i++) {
-        if (langs[i].indexOf('de') === 0) { match = { href: '/de/', label: 'Auf Deutsch lesen', close: 'Schließen' }; break; }
-        if (langs[i].indexOf('zh') === 0) { match = { href: '/zh/', label: '阅读中文版', close: '关闭' }; break; }
+      if (/^\/(de|zh|ar|fr|pt-br|pt-pt|es-mx)(\/|$)/.test(path)) return;
+      // target definitions, keyed by internal id
+      var T = {
+        de:   { href: '/de/',    label: 'Auf Deutsch lesen',   close: 'Schließen' },
+        zh:   { href: '/zh/',    label: '阅读简体中文版',        close: '关闭' },
+        ar:   { href: '/ar/',    label: 'اقرأ بالعربية',        close: 'إغلاق' },
+        fr:   { href: '/fr/',    label: 'Lire en français',    close: 'Fermer' },
+        ptbr: { href: '/pt-br/', label: 'Ler em português (BR)', close: 'Fechar' },
+        ptpt: { href: '/pt-pt/', label: 'Ler em português (PT)', close: 'Fechar' },
+        esmx: { href: '/es-mx/', label: 'Leer en español',     close: 'Cerrar' }
+      };
+      // map one BCP-47 tag (lowercased) to a target id, or null
+      function pick(l){
+        if (l.indexOf('pt-br') === 0) return 'ptbr';
+        if (l.indexOf('pt-pt') === 0) return 'ptpt';
+        if (l.indexOf('pt')    === 0) return 'ptbr';   // bare Portuguese → Brazil (larger)
+        if (l.indexOf('es')    === 0) return 'esmx';   // any Spanish → Mexican build
+        if (l.indexOf('de')    === 0) return 'de';
+        if (l.indexOf('zh')    === 0) return 'zh';
+        if (l.indexOf('ar')    === 0) return 'ar';
+        if (l.indexOf('fr')    === 0) return 'fr';
+        if (l.indexOf('en')    === 0) return 'en';     // already home — stop looking
+        return null;
       }
-      if (!match) return;
+      var langs = (navigator.languages || [navigator.language || '']).map(function(l){ return (l||'').toLowerCase(); });
+      var id = null;
+      for (var i = 0; i < langs.length; i++) {
+        var p = pick(langs[i]);
+        if (p === 'en') return;      // English preferred → stay on root
+        if (p) { id = p; break; }
+      }
+      if (!id) return;
+      var m = T[id];
       var b = document.createElement('div');
       b.className = 'nn-locale-banner';
-      b.innerHTML = '<a href="' + match.href + '">' + match.label + ' →</a>' +
-                    '<button type="button" aria-label="' + match.close + '">×</button>';
+      if (id === 'ar') b.setAttribute('dir', 'rtl');
+      b.innerHTML = '<a href="' + m.href + '">' + m.label + ' →</a>' +
+                    '<button type="button" aria-label="' + m.close + '">×</button>';
       document.body.appendChild(b);
       b.querySelector('button').addEventListener('click', function(){
         b.remove();
