@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<title>Notch auf dem Mac verstecken — NotchNest</title>
+<meta name="description" content="Drei Wege, die MacBook-Notch in macOS zu verstecken — skalierte Auflösung, schwarze Menüleiste und Drittanbieter-Apps. Plus die bessere Alternative: sie nützlich machen." />
+<link rel="canonical" href="https://notchnest.app/de/learn/how-to-hide-the-notch-on-mac/" />
+<meta name="robots" content="index,follow,max-image-preview:large" />
+<link rel="alternate" hreflang="en" href="https://notchnest.app/learn/how-to-hide-the-notch-on-mac/" />
+<link rel="alternate" hreflang="en-us" href="https://notchnest.app/learn/how-to-hide-the-notch-on-mac/" />
+<link rel="alternate" hreflang="en-gb" href="https://notchnest.app/learn/how-to-hide-the-notch-on-mac/" />
+<link rel="alternate" hreflang="en-in" href="https://notchnest.app/learn/how-to-hide-the-notch-on-mac/" />
+<link rel="alternate" hreflang="de" href="https://notchnest.app/de/learn/how-to-hide-the-notch-on-mac/" />
+<link rel="alternate" hreflang="zh" href="https://notchnest.app/zh/learn/how-to-hide-the-notch-on-mac/" />
+<link rel="alternate" hreflang="zh-cn" href="https://notchnest.app/zh/learn/how-to-hide-the-notch-on-mac/" />
+<link rel="alternate" hreflang="ar" href="https://notchnest.app/ar/learn/how-to-hide-the-notch-on-mac/" />
+<link rel="alternate" hreflang="fr" href="https://notchnest.app/fr/learn/how-to-hide-the-notch-on-mac/" />
+<link rel="alternate" hreflang="pt-BR" href="https://notchnest.app/pt-br/learn/how-to-hide-the-notch-on-mac/" />
+<link rel="alternate" hreflang="pt-PT" href="https://notchnest.app/pt-pt/learn/how-to-hide-the-notch-on-mac/" />
+<link rel="alternate" hreflang="es-MX" href="https://notchnest.app/es-mx/learn/how-to-hide-the-notch-on-mac/" />
+<link rel="alternate" hreflang="es-419" href="https://notchnest.app/es-mx/learn/how-to-hide-the-notch-on-mac/" />
+<link rel="alternate" hreflang="x-default" href="https://notchnest.app/learn/how-to-hide-the-notch-on-mac/" />
+<meta property="og:title" content="Notch auf dem Mac verstecken" />
+<meta property="og:description" content="Alle Wege, die Notch zu verstecken — und die bessere Alternative." />
+<meta property="og:url" content="https://notchnest.app/de/learn/how-to-hide-the-notch-on-mac/" />
+<meta property="og:locale" content="de_DE" />
+<meta property="og:type" content="article" />
+<meta property="og:image" content="https://notchnest.app/assets/og/how-to-hide-the-notch-on-mac.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@codetard" />
+<meta name="twitter:creator" content="@codetard" />
+<link rel="stylesheet" href="/styles.css" />
+<link rel="apple-touch-icon" href="/assets/notchnest-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<meta name="theme-color" content="#000000" />
+<meta name="color-scheme" content="dark" />
+<script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org", "@type": "Article",
+    "headline": "Notch auf dem Mac verstecken",
+    "description": "Alle Methoden, die MacBook-Notch zu verstecken, und warum du sie vielleicht besser nutzt.",
+    "image": "https://notchnest.app/assets/og/how-to-hide-the-notch-on-mac.png",
+    "datePublished": "2026-06-10T00:00:00+00:00", "dateModified": "2026-06-13T00:00:00+00:00",
+    "inLanguage": "de",
+    "author": { "@type": "Person", "name": "Satnam Singh", "url": "https://silverseahog.com/", "jobTitle": "Swift Developer",
+      "sameAs": ["https://silverseahog.com/","https://twitter.com/codetard","https://github.com/29satnam","https://www.linkedin.com/in/satnam-singh-948348aa/","https://instagram.com/codetard"] },
+    "publisher": { "@type": "Organization", "name": "NotchNest", "logo": { "@type": "ImageObject", "url": "https://notchnest.app/assets/notchnest-icon.png" } },
+    "mainEntityOfPage": "https://notchnest.app/de/learn/how-to-hide-the-notch-on-mac/"
+  },
+  {
+    "@context": "https://schema.org", "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Start", "item": "https://notchnest.app/de/" },
+      { "@type": "ListItem", "position": 2, "name": "Lernen", "item": "https://notchnest.app/de/learn/" },
+      { "@type": "ListItem", "position": 3, "name": "Notch verstecken", "item": "https://notchnest.app/de/learn/how-to-hide-the-notch-on-mac/" }
+    ]
+  },
+  {
+    "@context": "https://schema.org", "@type": "FAQPage", "inLanguage": "de",
+    "mainEntity": [
+      { "@type": "Question", "name": "Kann man die MacBook-Notch ganz entfernen?", "acceptedAnswer": { "@type": "Answer", "text": "Nein — die Notch ist physische Hardware, die die Kamera beherbergt. Du kannst sie nur visuell verstecken, per skalierter Auflösung oder schwarzer Menüleiste, beide umkehrbar." } },
+      { "@type": "Question", "name": "Verliert man beim Verstecken Bildschirmplatz?", "acceptedAnswer": { "@type": "Answer", "text": "Ja. Verstecken per skalierter Auflösung oder schwarzem Balken entfernt etwa 74 vertikale Pixel Menüleiste. Die Notch zu nutzen behält alle Pixel." } },
+      { "@type": "Question", "name": "Welche App versteckt die Mac-Notch am besten?", "acceptedAnswer": { "@type": "Answer", "text": "TopNotch ist die beliebteste kostenlose Tarn-App. Viele bevorzugen aber NotchNest, das die Notch nützlich macht, statt sie zu verstecken." } },
+      { "@type": "Question", "name": "Hilft das Verstecken bei Akku oder Performance?", "acceptedAnswer": { "@type": "Answer", "text": "Nein. Die Notch hat keine Performance-Kosten. Verstecken ist rein kosmetisch." } }
+    ]
+  }
+]
+</script>
+</head>
+<body>
+<nav class="nn-nav"><div class="nn-nav-inner">
+  <a class="nn-brand" href="/de/"><img class="nn-brand-mark" src="/assets/notchnest-icon.png" alt="" width="28" height="28"/><span>NotchNest</span></a>
+  <div class="nn-nav-links">
+    <a href="/learn/how-to-hide-the-notch-on-mac/">EN</a>
+    <a href="/de/learn/" class="nn-nav-keep">Lernen</a>
+  </div>
+</div></nav>
+
+<main class="main-container"><div class="learn-wrap">
+  <div class="crumbs"><a href="/de/">Start</a><span class="sep">/</span><a href="/de/learn/">Lernen</a><span class="sep">/</span><span>Notch verstecken</span></div>
+
+  <header class="article-head">
+    <span class="article-kicker">Anleitung</span>
+    <h1 class="article-h1">Notch auf dem Mac verstecken</h1>
+    <p class="article-lede">Magst du die Notch nicht? Du kannst sie in ein paar Klicks verstecken — oder etwas Klügeres damit machen. Hier alle Optionen, geordnet.</p>
+    <div class="article-meta"><span>Aktualisiert 13. Juni 2026</span><span class="dot"></span><span>5 Min. Lesedauer</span><span class="dot"></span><span>Von Satnam Singh</span></div>
+  </header>
+
+  <article class="article-body">
+    <p>Die MacBook-Notch spaltet die Gemüter. Wenn sie dich stört, geben dir macOS und ein paar kostenlose Tools mehrere Wege, sie verschwinden zu lassen. Hier jede Methode, von einer eingebauten Einstellung bis zu Drittanbieter-Apps — und warum du sie vielleicht gar nicht verstecken willst.</p>
+    <h2>Methode 1 — Skalierte Auflösung (eingebaut, ohne Apps)</h2>
+    <p>macOS kann den oberen Bildschirmrand letterboxen, sodass die Notch hinter einem gleichmäßigen schwarzen Balken verschwindet:</p>
+    <ol>
+      <li>Öffne <strong>Systemeinstellungen → Displays</strong>.</li>
+      <li>Halte <strong>Option</strong> und klicke <strong>Skaliert</strong>, um alle Auflösungen zu zeigen.</li>
+      <li>Wähle eine als „nicht Vollbild" markierte Auflösung — macOS polstert die Menüleiste schwarz und versteckt die Notch.</li>
+    </ol>
+    <p>Nachteil: du verlierst rund 74 vertikale Pixel Menüleiste. Alles rutscht leicht nach unten. Kostenlos und umkehrbar.</p>
+    <h2>Methode 2 — Trick mit schwarzem Menüleisten-Hintergrund</h2>
+    <p>Hat dein Hintergrundbild oben einen schwarzen Streifen, fügt sich die Notch visuell ein, während du die volle Auflösung behältst. Apps wie TopNotch automatisieren das, indem sie dein Wallpaper abtasten und den Menüleisten-Hintergrund schwärzen. Kostenlos, und du behältst deine Pixel.</p>
+    <h2>Methode 3 — Drittanbieter-Notch-Tools</h2>
+    <p>Tools wie TopNotch und Forehead existieren rein zur Tarnung der Notch. Sie sind leichtgewichtig und machen eine Sache gut. Aber sie verstecken die Notch nur — sie geben diesem Bildschirmbereich keinen Zweck.</p>
+    <h2>Die bessere Option: die Notch nützlich machen</h2>
+    <p>Die Notch zu verstecken beseitigt ein kosmetisches Ärgernis, verschwendet aber die Hardware. Die Notch sitzt in Platz, den die Menüleiste ohnehin belegt, kostet dich also nichts — außer du blendest sie aus, was tatsächlich nutzbare Pixel entfernt.</p>
+    <p>Eine Notch-App wie NotchNest geht den umgekehrten Weg: Hover die Notch und sie klappt zu einem Produktivitäts-Panel auf — Kalender, KI-Zwischenablage, Schnellnotizen, Pomodoro, Musiksteuerung und Drag-to-AirDrop. Du bemerkst die Notch nicht mehr, weil sie etwas tut. Probier den interaktiven Notch-Playground, um sie ohne Installation zu sehen.</p>
+    <div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>Mach deine Notch nützlich</h3><p>NotchNest bringt zehn Tools in die Notch deines MacBooks. Kostenlos im Mac App Store.</p></div>
+      <a href="https://apps.apple.com/de/app/notchnest-power-your-notch/id6747612321" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="Im Mac App Store laden" /></a>
+    </div>
+    <h2>Wie du die Notch zurückholst</h2>
+    <p>Jede Methode oben ist umkehrbar. Setz deine Auflösung in Displays auf <strong>Standard</strong> zurück oder beende die Tarn-App. Es werden keine Systemdateien geändert.</p>
+
+    <aside class="author-bio">
+      <img class="author-avatar" src="https://github.com/29satnam.png" alt="Satnam Singh" width="56" height="56" loading="lazy" />
+      <div>
+        <h3>Über den Autor</h3>
+        <p><strong>Satnam Singh</strong> ist der Swift-Entwickler hinter NotchNest. Er schreibt über macOS-Produktivität, KI auf Apple Silicon und Indie-App-Handwerk. <a href="https://silverseahog.com/" target="_blank" rel="noopener">silverseahog.com</a> · <a href="https://twitter.com/codetard" target="_blank" rel="noopener nofollow">@codetard</a></p>
+      </div>
+    </aside>
+
+    <section class="related-section">
+      <h2>Weiterlesen</h2>
+      <div class="related-grid">
+        <a class="related-card" href="/de/learn/how-to-use-the-macbook-notch/"><h3>MacBook-Notch nutzen</h3><p>Drei Schritte zur nützlichen Notch.</p></a>
+        <a class="related-card" href="/de/learn/best-macos-notch-apps/"><h3>Beste macOS-Notch-Apps</h3><p>Übersicht 2026.</p></a>
+        <a class="related-card" href="/learn/best-macos-notch-apps/"><h3>Best macOS notch apps</h3><p>Übersicht 2026.</p></a>
+      </div>
+    </section>
+  </article>
+
+  <footer class="site-footer">
+    <div class="footer-bottom"><span>© <span id="yr"></span> NotchNest · Satnam Singh</span><div class="footer-lang"><a href="/learn/how-to-hide-the-notch-on-mac/" hreflang="en">English</a><a href="/de/learn/how-to-hide-the-notch-on-mac/" hreflang="de" aria-current="page">Deutsch</a><a href="/zh/learn/how-to-hide-the-notch-on-mac/" hreflang="zh">中文</a><a href="/ar/learn/how-to-hide-the-notch-on-mac/" hreflang="ar">العربية</a><a href="/fr/learn/how-to-hide-the-notch-on-mac/" hreflang="fr">Français</a><a href="/pt-br/learn/how-to-hide-the-notch-on-mac/" hreflang="pt-BR">Português (BR)</a><a href="/pt-pt/learn/how-to-hide-the-notch-on-mac/" hreflang="pt-PT">Português (PT)</a><a href="/es-mx/learn/how-to-hide-the-notch-on-mac/" hreflang="es-MX">Español (MX)</a></div></div>
+  </footer>
+</div></main>
+<script>var yr=document.getElementById('yr');if(yr)yr.textContent=new Date().getFullYear();</script>
+</body></html>

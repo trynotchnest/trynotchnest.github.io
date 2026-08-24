@@ -1073,8 +1073,252 @@ for _loc in _LOCS:
     BVBVD[_loc] = _m
 
 
+# ── how-to-hide-the-notch-on-mac ────────────────────────────────────────────
+HIDE = {
+    "de": {"title": "Notch auf dem Mac verstecken — NotchNest", "description": "Drei Wege, die MacBook-Notch in macOS zu verstecken — skalierte Auflösung, schwarze Menüleiste und Drittanbieter-Apps. Plus die bessere Alternative: sie nützlich machen.",
+           "og_title": "Notch auf dem Mac verstecken", "og_desc": "Alle Wege, die Notch zu verstecken — und die bessere Alternative.",
+           "jsonld_headline": "Notch auf dem Mac verstecken", "jsonld_desc": "Alle Methoden, die MacBook-Notch zu verstecken, und warum du sie vielleicht besser nutzt.",
+           "kicker": KICK["guide"]["de"], "h1": "Notch auf dem Mac verstecken",
+           "lede": "Magst du die Notch nicht? Du kannst sie in ein paar Klicks verstecken — oder etwas Klügeres damit machen. Hier alle Optionen, geordnet.",
+           "readtime": READ5["de"], "crumb_this": "Notch verstecken",
+           "faq": [("Kann man die MacBook-Notch ganz entfernen?", "Nein — die Notch ist physische Hardware, die die Kamera beherbergt. Du kannst sie nur visuell verstecken, per skalierter Auflösung oder schwarzer Menüleiste, beide umkehrbar."),
+                   ("Verliert man beim Verstecken Bildschirmplatz?", "Ja. Verstecken per skalierter Auflösung oder schwarzem Balken entfernt etwa 74 vertikale Pixel Menüleiste. Die Notch zu nutzen behält alle Pixel."),
+                   ("Welche App versteckt die Mac-Notch am besten?", "TopNotch ist die beliebteste kostenlose Tarn-App. Viele bevorzugen aber NotchNest, das die Notch nützlich macht, statt sie zu verstecken."),
+                   ("Hilft das Verstecken bei Akku oder Performance?", "Nein. Die Notch hat keine Performance-Kosten. Verstecken ist rein kosmetisch.")],
+           "body": """<p>Die MacBook-Notch spaltet die Gemüter. Wenn sie dich stört, geben dir macOS und ein paar kostenlose Tools mehrere Wege, sie verschwinden zu lassen. Hier jede Methode, von einer eingebauten Einstellung bis zu Drittanbieter-Apps — und warum du sie vielleicht gar nicht verstecken willst.</p>
+    <h2>Methode 1 — Skalierte Auflösung (eingebaut, ohne Apps)</h2>
+    <p>macOS kann den oberen Bildschirmrand letterboxen, sodass die Notch hinter einem gleichmäßigen schwarzen Balken verschwindet:</p>
+    <ol>
+      <li>Öffne <strong>Systemeinstellungen → Displays</strong>.</li>
+      <li>Halte <strong>Option</strong> und klicke <strong>Skaliert</strong>, um alle Auflösungen zu zeigen.</li>
+      <li>Wähle eine als „nicht Vollbild" markierte Auflösung — macOS polstert die Menüleiste schwarz und versteckt die Notch.</li>
+    </ol>
+    <p>Nachteil: du verlierst rund 74 vertikale Pixel Menüleiste. Alles rutscht leicht nach unten. Kostenlos und umkehrbar.</p>
+    <h2>Methode 2 — Trick mit schwarzem Menüleisten-Hintergrund</h2>
+    <p>Hat dein Hintergrundbild oben einen schwarzen Streifen, fügt sich die Notch visuell ein, während du die volle Auflösung behältst. Apps wie TopNotch automatisieren das, indem sie dein Wallpaper abtasten und den Menüleisten-Hintergrund schwärzen. Kostenlos, und du behältst deine Pixel.</p>
+    <h2>Methode 3 — Drittanbieter-Notch-Tools</h2>
+    <p>Tools wie TopNotch und Forehead existieren rein zur Tarnung der Notch. Sie sind leichtgewichtig und machen eine Sache gut. Aber sie verstecken die Notch nur — sie geben diesem Bildschirmbereich keinen Zweck.</p>
+    <h2>Die bessere Option: die Notch nützlich machen</h2>
+    <p>Die Notch zu verstecken beseitigt ein kosmetisches Ärgernis, verschwendet aber die Hardware. Die Notch sitzt in Platz, den die Menüleiste ohnehin belegt, kostet dich also nichts — außer du blendest sie aus, was tatsächlich nutzbare Pixel entfernt.</p>
+    <p>Eine Notch-App wie NotchNest geht den umgekehrten Weg: Hover die Notch und sie klappt zu einem Produktivitäts-Panel auf — Kalender, KI-Zwischenablage, Schnellnotizen, Pomodoro, Musiksteuerung und Drag-to-AirDrop. Du bemerkst die Notch nicht mehr, weil sie etwas tut. Probier den interaktiven Notch-Playground, um sie ohne Installation zu sehen.</p>
+    <div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>Mach deine Notch nützlich</h3><p>NotchNest bringt zehn Tools in die Notch deines MacBooks. Kostenlos im Mac App Store.</p></div>
+      <a href="%STORE%" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="Im Mac App Store laden" /></a>
+    </div>
+    <h2>Wie du die Notch zurückholst</h2>
+    <p>Jede Methode oben ist umkehrbar. Setz deine Auflösung in Displays auf <strong>Standard</strong> zurück oder beende die Tarn-App. Es werden keine Systemdateien geändert.</p>""",
+           "related": _related("de", ("/learn/best-macos-notch-apps/", "Best macOS notch apps", "Übersicht 2026."))},
+    "zh": {"title": "如何在 Mac 上隐藏刘海 — NotchNest", "description": "在 macOS 上隐藏 MacBook 刘海的三种方法——缩放分辨率、黑色菜单栏和第三方应用。以及更好的选择：让它有用。",
+           "og_title": "如何在 Mac 上隐藏刘海", "og_desc": "隐藏刘海的所有方法——以及更好的选择。",
+           "jsonld_headline": "如何在 Mac 上隐藏刘海", "jsonld_desc": "隐藏 MacBook 刘海的所有方法，以及为何你也许更该用它。",
+           "kicker": KICK["guide"]["zh"], "h1": "如何在 Mac 上隐藏刘海",
+           "lede": "不喜欢刘海？几下点击就能隐藏——或者用它做点更聪明的事。这里是所有选项，按优劣排序。",
+           "readtime": READ5["zh"], "crumb_this": "隐藏刘海",
+           "faq": [("能彻底移除 MacBook 刘海吗？", "不能——刘海是容纳摄像头的物理硬件。你只能用缩放分辨率或黑色菜单栏在视觉上隐藏它，两者都可还原。"),
+                   ("隐藏刘海会损失屏幕空间吗？", "会。用缩放分辨率或黑边隐藏会去掉约 74 像素的菜单栏高度。使用刘海（而非隐藏）则保留全部像素。"),
+                   ("隐藏 Mac 刘海最好的应用是哪款？", "TopNotch 是最热门的免费遮盖应用。但很多用户更偏好 NotchNest——它让刘海变得有用，而不是隐藏。"),
+                   ("隐藏刘海对电池或性能有帮助吗？", "没有。刘海没有性能开销。隐藏纯属外观。")],
+           "body": """<p>MacBook 刘海让人褒贬不一。如果它让你困扰，macOS 和几款免费工具提供了多种让它消失的方法。这里列出每种方法，从内建设置到第三方应用——以及为何你也许根本不该隐藏它。</p>
+    <h2>方法一 — 缩放分辨率（内建，无需应用）</h2>
+    <p>macOS 可为屏幕顶部加黑边，让刘海藏在一条均匀的黑条后：</p>
+    <ol>
+      <li>打开<strong>系统设置 → 显示器</strong>。</li>
+      <li>按住 <strong>Option</strong> 并点击<strong>缩放</strong>以显示所有分辨率。</li>
+      <li>选一个标注为“非全屏”的分辨率——macOS 会把菜单栏区域填黑，隐藏刘海。</li>
+    </ol>
+    <p>代价：你会损失约 74 像素的菜单栏高度。一切略微下移。免费且可还原。</p>
+    <h2>方法二 — 黑色菜单栏壁纸技巧</h2>
+    <p>如果壁纸顶端有一条黑带，刘海在视觉上就会融入，同时保留完整分辨率。TopNotch 之类的应用会采样你的壁纸并把菜单栏背景填黑，实现自动化。免费，且保留像素。</p>
+    <h2>方法三 — 第三方刘海工具</h2>
+    <p>TopNotch 和 Forehead 之类的工具纯粹用于遮盖刘海。它们轻量，把一件事做好。但它们只隐藏刘海——不会给那块屏幕区域任何用途。</p>
+    <h2>更好的选择：让刘海有用</h2>
+    <p>隐藏刘海消除了一个外观上的烦恼，却浪费了硬件。刘海占用的是菜单栏本就占据的空间，因此对你没有任何代价——除非你把它涂黑，那反而会去掉可用像素。</p>
+    <p>NotchNest 这样的刘海应用采取相反思路：悬停刘海，它便展开为生产力面板——日历、AI 剪贴板、快速笔记、番茄钟、音乐控制和拖拽 AirDrop。你不再注意刘海，因为它在做事。试试交互式刘海演示，不安装即可体验。</p>
+    <div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>让你的刘海有用</h3><p>NotchNest 把十个工具放进 MacBook 刘海。在 Mac App Store 免费。</p></div>
+      <a href="%STORE%" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="在 Mac App Store 下载" /></a>
+    </div>
+    <h2>如何恢复刘海</h2>
+    <p>以上每种方法都可还原。在“显示器”里把分辨率设回<strong>默认</strong>，或退出遮盖应用。不会更改任何系统文件。</p>""",
+           "related": _related("zh", ("/learn/best-macos-notch-apps/", "Best macOS notch apps", "英文——2026 盘点。"))},
+    "ar": {"title": "كيفية إخفاء النتش على الماك — NotchNest", "description": "ثلاث طرق لإخفاء نتش الماك بوك في macOS — دقة مُقاسة، وشريط قوائم أسود، وتطبيقات طرف ثالث. إضافةً إلى البديل الأفضل: اجعله مفيدًا.",
+           "og_title": "كيفية إخفاء النتش على الماك", "og_desc": "كل طرق إخفاء النتش — والبديل الأفضل.",
+           "jsonld_headline": "كيفية إخفاء النتش على الماك", "jsonld_desc": "كل طرق إخفاء نتش الماك بوك، ولماذا قد يكون استخدامه أفضل.",
+           "kicker": KICK["guide"]["ar"], "h1": "كيفية إخفاء النتش على الماك",
+           "lede": "لا يعجبك النتش؟ يمكنك إخفاؤه بنقرتين — أو فعل شيء أذكى به. إليك كل الخيارات مرتّبة.",
+           "readtime": READ5["ar"], "crumb_this": "إخفاء النتش",
+           "faq": [("هل يمكن إزالة نتش الماك بوك تمامًا؟", "لا — النتش عتاد مادي يحتضن الكاميرا. يمكنك إخفاؤه بصريًا فقط بدقة مُقاسة أو شريط قوائم أسود، وكلاهما قابل للتراجع."),
+                   ("هل يخسر إخفاء النتش مساحة شاشة؟", "نعم. الإخفاء بدقة مُقاسة أو شريط أسود يزيل نحو 74 بكسل من ارتفاع شريط القوائم. استخدام النتش يحفظ كل البكسلات."),
+                   ("ما أفضل تطبيق لإخفاء نتش الماك؟", "TopNotch أشهر تطبيق تمويه مجاني. لكن كثيرين يفضّلون NotchNest الذي يجعل النتش مفيدًا بدل إخفائه."),
+                   ("هل يساعد إخفاء النتش في البطارية أو الأداء؟", "لا. لا كلفة أداء للنتش. الإخفاء تجميلي بحت.")],
+           "body": """<p>يقسم نتش الماك بوك الناس. إن كان يزعجك، يمنحك macOS وبضعة أدوات مجانية عدة طرق لإخفائه. إليك كل طريقة، من إعداد مدمج إلى تطبيقات طرف ثالث — ولماذا قد لا ترغب بإخفائه أصلًا.</p>
+    <h2>الطريقة 1 — دقة مُقاسة (مدمجة، بلا تطبيقات)</h2>
+    <p>يمكن لـ macOS إضافة حاشية سوداء أعلى الشاشة ليختفي النتش خلف شريط أسود موحّد:</p>
+    <ol>
+      <li>افتح <strong>إعدادات النظام ← الشاشات</strong>.</li>
+      <li>اضغط <strong>Option</strong> وانقر <strong>مُقاس</strong> لإظهار كل الدقات.</li>
+      <li>اختر دقة موسومة بأنها «لا تستخدم كامل الشاشة» — يملأ macOS منطقة شريط القوائم بالأسود ويخفي النتش.</li>
+    </ol>
+    <p>المقابل: تخسر نحو 74 بكسل رأسيًا من شريط القوائم. ينزل كل شيء قليلًا. مجاني وقابل للتراجع.</p>
+    <h2>الطريقة 2 — حيلة خلفية شريط قوائم سوداء</h2>
+    <p>إن كان لخلفيتك شريط أسود في الأعلى، يندمج النتش بصريًا مع بقاء الدقة الكاملة. تؤتمت تطبيقات مثل TopNotch ذلك بأخذ عيّنة من خلفيتك وتسويد خلفية شريط القوائم. مجاني، وتحتفظ ببكسلاتك.</p>
+    <h2>الطريقة 3 — أدوات نتش من طرف ثالث</h2>
+    <p>أدوات مثل TopNotch وForehead موجودة بحتًا لتمويه النتش. خفيفة وتُتقن مهمة واحدة. لكنها تخفي النتش فقط — لا تمنح تلك المساحة أي غرض.</p>
+    <h2>الخيار الأفضل: اجعل النتش مفيدًا</h2>
+    <p>إخفاء النتش يزيل إزعاجًا تجميليًا لكنه يهدر العتاد. يقع النتش في مساحة يشغلها شريط القوائم أصلًا، فلا يكلّفك شيئًا — إلا إن سوّدته، فذلك يزيل بكسلات قابلة للاستخدام فعلًا.</p>
+    <p>يتّبع تطبيق نتش مثل NotchNest النهج المعاكس: مرّر المؤشر فوق النتش فينفتح إلى لوحة إنتاجية — تقويم وحافظة بالذكاء الاصطناعي وملاحظات سريعة وبومودورو والتحكم بالموسيقى والسحب إلى AirDrop. تتوقف عن ملاحظة النتش لأنه يفعل شيئًا. جرّب عرض النتش التفاعلي لرؤيته دون تثبيت أي شيء.</p>
+    <div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>اجعل نتشك مفيدًا</h3><p>يضع NotchNest عشر أدوات في نتش الماك بوك. مجانًا على Mac App Store.</p></div>
+      <a href="%STORE%" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="التنزيل من Mac App Store" /></a>
+    </div>
+    <h2>كيف تعيد النتش</h2>
+    <p>كل طريقة أعلاه قابلة للتراجع. أعد ضبط الدقة إلى <strong>الافتراضي</strong> في الشاشات، أو أغلق تطبيق التمويه. لا تُغيَّر أي ملفات نظام.</p>""",
+           "related": _related("ar", ("/learn/best-macos-notch-apps/", "Best macOS notch apps", "إنجليزي — اختيارات 2026."))},
+    "fr": {"title": "Comment masquer l'encoche sur Mac — NotchNest", "description": "Trois façons de masquer l'encoche du MacBook sous macOS — résolution mise à l'échelle, barre des menus noire et apps tierces. Plus la meilleure alternative : la rendre utile.",
+           "og_title": "Comment masquer l'encoche sur Mac", "og_desc": "Toutes les façons de masquer l'encoche — et la meilleure alternative.",
+           "jsonld_headline": "Comment masquer l'encoche sur Mac", "jsonld_desc": "Toutes les méthodes pour masquer l'encoche du MacBook, et pourquoi mieux vaut peut-être l'utiliser.",
+           "kicker": KICK["guide"]["fr"], "h1": "Comment masquer l'encoche sur Mac",
+           "lede": "Vous n'aimez pas l'encoche ? Vous pouvez la masquer en quelques clics — ou en faire quelque chose de plus malin. Voici toutes les options, classées.",
+           "readtime": READ5["fr"], "crumb_this": "Masquer l'encoche",
+           "faq": [("Peut-on retirer complètement l'encoche du MacBook ?", "Non — l'encoche est du matériel qui loge la caméra. Vous ne pouvez la masquer que visuellement, par une résolution mise à l'échelle ou une barre des menus noire, deux méthodes réversibles."),
+                   ("Masquer l'encoche fait-il perdre de l'espace écran ?", "Oui. La masquer via une résolution mise à l'échelle ou une barre noire retire environ 74 pixels verticaux de barre des menus. Utiliser l'encoche garde tous vos pixels."),
+                   ("Quelle est la meilleure app pour masquer l'encoche du Mac ?", "TopNotch est l'app de camouflage gratuite la plus populaire. Mais beaucoup préfèrent NotchNest, qui rend l'encoche utile au lieu de la masquer."),
+                   ("Masquer l'encoche aide-t-il la batterie ou les performances ?", "Non. L'encoche n'a aucun coût de performance. La masquer est purement esthétique.")],
+           "body": """<p>L'encoche du MacBook divise. Si elle vous dérange, macOS et quelques outils gratuits offrent plusieurs façons de la faire disparaître. Voici chaque méthode, d'un réglage intégré aux apps tierces — et pourquoi vous ne voudrez peut-être pas la masquer du tout.</p>
+    <h2>Méthode 1 — Résolution mise à l'échelle (intégrée, sans app)</h2>
+    <p>macOS peut ajouter des bandes en haut de l'écran pour que l'encoche se cache derrière une barre noire uniforme :</p>
+    <ol>
+      <li>Ouvrez <strong>Réglages Système → Moniteurs</strong>.</li>
+      <li>Maintenez <strong>Option</strong> et cliquez <strong>Mise à l'échelle</strong> pour révéler toutes les résolutions.</li>
+      <li>Choisissez une résolution marquée comme « n'utilisant pas tout l'écran » — macOS rembourre la barre des menus en noir et masque l'encoche.</li>
+    </ol>
+    <p>Compromis : vous perdez environ 74 pixels verticaux de barre des menus. Tout descend légèrement. Gratuit et réversible.</p>
+    <h2>Méthode 2 — L'astuce du fond noir de barre des menus</h2>
+    <p>Si votre fond d'écran a une bande noire tout en haut, l'encoche se fond visuellement tout en gardant la pleine résolution. Des apps comme TopNotch automatisent cela en échantillonnant votre fond et en noircissant l'arrière-plan de la barre des menus. Gratuit, et vous gardez vos pixels.</p>
+    <h2>Méthode 3 — Utilitaires d'encoche tiers</h2>
+    <p>Des outils comme TopNotch et Forehead existent uniquement pour camoufler l'encoche. Ils sont légers et font bien une chose. Mais ils ne font que masquer l'encoche — ils ne donnent aucun but à cette zone d'écran.</p>
+    <h2>La meilleure option : rendre l'encoche utile</h2>
+    <p>Masquer l'encoche supprime un désagrément esthétique mais gâche le matériel. L'encoche occupe un espace que la barre des menus utilise déjà, elle ne vous coûte donc rien — sauf si vous la noircissez, ce qui retire réellement des pixels utilisables.</p>
+    <p>Une app d'encoche comme NotchNest prend le parti inverse : survolez l'encoche et elle se déploie en un panneau de productivité — calendrier, presse-papiers IA, notes rapides, Pomodoro, contrôle de la musique et glisser-vers-AirDrop. Vous cessez de remarquer l'encoche parce qu'elle fait quelque chose. Essayez le terrain de jeu interactif de l'encoche pour la voir sans rien installer.</p>
+    <div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>Rendez votre encoche utile</h3><p>NotchNest met dix outils dans l'encoche de votre MacBook. Gratuit sur le Mac App Store.</p></div>
+      <a href="%STORE%" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="Télécharger sur le Mac App Store" /></a>
+    </div>
+    <h2>Comment faire revenir l'encoche</h2>
+    <p>Chaque méthode ci-dessus est réversible. Remettez votre résolution sur <strong>Par défaut</strong> dans Moniteurs, ou quittez l'app de camouflage. Aucun fichier système n'est modifié.</p>""",
+           "related": _related("fr", ("/learn/best-macos-notch-apps/", "Best macOS notch apps", "Anglais — sélection 2026."))},
+    "pt-BR": {"title": "Como esconder o notch no Mac — NotchNest", "description": "Três formas de esconder o notch do MacBook no macOS — resolução escalada, barra de menus preta e apps de terceiros. Além da melhor alternativa: torná-lo útil.",
+              "og_title": "Como esconder o notch no Mac", "og_desc": "Todas as formas de esconder o notch — e a melhor alternativa.",
+              "jsonld_headline": "Como esconder o notch no Mac", "jsonld_desc": "Todos os métodos para esconder o notch do MacBook, e por que talvez seja melhor usá-lo.",
+              "kicker": KICK["guide"]["pt-BR"], "h1": "Como esconder o notch no Mac",
+              "lede": "Não curte o notch? Você pode escondê-lo em alguns cliques — ou fazer algo mais esperto com ele. Aqui estão todas as opções, ranqueadas.",
+              "readtime": READ5["pt-BR"], "crumb_this": "Esconder o notch",
+              "faq": [("Dá para remover totalmente o notch do MacBook?", "Não — o notch é hardware físico que abriga a câmera. Você só pode escondê-lo visualmente com uma resolução escalada ou barra de menus preta, ambos reversíveis."),
+                      ("Esconder o notch perde espaço de tela?", "Sim. Escondê-lo com resolução escalada ou barra preta remove cerca de 74 pixels verticais da barra de menus. Usar o notch mantém todos os pixels."),
+                      ("Qual o melhor app para esconder o notch do Mac?", "O TopNotch é o app de camuflagem gratuito mais popular. Mas muitos preferem o NotchNest, que torna o notch útil em vez de escondê-lo."),
+                      ("Esconder o notch ajuda na bateria ou desempenho?", "Não. O notch não tem custo de desempenho. Escondê-lo é puramente estético.")],
+              "body": """<p>O notch do MacBook divide as pessoas. Se ele te incomoda, o macOS e algumas ferramentas grátis dão vários jeitos de fazê-lo sumir. Aqui está cada método, de um ajuste embutido a apps de terceiros — e por que você talvez nem queira escondê-lo.</p>
+    <h2>Método 1 — Resolução escalada (embutido, sem apps)</h2>
+    <p>O macOS pode colocar tarjas no topo da tela para o notch se esconder atrás de uma barra preta uniforme:</p>
+    <ol>
+      <li>Abra <strong>Ajustes do Sistema → Monitores</strong>.</li>
+      <li>Segure <strong>Option</strong> e clique em <strong>Escalada</strong> para revelar todas as resoluções.</li>
+      <li>Escolha uma resolução marcada como "não usa a tela inteira" — o macOS preenche a área da barra de menus de preto, escondendo o notch.</li>
+    </ol>
+    <p>Contrapartida: você perde cerca de 74 pixels verticais da barra de menus. Tudo desce um pouco. Grátis e reversível.</p>
+    <h2>Método 2 — O truque do papel de parede com barra preta</h2>
+    <p>Se o seu papel de parede tem uma faixa preta bem no topo, o notch se mistura visualmente enquanto você mantém a resolução total. Apps como o TopNotch automatizam isso amostrando o seu papel de parede e escurecendo o fundo da barra de menus. Grátis, e você mantém os pixels.</p>
+    <h2>Método 3 — Utilitários de notch de terceiros</h2>
+    <p>Ferramentas como TopNotch e Forehead existem só para camuflar o notch. São leves e fazem uma coisa bem. Mas só escondem o notch — não dão nenhum propósito àquela área de tela.</p>
+    <h2>A melhor opção: tornar o notch útil</h2>
+    <p>Esconder o notch elimina um incômodo estético, mas desperdiça o hardware. O notch ocupa um espaço que a barra de menus já usa, então não te custa nada — a menos que você o apague, o que aí sim remove pixels usáveis.</p>
+    <p>Um app de notch como o NotchNest faz o contrário: passe o cursor no notch e ele se expande em um painel de produtividade — calendário, área de transferência com IA, notas rápidas, Pomodoro, controles de música e arrastar para AirDrop. Você para de notar o notch porque ele está fazendo algo. Teste o playground interativo do notch para vê-lo sem instalar nada.</p>
+    <div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>Torne seu notch útil</h3><p>O NotchNest coloca dez ferramentas no notch do seu MacBook. Grátis na Mac App Store.</p></div>
+      <a href="%STORE%" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="Baixar na Mac App Store" /></a>
+    </div>
+    <h2>Como trazer o notch de volta</h2>
+    <p>Todos os métodos acima são reversíveis. Volte a resolução para <strong>Padrão</strong> em Monitores, ou saia do app de camuflagem. Nenhum arquivo de sistema é alterado.</p>""",
+              "related": _related("pt-BR", ("/learn/best-macos-notch-apps/", "Best macOS notch apps", "Inglês — seleção 2026."))},
+    "pt-PT": {"title": "Como esconder o notch no Mac — NotchNest", "description": "Três formas de esconder o notch do MacBook no macOS — resolução escalada, barra de menus preta e apps de terceiros. Além da melhor alternativa: torná-lo útil.",
+              "og_title": "Como esconder o notch no Mac", "og_desc": "Todas as formas de esconder o notch — e a melhor alternativa.",
+              "jsonld_headline": "Como esconder o notch no Mac", "jsonld_desc": "Todos os métodos para esconder o notch do MacBook, e porque talvez seja melhor usá-lo.",
+              "kicker": KICK["guide"]["pt-PT"], "h1": "Como esconder o notch no Mac",
+              "lede": "Não gosta do notch? Pode escondê-lo em alguns cliques — ou fazer algo mais inteligente com ele. Aqui estão todas as opções, ordenadas.",
+              "readtime": READ5["pt-PT"], "crumb_this": "Esconder o notch",
+              "faq": [("Dá para remover totalmente o notch do MacBook?", "Não — o notch é hardware físico que aloja a câmara. Só pode escondê-lo visualmente com uma resolução escalada ou barra de menus preta, ambos reversíveis."),
+                      ("Esconder o notch perde espaço de ecrã?", "Sim. Escondê-lo com resolução escalada ou barra preta remove cerca de 74 pixels verticais da barra de menus. Usar o notch mantém todos os pixels."),
+                      ("Qual a melhor app para esconder o notch do Mac?", "O TopNotch é a app de camuflagem gratuita mais popular. Mas muitos preferem o NotchNest, que torna o notch útil em vez de o esconder."),
+                      ("Esconder o notch ajuda na bateria ou desempenho?", "Não. O notch não tem custo de desempenho. Escondê-lo é puramente estético.")],
+              "body": """<p>O notch do MacBook divide as pessoas. Se o incomoda, o macOS e algumas ferramentas gratuitas dão várias formas de o fazer desaparecer. Aqui está cada método, de uma definição integrada a apps de terceiros — e porque talvez nem o queira esconder.</p>
+    <h2>Método 1 — Resolução escalada (integrado, sem apps)</h2>
+    <p>O macOS pode colocar tarjas no topo do ecrã para o notch se esconder atrás de uma barra preta uniforme:</p>
+    <ol>
+      <li>Abra <strong>Definições do Sistema → Monitores</strong>.</li>
+      <li>Mantenha <strong>Option</strong> e clique em <strong>Escalado</strong> para revelar todas as resoluções.</li>
+      <li>Escolha uma resolução marcada como "não usa o ecrã inteiro" — o macOS preenche a área da barra de menus a preto, escondendo o notch.</li>
+    </ol>
+    <p>Contrapartida: perde cerca de 74 pixels verticais da barra de menus. Tudo desce um pouco. Gratuito e reversível.</p>
+    <h2>Método 2 — O truque do fundo de ecrã com barra preta</h2>
+    <p>Se o seu fundo de ecrã tem uma faixa preta no topo, o notch mistura-se visualmente enquanto mantém a resolução total. Apps como o TopNotch automatizam isto amostrando o seu fundo e escurecendo o fundo da barra de menus. Gratuito, e mantém os pixels.</p>
+    <h2>Método 3 — Utilitários de notch de terceiros</h2>
+    <p>Ferramentas como TopNotch e Forehead existem só para camuflar o notch. São leves e fazem uma coisa bem. Mas só escondem o notch — não dão nenhum propósito àquela área de ecrã.</p>
+    <h2>A melhor opção: tornar o notch útil</h2>
+    <p>Esconder o notch elimina um incómodo estético, mas desperdiça o hardware. O notch ocupa um espaço que a barra de menus já usa, por isso não lhe custa nada — a menos que o apague, o que aí sim remove pixels utilizáveis.</p>
+    <p>Uma app de notch como o NotchNest faz o contrário: passe o cursor no notch e ele expande-se num painel de produtividade — calendário, área de transferência com IA, notas rápidas, Pomodoro, controlos de música e arrastar para AirDrop. Deixa de reparar no notch porque ele está a fazer algo. Experimente o playground interativo do notch para o ver sem instalar nada.</p>
+    <div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>Torne o seu notch útil</h3><p>O NotchNest coloca dez ferramentas no notch do seu MacBook. Gratuito na Mac App Store.</p></div>
+      <a href="%STORE%" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="Descarregar na Mac App Store" /></a>
+    </div>
+    <h2>Como trazer o notch de volta</h2>
+    <p>Todos os métodos acima são reversíveis. Volte a resolução para <strong>Predefinição</strong> em Monitores, ou saia da app de camuflagem. Nenhum ficheiro de sistema é alterado.</p>""",
+              "related": _related("pt-PT", ("/learn/best-macos-notch-apps/", "Best macOS notch apps", "Inglês — seleção 2026."))},
+    "es-MX": {"title": "Cómo ocultar el notch en Mac — NotchNest", "description": "Tres formas de ocultar el notch del MacBook en macOS — resolución escalada, barra de menús negra y apps de terceros. Más la mejor alternativa: hacerlo útil.",
+              "og_title": "Cómo ocultar el notch en Mac", "og_desc": "Todas las formas de ocultar el notch — y la mejor alternativa.",
+              "jsonld_headline": "Cómo ocultar el notch en Mac", "jsonld_desc": "Todos los métodos para ocultar el notch del MacBook, y por qué quizá sea mejor usarlo.",
+              "kicker": KICK["guide"]["es-MX"], "h1": "Cómo ocultar el notch en Mac",
+              "lede": "¿No te gusta el notch? Puedes ocultarlo en un par de clics — o hacer algo más inteligente con él. Aquí están todas las opciones, ordenadas.",
+              "readtime": READ5["es-MX"], "crumb_this": "Ocultar el notch",
+              "faq": [("¿Se puede eliminar por completo el notch del MacBook?", "No — el notch es hardware físico que aloja la cámara. Solo puedes ocultarlo visualmente con una resolución escalada o una barra de menús negra, ambos reversibles."),
+                      ("¿Ocultar el notch pierde espacio de pantalla?", "Sí. Ocultarlo con una resolución escalada o barra negra quita unos 74 píxeles verticales de la barra de menús. Usar el notch conserva todos los píxeles."),
+                      ("¿Cuál es la mejor app para ocultar el notch del Mac?", "TopNotch es la app de camuflaje gratis más popular. Pero muchos prefieren NotchNest, que hace útil el notch en lugar de ocultarlo."),
+                      ("¿Ocultar el notch ayuda a la batería o el rendimiento?", "No. El notch no tiene costo de rendimiento. Ocultarlo es puramente estético.")],
+              "body": """<p>El notch del MacBook divide a la gente. Si te molesta, macOS y unas cuantas herramientas gratis te dan varias formas de hacerlo desaparecer. Aquí está cada método, desde un ajuste integrado hasta apps de terceros — y por qué quizá no quieras ocultarlo en absoluto.</p>
+    <h2>Método 1 — Resolución escalada (integrado, sin apps)</h2>
+    <p>macOS puede poner barras en la parte superior de la pantalla para que el notch se oculte tras una barra negra uniforme:</p>
+    <ol>
+      <li>Abre <strong>Configuración del Sistema → Pantallas</strong>.</li>
+      <li>Mantén <strong>Opción</strong> y haz clic en <strong>Escalada</strong> para revelar todas las resoluciones.</li>
+      <li>Elige una resolución marcada como "no usa toda la pantalla" — macOS rellena el área de la barra de menús de negro, ocultando el notch.</li>
+    </ol>
+    <p>Contrapartida: pierdes unos 74 píxeles verticales de barra de menús. Todo baja un poco. Gratis y reversible.</p>
+    <h2>Método 2 — El truco del fondo con barra negra</h2>
+    <p>Si tu fondo de pantalla tiene una franja negra arriba, el notch se mezcla visualmente mientras conservas la resolución completa. Apps como TopNotch lo automatizan muestreando tu fondo y oscureciendo el fondo de la barra de menús. Gratis, y conservas tus píxeles.</p>
+    <h2>Método 3 — Utilidades de notch de terceros</h2>
+    <p>Herramientas como TopNotch y Forehead existen solo para camuflar el notch. Son ligeras y hacen una cosa bien. Pero solo ocultan el notch — no le dan ningún propósito a esa área de pantalla.</p>
+    <h2>La mejor opción: hacer útil el notch</h2>
+    <p>Ocultar el notch elimina una molestia estética, pero desperdicia el hardware. El notch ocupa un espacio que la barra de menús ya usa, así que no te cuesta nada — a menos que lo pongas en negro, lo que sí quita píxeles utilizables.</p>
+    <p>Una app de notch como NotchNest hace lo contrario: pasa el cursor por el notch y se expande en un panel de productividad — calendario, portapapeles con IA, notas rápidas, Pomodoro, controles de música y arrastrar a AirDrop. Dejas de notar el notch porque está haciendo algo. Prueba el playground interactivo del notch para verlo sin instalar nada.</p>
+    <div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>Haz útil tu notch</h3><p>NotchNest pone diez herramientas en el notch de tu MacBook. Gratis en el Mac App Store.</p></div>
+      <a href="%STORE%" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="Descargar en el Mac App Store" /></a>
+    </div>
+    <h2>Cómo recuperar el notch</h2>
+    <p>Todos los métodos anteriores son reversibles. Vuelve tu resolución a <strong>Predeterminada</strong> en Pantallas, o cierra la app de camuflaje. No se modifica ningún archivo del sistema.</p>""",
+              "related": _related("es-MX", ("/learn/best-macos-notch-apps/", "Best macOS notch apps", "Inglés — selección 2026."))},
+}
+
+
 LEARN_ARTICLES = {
     "what-is-the-macos-notch": _assemble(WHATIS),
     "does-the-mac-notch-actually-do-anything": _assemble(DOES),
     "notch-nest-vs-boring-notch-vs-notchdrop": _assemble(BVBVD),
+    "how-to-hide-the-notch-on-mac": _assemble(HIDE),
 }
