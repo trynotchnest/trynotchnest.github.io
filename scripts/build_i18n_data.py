@@ -277,5 +277,7 @@ LEARN_INDEX = {
 
 # ARTICLES defined in build_i18n_articles.py to keep prose grouped
 from build_i18n_articles import ARTICLES  # noqa: E402,F401
+from build_i18n_learn import LEARN_ARTICLES  # noqa: E402
+ARTICLES.update(LEARN_ARTICLES)
 
 UI = {}

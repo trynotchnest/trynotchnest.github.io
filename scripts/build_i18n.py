@@ -948,6 +948,9 @@ def update_sitemap():
         pages.append(("compare/", "monthly", "0.7"))
         for slug in COMPARE_SLUGS:
             pages.append((f"compare/{slug}/", "monthly", "0.7"))
+        for slug in ARTICLES:
+            if slug not in ARTICLE_SLUGS and loc in ARTICLES[slug]:
+                pages.append((f"learn/{slug}/", "monthly", "0.7"))
         for suffix, cf, pr in pages:
             url = BASE + d + suffix
             if f"<loc>{url}</loc>" in xml:
@@ -1037,6 +1040,14 @@ def main():
         write(ROOT / DIRS[loc] / "learn" / "index.html", build_learn_index(loc))
         for slug in ARTICLE_SLUGS:
             write(ROOT / DIRS[loc] / "learn" / slug / "index.html", build_article(loc, slug))
+    # extra learn articles translated into every non-English locale (backfills de/zh too)
+    extra = [s for s in ARTICLES if s not in ARTICLE_SLUGS]
+    if extra:
+        print("extra learn articles:")
+        for loc in FULL:
+            for slug in extra:
+                if loc in ARTICLES[slug]:
+                    write(ROOT / DIRS[loc] / "learn" / slug / "index.html", build_article(loc, slug))
     print("for/ pages:")
     for loc in FULL:
         for slug in FOR_SLUGS:
@@ -1048,8 +1059,10 @@ def main():
             write(ROOT / DIRS[loc] / "compare" / slug / "index.html", build_compare(loc, slug))
     patch_existing()
     patch_learn_hreflang()
+    extra_learn = [f"learn/{s}/" for s in ARTICLES if s not in ARTICLE_SLUGS]
     patch_simple_hreflang([f"for/{s}/" for s in FOR_SLUGS]
-                          + ["compare/"] + [f"compare/{s}/" for s in COMPARE_SLUGS])
+                          + ["compare/"] + [f"compare/{s}/" for s in COMPARE_SLUGS]
+                          + extra_learn)
     patch_en_compare()
     print("sitemap:")
     update_sitemap()

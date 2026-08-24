@@ -5,6 +5,12 @@ with the locale App Store URL at build time."""
 
 # per-locale reusable bits
 C = {
+    "de": {"crumb_home": "Start", "crumb_learn": "Lernen", "nav_learn": "Lernen",
+           "byline": "Von Satnam Singh", "author_h3": "Über den Autor", "related_h2": "Weiterlesen",
+           "updated": "Aktualisiert 13. Juni 2026"},
+    "zh": {"crumb_home": "首页", "crumb_learn": "学习", "nav_learn": "学习",
+           "byline": "作者 Satnam Singh", "author_h3": "关于作者", "related_h2": "继续阅读",
+           "updated": "更新于 2026 年 6 月 13 日"},
     "fr": {"crumb_home": "Accueil", "crumb_learn": "Guides", "nav_learn": "Guides",
            "byline": "Par Satnam Singh", "author_h3": "À propos de l'auteur", "related_h2": "À lire aussi",
            "updated": "Mis à jour le 13 juin 2026"},
@@ -23,6 +29,8 @@ C = {
 }
 
 AUTHOR_LONG = {
+    "de": '<strong>Satnam Singh</strong> ist der Swift-Entwickler hinter NotchNest. Er schreibt über macOS-Produktivität, KI auf Apple Silicon und Indie-App-Handwerk. <a href="https://silverseahog.com/" target="_blank" rel="noopener">silverseahog.com</a> · <a href="https://twitter.com/codetard" target="_blank" rel="noopener nofollow">@codetard</a>',
+    "zh": '<strong>Satnam Singh</strong> 是 NotchNest 背后的 Swift 开发者。他撰写关于 macOS 生产力、Apple 芯片上的 AI 以及独立应用工艺的文章。<a href="https://silverseahog.com/" target="_blank" rel="noopener">silverseahog.com</a> · <a href="https://twitter.com/codetard" target="_blank" rel="noopener nofollow">@codetard</a>',
     "fr": '<strong>Satnam Singh</strong> est le développeur Swift derrière NotchNest. Il écrit sur la productivité macOS, l\'IA sur Apple Silicon et l\'artisanat des apps indépendantes. <a href="https://silverseahog.com/" target="_blank" rel="noopener">silverseahog.com</a> · <a href="https://twitter.com/codetard" target="_blank" rel="noopener nofollow">@codetard</a>',
     "es-MX": '<strong>Satnam Singh</strong> es el desarrollador Swift detrás de NotchNest. Escribe sobre productividad en macOS, IA en Apple Silicon y el oficio de las apps indie. <a href="https://silverseahog.com/" target="_blank" rel="noopener">silverseahog.com</a> · <a href="https://twitter.com/codetard" target="_blank" rel="noopener nofollow">@codetard</a>',
     "pt-BR": '<strong>Satnam Singh</strong> é o desenvolvedor Swift por trás do NotchNest. Ele escreve sobre produtividade no macOS, IA no Apple Silicon e o ofício de apps indie. <a href="https://silverseahog.com/" target="_blank" rel="noopener">silverseahog.com</a> · <a href="https://twitter.com/codetard" target="_blank" rel="noopener nofollow">@codetard</a>',
