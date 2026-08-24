@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<title>Mac 上的刘海摄像头 — NotchNest</title>
+<meta name="description" content="关于 Mac 刘海摄像头的一切——刘海里的 1080p 摄像头、如何预览，以及用于快速自查的刘海摄像头镜像。" />
+<link rel="canonical" href="https://notchnest.app/zh/learn/notch-camera-on-mac/" />
+<meta name="robots" content="index,follow,max-image-preview:large" />
+<link rel="alternate" hreflang="en" href="https://notchnest.app/learn/notch-camera-on-mac/" />
+<link rel="alternate" hreflang="en-us" href="https://notchnest.app/learn/notch-camera-on-mac/" />
+<link rel="alternate" hreflang="en-gb" href="https://notchnest.app/learn/notch-camera-on-mac/" />
+<link rel="alternate" hreflang="en-in" href="https://notchnest.app/learn/notch-camera-on-mac/" />
+<link rel="alternate" hreflang="de" href="https://notchnest.app/de/learn/notch-camera-on-mac/" />
+<link rel="alternate" hreflang="zh" href="https://notchnest.app/zh/learn/notch-camera-on-mac/" />
+<link rel="alternate" hreflang="zh-cn" href="https://notchnest.app/zh/learn/notch-camera-on-mac/" />
+<link rel="alternate" hreflang="ar" href="https://notchnest.app/ar/learn/notch-camera-on-mac/" />
+<link rel="alternate" hreflang="fr" href="https://notchnest.app/fr/learn/notch-camera-on-mac/" />
+<link rel="alternate" hreflang="pt-BR" href="https://notchnest.app/pt-br/learn/notch-camera-on-mac/" />
+<link rel="alternate" hreflang="pt-PT" href="https://notchnest.app/pt-pt/learn/notch-camera-on-mac/" />
+<link rel="alternate" hreflang="es-MX" href="https://notchnest.app/es-mx/learn/notch-camera-on-mac/" />
+<link rel="alternate" hreflang="es-419" href="https://notchnest.app/es-mx/learn/notch-camera-on-mac/" />
+<link rel="alternate" hreflang="x-default" href="https://notchnest.app/learn/notch-camera-on-mac/" />
+<meta property="og:title" content="Mac 上的刘海摄像头" />
+<meta property="og:description" content="刘海摄像头能做什么，以及如何在刘海里镜像它。" />
+<meta property="og:url" content="https://notchnest.app/zh/learn/notch-camera-on-mac/" />
+<meta property="og:locale" content="zh_CN" />
+<meta property="og:type" content="article" />
+<meta property="og:image" content="https://notchnest.app/assets/og/notch-camera-on-mac.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@codetard" />
+<meta name="twitter:creator" content="@codetard" />
+<link rel="stylesheet" href="/styles.css" />
+<link rel="apple-touch-icon" href="/assets/notchnest-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<meta name="theme-color" content="#000000" />
+<meta name="color-scheme" content="dark" />
+<script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org", "@type": "Article",
+    "headline": "Mac 上的刘海摄像头",
+    "description": "Mac 刘海里的 1080p 摄像头、如何预览，以及如何在刘海里镜像。",
+    "image": "https://notchnest.app/assets/og/notch-camera-on-mac.png",
+    "datePublished": "2026-06-10T00:00:00+00:00", "dateModified": "2026-06-13T00:00:00+00:00",
+    "inLanguage": "zh-Hans",
+    "author": { "@type": "Person", "name": "Satnam Singh", "url": "https://silverseahog.com/", "jobTitle": "Swift Developer",
+      "sameAs": ["https://silverseahog.com/","https://twitter.com/codetard","https://github.com/29satnam","https://www.linkedin.com/in/satnam-singh-948348aa/","https://instagram.com/codetard"] },
+    "publisher": { "@type": "Organization", "name": "NotchNest", "logo": { "@type": "ImageObject", "url": "https://notchnest.app/assets/notchnest-icon.png" } },
+    "mainEntityOfPage": "https://notchnest.app/zh/learn/notch-camera-on-mac/"
+  },
+  {
+    "@context": "https://schema.org", "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://notchnest.app/zh/" },
+      { "@type": "ListItem", "position": 2, "name": "学习", "item": "https://notchnest.app/zh/learn/" },
+      { "@type": "ListItem", "position": 3, "name": "刘海摄像头", "item": "https://notchnest.app/zh/learn/notch-camera-on-mac/" }
+    ]
+  },
+  {
+    "@context": "https://schema.org", "@type": "FAQPage", "inLanguage": "zh-Hans",
+    "mainEntity": [
+      { "@type": "Question", "name": "Mac 刘海里是什么摄像头？", "acceptedAnswer": { "@type": "Answer", "text": "一颗 1080p FaceTime 高清摄像头，外加环境光传感器。较新机型支持“居中对焦”。" } },
+      { "@type": "Question", "name": "通话前如何查看刘海摄像头？", "acceptedAnswer": { "@type": "Answer", "text": "打开 Photo Booth 或 QuickTime 的“新建影片录制”查看实时画面——或用 NotchNest 这样的刘海摄像头镜像，悬停即可预览。" } },
+      { "@type": "Question", "name": "有办法在刘海里镜像 Mac 摄像头吗？", "acceptedAnswer": { "@type": "Answer", "text": "有。NotchNest 的摄像头镜像在刘海本身显示实时预览，无需另开应用即可检查取景。" } },
+      { "@type": "Question", "name": "摄像头镜像会录制什么吗？", "acceptedAnswer": { "@type": "Answer", "text": "不会。镜像仅在本地显示你自己的实时画面。只要摄像头开启，绿色隐私指示灯就会由硬件点亮。" } }
+    ]
+  }
+]
+</script>
+</head>
+<body>
+<nav class="nn-nav"><div class="nn-nav-inner">
+  <a class="nn-brand" href="/zh/"><img class="nn-brand-mark" src="/assets/notchnest-icon.png" alt="" width="28" height="28"/><span>NotchNest</span></a>
+  <div class="nn-nav-links">
+    <a href="/learn/notch-camera-on-mac/">EN</a>
+    <a href="/zh/learn/" class="nn-nav-keep">学习</a>
+  </div>
+</div></nav>
+
+<main class="main-container"><div class="learn-wrap">
+  <div class="crumbs"><a href="/zh/">首页</a><span class="sep">/</span><a href="/zh/learn/">学习</a><span class="sep">/</span><span>刘海摄像头</span></div>
+
+  <header class="article-head">
+    <span class="article-kicker">解读</span>
+    <h1 class="article-h1">Mac 上的刘海摄像头</h1>
+    <p class="article-lede">刘海存在就是为了容纳 MacBook 的摄像头。这里讲清这颗摄像头能做什么、通话前怎么检查，以及如何在刘海里镜像它。</p>
+    <div class="article-meta"><span>更新于 2026 年 6 月 13 日</span><span class="dot"></span><span>阅读 5 分钟</span><span class="dot"></span><span>作者 Satnam Singh</span></div>
+  </header>
+
+  <article class="article-body">
+    <p>刘海存在的全部理由就是摄像头。Apple 缩小边框，把 FaceTime 高清摄像头塞进屏幕顶部的小缺口。这就是 Mac 上的刘海摄像头——而且它不止能用于视频通话。</p>
+    <h2>刘海摄像头是什么</h2>
+    <p>在 MacBook Pro（2021 年起）和 MacBook Air（2022 年起）上，刘海容纳一颗 1080p FaceTime 高清摄像头以及环境光传感器。在支持的机型上支持“居中对焦”，并为每个使用你摄像头的应用供画。</p>
+    <h2>如何快速预览刘海摄像头</h2>
+    <p>通常你要进了通话才看得到自己。想提前检查取景与光线，打开 Photo Booth 或 QuickTime →“新建影片录制”。两者都显示刘海摄像头的实时画面。</p>
+    <h2>刘海摄像头镜像——一次悬停自查</h2>
+    <p>只为看一眼自己的脸就开一整个应用很笨拙。NotchNest 内置了嵌在刘海里的摄像头镜像：悬停，实时预览就出现在摄像头实际所在之处。整理头发、检查背景，然后关掉——无需 Photo Booth，无需额外窗口。在刘海演示里看看。</p>
+    <h2>隐私</h2>
+    <p>只要摄像头启用，刘海摄像头旁的绿色 LED 就会亮起——它是硬连线的，软件无法绕过。刘海镜像只在本地显示你自己的画面；不录制，也不发往任何地方。</p>
+    <div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>让你的刘海有用</h3><p>NotchNest 把十个工具放进 MacBook 刘海。在 Mac App Store 免费。</p></div>
+      <a href="https://apps.apple.com/cn/app/notchnest-power-your-notch/id6747612321" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="在 Mac App Store 下载" /></a>
+    </div>
+
+    <aside class="author-bio">
+      <img class="author-avatar" src="https://github.com/29satnam.png" alt="Satnam Singh" width="56" height="56" loading="lazy" />
+      <div>
+        <h3>关于作者</h3>
+        <p><strong>Satnam Singh</strong> 是 NotchNest 背后的 Swift 开发者。他撰写关于 macOS 生产力、Apple 芯片上的 AI 以及独立应用工艺的文章。<a href="https://silverseahog.com/" target="_blank" rel="noopener">silverseahog.com</a> · <a href="https://twitter.com/codetard" target="_blank" rel="noopener nofollow">@codetard</a></p>
+      </div>
+    </aside>
+
+    <section class="related-section">
+      <h2>继续阅读</h2>
+      <div class="related-grid">
+        <a class="related-card" href="/zh/learn/how-to-use-the-macbook-notch/"><h3>使用 MacBook 刘海</h3><p>三步让刘海有用。</p></a>
+        <a class="related-card" href="/zh/learn/best-macos-notch-apps/"><h3>最佳 macOS 刘海应用</h3><p>2026 盘点。</p></a>
+        <a class="related-card" href="/learn/what-is-the-macos-notch/"><h3>What is the macOS notch?</h3><p>英文——基础。</p></a>
+      </div>
+    </section>
+  </article>
+
+  <footer class="site-footer">
+    <div class="footer-bottom"><span>© <span id="yr"></span> NotchNest · Satnam Singh</span><div class="footer-lang"><a href="/learn/notch-camera-on-mac/" hreflang="en">English</a><a href="/de/learn/notch-camera-on-mac/" hreflang="de">Deutsch</a><a href="/zh/learn/notch-camera-on-mac/" hreflang="zh" aria-current="page">中文</a><a href="/ar/learn/notch-camera-on-mac/" hreflang="ar">العربية</a><a href="/fr/learn/notch-camera-on-mac/" hreflang="fr">Français</a><a href="/pt-br/learn/notch-camera-on-mac/" hreflang="pt-BR">Português (BR)</a><a href="/pt-pt/learn/notch-camera-on-mac/" hreflang="pt-PT">Português (PT)</a><a href="/es-mx/learn/notch-camera-on-mac/" hreflang="es-MX">Español (MX)</a></div></div>
+  </footer>
+</div></main>
+<script>var yr=document.getElementById('yr');if(yr)yr.textContent=new Date().getFullYear();</script>
+</body></html>

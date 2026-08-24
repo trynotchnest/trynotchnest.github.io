@@ -1720,7 +1720,7 @@ CAMERA = {
            "lede": "Die Notch existiert, um die Kamera deines MacBooks zu beherbergen. Hier, was diese Kamera kann, wie du sie vor einem Call prüfst und in der Notch selbst spiegelst.",
            "readtime": READ5["de"], "crumb_this": "Notch-Kamera",
            "faq": [("Welche Kamera steckt in der Mac-Notch?", "Eine 1080p-FaceTime-HD-Kamera plus der Umgebungslichtsensor. Center Stage wird auf neueren Modellen unterstützt."),
-                   ("Wie sehe ich die Notch-Kamera vor einem Call?", "Öffne Photo Booth oder QuickTimes „Neue Videoaufnahme" für ein Live-Bild — oder nutze einen Notch-Kamera-Spiegel wie NotchNest, um sie per Hover vorzuschauen."),
+                   ("Wie sehe ich die Notch-Kamera vor einem Call?", "Öffne Photo Booth oder QuickTimes ‚Neue Videoaufnahme' für ein Live-Bild — oder nutze einen Notch-Kamera-Spiegel wie NotchNest, um sie per Hover vorzuschauen."),
                    ("Kann man die Mac-Kamera in der Notch spiegeln?", "Ja. NotchNests Kamera-Spiegel zeigt ein Live-Webcam-Bild in der Notch selbst, sodass du das Bild ohne separate App prüfst."),
                    ("Nimmt der Kamera-Spiegel etwas auf?", "Nein. Ein Spiegel zeigt dein eigenes Live-Bild lokal. Die grüne Datenschutz-LED leuchtet weiterhin per Hardware, sobald die Kamera an ist.")],
            "body": """<p>Der ganze Grund für die Notch ist die Kamera. Apple verkleinerte den Rand und schob die FaceTime-HD-Webcam in eine kleine Aussparung oben am Bildschirm. Das ist die Notch-Kamera auf dem Mac — und sie kann mehr als Videocalls.</p>
