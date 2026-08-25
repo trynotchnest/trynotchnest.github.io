@@ -1712,6 +1712,207 @@ DROP = {
 }
 
 
+# ── how-to-move-menu-bar-icons-on-mac ───────────────────────────────────────
+MOVEICONS = {
+    "de": {"title": "Menüleisten-Icons auf dem Mac verschieben — NotchNest", "description": "Menüleisten-Icons in macOS umordnen, neu anordnen und entfernen mit einem einfachen Command-Ziehen — plus Icons rund um die Notch verwalten.",
+           "og_title": "Menüleisten-Icons auf dem Mac verschieben", "og_desc": "Icons per Command-Ziehen verschieben, entfernen und ordnen.",
+           "jsonld_headline": "Menüleisten-Icons auf dem Mac verschieben", "jsonld_desc": "Menüleisten-Icons in macOS per Command-Ziehen verschieben, entfernen und ordnen.",
+           "kicker": KICK["guide"]["de"], "h1": "Menüleisten-Icons auf dem Mac verschieben",
+           "lede": "Menüleisten-Icons auf dem Mac umzuordnen ist ein versteckter Ein-Tasten-Trick. So verschiebst, entfernst und organisierst du sie.",
+           "readtime": READ5["de"], "crumb_this": "Menüleisten-Icons verschieben",
+           "faq": [("Wie verschiebt man Menüleisten-Icons auf dem Mac?", "Halte Command und zieh ein Icon nach links oder rechts. Zum Ablegen loslassen. Uhr und Kontrollzentrum sind ganz rechts fixiert und lassen sich nicht bewegen."),
+                   ("Wie entferne ich ein Menüleisten-Icon?", "Zieh es mit Command aus der Menüleiste, oder für Apple-Icons nutze Systemeinstellungen → Kontrollzentrum und setz es auf Nicht in der Menüleiste anzeigen."),
+                   ("Warum kann ich die Uhr auf meinem Mac nicht verschieben?", "Uhr und Kontrollzentrum sind von macOS ganz rechts in der Menüleiste angeheftet und können nicht umpositioniert werden."),
+                   ("Wie halte ich Icons von der Notch fern?", "Platziere häufig genutzte Icons weiter rechts, entferne unnötige, oder nutze einen Manager wie Ice oder Bartender, um den Überlauf einzuklappen.")],
+           "body": """<p>Die macOS-Menüleiste wirkt fix, aber jedes Icon ist mit einer Modifiertaste beweglich. Hier das komplette How-to.</p>
+    <h2>Ein Icon verschieben</h2>
+    <p>Halte Command und zieh ein beliebiges Menüleisten-Icon nach links oder rechts. Lass los, wo du es willst. Das klappt bei Apple-Icons (WLAN, Batterie, Ton, Now Playing) und Drittanbieter-Icons gleichermaßen.</p>
+    <p>Die einzigen festen Elemente sind Uhr und Kontrollzentrum, die ganz rechts angeheftet bleiben.</p>
+    <h2>Ein Icon entfernen</h2>
+    <p>Zieh das Icon mit Command aus der Menüleiste nach unten und lass los — es verschwindet (die App läuft weiter). Für Apple-Icons nutze Systemeinstellungen → Kontrollzentrum und setz das Element auf Nicht in der Menüleiste anzeigen.</p>
+    <h2>Um die Notch herum umordnen</h2>
+    <p>Auf MacBooks mit Notch platzier deine meistgenutzten Icons weiter rechts (Uhr-Seite), damit sie nie hinter die Notch fallen. Bei vielen Icons hält ein Manager wie Ice oder Bartender sie automatisch geordnet.</p>
+    <h2>Standardreihenfolge zurückholen</h2>
+    <p>Aktiviere Apple-Icons im Kontrollzentrum wieder, und sie kehren an ihre Standardpositionen zurück. Drittanbieter-Icons tauchen wieder auf, wenn du sie in den Einstellungen jeder App einschaltest.</p>
+    <h2>Die Leiste ganz freimachen</h2>
+    <p>Ist deine Leiste voll, verschieb Funktionen in die Notch. NotchNest bringt Kalender, Zwischenablage, Notizen, Pomodoro, Musik und AirDrop in ein Hover-Panel — so kannst du mehrere Menüleisten-Icons ganz löschen.</p>
+    <div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>Mach deine Notch nützlich</h3><p>NotchNest bringt zehn Tools in die Notch deines MacBooks. Kostenlos im Mac App Store.</p></div>
+      <a href="%STORE%" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="Im Mac App Store laden" /></a>
+    </div>""",
+           "related": _related("de", ("/learn/how-to-customise-macos-menu-bar/", "How to customise the macOS menu bar", "Englisch — Leitfaden."))},
+    "zh": {"title": "如何在 Mac 上移动菜单栏图标 — NotchNest", "description": "用简单的 Command 拖拽在 macOS 中重排、整理和移除菜单栏图标——以及如何管理刘海周围的图标。",
+           "og_title": "如何在 Mac 上移动菜单栏图标", "og_desc": "用 Command 拖拽移动、移除和整理图标。",
+           "jsonld_headline": "如何在 Mac 上移动菜单栏图标", "jsonld_desc": "用 Command 拖拽在 macOS 中移动、移除和整理菜单栏图标。",
+           "kicker": KICK["guide"]["zh"], "h1": "如何在 Mac 上移动菜单栏图标",
+           "lede": "在 Mac 上重排菜单栏图标是一个隐藏的单键技巧。这里教你移动、移除和整理它们。",
+           "readtime": READ5["zh"], "crumb_this": "移动菜单栏图标",
+           "faq": [("如何在 Mac 上移动菜单栏图标？", "按住 Command 把图标向左或向右拖，松手放下即可。时钟和控制中心固定在最右侧，无法移动。"),
+                   ("如何移除一个菜单栏图标？", "按住 Command 把它拖出菜单栏，或对于 Apple 图标，前往 系统设置 → 控制中心，设为不在菜单栏中显示。"),
+                   ("为什么我无法移动 Mac 上的时钟？", "时钟和控制中心被 macOS 固定在菜单栏最右侧，无法重新定位。"),
+                   ("如何让图标不跑到刘海后面？", "把常用图标放到右侧、移除不需要的，或用 Ice、Bartender 之类的管理器折叠溢出图标。")],
+           "body": """<p>macOS 菜单栏看似固定，但每个图标都能用一个修饰键移动。这里是完整教程。</p>
+    <h2>移动一个图标</h2>
+    <p>按住 Command 把任意菜单栏图标向左或向右拖，在你想要的位置松手。这对 Apple 图标（Wi-Fi、电池、声音、正在播放）和第三方应用图标同样有效。</p>
+    <p>唯一固定的项是时钟和控制中心，它们钉在最右侧。</p>
+    <h2>移除一个图标</h2>
+    <p>按住 Command 把图标向下拖出菜单栏并松手——它便消失（应用继续运行）。对于 Apple 图标，用 系统设置 → 控制中心，把该项设为不在菜单栏中显示。</p>
+    <h2>围绕刘海重排</h2>
+    <p>在带刘海的 MacBook 上，把最常用的图标放到右侧（时钟一侧），这样它们永不会落到刘海后面。若图标很多，Ice 或 Bartender 之类的管理器会自动帮你整理。</p>
+    <h2>恢复默认顺序</h2>
+    <p>在控制中心重新启用 Apple 图标，它们会回到标准位置。第三方图标在你于各应用设置里重新开启时会再次出现。</p>
+    <h2>彻底腾出栏空间</h2>
+    <p>若你的栏很挤，把功能搬进刘海。NotchNest 把日历、剪贴板、笔记、番茄钟、音乐和 AirDrop 放进悬停面板——让你彻底删掉多个菜单栏图标。</p>
+    <div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>让你的刘海有用</h3><p>NotchNest 把十个工具放进 MacBook 刘海。在 Mac App Store 免费。</p></div>
+      <a href="%STORE%" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="在 Mac App Store 下载" /></a>
+    </div>""",
+           "related": _related("zh", ("/learn/how-to-customise-macos-menu-bar/", "How to customise the macOS menu bar", "英文——指南。"))},
+    "ar": {"title": "كيفية تحريك أيقونات شريط القوائم على الماك — NotchNest", "description": "أعد ترتيب أيقونات شريط قوائم macOS وأزلها بسحبة Command بسيطة — إضافةً إلى إدارة الأيقونات حول النتش.",
+           "og_title": "كيفية تحريك أيقونات شريط القوائم على الماك", "og_desc": "حرّك الأيقونات وأزلها ورتّبها بسحب Command.",
+           "jsonld_headline": "كيفية تحريك أيقونات شريط القوائم على الماك", "jsonld_desc": "حرّك أيقونات شريط قوائم macOS وأزلها ورتّبها بسحب Command.",
+           "kicker": KICK["guide"]["ar"], "h1": "كيفية تحريك أيقونات شريط القوائم على الماك",
+           "lede": "إعادة ترتيب أيقونات شريط القوائم على الماك حيلة خفية بمفتاح واحد. إليك كيف تحرّكها وتزيلها وتنظّمها.",
+           "readtime": READ5["ar"], "crumb_this": "تحريك أيقونات شريط القوائم",
+           "faq": [("كيف تحرّك أيقونات شريط القوائم على الماك؟", "اضغط Command واسحب أي أيقونة يسارًا أو يمينًا. أفلت لتضعها. الساعة ومركز التحكّم مثبّتان أقصى اليمين ولا يتحرّكان."),
+                   ("كيف أزيل أيقونة من شريط القوائم؟", "اسحبها بضغط Command خارج شريط القوائم، أو لأيقونات Apple استخدم إعدادات النظام ← مركز التحكّم واضبطها على عدم الإظهار في شريط القوائم."),
+                   ("لماذا لا أستطيع تحريك الساعة على الماك؟", "الساعة ومركز التحكّم مثبّتان بواسطة macOS أقصى يمين شريط القوائم ولا يمكن إعادة تمركزهما."),
+                   ("كيف أمنع الأيقونات من الذهاب خلف النتش؟", "ضع الأيقونات كثيرة الاستخدام نحو اليمين، وأزل ما لا تحتاجه، أو استخدم مديرًا مثل Ice أو Bartender لطيّ الفائض.")],
+           "body": """<p>يبدو شريط قوائم macOS ثابتًا، لكن كل أيقونة قابلة للتحريك بمفتاح تعديل واحد. إليك الدليل الكامل.</p>
+    <h2>تحريك أيقونة</h2>
+    <p>اضغط Command واسحب أي أيقونة في شريط القوائم يسارًا أو يمينًا. أفلت حيث تريد. يصلح هذا لأيقونات Apple (واي فاي، البطارية، الصوت، «قيد التشغيل») وأيقونات تطبيقات الطرف الثالث على حدّ سواء.</p>
+    <p>العنصران الثابتان الوحيدان هما الساعة ومركز التحكّم، ويبقيان مثبّتين أقصى اليمين.</p>
+    <h2>إزالة أيقونة</h2>
+    <p>اسحب الأيقونة بضغط Command إلى الأسفل خارج شريط القوائم وأفلت — تختفي (يستمر التطبيق بالعمل). لأيقونات Apple استخدم إعدادات النظام ← مركز التحكّم واضبط العنصر على عدم الإظهار في شريط القوائم.</p>
+    <h2>إعادة الترتيب حول النتش</h2>
+    <p>على أجهزة الماك بوك بنتش، ضع أيقوناتك الأكثر استخدامًا نحو اليمين (جهة الساعة) لئلّا تقع خلف النتش أبدًا. وإن كان لديك أيقونات كثيرة، يبقيها مدير مثل Ice أو Bartender منظّمة تلقائيًا.</p>
+    <h2>استعادة الترتيب الافتراضي</h2>
+    <p>أعد تفعيل أيقونات Apple في مركز التحكّم فتعود إلى مواضعها القياسية. وتظهر أيقونات الطرف الثالث مجددًا عند تفعيلها في إعدادات كل تطبيق.</p>
+    <h2>تفريغ الشريط بالكامل</h2>
+    <p>إن كان شريطك مزدحمًا، انقل الوظائف إلى النتش. يضع NotchNest التقويم والحافظة والملاحظات وبومودورو والموسيقى وAirDrop في لوحة تمرير — فتحذف عدة أيقونات شريط قوائم كليًا.</p>
+    <div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>اجعل نتشك مفيدًا</h3><p>يضع NotchNest عشر أدوات في نتش الماك بوك. مجانًا على Mac App Store.</p></div>
+      <a href="%STORE%" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="التنزيل من Mac App Store" /></a>
+    </div>""",
+           "related": _related("ar", ("/learn/how-to-customise-macos-menu-bar/", "How to customise the macOS menu bar", "إنجليزي — دليل."))},
+    "fr": {"title": "Comment déplacer les icônes de la barre des menus sur Mac — NotchNest", "description": "Réorganiser, réarranger et retirer les icônes de la barre des menus macOS avec un simple Command + glisser — plus la gestion des icônes autour de l'encoche.",
+           "og_title": "Déplacer les icônes de la barre des menus sur Mac", "og_desc": "Déplacez, retirez et organisez les icônes par Command + glisser.",
+           "jsonld_headline": "Comment déplacer les icônes de la barre des menus sur Mac", "jsonld_desc": "Déplacez, retirez et organisez les icônes de la barre des menus macOS par Command + glisser.",
+           "kicker": KICK["guide"]["fr"], "h1": "Comment déplacer les icônes de la barre des menus sur Mac",
+           "lede": "Réorganiser les icônes de la barre des menus sur un Mac est une astuce cachée à une touche. Voici comment les déplacer, les retirer et les organiser.",
+           "readtime": READ5["fr"], "crumb_this": "Déplacer les icônes de la barre des menus",
+           "faq": [("Comment déplace-t-on les icônes de la barre des menus sur Mac ?", "Maintenez Command et glissez une icône vers la gauche ou la droite. Relâchez pour la déposer. L'horloge et le Centre de contrôle sont fixés tout à droite et ne bougent pas."),
+                   ("Comment retirer une icône de la barre des menus ?", "Glissez-la hors de la barre avec Command, ou pour les icônes Apple utilisez Réglages Système → Centre de contrôle et réglez-la sur Ne pas afficher dans la barre des menus."),
+                   ("Pourquoi ne puis-je pas déplacer l'horloge sur mon Mac ?", "L'horloge et le Centre de contrôle sont épinglés tout à droite de la barre des menus par macOS et ne peuvent être repositionnés."),
+                   ("Comment empêcher les icônes de passer derrière l'encoche ?", "Placez les icônes fréquentes à droite, retirez celles dont vous n'avez pas besoin, ou utilisez un gestionnaire comme Ice ou Bartender pour replier le débordement.")],
+           "body": """<p>La barre des menus macOS semble figée, mais chaque icône est déplaçable avec une touche de modification. Voici le mode d'emploi complet.</p>
+    <h2>Déplacer une icône</h2>
+    <p>Maintenez Command et glissez une icône de la barre des menus vers la gauche ou la droite. Relâchez où vous voulez. Ça marche pour les icônes Apple (Wi-Fi, batterie, son, Now Playing) comme pour les icônes d'apps tierces.</p>
+    <p>Les seuls éléments fixes sont l'horloge et le Centre de contrôle, épinglés tout à droite.</p>
+    <h2>Retirer une icône</h2>
+    <p>Glissez l'icône vers le bas hors de la barre avec Command et relâchez — elle disparaît (l'app continue de tourner). Pour les icônes Apple, utilisez Réglages Système → Centre de contrôle et réglez l'élément sur Ne pas afficher dans la barre des menus.</p>
+    <h2>Réorganiser autour de l'encoche</h2>
+    <p>Sur les MacBook à encoche, placez vos icônes les plus utilisées vers la droite (côté horloge) pour qu'elles ne risquent jamais de passer derrière l'encoche. Avec beaucoup d'icônes, un gestionnaire comme Ice ou Bartender les organise automatiquement.</p>
+    <h2>Rétablir l'ordre par défaut</h2>
+    <p>Réactivez les icônes Apple dans le Centre de contrôle et elles reviennent à leurs positions standard. Les icônes tierces réapparaissent quand vous les activez dans les réglages de chaque app.</p>
+    <h2>Libérer entièrement la barre</h2>
+    <p>Si votre barre est encombrée, déplacez des fonctions dans l'encoche. NotchNest met calendrier, presse-papiers, notes, Pomodoro, musique et AirDrop dans un panneau au survol — ce qui vous permet de supprimer carrément plusieurs icônes de la barre.</p>
+    <div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>Rendez votre encoche utile</h3><p>NotchNest met dix outils dans l'encoche de votre MacBook. Gratuit sur le Mac App Store.</p></div>
+      <a href="%STORE%" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="Télécharger sur le Mac App Store" /></a>
+    </div>""",
+           "related": _related("fr", ("/learn/how-to-customise-macos-menu-bar/", "How to customise the macOS menu bar", "Anglais — guide."))},
+    "pt-BR": {"title": "Como mover ícones da barra de menus no Mac — NotchNest", "description": "Reordene, reorganize e remova ícones da barra de menus do macOS com um simples Command + arrastar — além de gerenciar ícones ao redor do notch.",
+              "og_title": "Como mover ícones da barra de menus no Mac", "og_desc": "Mova, remova e organize ícones com Command + arrastar.",
+              "jsonld_headline": "Como mover ícones da barra de menus no Mac", "jsonld_desc": "Mova, remova e organize ícones da barra de menus do macOS com Command + arrastar.",
+              "kicker": KICK["guide"]["pt-BR"], "h1": "Como mover ícones da barra de menus no Mac",
+              "lede": "Reorganizar ícones da barra de menus no Mac é um truque escondido de uma tecla. Veja como movê-los, removê-los e organizá-los.",
+              "readtime": READ5["pt-BR"], "crumb_this": "Mover ícones da barra de menus",
+              "faq": [("Como se movem os ícones da barra de menus no Mac?", "Segure Command e arraste um ícone para a esquerda ou direita. Solte para posicioná-lo. O relógio e a Central de Controle ficam fixos à extrema direita e não se movem."),
+                      ("Como removo um ícone da barra de menus?", "Arraste-o para fora da barra com Command, ou para ícones da Apple use Ajustes do Sistema → Central de Controle e defina como Não Mostrar na Barra de Menus."),
+                      ("Por que não consigo mover o relógio no meu Mac?", "O relógio e a Central de Controle são fixados à extrema direita da barra de menus pelo macOS e não podem ser reposicionados."),
+                      ("Como evito que os ícones fiquem atrás do notch?", "Coloque os ícones mais usados à direita, remova os que não precisa, ou use um gerenciador como Ice ou Bartender para recolher o excedente.")],
+              "body": """<p>A barra de menus do macOS parece fixa, mas todo ícone é móvel com uma tecla modificadora. Veja o passo a passo completo.</p>
+    <h2>Mover um ícone</h2>
+    <p>Segure Command e arraste qualquer ícone da barra de menus para a esquerda ou direita. Solte onde quiser. Isso funciona para ícones da Apple (Wi-Fi, bateria, som, Now Playing) e ícones de apps de terceiros igualmente.</p>
+    <p>Os únicos itens fixos são o relógio e a Central de Controle, presos à extrema direita.</p>
+    <h2>Remover um ícone</h2>
+    <p>Arraste o ícone para baixo, para fora da barra, com Command e solte — ele some (o app continua rodando). Para ícones da Apple, use Ajustes do Sistema → Central de Controle e defina o item como Não Mostrar na Barra de Menus.</p>
+    <h2>Reorganizar ao redor do notch</h2>
+    <p>Em MacBooks com notch, coloque os ícones mais usados à direita (lado do relógio) para nunca correrem o risco de cair atrás do notch. Se você tem muitos ícones, um gerenciador como Ice ou Bartender os mantém organizados automaticamente.</p>
+    <h2>Trazer de volta a ordem padrão</h2>
+    <p>Reative os ícones da Apple na Central de Controle e eles voltam às posições padrão. Os ícones de terceiros reaparecem quando você os ativa nos ajustes de cada app.</p>
+    <h2>Liberar a barra por completo</h2>
+    <p>Se a sua barra está lotada, mova funções para o notch. O NotchNest coloca calendário, área de transferência, notas, Pomodoro, música e AirDrop em um painel ao passar o cursor — deixando você deletar vários ícones da barra de vez.</p>
+    <div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>Torne seu notch útil</h3><p>O NotchNest coloca dez ferramentas no notch do seu MacBook. Grátis na Mac App Store.</p></div>
+      <a href="%STORE%" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="Baixar na Mac App Store" /></a>
+    </div>""",
+              "related": _related("pt-BR", ("/learn/how-to-customise-macos-menu-bar/", "How to customise the macOS menu bar", "Inglês — guia."))},
+    "pt-PT": {"title": "Como mover ícones da barra de menus no Mac — NotchNest", "description": "Reordene, reorganize e remova ícones da barra de menus do macOS com um simples Command + arrastar — além de gerir ícones à volta do notch.",
+              "og_title": "Como mover ícones da barra de menus no Mac", "og_desc": "Mova, remova e organize ícones com Command + arrastar.",
+              "jsonld_headline": "Como mover ícones da barra de menus no Mac", "jsonld_desc": "Mova, remova e organize ícones da barra de menus do macOS com Command + arrastar.",
+              "kicker": KICK["guide"]["pt-PT"], "h1": "Como mover ícones da barra de menus no Mac",
+              "lede": "Reorganizar ícones da barra de menus no Mac é um truque escondido de uma tecla. Veja como movê-los, removê-los e organizá-los.",
+              "readtime": READ5["pt-PT"], "crumb_this": "Mover ícones da barra de menus",
+              "faq": [("Como se movem os ícones da barra de menus no Mac?", "Mantenha Command e arraste um ícone para a esquerda ou direita. Solte para o posicionar. O relógio e o Centro de Controlo ficam fixos à extrema direita e não se movem."),
+                      ("Como removo um ícone da barra de menus?", "Arraste-o para fora da barra com Command, ou para ícones da Apple use Definições do Sistema → Centro de Controlo e defina como Não Mostrar na Barra de Menus."),
+                      ("Porque não consigo mover o relógio no meu Mac?", "O relógio e o Centro de Controlo são fixados à extrema direita da barra de menus pelo macOS e não podem ser reposicionados."),
+                      ("Como evito que os ícones fiquem atrás do notch?", "Coloque os ícones mais usados à direita, remova os de que não precisa, ou use um gestor como Ice ou Bartender para recolher o excedente.")],
+              "body": """<p>A barra de menus do macOS parece fixa, mas todo ícone é móvel com uma tecla modificadora. Veja o passo a passo completo.</p>
+    <h2>Mover um ícone</h2>
+    <p>Mantenha Command e arraste qualquer ícone da barra de menus para a esquerda ou direita. Solte onde quiser. Isto funciona para ícones da Apple (Wi-Fi, bateria, som, Now Playing) e ícones de apps de terceiros de igual forma.</p>
+    <p>Os únicos itens fixos são o relógio e o Centro de Controlo, presos à extrema direita.</p>
+    <h2>Remover um ícone</h2>
+    <p>Arraste o ícone para baixo, para fora da barra, com Command e solte — desaparece (a app continua a correr). Para ícones da Apple, use Definições do Sistema → Centro de Controlo e defina o item como Não Mostrar na Barra de Menus.</p>
+    <h2>Reorganizar à volta do notch</h2>
+    <p>Em MacBooks com notch, coloque os ícones mais usados à direita (lado do relógio) para nunca correrem o risco de cair atrás do notch. Se tem muitos ícones, um gestor como Ice ou Bartender mantém-nos organizados automaticamente.</p>
+    <h2>Trazer de volta a ordem predefinida</h2>
+    <p>Reative os ícones da Apple no Centro de Controlo e voltam às posições padrão. Os ícones de terceiros reaparecem quando os ativa nas definições de cada app.</p>
+    <h2>Libertar a barra por completo</h2>
+    <p>Se a sua barra está cheia, mova funções para o notch. O NotchNest coloca calendário, área de transferência, notas, Pomodoro, música e AirDrop num painel ao passar o cursor — deixando-o apagar vários ícones da barra de vez.</p>
+    <div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>Torne o seu notch útil</h3><p>O NotchNest coloca dez ferramentas no notch do seu MacBook. Gratuito na Mac App Store.</p></div>
+      <a href="%STORE%" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="Descarregar na Mac App Store" /></a>
+    </div>""",
+              "related": _related("pt-PT", ("/learn/how-to-customise-macos-menu-bar/", "How to customise the macOS menu bar", "Inglês — guia."))},
+    "es-MX": {"title": "Cómo mover los íconos de la barra de menús en Mac — NotchNest", "description": "Reordena, reorganiza y quita los íconos de la barra de menús de macOS con un simple Command + arrastrar — además de gestionar íconos alrededor del notch.",
+              "og_title": "Cómo mover los íconos de la barra de menús en Mac", "og_desc": "Mueve, quita y organiza íconos con Command + arrastrar.",
+              "jsonld_headline": "Cómo mover los íconos de la barra de menús en Mac", "jsonld_desc": "Mueve, quita y organiza los íconos de la barra de menús de macOS con Command + arrastrar.",
+              "kicker": KICK["guide"]["es-MX"], "h1": "Cómo mover los íconos de la barra de menús en Mac",
+              "lede": "Reorganizar los íconos de la barra de menús en un Mac es un truco oculto de una tecla. Aquí cómo moverlos, quitarlos y organizarlos.",
+              "readtime": READ5["es-MX"], "crumb_this": "Mover íconos de la barra de menús",
+              "faq": [("¿Cómo se mueven los íconos de la barra de menús en Mac?", "Mantén Command y arrastra un ícono a la izquierda o derecha. Suelta para colocarlo. El reloj y el Centro de Control están fijos a la extrema derecha y no se mueven."),
+                      ("¿Cómo quito un ícono de la barra de menús?", "Arrástralo fuera de la barra con Command, o para íconos de Apple usa Configuración del Sistema → Centro de Control y ponlo en No mostrar en la barra de menús."),
+                      ("¿Por qué no puedo mover el reloj en mi Mac?", "El reloj y el Centro de Control están fijados a la extrema derecha de la barra de menús por macOS y no se pueden reubicar."),
+                      ("¿Cómo evito que los íconos se vayan tras el notch?", "Coloca los íconos frecuentes a la derecha, quita los que no necesitas, o usa un gestor como Ice o Bartender para recoger el desborde.")],
+              "body": """<p>La barra de menús de macOS parece fija, pero cada ícono es movible con una tecla modificadora. Aquí el instructivo completo.</p>
+    <h2>Mover un ícono</h2>
+    <p>Mantén Command y arrastra cualquier ícono de la barra de menús a la izquierda o derecha. Suelta donde quieras. Funciona para íconos de Apple (Wi-Fi, batería, sonido, Now Playing) y de apps de terceros por igual.</p>
+    <p>Los únicos elementos fijos son el reloj y el Centro de Control, anclados a la extrema derecha.</p>
+    <h2>Quitar un ícono</h2>
+    <p>Arrastra el ícono hacia abajo, fuera de la barra, con Command y suelta — desaparece (la app sigue corriendo). Para íconos de Apple, usa Configuración del Sistema → Centro de Control y pon el elemento en No mostrar en la barra de menús.</p>
+    <h2>Reordenar alrededor del notch</h2>
+    <p>En MacBooks con notch, coloca tus íconos más usados a la derecha (lado del reloj) para que nunca corran el riesgo de caer tras el notch. Si tienes muchos íconos, un gestor como Ice o Bartender los mantiene organizados automáticamente.</p>
+    <h2>Recuperar el orden predeterminado</h2>
+    <p>Vuelve a activar los íconos de Apple en el Centro de Control y regresan a sus posiciones estándar. Los íconos de terceros reaparecen cuando los activas en la configuración de cada app.</p>
+    <h2>Liberar la barra por completo</h2>
+    <p>Si tu barra está saturada, mueve funciones al notch. NotchNest pone calendario, portapapeles, notas, Pomodoro, música y AirDrop en un panel al pasar el cursor — dejándote borrar varios íconos de la barra de una.</p>
+    <div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>Haz útil tu notch</h3><p>NotchNest pone diez herramientas en el notch de tu MacBook. Gratis en el Mac App Store.</p></div>
+      <a href="%STORE%" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="Descargar en el Mac App Store" /></a>
+    </div>""",
+              "related": _related("es-MX", ("/learn/how-to-customise-macos-menu-bar/", "How to customise the macOS menu bar", "Inglés — guía."))},
+}
+
+
 # ── menu-bar-icons-missing-behind-notch ─────────────────────────────────────
 MISSING = {
     "de": {"title": "Menüleisten-Icons hinter der Notch verschwunden? Der Fix — NotchNest", "description": "Menüleisten-Icons verschwinden hinter der MacBook-Notch? Hier, warum das passiert und vier Wege, jedes Icon zurückzuholen.",
@@ -2806,4 +3007,5 @@ LEARN_ARTICLES = {
     "macos-tahoe-notch-features": _assemble(TAHOE),
     "notch-menu-bar-replacement": _assemble(REPLACE),
     "menu-bar-icons-missing-behind-notch": _assemble(MISSING),
+    "how-to-move-menu-bar-icons-on-mac": _assemble(MOVEICONS),
 }
