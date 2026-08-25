@@ -5,7 +5,7 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://notchnest.app/</loc>
-    <lastmod>2026-06-15T00:00:00+00:00</lastmod>
+    <lastmod>2026-08-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://notchnest.app/"/>
@@ -46,7 +46,7 @@
   </url>
   <url>
     <loc>https://notchnest.app/de/</loc>
-    <lastmod>2026-06-09T00:00:00+00:00</lastmod>
+    <lastmod>2026-08-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://notchnest.app/"/>
@@ -56,7 +56,7 @@
   </url>
   <url>
     <loc>https://notchnest.app/zh/</loc>
-    <lastmod>2026-06-09T00:00:00+00:00</lastmod>
+    <lastmod>2026-08-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://notchnest.app/"/>
@@ -67,67 +67,67 @@
   </url>
   <url>
     <loc>https://notchnest.app/whats-new.html</loc>
-    <lastmod>2026-06-09T00:00:00+00:00</lastmod>
+    <lastmod>2026-08-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://notchnest.app/privacy-policy.html</loc>
-    <lastmod>2026-06-09T00:00:00+00:00</lastmod>
+    <lastmod>2026-08-24T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.4</priority>
   </url>
   <url>
     <loc>https://notchnest.app/compare/</loc>
-    <lastmod>2026-06-11T00:00:00+00:00</lastmod>
+    <lastmod>2026-08-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://notchnest.app/compare/notchnest-vs-notchnook/</loc>
-    <lastmod>2026-06-13T00:00:00+00:00</lastmod>
+    <lastmod>2026-08-24T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://notchnest.app/compare/notchnest-vs-alcove/</loc>
-    <lastmod>2026-06-13T00:00:00+00:00</lastmod>
+    <lastmod>2026-08-24T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://notchnest.app/compare/notchnest-vs-boring-notch/</loc>
-    <lastmod>2026-06-13T00:00:00+00:00</lastmod>
+    <lastmod>2026-08-24T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://notchnest.app/learn/</loc>
-    <lastmod>2026-06-09T00:00:00+00:00</lastmod>
+    <lastmod>2026-08-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://notchnest.app/learn/what-is-the-macos-notch/</loc>
-    <lastmod>2026-06-09T00:00:00+00:00</lastmod>
+    <lastmod>2026-08-24T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://notchnest.app/learn/how-to-customise-macos-menu-bar/</loc>
-    <lastmod>2026-06-09T00:00:00+00:00</lastmod>
+    <lastmod>2026-08-24T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://notchnest.app/learn/notch-nest-vs-boring-notch-vs-notchdrop/</loc>
-    <lastmod>2026-06-09T00:00:00+00:00</lastmod>
+    <lastmod>2026-08-24T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://notchnest.app/learn/best-macos-notch-apps/</loc>
-    <lastmod>2026-06-09T00:00:00+00:00</lastmod>
+    <lastmod>2026-08-24T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://notchnest.app/learn/best-macos-notch-apps/"/>
@@ -137,13 +137,13 @@
   </url>
   <url>
     <loc>https://notchnest.app/learn/does-the-mac-notch-actually-do-anything/</loc>
-    <lastmod>2026-06-09T00:00:00+00:00</lastmod>
+    <lastmod>2026-08-24T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://notchnest.app/learn/how-to-use-the-macbook-notch/</loc>
-    <lastmod>2026-06-09T00:00:00+00:00</lastmod>
+    <lastmod>2026-08-24T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://notchnest.app/learn/how-to-use-the-macbook-notch/"/>
@@ -151,54 +151,54 @@
     <xhtml:link rel="alternate" hreflang="zh" href="https://notchnest.app/zh/learn/how-to-use-the-macbook-notch/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://notchnest.app/learn/how-to-use-the-macbook-notch/"/>
   </url>
-  <url><loc>https://notchnest.app/learn/how-to-hide-the-notch-on-mac/</loc><lastmod>2026-06-11T00:00:00+00:00</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://notchnest.app/learn/menu-bar-icons-missing-behind-notch/</loc><lastmod>2026-06-11T00:00:00+00:00</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://notchnest.app/learn/how-to-move-menu-bar-icons-on-mac/</loc><lastmod>2026-06-11T00:00:00+00:00</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://notchnest.app/learn/best-mac-menu-bar-apps/</loc><lastmod>2026-06-11T00:00:00+00:00</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://notchnest.app/learn/macbook-air-vs-pro-notch/</loc><lastmod>2026-06-11T00:00:00+00:00</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://notchnest.app/learn/what-is-dynamic-island-on-mac/</loc><lastmod>2026-06-11T00:00:00+00:00</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://notchnest.app/learn/mac-notch-wallpaper/</loc><lastmod>2026-06-11T00:00:00+00:00</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://notchnest.app/learn/macos-tahoe-notch-features/</loc><lastmod>2026-06-11T00:00:00+00:00</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://notchnest.app/learn/customize-top-bar-mac/</loc><lastmod>2026-06-15T00:00:00+00:00</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://notchnest.app/learn/notch-menu-bar-replacement/</loc><lastmod>2026-06-15T00:00:00+00:00</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://notchnest.app/learn/notch-camera-on-mac/</loc><lastmod>2026-06-15T00:00:00+00:00</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://notchnest.app/learn/drop-files-into-macbook-notch/</loc><lastmod>2026-06-15T00:00:00+00:00</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://notchnest.app/for/students/</loc><lastmod>2026-06-11T00:00:00+00:00</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://notchnest.app/for/developers/</loc><lastmod>2026-06-11T00:00:00+00:00</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://notchnest.app/for/designers/</loc><lastmod>2026-06-11T00:00:00+00:00</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://notchnest.app/learn/how-to-hide-the-notch-on-mac/</loc><lastmod>2026-08-24T00:00:00+00:00</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://notchnest.app/learn/menu-bar-icons-missing-behind-notch/</loc><lastmod>2026-08-24T00:00:00+00:00</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://notchnest.app/learn/how-to-move-menu-bar-icons-on-mac/</loc><lastmod>2026-08-24T00:00:00+00:00</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://notchnest.app/learn/best-mac-menu-bar-apps/</loc><lastmod>2026-08-24T00:00:00+00:00</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://notchnest.app/learn/macbook-air-vs-pro-notch/</loc><lastmod>2026-08-24T00:00:00+00:00</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://notchnest.app/learn/what-is-dynamic-island-on-mac/</loc><lastmod>2026-08-24T00:00:00+00:00</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://notchnest.app/learn/mac-notch-wallpaper/</loc><lastmod>2026-08-24T00:00:00+00:00</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://notchnest.app/learn/macos-tahoe-notch-features/</loc><lastmod>2026-08-24T00:00:00+00:00</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://notchnest.app/learn/customize-top-bar-mac/</loc><lastmod>2026-08-24T00:00:00+00:00</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://notchnest.app/learn/notch-menu-bar-replacement/</loc><lastmod>2026-08-24T00:00:00+00:00</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://notchnest.app/learn/notch-camera-on-mac/</loc><lastmod>2026-08-24T00:00:00+00:00</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://notchnest.app/learn/drop-files-into-macbook-notch/</loc><lastmod>2026-08-24T00:00:00+00:00</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://notchnest.app/for/students/</loc><lastmod>2026-08-24T00:00:00+00:00</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://notchnest.app/for/developers/</loc><lastmod>2026-08-24T00:00:00+00:00</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://notchnest.app/for/designers/</loc><lastmod>2026-08-24T00:00:00+00:00</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url>
     <loc>https://notchnest.app/de/learn/</loc>
-    <lastmod>2026-06-10T00:00:00+00:00</lastmod>
+    <lastmod>2026-08-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://notchnest.app/de/learn/how-to-use-the-macbook-notch/</loc>
-    <lastmod>2026-06-10T00:00:00+00:00</lastmod>
+    <lastmod>2026-08-24T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://notchnest.app/de/learn/best-macos-notch-apps/</loc>
-    <lastmod>2026-06-10T00:00:00+00:00</lastmod>
+    <lastmod>2026-08-24T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://notchnest.app/zh/learn/</loc>
-    <lastmod>2026-06-10T00:00:00+00:00</lastmod>
+    <lastmod>2026-08-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://notchnest.app/zh/learn/how-to-use-the-macbook-notch/</loc>
-    <lastmod>2026-06-10T00:00:00+00:00</lastmod>
+    <lastmod>2026-08-24T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://notchnest.app/zh/learn/best-macos-notch-apps/</loc>
-    <lastmod>2026-06-10T00:00:00+00:00</lastmod>
+    <lastmod>2026-08-24T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
