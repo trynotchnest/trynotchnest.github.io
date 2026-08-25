@@ -836,6 +836,79 @@ def build_compare_index(loc):
 """
 
 
+def build_privacy(loc):
+    from build_i18n_privacy import PRIVACY
+    t = PRIVACY[loc]
+    d = DIRS[loc]
+    url = f"{BASE}{d}privacy-policy.html"
+    sections = "\n        ".join(
+        f'<div class="privacy-section"><h3 class="privacy-heading">{h}</h3>{c}</div>'
+        for h, c in t["sections"])
+    return f"""<!DOCTYPE html>
+<html lang="{LANG_ATTR[loc]}"{rtl_attrs(loc)}>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>{t['title']}</title>
+<meta name="description" content="{t['description']}" />
+<link rel="canonical" href="{url}" />
+<meta name="robots" content="index,follow,max-image-preview:large" />
+{hreflang('privacy-policy.html')}
+<meta property="og:title" content="{t['title']}" />
+<meta property="og:description" content="{t['description']}" />
+<meta property="og:url" content="{url}" />
+<meta property="og:locale" content="{OG_LOCALE[loc]}" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="{BASE}1200x630-banner.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="stylesheet" href="/styles.css" />
+<link rel="apple-touch-icon" href="/assets/notchnest-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<meta name="theme-color" content="#000000" />
+<meta name="color-scheme" content="dark" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<script type="application/ld+json">
+{{
+  "@context": "https://schema.org", "@type": "PrivacyPolicy",
+  "name": {jstr(t['title'])}, "url": "{url}", "inLanguage": "{LANG_ATTR[loc]}",
+  "isPartOf": {{ "@type": "WebSite", "name": "NotchNest", "url": "{BASE}" }}
+}}
+</script>{rtl_style(loc)}
+</head>
+<body class="notchnest-body">
+<div class="background-gradient"></div>
+<main class="main-container"><div class="content-wrapper">
+  <nav class="nav-section"><a class="back-button" href="/{d}">← {t['back']}</a></nav>
+  <section class="privacy-header-section">
+    <div class="app-info"><div class="app-header">
+      <h1 class="privacy-title">{t['h1']}</h1>
+      <p class="app-description">{t['description']}</p>
+    </div></div>
+  </section>
+  <section class="privacy-content-section"><div class="privacy-card">
+    <div class="privacy-intro">
+      <h2 class="privacy-section-title">{t['policy_title']}</h2>
+      <p class="privacy-intro-text">{t['effective']}</p>
+      <p class="privacy-intro-text">{t['intro']}</p>
+    </div>
+    <div class="privacy-section" style="border:1px solid rgba(255,255,255,0.14);border-radius:14px;padding:16px 18px;margin:8px 0 20px;background:rgba(255,255,255,0.04)">
+      <p class="privacy-text" style="margin:0">⚠️ {t['disclaimer']} <a class="faq-link" href="/privacy-policy.html">{t['read_en']}</a></p>
+    </div>
+    <div class="privacy-sections">
+        {sections}
+    </div>
+  </div></section>
+  <footer class="site-footer"><div class="footer-bottom"><span>© <span id="yr"></span> NotchNest · Satnam Singh</span></div></footer>
+</div></main>
+<script>var yr=document.getElementById('yr');if(yr)yr.textContent=new Date().getFullYear();</script>
+</body>
+</html>
+"""
+
+
 def jstr(s):
     """JSON string literal (escape quotes/backslashes)."""
     return '"' + s.replace("\\", "\\\\").replace('"', '\\"') + '"'
@@ -951,6 +1024,7 @@ def update_sitemap():
         for slug in ARTICLES:
             if slug not in ARTICLE_SLUGS and loc in ARTICLES[slug]:
                 pages.append((f"learn/{slug}/", "monthly", "0.7"))
+        pages.append(("privacy-policy.html", "yearly", "0.3"))
         for suffix, cf, pr in pages:
             url = BASE + d + suffix
             if f"<loc>{url}</loc>" in xml:
@@ -1022,7 +1096,7 @@ def patch_en_compare():
 def patch_simple_hreflang(suffixes):
     """Patch the English original of pages that now exist in every locale."""
     for suffix in suffixes:
-        p = ROOT / suffix / "index.html"
+        p = ROOT / suffix if suffix.endswith(".html") else ROOT / suffix / "index.html"
         if not p.exists():
             continue
         h = p.read_text(encoding="utf-8")
@@ -1057,12 +1131,15 @@ def main():
         write(ROOT / DIRS[loc] / "compare" / "index.html", build_compare_index(loc))
         for slug in COMPARE_SLUGS:
             write(ROOT / DIRS[loc] / "compare" / slug / "index.html", build_compare(loc, slug))
+    print("privacy pages:")
+    for loc in FULL:
+        write(ROOT / DIRS[loc] / "privacy-policy.html", build_privacy(loc))
     patch_existing()
     patch_learn_hreflang()
     extra_learn = [f"learn/{s}/" for s in ARTICLES if s not in ARTICLE_SLUGS]
     patch_simple_hreflang([f"for/{s}/" for s in FOR_SLUGS]
                           + ["compare/"] + [f"compare/{s}/" for s in COMPARE_SLUGS]
-                          + extra_learn)
+                          + extra_learn + ["privacy-policy.html"])
     patch_en_compare()
     print("sitemap:")
     update_sitemap()
