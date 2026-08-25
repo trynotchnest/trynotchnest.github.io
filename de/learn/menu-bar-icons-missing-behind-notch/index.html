@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<title>Menüleisten-Icons hinter der Notch verschwunden? Der Fix — NotchNest</title>
+<meta name="description" content="Menüleisten-Icons verschwinden hinter der MacBook-Notch? Hier, warum das passiert und vier Wege, jedes Icon zurückzuholen." />
+<link rel="canonical" href="https://notchnest.app/de/learn/menu-bar-icons-missing-behind-notch/" />
+<meta name="robots" content="index,follow,max-image-preview:large" />
+<link rel="alternate" hreflang="en" href="https://notchnest.app/learn/menu-bar-icons-missing-behind-notch/" />
+<link rel="alternate" hreflang="en-us" href="https://notchnest.app/learn/menu-bar-icons-missing-behind-notch/" />
+<link rel="alternate" hreflang="en-gb" href="https://notchnest.app/learn/menu-bar-icons-missing-behind-notch/" />
+<link rel="alternate" hreflang="en-in" href="https://notchnest.app/learn/menu-bar-icons-missing-behind-notch/" />
+<link rel="alternate" hreflang="de" href="https://notchnest.app/de/learn/menu-bar-icons-missing-behind-notch/" />
+<link rel="alternate" hreflang="zh" href="https://notchnest.app/zh/learn/menu-bar-icons-missing-behind-notch/" />
+<link rel="alternate" hreflang="zh-cn" href="https://notchnest.app/zh/learn/menu-bar-icons-missing-behind-notch/" />
+<link rel="alternate" hreflang="ar" href="https://notchnest.app/ar/learn/menu-bar-icons-missing-behind-notch/" />
+<link rel="alternate" hreflang="fr" href="https://notchnest.app/fr/learn/menu-bar-icons-missing-behind-notch/" />
+<link rel="alternate" hreflang="pt-BR" href="https://notchnest.app/pt-br/learn/menu-bar-icons-missing-behind-notch/" />
+<link rel="alternate" hreflang="pt-PT" href="https://notchnest.app/pt-pt/learn/menu-bar-icons-missing-behind-notch/" />
+<link rel="alternate" hreflang="es-MX" href="https://notchnest.app/es-mx/learn/menu-bar-icons-missing-behind-notch/" />
+<link rel="alternate" hreflang="es-419" href="https://notchnest.app/es-mx/learn/menu-bar-icons-missing-behind-notch/" />
+<link rel="alternate" hreflang="x-default" href="https://notchnest.app/learn/menu-bar-icons-missing-behind-notch/" />
+<meta property="og:title" content="Menüleisten-Icons hinter der Notch verschwunden?" />
+<meta property="og:description" content="Warum Icons hinter der Notch verschwinden und wie du sie zurückholst." />
+<meta property="og:url" content="https://notchnest.app/de/learn/menu-bar-icons-missing-behind-notch/" />
+<meta property="og:locale" content="de_DE" />
+<meta property="og:type" content="article" />
+<meta property="og:image" content="https://notchnest.app/assets/og/menu-bar-icons-missing-behind-notch.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@codetard" />
+<meta name="twitter:creator" content="@codetard" />
+<link rel="stylesheet" href="/styles.css" />
+<link rel="apple-touch-icon" href="/assets/notchnest-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<meta name="theme-color" content="#000000" />
+<meta name="color-scheme" content="dark" />
+<script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org", "@type": "Article",
+    "headline": "Menüleisten-Icons hinter der Notch verschwunden? Der Fix",
+    "description": "Warum Menüleisten-Icons hinter der Notch verschwinden und vier Wege, sie zurückzuholen.",
+    "image": "https://notchnest.app/assets/og/menu-bar-icons-missing-behind-notch.png",
+    "datePublished": "2026-06-10T00:00:00+00:00", "dateModified": "2026-06-13T00:00:00+00:00",
+    "inLanguage": "de",
+    "author": { "@type": "Person", "name": "Satnam Singh", "url": "https://silverseahog.com/", "jobTitle": "Swift Developer",
+      "sameAs": ["https://silverseahog.com/","https://twitter.com/codetard","https://github.com/29satnam","https://www.linkedin.com/in/satnam-singh-948348aa/","https://instagram.com/codetard"] },
+    "publisher": { "@type": "Organization", "name": "NotchNest", "logo": { "@type": "ImageObject", "url": "https://notchnest.app/assets/notchnest-icon.png" } },
+    "mainEntityOfPage": "https://notchnest.app/de/learn/menu-bar-icons-missing-behind-notch/"
+  },
+  {
+    "@context": "https://schema.org", "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Start", "item": "https://notchnest.app/de/" },
+      { "@type": "ListItem", "position": 2, "name": "Lernen", "item": "https://notchnest.app/de/learn/" },
+      { "@type": "ListItem", "position": 3, "name": "Icons hinter der Notch", "item": "https://notchnest.app/de/learn/menu-bar-icons-missing-behind-notch/" }
+    ]
+  },
+  {
+    "@context": "https://schema.org", "@type": "FAQPage", "inLanguage": "de",
+    "mainEntity": [
+      { "@type": "Question", "name": "Warum sind meine Menüleisten-Icons hinter der Notch versteckt?", "acceptedAnswer": { "@type": "Answer", "text": "macOS zeichnet Menüleisten-Icons von rechts. Erreichen sie die Notch, werden die, die darunter fielen, versteckt statt hinter der Kamera gezeichnet. Zu viele Icons oder lange App-Menüs lösen das aus." } },
+      { "@type": "Question", "name": "Wie hole ich Menüleisten-Icons hinter der Notch zurück?", "acceptedAnswer": { "@type": "Answer", "text": "Entferne unnötige Icons (mit Command wegziehen), verstecke Apple-Icons im Kontrollzentrum, oder nutze einen Menüleisten-Manager wie Ice oder Bartender, um Icons einzuklappen, damit keins mit der Notch kollidiert." } },
+      { "@type": "Question", "name": "Kann man unter der Notch versteckte Icons sehen?", "acceptedAnswer": { "@type": "Answer", "text": "Apps wie Ice und Bartender zeigen versteckte Icons in einer eigenen Reihe oder einem Popover. macOS selbst zeigt Icons, die unter die Notch fallen, nicht." } },
+      { "@type": "Question", "name": "Hilft NotchNest bei Menüleisten-Überlauf?", "acceptedAnswer": { "@type": "Answer", "text": "Ja — indem du Kalender, Zwischenablage, Notizen, Musik und AirDrop in die Notch verschiebst, kannst du mehrere eigenständige Menüleisten-Apps entfernen und die Leiste freimachen." } }
+    ]
+  }
+]
+</script>
+</head>
+<body>
+<nav class="nn-nav"><div class="nn-nav-inner">
+  <a class="nn-brand" href="/de/"><img class="nn-brand-mark" src="/assets/notchnest-icon.png" alt="" width="28" height="28"/><span>NotchNest</span></a>
+  <div class="nn-nav-links">
+    <a href="/learn/menu-bar-icons-missing-behind-notch/">EN</a>
+    <a href="/de/learn/" class="nn-nav-keep">Lernen</a>
+  </div>
+</div></nav>
+
+<main class="main-container"><div class="learn-wrap">
+  <div class="crumbs"><a href="/de/">Start</a><span class="sep">/</span><a href="/de/learn/">Lernen</a><span class="sep">/</span><span>Icons hinter der Notch</span></div>
+
+  <header class="article-head">
+    <span class="article-kicker">Fix</span>
+    <h1 class="article-h1">Menüleisten-Icons hinter der Notch verschwunden? Der Fix</h1>
+    <p class="article-lede">Bei zu vielen Menüleisten-Icons versteckt macOS die, die hinter die Notch fielen. Hier, wie du sie alle zurückholst.</p>
+    <div class="article-meta"><span>Aktualisiert 13. Juni 2026</span><span class="dot"></span><span>5 Min. Lesedauer</span><span class="dot"></span><span>Von Satnam Singh</span></div>
+  </header>
+
+  <article class="article-body">
+    <p>Es ist eine häufige Beschwerde bei MacBook Pro und Air: Du installierst ein paar Apps, und plötzlich verschwinden Menüleisten-Icons. Sie sind nicht weg — macOS steckt den Überlauf hinter die Notch, wenn kein Platz ist. So behebst du es.</p>
+    <h2>Warum es passiert</h2>
+    <p>macOS ordnet Menüleisten-Icons vom rechten Rand nach links an. Erreicht die Reihe die Notch, werden Icons, die darunter säßen, versteckt statt hinter die Kamera-Aussparung gezeichnet. Je mehr Icons (und je breiter deine App-Menüs), desto mehr werden abgeschnitten.</p>
+    <h2>Fix 1 — Entferne Icons, die du nicht brauchst</h2>
+    <p>Halte Command und zieh unerwünschte Icons aus der Menüleiste. Für Apple-Icons geh zu Systemeinstellungen → Kontrollzentrum und setz Punkte wie Spotlight, Bluetooth oder Batterie auf „Nicht in Menüleiste anzeigen".</p>
+    <h2>Fix 2 — Kürze die App-Menüs</h2>
+    <p>Apps mit langen Menütiteln (etwa Pro-Audio- oder Design-Tools) schieben Icons weiter nach rechts. Dafür gibt es keine Einstellung, aber das Beenden menülastiger Apps, die du nicht nutzt, schafft sofort Platz.</p>
+    <h2>Fix 3 — Nutze einen Menüleisten-Manager</h2>
+    <p>Kostenlose Apps wie Ice (Open Source) oder Bartender klappen Icons hinter einem Chevron ein, sodass sie nie mit der Notch kollidieren. Das ist der zuverlässigste Fix, wenn du wirklich viele Icons brauchst. Siehe unseren Leitfaden zu den besten Mac-Menüleisten-Apps.</p>
+    <h2>Fix 4 — Verlager die Arbeit in die Notch</h2>
+    <p>Statt um Menüleistenplatz zu kämpfen, schieb einige dieser Funktionen in die Notch. NotchNest bringt Kalender, Zwischenablage, Notizen, Pomodoro, Musik und AirDrop in ein Hover-Panel um die Notch — so kannst du mehrere eigenständige Menüleisten-Apps entfernen und die Leiste ganz freimachen.</p>
+    <div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>Mach deine Notch nützlich</h3><p>NotchNest bringt zehn Tools in die Notch deines MacBooks. Kostenlos im Mac App Store.</p></div>
+      <a href="https://apps.apple.com/de/app/notchnest-power-your-notch/id6747612321" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="Im Mac App Store laden" /></a>
+    </div>
+    <h2>Schnelle Checkliste</h2>
+    <ul>
+      <li>Command-Ziehen, um ungenutzte Icons zu entfernen.</li>
+      <li>Kontrollzentrum → Apple-Icons verstecken, die du nicht brauchst.</li>
+      <li>Ice oder Bartender installieren, um den Rest einzuklappen.</li>
+      <li>Tools mit NotchNest in der Notch bündeln.</li>
+    </ul>
+
+    <aside class="author-bio">
+      <img class="author-avatar" src="https://github.com/29satnam.png" alt="Satnam Singh" width="56" height="56" loading="lazy" />
+      <div>
+        <h3>Über den Autor</h3>
+        <p><strong>Satnam Singh</strong> ist der Swift-Entwickler hinter NotchNest. Er schreibt über macOS-Produktivität, KI auf Apple Silicon und Indie-App-Handwerk. <a href="https://silverseahog.com/" target="_blank" rel="noopener">silverseahog.com</a> · <a href="https://twitter.com/codetard" target="_blank" rel="noopener nofollow">@codetard</a></p>
+      </div>
+    </aside>
+
+    <section class="related-section">
+      <h2>Weiterlesen</h2>
+      <div class="related-grid">
+        <a class="related-card" href="/de/learn/how-to-use-the-macbook-notch/"><h3>MacBook-Notch nutzen</h3><p>Drei Schritte zur nützlichen Notch.</p></a>
+        <a class="related-card" href="/de/learn/best-macos-notch-apps/"><h3>Beste macOS-Notch-Apps</h3><p>Übersicht 2026.</p></a>
+        <a class="related-card" href="/learn/how-to-move-menu-bar-icons-on-mac/"><h3>How to move menu bar icons on Mac</h3><p>Englisch — Anleitung.</p></a>
+      </div>
+    </section>
+  </article>
+
+  <footer class="site-footer">
+    <div class="footer-bottom"><span>© <span id="yr"></span> NotchNest · Satnam Singh</span><div class="footer-lang"><a href="/learn/menu-bar-icons-missing-behind-notch/" hreflang="en">English</a><a href="/de/learn/menu-bar-icons-missing-behind-notch/" hreflang="de" aria-current="page">Deutsch</a><a href="/zh/learn/menu-bar-icons-missing-behind-notch/" hreflang="zh">中文</a><a href="/ar/learn/menu-bar-icons-missing-behind-notch/" hreflang="ar">العربية</a><a href="/fr/learn/menu-bar-icons-missing-behind-notch/" hreflang="fr">Français</a><a href="/pt-br/learn/menu-bar-icons-missing-behind-notch/" hreflang="pt-BR">Português (BR)</a><a href="/pt-pt/learn/menu-bar-icons-missing-behind-notch/" hreflang="pt-PT">Português (PT)</a><a href="/es-mx/learn/menu-bar-icons-missing-behind-notch/" hreflang="es-MX">Español (MX)</a></div></div>
+  </footer>
+</div></main>
+<script>var yr=document.getElementById('yr');if(yr)yr.textContent=new Date().getFullYear();</script>
+</body></html>

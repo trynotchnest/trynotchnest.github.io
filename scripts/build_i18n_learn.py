@@ -14,6 +14,7 @@ KICK = {  # kicker labels reused across articles
     "explainer": {"de": "Erklärung", "zh": "解读", "ar": "شرح", "fr": "Explication", "pt-BR": "Explicação", "pt-PT": "Explicação", "es-MX": "Explicación"},
     "roundup": {"de": "Übersicht", "zh": "盘点", "ar": "اختيارات", "fr": "Sélection", "pt-BR": "Seleção", "pt-PT": "Seleção", "es-MX": "Selección"},
     "comparison": {"de": "Vergleich", "zh": "对比", "ar": "مقارنة", "fr": "Comparatif", "pt-BR": "Comparativo", "pt-PT": "Comparação", "es-MX": "Comparativa"},
+    "fix": {"de": "Fix", "zh": "修复", "ar": "إصلاح", "fr": "Solution", "pt-BR": "Correção", "pt-PT": "Correção", "es-MX": "Solución"},
 }
 
 # fixed yes/no/partial classes for the 3-way table (language-independent)
@@ -1711,6 +1712,249 @@ DROP = {
 }
 
 
+# ── menu-bar-icons-missing-behind-notch ─────────────────────────────────────
+MISSING = {
+    "de": {"title": "Menüleisten-Icons hinter der Notch verschwunden? Der Fix — NotchNest", "description": "Menüleisten-Icons verschwinden hinter der MacBook-Notch? Hier, warum das passiert und vier Wege, jedes Icon zurückzuholen.",
+           "og_title": "Menüleisten-Icons hinter der Notch verschwunden?", "og_desc": "Warum Icons hinter der Notch verschwinden und wie du sie zurückholst.",
+           "jsonld_headline": "Menüleisten-Icons hinter der Notch verschwunden? Der Fix", "jsonld_desc": "Warum Menüleisten-Icons hinter der Notch verschwinden und vier Wege, sie zurückzuholen.",
+           "kicker": KICK["fix"]["de"], "h1": "Menüleisten-Icons hinter der Notch verschwunden? Der Fix",
+           "lede": "Bei zu vielen Menüleisten-Icons versteckt macOS die, die hinter die Notch fielen. Hier, wie du sie alle zurückholst.",
+           "readtime": READ5["de"], "crumb_this": "Icons hinter der Notch",
+           "faq": [("Warum sind meine Menüleisten-Icons hinter der Notch versteckt?", "macOS zeichnet Menüleisten-Icons von rechts. Erreichen sie die Notch, werden die, die darunter fielen, versteckt statt hinter der Kamera gezeichnet. Zu viele Icons oder lange App-Menüs lösen das aus."),
+                   ("Wie hole ich Menüleisten-Icons hinter der Notch zurück?", "Entferne unnötige Icons (mit Command wegziehen), verstecke Apple-Icons im Kontrollzentrum, oder nutze einen Menüleisten-Manager wie Ice oder Bartender, um Icons einzuklappen, damit keins mit der Notch kollidiert."),
+                   ("Kann man unter der Notch versteckte Icons sehen?", "Apps wie Ice und Bartender zeigen versteckte Icons in einer eigenen Reihe oder einem Popover. macOS selbst zeigt Icons, die unter die Notch fallen, nicht."),
+                   ("Hilft NotchNest bei Menüleisten-Überlauf?", "Ja — indem du Kalender, Zwischenablage, Notizen, Musik und AirDrop in die Notch verschiebst, kannst du mehrere eigenständige Menüleisten-Apps entfernen und die Leiste freimachen.")],
+           "body": """<p>Es ist eine häufige Beschwerde bei MacBook Pro und Air: Du installierst ein paar Apps, und plötzlich verschwinden Menüleisten-Icons. Sie sind nicht weg — macOS steckt den Überlauf hinter die Notch, wenn kein Platz ist. So behebst du es.</p>
+    <h2>Warum es passiert</h2>
+    <p>macOS ordnet Menüleisten-Icons vom rechten Rand nach links an. Erreicht die Reihe die Notch, werden Icons, die darunter säßen, versteckt statt hinter die Kamera-Aussparung gezeichnet. Je mehr Icons (und je breiter deine App-Menüs), desto mehr werden abgeschnitten.</p>
+    <h2>Fix 1 — Entferne Icons, die du nicht brauchst</h2>
+    <p>Halte Command und zieh unerwünschte Icons aus der Menüleiste. Für Apple-Icons geh zu Systemeinstellungen → Kontrollzentrum und setz Punkte wie Spotlight, Bluetooth oder Batterie auf „Nicht in Menüleiste anzeigen".</p>
+    <h2>Fix 2 — Kürze die App-Menüs</h2>
+    <p>Apps mit langen Menütiteln (etwa Pro-Audio- oder Design-Tools) schieben Icons weiter nach rechts. Dafür gibt es keine Einstellung, aber das Beenden menülastiger Apps, die du nicht nutzt, schafft sofort Platz.</p>
+    <h2>Fix 3 — Nutze einen Menüleisten-Manager</h2>
+    <p>Kostenlose Apps wie Ice (Open Source) oder Bartender klappen Icons hinter einem Chevron ein, sodass sie nie mit der Notch kollidieren. Das ist der zuverlässigste Fix, wenn du wirklich viele Icons brauchst. Siehe unseren Leitfaden zu den besten Mac-Menüleisten-Apps.</p>
+    <h2>Fix 4 — Verlager die Arbeit in die Notch</h2>
+    <p>Statt um Menüleistenplatz zu kämpfen, schieb einige dieser Funktionen in die Notch. NotchNest bringt Kalender, Zwischenablage, Notizen, Pomodoro, Musik und AirDrop in ein Hover-Panel um die Notch — so kannst du mehrere eigenständige Menüleisten-Apps entfernen und die Leiste ganz freimachen.</p>
+    <div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>Mach deine Notch nützlich</h3><p>NotchNest bringt zehn Tools in die Notch deines MacBooks. Kostenlos im Mac App Store.</p></div>
+      <a href="%STORE%" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="Im Mac App Store laden" /></a>
+    </div>
+    <h2>Schnelle Checkliste</h2>
+    <ul>
+      <li>Command-Ziehen, um ungenutzte Icons zu entfernen.</li>
+      <li>Kontrollzentrum → Apple-Icons verstecken, die du nicht brauchst.</li>
+      <li>Ice oder Bartender installieren, um den Rest einzuklappen.</li>
+      <li>Tools mit NotchNest in der Notch bündeln.</li>
+    </ul>""",
+           "related": _related("de", ("/learn/how-to-move-menu-bar-icons-on-mac/", "How to move menu bar icons on Mac", "Englisch — Anleitung."))},
+    "zh": {"title": "菜单栏图标藏到刘海后面了？这样修复 — NotchNest", "description": "菜单栏图标消失在 MacBook 刘海后面？这里讲清为何发生，以及把每个图标找回来的四种方法。",
+           "og_title": "菜单栏图标藏到刘海后面了？", "og_desc": "图标为何藏在刘海后面，以及如何找回。",
+           "jsonld_headline": "菜单栏图标藏到刘海后面了？这样修复", "jsonld_desc": "菜单栏图标为何藏在刘海后面，以及找回它们的四种方法。",
+           "kicker": KICK["fix"]["zh"], "h1": "菜单栏图标藏到刘海后面了？这样修复",
+           "lede": "当菜单栏图标太多，macOS 会隐藏那些会落到刘海后面的图标。这里教你把它们全部找回来。",
+           "readtime": READ5["zh"], "crumb_this": "图标藏在刘海后",
+           "faq": [("我的菜单栏图标为什么藏在刘海后面？", "macOS 从右侧向左排布菜单栏图标。当它们到达刘海，会落在其下方的图标会被隐藏，而不是画在摄像头后面。图标太多或应用菜单太长都会触发。"),
+                   ("如何把藏在刘海后面的菜单栏图标找回来？", "移除不需要的图标（按住 Command 拖走）、在控制中心隐藏 Apple 图标，或用 Ice、Bartender 之类的菜单栏管理器折叠图标，让它们不与刘海冲突。"),
+                   ("有办法看到藏在刘海下方的图标吗？", "Ice 和 Bartender 之类的应用会在单独一行或弹层里显示隐藏图标。macOS 本身不显示落在刘海下方的图标。"),
+                   ("NotchNest 能帮上菜单栏溢出吗？", "能——把日历、剪贴板、笔记、音乐和 AirDrop 搬进刘海，你就能移除多个独立的菜单栏应用，腾出栏空间。")],
+           "body": """<p>这是 MacBook Pro 和 Air 的常见抱怨：你装了几个应用，菜单栏图标忽然不见了。它们没消失——空间不够时 macOS 把溢出的图标塞到刘海后面。这样修复。</p>
+    <h2>为什么会发生</h2>
+    <p>macOS 从右缘向左排布菜单栏图标。当这一行到达刘海，会落在其下方的图标会被隐藏，而不是画在摄像头缺口后面。图标越多（应用菜单越宽），被截断的就越多。</p>
+    <h2>修复一 — 移除不需要的图标</h2>
+    <p>按住 Command 把不想要的图标拖出菜单栏。对于 Apple 图标，前往 系统设置 → 控制中心，把聚焦、蓝牙或电池等项设为“不在菜单栏中显示”。</p>
+    <h2>修复二 — 缩短应用菜单</h2>
+    <p>菜单标题很长的应用（比如专业音频或设计工具）会把图标进一步往右推。这没有设置项，但退出你没在用、菜单又多的应用会立刻腾出空间。</p>
+    <h2>修复三 — 使用菜单栏管理器</h2>
+    <p>Ice（开源）或 Bartender 之类的免费应用把图标折叠到一个箭头后面，让它们永不与刘海冲突。如果你确实需要很多图标，这是最可靠的修复。参见我们的最佳 Mac 菜单栏应用指南。</p>
+    <h2>修复四 — 把工作搬进刘海</h2>
+    <p>与其争抢菜单栏空间，不如把其中一些功能推进刘海。NotchNest 把日历、剪贴板、笔记、番茄钟、音乐和 AirDrop 放进刘海周围的悬停面板——于是你可以移除多个独立的菜单栏应用，彻底腾出栏空间。</p>
+    <div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>让你的刘海有用</h3><p>NotchNest 把十个工具放进 MacBook 刘海。在 Mac App Store 免费。</p></div>
+      <a href="%STORE%" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="在 Mac App Store 下载" /></a>
+    </div>
+    <h2>快速清单</h2>
+    <ul>
+      <li>Command 拖拽移除你不用的图标。</li>
+      <li>控制中心 → 隐藏你不需要的 Apple 图标。</li>
+      <li>安装 Ice 或 Bartender 折叠其余图标。</li>
+      <li>用 NotchNest 把工具收进刘海。</li>
+    </ul>""",
+           "related": _related("zh", ("/learn/how-to-move-menu-bar-icons-on-mac/", "How to move menu bar icons on Mac", "英文——指南。"))},
+    "ar": {"title": "أيقونات شريط القوائم مختفية خلف النتش؟ الحل — NotchNest", "description": "أيقونات شريط القوائم تختفي خلف نتش الماك بوك؟ إليك لماذا يحدث ذلك وأربع طرق لاستعادة كل أيقونة.",
+           "og_title": "أيقونات شريط القوائم مختفية خلف النتش؟", "og_desc": "لماذا تختفي الأيقونات خلف النتش وكيف تستعيدها.",
+           "jsonld_headline": "أيقونات شريط القوائم مختفية خلف النتش؟ الحل", "jsonld_desc": "لماذا تختفي أيقونات شريط القوائم خلف النتش وأربع طرق لاستعادتها.",
+           "kicker": KICK["fix"]["ar"], "h1": "أيقونات شريط القوائم مختفية خلف النتش؟ الحل",
+           "lede": "عندما تكثر أيقونات شريط القوائم، يخفي macOS تلك التي ستقع خلف النتش. إليك كيف تستعيدها كلها.",
+           "readtime": READ5["ar"], "crumb_this": "أيقونات خلف النتش",
+           "faq": [("لماذا تختبئ أيقونات شريط قوائمي خلف النتش؟", "يرسم macOS أيقونات شريط القوائم من اليمين. وعندما تصل النتش، تُخفى التي ستقع تحته بدل رسمها خلف الكاميرا. كثرة الأيقونات أو طول قوائم التطبيقات يسبّب ذلك."),
+                   ("كيف أستعيد أيقونات شريط القوائم من خلف النتش؟", "أزل الأيقونات غير الضرورية (اسحبها بضغط Command)، وأخفِ أيقونات Apple من مركز التحكّم، أو استخدم مدير شريط قوائم مثل Ice أو Bartender لطيّ الأيقونات حتى لا تصطدم بالنتش."),
+                   ("هل توجد طريقة لرؤية الأيقونات المختبئة تحت النتش؟", "تطبيقات مثل Ice وBartender تُظهر الأيقونات المخفية في صف منفصل أو نافذة منبثقة. أما macOS نفسه فلا يُظهر الأيقونات التي تقع تحت النتش."),
+                   ("هل يساعد NotchNest في تجاوز ازدحام شريط القوائم؟", "نعم — بنقل التقويم والحافظة والملاحظات والموسيقى وAirDrop إلى النتش، يمكنك إزالة عدة تطبيقات شريط قوائم مستقلة وتفريغ الشريط.")],
+           "body": """<p>إنها شكوى شائعة على MacBook Pro وAir: تثبّت بضعة تطبيقات، وفجأة تختفي أيقونات شريط القوائم. إنها لم تذهب — يخبّئ macOS الفائض خلف النتش عندما لا يوجد متسع. إليك كيف تصلح ذلك.</p>
+    <h2>لماذا يحدث</h2>
+    <p>يرتّب macOS أيقونات شريط القوائم من الحافة اليمنى نحو اليسار. وعندما يصل الصف إلى النتش، تُخفى أي أيقونات ستقع تحته بدل رسمها خلف فتحة الكاميرا. وكلما زادت الأيقونات (واتسعت قوائم تطبيقاتك) زاد ما يُقتطع.</p>
+    <h2>الحل 1 — أزل الأيقونات التي لا تحتاجها</h2>
+    <p>اضغط Command واسحب الأيقونات غير المرغوبة خارج شريط القوائم. ولأيقونات Apple، اذهب إلى إعدادات النظام ← مركز التحكّم واضبط عناصر مثل Spotlight أو Bluetooth أو البطارية على «عدم الإظهار في شريط القوائم».</p>
+    <h2>الحل 2 — اختصر قوائم التطبيقات</h2>
+    <p>التطبيقات ذات عناوين القوائم الطويلة (كأدوات الصوت أو التصميم الاحترافية) تدفع الأيقونات أكثر نحو اليمين. لا يوجد إعداد لذلك، لكن إغلاق التطبيقات كثيرة القوائم التي لا تستخدمها يفرّغ مساحة فورًا.</p>
+    <h2>الحل 3 — استخدم مدير شريط قوائم</h2>
+    <p>تطبيقات مجانية مثل Ice (مفتوح المصدر) أو Bartender تطوي الأيقونات خلف سهم فلا تصطدم بالنتش أبدًا. هذا أوثق حل إن كنت تحتاج فعلًا أيقونات كثيرة. راجع دليلنا لأفضل تطبيقات شريط قوائم الماك.</p>
+    <h2>الحل 4 — انقل العمل إلى النتش</h2>
+    <p>بدل التنافس على مساحة شريط القوائم، ادفع بعض تلك الوظائف إلى النتش. يضع NotchNest التقويم والحافظة والملاحظات وبومودورو والموسيقى وAirDrop في لوحة تمرير حول النتش — فتستطيع إزالة عدة تطبيقات شريط قوائم مستقلة وتفريغ الشريط بالكامل.</p>
+    <div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>اجعل نتشك مفيدًا</h3><p>يضع NotchNest عشر أدوات في نتش الماك بوك. مجانًا على Mac App Store.</p></div>
+      <a href="%STORE%" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="التنزيل من Mac App Store" /></a>
+    </div>
+    <h2>قائمة تحقّق سريعة</h2>
+    <ul>
+      <li>اسحب بضغط Command لإزالة الأيقونات التي لا تستخدمها.</li>
+      <li>مركز التحكّم ← أخفِ أيقونات Apple التي لا تحتاجها.</li>
+      <li>ثبّت Ice أو Bartender لطيّ الباقي.</li>
+      <li>اجمع الأدوات في النتش عبر NotchNest.</li>
+    </ul>""",
+           "related": _related("ar", ("/learn/how-to-move-menu-bar-icons-on-mac/", "How to move menu bar icons on Mac", "إنجليزي — دليل."))},
+    "fr": {"title": "Icônes de la barre des menus cachées derrière l'encoche ? La solution — NotchNest", "description": "Des icônes de la barre des menus disparaissent derrière l'encoche du MacBook ? Voici pourquoi ça arrive et quatre façons de toutes les récupérer.",
+           "og_title": "Icônes cachées derrière l'encoche ?", "og_desc": "Pourquoi les icônes se cachent derrière l'encoche et comment les récupérer.",
+           "jsonld_headline": "Icônes de la barre des menus cachées derrière l'encoche ? La solution", "jsonld_desc": "Pourquoi les icônes de la barre des menus se cachent derrière l'encoche et quatre façons de les récupérer.",
+           "kicker": KICK["fix"]["fr"], "h1": "Icônes de la barre des menus cachées derrière l'encoche ? La solution",
+           "lede": "Quand vous avez trop d'icônes dans la barre des menus, macOS masque celles qui passeraient derrière l'encoche. Voici comment toutes les récupérer.",
+           "readtime": READ5["fr"], "crumb_this": "Icônes derrière l'encoche",
+           "faq": [("Pourquoi mes icônes de barre des menus sont-elles cachées derrière l'encoche ?", "macOS dessine les icônes de la barre des menus depuis la droite. Une fois à l'encoche, celles qui passeraient dessous sont masquées plutôt que dessinées derrière la caméra. Trop d'icônes ou de longs menus d'app le déclenchent."),
+                   ("Comment récupérer les icônes cachées derrière l'encoche ?", "Retirez les icônes inutiles (Command + glisser hors de la barre), masquez les icônes Apple dans le Centre de contrôle, ou utilisez un gestionnaire de barre des menus comme Ice ou Bartender pour replier les icônes afin qu'aucune n'entre en collision avec l'encoche."),
+                   ("Peut-on voir les icônes cachées sous l'encoche ?", "Des apps comme Ice et Bartender révèlent les icônes cachées dans une rangée séparée ou un popover. macOS lui-même ne montre pas les icônes qui passent sous l'encoche."),
+                   ("NotchNest aide-t-il pour le débordement de la barre des menus ?", "Oui — en déplaçant calendrier, presse-papiers, notes, musique et AirDrop dans l'encoche, vous pouvez retirer plusieurs apps de barre des menus autonomes et libérer la barre.")],
+           "body": """<p>C'est une plainte fréquente sur MacBook Pro et Air : vous installez quelques apps, et soudain des icônes de la barre des menus disparaissent. Elles ne sont pas parties — macOS range le débordement derrière l'encoche quand il n'y a plus de place. Voici comment corriger ça.</p>
+    <h2>Pourquoi ça arrive</h2>
+    <p>macOS dispose les icônes de la barre des menus du bord droit vers la gauche. Quand la rangée atteint l'encoche, les icônes qui s'y logeraient sont masquées plutôt que dessinées derrière la découpe de la caméra. Plus il y a d'icônes (et plus vos menus d'app sont larges), plus il y en a de coupées.</p>
+    <h2>Solution 1 — Retirez les icônes dont vous n'avez pas besoin</h2>
+    <p>Maintenez Command et glissez les icônes indésirables hors de la barre. Pour les icônes Apple, allez dans Réglages Système → Centre de contrôle et réglez des éléments comme Spotlight, Bluetooth ou Batterie sur « Ne pas afficher dans la barre des menus ».</p>
+    <h2>Solution 2 — Raccourcissez les menus d'app</h2>
+    <p>Les apps aux longs titres de menus (outils audio ou design pro) poussent les icônes plus à droite. Il n'y a pas de réglage pour ça, mais quitter les apps riches en menus que vous n'utilisez pas libère de la place tout de suite.</p>
+    <h2>Solution 3 — Utilisez un gestionnaire de barre des menus</h2>
+    <p>Des apps gratuites comme Ice (open source) ou Bartender replient les icônes derrière un chevron pour qu'elles n'entrent jamais en collision avec l'encoche. C'est la solution la plus fiable si vous avez vraiment besoin de beaucoup d'icônes. Voyez notre guide des meilleures apps de barre des menus Mac.</p>
+    <h2>Solution 4 — Déplacez le travail dans l'encoche</h2>
+    <p>Plutôt que de vous battre pour la place, poussez certaines de ces fonctions dans l'encoche. NotchNest met calendrier, presse-papiers, notes, Pomodoro, musique et AirDrop dans un panneau au survol autour de l'encoche — vous pouvez ainsi retirer plusieurs apps de barre des menus autonomes et libérer entièrement la barre.</p>
+    <div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>Rendez votre encoche utile</h3><p>NotchNest met dix outils dans l'encoche de votre MacBook. Gratuit sur le Mac App Store.</p></div>
+      <a href="%STORE%" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="Télécharger sur le Mac App Store" /></a>
+    </div>
+    <h2>Check-list rapide</h2>
+    <ul>
+      <li>Command + glisser pour retirer les icônes inutilisées.</li>
+      <li>Centre de contrôle → masquez les icônes Apple superflues.</li>
+      <li>Installez Ice ou Bartender pour replier le reste.</li>
+      <li>Regroupez les outils dans l'encoche avec NotchNest.</li>
+    </ul>""",
+           "related": _related("fr", ("/learn/how-to-move-menu-bar-icons-on-mac/", "How to move menu bar icons on Mac", "Anglais — guide."))},
+    "pt-BR": {"title": "Ícones da barra de menus sumindo atrás do notch? A correção — NotchNest", "description": "Ícones da barra de menus desaparecendo atrás do notch do MacBook? Aqui está por que acontece e quatro formas de trazer todos de volta.",
+              "og_title": "Ícones sumindo atrás do notch?", "og_desc": "Por que os ícones somem atrás do notch e como trazê-los de volta.",
+              "jsonld_headline": "Ícones da barra de menus sumindo atrás do notch? A correção", "jsonld_desc": "Por que os ícones da barra de menus somem atrás do notch e quatro formas de trazê-los de volta.",
+              "kicker": KICK["fix"]["pt-BR"], "h1": "Ícones da barra de menus sumindo atrás do notch? A correção",
+              "lede": "Quando você tem ícones demais na barra de menus, o macOS esconde os que cairiam atrás do notch. Aqui está como trazer todos de volta.",
+              "readtime": READ5["pt-BR"], "crumb_this": "Ícones atrás do notch",
+              "faq": [("Por que meus ícones da barra de menus estão escondidos atrás do notch?", "O macOS desenha os ícones da barra de menus a partir da direita. Ao chegar ao notch, os que cairiam embaixo são escondidos em vez de desenhados atrás da câmera. Ícones demais ou menus de app longos disparam isso."),
+                      ("Como trago os ícones da barra de menus de volta de trás do notch?", "Remova ícones desnecessários (Command + arraste para fora), esconda ícones da Apple na Central de Controle, ou use um gerenciador de barra de menus como Ice ou Bartender para recolher ícones para que nenhum colida com o notch."),
+                      ("Há como ver os ícones escondidos sob o notch?", "Apps como Ice e Bartender revelam ícones escondidos em uma linha separada ou popover. O próprio macOS não mostra ícones que caem sob o notch."),
+                      ("O NotchNest ajuda com o excesso na barra de menus?", "Sim — ao mover calendário, área de transferência, notas, música e AirDrop para o notch, você pode remover vários apps de barra de menus e liberar a barra.")],
+              "body": """<p>É uma queixa comum no MacBook Pro e Air: você instala alguns apps e, de repente, ícones da barra de menus somem. Eles não sumiram — o macOS enfia o excedente atrás do notch quando não há espaço. Veja como corrigir.</p>
+    <h2>Por que acontece</h2>
+    <p>O macOS dispõe os ícones da barra de menus da borda direita para a esquerda. Quando a fileira chega ao notch, os ícones que ficariam embaixo são escondidos em vez de desenhados atrás do recorte da câmera. Quanto mais ícones (e mais largos os seus menus de app), mais são cortados.</p>
+    <h2>Correção 1 — Remova ícones que você não precisa</h2>
+    <p>Segure Command e arraste os ícones indesejados para fora da barra. Para ícones da Apple, vá em Ajustes do Sistema → Central de Controle e defina itens como Spotlight, Bluetooth ou Bateria como "Não Mostrar na Barra de Menus".</p>
+    <h2>Correção 2 — Encurte os menus de app</h2>
+    <p>Apps com títulos de menu longos (áudio ou design profissional) empurram os ícones mais para a direita. Não há ajuste para isso, mas sair de apps cheios de menus que você não usa libera espaço na hora.</p>
+    <h2>Correção 3 — Use um gerenciador de barra de menus</h2>
+    <p>Apps grátis como Ice (código aberto) ou Bartender recolhem ícones atrás de um chevron para nunca colidirem com o notch. Essa é a correção mais confiável se você realmente precisa de muitos ícones. Veja nosso guia dos melhores apps de barra de menus Mac.</p>
+    <h2>Correção 4 — Mova o trabalho para o notch</h2>
+    <p>Em vez de brigar por espaço na barra, empurre algumas dessas funções para o notch. O NotchNest coloca calendário, área de transferência, notas, Pomodoro, música e AirDrop em um painel ao passar o cursor ao redor do notch — então você pode remover vários apps de barra de menus e liberar a barra por completo.</p>
+    <div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>Torne seu notch útil</h3><p>O NotchNest coloca dez ferramentas no notch do seu MacBook. Grátis na Mac App Store.</p></div>
+      <a href="%STORE%" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="Baixar na Mac App Store" /></a>
+    </div>
+    <h2>Checklist rápido</h2>
+    <ul>
+      <li>Command + arraste para remover ícones que não usa.</li>
+      <li>Central de Controle → esconda ícones da Apple que não precisa.</li>
+      <li>Instale Ice ou Bartender para recolher o resto.</li>
+      <li>Consolide ferramentas no notch com o NotchNest.</li>
+    </ul>""",
+              "related": _related("pt-BR", ("/learn/how-to-move-menu-bar-icons-on-mac/", "How to move menu bar icons on Mac", "Inglês — guia."))},
+    "pt-PT": {"title": "Ícones da barra de menus a desaparecer atrás do notch? A correção — NotchNest", "description": "Ícones da barra de menus a desaparecer atrás do notch do MacBook? Aqui está porque acontece e quatro formas de os trazer todos de volta.",
+              "og_title": "Ícones a desaparecer atrás do notch?", "og_desc": "Porque os ícones desaparecem atrás do notch e como os trazer de volta.",
+              "jsonld_headline": "Ícones da barra de menus a desaparecer atrás do notch? A correção", "jsonld_desc": "Porque os ícones da barra de menus desaparecem atrás do notch e quatro formas de os trazer de volta.",
+              "kicker": KICK["fix"]["pt-PT"], "h1": "Ícones da barra de menus a desaparecer atrás do notch? A correção",
+              "lede": "Quando tem ícones a mais na barra de menus, o macOS esconde os que cairiam atrás do notch. Aqui está como os trazer todos de volta.",
+              "readtime": READ5["pt-PT"], "crumb_this": "Ícones atrás do notch",
+              "faq": [("Porque estão os meus ícones da barra de menus escondidos atrás do notch?", "O macOS desenha os ícones da barra de menus a partir da direita. Ao chegar ao notch, os que cairiam por baixo são escondidos em vez de desenhados atrás da câmara. Ícones a mais ou menus de app longos despoletam isto."),
+                      ("Como trago os ícones da barra de menus de volta de trás do notch?", "Remova ícones desnecessários (Command + arraste para fora), esconda ícones da Apple no Centro de Controlo, ou use um gestor de barra de menus como Ice ou Bartender para recolher ícones para que nenhum colida com o notch."),
+                      ("Há forma de ver os ícones escondidos sob o notch?", "Apps como Ice e Bartender revelam ícones escondidos numa linha separada ou popover. O próprio macOS não mostra ícones que caem sob o notch."),
+                      ("O NotchNest ajuda com o excesso na barra de menus?", "Sim — ao mover calendário, área de transferência, notas, música e AirDrop para o notch, pode remover vários apps de barra de menus e libertar a barra.")],
+              "body": """<p>É uma queixa comum no MacBook Pro e Air: instala alguns apps e, de repente, ícones da barra de menus desaparecem. Não desapareceram — o macOS enfia o excedente atrás do notch quando não há espaço. Veja como corrigir.</p>
+    <h2>Porque acontece</h2>
+    <p>O macOS dispõe os ícones da barra de menus da margem direita para a esquerda. Quando a fila chega ao notch, os ícones que ficariam por baixo são escondidos em vez de desenhados atrás do recorte da câmara. Quantos mais ícones (e mais largos os seus menus de app), mais são cortados.</p>
+    <h2>Correção 1 — Remova ícones de que não precisa</h2>
+    <p>Mantenha Command e arraste os ícones indesejados para fora da barra. Para ícones da Apple, vá a Definições do Sistema → Centro de Controlo e defina itens como Spotlight, Bluetooth ou Bateria como "Não Mostrar na Barra de Menus".</p>
+    <h2>Correção 2 — Encurte os menus de app</h2>
+    <p>Apps com títulos de menu longos (áudio ou design profissional) empurram os ícones mais para a direita. Não há definição para isto, mas sair de apps cheios de menus que não usa liberta espaço de imediato.</p>
+    <h2>Correção 3 — Use um gestor de barra de menus</h2>
+    <p>Apps gratuitas como Ice (código aberto) ou Bartender recolhem ícones atrás de um chevron para nunca colidirem com o notch. Esta é a correção mais fiável se precisa mesmo de muitos ícones. Veja o nosso guia das melhores apps de barra de menus Mac.</p>
+    <h2>Correção 4 — Mova o trabalho para o notch</h2>
+    <p>Em vez de lutar por espaço na barra, empurre algumas dessas funções para o notch. O NotchNest coloca calendário, área de transferência, notas, Pomodoro, música e AirDrop num painel ao passar o cursor à volta do notch — assim pode remover vários apps de barra de menus e libertar a barra por completo.</p>
+    <div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>Torne o seu notch útil</h3><p>O NotchNest coloca dez ferramentas no notch do seu MacBook. Gratuito na Mac App Store.</p></div>
+      <a href="%STORE%" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="Descarregar na Mac App Store" /></a>
+    </div>
+    <h2>Checklist rápida</h2>
+    <ul>
+      <li>Command + arraste para remover ícones que não usa.</li>
+      <li>Centro de Controlo → esconda ícones da Apple de que não precisa.</li>
+      <li>Instale Ice ou Bartender para recolher o resto.</li>
+      <li>Consolide ferramentas no notch com o NotchNest.</li>
+    </ul>""",
+              "related": _related("pt-PT", ("/learn/how-to-move-menu-bar-icons-on-mac/", "How to move menu bar icons on Mac", "Inglês — guia."))},
+    "es-MX": {"title": "¿Íconos de la barra de menús ocultos tras el notch? La solución — NotchNest", "description": "¿Los íconos de la barra de menús desaparecen tras el notch del MacBook? Aquí está por qué pasa y cuatro formas de recuperarlos todos.",
+              "og_title": "¿Íconos ocultos tras el notch?", "og_desc": "Por qué los íconos se ocultan tras el notch y cómo recuperarlos.",
+              "jsonld_headline": "¿Íconos de la barra de menús ocultos tras el notch? La solución", "jsonld_desc": "Por qué los íconos de la barra de menús se ocultan tras el notch y cuatro formas de recuperarlos.",
+              "kicker": KICK["fix"]["es-MX"], "h1": "¿Íconos de la barra de menús ocultos tras el notch? La solución",
+              "lede": "Cuando tienes demasiados íconos en la barra de menús, macOS oculta los que caerían tras el notch. Aquí está cómo recuperarlos todos.",
+              "readtime": READ5["es-MX"], "crumb_this": "Íconos tras el notch",
+              "faq": [("¿Por qué mis íconos de la barra de menús están ocultos tras el notch?", "macOS dibuja los íconos de la barra de menús desde la derecha. Al llegar al notch, los que caerían debajo se ocultan en lugar de dibujarse tras la cámara. Demasiados íconos o menús de app largos lo provocan."),
+                      ("¿Cómo recupero los íconos de la barra de menús de detrás del notch?", "Quita íconos innecesarios (Command + arrástralos fuera), oculta íconos de Apple en el Centro de Control, o usa un gestor de barra de menús como Ice o Bartender para recoger íconos y que ninguno choque con el notch."),
+                      ("¿Hay forma de ver los íconos ocultos bajo el notch?", "Apps como Ice y Bartender revelan íconos ocultos en una fila separada o popover. macOS por sí mismo no muestra íconos que caen bajo el notch."),
+                      ("¿NotchNest ayuda con el desborde de la barra de menús?", "Sí — al mover calendario, portapapeles, notas, música y AirDrop al notch, puedes quitar varias apps de barra de menús y liberar la barra.")],
+              "body": """<p>Es una queja común en MacBook Pro y Air: instalas unas apps y, de repente, íconos de la barra de menús desaparecen. No se fueron — macOS mete el desborde tras el notch cuando no hay espacio. Aquí cómo arreglarlo.</p>
+    <h2>Por qué pasa</h2>
+    <p>macOS acomoda los íconos de la barra de menús del borde derecho hacia la izquierda. Cuando la fila llega al notch, los íconos que quedarían debajo se ocultan en lugar de dibujarse tras el recorte de la cámara. Cuantos más íconos (y más anchos tus menús de app), más se cortan.</p>
+    <h2>Solución 1 — Quita íconos que no necesitas</h2>
+    <p>Mantén Command y arrastra los íconos no deseados fuera de la barra. Para íconos de Apple, ve a Configuración del Sistema → Centro de Control y pon elementos como Spotlight, Bluetooth o Batería en "No mostrar en la barra de menús".</p>
+    <h2>Solución 2 — Acorta los menús de app</h2>
+    <p>Las apps con títulos de menú largos (audio o diseño profesional) empujan los íconos más a la derecha. No hay ajuste para esto, pero cerrar apps con muchos menús que no usas libera espacio de inmediato.</p>
+    <h2>Solución 3 — Usa un gestor de barra de menús</h2>
+    <p>Apps gratis como Ice (código abierto) o Bartender recogen los íconos tras un chevron para que nunca choquen con el notch. Esta es la solución más confiable si de verdad necesitas muchos íconos. Mira nuestra guía de las mejores apps de barra de menús Mac.</p>
+    <h2>Solución 4 — Mueve el trabajo al notch</h2>
+    <p>En lugar de pelear por espacio en la barra, empuja algunas de esas funciones al notch. NotchNest pone calendario, portapapeles, notas, Pomodoro, música y AirDrop en un panel al pasar el cursor alrededor del notch — así puedes quitar varias apps de barra de menús y liberar la barra por completo.</p>
+    <div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>Haz útil tu notch</h3><p>NotchNest pone diez herramientas en el notch de tu MacBook. Gratis en el Mac App Store.</p></div>
+      <a href="%STORE%" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="Descargar en el Mac App Store" /></a>
+    </div>
+    <h2>Lista rápida</h2>
+    <ul>
+      <li>Command + arrastra para quitar íconos que no usas.</li>
+      <li>Centro de Control → oculta íconos de Apple que no necesitas.</li>
+      <li>Instala Ice o Bartender para recoger el resto.</li>
+      <li>Consolida herramientas en el notch con NotchNest.</li>
+    </ul>""",
+              "related": _related("es-MX", ("/learn/how-to-move-menu-bar-icons-on-mac/", "How to move menu bar icons on Mac", "Inglés — guía."))},
+}
+
+
 # ── notch-menu-bar-replacement ──────────────────────────────────────────────
 REPLACE = {
     "de": {"title": "Die Notch als Menüleisten-Ersatz nutzen — NotchNest", "description": "Kann die MacBook-Notch deine Menüleiste ersetzen? Wie ein Notch-Menüleisten-Ersatz funktioniert, was er kann und wo die Menüleiste weiterhin gewinnt.",
@@ -2561,4 +2805,5 @@ LEARN_ARTICLES = {
     "macbook-air-vs-pro-notch": _assemble(AIRPRO),
     "macos-tahoe-notch-features": _assemble(TAHOE),
     "notch-menu-bar-replacement": _assemble(REPLACE),
+    "menu-bar-icons-missing-behind-notch": _assemble(MISSING),
 }

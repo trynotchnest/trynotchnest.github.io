@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<title>Ícones da barra de menus sumindo atrás do notch? A correção — NotchNest</title>
+<meta name="description" content="Ícones da barra de menus desaparecendo atrás do notch do MacBook? Aqui está por que acontece e quatro formas de trazer todos de volta." />
+<link rel="canonical" href="https://notchnest.app/pt-br/learn/menu-bar-icons-missing-behind-notch/" />
+<meta name="robots" content="index,follow,max-image-preview:large" />
+<link rel="alternate" hreflang="en" href="https://notchnest.app/learn/menu-bar-icons-missing-behind-notch/" />
+<link rel="alternate" hreflang="en-us" href="https://notchnest.app/learn/menu-bar-icons-missing-behind-notch/" />
+<link rel="alternate" hreflang="en-gb" href="https://notchnest.app/learn/menu-bar-icons-missing-behind-notch/" />
+<link rel="alternate" hreflang="en-in" href="https://notchnest.app/learn/menu-bar-icons-missing-behind-notch/" />
+<link rel="alternate" hreflang="de" href="https://notchnest.app/de/learn/menu-bar-icons-missing-behind-notch/" />
+<link rel="alternate" hreflang="zh" href="https://notchnest.app/zh/learn/menu-bar-icons-missing-behind-notch/" />
+<link rel="alternate" hreflang="zh-cn" href="https://notchnest.app/zh/learn/menu-bar-icons-missing-behind-notch/" />
+<link rel="alternate" hreflang="ar" href="https://notchnest.app/ar/learn/menu-bar-icons-missing-behind-notch/" />
+<link rel="alternate" hreflang="fr" href="https://notchnest.app/fr/learn/menu-bar-icons-missing-behind-notch/" />
+<link rel="alternate" hreflang="pt-BR" href="https://notchnest.app/pt-br/learn/menu-bar-icons-missing-behind-notch/" />
+<link rel="alternate" hreflang="pt-PT" href="https://notchnest.app/pt-pt/learn/menu-bar-icons-missing-behind-notch/" />
+<link rel="alternate" hreflang="es-MX" href="https://notchnest.app/es-mx/learn/menu-bar-icons-missing-behind-notch/" />
+<link rel="alternate" hreflang="es-419" href="https://notchnest.app/es-mx/learn/menu-bar-icons-missing-behind-notch/" />
+<link rel="alternate" hreflang="x-default" href="https://notchnest.app/learn/menu-bar-icons-missing-behind-notch/" />
+<meta property="og:title" content="Ícones sumindo atrás do notch?" />
+<meta property="og:description" content="Por que os ícones somem atrás do notch e como trazê-los de volta." />
+<meta property="og:url" content="https://notchnest.app/pt-br/learn/menu-bar-icons-missing-behind-notch/" />
+<meta property="og:locale" content="pt_BR" />
+<meta property="og:type" content="article" />
+<meta property="og:image" content="https://notchnest.app/assets/og/menu-bar-icons-missing-behind-notch.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@codetard" />
+<meta name="twitter:creator" content="@codetard" />
+<link rel="stylesheet" href="/styles.css" />
+<link rel="apple-touch-icon" href="/assets/notchnest-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<meta name="theme-color" content="#000000" />
+<meta name="color-scheme" content="dark" />
+<script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org", "@type": "Article",
+    "headline": "Ícones da barra de menus sumindo atrás do notch? A correção",
+    "description": "Por que os ícones da barra de menus somem atrás do notch e quatro formas de trazê-los de volta.",
+    "image": "https://notchnest.app/assets/og/menu-bar-icons-missing-behind-notch.png",
+    "datePublished": "2026-06-10T00:00:00+00:00", "dateModified": "2026-06-13T00:00:00+00:00",
+    "inLanguage": "pt-BR",
+    "author": { "@type": "Person", "name": "Satnam Singh", "url": "https://silverseahog.com/", "jobTitle": "Swift Developer",
+      "sameAs": ["https://silverseahog.com/","https://twitter.com/codetard","https://github.com/29satnam","https://www.linkedin.com/in/satnam-singh-948348aa/","https://instagram.com/codetard"] },
+    "publisher": { "@type": "Organization", "name": "NotchNest", "logo": { "@type": "ImageObject", "url": "https://notchnest.app/assets/notchnest-icon.png" } },
+    "mainEntityOfPage": "https://notchnest.app/pt-br/learn/menu-bar-icons-missing-behind-notch/"
+  },
+  {
+    "@context": "https://schema.org", "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Início", "item": "https://notchnest.app/pt-br/" },
+      { "@type": "ListItem", "position": 2, "name": "Guias", "item": "https://notchnest.app/pt-br/learn/" },
+      { "@type": "ListItem", "position": 3, "name": "Ícones atrás do notch", "item": "https://notchnest.app/pt-br/learn/menu-bar-icons-missing-behind-notch/" }
+    ]
+  },
+  {
+    "@context": "https://schema.org", "@type": "FAQPage", "inLanguage": "pt-BR",
+    "mainEntity": [
+      { "@type": "Question", "name": "Por que meus ícones da barra de menus estão escondidos atrás do notch?", "acceptedAnswer": { "@type": "Answer", "text": "O macOS desenha os ícones da barra de menus a partir da direita. Ao chegar ao notch, os que cairiam embaixo são escondidos em vez de desenhados atrás da câmera. Ícones demais ou menus de app longos disparam isso." } },
+      { "@type": "Question", "name": "Como trago os ícones da barra de menus de volta de trás do notch?", "acceptedAnswer": { "@type": "Answer", "text": "Remova ícones desnecessários (Command + arraste para fora), esconda ícones da Apple na Central de Controle, ou use um gerenciador de barra de menus como Ice ou Bartender para recolher ícones para que nenhum colida com o notch." } },
+      { "@type": "Question", "name": "Há como ver os ícones escondidos sob o notch?", "acceptedAnswer": { "@type": "Answer", "text": "Apps como Ice e Bartender revelam ícones escondidos em uma linha separada ou popover. O próprio macOS não mostra ícones que caem sob o notch." } },
+      { "@type": "Question", "name": "O NotchNest ajuda com o excesso na barra de menus?", "acceptedAnswer": { "@type": "Answer", "text": "Sim — ao mover calendário, área de transferência, notas, música e AirDrop para o notch, você pode remover vários apps de barra de menus e liberar a barra." } }
+    ]
+  }
+]
+</script>
+</head>
+<body>
+<nav class="nn-nav"><div class="nn-nav-inner">
+  <a class="nn-brand" href="/pt-br/"><img class="nn-brand-mark" src="/assets/notchnest-icon.png" alt="" width="28" height="28"/><span>NotchNest</span></a>
+  <div class="nn-nav-links">
+    <a href="/learn/menu-bar-icons-missing-behind-notch/">EN</a>
+    <a href="/pt-br/learn/" class="nn-nav-keep">Guias</a>
+  </div>
+</div></nav>
+
+<main class="main-container"><div class="learn-wrap">
+  <div class="crumbs"><a href="/pt-br/">Início</a><span class="sep">/</span><a href="/pt-br/learn/">Guias</a><span class="sep">/</span><span>Ícones atrás do notch</span></div>
+
+  <header class="article-head">
+    <span class="article-kicker">Correção</span>
+    <h1 class="article-h1">Ícones da barra de menus sumindo atrás do notch? A correção</h1>
+    <p class="article-lede">Quando você tem ícones demais na barra de menus, o macOS esconde os que cairiam atrás do notch. Aqui está como trazer todos de volta.</p>
+    <div class="article-meta"><span>Atualizado em 13 de junho de 2026</span><span class="dot"></span><span>5 min de leitura</span><span class="dot"></span><span>Por Satnam Singh</span></div>
+  </header>
+
+  <article class="article-body">
+    <p>É uma queixa comum no MacBook Pro e Air: você instala alguns apps e, de repente, ícones da barra de menus somem. Eles não sumiram — o macOS enfia o excedente atrás do notch quando não há espaço. Veja como corrigir.</p>
+    <h2>Por que acontece</h2>
+    <p>O macOS dispõe os ícones da barra de menus da borda direita para a esquerda. Quando a fileira chega ao notch, os ícones que ficariam embaixo são escondidos em vez de desenhados atrás do recorte da câmera. Quanto mais ícones (e mais largos os seus menus de app), mais são cortados.</p>
+    <h2>Correção 1 — Remova ícones que você não precisa</h2>
+    <p>Segure Command e arraste os ícones indesejados para fora da barra. Para ícones da Apple, vá em Ajustes do Sistema → Central de Controle e defina itens como Spotlight, Bluetooth ou Bateria como "Não Mostrar na Barra de Menus".</p>
+    <h2>Correção 2 — Encurte os menus de app</h2>
+    <p>Apps com títulos de menu longos (áudio ou design profissional) empurram os ícones mais para a direita. Não há ajuste para isso, mas sair de apps cheios de menus que você não usa libera espaço na hora.</p>
+    <h2>Correção 3 — Use um gerenciador de barra de menus</h2>
+    <p>Apps grátis como Ice (código aberto) ou Bartender recolhem ícones atrás de um chevron para nunca colidirem com o notch. Essa é a correção mais confiável se você realmente precisa de muitos ícones. Veja nosso guia dos melhores apps de barra de menus Mac.</p>
+    <h2>Correção 4 — Mova o trabalho para o notch</h2>
+    <p>Em vez de brigar por espaço na barra, empurre algumas dessas funções para o notch. O NotchNest coloca calendário, área de transferência, notas, Pomodoro, música e AirDrop em um painel ao passar o cursor ao redor do notch — então você pode remover vários apps de barra de menus e liberar a barra por completo.</p>
+    <div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>Torne seu notch útil</h3><p>O NotchNest coloca dez ferramentas no notch do seu MacBook. Grátis na Mac App Store.</p></div>
+      <a href="https://apps.apple.com/br/app/notchnest-power-your-notch/id6747612321" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="Baixar na Mac App Store" /></a>
+    </div>
+    <h2>Checklist rápido</h2>
+    <ul>
+      <li>Command + arraste para remover ícones que não usa.</li>
+      <li>Central de Controle → esconda ícones da Apple que não precisa.</li>
+      <li>Instale Ice ou Bartender para recolher o resto.</li>
+      <li>Consolide ferramentas no notch com o NotchNest.</li>
+    </ul>
+
+    <aside class="author-bio">
+      <img class="author-avatar" src="https://github.com/29satnam.png" alt="Satnam Singh" width="56" height="56" loading="lazy" />
+      <div>
+        <h3>Sobre o autor</h3>
+        <p><strong>Satnam Singh</strong> é o desenvolvedor Swift por trás do NotchNest. Ele escreve sobre produtividade no macOS, IA no Apple Silicon e o ofício de apps indie. <a href="https://silverseahog.com/" target="_blank" rel="noopener">silverseahog.com</a> · <a href="https://twitter.com/codetard" target="_blank" rel="noopener nofollow">@codetard</a></p>
+      </div>
+    </aside>
+
+    <section class="related-section">
+      <h2>Continue lendo</h2>
+      <div class="related-grid">
+        <a class="related-card" href="/pt-br/learn/how-to-use-the-macbook-notch/"><h3>Usar o notch do MacBook</h3><p>Três passos para um notch útil.</p></a>
+        <a class="related-card" href="/pt-br/learn/best-macos-notch-apps/"><h3>Melhores apps de notch macOS</h3><p>Seleção 2026.</p></a>
+        <a class="related-card" href="/learn/how-to-move-menu-bar-icons-on-mac/"><h3>How to move menu bar icons on Mac</h3><p>Inglês — guia.</p></a>
+      </div>
+    </section>
+  </article>
+
+  <footer class="site-footer">
+    <div class="footer-bottom"><span>© <span id="yr"></span> NotchNest · Satnam Singh</span><div class="footer-lang"><a href="/learn/menu-bar-icons-missing-behind-notch/" hreflang="en">English</a><a href="/de/learn/menu-bar-icons-missing-behind-notch/" hreflang="de">Deutsch</a><a href="/zh/learn/menu-bar-icons-missing-behind-notch/" hreflang="zh">中文</a><a href="/ar/learn/menu-bar-icons-missing-behind-notch/" hreflang="ar">العربية</a><a href="/fr/learn/menu-bar-icons-missing-behind-notch/" hreflang="fr">Français</a><a href="/pt-br/learn/menu-bar-icons-missing-behind-notch/" hreflang="pt-BR" aria-current="page">Português (BR)</a><a href="/pt-pt/learn/menu-bar-icons-missing-behind-notch/" hreflang="pt-PT">Português (PT)</a><a href="/es-mx/learn/menu-bar-icons-missing-behind-notch/" hreflang="es-MX">Español (MX)</a></div></div>
+  </footer>
+</div></main>
+<script>var yr=document.getElementById('yr');if(yr)yr.textContent=new Date().getFullYear();</script>
+</body></html>
