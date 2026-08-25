@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<title>如何自定义 Mac 顶栏 — NotchNest</title>
+<meta name="description" content="自定义你 Mac 的顶栏——菜单栏图标、刘海和间距。无需黑客手段，实现真正 Mac 刘海自定义的最快路径。" />
+<link rel="canonical" href="https://notchnest.app/zh/learn/customize-top-bar-mac/" />
+<meta name="robots" content="index,follow,max-image-preview:large" />
+<link rel="alternate" hreflang="en" href="https://notchnest.app/learn/customize-top-bar-mac/" />
+<link rel="alternate" hreflang="en-us" href="https://notchnest.app/learn/customize-top-bar-mac/" />
+<link rel="alternate" hreflang="en-gb" href="https://notchnest.app/learn/customize-top-bar-mac/" />
+<link rel="alternate" hreflang="en-in" href="https://notchnest.app/learn/customize-top-bar-mac/" />
+<link rel="alternate" hreflang="de" href="https://notchnest.app/de/learn/customize-top-bar-mac/" />
+<link rel="alternate" hreflang="zh" href="https://notchnest.app/zh/learn/customize-top-bar-mac/" />
+<link rel="alternate" hreflang="zh-cn" href="https://notchnest.app/zh/learn/customize-top-bar-mac/" />
+<link rel="alternate" hreflang="ar" href="https://notchnest.app/ar/learn/customize-top-bar-mac/" />
+<link rel="alternate" hreflang="fr" href="https://notchnest.app/fr/learn/customize-top-bar-mac/" />
+<link rel="alternate" hreflang="pt-BR" href="https://notchnest.app/pt-br/learn/customize-top-bar-mac/" />
+<link rel="alternate" hreflang="pt-PT" href="https://notchnest.app/pt-pt/learn/customize-top-bar-mac/" />
+<link rel="alternate" hreflang="es-MX" href="https://notchnest.app/es-mx/learn/customize-top-bar-mac/" />
+<link rel="alternate" hreflang="es-419" href="https://notchnest.app/es-mx/learn/customize-top-bar-mac/" />
+<link rel="alternate" hreflang="x-default" href="https://notchnest.app/learn/customize-top-bar-mac/" />
+<meta property="og:title" content="如何自定义 Mac 顶栏" />
+<meta property="og:description" content="原生方式加一个应用，自定义菜单栏和刘海。" />
+<meta property="og:url" content="https://notchnest.app/zh/learn/customize-top-bar-mac/" />
+<meta property="og:locale" content="zh_CN" />
+<meta property="og:type" content="article" />
+<meta property="og:image" content="https://notchnest.app/assets/og/customize-top-bar-mac.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@codetard" />
+<meta name="twitter:creator" content="@codetard" />
+<link rel="stylesheet" href="/styles.css" />
+<link rel="apple-touch-icon" href="/assets/notchnest-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<meta name="theme-color" content="#000000" />
+<meta name="color-scheme" content="dark" />
+<script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org", "@type": "Article",
+    "headline": "如何自定义 Mac 顶栏",
+    "description": "如何在 Mac 上自定义菜单栏和刘海。",
+    "image": "https://notchnest.app/assets/og/customize-top-bar-mac.png",
+    "datePublished": "2026-06-10T00:00:00+00:00", "dateModified": "2026-06-13T00:00:00+00:00",
+    "inLanguage": "zh-Hans",
+    "author": { "@type": "Person", "name": "Satnam Singh", "url": "https://silverseahog.com/", "jobTitle": "Swift Developer",
+      "sameAs": ["https://silverseahog.com/","https://twitter.com/codetard","https://github.com/29satnam","https://www.linkedin.com/in/satnam-singh-948348aa/","https://instagram.com/codetard"] },
+    "publisher": { "@type": "Organization", "name": "NotchNest", "logo": { "@type": "ImageObject", "url": "https://notchnest.app/assets/notchnest-icon.png" } },
+    "mainEntityOfPage": "https://notchnest.app/zh/learn/customize-top-bar-mac/"
+  },
+  {
+    "@context": "https://schema.org", "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://notchnest.app/zh/" },
+      { "@type": "ListItem", "position": 2, "name": "学习", "item": "https://notchnest.app/zh/learn/" },
+      { "@type": "ListItem", "position": 3, "name": "自定义顶栏", "item": "https://notchnest.app/zh/learn/customize-top-bar-mac/" }
+    ]
+  },
+  {
+    "@context": "https://schema.org", "@type": "FAQPage", "inLanguage": "zh-Hans",
+    "mainEntity": [
+      { "@type": "Question", "name": "不用第三方应用能自定义 Mac 菜单栏吗？", "acceptedAnswer": { "@type": "Answer", "text": "部分可以。你能用 Command 拖拽重排图标、移除它们，并在 系统设置 → 控制中心 里切换系统图标。想要更深的控制——分组、隐藏或使用刘海——就需要一个应用。" } },
+      { "@type": "Question", "name": "什么是 Mac 刘海自定义？", "acceptedAnswer": { "@type": "Answer", "text": "就是把刘海区域从空白重新利用为可用的控制界面。NotchNest 之类的应用让你选择哪些组件出现在那里，以及悬停时如何表现。" } },
+      { "@type": "Question", "name": "我的菜单栏图标为什么藏在刘海后面？", "acceptedAnswer": { "@type": "Answer", "text": "macOS 从左到右排布图标，而刘海打断了这一行。图标多时，最左侧的可能被刘海裁切。移除或分组即可解决。" } },
+      { "@type": "Question", "name": "自定义顶栏可还原吗？", "acceptedAnswer": { "@type": "Answer", "text": "可以。每处更改——图标顺序、可见性、刘海组件——都能在几秒内还原，不触碰任何系统文件。" } }
+    ]
+  }
+]
+</script>
+</head>
+<body>
+<nav class="nn-nav"><div class="nn-nav-inner">
+  <a class="nn-brand" href="/zh/"><img class="nn-brand-mark" src="/assets/notchnest-icon.png" alt="" width="28" height="28"/><span>NotchNest</span></a>
+  <div class="nn-nav-links">
+    <a href="/learn/customize-top-bar-mac/">EN</a>
+    <a href="/zh/learn/" class="nn-nav-keep">学习</a>
+  </div>
+</div></nav>
+
+<main class="main-container"><div class="learn-wrap">
+  <div class="crumbs"><a href="/zh/">首页</a><span class="sep">/</span><a href="/zh/learn/">学习</a><span class="sep">/</span><span>自定义顶栏</span></div>
+
+  <header class="article-head">
+    <span class="article-kicker">指南</span>
+    <h1 class="article-h1">如何自定义 Mac 顶栏</h1>
+    <p class="article-lede">你 Mac 的顶栏比看上去更灵活。这里教你自定义菜单栏和刘海——用原生方式，以及一个包揽重活的应用。</p>
+    <div class="article-meta"><span>更新于 2026 年 6 月 13 日</span><span class="dot"></span><span>阅读 5 分钟</span><span class="dot"></span><span>作者 Satnam Singh</span></div>
+  </header>
+
+  <article class="article-body">
+    <p>Mac 上的“顶栏”是两样东西：横贯屏幕顶部的菜单栏，以及在现代 MacBook 上位于其中间的刘海。自定义顶栏意味着掌控两者。方法如下。</p>
+    <h2>重排与移除菜单栏图标</h2>
+    <p>按住 Command 拖拽任意菜单栏图标以重排，或拖出栏外以移除。系统图标（Wi-Fi、电池、控制中心）在 系统设置 → 控制中心 管理，可选“在菜单栏中显示”“活动时显示”或“不显示”。</p>
+    <h2>隐藏溢出图标</h2>
+    <p>在拥挤的菜单栏上，图标可能消失在刘海后面。通过隐藏很少用的图标来减少杂乱，或用菜单栏管理器把它们折叠成一个可展开的组。</p>
+    <h2>Mac 刘海自定义——多数人错过的部分</h2>
+    <p>刘海默认是死区。真正的 Mac 刘海自定义把它变成控制界面。NotchNest 让你精确决定哪些组件住在刘海里——日历、AI 剪贴板、快速笔记、番茄钟、音乐、文件拖放、摄像头镜像——并在你悬停前将其隐藏。这是可用的最大顶栏升级，因为它给了你屏幕上最显眼的部分一份真正的工作。</p>
+    <h2>调节间距与密度</h2>
+    <p>菜单栏间距由 macOS 固定，但主观的杂乱感并非如此。更少的常亮图标加上一个有用的刘海，会让整条顶栏显得刻意而非拥挤。安装前试试交互式刘海演示来预览布局。</p>
+    <div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>让你的刘海有用</h3><p>NotchNest 把十个工具放进 MacBook 刘海。在 Mac App Store 免费。</p></div>
+      <a href="https://apps.apple.com/cn/app/notchnest-power-your-notch/id6747612321" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="在 Mac App Store 下载" /></a>
+    </div>
+
+    <aside class="author-bio">
+      <img class="author-avatar" src="https://github.com/29satnam.png" alt="Satnam Singh" width="56" height="56" loading="lazy" />
+      <div>
+        <h3>关于作者</h3>
+        <p><strong>Satnam Singh</strong> 是 NotchNest 背后的 Swift 开发者。他撰写关于 macOS 生产力、Apple 芯片上的 AI 以及独立应用工艺的文章。<a href="https://silverseahog.com/" target="_blank" rel="noopener">silverseahog.com</a> · <a href="https://twitter.com/codetard" target="_blank" rel="noopener nofollow">@codetard</a></p>
+      </div>
+    </aside>
+
+    <section class="related-section">
+      <h2>继续阅读</h2>
+      <div class="related-grid">
+        <a class="related-card" href="/zh/learn/how-to-use-the-macbook-notch/"><h3>使用 MacBook 刘海</h3><p>三步让刘海有用。</p></a>
+        <a class="related-card" href="/zh/learn/best-macos-notch-apps/"><h3>最佳 macOS 刘海应用</h3><p>2026 盘点。</p></a>
+        <a class="related-card" href="/learn/how-to-customise-macos-menu-bar/"><h3>How to customise the macOS menu bar</h3><p>英文——指南。</p></a>
+      </div>
+    </section>
+  </article>
+
+  <footer class="site-footer">
+    <div class="footer-bottom"><span>© <span id="yr"></span> NotchNest · Satnam Singh</span><div class="footer-lang"><a href="/learn/customize-top-bar-mac/" hreflang="en">English</a><a href="/de/learn/customize-top-bar-mac/" hreflang="de">Deutsch</a><a href="/zh/learn/customize-top-bar-mac/" hreflang="zh" aria-current="page">中文</a><a href="/ar/learn/customize-top-bar-mac/" hreflang="ar">العربية</a><a href="/fr/learn/customize-top-bar-mac/" hreflang="fr">Français</a><a href="/pt-br/learn/customize-top-bar-mac/" hreflang="pt-BR">Português (BR)</a><a href="/pt-pt/learn/customize-top-bar-mac/" hreflang="pt-PT">Português (PT)</a><a href="/es-mx/learn/customize-top-bar-mac/" hreflang="es-MX">Español (MX)</a></div></div>
+  </footer>
+</div></main>
+<script>var yr=document.getElementById('yr');if(yr)yr.textContent=new Date().getFullYear();</script>
+</body></html>

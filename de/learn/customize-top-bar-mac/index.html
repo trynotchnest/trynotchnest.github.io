@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<title>Die obere Leiste auf dem Mac anpassen — NotchNest</title>
+<meta name="description" content="Passe die obere Leiste deines Macs an — Menüleisten-Icons, die Notch und Abstände. Der schnellste Weg zu echter Mac-Notch-Anpassung ohne Hacks." />
+<link rel="canonical" href="https://notchnest.app/de/learn/customize-top-bar-mac/" />
+<meta name="robots" content="index,follow,max-image-preview:large" />
+<link rel="alternate" hreflang="en" href="https://notchnest.app/learn/customize-top-bar-mac/" />
+<link rel="alternate" hreflang="en-us" href="https://notchnest.app/learn/customize-top-bar-mac/" />
+<link rel="alternate" hreflang="en-gb" href="https://notchnest.app/learn/customize-top-bar-mac/" />
+<link rel="alternate" hreflang="en-in" href="https://notchnest.app/learn/customize-top-bar-mac/" />
+<link rel="alternate" hreflang="de" href="https://notchnest.app/de/learn/customize-top-bar-mac/" />
+<link rel="alternate" hreflang="zh" href="https://notchnest.app/zh/learn/customize-top-bar-mac/" />
+<link rel="alternate" hreflang="zh-cn" href="https://notchnest.app/zh/learn/customize-top-bar-mac/" />
+<link rel="alternate" hreflang="ar" href="https://notchnest.app/ar/learn/customize-top-bar-mac/" />
+<link rel="alternate" hreflang="fr" href="https://notchnest.app/fr/learn/customize-top-bar-mac/" />
+<link rel="alternate" hreflang="pt-BR" href="https://notchnest.app/pt-br/learn/customize-top-bar-mac/" />
+<link rel="alternate" hreflang="pt-PT" href="https://notchnest.app/pt-pt/learn/customize-top-bar-mac/" />
+<link rel="alternate" hreflang="es-MX" href="https://notchnest.app/es-mx/learn/customize-top-bar-mac/" />
+<link rel="alternate" hreflang="es-419" href="https://notchnest.app/es-mx/learn/customize-top-bar-mac/" />
+<link rel="alternate" hreflang="x-default" href="https://notchnest.app/learn/customize-top-bar-mac/" />
+<meta property="og:title" content="Die obere Leiste auf dem Mac anpassen" />
+<meta property="og:description" content="Menüleiste und Notch anpassen — nativ und mit einer App." />
+<meta property="og:url" content="https://notchnest.app/de/learn/customize-top-bar-mac/" />
+<meta property="og:locale" content="de_DE" />
+<meta property="og:type" content="article" />
+<meta property="og:image" content="https://notchnest.app/assets/og/customize-top-bar-mac.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@codetard" />
+<meta name="twitter:creator" content="@codetard" />
+<link rel="stylesheet" href="/styles.css" />
+<link rel="apple-touch-icon" href="/assets/notchnest-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<meta name="theme-color" content="#000000" />
+<meta name="color-scheme" content="dark" />
+<script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org", "@type": "Article",
+    "headline": "Die obere Leiste auf dem Mac anpassen",
+    "description": "Wie man die Menüleiste und die Notch auf dem Mac anpasst.",
+    "image": "https://notchnest.app/assets/og/customize-top-bar-mac.png",
+    "datePublished": "2026-06-10T00:00:00+00:00", "dateModified": "2026-06-13T00:00:00+00:00",
+    "inLanguage": "de",
+    "author": { "@type": "Person", "name": "Satnam Singh", "url": "https://silverseahog.com/", "jobTitle": "Swift Developer",
+      "sameAs": ["https://silverseahog.com/","https://twitter.com/codetard","https://github.com/29satnam","https://www.linkedin.com/in/satnam-singh-948348aa/","https://instagram.com/codetard"] },
+    "publisher": { "@type": "Organization", "name": "NotchNest", "logo": { "@type": "ImageObject", "url": "https://notchnest.app/assets/notchnest-icon.png" } },
+    "mainEntityOfPage": "https://notchnest.app/de/learn/customize-top-bar-mac/"
+  },
+  {
+    "@context": "https://schema.org", "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Start", "item": "https://notchnest.app/de/" },
+      { "@type": "ListItem", "position": 2, "name": "Lernen", "item": "https://notchnest.app/de/learn/" },
+      { "@type": "ListItem", "position": 3, "name": "Obere Leiste anpassen", "item": "https://notchnest.app/de/learn/customize-top-bar-mac/" }
+    ]
+  },
+  {
+    "@context": "https://schema.org", "@type": "FAQPage", "inLanguage": "de",
+    "mainEntity": [
+      { "@type": "Question", "name": "Kann man die Mac-Menüleiste ohne Drittanbieter-Apps anpassen?", "acceptedAnswer": { "@type": "Answer", "text": "Teilweise. Du kannst Icons per Command-Ziehen umordnen, entfernen und Systemicons in Systemeinstellungen → Kontrollzentrum umschalten. Für tiefere Kontrolle — Gruppieren, Verstecken oder die Notch nutzen — brauchst du eine App." } },
+      { "@type": "Question", "name": "Was ist Mac-Notch-Anpassung?", "acceptedAnswer": { "@type": "Answer", "text": "Es ist die Umnutzung des Notch-Bereichs von leerem Raum in eine nutzbare Steueroberfläche. Apps wie NotchNest lassen dich wählen, welche Widgets dort erscheinen und wie sie beim Hover reagieren." } },
+      { "@type": "Question", "name": "Warum verstecken sich meine Menüleisten-Icons hinter der Notch?", "acceptedAnswer": { "@type": "Answer", "text": "macOS ordnet Icons von links nach rechts an, und die Notch unterbricht diese Reihe. Bei vielen Icons können die linkesten von der Notch abgeschnitten werden. Entfernen oder Gruppieren behebt das." } },
+      { "@type": "Question", "name": "Ist das Anpassen der oberen Leiste umkehrbar?", "acceptedAnswer": { "@type": "Answer", "text": "Ja. Jede Änderung — Icon-Reihenfolge, Sichtbarkeit, Notch-Widgets — ist in Sekunden umkehrbar, ohne dass Systemdateien angefasst werden." } }
+    ]
+  }
+]
+</script>
+</head>
+<body>
+<nav class="nn-nav"><div class="nn-nav-inner">
+  <a class="nn-brand" href="/de/"><img class="nn-brand-mark" src="/assets/notchnest-icon.png" alt="" width="28" height="28"/><span>NotchNest</span></a>
+  <div class="nn-nav-links">
+    <a href="/learn/customize-top-bar-mac/">EN</a>
+    <a href="/de/learn/" class="nn-nav-keep">Lernen</a>
+  </div>
+</div></nav>
+
+<main class="main-container"><div class="learn-wrap">
+  <div class="crumbs"><a href="/de/">Start</a><span class="sep">/</span><a href="/de/learn/">Lernen</a><span class="sep">/</span><span>Obere Leiste anpassen</span></div>
+
+  <header class="article-head">
+    <span class="article-kicker">Anleitung</span>
+    <h1 class="article-h1">Die obere Leiste auf dem Mac anpassen</h1>
+    <p class="article-lede">Die obere Leiste deines Macs ist flexibler, als sie aussieht. So passt du Menüleiste und Notch an — nativ und mit einer App, die die Hauptarbeit übernimmt.</p>
+    <div class="article-meta"><span>Aktualisiert 13. Juni 2026</span><span class="dot"></span><span>5 Min. Lesedauer</span><span class="dot"></span><span>Von Satnam Singh</span></div>
+  </header>
+
+  <article class="article-body">
+    <p>Die obere Leiste auf einem Mac ist zweierlei: die Menüleiste quer über den Bildschirm und die Notch, die auf modernen MacBooks mittendrin sitzt. Die obere Leiste anzupassen heißt, beide in den Griff zu bekommen. So geht's.</p>
+    <h2>Menüleisten-Icons umordnen und entfernen</h2>
+    <p>Halte Command und zieh ein Icon zum Umordnen, oder aus der Leiste zum Entfernen. Systemicons (WLAN, Batterie, Kontrollzentrum) verwaltest du in Systemeinstellungen → Kontrollzentrum, wo du In Menüleiste anzeigen, Bei Aktivität anzeigen oder Nicht anzeigen wählst.</p>
+    <h2>Überlauf-Icons verstecken</h2>
+    <p>Bei voller Menüleiste können Icons hinter der Notch verschwinden. Reduziere Unordnung, indem du selten genutzte versteckst, oder nutze einen Menüleisten-Manager, um sie in eine einzige ausklappbare Gruppe zu falten.</p>
+    <h2>Mac-Notch-Anpassung — der Teil, den die meisten übersehen</h2>
+    <p>Die Notch ist standardmäßig toter Raum. Echte Mac-Notch-Anpassung macht sie zur Steueroberfläche. NotchNest lässt dich genau entscheiden, welche Widgets in der Notch leben — Kalender, KI-Zwischenablage, Schnellnotizen, Pomodoro, Musik, Dateidrop, Kamera-Spiegel — und versteckt sie, bis du hoverst. Das ist das größte Upgrade der oberen Leiste, weil es dem prominentesten Teil deines Bildschirms eine echte Aufgabe gibt.</p>
+    <h2>Abstand und Dichte justieren</h2>
+    <p>Der Menüleisten-Abstand ist von macOS fix, aber die gefühlte Unordnung nicht. Weniger Dauer-Icons plus eine nützliche Notch lassen die ganze obere Leiste bewusst statt überladen wirken. Probier den interaktiven Notch-Playground, um das Layout vor der Installation zu sehen.</p>
+    <div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>Mach deine Notch nützlich</h3><p>NotchNest bringt zehn Tools in die Notch deines MacBooks. Kostenlos im Mac App Store.</p></div>
+      <a href="https://apps.apple.com/de/app/notchnest-power-your-notch/id6747612321" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="Im Mac App Store laden" /></a>
+    </div>
+
+    <aside class="author-bio">
+      <img class="author-avatar" src="https://github.com/29satnam.png" alt="Satnam Singh" width="56" height="56" loading="lazy" />
+      <div>
+        <h3>Über den Autor</h3>
+        <p><strong>Satnam Singh</strong> ist der Swift-Entwickler hinter NotchNest. Er schreibt über macOS-Produktivität, KI auf Apple Silicon und Indie-App-Handwerk. <a href="https://silverseahog.com/" target="_blank" rel="noopener">silverseahog.com</a> · <a href="https://twitter.com/codetard" target="_blank" rel="noopener nofollow">@codetard</a></p>
+      </div>
+    </aside>
+
+    <section class="related-section">
+      <h2>Weiterlesen</h2>
+      <div class="related-grid">
+        <a class="related-card" href="/de/learn/how-to-use-the-macbook-notch/"><h3>MacBook-Notch nutzen</h3><p>Drei Schritte zur nützlichen Notch.</p></a>
+        <a class="related-card" href="/de/learn/best-macos-notch-apps/"><h3>Beste macOS-Notch-Apps</h3><p>Übersicht 2026.</p></a>
+        <a class="related-card" href="/learn/how-to-customise-macos-menu-bar/"><h3>How to customise the macOS menu bar</h3><p>Englisch — Leitfaden.</p></a>
+      </div>
+    </section>
+  </article>
+
+  <footer class="site-footer">
+    <div class="footer-bottom"><span>© <span id="yr"></span> NotchNest · Satnam Singh</span><div class="footer-lang"><a href="/learn/customize-top-bar-mac/" hreflang="en">English</a><a href="/de/learn/customize-top-bar-mac/" hreflang="de" aria-current="page">Deutsch</a><a href="/zh/learn/customize-top-bar-mac/" hreflang="zh">中文</a><a href="/ar/learn/customize-top-bar-mac/" hreflang="ar">العربية</a><a href="/fr/learn/customize-top-bar-mac/" hreflang="fr">Français</a><a href="/pt-br/learn/customize-top-bar-mac/" hreflang="pt-BR">Português (BR)</a><a href="/pt-pt/learn/customize-top-bar-mac/" hreflang="pt-PT">Português (PT)</a><a href="/es-mx/learn/customize-top-bar-mac/" hreflang="es-MX">Español (MX)</a></div></div>
+  </footer>
+</div></main>
+<script>var yr=document.getElementById('yr');if(yr)yr.textContent=new Date().getFullYear();</script>
+</body></html>

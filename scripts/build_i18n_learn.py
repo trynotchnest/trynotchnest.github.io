@@ -1712,6 +1712,186 @@ DROP = {
 }
 
 
+# ── customize-top-bar-mac ───────────────────────────────────────────────────
+TOPBAR = {
+    "de": {"title": "Die obere Leiste auf dem Mac anpassen — NotchNest", "description": "Passe die obere Leiste deines Macs an — Menüleisten-Icons, die Notch und Abstände. Der schnellste Weg zu echter Mac-Notch-Anpassung ohne Hacks.",
+           "og_title": "Die obere Leiste auf dem Mac anpassen", "og_desc": "Menüleiste und Notch anpassen — nativ und mit einer App.",
+           "jsonld_headline": "Die obere Leiste auf dem Mac anpassen", "jsonld_desc": "Wie man die Menüleiste und die Notch auf dem Mac anpasst.",
+           "kicker": KICK["guide"]["de"], "h1": "Die obere Leiste auf dem Mac anpassen",
+           "lede": "Die obere Leiste deines Macs ist flexibler, als sie aussieht. So passt du Menüleiste und Notch an — nativ und mit einer App, die die Hauptarbeit übernimmt.",
+           "readtime": READ5["de"], "crumb_this": "Obere Leiste anpassen",
+           "faq": [("Kann man die Mac-Menüleiste ohne Drittanbieter-Apps anpassen?", "Teilweise. Du kannst Icons per Command-Ziehen umordnen, entfernen und Systemicons in Systemeinstellungen → Kontrollzentrum umschalten. Für tiefere Kontrolle — Gruppieren, Verstecken oder die Notch nutzen — brauchst du eine App."),
+                   ("Was ist Mac-Notch-Anpassung?", "Es ist die Umnutzung des Notch-Bereichs von leerem Raum in eine nutzbare Steueroberfläche. Apps wie NotchNest lassen dich wählen, welche Widgets dort erscheinen und wie sie beim Hover reagieren."),
+                   ("Warum verstecken sich meine Menüleisten-Icons hinter der Notch?", "macOS ordnet Icons von links nach rechts an, und die Notch unterbricht diese Reihe. Bei vielen Icons können die linkesten von der Notch abgeschnitten werden. Entfernen oder Gruppieren behebt das."),
+                   ("Ist das Anpassen der oberen Leiste umkehrbar?", "Ja. Jede Änderung — Icon-Reihenfolge, Sichtbarkeit, Notch-Widgets — ist in Sekunden umkehrbar, ohne dass Systemdateien angefasst werden.")],
+           "body": """<p>Die obere Leiste auf einem Mac ist zweierlei: die Menüleiste quer über den Bildschirm und die Notch, die auf modernen MacBooks mittendrin sitzt. Die obere Leiste anzupassen heißt, beide in den Griff zu bekommen. So geht's.</p>
+    <h2>Menüleisten-Icons umordnen und entfernen</h2>
+    <p>Halte Command und zieh ein Icon zum Umordnen, oder aus der Leiste zum Entfernen. Systemicons (WLAN, Batterie, Kontrollzentrum) verwaltest du in Systemeinstellungen → Kontrollzentrum, wo du In Menüleiste anzeigen, Bei Aktivität anzeigen oder Nicht anzeigen wählst.</p>
+    <h2>Überlauf-Icons verstecken</h2>
+    <p>Bei voller Menüleiste können Icons hinter der Notch verschwinden. Reduziere Unordnung, indem du selten genutzte versteckst, oder nutze einen Menüleisten-Manager, um sie in eine einzige ausklappbare Gruppe zu falten.</p>
+    <h2>Mac-Notch-Anpassung — der Teil, den die meisten übersehen</h2>
+    <p>Die Notch ist standardmäßig toter Raum. Echte Mac-Notch-Anpassung macht sie zur Steueroberfläche. NotchNest lässt dich genau entscheiden, welche Widgets in der Notch leben — Kalender, KI-Zwischenablage, Schnellnotizen, Pomodoro, Musik, Dateidrop, Kamera-Spiegel — und versteckt sie, bis du hoverst. Das ist das größte Upgrade der oberen Leiste, weil es dem prominentesten Teil deines Bildschirms eine echte Aufgabe gibt.</p>
+    <h2>Abstand und Dichte justieren</h2>
+    <p>Der Menüleisten-Abstand ist von macOS fix, aber die gefühlte Unordnung nicht. Weniger Dauer-Icons plus eine nützliche Notch lassen die ganze obere Leiste bewusst statt überladen wirken. Probier den interaktiven Notch-Playground, um das Layout vor der Installation zu sehen.</p>
+    <div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>Mach deine Notch nützlich</h3><p>NotchNest bringt zehn Tools in die Notch deines MacBooks. Kostenlos im Mac App Store.</p></div>
+      <a href="%STORE%" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="Im Mac App Store laden" /></a>
+    </div>""",
+           "related": _related("de", ("/learn/how-to-customise-macos-menu-bar/", "How to customise the macOS menu bar", "Englisch — Leitfaden."))},
+    "zh": {"title": "如何自定义 Mac 顶栏 — NotchNest", "description": "自定义你 Mac 的顶栏——菜单栏图标、刘海和间距。无需黑客手段，实现真正 Mac 刘海自定义的最快路径。",
+           "og_title": "如何自定义 Mac 顶栏", "og_desc": "原生方式加一个应用，自定义菜单栏和刘海。",
+           "jsonld_headline": "如何自定义 Mac 顶栏", "jsonld_desc": "如何在 Mac 上自定义菜单栏和刘海。",
+           "kicker": KICK["guide"]["zh"], "h1": "如何自定义 Mac 顶栏",
+           "lede": "你 Mac 的顶栏比看上去更灵活。这里教你自定义菜单栏和刘海——用原生方式，以及一个包揽重活的应用。",
+           "readtime": READ5["zh"], "crumb_this": "自定义顶栏",
+           "faq": [("不用第三方应用能自定义 Mac 菜单栏吗？", "部分可以。你能用 Command 拖拽重排图标、移除它们，并在 系统设置 → 控制中心 里切换系统图标。想要更深的控制——分组、隐藏或使用刘海——就需要一个应用。"),
+                   ("什么是 Mac 刘海自定义？", "就是把刘海区域从空白重新利用为可用的控制界面。NotchNest 之类的应用让你选择哪些组件出现在那里，以及悬停时如何表现。"),
+                   ("我的菜单栏图标为什么藏在刘海后面？", "macOS 从左到右排布图标，而刘海打断了这一行。图标多时，最左侧的可能被刘海裁切。移除或分组即可解决。"),
+                   ("自定义顶栏可还原吗？", "可以。每处更改——图标顺序、可见性、刘海组件——都能在几秒内还原，不触碰任何系统文件。")],
+           "body": """<p>Mac 上的“顶栏”是两样东西：横贯屏幕顶部的菜单栏，以及在现代 MacBook 上位于其中间的刘海。自定义顶栏意味着掌控两者。方法如下。</p>
+    <h2>重排与移除菜单栏图标</h2>
+    <p>按住 Command 拖拽任意菜单栏图标以重排，或拖出栏外以移除。系统图标（Wi-Fi、电池、控制中心）在 系统设置 → 控制中心 管理，可选“在菜单栏中显示”“活动时显示”或“不显示”。</p>
+    <h2>隐藏溢出图标</h2>
+    <p>在拥挤的菜单栏上，图标可能消失在刘海后面。通过隐藏很少用的图标来减少杂乱，或用菜单栏管理器把它们折叠成一个可展开的组。</p>
+    <h2>Mac 刘海自定义——多数人错过的部分</h2>
+    <p>刘海默认是死区。真正的 Mac 刘海自定义把它变成控制界面。NotchNest 让你精确决定哪些组件住在刘海里——日历、AI 剪贴板、快速笔记、番茄钟、音乐、文件拖放、摄像头镜像——并在你悬停前将其隐藏。这是可用的最大顶栏升级，因为它给了你屏幕上最显眼的部分一份真正的工作。</p>
+    <h2>调节间距与密度</h2>
+    <p>菜单栏间距由 macOS 固定，但主观的杂乱感并非如此。更少的常亮图标加上一个有用的刘海，会让整条顶栏显得刻意而非拥挤。安装前试试交互式刘海演示来预览布局。</p>
+    <div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>让你的刘海有用</h3><p>NotchNest 把十个工具放进 MacBook 刘海。在 Mac App Store 免费。</p></div>
+      <a href="%STORE%" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="在 Mac App Store 下载" /></a>
+    </div>""",
+           "related": _related("zh", ("/learn/how-to-customise-macos-menu-bar/", "How to customise the macOS menu bar", "英文——指南。"))},
+    "ar": {"title": "كيفية تخصيص الشريط العلوي على الماك — NotchNest", "description": "خصّص الشريط العلوي في الماك — أيقونات شريط القوائم والنتش والتباعد. أسرع طريق إلى تخصيص نتش الماك الحقيقي دون حِيَل.",
+           "og_title": "كيفية تخصيص الشريط العلوي على الماك", "og_desc": "خصّص شريط القوائم والنتش — أصليًا وبتطبيق واحد.",
+           "jsonld_headline": "كيفية تخصيص الشريط العلوي على الماك", "jsonld_desc": "كيفية تخصيص شريط القوائم والنتش على الماك.",
+           "kicker": KICK["guide"]["ar"], "h1": "كيفية تخصيص الشريط العلوي على الماك",
+           "lede": "الشريط العلوي في ماكك أكثر مرونة مما يبدو. إليك كيف تخصّص شريط القوائم والنتش — أصليًا، وبتطبيق واحد يتولّى العمل الثقيل.",
+           "readtime": READ5["ar"], "crumb_this": "تخصيص الشريط العلوي",
+           "faq": [("هل يمكن تخصيص شريط قوائم الماك دون تطبيقات طرف ثالث؟", "جزئيًا. يمكنك إعادة ترتيب الأيقونات بسحب Command وإزالتها وتبديل أيقونات النظام في إعدادات النظام ← مركز التحكّم. وللتحكّم الأعمق — التجميع أو الإخفاء أو استخدام النتش — تحتاج تطبيقًا."),
+                   ("ما هو تخصيص نتش الماك؟", "هو إعادة استخدام منطقة النتش من مساحة فارغة إلى سطح تحكّم قابل للاستخدام. تطبيقات مثل NotchNest تتيح لك اختيار الأدوات التي تظهر هناك وكيف تتصرّف عند التمرير."),
+                   ("لماذا تختبئ أيقونات شريط قوائمي خلف النتش؟", "يرتّب macOS الأيقونات من اليسار إلى اليمين، والنتش يقطع ذلك الصف. مع كثرة الأيقونات قد تُقتطع أقصى اليسار بواسطة النتش. الإزالة أو التجميع يصلح ذلك."),
+                   ("هل تخصيص الشريط العلوي قابل للتراجع؟", "نعم. كل تغيير — ترتيب الأيقونات، الظهور، أدوات النتش — قابل للتراجع في ثوانٍ دون المساس بأي ملفات نظام.")],
+           "body": """<p>«الشريط العلوي» في الماك شيئان: شريط القوائم الممتد أعلى الشاشة، والنتش الذي يقع في منتصفه على أجهزة الماك بوك الحديثة. تخصيص الشريط العلوي يعني التحكّم بكليهما. إليك الطريقة.</p>
+    <h2>إعادة ترتيب أيقونات شريط القوائم وإزالتها</h2>
+    <p>اضغط Command واسحب أي أيقونة لإعادة ترتيبها، أو اسحبها خارج الشريط لإزالتها. تُدار أيقونات النظام (واي فاي، البطارية، مركز التحكّم) في إعدادات النظام ← مركز التحكّم، حيث تختار الإظهار في شريط القوائم أو الإظهار عند النشاط أو عدم الإظهار.</p>
+    <h2>إخفاء أيقونات الفائض</h2>
+    <p>على شريط قوائم مزدحم قد تختفي الأيقونات خلف النتش. قلّل الازدحام بإخفاء ما نادرًا ما تستخدمه، أو استخدم مدير شريط قوائم لطيّها في مجموعة واحدة قابلة للتوسّع.</p>
+    <h2>تخصيص نتش الماك — الجزء الذي يفوّته معظم الناس</h2>
+    <p>النتش مساحة ميتة افتراضيًا. تخصيص نتش الماك الحقيقي يجعله سطح تحكّم. يتيح لك NotchNest أن تقرّر بالضبط أي أدوات تعيش في النتش — تقويم وحافظة بالذكاء الاصطناعي وملاحظات سريعة وبومودورو وموسيقى وإفلات ملفات ومرآة كاميرا — ويخفيها حتى تمرّر. إنه أكبر ترقية متاحة للشريط العلوي، لأنه يمنح أبرز جزء من شاشتك مهمة حقيقية.</p>
+    <h2>ضبط التباعد والكثافة</h2>
+    <p>تباعد شريط القوائم ثابت من macOS، لكن الازدحام المُدرَك ليس كذلك. أيقونات دائمة أقل مع نتش مفيد يجعل الشريط العلوي كله يبدو متعمَّدًا لا مزدحمًا. جرّب عرض النتش التفاعلي لمعاينة التخطيط قبل التثبيت.</p>
+    <div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>اجعل نتشك مفيدًا</h3><p>يضع NotchNest عشر أدوات في نتش الماك بوك. مجانًا على Mac App Store.</p></div>
+      <a href="%STORE%" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="التنزيل من Mac App Store" /></a>
+    </div>""",
+           "related": _related("ar", ("/learn/how-to-customise-macos-menu-bar/", "How to customise the macOS menu bar", "إنجليزي — دليل."))},
+    "fr": {"title": "Comment personnaliser la barre du haut sur Mac — NotchNest", "description": "Personnalisez la barre du haut de votre Mac — icônes de la barre des menus, l'encoche et l'espacement. Le chemin le plus rapide vers une vraie personnalisation de l'encoche sans bidouille.",
+           "og_title": "Personnaliser la barre du haut sur Mac", "og_desc": "Personnalisez la barre des menus et l'encoche — nativement et avec une app.",
+           "jsonld_headline": "Comment personnaliser la barre du haut sur Mac", "jsonld_desc": "Comment personnaliser la barre des menus et l'encoche sur Mac.",
+           "kicker": KICK["guide"]["fr"], "h1": "Comment personnaliser la barre du haut sur Mac",
+           "lede": "La barre du haut de votre Mac est plus souple qu'elle n'y paraît. Voici comment personnaliser la barre des menus et l'encoche — nativement, et avec une app qui fait le gros du travail.",
+           "readtime": READ5["fr"], "crumb_this": "Personnaliser la barre du haut",
+           "faq": [("Peut-on personnaliser la barre des menus Mac sans apps tierces ?", "En partie. Vous pouvez réorganiser les icônes par Command + glisser, les retirer, et basculer les icônes système dans Réglages Système → Centre de contrôle. Pour un contrôle plus poussé — grouper, masquer ou utiliser l'encoche — il faut une app."),
+                   ("Qu'est-ce que la personnalisation de l'encoche Mac ?", "C'est reconvertir la zone de l'encoche d'un espace vide en une surface de contrôle utilisable. Des apps comme NotchNest vous laissent choisir quels widgets y apparaissent et comment ils réagissent au survol."),
+                   ("Pourquoi mes icônes de barre des menus se cachent-elles derrière l'encoche ?", "macOS dispose les icônes de gauche à droite et l'encoche interrompt cette rangée. Avec beaucoup d'icônes, les plus à gauche peuvent être coupées par l'encoche. Retirer ou grouper corrige ça."),
+                   ("La personnalisation de la barre du haut est-elle réversible ?", "Oui. Chaque changement — ordre des icônes, visibilité, widgets d'encoche — est réversible en quelques secondes, sans toucher aux fichiers système.")],
+           "body": """<p>La « barre du haut » sur un Mac, c'est deux choses : la barre des menus qui court en haut de l'écran, et l'encoche qui en occupe le milieu sur les MacBook modernes. Personnaliser la barre du haut, c'est prendre le contrôle des deux. Voici comment.</p>
+    <h2>Réorganiser et retirer les icônes de la barre des menus</h2>
+    <p>Maintenez Command et glissez une icône pour la réorganiser, ou hors de la barre pour la retirer. Les icônes système (Wi-Fi, batterie, Centre de contrôle) se gèrent dans Réglages Système → Centre de contrôle, où vous choisissez Afficher dans la barre des menus, Afficher si actif, ou Ne pas afficher.</p>
+    <h2>Masquer les icônes en débordement</h2>
+    <p>Sur une barre chargée, des icônes peuvent disparaître derrière l'encoche. Réduisez le désordre en masquant celles que vous utilisez rarement, ou utilisez un gestionnaire pour les replier en un seul groupe déployable.</p>
+    <h2>Personnalisation de l'encoche Mac — la partie que la plupart oublient</h2>
+    <p>L'encoche est un espace mort par défaut. Une vraie personnalisation de l'encoche Mac en fait une surface de contrôle. NotchNest vous laisse décider exactement quels widgets vivent dans l'encoche — calendrier, presse-papiers IA, notes rapides, Pomodoro, musique, dépôt de fichiers, miroir caméra — et les masque jusqu'au survol. C'est la plus grosse amélioration de barre du haut disponible, car elle donne un vrai rôle à la partie la plus visible de votre écran.</p>
+    <h2>Ajuster l'espacement et la densité</h2>
+    <p>L'espacement de la barre des menus est figé par macOS, mais le désordre perçu ne l'est pas. Moins d'icônes permanentes plus une encoche utile font paraître toute la barre du haut voulue plutôt qu'encombrée. Essayez le terrain de jeu interactif de l'encoche pour prévisualiser la disposition avant d'installer.</p>
+    <div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>Rendez votre encoche utile</h3><p>NotchNest met dix outils dans l'encoche de votre MacBook. Gratuit sur le Mac App Store.</p></div>
+      <a href="%STORE%" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="Télécharger sur le Mac App Store" /></a>
+    </div>""",
+           "related": _related("fr", ("/learn/how-to-customise-macos-menu-bar/", "How to customise the macOS menu bar", "Anglais — guide."))},
+    "pt-BR": {"title": "Como personalizar a barra superior no Mac — NotchNest", "description": "Personalize a barra superior do seu Mac — ícones da barra de menus, o notch e o espaçamento. O caminho mais rápido para uma verdadeira personalização do notch sem gambiarras.",
+              "og_title": "Como personalizar a barra superior no Mac", "og_desc": "Personalize a barra de menus e o notch — nativamente e com um app.",
+              "jsonld_headline": "Como personalizar a barra superior no Mac", "jsonld_desc": "Como personalizar a barra de menus e o notch no Mac.",
+              "kicker": KICK["guide"]["pt-BR"], "h1": "Como personalizar a barra superior no Mac",
+              "lede": "A barra superior do seu Mac é mais flexível do que parece. Veja como personalizar a barra de menus e o notch — nativamente e com um app que faz o trabalho pesado.",
+              "readtime": READ5["pt-BR"], "crumb_this": "Personalizar a barra superior",
+              "faq": [("Dá para personalizar a barra de menus do Mac sem apps de terceiros?", "Em parte. Você pode reordenar ícones com Command + arrastar, removê-los e alternar ícones do sistema em Ajustes do Sistema → Central de Controle. Para controle mais profundo — agrupar, esconder ou usar o notch — precisa de um app."),
+                      ("O que é personalização do notch no Mac?", "É reaproveitar a área do notch de espaço vazio para uma superfície de controle utilizável. Apps como o NotchNest deixam você escolher quais widgets aparecem lá e como se comportam ao passar o cursor."),
+                      ("Por que meus ícones da barra de menus se escondem atrás do notch?", "O macOS dispõe os ícones da esquerda para a direita e o notch interrompe essa fileira. Com muitos ícones, os mais à esquerda podem ser cortados pelo notch. Remover ou agrupar resolve."),
+                      ("Personalizar a barra superior é reversível?", "Sim. Toda mudança — ordem dos ícones, visibilidade, widgets do notch — é reversível em segundos, sem tocar em arquivos do sistema.")],
+              "body": """<p>A "barra superior" em um Mac é duas coisas: a barra de menus que atravessa o topo da tela e o notch que fica no meio dela nos MacBooks modernos. Personalizar a barra superior significa assumir o controle de ambos. Veja como.</p>
+    <h2>Reordenar e remover ícones da barra de menus</h2>
+    <p>Segure Command e arraste qualquer ícone para reordená-lo, ou para fora da barra para removê-lo. Ícones do sistema (Wi-Fi, bateria, Central de Controle) são gerenciados em Ajustes do Sistema → Central de Controle, onde você escolhe Mostrar na Barra de Menus, Mostrar Quando Ativo, ou Não Mostrar.</p>
+    <h2>Esconder ícones excedentes</h2>
+    <p>Em uma barra cheia, ícones podem desaparecer atrás do notch. Reduza a bagunça escondendo os que raramente usa, ou use um gerenciador de barra de menus para recolhê-los em um único grupo expansível.</p>
+    <h2>Personalização do notch no Mac — a parte que a maioria esquece</h2>
+    <p>O notch é espaço morto por padrão. A verdadeira personalização do notch o transforma em uma superfície de controle. O NotchNest deixa você decidir exatamente quais widgets vivem no notch — calendário, área de transferência com IA, notas rápidas, Pomodoro, música, soltar arquivos, espelho da câmera — e os esconde até você passar o cursor. É a maior melhoria de barra superior disponível, porque dá à parte mais proeminente da sua tela um trabalho de verdade.</p>
+    <h2>Ajustar espaçamento e densidade</h2>
+    <p>O espaçamento da barra de menus é fixo pelo macOS, mas a bagunça percebida não. Menos ícones fixos mais um notch útil fazem toda a barra superior parecer intencional em vez de lotada. Teste o playground interativo do notch para pré-visualizar o layout antes de instalar.</p>
+    <div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>Torne seu notch útil</h3><p>O NotchNest coloca dez ferramentas no notch do seu MacBook. Grátis na Mac App Store.</p></div>
+      <a href="%STORE%" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="Baixar na Mac App Store" /></a>
+    </div>""",
+              "related": _related("pt-BR", ("/learn/how-to-customise-macos-menu-bar/", "How to customise the macOS menu bar", "Inglês — guia."))},
+    "pt-PT": {"title": "Como personalizar a barra superior no Mac — NotchNest", "description": "Personalize a barra superior do seu Mac — ícones da barra de menus, o notch e o espaçamento. O caminho mais rápido para uma verdadeira personalização do notch sem truques.",
+              "og_title": "Como personalizar a barra superior no Mac", "og_desc": "Personalize a barra de menus e o notch — nativamente e com uma app.",
+              "jsonld_headline": "Como personalizar a barra superior no Mac", "jsonld_desc": "Como personalizar a barra de menus e o notch no Mac.",
+              "kicker": KICK["guide"]["pt-PT"], "h1": "Como personalizar a barra superior no Mac",
+              "lede": "A barra superior do seu Mac é mais flexível do que parece. Veja como personalizar a barra de menus e o notch — nativamente e com uma app que faz o trabalho pesado.",
+              "readtime": READ5["pt-PT"], "crumb_this": "Personalizar a barra superior",
+              "faq": [("Dá para personalizar a barra de menus do Mac sem apps de terceiros?", "Em parte. Pode reordenar ícones com Command + arrastar, removê-los e alternar ícones do sistema em Definições do Sistema → Centro de Controlo. Para controlo mais profundo — agrupar, esconder ou usar o notch — precisa de uma app."),
+                      ("O que é personalização do notch no Mac?", "É reaproveitar a área do notch de espaço vazio para uma superfície de controlo utilizável. Apps como o NotchNest deixam-no escolher que widgets aparecem lá e como se comportam ao passar o cursor."),
+                      ("Porque é que os meus ícones da barra de menus se escondem atrás do notch?", "O macOS dispõe os ícones da esquerda para a direita e o notch interrompe essa fila. Com muitos ícones, os mais à esquerda podem ser cortados pelo notch. Remover ou agrupar resolve."),
+                      ("Personalizar a barra superior é reversível?", "Sim. Toda a alteração — ordem dos ícones, visibilidade, widgets do notch — é reversível em segundos, sem tocar em ficheiros do sistema.")],
+              "body": """<p>A "barra superior" num Mac são duas coisas: a barra de menus que atravessa o topo do ecrã e o notch que fica no meio dela nos MacBooks modernos. Personalizar a barra superior significa assumir o controlo de ambos. Veja como.</p>
+    <h2>Reordenar e remover ícones da barra de menus</h2>
+    <p>Mantenha Command e arraste qualquer ícone para o reordenar, ou para fora da barra para o remover. Os ícones do sistema (Wi-Fi, bateria, Centro de Controlo) são geridos em Definições do Sistema → Centro de Controlo, onde escolhe Mostrar na Barra de Menus, Mostrar Quando Ativo, ou Não Mostrar.</p>
+    <h2>Esconder ícones excedentes</h2>
+    <p>Numa barra cheia, os ícones podem desaparecer atrás do notch. Reduza a confusão escondendo os que raramente usa, ou use um gestor de barra de menus para os recolher num único grupo expansível.</p>
+    <h2>Personalização do notch no Mac — a parte que a maioria esquece</h2>
+    <p>O notch é espaço morto por predefinição. A verdadeira personalização do notch transforma-o numa superfície de controlo. O NotchNest deixa-o decidir exatamente que widgets vivem no notch — calendário, área de transferência com IA, notas rápidas, Pomodoro, música, largar ficheiros, espelho da câmara — e esconde-os até passar o cursor. É a maior melhoria de barra superior disponível, porque dá à parte mais proeminente do seu ecrã um trabalho a sério.</p>
+    <h2>Ajustar espaçamento e densidade</h2>
+    <p>O espaçamento da barra de menus é fixo pelo macOS, mas a confusão percebida não. Menos ícones fixos mais um notch útil fazem toda a barra superior parecer intencional em vez de cheia. Experimente o playground interativo do notch para pré-visualizar o esquema antes de instalar.</p>
+    <div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>Torne o seu notch útil</h3><p>O NotchNest coloca dez ferramentas no notch do seu MacBook. Gratuito na Mac App Store.</p></div>
+      <a href="%STORE%" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="Descarregar na Mac App Store" /></a>
+    </div>""",
+              "related": _related("pt-PT", ("/learn/how-to-customise-macos-menu-bar/", "How to customise the macOS menu bar", "Inglês — guia."))},
+    "es-MX": {"title": "Cómo personalizar la barra superior en Mac — NotchNest", "description": "Personaliza la barra superior de tu Mac — íconos de la barra de menús, el notch y el espaciado. El camino más rápido a una verdadera personalización del notch sin trucos.",
+              "og_title": "Cómo personalizar la barra superior en Mac", "og_desc": "Personaliza la barra de menús y el notch — de forma nativa y con una app.",
+              "jsonld_headline": "Cómo personalizar la barra superior en Mac", "jsonld_desc": "Cómo personalizar la barra de menús y el notch en Mac.",
+              "kicker": KICK["guide"]["es-MX"], "h1": "Cómo personalizar la barra superior en Mac",
+              "lede": "La barra superior de tu Mac es más flexible de lo que parece. Aquí cómo personalizar la barra de menús y el notch — de forma nativa, y con una app que hace el trabajo pesado.",
+              "readtime": READ5["es-MX"], "crumb_this": "Personalizar la barra superior",
+              "faq": [("¿Se puede personalizar la barra de menús del Mac sin apps de terceros?", "En parte. Puedes reordenar íconos con Command + arrastrar, quitarlos y alternar íconos del sistema en Configuración del Sistema → Centro de Control. Para un control más profundo — agrupar, ocultar o usar el notch — necesitas una app."),
+                      ("¿Qué es la personalización del notch en Mac?", "Es reutilizar el área del notch, de espacio vacío a una superficie de control utilizable. Apps como NotchNest te dejan elegir qué widgets aparecen ahí y cómo se comportan al pasar el cursor."),
+                      ("¿Por qué mis íconos de la barra de menús se ocultan tras el notch?", "macOS acomoda los íconos de izquierda a derecha y el notch interrumpe esa fila. Con muchos íconos, los de más a la izquierda pueden ser recortados por el notch. Quitarlos o agruparlos lo arregla."),
+                      ("¿Personalizar la barra superior es reversible?", "Sí. Todo cambio — orden de íconos, visibilidad, widgets del notch — es reversible en segundos, sin tocar archivos del sistema.")],
+              "body": """<p>La "barra superior" en un Mac son dos cosas: la barra de menús que recorre la parte superior de la pantalla y el notch que ocupa su centro en los MacBooks modernos. Personalizar la barra superior significa tomar el control de ambos. Aquí cómo.</p>
+    <h2>Reordenar y quitar íconos de la barra de menús</h2>
+    <p>Mantén Command y arrastra cualquier ícono para reordenarlo, o fuera de la barra para quitarlo. Los íconos del sistema (Wi-Fi, batería, Centro de Control) se gestionan en Configuración del Sistema → Centro de Control, donde eliges Mostrar en la barra de menús, Mostrar cuando esté activo, o No mostrar.</p>
+    <h2>Ocultar íconos de desborde</h2>
+    <p>En una barra saturada, los íconos pueden desaparecer tras el notch. Reduce el desorden ocultando los que rara vez usas, o usa un gestor de barra de menús para recogerlos en un solo grupo expandible.</p>
+    <h2>Personalización del notch en Mac — la parte que la mayoría omite</h2>
+    <p>El notch es espacio muerto por defecto. La verdadera personalización del notch lo convierte en una superficie de control. NotchNest te deja decidir exactamente qué widgets viven en el notch — calendario, portapapeles con IA, notas rápidas, Pomodoro, música, soltar archivos, espejo de cámara — y los oculta hasta que pasas el cursor. Es la mayor mejora de barra superior disponible, porque le da a la parte más prominente de tu pantalla un trabajo de verdad.</p>
+    <h2>Ajustar espaciado y densidad</h2>
+    <p>El espaciado de la barra de menús es fijo por macOS, pero el desorden percibido no. Menos íconos fijos más un notch útil hacen que toda la barra superior se sienta deliberada en lugar de saturada. Prueba el playground interactivo del notch para previsualizar el diseño antes de instalar.</p>
+    <div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>Haz útil tu notch</h3><p>NotchNest pone diez herramientas en el notch de tu MacBook. Gratis en el Mac App Store.</p></div>
+      <a href="%STORE%" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="Descargar en el Mac App Store" /></a>
+    </div>""",
+              "related": _related("es-MX", ("/learn/how-to-customise-macos-menu-bar/", "How to customise the macOS menu bar", "Inglés — guía."))},
+}
+
+
 # ── how-to-move-menu-bar-icons-on-mac ───────────────────────────────────────
 MOVEICONS = {
     "de": {"title": "Menüleisten-Icons auf dem Mac verschieben — NotchNest", "description": "Menüleisten-Icons in macOS umordnen, neu anordnen und entfernen mit einem einfachen Command-Ziehen — plus Icons rund um die Notch verwalten.",
@@ -3008,4 +3188,5 @@ LEARN_ARTICLES = {
     "notch-menu-bar-replacement": _assemble(REPLACE),
     "menu-bar-icons-missing-behind-notch": _assemble(MISSING),
     "how-to-move-menu-bar-icons-on-mac": _assemble(MOVEICONS),
+    "customize-top-bar-mac": _assemble(TOPBAR),
 }
