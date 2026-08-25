@@ -1712,6 +1712,284 @@ DROP = {
 }
 
 
+# ── how-to-customise-macos-menu-bar ─────────────────────────────────────────
+MENUBAR = {
+    "de": {"title": "Wie man die macOS-Menüleiste anpasst — NotchNest", "description": "Menüleisten-Widgets in macOS umordnen, verstecken und hinzufügen. Schritt-für-Schritt-Anleitung zu Kontrollzentrum, Drittanbieter-Apps und Notch-Utilities.",
+           "og_title": "Wie man die macOS-Menüleiste anpasst", "og_desc": "Menüleiste umordnen, verstecken und erweitern — mit Einstellungen, Apps und der Notch.",
+           "jsonld_headline": "Wie man die macOS-Menüleiste anpasst", "jsonld_desc": "Praktische Anleitung zum Umordnen, Verstecken und Erweitern der macOS-Menüleiste.",
+           "kicker": KICK["guide"]["de"], "h1": "Wie man die macOS-Menüleiste anpasst",
+           "lede": "Eine praktische Anleitung zum Umordnen, Verstecken und Erweitern der macOS-Menüleiste — mit eingebauten Einstellungen, kostenlosen Apps und der Notch.",
+           "readtime": READ6["de"], "crumb_this": "macOS-Menüleiste anpassen",
+           "faq": [("Wie ordne ich macOS-Menüleisten-Icons um?", "Halte Command und zieh ein Icon nach links oder rechts. Uhr und Kontrollzentrum bleiben ganz rechts fixiert."),
+                   ("Wie verstecke ich Menüleisten-Icons?", "Zieh Drittanbieter-Icons mit Command aus der Leiste, oder schalte Apple-Icons in Systemeinstellungen → Kontrollzentrum um. Ein Manager wie Ice oder Bartender klappt den Rest ein."),
+                   ("Kann ich Widgets zur Menüleiste hinzufügen?", "Nativ nein, aber die Notch kann Widgets hosten — NotchNest bringt Kalender, Zwischenablage, Notizen, Pomodoro, Musik und AirDrop in ein Hover-Panel.")],
+           "body": """<p>Die macOS-Menüleiste ist der Streifen quer über deinen Bildschirm: Apple-Menü links, App-Menüs daneben, Systemicons und die Uhr rechts. Sie ist eines der ältesten Teile von macOS — und eines der wenigen, das du ohne Terminal noch komplett umformen kannst.</p>
+    <h2>1. Icons umordnen (kostenlos, 10 Sekunden)</h2>
+    <p>Halte Command und zieh ein Menüleisten-Icon nach links oder rechts. Das ist der ganze Trick. Er klappt bei WLAN, Bluetooth, Batterie, Ton, Now Playing, AirDrop, Fokus, Drittanbieter-Apps — alles außer Uhr und Kontrollzentrum, die ganz rechts fixiert sind. Die Reihenfolge bleibt über Neustarts erhalten.</p>
+    <h2>2. Eingebaute Icons ein-/ausblenden</h2>
+    <p>Öffne Systemeinstellungen → Kontrollzentrum. Jedes Modul hat drei Optionen: In Menüleiste anzeigen, Nicht in Menüleiste anzeigen, Nur bei Aktivität anzeigen (wo zutreffend).</p>
+    <ul>
+      <li>Batterie kann per „Prozent anzeigen" eine Prozentzahl zeigen.</li>
+      <li>Now Playing lässt sich auf „nur bei Wiedergabe" setzen.</li>
+      <li>Spotlight kann versteckt werden — Command-Leertaste funktioniert weiter.</li>
+      <li>Die Uhr kann Datum, Wochentag, Sekunden und AM/PM unter „Uhroptionen" zeigen.</li>
+    </ul>
+    <h2>3. Drittanbieter-Icons verstecken</h2>
+    <p>Gleicher Command-Ziehen-Trick: Zieh ein Icon aus der Menüleiste, und es verschwindet. Die App läuft weiter; nur das Icon ist weg. Zum Zurückholen öffne die App-Einstellungen und aktiviere dort das Menüleisten-Icon.</p>
+    <h2>4. Menüleisten-Manager (für volle Leisten)</h2>
+    <p>Bei zehn oder mehr Icons zahlt sich eine Organizer-App in gesparten Sekunden aus. Zwei solide Optionen: <strong>Ice</strong> — Open Source, kostenlos, klappt Icons hinter einem Chevron ein; <strong>Bartender</strong> — bezahlt, mit Triggern, Hotkeys und Suche. Auf einem 14"-MacBook-Pro hält ein Organizer Icons auch davon ab, hinter der Notch zu verschwinden.</p>
+    <div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>Erweitere die Menüleiste — in die Notch</h3><p>NotchNest bringt Kalender, KI-Zwischenablage, Schnellnotizen, Pomodoro, Musiksteuerung und AirDrop in den Notch-Bereich. Kostenlos im Mac App Store.</p></div>
+      <a href="%STORE%" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="Im Mac App Store laden" /></a>
+    </div>
+    <h2>5. Die Notch als zweite Menüleiste nutzen</h2>
+    <p>Hat dein Mac eine Notch — jedes MacBook Pro ab 2021 und jedes MacBook Air ab M2 — hast du eine ganze zweite Region, die du interaktiv machen kannst. macOS selbst tut nichts damit, aber NotchNest umhüllt sie mit einem hover-aktivierten Glass-Panel.</p>
+    <p>Hover die Notch, und das Panel klappt herunter: Kalender, KI-Zwischenablage, Schnellnotizen, Pomodoro, Spotify/Apple-Music-Steuerung, Drag-to-AirDrop, Datei-Tray und ein Ein-Tipp-Kamera-Spiegel. Jedes Widget lässt sich in den Einstellungen an-/abschalten. Das ist eine echte Menüleisten-Erweiterung — du nutzt Platz, der leer war.</p>
+    <h2>6. Die Uhr gestalten</h2>
+    <p>Systemeinstellungen → Kontrollzentrum → Uhroptionen. Du kannst Digital- oder Analoguhr, Wochentag, Datum, Sekunden und AM/PM oder 24-Stunden zeigen. Viele Power-User verstecken die Menüleisten-Uhr ganz und legen via NotchNest eine in die Notch.</p>
+    <h2>7. Menüleiste automatisch ausblenden</h2>
+    <p>Systemeinstellungen → Kontrollzentrum → Menüleiste automatisch aus- und einblenden. Setz auf „Immer", „Nur auf dem Schreibtisch" oder „Nur im Vollbild". Nützlich auf einem 13"-Air, wo jedes vertikale Pixel zählt.</p>
+    <h2>8. Alles zurücksetzen</h2>
+    <p>Hast du das Menüleisten-Layout durcheinandergebracht, beende jede App mit Icon und starte sie neu; die Standardposition kehrt zurück. Für Apple-Icons setz alle auf „In Menüleiste anzeigen", und die ursprüngliche Reihenfolge kehrt zurück.</p>""",
+           "related": _related("de", ("/learn/best-mac-menu-bar-apps/", "Best Mac menu bar apps", "Englisch — Übersicht."))},
+    "zh": {"title": "如何自定义 macOS 菜单栏 — NotchNest", "description": "在 macOS 中重排、隐藏并为菜单栏添加组件。分步指南，涵盖控制中心、第三方应用和刘海区工具。",
+           "og_title": "如何自定义 macOS 菜单栏", "og_desc": "用设置、应用和刘海重排、隐藏并扩展菜单栏。",
+           "jsonld_headline": "如何自定义 macOS 菜单栏", "jsonld_desc": "重排、隐藏并扩展 macOS 菜单栏的实用指南。",
+           "kicker": KICK["guide"]["zh"], "h1": "如何自定义 macOS 菜单栏",
+           "lede": "一份重排、隐藏并扩展 macOS 菜单栏的实用指南——用内建设置、免费第三方应用和刘海。",
+           "readtime": READ6["zh"], "crumb_this": "自定义 macOS 菜单栏",
+           "faq": [("如何重排 macOS 菜单栏图标？", "按住 Command 把图标向左或向右拖。时钟和控制中心固定在最右侧。"),
+                   ("如何隐藏菜单栏图标？", "按住 Command 把第三方图标拖出栏外，或在 系统设置 → 控制中心 切换 Apple 图标。Ice 或 Bartender 之类的管理器可折叠其余图标。"),
+                   ("我能给菜单栏添加组件吗？", "原生不行，但刘海可承载组件——NotchNest 把日历、剪贴板、笔记、番茄钟、音乐和 AirDrop 放进悬停面板。")],
+           "body": """<p>macOS 菜单栏是横贯屏幕顶部的那条：左侧苹果菜单，紧邻应用菜单，右侧系统图标和时钟。它是 macOS 最古老的部分之一——也是少数你仍能不用终端就彻底重塑的部分。</p>
+    <h2>1. 重排图标（免费，10 秒）</h2>
+    <p>按住 Command 把菜单栏图标向左或向右拖。全部诀窍就这些。它对 Wi-Fi、蓝牙、电池、声音、正在播放、AirDrop、专注、第三方应用都有效——除了时钟和控制中心，它们固定在最右侧。顺序会在重启后保留。</p>
+    <h2>2. 隐藏或显示内建图标</h2>
+    <p>打开 系统设置 → 控制中心。每个模块有三个选项：在菜单栏中显示、不在菜单栏中显示、仅活动时显示（如适用）。</p>
+    <ul>
+      <li>电池可通过“显示百分比”显示数值。</li>
+      <li>正在播放可设为仅在播放音乐或视频时出现。</li>
+      <li>聚焦可隐藏——Command-空格 仍然有效。</li>
+      <li>时钟可在“时钟选项”下显示日期、星期、秒和上午/下午。</li>
+    </ul>
+    <h2>3. 隐藏第三方图标</h2>
+    <p>同样的 Command 拖拽诀窍：把图标拖出菜单栏，它便消失。应用本身继续运行；你只是失去了图标。要找回，打开该应用的偏好设置并在那里重新启用菜单栏图标。</p>
+    <h2>4. 菜单栏管理器（面向拥挤菜单栏）</h2>
+    <p>若你有十个或更多图标，一个整理应用能立刻省时。两个可靠之选：<strong>Ice</strong>——开源、免费，把图标折叠到箭头后面；<strong>Bartender</strong>——付费、精致，带触发器、热键和搜索。在 14 英寸 MacBook Pro 上，整理器还能防止图标在运行太多时藏到刘海后面。</p>
+    <div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>把菜单栏扩展到刘海</h3><p>NotchNest 为刘海区加入日历、AI 剪贴板、快速笔记、番茄钟、音乐控制和 AirDrop。在 Mac App Store 免费。</p></div>
+      <a href="%STORE%" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="在 Mac App Store 下载" /></a>
+    </div>
+    <h2>5. 把刘海用作第二菜单栏</h2>
+    <p>如果你的 Mac 有刘海——2021 年起的每台 MacBook Pro 和 M2 起的每台 MacBook Air——你就有一整块可交互的第二区域。macOS 本身对刘海无所作为，但 NotchNest 用悬停触发的玻璃面板将其包裹。</p>
+    <p>用光标悬停刘海，面板便落下：日历、AI 剪贴板、快速笔记、番茄钟、Spotify/Apple Music 控制、拖拽 AirDrop、文件托盘，以及一键摄像头镜像。每个组件都能在设置里开关。这是真正的菜单栏扩展——你用上了原本闲置的空间。</p>
+    <h2>6. 设置时钟样式</h2>
+    <p>系统设置 → 控制中心 → 时钟选项。你可显示数字或指针时钟、星期、日期、秒，以及上午/下午或 24 小时制。许多高级用户彻底隐藏菜单栏时钟，用 NotchNest 在刘海里放一个。</p>
+    <h2>7. 自动隐藏菜单栏</h2>
+    <p>系统设置 → 控制中心 → 自动隐藏和显示菜单栏。设为“始终”“仅在桌面”或“仅在全屏”。在 13 英寸 Air 上很有用，那里每一纵向像素都珍贵。</p>
+    <h2>8. 全部重置</h2>
+    <p>如果你把菜单栏布局搞乱了，退出每个图标对应的应用并重新启动；默认位置会恢复。对于 Apple 图标，把它们全设为“在菜单栏中显示”，原始的从左到右顺序就会回来。</p>""",
+           "related": _related("zh", ("/learn/best-mac-menu-bar-apps/", "Best Mac menu bar apps", "英文——盘点。"))},
+    "ar": {"title": "كيفية تخصيص شريط قوائم macOS — NotchNest", "description": "أعد ترتيب أدوات شريط قوائم macOS وأخفِها وأضِفها. دليل خطوة بخطوة يغطّي مركز التحكّم وتطبيقات الطرف الثالث وأدوات منطقة النتش.",
+           "og_title": "كيفية تخصيص شريط قوائم macOS", "og_desc": "أعد ترتيب شريط القوائم وأخفِه ووسّعه — بالإعدادات والتطبيقات والنتش.",
+           "jsonld_headline": "كيفية تخصيص شريط قوائم macOS", "jsonld_desc": "دليل عملي لإعادة ترتيب شريط قوائم macOS وإخفائه وتوسيعه.",
+           "kicker": KICK["guide"]["ar"], "h1": "كيفية تخصيص شريط قوائم macOS",
+           "lede": "دليل عملي لإعادة ترتيب شريط قوائم macOS وإخفائه وتوسيعه — بالإعدادات المدمجة وتطبيقات مجانية والنتش.",
+           "readtime": READ6["ar"], "crumb_this": "تخصيص شريط قوائم macOS",
+           "faq": [("كيف أعيد ترتيب أيقونات شريط قوائم macOS؟", "اضغط Command واسحب أي أيقونة يسارًا أو يمينًا. تبقى الساعة ومركز التحكّم مثبّتين أقصى اليمين."),
+                   ("كيف أخفي أيقونات شريط القوائم؟", "اسحب أيقونات الطرف الثالث بضغط Command خارج الشريط، أو بدّل أيقونات Apple في إعدادات النظام ← مركز التحكّم. ومدير مثل Ice أو Bartender يطوي الباقي."),
+                   ("هل يمكنني إضافة أدوات إلى شريط القوائم؟", "أصليًا لا، لكن النتش يمكنه استضافة الأدوات — يضيف NotchNest التقويم والحافظة والملاحظات وبومودورو والموسيقى وAirDrop في لوحة تمرير.")],
+           "body": """<p>شريط قوائم macOS هو الشريط الممتد أعلى شاشتك: قائمة Apple يسارًا، وقوائم التطبيقات بجانبها، وأيقونات النظام والساعة يمينًا. إنه من أقدم أجزاء macOS — ومن القليل الذي لا يزال بإمكانك إعادة تشكيله بالكامل دون Terminal.</p>
+    <h2>1. إعادة ترتيب الأيقونات (مجانًا، 10 ثوانٍ)</h2>
+    <p>اضغط Command واسحب أيقونة شريط القوائم يسارًا أو يمينًا. هذه هي الحيلة كلها. تصلح لواي فاي وبلوتوث والبطارية والصوت و«قيد التشغيل» وAirDrop والتركيز وتطبيقات الطرف الثالث — كل شيء عدا الساعة ومركز التحكّم المثبّتين أقصى اليمين. ويبقى الترتيب بعد إعادة التشغيل.</p>
+    <h2>2. إظهار الأيقونات المدمجة أو إخفاؤها</h2>
+    <p>افتح إعدادات النظام ← مركز التحكّم. لكل وحدة ثلاثة خيارات: الإظهار في شريط القوائم، عدم الإظهار في شريط القوائم، الإظهار عند النشاط فقط (حيثما ينطبق).</p>
+    <ul>
+      <li>يمكن للبطارية إظهار نسبة عبر «إظهار النسبة».</li>
+      <li>يمكن ضبط «قيد التشغيل» ليظهر فقط عند تشغيل موسيقى أو فيديو.</li>
+      <li>يمكن إخفاء Spotlight — ويبقى Command-مسافة يعمل.</li>
+      <li>يمكن للساعة إظهار التاريخ واليوم والثواني وAM/PM ضمن «خيارات الساعة».</li>
+    </ul>
+    <h2>3. إخفاء أيقونات الطرف الثالث</h2>
+    <p>نفس حيلة سحب Command: اسحب أيقونة خارج شريط القوائم فتختفي. يستمر التطبيق بالعمل؛ تفقد الأيقونة فقط. ولإعادتها، افتح تفضيلات التطبيق وأعد تفعيل أيقونة شريط القوائم هناك.</p>
+    <h2>4. مديرو شريط القوائم (للأشرطة المزدحمة)</h2>
+    <p>إن كان لديك عشر أيقونات أو أكثر، يوفّر تطبيق تنظيم وقتك فورًا. خياران متينان: <strong>Ice</strong> — مفتوح المصدر ومجاني، يطوي الأيقونات خلف سهم؛ <strong>Bartender</strong> — مدفوع ومصقول، بمُشغّلات واختصارات وبحث. وعلى MacBook Pro مقاس 14"، يمنع المنظّم أيضًا اختباء الأيقونات خلف النتش عند تشغيل الكثير.</p>
+    <div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>وسّع شريط القوائم — إلى النتش</h3><p>يضيف NotchNest التقويم والحافظة والملاحظات وبومودورو والتحكم بالموسيقى وAirDrop إلى منطقة النتش. مجانًا على Mac App Store.</p></div>
+      <a href="%STORE%" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="التنزيل من Mac App Store" /></a>
+    </div>
+    <h2>5. استخدام النتش شريط قوائم ثانيًا</h2>
+    <p>إن كان ماكك بنتش — كل MacBook Pro من 2021 وكل MacBook Air من M2 — فلديك منطقة ثانية كاملة يمكنك جعلها تفاعلية. لا يفعل macOS نفسه شيئًا بالنتش، لكن NotchNest يغلّفه بلوحة زجاجية تُفعَّل بالتمرير.</p>
+    <p>مرّر المؤشر فوق النتش فتنزل اللوحة: تقويم وحافظة بالذكاء الاصطناعي وملاحظات سريعة وبومودورو والتحكّم في Spotify/Apple Music والسحب إلى AirDrop ودرج الملفات ومرآة كاميرا بلمسة واحدة. كل أداة قابلة للتشغيل أو الإيقاف في الإعدادات. هذا توسيع حقيقي لشريط القوائم — استخدمت مساحة كانت فارغة.</p>
+    <h2>6. تنسيق الساعة</h2>
+    <p>إعدادات النظام ← مركز التحكّم ← خيارات الساعة. يمكنك إظهار ساعة رقمية أو تناظرية واليوم والتاريخ والثواني وAM/PM أو نظام 24 ساعة. يخفي كثير من المستخدمين المتقدّمين ساعة شريط القوائم كليًا ويضعون واحدة في النتش عبر NotchNest.</p>
+    <h2>7. الإخفاء التلقائي لشريط القوائم</h2>
+    <p>إعدادات النظام ← مركز التحكّم ← إخفاء وإظهار شريط القوائم تلقائيًا. اضبطه على «دائمًا» أو «على سطح المكتب فقط» أو «في ملء الشاشة فقط». مفيد على Air مقاس 13" حيث كل بكسل رأسي مهم.</p>
+    <h2>8. إعادة ضبط كل شيء</h2>
+    <p>إن أفسدت تخطيط شريط القوائم، أغلق كل تطبيق تظهر أيقونته وأعد تشغيله؛ يعود الموضع الافتراضي. ولأيقونات Apple، اضبطها جميعًا على «الإظهار في شريط القوائم» فيعود الترتيب الأصلي.</p>""",
+           "related": _related("ar", ("/learn/best-mac-menu-bar-apps/", "Best Mac menu bar apps", "إنجليزي — اختيارات."))},
+    "fr": {"title": "Comment personnaliser la barre des menus macOS — NotchNest", "description": "Réorganisez, masquez et ajoutez des widgets à la barre des menus macOS. Guide pas à pas couvrant le Centre de contrôle, les apps tierces et les utilitaires de l'encoche.",
+           "og_title": "Comment personnaliser la barre des menus macOS", "og_desc": "Réorganiser, masquer et étendre la barre des menus — avec les réglages, des apps et l'encoche.",
+           "jsonld_headline": "Comment personnaliser la barre des menus macOS", "jsonld_desc": "Guide pratique pour réorganiser, masquer et étendre la barre des menus macOS.",
+           "kicker": KICK["guide"]["fr"], "h1": "Comment personnaliser la barre des menus macOS",
+           "lede": "Un guide pratique pour réorganiser, masquer et étendre la barre des menus macOS — avec les réglages intégrés, des apps tierces gratuites, et l'encoche.",
+           "readtime": READ6["fr"], "crumb_this": "Personnaliser la barre des menus macOS",
+           "faq": [("Comment réorganiser les icônes de la barre des menus macOS ?", "Maintenez Command et glissez une icône vers la gauche ou la droite. L'horloge et le Centre de contrôle restent fixés tout à droite."),
+                   ("Comment masquer les icônes de la barre des menus ?", "Glissez les icônes tierces hors de la barre avec Command, ou basculez les icônes Apple dans Réglages Système → Centre de contrôle. Un gestionnaire comme Ice ou Bartender replie le reste."),
+                   ("Puis-je ajouter des widgets à la barre des menus ?", "Nativement non, mais l'encoche peut héberger des widgets — NotchNest met calendrier, presse-papiers, notes, Pomodoro, musique et AirDrop dans un panneau au survol.")],
+           "body": """<p>La barre des menus macOS est la bande qui court en haut de votre écran : menu Pomme à gauche, menus d'app à côté, icônes système et l'horloge à droite. C'est l'un des plus vieux éléments de macOS — et l'un des rares que vous pouvez encore remodeler entièrement sans Terminal.</p>
+    <h2>1. Réorganiser les icônes (gratuit, 10 secondes)</h2>
+    <p>Maintenez Command et glissez une icône vers la gauche ou la droite. C'est toute l'astuce. Ça marche pour Wi-Fi, Bluetooth, batterie, son, Now Playing, AirDrop, Concentration, apps tierces — tout sauf l'horloge et le Centre de contrôle, fixés tout à droite. L'ordre persiste après redémarrage.</p>
+    <h2>2. Masquer ou afficher les icônes intégrées</h2>
+    <p>Ouvrez Réglages Système → Centre de contrôle. Chaque module a trois options : Afficher dans la barre des menus, Ne pas afficher, Afficher si actif (le cas échéant).</p>
+    <ul>
+      <li>La batterie peut afficher un pourcentage via « Afficher le pourcentage ».</li>
+      <li>Now Playing peut n'apparaître qu'à la lecture de musique ou vidéo.</li>
+      <li>Spotlight peut être masqué — Command-Espace fonctionne toujours.</li>
+      <li>L'horloge peut afficher date, jour, secondes et AM/PM sous « Options de l'horloge ».</li>
+    </ul>
+    <h2>3. Masquer les icônes tierces</h2>
+    <p>Même astuce Command + glisser : glissez une icône hors de la barre et elle disparaît. L'app continue de tourner ; vous perdez juste l'icône. Pour la ramener, ouvrez les préférences de l'app et réactivez-y l'icône de barre des menus.</p>
+    <h2>4. Gestionnaires de barre des menus (barres chargées)</h2>
+    <p>Avec dix icônes ou plus, une app d'organisation se rentabilise en secondes gagnées. Deux valeurs sûres : <strong>Ice</strong> — open source, gratuit, replie les icônes derrière un chevron ; <strong>Bartender</strong> — payant, soigné, avec déclencheurs, raccourcis et recherche. Sur un MacBook Pro 14", un organisateur empêche aussi les icônes de se cacher derrière l'encoche quand vous en avez trop.</p>
+    <div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>Étendez la barre des menus — dans l'encoche</h3><p>NotchNest ajoute calendrier, presse-papiers IA, notes rapides, Pomodoro, contrôle de la musique et AirDrop à la zone de l'encoche. Gratuit sur le Mac App Store.</p></div>
+      <a href="%STORE%" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="Télécharger sur le Mac App Store" /></a>
+    </div>
+    <h2>5. Utiliser l'encoche comme seconde barre des menus</h2>
+    <p>Si votre Mac a une encoche — tout MacBook Pro depuis 2021 et tout MacBook Air depuis M2 — vous avez une seconde région entière à rendre interactive. macOS lui-même n'en fait rien, mais NotchNest l'entoure d'un panneau en verre activé au survol.</p>
+    <p>Survolez l'encoche et le panneau se déploie : calendrier, presse-papiers IA, notes rapides, Pomodoro, contrôles Spotify/Apple Music, glisser-vers-AirDrop, bac à fichiers et miroir caméra en un tap. Chaque widget se bascule dans les réglages. C'est une vraie extension de la barre des menus — vous utilisez un espace qui restait vide.</p>
+    <h2>6. Styliser l'horloge</h2>
+    <p>Réglages Système → Centre de contrôle → Options de l'horloge. Vous pouvez afficher une horloge numérique ou analogique, le jour, la date, les secondes et AM/PM ou 24 heures. Beaucoup d'utilisateurs avancés masquent l'horloge de la barre et en placent une dans l'encoche via NotchNest.</p>
+    <h2>7. Masquer automatiquement la barre des menus</h2>
+    <p>Réglages Système → Centre de contrôle → Masquer et afficher automatiquement la barre des menus. Réglez sur « Toujours », « Sur le bureau uniquement » ou « En plein écran uniquement ». Utile sur un Air 13" où chaque pixel vertical compte.</p>
+    <h2>8. Tout réinitialiser</h2>
+    <p>Si vous avez cassé la disposition, quittez chaque app dont l'icône apparaît et relancez-la ; la position par défaut revient. Pour les icônes Apple, réglez-les toutes sur « Afficher dans la barre des menus » et l'ordre d'origine revient.</p>""",
+           "related": _related("fr", ("/learn/best-mac-menu-bar-apps/", "Best Mac menu bar apps", "Anglais — sélection."))},
+    "pt-BR": {"title": "Como personalizar a barra de menus do macOS — NotchNest", "description": "Reorganize, esconda e adicione widgets à barra de menus do macOS. Guia passo a passo cobrindo a Central de Controle, apps de terceiros e utilitários da área do notch.",
+              "og_title": "Como personalizar a barra de menus do macOS", "og_desc": "Reorganizar, esconder e estender a barra de menus — com ajustes, apps e o notch.",
+              "jsonld_headline": "Como personalizar a barra de menus do macOS", "jsonld_desc": "Guia prático para reorganizar, esconder e estender a barra de menus do macOS.",
+              "kicker": KICK["guide"]["pt-BR"], "h1": "Como personalizar a barra de menus do macOS",
+              "lede": "Um guia prático para reordenar, esconder e estender a barra de menus do macOS — com ajustes nativos, apps de terceiros grátis e o notch.",
+              "readtime": READ6["pt-BR"], "crumb_this": "Personalizar a barra de menus do macOS",
+              "faq": [("Como reordeno os ícones da barra de menus do macOS?", "Segure Command e arraste um ícone para a esquerda ou direita. O relógio e a Central de Controle ficam fixos à extrema direita."),
+                      ("Como escondo ícones da barra de menus?", "Arraste ícones de terceiros para fora da barra com Command, ou alterne ícones da Apple em Ajustes do Sistema → Central de Controle. Um gerenciador como Ice ou Bartender recolhe o resto."),
+                      ("Posso adicionar widgets à barra de menus?", "Nativamente não, mas o notch pode hospedar widgets — o NotchNest coloca calendário, área de transferência, notas, Pomodoro, música e AirDrop em um painel ao passar o cursor.")],
+              "body": """<p>A barra de menus do macOS é a faixa que atravessa o topo da tela: menu Apple à esquerda, menus de app ao lado, ícones do sistema e o relógio à direita. É uma das partes mais antigas do macOS — e uma das poucas que você ainda pode remodelar por completo sem Terminal.</p>
+    <h2>1. Reordenar ícones (grátis, 10 segundos)</h2>
+    <p>Segure Command e arraste um ícone da barra para a esquerda ou direita. É todo o truque. Funciona para Wi-Fi, Bluetooth, bateria, som, Now Playing, AirDrop, Foco, apps de terceiros — tudo, exceto o relógio e a Central de Controle, fixos à extrema direita. A ordem persiste após reinícios.</p>
+    <h2>2. Esconder ou mostrar ícones nativos</h2>
+    <p>Abra Ajustes do Sistema → Central de Controle. Cada módulo tem três opções: Mostrar na Barra de Menus, Não Mostrar, Mostrar Apenas Quando Ativo (quando aplicável).</p>
+    <ul>
+      <li>A bateria pode mostrar porcentagem ativando "Mostrar Porcentagem".</li>
+      <li>O Now Playing pode aparecer só ao tocar música ou vídeo.</li>
+      <li>O Spotlight pode ser escondido — Command-Espaço ainda funciona.</li>
+      <li>O relógio pode mostrar data, dia da semana, segundos e AM/PM em "Opções de Relógio".</li>
+    </ul>
+    <h2>3. Esconder ícones de terceiros</h2>
+    <p>Mesmo truque de Command + arrastar: arraste um ícone para fora da barra e ele some. O app continua rodando; você só perde o ícone. Para trazê-lo de volta, abra as preferências do app e reative ali o ícone da barra de menus.</p>
+    <h2>4. Gerenciadores de barra de menus (para barras cheias)</h2>
+    <p>Se você tem dez ou mais ícones, um app organizador se paga em segundos economizados. Duas escolhas sólidas: <strong>Ice</strong> — código aberto, grátis, recolhe ícones atrás de um chevron; <strong>Bartender</strong> — pago, refinado, com gatilhos, atalhos e busca. Em um MacBook Pro de 14", um organizador também impede os ícones de se esconderem atrás do notch quando você tem muitos rodando.</p>
+    <div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>Estenda a barra de menus — para o notch</h3><p>O NotchNest adiciona calendário, área de transferência com IA, notas rápidas, Pomodoro, controle de música e AirDrop à área do notch. Grátis na Mac App Store.</p></div>
+      <a href="%STORE%" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="Baixar na Mac App Store" /></a>
+    </div>
+    <h2>5. Usar o notch como uma segunda barra de menus</h2>
+    <p>Se o seu Mac tem notch — todo MacBook Pro de 2021 em diante e todo MacBook Air do M2 em diante — você tem uma segunda região inteira para tornar interativa. O próprio macOS não faz nada com o notch, mas o NotchNest o envolve em um painel de vidro ativado ao passar o cursor.</p>
+    <p>Passe o cursor no notch e o painel desce: calendário, área de transferência com IA, notas rápidas, Pomodoro, controles de Spotify/Apple Music, arrastar para AirDrop, bandeja de arquivos e um espelho da câmera com um toque. Cada widget pode ser ligado ou desligado nos Ajustes. É uma extensão de barra de menus de verdade — você usa um espaço que estava vazio.</p>
+    <h2>6. Estilizar o relógio</h2>
+    <p>Ajustes do Sistema → Central de Controle → Opções de Relógio. Você pode mostrar relógio digital ou analógico, dia da semana, data, segundos e AM/PM ou 24 horas. Muitos usuários avançados escondem o relógio da barra e colocam um no notch via NotchNest.</p>
+    <h2>7. Ocultar a barra de menus automaticamente</h2>
+    <p>Ajustes do Sistema → Central de Controle → Ocultar e mostrar a barra de menus automaticamente. Defina como "Sempre", "Apenas na Mesa" ou "Apenas em Tela Cheia". Útil em um Air de 13" onde cada pixel vertical conta.</p>
+    <h2>8. Redefinir tudo</h2>
+    <p>Se você bagunçou o layout, saia de cada app cujo ícone aparece e reabra-o; a posição padrão volta. Para ícones da Apple, defina todos como "Mostrar na Barra de Menus" e a ordem original volta.</p>""",
+              "related": _related("pt-BR", ("/learn/best-mac-menu-bar-apps/", "Best Mac menu bar apps", "Inglês — seleção."))},
+    "pt-PT": {"title": "Como personalizar a barra de menus do macOS — NotchNest", "description": "Reorganize, esconda e adicione widgets à barra de menus do macOS. Guia passo a passo cobrindo o Centro de Controlo, apps de terceiros e utilitários da área do notch.",
+              "og_title": "Como personalizar a barra de menus do macOS", "og_desc": "Reorganizar, esconder e estender a barra de menus — com definições, apps e o notch.",
+              "jsonld_headline": "Como personalizar a barra de menus do macOS", "jsonld_desc": "Guia prático para reorganizar, esconder e estender a barra de menus do macOS.",
+              "kicker": KICK["guide"]["pt-PT"], "h1": "Como personalizar a barra de menus do macOS",
+              "lede": "Um guia prático para reordenar, esconder e estender a barra de menus do macOS — com definições nativas, apps de terceiros gratuitas e o notch.",
+              "readtime": READ6["pt-PT"], "crumb_this": "Personalizar a barra de menus do macOS",
+              "faq": [("Como reordeno os ícones da barra de menus do macOS?", "Mantenha Command e arraste um ícone para a esquerda ou direita. O relógio e o Centro de Controlo ficam fixos à extrema direita."),
+                      ("Como escondo ícones da barra de menus?", "Arraste ícones de terceiros para fora da barra com Command, ou alterne ícones da Apple em Definições do Sistema → Centro de Controlo. Um gestor como Ice ou Bartender recolhe o resto."),
+                      ("Posso adicionar widgets à barra de menus?", "Nativamente não, mas o notch pode alojar widgets — o NotchNest coloca calendário, área de transferência, notas, Pomodoro, música e AirDrop num painel ao passar o cursor.")],
+              "body": """<p>A barra de menus do macOS é a faixa que atravessa o topo do ecrã: menu Apple à esquerda, menus de app ao lado, ícones do sistema e o relógio à direita. É uma das partes mais antigas do macOS — e uma das poucas que ainda pode remodelar por completo sem Terminal.</p>
+    <h2>1. Reordenar ícones (grátis, 10 segundos)</h2>
+    <p>Mantenha Command e arraste um ícone da barra para a esquerda ou direita. É todo o truque. Funciona para Wi-Fi, Bluetooth, bateria, som, Now Playing, AirDrop, Focagem, apps de terceiros — tudo, exceto o relógio e o Centro de Controlo, fixos à extrema direita. A ordem persiste após reinícios.</p>
+    <h2>2. Esconder ou mostrar ícones nativos</h2>
+    <p>Abra Definições do Sistema → Centro de Controlo. Cada módulo tem três opções: Mostrar na Barra de Menus, Não Mostrar, Mostrar Apenas Quando Ativo (quando aplicável).</p>
+    <ul>
+      <li>A bateria pode mostrar percentagem ativando "Mostrar Percentagem".</li>
+      <li>O Now Playing pode aparecer só ao reproduzir música ou vídeo.</li>
+      <li>O Spotlight pode ser escondido — Command-Espaço continua a funcionar.</li>
+      <li>O relógio pode mostrar data, dia da semana, segundos e AM/PM em "Opções de Relógio".</li>
+    </ul>
+    <h2>3. Esconder ícones de terceiros</h2>
+    <p>Mesmo truque de Command + arrastar: arraste um ícone para fora da barra e desaparece. A app continua a correr; só perde o ícone. Para o trazer de volta, abra as preferências da app e reative aí o ícone da barra de menus.</p>
+    <h2>4. Gestores de barra de menus (para barras cheias)</h2>
+    <p>Se tem dez ou mais ícones, uma app organizadora paga-se em segundos poupados. Duas escolhas sólidas: <strong>Ice</strong> — código aberto, grátis, recolhe ícones atrás de um chevron; <strong>Bartender</strong> — pago, refinado, com acionadores, atalhos e pesquisa. Num MacBook Pro de 14", um organizador também impede os ícones de se esconderem atrás do notch quando tem muitos a correr.</p>
+    <div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>Estenda a barra de menus — para o notch</h3><p>O NotchNest adiciona calendário, área de transferência com IA, notas rápidas, Pomodoro, controlo de música e AirDrop à área do notch. Gratuito na Mac App Store.</p></div>
+      <a href="%STORE%" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="Descarregar na Mac App Store" /></a>
+    </div>
+    <h2>5. Usar o notch como uma segunda barra de menus</h2>
+    <p>Se o seu Mac tem notch — todos os MacBook Pro de 2021 em diante e todos os MacBook Air do M2 em diante — tem uma segunda região inteira para tornar interativa. O próprio macOS não faz nada com o notch, mas o NotchNest envolve-o num painel de vidro ativado ao passar o cursor.</p>
+    <p>Passe o cursor no notch e o painel desce: calendário, área de transferência com IA, notas rápidas, Pomodoro, controlos de Spotify/Apple Music, arrastar para AirDrop, tabuleiro de ficheiros e um espelho da câmara com um toque. Cada widget pode ser ligado ou desligado nas Definições. É uma extensão de barra de menus a sério — usa um espaço que estava vazio.</p>
+    <h2>6. Estilizar o relógio</h2>
+    <p>Definições do Sistema → Centro de Controlo → Opções de Relógio. Pode mostrar relógio digital ou analógico, dia da semana, data, segundos e AM/PM ou 24 horas. Muitos utilizadores avançados escondem o relógio da barra e colocam um no notch via NotchNest.</p>
+    <h2>7. Ocultar a barra de menus automaticamente</h2>
+    <p>Definições do Sistema → Centro de Controlo → Ocultar e mostrar a barra de menus automaticamente. Defina como "Sempre", "Apenas na Secretária" ou "Apenas em Ecrã Inteiro". Útil num Air de 13" onde cada pixel vertical conta.</p>
+    <h2>8. Repor tudo</h2>
+    <p>Se estragou o esquema, saia de cada app cujo ícone aparece e reabra-a; a posição predefinida volta. Para ícones da Apple, defina todos como "Mostrar na Barra de Menus" e a ordem original volta.</p>""",
+              "related": _related("pt-PT", ("/learn/best-mac-menu-bar-apps/", "Best Mac menu bar apps", "Inglês — seleção."))},
+    "es-MX": {"title": "Cómo personalizar la barra de menús de macOS — NotchNest", "description": "Reorganiza, oculta y agrega widgets a la barra de menús de macOS. Guía paso a paso que cubre el Centro de Control, apps de terceros y utilidades del área del notch.",
+              "og_title": "Cómo personalizar la barra de menús de macOS", "og_desc": "Reorganizar, ocultar y extender la barra de menús — con ajustes, apps y el notch.",
+              "jsonld_headline": "Cómo personalizar la barra de menús de macOS", "jsonld_desc": "Guía práctica para reorganizar, ocultar y extender la barra de menús de macOS.",
+              "kicker": KICK["guide"]["es-MX"], "h1": "Cómo personalizar la barra de menús de macOS",
+              "lede": "Una guía práctica para reordenar, ocultar y extender la barra de menús de macOS — con ajustes integrados, apps de terceros gratis y el notch.",
+              "readtime": READ6["es-MX"], "crumb_this": "Personalizar la barra de menús de macOS",
+              "faq": [("¿Cómo reordeno los íconos de la barra de menús de macOS?", "Mantén Command y arrastra un ícono a la izquierda o derecha. El reloj y el Centro de Control quedan fijos a la extrema derecha."),
+                      ("¿Cómo oculto íconos de la barra de menús?", "Arrastra los íconos de terceros fuera de la barra con Command, o alterna los íconos de Apple en Configuración del Sistema → Centro de Control. Un gestor como Ice o Bartender recoge el resto."),
+                      ("¿Puedo agregar widgets a la barra de menús?", "De forma nativa no, pero el notch puede alojar widgets — NotchNest pone calendario, portapapeles, notas, Pomodoro, música y AirDrop en un panel al pasar el cursor.")],
+              "body": """<p>La barra de menús de macOS es la franja que recorre la parte superior de tu pantalla: menú Apple a la izquierda, menús de app al lado, íconos del sistema y el reloj a la derecha. Es una de las partes más antiguas de macOS — y una de las pocas que aún puedes remodelar por completo sin Terminal.</p>
+    <h2>1. Reordenar íconos (gratis, 10 segundos)</h2>
+    <p>Mantén Command y arrastra un ícono de la barra a la izquierda o derecha. Ese es todo el truco. Funciona para Wi-Fi, Bluetooth, batería, sonido, Now Playing, AirDrop, Concentración, apps de terceros — todo, salvo el reloj y el Centro de Control, fijos a la extrema derecha. El orden persiste tras reinicios.</p>
+    <h2>2. Ocultar o mostrar íconos integrados</h2>
+    <p>Abre Configuración del Sistema → Centro de Control. Cada módulo tiene tres opciones: Mostrar en la barra de menús, No mostrar, Mostrar solo cuando esté activo (cuando aplique).</p>
+    <ul>
+      <li>La batería puede mostrar porcentaje activando "Mostrar porcentaje".</li>
+      <li>Now Playing puede aparecer solo al reproducir música o video.</li>
+      <li>Spotlight puede ocultarse — Command-Espacio sigue funcionando.</li>
+      <li>El reloj puede mostrar fecha, día de la semana, segundos y AM/PM en "Opciones de reloj".</li>
+    </ul>
+    <h2>3. Ocultar íconos de terceros</h2>
+    <p>Mismo truco de Command + arrastrar: arrastra un ícono fuera de la barra y desaparece. La app sigue corriendo; solo pierdes el ícono. Para recuperarlo, abre las preferencias de la app y reactiva ahí el ícono de la barra de menús.</p>
+    <h2>4. Gestores de barra de menús (para barras saturadas)</h2>
+    <p>Si tienes diez o más íconos, una app organizadora se paga sola en segundos ahorrados. Dos opciones sólidas: <strong>Ice</strong> — código abierto, gratis, recoge íconos tras un chevron; <strong>Bartender</strong> — de pago, pulida, con disparadores, atajos y búsqueda. En un MacBook Pro de 14", un organizador también evita que los íconos se escondan tras el notch cuando tienes demasiados corriendo.</p>
+    <div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>Extiende la barra de menús — al notch</h3><p>NotchNest agrega calendario, portapapeles con IA, notas rápidas, Pomodoro, control de música y AirDrop al área del notch. Gratis en el Mac App Store.</p></div>
+      <a href="%STORE%" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="Descargar en el Mac App Store" /></a>
+    </div>
+    <h2>5. Usar el notch como una segunda barra de menús</h2>
+    <p>Si tu Mac tiene notch — todo MacBook Pro de 2021 en adelante y todo MacBook Air del M2 en adelante — tienes una segunda región entera que puedes hacer interactiva. macOS por sí mismo no hace nada con el notch, pero NotchNest lo envuelve en un panel de vidrio activado al pasar el cursor.</p>
+    <p>Pasa el cursor por el notch y el panel baja: calendario, portapapeles con IA, notas rápidas, Pomodoro, controles de Spotify/Apple Music, arrastrar a AirDrop, bandeja de archivos y un espejo de cámara con un toque. Cada widget se activa o desactiva en Ajustes. Es una verdadera extensión de la barra de menús — usas un espacio que estaba vacío.</p>
+    <h2>6. Dar estilo al reloj</h2>
+    <p>Configuración del Sistema → Centro de Control → Opciones de reloj. Puedes mostrar reloj digital o analógico, día de la semana, fecha, segundos y AM/PM o 24 horas. Muchos usuarios avanzados ocultan el reloj de la barra y ponen uno en el notch vía NotchNest.</p>
+    <h2>7. Ocultar la barra de menús automáticamente</h2>
+    <p>Configuración del Sistema → Centro de Control → Ocultar y mostrar automáticamente la barra de menús. Pon "Siempre", "Solo en el escritorio" o "Solo en pantalla completa". Útil en un Air de 13" donde cada píxel vertical cuenta.</p>
+    <h2>8. Restablecer todo</h2>
+    <p>Si arruinaste el diseño, cierra cada app cuyo ícono aparece y reábrela; vuelve la posición predeterminada. Para íconos de Apple, ponlos todos en "Mostrar en la barra de menús" y regresa el orden original.</p>""",
+              "related": _related("es-MX", ("/learn/best-mac-menu-bar-apps/", "Best Mac menu bar apps", "Inglés — selección."))},
+}
+
+
 # ── customize-top-bar-mac ───────────────────────────────────────────────────
 TOPBAR = {
     "de": {"title": "Die obere Leiste auf dem Mac anpassen — NotchNest", "description": "Passe die obere Leiste deines Macs an — Menüleisten-Icons, die Notch und Abstände. Der schnellste Weg zu echter Mac-Notch-Anpassung ohne Hacks.",
@@ -3189,4 +3467,5 @@ LEARN_ARTICLES = {
     "menu-bar-icons-missing-behind-notch": _assemble(MISSING),
     "how-to-move-menu-bar-icons-on-mac": _assemble(MOVEICONS),
     "customize-top-bar-mac": _assemble(TOPBAR),
+    "how-to-customise-macos-menu-bar": _assemble(MENUBAR),
 }

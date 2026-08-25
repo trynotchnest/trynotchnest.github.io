@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<title>Comment personnaliser la barre des menus macOS — NotchNest</title>
+<meta name="description" content="Réorganisez, masquez et ajoutez des widgets à la barre des menus macOS. Guide pas à pas couvrant le Centre de contrôle, les apps tierces et les utilitaires de l'encoche." />
+<link rel="canonical" href="https://notchnest.app/fr/learn/how-to-customise-macos-menu-bar/" />
+<meta name="robots" content="index,follow,max-image-preview:large" />
+<link rel="alternate" hreflang="en" href="https://notchnest.app/learn/how-to-customise-macos-menu-bar/" />
+<link rel="alternate" hreflang="en-us" href="https://notchnest.app/learn/how-to-customise-macos-menu-bar/" />
+<link rel="alternate" hreflang="en-gb" href="https://notchnest.app/learn/how-to-customise-macos-menu-bar/" />
+<link rel="alternate" hreflang="en-in" href="https://notchnest.app/learn/how-to-customise-macos-menu-bar/" />
+<link rel="alternate" hreflang="de" href="https://notchnest.app/de/learn/how-to-customise-macos-menu-bar/" />
+<link rel="alternate" hreflang="zh" href="https://notchnest.app/zh/learn/how-to-customise-macos-menu-bar/" />
+<link rel="alternate" hreflang="zh-cn" href="https://notchnest.app/zh/learn/how-to-customise-macos-menu-bar/" />
+<link rel="alternate" hreflang="ar" href="https://notchnest.app/ar/learn/how-to-customise-macos-menu-bar/" />
+<link rel="alternate" hreflang="fr" href="https://notchnest.app/fr/learn/how-to-customise-macos-menu-bar/" />
+<link rel="alternate" hreflang="pt-BR" href="https://notchnest.app/pt-br/learn/how-to-customise-macos-menu-bar/" />
+<link rel="alternate" hreflang="pt-PT" href="https://notchnest.app/pt-pt/learn/how-to-customise-macos-menu-bar/" />
+<link rel="alternate" hreflang="es-MX" href="https://notchnest.app/es-mx/learn/how-to-customise-macos-menu-bar/" />
+<link rel="alternate" hreflang="es-419" href="https://notchnest.app/es-mx/learn/how-to-customise-macos-menu-bar/" />
+<link rel="alternate" hreflang="x-default" href="https://notchnest.app/learn/how-to-customise-macos-menu-bar/" />
+<meta property="og:title" content="Comment personnaliser la barre des menus macOS" />
+<meta property="og:description" content="Réorganiser, masquer et étendre la barre des menus — avec les réglages, des apps et l'encoche." />
+<meta property="og:url" content="https://notchnest.app/fr/learn/how-to-customise-macos-menu-bar/" />
+<meta property="og:locale" content="fr_FR" />
+<meta property="og:type" content="article" />
+<meta property="og:image" content="https://notchnest.app/assets/og/how-to-customise-macos-menu-bar.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@codetard" />
+<meta name="twitter:creator" content="@codetard" />
+<link rel="stylesheet" href="/styles.css" />
+<link rel="apple-touch-icon" href="/assets/notchnest-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<meta name="theme-color" content="#000000" />
+<meta name="color-scheme" content="dark" />
+<script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org", "@type": "Article",
+    "headline": "Comment personnaliser la barre des menus macOS",
+    "description": "Guide pratique pour réorganiser, masquer et étendre la barre des menus macOS.",
+    "image": "https://notchnest.app/assets/og/how-to-customise-macos-menu-bar.png",
+    "datePublished": "2026-06-10T00:00:00+00:00", "dateModified": "2026-06-13T00:00:00+00:00",
+    "inLanguage": "fr",
+    "author": { "@type": "Person", "name": "Satnam Singh", "url": "https://silverseahog.com/", "jobTitle": "Swift Developer",
+      "sameAs": ["https://silverseahog.com/","https://twitter.com/codetard","https://github.com/29satnam","https://www.linkedin.com/in/satnam-singh-948348aa/","https://instagram.com/codetard"] },
+    "publisher": { "@type": "Organization", "name": "NotchNest", "logo": { "@type": "ImageObject", "url": "https://notchnest.app/assets/notchnest-icon.png" } },
+    "mainEntityOfPage": "https://notchnest.app/fr/learn/how-to-customise-macos-menu-bar/"
+  },
+  {
+    "@context": "https://schema.org", "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://notchnest.app/fr/" },
+      { "@type": "ListItem", "position": 2, "name": "Guides", "item": "https://notchnest.app/fr/learn/" },
+      { "@type": "ListItem", "position": 3, "name": "Personnaliser la barre des menus macOS", "item": "https://notchnest.app/fr/learn/how-to-customise-macos-menu-bar/" }
+    ]
+  },
+  {
+    "@context": "https://schema.org", "@type": "FAQPage", "inLanguage": "fr",
+    "mainEntity": [
+      { "@type": "Question", "name": "Comment réorganiser les icônes de la barre des menus macOS ?", "acceptedAnswer": { "@type": "Answer", "text": "Maintenez Command et glissez une icône vers la gauche ou la droite. L'horloge et le Centre de contrôle restent fixés tout à droite." } },
+      { "@type": "Question", "name": "Comment masquer les icônes de la barre des menus ?", "acceptedAnswer": { "@type": "Answer", "text": "Glissez les icônes tierces hors de la barre avec Command, ou basculez les icônes Apple dans Réglages Système → Centre de contrôle. Un gestionnaire comme Ice ou Bartender replie le reste." } },
+      { "@type": "Question", "name": "Puis-je ajouter des widgets à la barre des menus ?", "acceptedAnswer": { "@type": "Answer", "text": "Nativement non, mais l'encoche peut héberger des widgets — NotchNest met calendrier, presse-papiers, notes, Pomodoro, musique et AirDrop dans un panneau au survol." } }
+    ]
+  }
+]
+</script>
+</head>
+<body>
+<nav class="nn-nav"><div class="nn-nav-inner">
+  <a class="nn-brand" href="/fr/"><img class="nn-brand-mark" src="/assets/notchnest-icon.png" alt="" width="28" height="28"/><span>NotchNest</span></a>
+  <div class="nn-nav-links">
+    <a href="/learn/how-to-customise-macos-menu-bar/">EN</a>
+    <a href="/fr/learn/" class="nn-nav-keep">Guides</a>
+  </div>
+</div></nav>
+
+<main class="main-container"><div class="learn-wrap">
+  <div class="crumbs"><a href="/fr/">Accueil</a><span class="sep">/</span><a href="/fr/learn/">Guides</a><span class="sep">/</span><span>Personnaliser la barre des menus macOS</span></div>
+
+  <header class="article-head">
+    <span class="article-kicker">Guide</span>
+    <h1 class="article-h1">Comment personnaliser la barre des menus macOS</h1>
+    <p class="article-lede">Un guide pratique pour réorganiser, masquer et étendre la barre des menus macOS — avec les réglages intégrés, des apps tierces gratuites, et l'encoche.</p>
+    <div class="article-meta"><span>Mis à jour le 13 juin 2026</span><span class="dot"></span><span>6 min de lecture</span><span class="dot"></span><span>Par Satnam Singh</span></div>
+  </header>
+
+  <article class="article-body">
+    <p>La barre des menus macOS est la bande qui court en haut de votre écran : menu Pomme à gauche, menus d'app à côté, icônes système et l'horloge à droite. C'est l'un des plus vieux éléments de macOS — et l'un des rares que vous pouvez encore remodeler entièrement sans Terminal.</p>
+    <h2>1. Réorganiser les icônes (gratuit, 10 secondes)</h2>
+    <p>Maintenez Command et glissez une icône vers la gauche ou la droite. C'est toute l'astuce. Ça marche pour Wi-Fi, Bluetooth, batterie, son, Now Playing, AirDrop, Concentration, apps tierces — tout sauf l'horloge et le Centre de contrôle, fixés tout à droite. L'ordre persiste après redémarrage.</p>
+    <h2>2. Masquer ou afficher les icônes intégrées</h2>
+    <p>Ouvrez Réglages Système → Centre de contrôle. Chaque module a trois options : Afficher dans la barre des menus, Ne pas afficher, Afficher si actif (le cas échéant).</p>
+    <ul>
+      <li>La batterie peut afficher un pourcentage via « Afficher le pourcentage ».</li>
+      <li>Now Playing peut n'apparaître qu'à la lecture de musique ou vidéo.</li>
+      <li>Spotlight peut être masqué — Command-Espace fonctionne toujours.</li>
+      <li>L'horloge peut afficher date, jour, secondes et AM/PM sous « Options de l'horloge ».</li>
+    </ul>
+    <h2>3. Masquer les icônes tierces</h2>
+    <p>Même astuce Command + glisser : glissez une icône hors de la barre et elle disparaît. L'app continue de tourner ; vous perdez juste l'icône. Pour la ramener, ouvrez les préférences de l'app et réactivez-y l'icône de barre des menus.</p>
+    <h2>4. Gestionnaires de barre des menus (barres chargées)</h2>
+    <p>Avec dix icônes ou plus, une app d'organisation se rentabilise en secondes gagnées. Deux valeurs sûres : <strong>Ice</strong> — open source, gratuit, replie les icônes derrière un chevron ; <strong>Bartender</strong> — payant, soigné, avec déclencheurs, raccourcis et recherche. Sur un MacBook Pro 14", un organisateur empêche aussi les icônes de se cacher derrière l'encoche quand vous en avez trop.</p>
+    <div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>Étendez la barre des menus — dans l'encoche</h3><p>NotchNest ajoute calendrier, presse-papiers IA, notes rapides, Pomodoro, contrôle de la musique et AirDrop à la zone de l'encoche. Gratuit sur le Mac App Store.</p></div>
+      <a href="https://apps.apple.com/fr/app/notchnest-power-your-notch/id6747612321" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="Télécharger sur le Mac App Store" /></a>
+    </div>
+    <h2>5. Utiliser l'encoche comme seconde barre des menus</h2>
+    <p>Si votre Mac a une encoche — tout MacBook Pro depuis 2021 et tout MacBook Air depuis M2 — vous avez une seconde région entière à rendre interactive. macOS lui-même n'en fait rien, mais NotchNest l'entoure d'un panneau en verre activé au survol.</p>
+    <p>Survolez l'encoche et le panneau se déploie : calendrier, presse-papiers IA, notes rapides, Pomodoro, contrôles Spotify/Apple Music, glisser-vers-AirDrop, bac à fichiers et miroir caméra en un tap. Chaque widget se bascule dans les réglages. C'est une vraie extension de la barre des menus — vous utilisez un espace qui restait vide.</p>
+    <h2>6. Styliser l'horloge</h2>
+    <p>Réglages Système → Centre de contrôle → Options de l'horloge. Vous pouvez afficher une horloge numérique ou analogique, le jour, la date, les secondes et AM/PM ou 24 heures. Beaucoup d'utilisateurs avancés masquent l'horloge de la barre et en placent une dans l'encoche via NotchNest.</p>
+    <h2>7. Masquer automatiquement la barre des menus</h2>
+    <p>Réglages Système → Centre de contrôle → Masquer et afficher automatiquement la barre des menus. Réglez sur « Toujours », « Sur le bureau uniquement » ou « En plein écran uniquement ». Utile sur un Air 13" où chaque pixel vertical compte.</p>
+    <h2>8. Tout réinitialiser</h2>
+    <p>Si vous avez cassé la disposition, quittez chaque app dont l'icône apparaît et relancez-la ; la position par défaut revient. Pour les icônes Apple, réglez-les toutes sur « Afficher dans la barre des menus » et l'ordre d'origine revient.</p>
+
+    <aside class="author-bio">
+      <img class="author-avatar" src="https://github.com/29satnam.png" alt="Satnam Singh" width="56" height="56" loading="lazy" />
+      <div>
+        <h3>À propos de l'auteur</h3>
+        <p><strong>Satnam Singh</strong> est le développeur Swift derrière NotchNest. Il écrit sur la productivité macOS, l'IA sur Apple Silicon et l'artisanat des apps indépendantes. <a href="https://silverseahog.com/" target="_blank" rel="noopener">silverseahog.com</a> · <a href="https://twitter.com/codetard" target="_blank" rel="noopener nofollow">@codetard</a></p>
+      </div>
+    </aside>
+
+    <section class="related-section">
+      <h2>À lire aussi</h2>
+      <div class="related-grid">
+        <a class="related-card" href="/fr/learn/how-to-use-the-macbook-notch/"><h3>Utiliser l'encoche du MacBook</h3><p>Trois étapes vers une encoche utile.</p></a>
+        <a class="related-card" href="/fr/learn/best-macos-notch-apps/"><h3>Meilleures apps d'encoche macOS</h3><p>Sélection 2026.</p></a>
+        <a class="related-card" href="/learn/best-mac-menu-bar-apps/"><h3>Best Mac menu bar apps</h3><p>Anglais — sélection.</p></a>
+      </div>
+    </section>
+  </article>
+
+  <footer class="site-footer">
+    <div class="footer-bottom"><span>© <span id="yr"></span> NotchNest · Satnam Singh</span><div class="footer-lang"><a href="/learn/how-to-customise-macos-menu-bar/" hreflang="en">English</a><a href="/de/learn/how-to-customise-macos-menu-bar/" hreflang="de">Deutsch</a><a href="/zh/learn/how-to-customise-macos-menu-bar/" hreflang="zh">中文</a><a href="/ar/learn/how-to-customise-macos-menu-bar/" hreflang="ar">العربية</a><a href="/fr/learn/how-to-customise-macos-menu-bar/" hreflang="fr" aria-current="page">Français</a><a href="/pt-br/learn/how-to-customise-macos-menu-bar/" hreflang="pt-BR">Português (BR)</a><a href="/pt-pt/learn/how-to-customise-macos-menu-bar/" hreflang="pt-PT">Português (PT)</a><a href="/es-mx/learn/how-to-customise-macos-menu-bar/" hreflang="es-MX">Español (MX)</a></div></div>
+  </footer>
+</div></main>
+<script>var yr=document.getElementById('yr');if(yr)yr.textContent=new Date().getFullYear();</script>
+</body></html>

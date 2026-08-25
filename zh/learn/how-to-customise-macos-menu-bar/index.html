@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<title>如何自定义 macOS 菜单栏 — NotchNest</title>
+<meta name="description" content="在 macOS 中重排、隐藏并为菜单栏添加组件。分步指南，涵盖控制中心、第三方应用和刘海区工具。" />
+<link rel="canonical" href="https://notchnest.app/zh/learn/how-to-customise-macos-menu-bar/" />
+<meta name="robots" content="index,follow,max-image-preview:large" />
+<link rel="alternate" hreflang="en" href="https://notchnest.app/learn/how-to-customise-macos-menu-bar/" />
+<link rel="alternate" hreflang="en-us" href="https://notchnest.app/learn/how-to-customise-macos-menu-bar/" />
+<link rel="alternate" hreflang="en-gb" href="https://notchnest.app/learn/how-to-customise-macos-menu-bar/" />
+<link rel="alternate" hreflang="en-in" href="https://notchnest.app/learn/how-to-customise-macos-menu-bar/" />
+<link rel="alternate" hreflang="de" href="https://notchnest.app/de/learn/how-to-customise-macos-menu-bar/" />
+<link rel="alternate" hreflang="zh" href="https://notchnest.app/zh/learn/how-to-customise-macos-menu-bar/" />
+<link rel="alternate" hreflang="zh-cn" href="https://notchnest.app/zh/learn/how-to-customise-macos-menu-bar/" />
+<link rel="alternate" hreflang="ar" href="https://notchnest.app/ar/learn/how-to-customise-macos-menu-bar/" />
+<link rel="alternate" hreflang="fr" href="https://notchnest.app/fr/learn/how-to-customise-macos-menu-bar/" />
+<link rel="alternate" hreflang="pt-BR" href="https://notchnest.app/pt-br/learn/how-to-customise-macos-menu-bar/" />
+<link rel="alternate" hreflang="pt-PT" href="https://notchnest.app/pt-pt/learn/how-to-customise-macos-menu-bar/" />
+<link rel="alternate" hreflang="es-MX" href="https://notchnest.app/es-mx/learn/how-to-customise-macos-menu-bar/" />
+<link rel="alternate" hreflang="es-419" href="https://notchnest.app/es-mx/learn/how-to-customise-macos-menu-bar/" />
+<link rel="alternate" hreflang="x-default" href="https://notchnest.app/learn/how-to-customise-macos-menu-bar/" />
+<meta property="og:title" content="如何自定义 macOS 菜单栏" />
+<meta property="og:description" content="用设置、应用和刘海重排、隐藏并扩展菜单栏。" />
+<meta property="og:url" content="https://notchnest.app/zh/learn/how-to-customise-macos-menu-bar/" />
+<meta property="og:locale" content="zh_CN" />
+<meta property="og:type" content="article" />
+<meta property="og:image" content="https://notchnest.app/assets/og/how-to-customise-macos-menu-bar.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@codetard" />
+<meta name="twitter:creator" content="@codetard" />
+<link rel="stylesheet" href="/styles.css" />
+<link rel="apple-touch-icon" href="/assets/notchnest-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<meta name="theme-color" content="#000000" />
+<meta name="color-scheme" content="dark" />
+<script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org", "@type": "Article",
+    "headline": "如何自定义 macOS 菜单栏",
+    "description": "重排、隐藏并扩展 macOS 菜单栏的实用指南。",
+    "image": "https://notchnest.app/assets/og/how-to-customise-macos-menu-bar.png",
+    "datePublished": "2026-06-10T00:00:00+00:00", "dateModified": "2026-06-13T00:00:00+00:00",
+    "inLanguage": "zh-Hans",
+    "author": { "@type": "Person", "name": "Satnam Singh", "url": "https://silverseahog.com/", "jobTitle": "Swift Developer",
+      "sameAs": ["https://silverseahog.com/","https://twitter.com/codetard","https://github.com/29satnam","https://www.linkedin.com/in/satnam-singh-948348aa/","https://instagram.com/codetard"] },
+    "publisher": { "@type": "Organization", "name": "NotchNest", "logo": { "@type": "ImageObject", "url": "https://notchnest.app/assets/notchnest-icon.png" } },
+    "mainEntityOfPage": "https://notchnest.app/zh/learn/how-to-customise-macos-menu-bar/"
+  },
+  {
+    "@context": "https://schema.org", "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://notchnest.app/zh/" },
+      { "@type": "ListItem", "position": 2, "name": "学习", "item": "https://notchnest.app/zh/learn/" },
+      { "@type": "ListItem", "position": 3, "name": "自定义 macOS 菜单栏", "item": "https://notchnest.app/zh/learn/how-to-customise-macos-menu-bar/" }
+    ]
+  },
+  {
+    "@context": "https://schema.org", "@type": "FAQPage", "inLanguage": "zh-Hans",
+    "mainEntity": [
+      { "@type": "Question", "name": "如何重排 macOS 菜单栏图标？", "acceptedAnswer": { "@type": "Answer", "text": "按住 Command 把图标向左或向右拖。时钟和控制中心固定在最右侧。" } },
+      { "@type": "Question", "name": "如何隐藏菜单栏图标？", "acceptedAnswer": { "@type": "Answer", "text": "按住 Command 把第三方图标拖出栏外，或在 系统设置 → 控制中心 切换 Apple 图标。Ice 或 Bartender 之类的管理器可折叠其余图标。" } },
+      { "@type": "Question", "name": "我能给菜单栏添加组件吗？", "acceptedAnswer": { "@type": "Answer", "text": "原生不行，但刘海可承载组件——NotchNest 把日历、剪贴板、笔记、番茄钟、音乐和 AirDrop 放进悬停面板。" } }
+    ]
+  }
+]
+</script>
+</head>
+<body>
+<nav class="nn-nav"><div class="nn-nav-inner">
+  <a class="nn-brand" href="/zh/"><img class="nn-brand-mark" src="/assets/notchnest-icon.png" alt="" width="28" height="28"/><span>NotchNest</span></a>
+  <div class="nn-nav-links">
+    <a href="/learn/how-to-customise-macos-menu-bar/">EN</a>
+    <a href="/zh/learn/" class="nn-nav-keep">学习</a>
+  </div>
+</div></nav>
+
+<main class="main-container"><div class="learn-wrap">
+  <div class="crumbs"><a href="/zh/">首页</a><span class="sep">/</span><a href="/zh/learn/">学习</a><span class="sep">/</span><span>自定义 macOS 菜单栏</span></div>
+
+  <header class="article-head">
+    <span class="article-kicker">指南</span>
+    <h1 class="article-h1">如何自定义 macOS 菜单栏</h1>
+    <p class="article-lede">一份重排、隐藏并扩展 macOS 菜单栏的实用指南——用内建设置、免费第三方应用和刘海。</p>
+    <div class="article-meta"><span>更新于 2026 年 6 月 13 日</span><span class="dot"></span><span>阅读 6 分钟</span><span class="dot"></span><span>作者 Satnam Singh</span></div>
+  </header>
+
+  <article class="article-body">
+    <p>macOS 菜单栏是横贯屏幕顶部的那条：左侧苹果菜单，紧邻应用菜单，右侧系统图标和时钟。它是 macOS 最古老的部分之一——也是少数你仍能不用终端就彻底重塑的部分。</p>
+    <h2>1. 重排图标（免费，10 秒）</h2>
+    <p>按住 Command 把菜单栏图标向左或向右拖。全部诀窍就这些。它对 Wi-Fi、蓝牙、电池、声音、正在播放、AirDrop、专注、第三方应用都有效——除了时钟和控制中心，它们固定在最右侧。顺序会在重启后保留。</p>
+    <h2>2. 隐藏或显示内建图标</h2>
+    <p>打开 系统设置 → 控制中心。每个模块有三个选项：在菜单栏中显示、不在菜单栏中显示、仅活动时显示（如适用）。</p>
+    <ul>
+      <li>电池可通过“显示百分比”显示数值。</li>
+      <li>正在播放可设为仅在播放音乐或视频时出现。</li>
+      <li>聚焦可隐藏——Command-空格 仍然有效。</li>
+      <li>时钟可在“时钟选项”下显示日期、星期、秒和上午/下午。</li>
+    </ul>
+    <h2>3. 隐藏第三方图标</h2>
+    <p>同样的 Command 拖拽诀窍：把图标拖出菜单栏，它便消失。应用本身继续运行；你只是失去了图标。要找回，打开该应用的偏好设置并在那里重新启用菜单栏图标。</p>
+    <h2>4. 菜单栏管理器（面向拥挤菜单栏）</h2>
+    <p>若你有十个或更多图标，一个整理应用能立刻省时。两个可靠之选：<strong>Ice</strong>——开源、免费，把图标折叠到箭头后面；<strong>Bartender</strong>——付费、精致，带触发器、热键和搜索。在 14 英寸 MacBook Pro 上，整理器还能防止图标在运行太多时藏到刘海后面。</p>
+    <div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>把菜单栏扩展到刘海</h3><p>NotchNest 为刘海区加入日历、AI 剪贴板、快速笔记、番茄钟、音乐控制和 AirDrop。在 Mac App Store 免费。</p></div>
+      <a href="https://apps.apple.com/cn/app/notchnest-power-your-notch/id6747612321" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="在 Mac App Store 下载" /></a>
+    </div>
+    <h2>5. 把刘海用作第二菜单栏</h2>
+    <p>如果你的 Mac 有刘海——2021 年起的每台 MacBook Pro 和 M2 起的每台 MacBook Air——你就有一整块可交互的第二区域。macOS 本身对刘海无所作为，但 NotchNest 用悬停触发的玻璃面板将其包裹。</p>
+    <p>用光标悬停刘海，面板便落下：日历、AI 剪贴板、快速笔记、番茄钟、Spotify/Apple Music 控制、拖拽 AirDrop、文件托盘，以及一键摄像头镜像。每个组件都能在设置里开关。这是真正的菜单栏扩展——你用上了原本闲置的空间。</p>
+    <h2>6. 设置时钟样式</h2>
+    <p>系统设置 → 控制中心 → 时钟选项。你可显示数字或指针时钟、星期、日期、秒，以及上午/下午或 24 小时制。许多高级用户彻底隐藏菜单栏时钟，用 NotchNest 在刘海里放一个。</p>
+    <h2>7. 自动隐藏菜单栏</h2>
+    <p>系统设置 → 控制中心 → 自动隐藏和显示菜单栏。设为“始终”“仅在桌面”或“仅在全屏”。在 13 英寸 Air 上很有用，那里每一纵向像素都珍贵。</p>
+    <h2>8. 全部重置</h2>
+    <p>如果你把菜单栏布局搞乱了，退出每个图标对应的应用并重新启动；默认位置会恢复。对于 Apple 图标，把它们全设为“在菜单栏中显示”，原始的从左到右顺序就会回来。</p>
+
+    <aside class="author-bio">
+      <img class="author-avatar" src="https://github.com/29satnam.png" alt="Satnam Singh" width="56" height="56" loading="lazy" />
+      <div>
+        <h3>关于作者</h3>
+        <p><strong>Satnam Singh</strong> 是 NotchNest 背后的 Swift 开发者。他撰写关于 macOS 生产力、Apple 芯片上的 AI 以及独立应用工艺的文章。<a href="https://silverseahog.com/" target="_blank" rel="noopener">silverseahog.com</a> · <a href="https://twitter.com/codetard" target="_blank" rel="noopener nofollow">@codetard</a></p>
+      </div>
+    </aside>
+
+    <section class="related-section">
+      <h2>继续阅读</h2>
+      <div class="related-grid">
+        <a class="related-card" href="/zh/learn/how-to-use-the-macbook-notch/"><h3>使用 MacBook 刘海</h3><p>三步让刘海有用。</p></a>
+        <a class="related-card" href="/zh/learn/best-macos-notch-apps/"><h3>最佳 macOS 刘海应用</h3><p>2026 盘点。</p></a>
+        <a class="related-card" href="/learn/best-mac-menu-bar-apps/"><h3>Best Mac menu bar apps</h3><p>英文——盘点。</p></a>
+      </div>
+    </section>
+  </article>
+
+  <footer class="site-footer">
+    <div class="footer-bottom"><span>© <span id="yr"></span> NotchNest · Satnam Singh</span><div class="footer-lang"><a href="/learn/how-to-customise-macos-menu-bar/" hreflang="en">English</a><a href="/de/learn/how-to-customise-macos-menu-bar/" hreflang="de">Deutsch</a><a href="/zh/learn/how-to-customise-macos-menu-bar/" hreflang="zh" aria-current="page">中文</a><a href="/ar/learn/how-to-customise-macos-menu-bar/" hreflang="ar">العربية</a><a href="/fr/learn/how-to-customise-macos-menu-bar/" hreflang="fr">Français</a><a href="/pt-br/learn/how-to-customise-macos-menu-bar/" hreflang="pt-BR">Português (BR)</a><a href="/pt-pt/learn/how-to-customise-macos-menu-bar/" hreflang="pt-PT">Português (PT)</a><a href="/es-mx/learn/how-to-customise-macos-menu-bar/" hreflang="es-MX">Español (MX)</a></div></div>
+  </footer>
+</div></main>
+<script>var yr=document.getElementById('yr');if(yr)yr.textContent=new Date().getFullYear();</script>
+</body></html>

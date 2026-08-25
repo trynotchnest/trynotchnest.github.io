@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<title>Wie man die macOS-Menüleiste anpasst — NotchNest</title>
+<meta name="description" content="Menüleisten-Widgets in macOS umordnen, verstecken und hinzufügen. Schritt-für-Schritt-Anleitung zu Kontrollzentrum, Drittanbieter-Apps und Notch-Utilities." />
+<link rel="canonical" href="https://notchnest.app/de/learn/how-to-customise-macos-menu-bar/" />
+<meta name="robots" content="index,follow,max-image-preview:large" />
+<link rel="alternate" hreflang="en" href="https://notchnest.app/learn/how-to-customise-macos-menu-bar/" />
+<link rel="alternate" hreflang="en-us" href="https://notchnest.app/learn/how-to-customise-macos-menu-bar/" />
+<link rel="alternate" hreflang="en-gb" href="https://notchnest.app/learn/how-to-customise-macos-menu-bar/" />
+<link rel="alternate" hreflang="en-in" href="https://notchnest.app/learn/how-to-customise-macos-menu-bar/" />
+<link rel="alternate" hreflang="de" href="https://notchnest.app/de/learn/how-to-customise-macos-menu-bar/" />
+<link rel="alternate" hreflang="zh" href="https://notchnest.app/zh/learn/how-to-customise-macos-menu-bar/" />
+<link rel="alternate" hreflang="zh-cn" href="https://notchnest.app/zh/learn/how-to-customise-macos-menu-bar/" />
+<link rel="alternate" hreflang="ar" href="https://notchnest.app/ar/learn/how-to-customise-macos-menu-bar/" />
+<link rel="alternate" hreflang="fr" href="https://notchnest.app/fr/learn/how-to-customise-macos-menu-bar/" />
+<link rel="alternate" hreflang="pt-BR" href="https://notchnest.app/pt-br/learn/how-to-customise-macos-menu-bar/" />
+<link rel="alternate" hreflang="pt-PT" href="https://notchnest.app/pt-pt/learn/how-to-customise-macos-menu-bar/" />
+<link rel="alternate" hreflang="es-MX" href="https://notchnest.app/es-mx/learn/how-to-customise-macos-menu-bar/" />
+<link rel="alternate" hreflang="es-419" href="https://notchnest.app/es-mx/learn/how-to-customise-macos-menu-bar/" />
+<link rel="alternate" hreflang="x-default" href="https://notchnest.app/learn/how-to-customise-macos-menu-bar/" />
+<meta property="og:title" content="Wie man die macOS-Menüleiste anpasst" />
+<meta property="og:description" content="Menüleiste umordnen, verstecken und erweitern — mit Einstellungen, Apps und der Notch." />
+<meta property="og:url" content="https://notchnest.app/de/learn/how-to-customise-macos-menu-bar/" />
+<meta property="og:locale" content="de_DE" />
+<meta property="og:type" content="article" />
+<meta property="og:image" content="https://notchnest.app/assets/og/how-to-customise-macos-menu-bar.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@codetard" />
+<meta name="twitter:creator" content="@codetard" />
+<link rel="stylesheet" href="/styles.css" />
+<link rel="apple-touch-icon" href="/assets/notchnest-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<meta name="theme-color" content="#000000" />
+<meta name="color-scheme" content="dark" />
+<script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org", "@type": "Article",
+    "headline": "Wie man die macOS-Menüleiste anpasst",
+    "description": "Praktische Anleitung zum Umordnen, Verstecken und Erweitern der macOS-Menüleiste.",
+    "image": "https://notchnest.app/assets/og/how-to-customise-macos-menu-bar.png",
+    "datePublished": "2026-06-10T00:00:00+00:00", "dateModified": "2026-06-13T00:00:00+00:00",
+    "inLanguage": "de",
+    "author": { "@type": "Person", "name": "Satnam Singh", "url": "https://silverseahog.com/", "jobTitle": "Swift Developer",
+      "sameAs": ["https://silverseahog.com/","https://twitter.com/codetard","https://github.com/29satnam","https://www.linkedin.com/in/satnam-singh-948348aa/","https://instagram.com/codetard"] },
+    "publisher": { "@type": "Organization", "name": "NotchNest", "logo": { "@type": "ImageObject", "url": "https://notchnest.app/assets/notchnest-icon.png" } },
+    "mainEntityOfPage": "https://notchnest.app/de/learn/how-to-customise-macos-menu-bar/"
+  },
+  {
+    "@context": "https://schema.org", "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Start", "item": "https://notchnest.app/de/" },
+      { "@type": "ListItem", "position": 2, "name": "Lernen", "item": "https://notchnest.app/de/learn/" },
+      { "@type": "ListItem", "position": 3, "name": "macOS-Menüleiste anpassen", "item": "https://notchnest.app/de/learn/how-to-customise-macos-menu-bar/" }
+    ]
+  },
+  {
+    "@context": "https://schema.org", "@type": "FAQPage", "inLanguage": "de",
+    "mainEntity": [
+      { "@type": "Question", "name": "Wie ordne ich macOS-Menüleisten-Icons um?", "acceptedAnswer": { "@type": "Answer", "text": "Halte Command und zieh ein Icon nach links oder rechts. Uhr und Kontrollzentrum bleiben ganz rechts fixiert." } },
+      { "@type": "Question", "name": "Wie verstecke ich Menüleisten-Icons?", "acceptedAnswer": { "@type": "Answer", "text": "Zieh Drittanbieter-Icons mit Command aus der Leiste, oder schalte Apple-Icons in Systemeinstellungen → Kontrollzentrum um. Ein Manager wie Ice oder Bartender klappt den Rest ein." } },
+      { "@type": "Question", "name": "Kann ich Widgets zur Menüleiste hinzufügen?", "acceptedAnswer": { "@type": "Answer", "text": "Nativ nein, aber die Notch kann Widgets hosten — NotchNest bringt Kalender, Zwischenablage, Notizen, Pomodoro, Musik und AirDrop in ein Hover-Panel." } }
+    ]
+  }
+]
+</script>
+</head>
+<body>
+<nav class="nn-nav"><div class="nn-nav-inner">
+  <a class="nn-brand" href="/de/"><img class="nn-brand-mark" src="/assets/notchnest-icon.png" alt="" width="28" height="28"/><span>NotchNest</span></a>
+  <div class="nn-nav-links">
+    <a href="/learn/how-to-customise-macos-menu-bar/">EN</a>
+    <a href="/de/learn/" class="nn-nav-keep">Lernen</a>
+  </div>
+</div></nav>
+
+<main class="main-container"><div class="learn-wrap">
+  <div class="crumbs"><a href="/de/">Start</a><span class="sep">/</span><a href="/de/learn/">Lernen</a><span class="sep">/</span><span>macOS-Menüleiste anpassen</span></div>
+
+  <header class="article-head">
+    <span class="article-kicker">Anleitung</span>
+    <h1 class="article-h1">Wie man die macOS-Menüleiste anpasst</h1>
+    <p class="article-lede">Eine praktische Anleitung zum Umordnen, Verstecken und Erweitern der macOS-Menüleiste — mit eingebauten Einstellungen, kostenlosen Apps und der Notch.</p>
+    <div class="article-meta"><span>Aktualisiert 13. Juni 2026</span><span class="dot"></span><span>6 Min. Lesedauer</span><span class="dot"></span><span>Von Satnam Singh</span></div>
+  </header>
+
+  <article class="article-body">
+    <p>Die macOS-Menüleiste ist der Streifen quer über deinen Bildschirm: Apple-Menü links, App-Menüs daneben, Systemicons und die Uhr rechts. Sie ist eines der ältesten Teile von macOS — und eines der wenigen, das du ohne Terminal noch komplett umformen kannst.</p>
+    <h2>1. Icons umordnen (kostenlos, 10 Sekunden)</h2>
+    <p>Halte Command und zieh ein Menüleisten-Icon nach links oder rechts. Das ist der ganze Trick. Er klappt bei WLAN, Bluetooth, Batterie, Ton, Now Playing, AirDrop, Fokus, Drittanbieter-Apps — alles außer Uhr und Kontrollzentrum, die ganz rechts fixiert sind. Die Reihenfolge bleibt über Neustarts erhalten.</p>
+    <h2>2. Eingebaute Icons ein-/ausblenden</h2>
+    <p>Öffne Systemeinstellungen → Kontrollzentrum. Jedes Modul hat drei Optionen: In Menüleiste anzeigen, Nicht in Menüleiste anzeigen, Nur bei Aktivität anzeigen (wo zutreffend).</p>
+    <ul>
+      <li>Batterie kann per „Prozent anzeigen" eine Prozentzahl zeigen.</li>
+      <li>Now Playing lässt sich auf „nur bei Wiedergabe" setzen.</li>
+      <li>Spotlight kann versteckt werden — Command-Leertaste funktioniert weiter.</li>
+      <li>Die Uhr kann Datum, Wochentag, Sekunden und AM/PM unter „Uhroptionen" zeigen.</li>
+    </ul>
+    <h2>3. Drittanbieter-Icons verstecken</h2>
+    <p>Gleicher Command-Ziehen-Trick: Zieh ein Icon aus der Menüleiste, und es verschwindet. Die App läuft weiter; nur das Icon ist weg. Zum Zurückholen öffne die App-Einstellungen und aktiviere dort das Menüleisten-Icon.</p>
+    <h2>4. Menüleisten-Manager (für volle Leisten)</h2>
+    <p>Bei zehn oder mehr Icons zahlt sich eine Organizer-App in gesparten Sekunden aus. Zwei solide Optionen: <strong>Ice</strong> — Open Source, kostenlos, klappt Icons hinter einem Chevron ein; <strong>Bartender</strong> — bezahlt, mit Triggern, Hotkeys und Suche. Auf einem 14"-MacBook-Pro hält ein Organizer Icons auch davon ab, hinter der Notch zu verschwinden.</p>
+    <div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>Erweitere die Menüleiste — in die Notch</h3><p>NotchNest bringt Kalender, KI-Zwischenablage, Schnellnotizen, Pomodoro, Musiksteuerung und AirDrop in den Notch-Bereich. Kostenlos im Mac App Store.</p></div>
+      <a href="https://apps.apple.com/de/app/notchnest-power-your-notch/id6747612321" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="Im Mac App Store laden" /></a>
+    </div>
+    <h2>5. Die Notch als zweite Menüleiste nutzen</h2>
+    <p>Hat dein Mac eine Notch — jedes MacBook Pro ab 2021 und jedes MacBook Air ab M2 — hast du eine ganze zweite Region, die du interaktiv machen kannst. macOS selbst tut nichts damit, aber NotchNest umhüllt sie mit einem hover-aktivierten Glass-Panel.</p>
+    <p>Hover die Notch, und das Panel klappt herunter: Kalender, KI-Zwischenablage, Schnellnotizen, Pomodoro, Spotify/Apple-Music-Steuerung, Drag-to-AirDrop, Datei-Tray und ein Ein-Tipp-Kamera-Spiegel. Jedes Widget lässt sich in den Einstellungen an-/abschalten. Das ist eine echte Menüleisten-Erweiterung — du nutzt Platz, der leer war.</p>
+    <h2>6. Die Uhr gestalten</h2>
+    <p>Systemeinstellungen → Kontrollzentrum → Uhroptionen. Du kannst Digital- oder Analoguhr, Wochentag, Datum, Sekunden und AM/PM oder 24-Stunden zeigen. Viele Power-User verstecken die Menüleisten-Uhr ganz und legen via NotchNest eine in die Notch.</p>
+    <h2>7. Menüleiste automatisch ausblenden</h2>
+    <p>Systemeinstellungen → Kontrollzentrum → Menüleiste automatisch aus- und einblenden. Setz auf „Immer", „Nur auf dem Schreibtisch" oder „Nur im Vollbild". Nützlich auf einem 13"-Air, wo jedes vertikale Pixel zählt.</p>
+    <h2>8. Alles zurücksetzen</h2>
+    <p>Hast du das Menüleisten-Layout durcheinandergebracht, beende jede App mit Icon und starte sie neu; die Standardposition kehrt zurück. Für Apple-Icons setz alle auf „In Menüleiste anzeigen", und die ursprüngliche Reihenfolge kehrt zurück.</p>
+
+    <aside class="author-bio">
+      <img class="author-avatar" src="https://github.com/29satnam.png" alt="Satnam Singh" width="56" height="56" loading="lazy" />
+      <div>
+        <h3>Über den Autor</h3>
+        <p><strong>Satnam Singh</strong> ist der Swift-Entwickler hinter NotchNest. Er schreibt über macOS-Produktivität, KI auf Apple Silicon und Indie-App-Handwerk. <a href="https://silverseahog.com/" target="_blank" rel="noopener">silverseahog.com</a> · <a href="https://twitter.com/codetard" target="_blank" rel="noopener nofollow">@codetard</a></p>
+      </div>
+    </aside>
+
+    <section class="related-section">
+      <h2>Weiterlesen</h2>
+      <div class="related-grid">
+        <a class="related-card" href="/de/learn/how-to-use-the-macbook-notch/"><h3>MacBook-Notch nutzen</h3><p>Drei Schritte zur nützlichen Notch.</p></a>
+        <a class="related-card" href="/de/learn/best-macos-notch-apps/"><h3>Beste macOS-Notch-Apps</h3><p>Übersicht 2026.</p></a>
+        <a class="related-card" href="/learn/best-mac-menu-bar-apps/"><h3>Best Mac menu bar apps</h3><p>Englisch — Übersicht.</p></a>
+      </div>
+    </section>
+  </article>
+
+  <footer class="site-footer">
+    <div class="footer-bottom"><span>© <span id="yr"></span> NotchNest · Satnam Singh</span><div class="footer-lang"><a href="/learn/how-to-customise-macos-menu-bar/" hreflang="en">English</a><a href="/de/learn/how-to-customise-macos-menu-bar/" hreflang="de" aria-current="page">Deutsch</a><a href="/zh/learn/how-to-customise-macos-menu-bar/" hreflang="zh">中文</a><a href="/ar/learn/how-to-customise-macos-menu-bar/" hreflang="ar">العربية</a><a href="/fr/learn/how-to-customise-macos-menu-bar/" hreflang="fr">Français</a><a href="/pt-br/learn/how-to-customise-macos-menu-bar/" hreflang="pt-BR">Português (BR)</a><a href="/pt-pt/learn/how-to-customise-macos-menu-bar/" hreflang="pt-PT">Português (PT)</a><a href="/es-mx/learn/how-to-customise-macos-menu-bar/" hreflang="es-MX">Español (MX)</a></div></div>
+  </footer>
+</div></main>
+<script>var yr=document.getElementById('yr');if(yr)yr.textContent=new Date().getFullYear();</script>
+</body></html>
