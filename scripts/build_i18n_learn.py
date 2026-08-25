@@ -1712,6 +1712,263 @@ DROP = {
 }
 
 
+# ── best-mac-menu-bar-apps ──────────────────────────────────────────────────
+BESTMENUBAR = {
+    "de": {"title": "Beste Mac-Menüleisten-Apps (2026) — NotchNest", "description": "Die besten Mac-Menüleisten-Apps 2026 — Organizer, Zwischenablage-Manager, Timer, System-Monitore und Notch-Utilities, die sich lohnen.",
+           "og_title": "Beste Mac-Menüleisten-Apps (2026)", "og_desc": "Die Menüleisten-Apps, die 2026 einen Slot wert sind, nach Kategorie.",
+           "jsonld_headline": "Beste Mac-Menüleisten-Apps (2026)", "jsonld_desc": "Übersicht der besten Mac-Menüleisten-Apps 2026 nach Kategorie.",
+           "kicker": KICK["roundup"]["de"], "h1": "Beste Mac-Menüleisten-Apps (2026)",
+           "lede": "Die Menüleiste ist bester Bildschirmplatz. Das sind die Menüleisten-Apps, die 2026 wirklich einen Slot wert sind, quer durch alle Kategorien.",
+           "readtime": READ6["de"], "crumb_this": "Beste Menüleisten-Apps",
+           "faq": [("Was ist die beste kostenlose Mac-Menüleisten-App?", "Für Macs mit Notch ist NotchNest (kostenlos, Mac App Store) die wertvollste Wahl — es ersetzt mehrere Einzweck-Apps. Zum Organisieren von Icons ist Ice die beste kostenlose Option."),
+                   ("Wie räume ich eine überladene Mac-Menüleiste auf?", "Nutze einen Menüleisten-Manager wie Ice oder Bartender, um Icons zu verstecken und zu gruppieren, entferne unnötige Apps und bündle Tools mit NotchNest in der Notch."),
+                   ("Sind Menüleisten-Apps schlecht für den Akku?", "Gut gebaute native Apps sind vernachlässigbar. NotchNest schläft im Leerlauf und nutzt einstellige MB RAM. Electron-basierte Apps können mehr brauchen."),
+                   ("Welche Menüleisten-App funktioniert mit der Notch?", "NotchNest ist um die Notch herum gebaut. Organizer wie Ice und Bartender helfen zusätzlich, indem sie Icons von ihr fernhalten.")],
+           "body": """<p>Die Mac-Menüleiste ist der am schnellsten erfassbare Streifen deines Bildschirms. Die richtigen Apps machen sie zur Kommandozentrale; die falschen überladen sie nur. Hier die besten Picks nach Kategorie für 2026.</p>
+    <h2>Beste Notch-Zentrale: NotchNest</h2>
+    <p>Hast du eine Notch, ist NotchNest die Installation mit dem größten Hebel: Es faltet Kalender, KI-Zwischenablage, Schnellnotizen, Pomodoro, Musiksteuerung, Drag-to-AirDrop und einen Kamera-Spiegel in die Notch — und ersetzt mehrere Einzweck-Menüleisten-Apps auf einmal. Kostenlos, über den Mac App Store sandboxed.</p>
+    <h2>Bester Menüleisten-Organizer: Ice / Bartender</h2>
+    <p>Ice ist kostenlos und Open Source; Bartender ist bezahlt und mächtiger. Beide verstecken und gruppieren Icons, damit deine Leiste sauber bleibt — essenziell, wenn Icons ständig hinter der Notch verschwinden.</p>
+    <h2>Bester Zwischenablage-Manager</h2>
+    <p>Ein Zwischenablage-Verlauf ist ein Gamechanger, sobald du ihn hast. NotchNest hat eine KI-Zwischenablage in der Notch; eigenständige Optionen wie Maccy (kostenlos) laufen in der Menüleiste, falls du keine Notch hast.</p>
+    <h2>Bester System-Monitor: Stats</h2>
+    <p>Stats (kostenlos, Open Source) bringt CPU-, GPU-, Speicher-, Netzwerk- und Akkuanzeigen in die Leiste. Unverzichtbar für Entwickler.</p>
+    <h2>Bester Timer / Fokus</h2>
+    <p>NotchNests Pomodoro lebt in der Notch; für reine Menüleisten-Setups gibt es viele einfache Timer-Apps. Fokus zählt hier mehr als Features.</p>
+    <h2>Beste Uhr / Kalender</h2>
+    <p>Die Standarduhr ist okay, aber ein Kalender, den du ohne App-Öffnen erfassen kannst, spart Zeit. NotchNests Kalender-Widget mit KI-Briefings deckt das in der Notch ab.</p>
+    <div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>Mach deine Notch nützlich</h3><p>NotchNest bringt zehn Tools in die Notch deines MacBooks. Kostenlos im Mac App Store.</p></div>
+      <a href="%STORE%" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="Im Mac App Store laden" /></a>
+    </div>
+    <h2>Wie du wählst</h2>
+    <ol>
+      <li>Starte mit einem Organizer (Ice), damit die Leiste nie überläuft.</li>
+      <li>Hast du eine Notch, füg NotchNest hinzu, um Tools zu bündeln.</li>
+      <li>Füg Spezialisten (Stats) nur für Bedürfnisse hinzu, die die obigen nicht abdecken.</li>
+    </ol>
+    <p>Weniger Mehrzweck-Apps schlagen ein Dutzend Einzweck-Icons.</p>""",
+           "related": _related("de", ("/learn/how-to-customise-macos-menu-bar/", "How to customise the macOS menu bar", "Englisch — Leitfaden."))},
+    "zh": {"title": "最佳 Mac 菜单栏应用（2026）— NotchNest", "description": "2026 年最佳 Mac 菜单栏应用——整理器、剪贴板管理器、计时器、系统监视器和值得安装的刘海工具。",
+           "og_title": "最佳 Mac 菜单栏应用（2026）", "og_desc": "2026 年值得占一席之地的菜单栏应用，按类别。",
+           "jsonld_headline": "最佳 Mac 菜单栏应用（2026）", "jsonld_desc": "2026 年最佳 Mac 菜单栏应用按类别盘点。",
+           "kicker": KICK["roundup"]["zh"], "h1": "最佳 Mac 菜单栏应用（2026）",
+           "lede": "菜单栏是黄金地段。这些是 2026 年真正值得占一格的菜单栏应用，涵盖各个类别。",
+           "readtime": READ6["zh"], "crumb_this": "最佳菜单栏应用",
+           "faq": [("最佳的免费 Mac 菜单栏应用是哪款？", "对于带刘海的 Mac，NotchNest（免费，Mac App Store）是最有价值之选——它替代多个单一用途应用。整理图标方面，Ice 是最佳免费选择。"),
+                   ("如何清理拥挤的 Mac 菜单栏？", "用 Ice 或 Bartender 之类的菜单栏管理器隐藏并分组图标，移除不需要的应用，并用 NotchNest 把工具收进刘海。"),
+                   ("菜单栏应用对电池有害吗？", "构建良好的原生应用可忽略不计。NotchNest 空闲时休眠，占用个位数 MB 内存。基于 Electron 的应用可能更耗。"),
+                   ("哪款菜单栏应用能配合刘海？", "NotchNest 围绕刘海构建。Ice 和 Bartender 之类的整理器也有帮助，可让图标不与刘海冲突。")],
+           "body": """<p>Mac 菜单栏是屏幕上最一目了然的一条。合适的应用把它变成指挥中心；不合适的只会让它更乱。以下是 2026 年按类别的最佳之选。</p>
+    <h2>最佳刘海中枢：NotchNest</h2>
+    <p>如果你有刘海，NotchNest 是杠杆最高的安装：它把日历、AI 剪贴板、快速笔记、番茄钟、音乐控制、拖拽 AirDrop 和摄像头镜像折进刘海——一次替代多个单一用途的菜单栏应用。免费，经 Mac App Store 沙盒化。</p>
+    <h2>最佳菜单栏整理器：Ice / Bartender</h2>
+    <p>Ice 免费且开源；Bartender 付费且更强大。两者都能隐藏并分组图标，让你的栏保持整洁——若图标总藏到刘海后面，这很关键。</p>
+    <h2>最佳剪贴板管理器</h2>
+    <p>一旦拥有剪贴板历史便会改变习惯。NotchNest 在刘海里内置 AI 剪贴板；若你没有刘海，Maccy（免费）之类的独立选项可在菜单栏使用。</p>
+    <h2>最佳系统监视器：Stats</h2>
+    <p>Stats（免费、开源）把 CPU、GPU、内存、网络和电池读数放进栏里。对开发者不可或缺。</p>
+    <h2>最佳计时器 / 专注</h2>
+    <p>NotchNest 的番茄钟住在刘海里；纯菜单栏方案则有许多简单的计时器应用。这里专注比功能更重要。</p>
+    <h2>最佳时钟 / 日历</h2>
+    <p>系统自带时钟够用，但一个无需开应用就能一眼看到的日历更省时。NotchNest 的日历组件带 AI 摘要，在刘海里就覆盖了这一点。</p>
+    <div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>让你的刘海有用</h3><p>NotchNest 把十个工具放进 MacBook 刘海。在 Mac App Store 免费。</p></div>
+      <a href="%STORE%" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="在 Mac App Store 下载" /></a>
+    </div>
+    <h2>如何选择</h2>
+    <ol>
+      <li>先装一个整理器（Ice），让栏永不溢出。</li>
+      <li>若你有刘海，加装 NotchNest 以整合工具。</li>
+      <li>仅为上面未覆盖的需求再添加专用工具（Stats）。</li>
+    </ol>
+    <p>更少的多用途应用胜过十几个单一功能图标。</p>""",
+           "related": _related("zh", ("/learn/how-to-customise-macos-menu-bar/", "How to customise the macOS menu bar", "英文——指南。"))},
+    "ar": {"title": "أفضل تطبيقات شريط قوائم الماك (2026) — NotchNest", "description": "أفضل تطبيقات شريط قوائم الماك في 2026 — منظّمات ومديرو حافظة ومؤقتات ومراقبو نظام وأدوات نتش تستحق التثبيت.",
+           "og_title": "أفضل تطبيقات شريط قوائم الماك (2026)", "og_desc": "تطبيقات شريط القوائم التي تستحق مكانًا في 2026، حسب الفئة.",
+           "jsonld_headline": "أفضل تطبيقات شريط قوائم الماك (2026)", "jsonld_desc": "حصيلة أفضل تطبيقات شريط قوائم الماك في 2026 حسب الفئة.",
+           "kicker": KICK["roundup"]["ar"], "h1": "أفضل تطبيقات شريط قوائم الماك (2026)",
+           "lede": "شريط القوائم مساحة ثمينة. هذه هي تطبيقات شريط القوائم التي تستحق فعلًا مكانًا في 2026، عبر كل الفئات.",
+           "readtime": READ6["ar"], "crumb_this": "أفضل تطبيقات شريط القوائم",
+           "faq": [("ما أفضل تطبيق شريط قوائم مجاني للماك؟", "لأجهزة الماك بنتش، NotchNest (مجاني، Mac App Store) هو الأعلى قيمة — إذ يستبدل عدة تطبيقات أحادية الغرض. ولتنظيم الأيقونات، Ice أفضل خيار مجاني."),
+                   ("كيف أنظّف شريط قوائم ماك مزدحمًا؟", "استخدم مدير شريط قوائم مثل Ice أو Bartender لإخفاء الأيقونات وتجميعها، وأزل التطبيقات غير الضرورية، واجمع الأدوات في النتش عبر NotchNest."),
+                   ("هل تطبيقات شريط القوائم مضرّة بالبطارية؟", "التطبيقات الأصلية جيدة البناء لا تُذكر. ينام NotchNest عند الخمول ويستخدم بضعة ميغابايت. أما تطبيقات Electron فقد تستهلك أكثر."),
+                   ("أي تطبيق شريط قوائم يعمل مع النتش؟", "NotchNest مبني حول النتش. كما تساعد منظّمات مثل Ice وBartender بإبقاء الأيقونات بعيدة عنه.")],
+           "body": """<p>شريط قوائم الماك هو أسرع أجزاء شاشتك لمحًا. التطبيقات المناسبة تحوّله إلى مركز قيادة؛ والخاطئة تزدحمه فقط. إليك أفضل الاختيارات حسب الفئة لعام 2026.</p>
+    <h2>أفضل مركز نتش: NotchNest</h2>
+    <p>إن كان لديك نتش، فـ NotchNest هو التثبيت الأعلى أثرًا: يطوي تقويمًا وحافظة بالذكاء الاصطناعي وملاحظات سريعة وبومودورو وتحكّمًا بالموسيقى والسحب إلى AirDrop ومرآة كاميرا في النتش — مستبدلًا عدة تطبيقات شريط قوائم أحادية الغرض دفعة واحدة. مجاني، ومعزول عبر Mac App Store.</p>
+    <h2>أفضل منظّم شريط قوائم: Ice / Bartender</h2>
+    <p>Ice مجاني ومفتوح المصدر؛ وBartender مدفوع وأقوى. كلاهما يخفي الأيقونات ويجمّعها ليبقى شريطك نظيفًا — أساسي إن كانت الأيقونات تختفي باستمرار خلف النتش.</p>
+    <h2>أفضل مدير حافظة</h2>
+    <p>سجل الحافظة يغيّر حياتك بمجرد امتلاكه. يتضمّن NotchNest حافظة بالذكاء الاصطناعي في النتش؛ وخيارات مستقلة مثل Maccy (مجاني) تعمل في شريط القوائم إن لم يكن لديك نتش.</p>
+    <h2>أفضل مراقب نظام: Stats</h2>
+    <p>يضع Stats (مجاني، مفتوح المصدر) قراءات المعالج والرسوميات والذاكرة والشبكة والبطارية في الشريط. لا غنى عنه للمطورين.</p>
+    <h2>أفضل مؤقت / تركيز</h2>
+    <p>بومودورو في NotchNest يعيش في النتش؛ ولإعدادات شريط القوائم فقط، تكثر تطبيقات المؤقت البسيطة. التركيز هنا أهم من الميزات.</p>
+    <h2>أفضل ساعة / تقويم</h2>
+    <p>الساعة الافتراضية جيدة، لكن تقويمًا تلمحه دون فتح تطبيق يوفّر الوقت. أداة تقويم NotchNest بملخصات ذكية تغطّي ذلك في النتش.</p>
+    <div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>اجعل نتشك مفيدًا</h3><p>يضع NotchNest عشر أدوات في نتش الماك بوك. مجانًا على Mac App Store.</p></div>
+      <a href="%STORE%" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="التنزيل من Mac App Store" /></a>
+    </div>
+    <h2>كيف تختار</h2>
+    <ol>
+      <li>ابدأ بمنظّم (Ice) لئلّا يفيض الشريط أبدًا.</li>
+      <li>إن كان لديك نتش، أضف NotchNest لتجميع الأدوات.</li>
+      <li>أضف المتخصصين (Stats) فقط لاحتياجات لا يغطّيها ما سبق.</li>
+    </ol>
+    <p>تطبيقات أقل متعددة الأغراض تتفوّق على عشرات الأيقونات أحادية الحيلة.</p>""",
+           "related": _related("ar", ("/learn/how-to-customise-macos-menu-bar/", "How to customise the macOS menu bar", "إنجليزي — دليل."))},
+    "fr": {"title": "Meilleures apps de barre des menus Mac (2026) — NotchNest", "description": "Les meilleures apps de barre des menus Mac en 2026 — organiseurs, gestionnaires de presse-papiers, minuteurs, moniteurs système et utilitaires d'encoche à installer.",
+           "og_title": "Meilleures apps de barre des menus Mac (2026)", "og_desc": "Les apps de barre des menus qui méritent une place en 2026, par catégorie.",
+           "jsonld_headline": "Meilleures apps de barre des menus Mac (2026)", "jsonld_desc": "Sélection des meilleures apps de barre des menus Mac en 2026 par catégorie.",
+           "kicker": KICK["roundup"]["fr"], "h1": "Meilleures apps de barre des menus Mac (2026)",
+           "lede": "La barre des menus est un emplacement de choix. Voici les apps de barre des menus qui méritent vraiment une place en 2026, dans chaque catégorie.",
+           "readtime": READ6["fr"], "crumb_this": "Meilleures apps de barre des menus",
+           "faq": [("Quelle est la meilleure app de barre des menus Mac gratuite ?", "Pour les Mac à encoche, NotchNest (gratuit, Mac App Store) est le choix le plus rentable — il remplace plusieurs apps mono-usage. Pour organiser les icônes, Ice est la meilleure option gratuite."),
+                   ("Comment nettoyer une barre des menus Mac encombrée ?", "Utilisez un gestionnaire comme Ice ou Bartender pour masquer et grouper les icônes, retirez les apps inutiles, et regroupez les outils dans l'encoche avec NotchNest."),
+                   ("Les apps de barre des menus sont-elles mauvaises pour la batterie ?", "Les apps natives bien conçues sont négligeables. NotchNest se met en veille au repos et utilise quelques Mo de RAM. Les apps basées sur Electron peuvent consommer plus."),
+                   ("Quelle app de barre des menus fonctionne avec l'encoche ?", "NotchNest est bâti autour de l'encoche. Des organiseurs comme Ice et Bartender aident aussi en empêchant les icônes d'entrer en collision avec elle.")],
+           "body": """<p>La barre des menus Mac est la bande la plus consultable de votre écran. Les bonnes apps en font un centre de commande ; les mauvaises ne font que l'encombrer. Voici les meilleurs choix par catégorie pour 2026.</p>
+    <h2>Meilleure centrale d'encoche : NotchNest</h2>
+    <p>Si vous avez une encoche, NotchNest est l'installation au meilleur levier : il replie calendrier, presse-papiers IA, notes rapides, Pomodoro, contrôles musique, glisser-vers-AirDrop et un miroir caméra dans l'encoche — remplaçant plusieurs apps mono-usage d'un coup. Gratuit, en bac à sable via le Mac App Store.</p>
+    <h2>Meilleur organiseur : Ice / Bartender</h2>
+    <p>Ice est gratuit et open source ; Bartender est payant et plus puissant. Les deux masquent et groupent les icônes pour garder la barre propre — essentiel si les icônes disparaissent sans cesse derrière l'encoche.</p>
+    <h2>Meilleur gestionnaire de presse-papiers</h2>
+    <p>Un historique de presse-papiers change la vie une fois qu'on l'a. NotchNest inclut un presse-papiers IA dans l'encoche ; des options autonomes comme Maccy (gratuit) marchent dans la barre si vous n'avez pas d'encoche.</p>
+    <h2>Meilleur moniteur système : Stats</h2>
+    <p>Stats (gratuit, open source) affiche CPU, GPU, mémoire, réseau et batterie dans la barre. Indispensable pour les développeurs.</p>
+    <h2>Meilleur minuteur / focus</h2>
+    <p>Le Pomodoro de NotchNest vit dans l'encoche ; pour un setup barre des menus seule, les apps de minuteur simples abondent. Le focus compte ici plus que les fonctions.</p>
+    <h2>Meilleure horloge / calendrier</h2>
+    <p>L'horloge d'origine convient, mais un calendrier consultable sans ouvrir d'app fait gagner du temps. Le widget calendrier de NotchNest avec briefings IA le couvre dans l'encoche.</p>
+    <div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>Rendez votre encoche utile</h3><p>NotchNest met dix outils dans l'encoche de votre MacBook. Gratuit sur le Mac App Store.</p></div>
+      <a href="%STORE%" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="Télécharger sur le Mac App Store" /></a>
+    </div>
+    <h2>Comment choisir</h2>
+    <ol>
+      <li>Commencez par un organiseur (Ice) pour que la barre ne déborde jamais.</li>
+      <li>Si vous avez une encoche, ajoutez NotchNest pour regrouper les outils.</li>
+      <li>Ajoutez des spécialistes (Stats) seulement pour des besoins non couverts.</li>
+    </ol>
+    <p>Moins d'apps polyvalentes valent mieux qu'une dizaine d'icônes mono-usage.</p>""",
+           "related": _related("fr", ("/learn/how-to-customise-macos-menu-bar/", "How to customise the macOS menu bar", "Anglais — guide."))},
+    "pt-BR": {"title": "Melhores apps de barra de menus para Mac (2026) — NotchNest", "description": "Os melhores apps de barra de menus para Mac em 2026 — organizadores, gerenciadores de área de transferência, timers, monitores de sistema e utilitários de notch que valem a pena.",
+              "og_title": "Melhores apps de barra de menus para Mac (2026)", "og_desc": "Os apps de barra de menus que valem uma vaga em 2026, por categoria.",
+              "jsonld_headline": "Melhores apps de barra de menus para Mac (2026)", "jsonld_desc": "Seleção dos melhores apps de barra de menus para Mac em 2026 por categoria.",
+              "kicker": KICK["roundup"]["pt-BR"], "h1": "Melhores apps de barra de menus para Mac (2026)",
+              "lede": "A barra de menus é um espaço nobre. Estes são os apps de barra de menus que realmente valem uma vaga em 2026, em cada categoria.",
+              "readtime": READ6["pt-BR"], "crumb_this": "Melhores apps de barra de menus",
+              "faq": [("Qual é o melhor app de barra de menus grátis para Mac?", "Para Macs com notch, o NotchNest (grátis, Mac App Store) é a escolha de maior valor — substitui vários apps de propósito único. Para organizar ícones, o Ice é a melhor opção grátis."),
+                      ("Como limpo uma barra de menus lotada no Mac?", "Use um gerenciador como Ice ou Bartender para esconder e agrupar ícones, remova apps que não precisa e consolide ferramentas no notch com o NotchNest."),
+                      ("Apps de barra de menus são ruins para a bateria?", "Apps nativos bem-feitos são desprezíveis. O NotchNest dorme quando ocioso e usa poucos MB de RAM. Apps baseados em Electron podem usar mais."),
+                      ("Qual app de barra de menus funciona com o notch?", "O NotchNest é construído em torno do notch. Organizadores como Ice e Bartender também ajudam ao impedir que os ícones colidam com ele.")],
+              "body": """<p>A barra de menus do Mac é a faixa mais fácil de olhar da sua tela. Os apps certos a transformam em um centro de comando; os errados só a entulham. Aqui estão as melhores escolhas por categoria para 2026.</p>
+    <h2>Melhor central de notch: NotchNest</h2>
+    <p>Se você tem notch, o NotchNest é a instalação de maior alavancagem: ele dobra calendário, área de transferência com IA, notas rápidas, Pomodoro, controles de música, arrastar para AirDrop e um espelho da câmera no notch — substituindo vários apps de propósito único de uma vez. Grátis, em sandbox pela Mac App Store.</p>
+    <h2>Melhor organizador de barra de menus: Ice / Bartender</h2>
+    <p>O Ice é grátis e de código aberto; o Bartender é pago e mais poderoso. Ambos escondem e agrupam ícones para a barra ficar limpa — essencial se os ícones somem atrás do notch.</p>
+    <h2>Melhor gerenciador de área de transferência</h2>
+    <p>Um histórico de área de transferência muda a vida quando você o tem. O NotchNest inclui uma área com IA no notch; opções independentes como o Maccy (grátis) funcionam na barra se você não tem notch.</p>
+    <h2>Melhor monitor de sistema: Stats</h2>
+    <p>O Stats (grátis, código aberto) coloca leituras de CPU, GPU, memória, rede e bateria na barra. Indispensável para desenvolvedores.</p>
+    <h2>Melhor timer / foco</h2>
+    <p>O Pomodoro do NotchNest vive no notch; para setups só de barra de menus, apps de timer simples são abundantes. Foco importa mais que recursos aqui.</p>
+    <h2>Melhor relógio / calendário</h2>
+    <p>O relógio de fábrica serve, mas um calendário que você olha sem abrir um app economiza tempo. O widget de calendário do NotchNest com briefings de IA cobre isso no notch.</p>
+    <div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>Torne seu notch útil</h3><p>O NotchNest coloca dez ferramentas no notch do seu MacBook. Grátis na Mac App Store.</p></div>
+      <a href="%STORE%" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="Baixar na Mac App Store" /></a>
+    </div>
+    <h2>Como escolher</h2>
+    <ol>
+      <li>Comece com um organizador (Ice) para a barra nunca transbordar.</li>
+      <li>Se você tem notch, adicione o NotchNest para consolidar ferramentas.</li>
+      <li>Adicione especialistas (Stats) só para necessidades que os acima não cobrem.</li>
+    </ol>
+    <p>Menos apps multiuso vencem uma dúzia de ícones de truque único.</p>""",
+              "related": _related("pt-BR", ("/learn/how-to-customise-macos-menu-bar/", "How to customise the macOS menu bar", "Inglês — guia."))},
+    "pt-PT": {"title": "Melhores apps de barra de menus para Mac (2026) — NotchNest", "description": "As melhores apps de barra de menus para Mac em 2026 — organizadores, gestores de área de transferência, temporizadores, monitores de sistema e utilitários de notch que valem a pena.",
+              "og_title": "Melhores apps de barra de menus para Mac (2026)", "og_desc": "As apps de barra de menus que valem uma vaga em 2026, por categoria.",
+              "jsonld_headline": "Melhores apps de barra de menus para Mac (2026)", "jsonld_desc": "Seleção das melhores apps de barra de menus para Mac em 2026 por categoria.",
+              "kicker": KICK["roundup"]["pt-PT"], "h1": "Melhores apps de barra de menus para Mac (2026)",
+              "lede": "A barra de menus é um espaço nobre. Estas são as apps de barra de menus que valem mesmo uma vaga em 2026, em cada categoria.",
+              "readtime": READ6["pt-PT"], "crumb_this": "Melhores apps de barra de menus",
+              "faq": [("Qual é a melhor app de barra de menus gratuita para Mac?", "Para Macs com notch, o NotchNest (gratuito, Mac App Store) é a escolha de maior valor — substitui vários apps de propósito único. Para organizar ícones, o Ice é a melhor opção gratuita."),
+                      ("Como limpo uma barra de menus cheia no Mac?", "Use um gestor como Ice ou Bartender para esconder e agrupar ícones, remova apps de que não precisa e consolide ferramentas no notch com o NotchNest."),
+                      ("As apps de barra de menus são más para a bateria?", "Apps nativas bem feitas são desprezíveis. O NotchNest adormece quando inativo e usa poucos MB de RAM. Apps baseadas em Electron podem usar mais."),
+                      ("Que app de barra de menus funciona com o notch?", "O NotchNest é construído à volta do notch. Organizadores como Ice e Bartender também ajudam ao impedir que os ícones colidam com ele.")],
+              "body": """<p>A barra de menus do Mac é a faixa mais fácil de ver do seu ecrã. As apps certas transformam-na num centro de comando; as erradas só a atulham. Aqui estão as melhores escolhas por categoria para 2026.</p>
+    <h2>Melhor central de notch: NotchNest</h2>
+    <p>Se tem notch, o NotchNest é a instalação de maior alavancagem: dobra calendário, área de transferência com IA, notas rápidas, Pomodoro, controlos de música, arrastar para AirDrop e um espelho da câmara no notch — substituindo vários apps de propósito único de uma vez. Gratuito, em sandbox pela Mac App Store.</p>
+    <h2>Melhor organizador de barra de menus: Ice / Bartender</h2>
+    <p>O Ice é gratuito e de código aberto; o Bartender é pago e mais poderoso. Ambos escondem e agrupam ícones para a barra ficar limpa — essencial se os ícones desaparecem atrás do notch.</p>
+    <h2>Melhor gestor de área de transferência</h2>
+    <p>Um histórico de área de transferência muda a vida quando o tem. O NotchNest inclui uma área com IA no notch; opções independentes como o Maccy (gratuito) funcionam na barra se não tiver notch.</p>
+    <h2>Melhor monitor de sistema: Stats</h2>
+    <p>O Stats (gratuito, código aberto) coloca leituras de CPU, GPU, memória, rede e bateria na barra. Indispensável para programadores.</p>
+    <h2>Melhor temporizador / foco</h2>
+    <p>O Pomodoro do NotchNest vive no notch; para configurações só de barra de menus, abundam apps de temporizador simples. O foco importa mais que as funcionalidades aqui.</p>
+    <h2>Melhor relógio / calendário</h2>
+    <p>O relógio de origem serve, mas um calendário que vê sem abrir uma app poupa tempo. O widget de calendário do NotchNest com briefings de IA cobre isso no notch.</p>
+    <div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>Torne o seu notch útil</h3><p>O NotchNest coloca dez ferramentas no notch do seu MacBook. Gratuito na Mac App Store.</p></div>
+      <a href="%STORE%" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="Descarregar na Mac App Store" /></a>
+    </div>
+    <h2>Como escolher</h2>
+    <ol>
+      <li>Comece com um organizador (Ice) para a barra nunca transbordar.</li>
+      <li>Se tem notch, adicione o NotchNest para consolidar ferramentas.</li>
+      <li>Adicione especialistas (Stats) só para necessidades que os acima não cobrem.</li>
+    </ol>
+    <p>Menos apps multiuso valem mais que uma dúzia de ícones de um só truque.</p>""",
+              "related": _related("pt-PT", ("/learn/how-to-customise-macos-menu-bar/", "How to customise the macOS menu bar", "Inglês — guia."))},
+    "es-MX": {"title": "Mejores apps de barra de menús para Mac (2026) — NotchNest", "description": "Las mejores apps de barra de menús para Mac en 2026 — organizadores, gestores de portapapeles, temporizadores, monitores de sistema y utilidades de notch que valen la pena.",
+              "og_title": "Mejores apps de barra de menús para Mac (2026)", "og_desc": "Las apps de barra de menús que merecen un lugar en 2026, por categoría.",
+              "jsonld_headline": "Mejores apps de barra de menús para Mac (2026)", "jsonld_desc": "Selección de las mejores apps de barra de menús para Mac en 2026 por categoría.",
+              "kicker": KICK["roundup"]["es-MX"], "h1": "Mejores apps de barra de menús para Mac (2026)",
+              "lede": "La barra de menús es un lugar privilegiado. Estas son las apps de barra de menús que de verdad merecen un lugar en 2026, en cada categoría.",
+              "readtime": READ6["es-MX"], "crumb_this": "Mejores apps de barra de menús",
+              "faq": [("¿Cuál es la mejor app de barra de menús gratis para Mac?", "Para Macs con notch, NotchNest (gratis, Mac App Store) es la opción de mayor valor — reemplaza varias apps de un solo propósito. Para organizar íconos, Ice es la mejor opción gratis."),
+                      ("¿Cómo limpio una barra de menús saturada en Mac?", "Usa un gestor como Ice o Bartender para ocultar y agrupar íconos, quita apps que no necesitas y consolida herramientas en el notch con NotchNest."),
+                      ("¿Las apps de barra de menús son malas para la batería?", "Las apps nativas bien hechas son despreciables. NotchNest duerme cuando está inactivo y usa unos pocos MB de RAM. Las apps basadas en Electron pueden usar más."),
+                      ("¿Qué app de barra de menús funciona con el notch?", "NotchNest está construido en torno al notch. Organizadores como Ice y Bartender también ayudan al evitar que los íconos choquen con él.")],
+              "body": """<p>La barra de menús del Mac es la franja más fácil de mirar de tu pantalla. Las apps correctas la convierten en un centro de mando; las incorrectas solo la saturan. Aquí están las mejores opciones por categoría para 2026.</p>
+    <h2>Mejor central de notch: NotchNest</h2>
+    <p>Si tienes notch, NotchNest es la instalación de mayor palanca: pliega calendario, portapapeles con IA, notas rápidas, Pomodoro, controles de música, arrastrar a AirDrop y un espejo de cámara en el notch — reemplazando varias apps de un solo propósito de una vez. Gratis, en sandbox por la Mac App Store.</p>
+    <h2>Mejor organizador de barra de menús: Ice / Bartender</h2>
+    <p>Ice es gratis y de código abierto; Bartender es de pago y más potente. Ambos ocultan y agrupan íconos para que tu barra siga limpia — esencial si los íconos desaparecen tras el notch.</p>
+    <h2>Mejor gestor de portapapeles</h2>
+    <p>Un historial de portapapeles te cambia la vida una vez que lo tienes. NotchNest incluye un portapapeles con IA en el notch; opciones independientes como Maccy (gratis) funcionan en la barra si no tienes notch.</p>
+    <h2>Mejor monitor de sistema: Stats</h2>
+    <p>Stats (gratis, código abierto) pone lecturas de CPU, GPU, memoria, red y batería en la barra. Indispensable para desarrolladores.</p>
+    <h2>Mejor temporizador / enfoque</h2>
+    <p>El Pomodoro de NotchNest vive en el notch; para configuraciones solo de barra de menús, abundan apps de temporizador simples. Aquí importa más el enfoque que las funciones.</p>
+    <h2>Mejor reloj / calendario</h2>
+    <p>El reloj de fábrica sirve, pero un calendario que miras sin abrir una app ahorra tiempo. El widget de calendario de NotchNest con briefings de IA cubre esto en el notch.</p>
+    <div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>Haz útil tu notch</h3><p>NotchNest pone diez herramientas en el notch de tu MacBook. Gratis en el Mac App Store.</p></div>
+      <a href="%STORE%" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="Descargar en el Mac App Store" /></a>
+    </div>
+    <h2>Cómo elegir</h2>
+    <ol>
+      <li>Empieza con un organizador (Ice) para que la barra nunca se desborde.</li>
+      <li>Si tienes notch, agrega NotchNest para consolidar herramientas.</li>
+      <li>Agrega especialistas (Stats) solo para necesidades que lo anterior no cubre.</li>
+    </ol>
+    <p>Menos apps multiuso ganan a una docena de íconos de un solo truco.</p>""",
+              "related": _related("es-MX", ("/learn/how-to-customise-macos-menu-bar/", "How to customise the macOS menu bar", "Inglés — guía."))},
+}
+
+
 # ── mac-notch-wallpaper ─────────────────────────────────────────────────────
 WALLPAPER = {
     "de": {"title": "Mac-Notch-Wallpaper: Notch verstecken oder betonen — NotchNest", "description": "Wie Mac-Notch-Wallpaper funktionieren — schwarze Top-Wallpaper, die die Notch verstecken, verspielte Designs, die mit ihr spielen, und wo du sie einstellst.",
@@ -3684,4 +3941,5 @@ LEARN_ARTICLES = {
     "customize-top-bar-mac": _assemble(TOPBAR),
     "how-to-customise-macos-menu-bar": _assemble(MENUBAR),
     "mac-notch-wallpaper": _assemble(WALLPAPER),
+    "best-mac-menu-bar-apps": _assemble(BESTMENUBAR),
 }
