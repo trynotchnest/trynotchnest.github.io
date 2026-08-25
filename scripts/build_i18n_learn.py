@@ -1712,6 +1712,221 @@ DROP = {
 }
 
 
+# ── mac-notch-wallpaper ─────────────────────────────────────────────────────
+WALLPAPER = {
+    "de": {"title": "Mac-Notch-Wallpaper: Notch verstecken oder betonen — NotchNest", "description": "Wie Mac-Notch-Wallpaper funktionieren — schwarze Top-Wallpaper, die die Notch verstecken, verspielte Designs, die mit ihr spielen, und wo du sie einstellst.",
+           "og_title": "Mac-Notch-Wallpaper", "og_desc": "Wallpaper, die die Notch verstecken oder betonen — und wie du sie einstellst.",
+           "jsonld_headline": "Mac-Notch-Wallpaper: Notch verstecken oder betonen", "jsonld_desc": "Wie Mac-Notch-Wallpaper die Notch verstecken oder betonen und wo du sie einstellst.",
+           "kicker": KICK["guide"]["de"], "h1": "Mac-Notch-Wallpaper: Notch verstecken oder betonen",
+           "lede": "Ein Wallpaper mit schwarzem Streifen oben lässt die Notch verschwinden. Oder lehn dich rein mit Designs rund um sie. So geht's.",
+           "readtime": READ5["de"], "crumb_this": "Notch-Wallpaper",
+           "faq": [("Wie verstecke ich die Notch mit einem Wallpaper?", "Nutze ein Wallpaper, das oben durchgehend schwarz ist, oder eine App wie TopNotch, die den Menüleisten-Hintergrund schwärzt. Der dunkle Streifen verschmilzt mit der Notch, sodass sie visuell verschwindet."),
+                   ("Wo finde ich Notch-Wallpaper?", "Durchsuche Wallpaper-Seiten und Communities nach Notch-Wallpaper — sowohl Notch-versteckende (schwarz oben) als auch Notch-thematische Designs sind weit verbreitet."),
+                   ("Versteckt ein schwarzes Wallpaper die Notch ganz?", "Visuell ja, wenn auch der Menüleisten-Hintergrund dunkel ist. Apps wie TopNotch halten den Menüleisten-Bereich schwarz, damit der Effekt bei allen Wallpapern hält."),
+                   ("Kann ich Wallpaper und Notch-App zusammen nutzen?", "Absolut. Ein Wallpaper ändert das Aussehen; eine Notch-App wie NotchNest fügt Funktion hinzu. Sie arbeiten unabhängig.")],
+           "body": """<p>Eine der einfachsten Arten, den Look der Notch zu ändern, ist dein Wallpaper. Weil die Notch oben in der Mitte sitzt, lässt ein Wallpaper mit dunklem oberen Rand sie einfach einfügen.</p>
+    <h2>Wallpaper, die die Notch verstecken</h2>
+    <p>Jedes Wallpaper, das über die oberen ~80 Pixel durchgehend schwarz ist, verschmilzt visuell mit der Notch, sodass der Ausschnitt im dunklen Streifen verschwindet. Suche nach „notch hiding wallpaper" oder nutz einfach ein überwiegend dunkles Bild, dessen Oberkante schwarz ist. Lieber automatisch? TopNotch schwärzt den Menüleisten-Hintergrund passend und erreicht denselben Effekt mit jedem Wallpaper.</p>
+    <h2>Wallpaper, die mit der Notch spielen</h2>
+    <p>Designer haben Wallpaper gemacht, die die Notch zur Nase einer Figur, einem Periskop, einem Ladebalken, einer Katzensilhouette und mehr machen. Diese lehnen sich in die Notch, statt sie zu verstecken — spaßig, und sie lassen die Notch beabsichtigt wirken.</p>
+    <h2>So stellst du ein Mac-Wallpaper ein</h2>
+    <ol>
+      <li>Lade oder erstelle dein Bild in der Auflösung deines Displays.</li>
+      <li>Öffne Systemeinstellungen → Hintergrundbild.</li>
+      <li>Klicke „Foto hinzufügen" und wähl deine Datei, oder zieh sie hinein.</li>
+      <li>Wähl „Bildschirm füllen", damit die Oberkante mit der Notch ausgerichtet ist.</li>
+    </ol>
+    <h2>Besser als Verstecken: mach sie funktional</h2>
+    <p>Ein Wallpaper ändert, wie die Notch aussieht; es macht sie nicht funktional. Kombinier dein Lieblings-Wallpaper mit NotchNest, und die Notch wird ein Hover-Panel für Kalender, Zwischenablage, Notizen, Musik und AirDrop. Das Beste aus beidem — sieht aus wie du willst, funktioniert wenn du es brauchst. Sieh es im Notch-Playground.</p>
+    <div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>Mach deine Notch nützlich</h3><p>NotchNest bringt zehn Tools in die Notch deines MacBooks. Kostenlos im Mac App Store.</p></div>
+      <a href="%STORE%" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="Im Mac App Store laden" /></a>
+    </div>""",
+           "related": _related("de", ("/learn/how-to-hide-the-notch-on-mac/", "How to hide the notch on Mac", "Englisch — Anleitung."))},
+    "zh": {"title": "Mac 刘海壁纸：隐藏或突出刘海 — NotchNest", "description": "Mac 刘海壁纸如何工作——隐藏刘海的黑顶壁纸、与刘海玩趣的设计，以及在哪里设置它们。",
+           "og_title": "Mac 刘海壁纸", "og_desc": "隐藏或突出刘海的壁纸——以及如何设置。",
+           "jsonld_headline": "Mac 刘海壁纸：隐藏或突出刘海", "jsonld_desc": "Mac 刘海壁纸如何隐藏或突出刘海，以及在哪里设置。",
+           "kicker": KICK["guide"]["zh"], "h1": "Mac 刘海壁纸：隐藏或突出刘海",
+           "lede": "顶部有黑条的壁纸能让刘海消失。或者反其道而行，用围绕它的设计。方法如下。",
+           "readtime": READ5["zh"], "crumb_this": "刘海壁纸",
+           "faq": [("如何用壁纸隐藏刘海？", "使用顶部整条为纯黑的壁纸，或用 TopNotch 之类把菜单栏背景涂黑的应用。深色条与刘海融合，使其在视觉上消失。"),
+                   ("在哪里能找到刘海壁纸？", "在壁纸网站和社区搜索“notch wallpaper”——隐藏刘海（黑顶）和刘海主题（与缺口玩趣的设计）两类都广为分享。"),
+                   ("黑色壁纸能完全隐藏刘海吗？", "视觉上可以，前提是菜单栏背景也为深色。TopNotch 之类的应用确保菜单栏区域保持黑色，让效果在所有壁纸下都成立。"),
+                   ("我能同时用壁纸和刘海应用吗？", "当然。壁纸改变外观；NotchNest 这样的刘海应用增加功能。二者独立运作。")],
+           "body": """<p>改变刘海外观最简单的方式之一就是你的壁纸。由于刘海位于屏幕顶部居中，顶端偏深色的壁纸会让它自然融入。</p>
+    <h2>隐藏刘海的壁纸</h2>
+    <p>任何在顶部约 80 像素范围内为纯黑的壁纸都会在视觉上与刘海融合，使缺口消失在黑条中。搜索“notch hiding wallpaper”，或干脆用一张大体偏暗、顶端为黑的图片。想自动化？TopNotch 会把菜单栏背景涂黑以匹配，用任意壁纸都能达成同样效果。</p>
+    <h2>与刘海玩趣的壁纸</h2>
+    <p>设计师们做过把刘海变成人物鼻子、潜望镜、加载条、猫剪影等的壁纸。这些是拥抱刘海而非隐藏它——有趣，也让刘海显得像是刻意为之。</p>
+    <h2>如何设置 Mac 壁纸</h2>
+    <ol>
+      <li>按你显示器的分辨率下载或创建图片。</li>
+      <li>打开 系统设置 → 墙纸。</li>
+      <li>点击“添加照片”并选择你的文件，或将其拖入。</li>
+      <li>选择“充满屏幕”，让顶端与刘海对齐。</li>
+    </ol>
+    <h2>比隐藏更好：让它有功能</h2>
+    <p>壁纸改变刘海的外观；它不会让刘海做任何事。把你喜爱的壁纸与 NotchNest 搭配，刘海就成为日历、剪贴板、笔记、音乐和 AirDrop 的悬停面板。两全其美——外观随你，需要时能用。在刘海演示里预览。</p>
+    <div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>让你的刘海有用</h3><p>NotchNest 把十个工具放进 MacBook 刘海。在 Mac App Store 免费。</p></div>
+      <a href="%STORE%" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="在 Mac App Store 下载" /></a>
+    </div>""",
+           "related": _related("zh", ("/learn/how-to-hide-the-notch-on-mac/", "How to hide the notch on Mac", "英文——指南。"))},
+    "ar": {"title": "خلفيات نتش الماك: إخفاء النتش أو إبرازه — NotchNest", "description": "كيف تعمل خلفيات نتش الماك — خلفيات سوداء الأعلى تخفي النتش، وتصاميم مرحة تلعب به، وأين تضبطها.",
+           "og_title": "خلفيات نتش الماك", "og_desc": "خلفيات تخفي النتش أو تبرزه — وكيف تضبطها.",
+           "jsonld_headline": "خلفيات نتش الماك: إخفاء النتش أو إبرازه", "jsonld_desc": "كيف تخفي خلفيات نتش الماك النتش أو تبرزه وأين تضبطها.",
+           "kicker": KICK["guide"]["ar"], "h1": "خلفيات نتش الماك: إخفاء النتش أو إبرازه",
+           "lede": "خلفية بشريط أسود في الأعلى تُخفي النتش. أو احتضنه بتصاميم مبنية حوله. إليك الطريقة.",
+           "readtime": READ5["ar"], "crumb_this": "خلفيات النتش",
+           "faq": [("كيف أخفي النتش بخلفية؟", "استخدم خلفية سوداء بالكامل في الأعلى، أو تطبيقًا مثل TopNotch يُسوّد خلفية شريط القوائم. يندمج الشريط الداكن مع النتش فيختفي بصريًا."),
+                   ("أين أجد خلفيات النتش؟", "ابحث في مواقع الخلفيات والمجتمعات عن notch wallpaper — تنتشر الأنماط المُخفية للنتش (سوداء الأعلى) وذات طابع النتش (تصاميم تلعب بالفتحة)."),
+                   ("هل تخفي الخلفية السوداء النتش تمامًا؟", "بصريًا نعم، إن كانت خلفية شريط القوائم داكنة أيضًا. تطبيقات مثل TopNotch تُبقي منطقة شريط القوائم سوداء ليصمد التأثير مع كل الخلفيات."),
+                   ("هل يمكنني استخدام خلفية وتطبيق نتش معًا؟", "بالطبع. الخلفية تغيّر المظهر؛ وتطبيق نتش مثل NotchNest يضيف وظيفة. يعملان باستقلال.")],
+           "body": """<p>من أسهل طرق تغيير مظهر النتش خلفيتك. ولأن النتش يقع أعلى منتصف الشاشة، فإن خلفية بحافة علوية داكنة تجعله يندمج بسهولة.</p>
+    <h2>خلفيات تخفي النتش</h2>
+    <p>أي خلفية سوداء بالكامل عبر أعلى ~80 بكسل ستندمج بصريًا مع النتش، فتختفي الفتحة في الشريط الداكن. ابحث عن notch hiding wallpaper أو استخدم ببساطة صورة داكنة غالبًا موضوعة بحيث يكون أعلاها أسود. تفضّل الأتمتة؟ يُسوّد TopNotch خلفية شريط القوائم لتطابقها، محقّقًا التأثير نفسه مع أي خلفية.</p>
+    <h2>خلفيات تلعب بالنتش</h2>
+    <p>صنع المصممون خلفيات تحوّل النتش إلى أنف شخصية أو منظار غوّاصة أو شريط تحميل أو ظلّ قطة والمزيد. هذه تحتضن النتش بدل إخفائه — ممتعة، وتجعله يبدو متعمَّدًا.</p>
+    <h2>كيف تضبط خلفية الماك</h2>
+    <ol>
+      <li>نزّل أو أنشئ صورتك بدقة شاشتك.</li>
+      <li>افتح إعدادات النظام ← الخلفية.</li>
+      <li>انقر «إضافة صورة» واختر ملفك، أو اسحبه إلى الداخل.</li>
+      <li>اختر «ملء الشاشة» لتتحاذى الحافة العليا مع النتش.</li>
+    </ol>
+    <h2>أفضل من الإخفاء: اجعله وظيفيًا</h2>
+    <p>الخلفية تغيّر شكل النتش؛ لا تجعله يفعل شيئًا. اجمع خلفيتك المفضّلة مع NotchNest فيصبح النتش لوحة تمرير للتقويم والحافظة والملاحظات والموسيقى وAirDrop. الأفضل من الاثنين — يبدو كما تريد، ويعمل حين تحتاجه. عاينه في عرض النتش.</p>
+    <div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>اجعل نتشك مفيدًا</h3><p>يضع NotchNest عشر أدوات في نتش الماك بوك. مجانًا على Mac App Store.</p></div>
+      <a href="%STORE%" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="التنزيل من Mac App Store" /></a>
+    </div>""",
+           "related": _related("ar", ("/learn/how-to-hide-the-notch-on-mac/", "How to hide the notch on Mac", "إنجليزي — دليل."))},
+    "fr": {"title": "Fonds d'écran pour l'encoche Mac : la cacher ou la mettre en valeur — NotchNest", "description": "Comment fonctionnent les fonds d'écran d'encoche Mac — fonds à haut noir qui cachent l'encoche, designs amusants qui jouent avec, et où les définir.",
+           "og_title": "Fonds d'écran pour l'encoche Mac", "og_desc": "Des fonds qui cachent ou mettent en valeur l'encoche — et comment les définir.",
+           "jsonld_headline": "Fonds d'écran pour l'encoche Mac : la cacher ou la mettre en valeur", "jsonld_desc": "Comment les fonds d'écran d'encoche cachent ou mettent en valeur l'encoche et où les définir.",
+           "kicker": KICK["guide"]["fr"], "h1": "Fonds d'écran pour l'encoche Mac : la cacher ou la mettre en valeur",
+           "lede": "Un fond d'écran avec une bande noire en haut fait disparaître l'encoche. Ou assumez-la avec des designs conçus autour. Voici comment.",
+           "readtime": READ5["fr"], "crumb_this": "Fonds d'écran d'encoche",
+           "faq": [("Comment cacher l'encoche avec un fond d'écran ?", "Utilisez un fond entièrement noir en haut, ou une app comme TopNotch qui noircit l'arrière-plan de la barre des menus. La bande sombre fusionne avec l'encoche qui disparaît visuellement."),
+                   ("Où trouver des fonds d'écran d'encoche ?", "Cherchez sur les sites et communautés de fonds d'écran notch wallpaper — les styles qui cachent l'encoche (haut noir) et ceux à thème d'encoche (designs qui jouent avec) sont largement partagés."),
+                   ("Un fond noir cache-t-il totalement l'encoche ?", "Visuellement oui, quand l'arrière-plan de la barre des menus est aussi sombre. Des apps comme TopNotch gardent la zone de la barre noire pour que l'effet tienne avec tous les fonds."),
+                   ("Puis-je utiliser un fond d'écran et une app d'encoche ensemble ?", "Tout à fait. Un fond change l'apparence ; une app d'encoche comme NotchNest ajoute de la fonction. Ils fonctionnent indépendamment.")],
+           "body": """<p>Un des moyens les plus simples de changer l'aspect de l'encoche, c'est votre fond d'écran. Comme l'encoche est en haut au centre, un fond au bord supérieur sombre la fait se fondre.</p>
+    <h2>Des fonds qui cachent l'encoche</h2>
+    <p>Tout fond entièrement noir sur les ~80 pixels du haut fusionne visuellement avec l'encoche, si bien que la découpe disparaît dans la bande sombre. Cherchez notch hiding wallpaper ou utilisez simplement une image majoritairement sombre positionnée pour que le haut soit noir. Vous préférez l'automatique ? TopNotch noircit l'arrière-plan de la barre des menus pour correspondre, obtenant le même effet avec n'importe quel fond.</p>
+    <h2>Des fonds qui jouent avec l'encoche</h2>
+    <p>Des designers ont créé des fonds qui transforment l'encoche en nez de personnage, périscope, barre de chargement, silhouette de chat et plus. Ceux-là assument l'encoche au lieu de la cacher — amusant, et ça la fait paraître voulue.</p>
+    <h2>Comment définir un fond d'écran Mac</h2>
+    <ol>
+      <li>Téléchargez ou créez votre image à la résolution de votre écran.</li>
+      <li>Ouvrez Réglages Système → Fond d'écran.</li>
+      <li>Cliquez « Ajouter une photo » et choisissez votre fichier, ou glissez-le.</li>
+      <li>Choisissez « Remplir l'écran » pour que le bord supérieur s'aligne avec l'encoche.</li>
+    </ol>
+    <h2>Mieux que cacher : la rendre fonctionnelle</h2>
+    <p>Un fond change l'aspect de l'encoche ; il ne la rend pas fonctionnelle. Associez votre fond préféré à NotchNest et l'encoche devient un panneau au survol pour calendrier, presse-papiers, notes, musique et AirDrop. Le meilleur des deux — l'aspect que vous voulez, la fonction quand il faut. Prévisualisez-le dans le terrain de jeu de l'encoche.</p>
+    <div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>Rendez votre encoche utile</h3><p>NotchNest met dix outils dans l'encoche de votre MacBook. Gratuit sur le Mac App Store.</p></div>
+      <a href="%STORE%" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="Télécharger sur le Mac App Store" /></a>
+    </div>""",
+           "related": _related("fr", ("/learn/how-to-hide-the-notch-on-mac/", "How to hide the notch on Mac", "Anglais — guide."))},
+    "pt-BR": {"title": "Papéis de parede para o notch do Mac: esconder ou destacar o notch — NotchNest", "description": "Como funcionam os papéis de parede para o notch do Mac — fundos de topo preto que escondem o notch, designs divertidos que brincam com ele e onde defini-los.",
+              "og_title": "Papéis de parede para o notch do Mac", "og_desc": "Papéis que escondem ou destacam o notch — e como defini-los.",
+              "jsonld_headline": "Papéis de parede para o notch do Mac: esconder ou destacar o notch", "jsonld_desc": "Como os papéis de parede para o notch escondem ou destacam o notch e onde defini-los.",
+              "kicker": KICK["guide"]["pt-BR"], "h1": "Papéis de parede para o notch do Mac: esconder ou destacar o notch",
+              "lede": "Um papel de parede com uma faixa preta no topo faz o notch sumir. Ou abrace-o com designs feitos ao redor dele. Veja como.",
+              "readtime": READ5["pt-BR"], "crumb_this": "Papel de parede do notch",
+              "faq": [("Como escondo o notch com um papel de parede?", "Use um papel de parede totalmente preto no topo, ou um app como o TopNotch que escurece o fundo da barra de menus. A faixa escura se funde com o notch e ele some visualmente."),
+                      ("Onde encontro papéis de parede para o notch?", "Procure em sites e comunidades de papéis de parede por notch wallpaper — tanto os que escondem o notch (topo preto) quanto os temáticos (designs que brincam com o recorte) são muito compartilhados."),
+                      ("Um papel de parede preto esconde o notch por completo?", "Visualmente, sim, quando o fundo da barra de menus também é escuro. Apps como o TopNotch mantêm a área da barra preta para o efeito valer em todos os papéis."),
+                      ("Posso usar um papel de parede e um app de notch juntos?", "Com certeza. O papel de parede muda a aparência; um app de notch como o NotchNest adiciona função. Eles funcionam de forma independente.")],
+              "body": """<p>Uma das formas mais fáceis de mudar como o notch parece é o seu papel de parede. Como o notch fica no topo central da tela, um papel de parede com a borda superior escura o faz se fundir.</p>
+    <h2>Papéis de parede que escondem o notch</h2>
+    <p>Qualquer papel de parede que seja preto sólido nos ~80 pixels do topo se funde visualmente com o notch, então o recorte some na faixa escura. Procure por notch hiding wallpaper ou simplesmente use uma imagem majoritariamente escura posicionada para que o topo fique preto. Prefere automatizar? O TopNotch escurece o fundo da barra de menus para combinar, obtendo o mesmo efeito com qualquer papel de parede.</p>
+    <h2>Papéis de parede que brincam com o notch</h2>
+    <p>Designers fizeram papéis de parede que transformam o notch no nariz de um personagem, um periscópio, uma barra de carregamento, a silhueta de um gato e mais. Esses abraçam o notch em vez de escondê-lo — divertidos, e fazem o notch parecer intencional.</p>
+    <h2>Como definir um papel de parede no Mac</h2>
+    <ol>
+      <li>Baixe ou crie a sua imagem na resolução do seu monitor.</li>
+      <li>Abra Ajustes do Sistema → Papel de Parede.</li>
+      <li>Clique em Adicionar Foto e escolha o seu arquivo, ou arraste-o.</li>
+      <li>Escolha Preencher Tela para a borda superior alinhar com o notch.</li>
+    </ol>
+    <h2>Melhor do que esconder: torne-o funcional</h2>
+    <p>Um papel de parede muda como o notch parece; não faz ele fazer nada. Combine o seu papel de parede favorito com o NotchNest e o notch vira um painel ao passar o cursor para calendário, área de transferência, notas, música e AirDrop. O melhor dos dois — o visual que você quer, funcionando quando precisa. Pré-visualize no playground do notch.</p>
+    <div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>Torne seu notch útil</h3><p>O NotchNest coloca dez ferramentas no notch do seu MacBook. Grátis na Mac App Store.</p></div>
+      <a href="%STORE%" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="Baixar na Mac App Store" /></a>
+    </div>""",
+              "related": _related("pt-BR", ("/learn/how-to-hide-the-notch-on-mac/", "How to hide the notch on Mac", "Inglês — guia."))},
+    "pt-PT": {"title": "Papéis de parede para o notch do Mac: esconder ou destacar o notch — NotchNest", "description": "Como funcionam os papéis de parede para o notch do Mac — fundos de topo preto que escondem o notch, designs divertidos que brincam com ele e onde defini-los.",
+              "og_title": "Papéis de parede para o notch do Mac", "og_desc": "Papéis que escondem ou destacam o notch — e como defini-los.",
+              "jsonld_headline": "Papéis de parede para o notch do Mac: esconder ou destacar o notch", "jsonld_desc": "Como os papéis de parede para o notch escondem ou destacam o notch e onde defini-los.",
+              "kicker": KICK["guide"]["pt-PT"], "h1": "Papéis de parede para o notch do Mac: esconder ou destacar o notch",
+              "lede": "Um papel de parede com uma faixa preta no topo faz o notch desaparecer. Ou abrace-o com designs feitos à volta dele. Veja como.",
+              "readtime": READ5["pt-PT"], "crumb_this": "Papel de parede do notch",
+              "faq": [("Como escondo o notch com um papel de parede?", "Use um papel de parede totalmente preto no topo, ou uma app como o TopNotch que escurece o fundo da barra de menus. A faixa escura funde-se com o notch e ele desaparece visualmente."),
+                      ("Onde encontro papéis de parede para o notch?", "Procure em sites e comunidades de papéis de parede por notch wallpaper — tanto os que escondem o notch (topo preto) como os temáticos (designs que brincam com o recorte) são muito partilhados."),
+                      ("Um papel de parede preto esconde o notch por completo?", "Visualmente, sim, quando o fundo da barra de menus também é escuro. Apps como o TopNotch mantêm a área da barra preta para o efeito valer em todos os papéis."),
+                      ("Posso usar um papel de parede e uma app de notch juntos?", "Com certeza. O papel de parede muda a aparência; uma app de notch como o NotchNest adiciona função. Funcionam de forma independente.")],
+              "body": """<p>Uma das formas mais fáceis de mudar o aspeto do notch é o seu papel de parede. Como o notch fica no topo central do ecrã, um papel de parede com a margem superior escura fá-lo fundir-se.</p>
+    <h2>Papéis de parede que escondem o notch</h2>
+    <p>Qualquer papel de parede que seja preto sólido nos ~80 pixels do topo funde-se visualmente com o notch, por isso o recorte desaparece na faixa escura. Procure por notch hiding wallpaper ou simplesmente use uma imagem maioritariamente escura posicionada para que o topo fique preto. Prefere automatizar? O TopNotch escurece o fundo da barra de menus para combinar, obtendo o mesmo efeito com qualquer papel de parede.</p>
+    <h2>Papéis de parede que brincam com o notch</h2>
+    <p>Designers fizeram papéis de parede que transformam o notch no nariz de uma personagem, um periscópio, uma barra de carregamento, a silhueta de um gato e mais. Estes abraçam o notch em vez de o esconder — divertidos, e fazem o notch parecer intencional.</p>
+    <h2>Como definir um papel de parede no Mac</h2>
+    <ol>
+      <li>Transfira ou crie a sua imagem na resolução do seu monitor.</li>
+      <li>Abra Definições do Sistema → Fundo do Ecrã.</li>
+      <li>Clique em Adicionar Fotografia e escolha o seu ficheiro, ou arraste-o.</li>
+      <li>Escolha Preencher Ecrã para a margem superior alinhar com o notch.</li>
+    </ol>
+    <h2>Melhor do que esconder: torne-o funcional</h2>
+    <p>Um papel de parede muda o aspeto do notch; não o faz fazer nada. Combine o seu papel de parede favorito com o NotchNest e o notch torna-se um painel ao passar o cursor para calendário, área de transferência, notas, música e AirDrop. O melhor dos dois — o visual que quer, a funcionar quando precisa. Pré-visualize no playground do notch.</p>
+    <div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>Torne o seu notch útil</h3><p>O NotchNest coloca dez ferramentas no notch do seu MacBook. Gratuito na Mac App Store.</p></div>
+      <a href="%STORE%" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="Descarregar na Mac App Store" /></a>
+    </div>""",
+              "related": _related("pt-PT", ("/learn/how-to-hide-the-notch-on-mac/", "How to hide the notch on Mac", "Inglês — guia."))},
+    "es-MX": {"title": "Fondos de pantalla para el notch del Mac: ocultar o resaltar el notch — NotchNest", "description": "Cómo funcionan los fondos de pantalla para el notch del Mac — fondos de tope negro que ocultan el notch, diseños divertidos que juegan con él y dónde ponerlos.",
+              "og_title": "Fondos de pantalla para el notch del Mac", "og_desc": "Fondos que ocultan o resaltan el notch — y cómo ponerlos.",
+              "jsonld_headline": "Fondos de pantalla para el notch del Mac: ocultar o resaltar el notch", "jsonld_desc": "Cómo los fondos de pantalla para el notch ocultan o resaltan el notch y dónde ponerlos.",
+              "kicker": KICK["guide"]["es-MX"], "h1": "Fondos de pantalla para el notch del Mac: ocultar o resaltar el notch",
+              "lede": "Un fondo de pantalla con una franja negra arriba hace desaparecer el notch. O abrázalo con diseños hechos a su alrededor. Aquí cómo.",
+              "readtime": READ5["es-MX"], "crumb_this": "Fondo de pantalla del notch",
+              "faq": [("¿Cómo oculto el notch con un fondo de pantalla?", "Usa un fondo totalmente negro arriba, o una app como TopNotch que oscurece el fondo de la barra de menús. La franja oscura se funde con el notch y este desaparece visualmente."),
+                      ("¿Dónde encuentro fondos de pantalla para el notch?", "Busca en sitios y comunidades de fondos notch wallpaper — tanto los que ocultan el notch (tope negro) como los temáticos (diseños que juegan con el recorte) se comparten mucho."),
+                      ("¿Un fondo negro oculta el notch por completo?", "Visualmente, sí, cuando el fondo de la barra de menús también es oscuro. Apps como TopNotch mantienen el área de la barra en negro para que el efecto se sostenga con todos los fondos."),
+                      ("¿Puedo usar un fondo de pantalla y una app de notch juntos?", "Por supuesto. El fondo cambia la apariencia; una app de notch como NotchNest agrega función. Funcionan de forma independiente.")],
+              "body": """<p>Una de las formas más fáciles de cambiar cómo se ve el notch es tu fondo de pantalla. Como el notch está en la parte superior central de la pantalla, un fondo con el borde superior oscuro hace que se funda.</p>
+    <h2>Fondos que ocultan el notch</h2>
+    <p>Cualquier fondo que sea negro sólido en los ~80 píxeles superiores se fundirá visualmente con el notch, así que el recorte desaparece en la franja oscura. Busca notch hiding wallpaper o simplemente usa una imagen mayormente oscura colocada para que la parte superior quede negra. ¿Prefieres automatizar? TopNotch oscurece el fondo de la barra de menús para que combine, logrando el mismo efecto con cualquier fondo.</p>
+    <h2>Fondos que juegan con el notch</h2>
+    <p>Los diseñadores han hecho fondos que convierten el notch en la nariz de un personaje, un periscopio, una barra de carga, la silueta de un gato y más. Estos abrazan el notch en lugar de ocultarlo — divertidos, y hacen que el notch se sienta intencional.</p>
+    <h2>Cómo poner un fondo de pantalla en Mac</h2>
+    <ol>
+      <li>Descarga o crea tu imagen a la resolución de tu pantalla.</li>
+      <li>Abre Configuración del Sistema → Fondo de Pantalla.</li>
+      <li>Haz clic en Añadir Foto y elige tu archivo, o arrástralo.</li>
+      <li>Elige Llenar Pantalla para que el borde superior se alinee con el notch.</li>
+    </ol>
+    <h2>Mejor que ocultar: hazlo funcional</h2>
+    <p>Un fondo cambia cómo se ve el notch; no hace que haga nada. Combina tu fondo favorito con NotchNest y el notch se vuelve un panel al pasar el cursor para calendario, portapapeles, notas, música y AirDrop. Lo mejor de ambos — se ve como quieres, funciona cuando lo necesitas. Previsualízalo en el playground del notch.</p>
+    <div class="inline-cta">
+      <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
+      <div class="inline-cta-body"><h3>Haz útil tu notch</h3><p>NotchNest pone diez herramientas en el notch de tu MacBook. Gratis en el Mac App Store.</p></div>
+      <a href="%STORE%" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="Descargar en el Mac App Store" /></a>
+    </div>""",
+              "related": _related("es-MX", ("/learn/how-to-hide-the-notch-on-mac/", "How to hide the notch on Mac", "Inglés — guía."))},
+}
+
+
 # ── how-to-customise-macos-menu-bar ─────────────────────────────────────────
 MENUBAR = {
     "de": {"title": "Wie man die macOS-Menüleiste anpasst — NotchNest", "description": "Menüleisten-Widgets in macOS umordnen, verstecken und hinzufügen. Schritt-für-Schritt-Anleitung zu Kontrollzentrum, Drittanbieter-Apps und Notch-Utilities.",
@@ -3468,4 +3683,5 @@ LEARN_ARTICLES = {
     "how-to-move-menu-bar-icons-on-mac": _assemble(MOVEICONS),
     "customize-top-bar-mac": _assemble(TOPBAR),
     "how-to-customise-macos-menu-bar": _assemble(MENUBAR),
+    "mac-notch-wallpaper": _assemble(WALLPAPER),
 }
