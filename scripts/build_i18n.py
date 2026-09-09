@@ -1030,7 +1030,15 @@ def jstr(s):
 
 
 def write(path: Path, content: str):
+    """Write only when the content actually changed.
+
+    Rewriting an identical file still bumps its mtime, which feeds the sitemap's
+    per-URL lastmod and makes consecutive builds produce different output. Skipping
+    no-op writes keeps the build idempotent.
+    """
     path.parent.mkdir(parents=True, exist_ok=True)
+    if path.exists() and path.read_text(encoding="utf-8") == content:
+        return
     path.write_text(content, encoding="utf-8")
     print("  wrote", path.relative_to(ROOT))
 
