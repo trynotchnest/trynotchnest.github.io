@@ -3,7 +3,7 @@
 > NotchNest is a free macOS app that turns the MacBook notch into a productivity hub. Hover the notch and it expands into a glassy panel of widgets. On notchless Macs it renders as a slim top-center drop-down panel with identical features. Built in native SwiftUI, optimized for Apple Silicon, distributed exclusively via the Mac App Store (notarized, code-signed, sandboxed). AI features run on-device via Apple Intelligence — no subscription, no data collection.
 
 - Website: https://notchnest.app
-- Download (free): https://apps.apple.com/us/app/notchnest-power-your-notch/id6747612321
+- Download (free): https://apps.apple.com/us/app/notchnest-dynamic-notch-bar/id6747612321
 - Requirements: macOS 14 (Sonoma) or later. AI features need Apple Silicon + macOS 15 (Sequoia) or newer with Apple Intelligence.
 - Supported OS: Sonoma, Sequoia (15), Tahoe (26) incl. Liquid Glass.
 - Developer: Satnam Singh (https://silverseahog.com)

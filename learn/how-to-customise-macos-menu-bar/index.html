@@ -52,18 +52,46 @@
       "name": "Satnam Singh",
       "url": "https://silverseahog.com/",
       "jobTitle": "Swift Developer",
-      "sameAs": ["https://silverseahog.com/", "https://twitter.com/codetard", "https://github.com/29satnam", "https://www.linkedin.com/in/satnam-singh-948348aa/", "https://instagram.com/codetard"]
+      "sameAs": [
+        "https://silverseahog.com/",
+        "https://twitter.com/codetard",
+        "https://github.com/29satnam",
+        "https://www.linkedin.com/in/satnam-singh-948348aa/",
+        "https://instagram.com/codetard"
+      ]
     },
-    "publisher": { "@type": "Organization", "name": "NotchNest", "logo": { "@type": "ImageObject", "url": "https://notchnest.app/assets/notchnest-icon.png" } },
+    "publisher": {
+      "@type": "Organization",
+      "name": "NotchNest",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://notchnest.app/assets/notchnest-icon.png"
+      }
+    },
     "mainEntityOfPage": "https://notchnest.app/learn/how-to-customise-macos-menu-bar/"
   },
   {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://notchnest.app/" },
-      { "@type": "ListItem", "position": 2, "name": "Learn", "item": "https://notchnest.app/learn/" },
-      { "@type": "ListItem", "position": 3, "name": "How to customise the macOS menu bar", "item": "https://notchnest.app/learn/how-to-customise-macos-menu-bar/" }
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://notchnest.app/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Learn",
+        "item": "https://notchnest.app/learn/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "How to customise the macOS menu bar",
+        "item": "https://notchnest.app/learn/how-to-customise-macos-menu-bar/"
+      }
     ]
   },
   {
@@ -72,23 +100,97 @@
     "name": "How to customise the macOS menu bar",
     "description": "Reorder, hide and extend the macOS menu bar using built-in System Settings and third-party apps.",
     "totalTime": "PT5M",
-    "tool": [{ "@type": "HowToTool", "name": "Mac with macOS 14 or later" }],
+    "tool": [
+      {
+        "@type": "HowToTool",
+        "name": "Mac with macOS 14 or later"
+      }
+    ],
     "step": [
-      { "@type": "HowToStep", "position": 1, "name": "Open Control Center settings", "text": "Open System Settings → Control Center. This is where macOS lets you add, remove and reorder menu bar items." },
-      { "@type": "HowToStep", "position": 2, "name": "Pick which icons appear", "text": "For each module (Wi-Fi, Bluetooth, Sound, Now Playing, Battery, etc.), set 'Show in Menu Bar' to Always or Only When Active." },
-      { "@type": "HowToStep", "position": 3, "name": "Drag to reorder", "text": "Hold Command and drag any menu bar icon left or right to reorder. The clock can't be moved." },
-      { "@type": "HowToStep", "position": 4, "name": "Install a menu bar manager", "text": "For dense menu bars, install Ice (free, open source) or Bartender. Both can hide icons behind a chevron." },
-      { "@type": "HowToStep", "position": 5, "name": "Add a notch app", "text": "If your Mac has a notch, install NotchNest from the Mac App Store to add widgets right around the notch — calendar, clipboard, notes, music." }
+      {
+        "@type": "HowToStep",
+        "position": 1,
+        "name": "Open Control Center settings",
+        "text": "Open System Settings → Control Center. This is where macOS lets you add, remove and reorder menu bar items."
+      },
+      {
+        "@type": "HowToStep",
+        "position": 2,
+        "name": "Pick which icons appear",
+        "text": "For each module (Wi-Fi, Bluetooth, Sound, Now Playing, Battery, etc.), set 'Show in Menu Bar' to Always or Only When Active."
+      },
+      {
+        "@type": "HowToStep",
+        "position": 3,
+        "name": "Drag to reorder",
+        "text": "Hold Command and drag any menu bar icon left or right to reorder. The clock can't be moved."
+      },
+      {
+        "@type": "HowToStep",
+        "position": 4,
+        "name": "Install a menu bar manager",
+        "text": "For dense menu bars, install Ice (free, open source) or Bartender. Both can hide icons behind a chevron."
+      },
+      {
+        "@type": "HowToStep",
+        "position": 5,
+        "name": "Add a notch app",
+        "text": "If your Mac has a notch, install NotchNest from the Mac App Store to add widgets right around the notch — calendar, clipboard, notes, music."
+      }
     ]
   },
   {
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      { "@type": "Question", "name": "How do I reorder menu bar icons on Mac?", "acceptedAnswer": { "@type": "Answer", "text": "Hold Command and drag any menu bar icon left or right. The clock and Control Center can't be moved. Apple icons (Wi-Fi, Battery, Sound) and third-party app icons all reorder this way." } },
-      { "@type": "Question", "name": "How do I hide menu bar icons on Mac?", "acceptedAnswer": { "@type": "Answer", "text": "Apple icons: System Settings → Control Center → set 'Show in Menu Bar' to Don't Show. Third-party icons: hold Command and drag them off the menu bar, or use Ice / Bartender to hide them behind a chevron." } },
-      { "@type": "Question", "name": "Can I customise the macOS menu bar without third-party apps?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, partially. System Settings → Control Center covers Apple's icons. Hold Command and drag to reorder. For deeper customisation — hiding, grouping, custom colours — you need a third-party menu bar manager like Ice or Bartender." } },
-      { "@type": "Question", "name": "Do menu bar apps slow down my Mac?", "acceptedAnswer": { "@type": "Answer", "text": "Well-written ones don't. Native SwiftUI menu bar apps optimised for Apple Silicon (like NotchNest) sleep when idle and use single-digit megabytes of memory. Electron-based menu bar apps can use noticeably more." } }
+      {
+        "@type": "Question",
+        "name": "How do I reorder menu bar icons on Mac?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Hold Command and drag the icon left or right. It works for both Apple and third-party status icons. The clock and Control Center are pinned to the far right and cannot be moved."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I hide menu bar icons on Mac?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "For Apple icons, open System Settings → Control Center and set the module to \"Don't Show in Menu Bar\". For third-party icons, Command-drag the icon down off the bar, or turn it off inside that app's own preferences. To hide many at once, use an organiser like Ice or Bartender."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I customise the macOS menu bar without third-party apps?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Reordering, hiding built-in icons, clock formatting and auto-hide are all built into macOS. You only need a third-party app when you want to collapse a large number of icons behind a chevron, or add functionality the menu bar does not have."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do menu bar apps slow down my Mac?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Well-built ones do not. A status item that sleeps until clicked costs essentially nothing. Apps that poll constantly — network monitors, weather widgets on short refresh intervals — are the ones worth watching in Activity Monitor."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why do my menu bar icons disappear behind the notch?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "macOS lays icons out from the right edge leftward. When they reach the notch it hides the overflow rather than wrapping around it. Reduce the number of visible icons, use an organiser, or lower the display resolution one step. Full options: menu bar icons missing behind the notch."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I change the menu bar colour?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Not directly. The bar takes its appearance from your wallpaper and your Light/Dark mode setting. On macOS Tahoe it is transparent by default; Accessibility → Display → Reduce Transparency gives you a solid backing instead. A dark wallpaper is the usual way to get a dark bar in Light mode."
+        }
+      }
     ]
   }
 ]
@@ -113,17 +215,27 @@
     <span class="article-kicker">How-to</span>
     <h1 class="article-h1">How to customise the macOS menu bar</h1>
     <p class="article-lede">A practical guide to reordering, hiding and extending the macOS menu bar — using built-in settings, free third-party apps, and the notch.</p>
-    <div class="article-meta"><span>Updated June 9, 2026</span><span class="dot"></span><span>6 min read</span><span class="dot"></span><span>By Satnam Singh</span></div>
+    <div class="article-meta"><span>Updated September 8, 2026</span><span class="dot"></span><span>11 min read</span><span class="dot"></span><span>By Satnam Singh</span></div>
   </header>
 
   <article class="article-body">
-    <p>The <strong>macOS menu bar</strong> is the strip running across the top of your display: Apple menu on the left, app menus next to it, system icons and the clock on the right. It's one of the oldest pieces of macOS — and one of the few you can still completely reshape without Terminal.</p>
+    <p>The <strong>macOS menu bar</strong> is the strip running across the top of your display. It has been part of the Mac since 1984 and it is still one of the few pieces of macOS you can completely reshape without opening Terminal.</p>
+
+    <h2>What the macOS menu bar is made of</h2>
+    <p>Before changing anything, it helps to know that the bar is really three zones, and each one obeys different rules:</p>
+    <ul>
+      <li><strong>Left — the Apple menu and app menus.</strong> The  menu never moves. Everything to its right (File, Edit, View…) belongs to whichever app is frontmost, and changes as you switch apps. You cannot reorder or hide these.</li>
+      <li><strong>Right — status items.</strong> Wi-Fi, Bluetooth, Battery, Sound, Focus, plus every third-party app that puts an icon up there. This is the zone you can actually rearrange.</li>
+      <li><strong>Far right — Control Center and the clock.</strong> Both are pinned. They cannot be dragged, though the clock's format is configurable and Control Center's contents are not.</li>
+    </ul>
+    <p>On a MacBook Pro (2021 or later) or MacBook Air (M2 or later) there is a fourth zone: the <a href="/learn/what-is-the-macos-notch/">notch</a> sits in the middle of the bar and splits it in two. macOS treats the space behind it as unusable, which is why crowded menu bars start losing icons on those machines.</p>
+    <p>Almost every menu bar setting lives in one place: <strong>System Settings → Control Center</strong>. Keep that panel open while you work through the steps below.</p>
 
     <p>Here's how to customise every part of it, in order of effort.</p>
 
     <h2>1. Reorder icons (free, 10 seconds)</h2>
-    <p><strong>Hold Command and drag</strong> any menu bar icon left or right. That's the whole trick. It works on Wi-Fi, Bluetooth, Battery, Sound, Now Playing, AirDrop, Focus, third-party apps — everything except the clock and Control Center, which are fixed on the far right.</p>
-    <p>If you want Sound near the clock and Battery on the far left, just drag them there. The order persists across reboots.</p>
+    <p><strong>Hold Command and drag</strong> any menu bar icon left or right. That's the whole trick. It works on Wi-Fi, Bluetooth, Battery, Sound, Now Playing, AirDrop, Focus and third-party apps — everything except the clock and Control Center, which are pinned to the far right. The order survives reboots.</p>
+    <p>Full walkthrough, including how to rescue an icon you dragged into the void and how ordering behaves around the notch: <a href="/learn/how-to-move-menu-bar-icons-on-mac/">How to move menu bar icons on Mac</a>.</p>
 
     <h2>2. Hide or show built-in icons</h2>
     <p>Open <strong>System Settings → Control Center</strong>. Every module has three options: <em>Show in Menu Bar</em>, <em>Don't Show in Menu Bar</em>, <em>Only Show When Active</em> (where applicable).</p>
@@ -139,12 +251,8 @@
     <p>Same Command-drag trick: drag an icon down off the menu bar and it disappears. The app itself keeps running; you just lose the icon. To bring it back, open the app's preferences and re-enable the menu bar icon there.</p>
 
     <h2>4. Menu bar managers (for dense menu bars)</h2>
-    <p>If you have ten or more icons, an organiser app pays for itself in seconds saved. Two solid picks:</p>
-    <ul>
-      <li><strong>Ice</strong> — open source, free. Hides icons behind a chevron, lets you separate "always visible" from "click to reveal" groups.</li>
-      <li><strong>Bartender</strong> — paid, polished. More features: triggers, hotkeys, custom search, deeper third-party integrations.</li>
-    </ul>
-    <p>On a 14" MacBook Pro, an organiser also keeps icons from getting hidden behind the notch when you have too many running.</p>
+    <p>Past roughly ten icons, macOS alone stops being enough and an organiser app pays for itself. <strong>Ice</strong> is open source and free; it hides icons behind a chevron and lets you split "always visible" from "click to reveal". <strong>Bartender</strong> is paid and more polished, adding triggers, hotkeys and search.</p>
+    <p>On a 14" MacBook Pro an organiser does double duty, because it stops icons disappearing into the notch once the bar fills up. For the wider field — clipboard managers, system monitors, timers — see <a href="/learn/best-mac-menu-bar-apps/">the best Mac menu bar apps</a>.</p>
 
     <div class="inline-cta">
       <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest icon" width="56" height="56" loading="lazy" decoding="async" />
@@ -152,7 +260,7 @@
         <h3>Extend the menu bar — into the notch</h3>
         <p>NotchNest adds calendar, AI clipboard, Quick Notes, Pomodoro, music control and AirDrop to the notch area. Free on the Mac App Store.</p>
       </div>
-      <a href="https://apps.apple.com/us/app/notchnest-power-your-notch/id6747612321" target="_blank" rel="noopener" aria-label="Download NotchNest on the Mac App Store">
+      <a href="https://apps.apple.com/us/app/notchnest-dynamic-notch-bar/id6747612321" target="_blank" rel="noopener" aria-label="Download NotchNest on the Mac App Store">
         <img src="../../assets/download-appstore.svg" alt="Download on the Mac App Store" />
       </a>
     </div>
@@ -180,6 +288,54 @@
     <h2>8. Reset everything</h2>
     <p>If you've broken the menu bar layout and can't remember what was where, quit each app whose icon appears and relaunch it; default position returns. For Apple icons, set them all to "Show in Menu Bar" and the original left-to-right order returns.</p>
 
+    <h2>9. Menu bars on external displays</h2>
+    <p>Each display gets its own menu bar, but only the active one shows app menus — the others show a dimmed copy. Two settings decide the behaviour:</p>
+    <ul>
+      <li><strong>System Settings → Desktop &amp; Dock → "Displays have separate Spaces"</strong>. On (the default), every screen carries a full menu bar. Off, only the display marked as primary has one, and the others are pure canvas.</li>
+      <li><strong>System Settings → Displays → Arrange</strong>. Drag the white bar onto whichever screen should be primary. That's the screen your menu bar and Dock call home.</li>
+    </ul>
+    <p>A detail that surprises people: your icon <em>order</em> is global, not per-display. Rearranging on the laptop screen rearranges on the external monitor too. If your MacBook is clamshelled to a large display, the notch stops being a factor entirely, which is often the fastest fix for a bar that keeps swallowing icons.</p>
+
+    <h2>10. What changed in macOS Tahoe</h2>
+    <p>macOS Tahoe (macOS 26) rebuilt the menu bar's appearance around Liquid Glass. The bar is now fully transparent by default, picking up colour from the wallpaper behind it rather than sitting on a tinted strip. Two things follow from that:</p>
+    <ul>
+      <li>Icon legibility now depends on your wallpaper. A busy or light image makes monochrome status icons hard to read — <strong>System Settings → Accessibility → Display → Reduce Transparency</strong> puts the solid backing back.</li>
+      <li>The notch is visually more prominent, because there is no longer a dark bar blending into it. Some people counter this with a <a href="/learn/mac-notch-wallpaper/">black-topped wallpaper</a>; others lean in and put widgets there instead.</li>
+    </ul>
+    <p>Everything else in this guide — Command-drag, Control Center toggles, auto-hide — works identically on Sonoma, Sequoia and Tahoe. More detail: <a href="/learn/macos-tahoe-notch-features/">macOS Tahoe and the notch</a>.</p>
+
+    <h2>11. When icons go missing</h2>
+    <p>Three failure modes account for nearly every "my menu bar icon vanished" report:</p>
+    <ol>
+      <li><strong>Swallowed by the notch.</strong> The bar ran out of room and macOS parked the overflow behind the cutout. Icons are still there, just unreachable. <a href="/learn/menu-bar-icons-missing-behind-notch/">Four ways to get them back</a>.</li>
+      <li><strong>Dragged off accidentally.</strong> A stray Command-drag downward removes an icon. Re-enable it from inside that app's own preferences — macOS has no undo for this.</li>
+      <li><strong>Turned off in Control Center.</strong> Apple icons set to "Don't Show in Menu Bar" look identical to a bug. Check the Control Center panel first.</li>
+    </ol>
+
+    <h2>Where to go next</h2>
+    <p>This page is the overview. Each of these goes deeper on one piece:</p>
+    <ul>
+      <li><a href="/learn/how-to-move-menu-bar-icons-on-mac/">How to move menu bar icons on Mac</a> — the Command-drag mechanics in full.</li>
+      <li><a href="/learn/best-mac-menu-bar-apps/">Best Mac menu bar apps (2026)</a> — organisers, clipboard managers, monitors, timers.</li>
+      <li><a href="/learn/customize-top-bar-mac/">How to customize the top bar on Mac</a> — the notch half of the top bar.</li>
+      <li><a href="/learn/menu-bar-icons-missing-behind-notch/">Menu bar icons missing behind the notch?</a> — the fix for crowded bars.</li>
+      <li><a href="/learn/notch-menu-bar-replacement/">Using the notch as a menu bar replacement</a> — how far you can push it.</li>
+    </ul>
+
+    <h2>Frequently asked</h2>
+    <h3>How do I reorder menu bar icons on Mac?</h3>
+    <p>Hold Command and drag the icon left or right. It works for both Apple and third-party status icons. The clock and Control Center are pinned to the far right and cannot be moved.</p>
+    <h3>How do I hide menu bar icons on Mac?</h3>
+    <p>For Apple icons, open System Settings → Control Center and set the module to "Don't Show in Menu Bar". For third-party icons, Command-drag the icon down off the bar, or turn it off inside that app's own preferences. To hide many at once, use an organiser like Ice or Bartender.</p>
+    <h3>Can I customise the macOS menu bar without third-party apps?</h3>
+    <p>Yes. Reordering, hiding built-in icons, clock formatting and auto-hide are all built into macOS. You only need a third-party app when you want to collapse a large number of icons behind a chevron, or add functionality the menu bar does not have.</p>
+    <h3>Do menu bar apps slow down my Mac?</h3>
+    <p>Well-built ones do not. A status item that sleeps until clicked costs essentially nothing. Apps that poll constantly — network monitors, weather widgets on short refresh intervals — are the ones worth watching in Activity Monitor.</p>
+    <h3>Why do my menu bar icons disappear behind the notch?</h3>
+    <p>macOS lays icons out from the right edge leftward. When they reach the notch it hides the overflow rather than wrapping around it. Reduce the number of visible icons, use an organiser, or lower the display resolution one step. Full options: <a href="/learn/menu-bar-icons-missing-behind-notch/">menu bar icons missing behind the notch</a>.</p>
+    <h3>Can I change the menu bar colour?</h3>
+    <p>Not directly. The bar takes its appearance from your wallpaper and your Light/Dark mode setting. On macOS Tahoe it is transparent by default; Accessibility → Display → Reduce Transparency gives you a solid backing instead. A dark wallpaper is the usual way to get a dark bar in Light mode.</p>
+
     <p>That's the full kit. For more on the notch specifically, read <a href="/learn/what-is-the-macos-notch/">What is the macOS notch?</a> and <a href="/learn/how-to-use-the-macbook-notch/">How to use the MacBook notch</a>.</p>
 
     
@@ -194,18 +350,18 @@
     <section class="related-section">
       <h2>Keep learning</h2>
       <div class="related-grid">
-        <a class="related-card" href="/learn/what-is-the-macos-notch/"><h3>What is the macOS notch?</h3><p>The cutout on top of new MacBooks, explained.</p></a>
-        <a class="related-card" href="/learn/how-to-use-the-macbook-notch/"><h3>How to use the MacBook notch</h3><p>Three steps to a useful notch.</p></a>
-        <a class="related-card" href="/learn/best-macos-notch-apps/"><h3>Best macOS notch apps</h3><p>Our 2026 round-up of notch utilities.</p></a>
+        <a class="related-card" href="/learn/how-to-move-menu-bar-icons-on-mac/"><h3>Move menu bar icons on Mac</h3><p>Command-drag, reorder and rescue lost icons.</p></a>
+        <a class="related-card" href="/learn/best-mac-menu-bar-apps/"><h3>Best Mac menu bar apps</h3><p>Organisers, clipboard managers, monitors and timers.</p></a>
+        <a class="related-card" href="/learn/customize-top-bar-mac/"><h3>Customize the top bar on Mac</h3><p>The notch half of the top bar.</p></a>
       </div>
     </section>
-  </article>
+</article>
 
   <footer class="site-footer">
     <div class="footer-grid">
       <div class="footer-brand"><a class="nn-brand" href="/"><img class="nn-brand-mark" src="/assets/notchnest-icon.png" alt="NotchNest icon" width="28" height="28" decoding="async" /><span>NotchNest</span></a><p class="footer-tag">Make your MacBook's notch useful.</p></div>
-      <div class="footer-col"><h4>App</h4><ul><li><a href="https://apps.apple.com/us/app/notchnest-power-your-notch/id6747612321" target="_blank" rel="noopener">Mac App Store</a></li><li><a href="/#features">Features</a></li></ul></div>
-      <div class="footer-col"><h4>Resources</h4><ul><li><a href="/learn/">Learn</a></li><li><a href="/#faq-section">FAQ</a></li></ul></div>
+      <div class="footer-col"><h4>App</h4><ul><li><a href="https://apps.apple.com/us/app/notchnest-dynamic-notch-bar/id6747612321" target="_blank" rel="noopener">Mac App Store</a></li><li><a href="/#features">Features</a></li></ul></div>
+      <div class="footer-col"><h4>Resources</h4><ul><li><a href="/learn/">Learn</a></li><li><a href="/compare/">Compare</a></li><li><a href="/whats-new.html">What's new</a></li></ul></div>
       <div class="footer-col"><h4>Legal</h4><ul><li><a href="/privacy-policy.html">Privacy</a></li><li><a href="mailto:29satnam@gmail.com">Support</a></li></ul></div>
     </div>
     <div class="footer-bottom"><span>© <span id="yr"></span> NotchNest by Satnam Singh.</span></div>

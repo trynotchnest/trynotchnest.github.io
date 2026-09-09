@@ -8,8 +8,8 @@ GitHub: github.com/29satnam
 LinkedIn: linkedin.com/in/satnam-singh-948348aa
 
 /* APP */
-NotchNest – Power Your Notch
-Mac App Store: https://apps.apple.com/us/app/notchnest-power-your-notch/id6747612321
+NotchNest - Dynamic Notch Bar
+Mac App Store: https://apps.apple.com/us/app/notchnest-dynamic-notch-bar/id6747612321
 Web: https://notchnest.app/
 
 /* SITE */
