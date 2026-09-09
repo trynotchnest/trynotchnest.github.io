@@ -2,7 +2,6 @@
 
 document.addEventListener('DOMContentLoaded', function () {
     // Initialize all features
-    initNotificationSystem();
     initSmoothScrolling();
     initButtonEffects();
     initVideoHandling();
