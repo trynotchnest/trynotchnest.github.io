@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """
-Refresh AggregateRating values in index.html JSON-LD + visible DOM
+Refresh AggregateRating values in index.html + every locale page
+(JSON-LD and visible DOM)
 using live data from iTunes RSS reviews feed (us storefront, all reviews
 across storefronts can also be summed but the lookup endpoint is stale).
 
@@ -21,6 +22,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 INDEX = ROOT / "index.html"
 SITEMAP = ROOT / "sitemap.xml"
+LOCALES = ["de", "fr", "zh", "ar", "es-mx", "pt-br", "pt-pt"]
 
 APP_ID = "6747612321"
 HOST = "notchnest.app"
@@ -60,14 +62,14 @@ def aggregate_ratings():
             weighted += c * v
 
     if total_count >= 1:
-        return round(weighted / total_count, 1), total_count
+        return round(weighted / total_count, 1), total_count, "storefront ratings"
 
     # Fallback: RSS US reviews
     d = fetch_json(
         f"https://itunes.apple.com/us/rss/customerreviews/id={APP_ID}/sortBy=mostHelpful/json"
     )
     if not d:
-        return None, None
+        return None, None, None
     entries = d.get("feed", {}).get("entry", [])[1:]
     ratings = []
     for x in entries:
@@ -76,22 +78,33 @@ def aggregate_ratings():
         except (TypeError, ValueError):
             pass
     if not ratings:
-        return None, None
-    return round(sum(ratings) / len(ratings), 1), len(ratings)
+        return None, None, None
+    # NB: this is the US written-reviews feed, not Apple's global rating count.
+    # It caps at ~50 entries, so the site labels this number "reviews", not "ratings".
+    return round(sum(ratings) / len(ratings), 1), len(ratings), "US written reviews (fallback)"
 
 
-def patch_index(rating_value, rating_count):
-    s = INDEX.read_text()
+def rating_targets():
+    """index.html plus every generated locale page that bakes an AggregateRating."""
+    targets = [INDEX]
+    for loc in LOCALES:
+        targets += sorted((ROOT / loc).rglob("index.html"))
+    return [t for t in targets if t.exists()]
 
-    # Patch every "ratingValue": "<n>" and "ratingCount": "<n>" inside aggregateRating blocks
+
+def patch_index(rating_value, rating_count, path=None):
+    path = path or INDEX
+    s = path.read_text()
+
+    # Patch every "ratingValue" / "reviewCount" inside aggregateRating blocks
     s = re.sub(
         r'"ratingValue":\s*"[0-9.]+"',
         f'"ratingValue": "{rating_value}"',
         s,
     )
     s = re.sub(
-        r'"ratingCount":\s*"[0-9]+"',
-        f'"ratingCount": "{rating_count}"',
+        r'"reviewCount":\s*"[0-9]+"',
+        f'"reviewCount": "{rating_count}"',
         s,
     )
 
@@ -107,7 +120,7 @@ def patch_index(rating_value, rating_count):
         s,
     )
 
-    INDEX.write_text(s)
+    path.write_text(s)
 
 
 def sitemap_urls():
@@ -142,13 +155,18 @@ def indexnow_ping(urls):
 
 def main():
     print("Aggregating ratings across storefronts...")
-    rv, rc = aggregate_ratings()
+    rv, rc, source = aggregate_ratings()
     if rv is None:
         print("  ! No rating data available — leaving baked values untouched.")
     else:
-        print(f"  -> ratingValue={rv}  ratingCount={rc}")
-        patch_index(rv, rc)
-        print(f"  -> patched {INDEX}")
+        print(f"  -> value={rv}  count={rc}  source={source}")
+        patched = 0
+        for target in rating_targets():
+            before = target.read_text()
+            patch_index(rv, rc, target)
+            if target.read_text() != before:
+                patched += 1
+        print(f"  -> patched {patched} file(s)")
 
     urls = sitemap_urls()
     if "--ping" in sys.argv:

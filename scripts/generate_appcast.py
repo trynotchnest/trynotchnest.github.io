@@ -146,7 +146,7 @@ def create_item_element(app_info):
     
     # Enclosure (download link)
     enclosure = ET.SubElement(item, 'enclosure')
-    download_url = app_info.get('trackViewUrl', 'https://apps.apple.com/us/app/notchnest-power-your-notch/id6747612321')
+    download_url = app_info.get('trackViewUrl', 'https://apps.apple.com/us/app/notchnest-dynamic-notch-bar/id6747612321')
     
     enclosure.set('url', download_url)
     enclosure.set('type', 'application/octet-stream')
