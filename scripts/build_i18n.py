@@ -1029,6 +1029,14 @@ def jstr(s):
     return '"' + s.replace("\\", "\\\\").replace('"', '\\"') + '"'
 
 
+def write_if_changed(path: Path, content: str) -> bool:
+    """Quiet sibling of write(): skips no-op writes so mtimes stay stable."""
+    if path.exists() and path.read_text(encoding="utf-8") == content:
+        return False
+    path.write_text(content, encoding="utf-8")
+    return True
+
+
 def write(path: Path, content: str):
     """Write only when the content actually changed.
 
@@ -1064,7 +1072,7 @@ def patch_existing():
     h = re.sub(r'<span class="footer-lang">.*?</span>',
                '<span class="footer-lang">\n' + footer_lang_span("en") + '\n                    </span>',
                h, count=1, flags=re.S)
-    p.write_text(h, encoding="utf-8")
+    write_if_changed(p, h)
     print("  patched index.html")
 
     # de/zh landing pages are generated from LANDING now — nothing to patch here.
@@ -1084,7 +1092,7 @@ def patch_learn_hreflang():
             h = p.read_text(encoding="utf-8")
             ind = "" if loc in ("de", "zh") else "    "
             h = patch_hreflang(h, suffix, indent=ind)
-            p.write_text(h, encoding="utf-8")
+            write_if_changed(p, h)
     print("  patched en/de/zh learn hreflang")
 
 
@@ -1205,7 +1213,7 @@ def update_sitemap():
     if entries:
         xml = xml.replace("</urlset>", "\n".join(entries) + "\n</urlset>")
     xml = refresh_lastmods(xml)
-    p.write_text(xml, encoding="utf-8")
+    write_if_changed(p, xml)
     print(f"  sitemap: refreshed home alternates, added {len(entries)} URLs")
 
 
@@ -1232,7 +1240,7 @@ def build_llms(loc):
 
 def update_llms():
     for loc in GEN:
-        (ROOT / DIRS[loc] / "llms.txt").write_text(build_llms(loc), encoding="utf-8")
+        write_if_changed(ROOT / DIRS[loc] / "llms.txt", build_llms(loc))
     # add a Languages section to the root llms.txt (idempotent)
     for fn in ("llms.txt", "llms-full.txt"):
         p = ROOT / fn
@@ -1245,7 +1253,7 @@ def update_llms():
             block.append(f"- {SWITCH[code]}: {url}" + ("" if code in ("en",) else f" ({url}llms.txt)" if code in [c for c in GEN] else ""))
         section = "\n".join(block) + "\n"
         h = h.rstrip() + "\n" + section
-        p.write_text(h, encoding="utf-8")
+        write_if_changed(p, h)
     print(f"  llms: wrote {len(GEN)} localized llms.txt + root Languages section")
 
 
@@ -1259,7 +1267,7 @@ def patch_en_compare():
         h = h.replace('"ratingValue": "4.7", "ratingCount": "1008"',
                       '"ratingValue": "4.0", "ratingCount": "15"')
         h = h.replace('<td>Localised (EN/DE/ZH)</td>', '<td>Localized (8 languages)</td>')
-        p.write_text(h, encoding="utf-8")
+        write_if_changed(p, h)
     print("  patched en compare rating + language row")
 
 
@@ -1271,7 +1279,7 @@ def patch_simple_hreflang(suffixes):
             continue
         h = p.read_text(encoding="utf-8")
         h = patch_hreflang(h, suffix, indent="")
-        p.write_text(h, encoding="utf-8")
+        write_if_changed(p, h)
     print(f"  patched en hreflang for {len(suffixes)} page(s)")
 
 

@@ -530,7 +530,7 @@ PRICING_FAQ = {
             "Hover auf die Notch. Der Download ist kostenlos.",
         "Ist NotchNest kostenlos?":
             "Der Download ist kostenlos und die Notch lässt sich sofort nutzen. Für den vollen Funktionsumfang "
-            "gibt es optional NotchNest Pro — als Abo oder als einmaliger Lifetime-Kauf. KI-Funktionen laufen "
+            "gibt es optional NotchNest Premium — als Abo oder als einmaliger Lifetime-Kauf. KI-Funktionen laufen "
             "über Apple Intelligence auf dem Gerät, es entstehen also keine Server-Kosten.",
     },
     "zh": {
@@ -538,7 +538,7 @@ PRICING_FAQ = {
             "NotchNest 是一款 macOS 应用,把 MacBook 刘海变为生产力中心。包含日历、AI 剪贴板、备忘录、番茄钟、"
             "音乐控制和隔空投送等,只需将鼠标悬停在刘海上即可使用。应用可免费下载。",
         "NotchNest 免费吗?":
-            "免费下载,安装后即可使用刘海面板。如需完整功能,可选择升级到 NotchNest Pro——订阅制,或一次性买断的 "
+            "免费下载,安装后即可使用刘海面板。如需完整功能,可选择升级到 NotchNest Premium——订阅制,或一次性买断的 "
             "Lifetime 版本。AI 功能通过苹果智能在设备本地运行,不产生服务器费用。",
     },
     "fr": {
@@ -548,7 +548,7 @@ PRICING_FAQ = {
             "le tout en survolant l'encoche. Le téléchargement est gratuit.",
         "NotchNest est-il gratuit ?":
             "Le téléchargement est gratuit sur le Mac App Store et l'encoche fonctionne dès l'installation. "
-            "Une option NotchNest Pro donne accès à l'ensemble des fonctionnalités — par abonnement ou en "
+            "Une option NotchNest Premium donne accès à l'ensemble des fonctionnalités — par abonnement ou en "
             "achat unique à vie. L'IA s'exécute sur l'appareil via Apple Intelligence.",
     },
     "ar": {
@@ -557,7 +557,7 @@ PRICING_FAQ = {
             "وملاحظات ومؤقت بومودورو والتحكم بالموسيقى وAirDrop — كل ذلك عند تمرير المؤشر فوق النتش. والتنزيل مجاني.",
         "هل NotchNest مجاني؟":
             "التنزيل مجاني على Mac App Store، ولوحة النتش تعمل فور التثبيت. وتتوفّر ترقية اختيارية إلى "
-            "NotchNest Pro للحصول على جميع الميزات — باشتراك أو بشراء لمرة واحدة مدى الحياة. وتعمل ميزات "
+            "NotchNest Premium للحصول على جميع الميزات — باشتراك أو بشراء لمرة واحدة مدى الحياة. وتعمل ميزات "
             "الذكاء الاصطناعي على الجهاز عبر Apple Intelligence.",
     },
     "es-MX": {
@@ -567,7 +567,7 @@ PRICING_FAQ = {
             "al pasar el cursor sobre el notch. La descarga es gratuita.",
         "¿NotchNest es gratis?":
             "La descarga es gratuita en el Mac App Store y el panel del notch funciona desde que lo instalas. "
-            "Existe una mejora opcional a NotchNest Pro con el conjunto completo — por suscripción o con una "
+            "Existe una mejora opcional a NotchNest Premium con el conjunto completo — por suscripción o con una "
             "compra única de por vida. La IA se ejecuta en el dispositivo con Apple Intelligence.",
     },
     "pt-BR": {
@@ -577,7 +577,7 @@ PRICING_FAQ = {
             "tudo ao passar o cursor sobre o notch. O download é gratuito.",
         "O NotchNest é grátis?":
             "O download é gratuito na Mac App Store e o painel do notch funciona assim que você instala. Há um "
-            "upgrade opcional para o NotchNest Pro com o conjunto completo — por assinatura ou em uma compra "
+            "upgrade opcional para o NotchNest Premium com o conjunto completo — por assinatura ou em uma compra "
             "única vitalícia. A IA roda no dispositivo via Apple Intelligence.",
     },
     "pt-PT": {
@@ -587,10 +587,62 @@ PRICING_FAQ = {
             "de música e AirDrop — tudo ao passar o cursor sobre o notch. A transferência é gratuita.",
         "O NotchNest é gratuito?":
             "A transferência é gratuita na Mac App Store e o painel do notch funciona assim que instala. "
-            "Existe uma atualização opcional para o NotchNest Pro com o conjunto completo — por subscrição ou "
+            "Existe uma atualização opcional para o NotchNest Premium com o conjunto completo — por subscrição ou "
             "numa compra única vitalícia. A IA é executada no dispositivo através da Apple Intelligence.",
     },
 }
+
+for _loc, _qs in PRICING_FAQ.items():
+    _faq = LANDING[_loc]["faq"]
+    for _i, (_q, _a) in enumerate(_faq):
+        if _q in _qs:
+            _faq[_i] = (_q, _qs[_q])
+
+
+# ── free-tier caps, stated explicitly ───────────────────────────────────────
+# Free: 1 bookmark, 1 note, 5 clipboard items, 2 File-Tray files, today's calendar
+# events, 3-second mirror, limited Pomodoro. Premium lifts all of them.
+# Prices omitted in locale copy — storefront currencies differ.
+PRICING_FAQ["de"]["Ist NotchNest kostenlos?"] = (
+    "Der Download ist kostenlos und jedes Widget funktioniert sofort — die Gratis-Stufe ist aber "
+    "begrenzt: ein Lesezeichen, eine Notiz, fünf Einträge in der Zwischenablage, zwei Dateien im "
+    "Datei-Tray, nur die heutigen Kalendertermine, ein Kameraspiegel für drei Sekunden und ein "
+    "eingeschränkter Pomodoro. NotchNest Premium hebt jede dieser Grenzen auf — als Abo oder als "
+    "einmaliger Lifetime-Kauf. KI-Funktionen laufen über Apple Intelligence auf dem Gerät, es "
+    "entstehen also keine Server-Kosten.")
+PRICING_FAQ["zh"]["NotchNest 免费吗?"] = (
+    "免费下载,安装后每个组件都能直接使用,但免费版有额度限制:一个书签、一条备忘录、五条剪贴板记录、"
+    "文件托盘两个文件、仅当天的日历事件、三秒摄像头镜像,以及受限的番茄钟。NotchNest Premium 解除全部"
+    "限制——订阅制,或一次性买断的 Lifetime 版本。AI 功能通过苹果智能在设备本地运行,不产生服务器费用。")
+PRICING_FAQ["fr"]["NotchNest est-il gratuit ?"] = (
+    "Le téléchargement est gratuit et chaque widget fonctionne dès l'installation, mais l'offre "
+    "gratuite est plafonnée : un favori, une note, cinq éléments de presse-papiers, deux fichiers "
+    "dans le bac, uniquement les événements du jour, un miroir caméra de trois secondes et un "
+    "Pomodoro limité. NotchNest Premium lève toutes ces limites — par abonnement ou en achat unique "
+    "à vie. L'IA s'exécute sur l'appareil via Apple Intelligence.")
+PRICING_FAQ["ar"]["هل NotchNest مجاني؟"] = (
+    "التنزيل مجاني وكل أداة تعمل فور التثبيت، لكن النسخة المجانية محدودة: إشارة مرجعية واحدة، "
+    "وملاحظة واحدة، وخمسة عناصر في الحافظة، وملفان في درج الملفات، وأحداث اليوم فقط في التقويم، "
+    "ومرآة كاميرا لثلاث ثوانٍ، وبومودورو مقيّد. وتزيل NotchNest Premium كل هذه الحدود — باشتراك أو "
+    "بشراء لمرة واحدة مدى الحياة. وتعمل ميزات الذكاء الاصطناعي على الجهاز عبر Apple Intelligence.")
+PRICING_FAQ["es-MX"]["¿NotchNest es gratis?"] = (
+    "La descarga es gratuita y cada widget funciona desde que lo instalas, pero el plan gratuito "
+    "tiene topes: un marcador, una nota, cinco elementos del portapapeles, dos archivos en la "
+    "bandeja, solo los eventos de hoy, un espejo de cámara de tres segundos y un Pomodoro limitado. "
+    "NotchNest Premium quita todos esos límites — por suscripción o con una compra única de por "
+    "vida. La IA se ejecuta en el dispositivo con Apple Intelligence.")
+PRICING_FAQ["pt-BR"]["O NotchNest é grátis?"] = (
+    "O download é gratuito e todo widget funciona assim que você instala, mas a versão gratuita tem "
+    "limites: um favorito, uma nota, cinco itens da área de transferência, dois arquivos na bandeja, "
+    "apenas os eventos de hoje, um espelho de câmera de três segundos e um Pomodoro limitado. O "
+    "NotchNest Premium remove todos esses limites — por assinatura ou em uma compra única vitalícia. "
+    "A IA roda no dispositivo via Apple Intelligence.")
+PRICING_FAQ["pt-PT"]["O NotchNest é gratuito?"] = (
+    "A transferência é gratuita e todos os widgets funcionam assim que instala, mas a versão gratuita "
+    "tem limites: um marcador, uma nota, cinco itens da área de transferência, dois ficheiros no "
+    "tabuleiro, apenas os eventos de hoje, um espelho de câmara de três segundos e um Pomodoro "
+    "limitado. O NotchNest Premium remove todos esses limites — por subscrição ou numa compra única "
+    "vitalícia. A IA é executada no dispositivo através da Apple Intelligence.")
 
 for _loc, _qs in PRICING_FAQ.items():
     _faq = LANDING[_loc]["faq"]

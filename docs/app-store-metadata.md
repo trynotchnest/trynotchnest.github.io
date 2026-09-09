@@ -138,7 +138,7 @@ room, and frees the menu bar slots they used to occupy.
 
 — WHY NOTCHNEST —
 
-• Free to download, with an optional Pro upgrade — monthly, or one-time Lifetime
+• Free to download — Premium lifts every limit, monthly or one-time Lifetime
 • On-device Apple Intelligence — nothing uploaded, ever
 • Mac App Store only: reviewed, notarized, sandboxed
 • Native SwiftUI, built for macOS 26 and Liquid Glass
@@ -152,8 +152,34 @@ Terms: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
 Contact: 29satnam@gmail.com
 ```
 
-Confirm the Pro/free split in "WHY NOTCHNEST" matches what the app actually
-gates — I could not determine that from the repo, the listing or the screenshots.
+### Free vs Premium
+
+Confirmed from the in-app paywall. Worth stating plainly in the listing — vague
+"free with in-app purchases" is what generates "everything is paid" reviews.
+
+| | Free | Premium |
+|---|---|---|
+| Bookmarks | 1 | Unlimited |
+| Notes | 1 | Unlimited |
+| Clipboard items | 5 | Unlimited |
+| File-Tray files | 2 | Unlimited |
+| Calendar | Today only | All events |
+| Camera mirror | 3 seconds | Unlimited |
+| Pomodoro | Limited | Unlocked |
+| Game | 2 plays / 24h | Fully unlocked |
+| Upcoming features | — | Included |
+
+Optional block to append to the description:
+
+```
+— FREE VS PREMIUM —
+
+Everything is usable free, with limits: one bookmark, one note, five clipboard
+items, two File-Tray files, today's calendar events, a three-second mirror.
+
+NotchNest Premium lifts all of them — $2.99/month, or $14.99 once for Lifetime.
+Every future feature is included.
+```
 
 ---
 
@@ -168,30 +194,35 @@ Useful because it updates without a build submission. Rotate it for launches.
 
 ---
 
-## 6. Pricing
+## 6. Pricing — one item to clean up in App Store Connect
+
+The app itself now offers two tiers:
 
 ```
-Monthly Subscription   $2.99
-Yearly Subscription   $14.99   <-- identical to Lifetime
-NotchNest Lifetime    $14.99
+Monthly Subscription   $2.99 / month
+NotchNest Lifetime    $14.99   pay once, use forever
 ```
 
-Yearly is strictly dominated — nobody rationally buys it. Either remove it or
-reprice to ~$9.99 so Lifetime keeps a premium.
+**But Apple's product page still advertises a third**, checked live on 9 Sep 2026:
 
----
+```
+In-App Purchases: Yes
+  Monthly Subscription   $2.99
+  NotchNest Lifetime    $14.99
+  Yearly Subscription   $14.99   <-- removed from the app, still listed
+```
 
-## 7. Screenshot compliance — action needed
+The yearly IAP is still in a saleable state in App Store Connect, so Apple keeps
+showing it. Anyone reading the product page sees a $14.99/year subscription next
+to a $14.99 pay-once Lifetime, which makes the pricing look broken.
 
-Screenshot 1 carries a laurel-wreath "Trending App" badge **containing the Apple
-logo**. Apple's marketing guidelines prohibit using Apple logos or marks in your
-own promotional artwork, and screenshots are reviewed. This is a removal or
-rejection risk on your very first screenshot.
+Remove it: App Store Connect → Monetization → In-App Purchases → Yearly
+Subscription → **Remove from Sale**. Existing subscribers, if any, keep their
+entitlement; it just stops being offered and disappears from the listing.
 
-Replace the badge with plain text, or drop it. The rest of the screenshot set is
-strong — 9 of a possible 10, clear captions, real UI.
+## 7. Screenshots
 
----
+9 of a possible 10, clear captions, real UI. Nothing to change.
 
 ## 8. Ratings
 

@@ -78,7 +78,7 @@ HOWTO = {
       <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
       <div class="inline-cta-body">
         <h3>Installer NotchNest</h3>
-        <p>Gratuit sur le Mac App Store. macOS 14+. Téléchargement gratuit, option Pro.</p>
+        <p>Gratuit sur le Mac App Store. macOS 14+. Téléchargement gratuit, option Premium.</p>
       </div>
       <a href="%STORE%" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="Télécharger sur le Mac App Store" /></a>
     </div>
@@ -158,7 +158,7 @@ HOWTO = {
       <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
       <div class="inline-cta-body">
         <h3>Instalar NotchNest</h3>
-        <p>Gratis en el Mac App Store. macOS 14+. Descarga gratuita, mejora Pro opcional.</p>
+        <p>Gratis en el Mac App Store. macOS 14+. Descarga gratuita, mejora Premium opcional.</p>
       </div>
       <a href="%STORE%" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="Descargar en el Mac App Store" /></a>
     </div>
@@ -238,7 +238,7 @@ HOWTO = {
       <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
       <div class="inline-cta-body">
         <h3>Instalar o NotchNest</h3>
-        <p>Grátis na Mac App Store. macOS 14+. Download gratuito, upgrade Pro opcional.</p>
+        <p>Grátis na Mac App Store. macOS 14+. Download gratuito, upgrade Premium opcional.</p>
       </div>
       <a href="%STORE%" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="Baixar na Mac App Store" /></a>
     </div>
@@ -318,7 +318,7 @@ HOWTO = {
       <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
       <div class="inline-cta-body">
         <h3>Instalar o NotchNest</h3>
-        <p>Gratuito na Mac App Store. macOS 14+. Transferência gratuita, atualização Pro opcional.</p>
+        <p>Gratuito na Mac App Store. macOS 14+. Transferência gratuita, atualização Premium opcional.</p>
       </div>
       <a href="%STORE%" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="Descarregar na Mac App Store" /></a>
     </div>
@@ -398,7 +398,7 @@ HOWTO = {
       <img class="inline-cta-icon" src="/assets/notchnest-icon.png" alt="NotchNest" width="56" height="56" />
       <div class="inline-cta-body">
         <h3>تثبيت NotchNest</h3>
-        <p>مجانًا على Mac App Store. macOS 14+. تنزيل مجاني وترقية Pro اختيارية.</p>
+        <p>مجانًا على Mac App Store. macOS 14+. تنزيل مجاني وترقية Premium اختيارية.</p>
       </div>
       <a href="%STORE%" target="_blank" rel="noopener"><img src="/assets/download-appstore.svg" alt="التنزيل من Mac App Store" /></a>
     </div>
