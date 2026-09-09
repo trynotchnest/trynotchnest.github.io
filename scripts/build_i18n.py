@@ -2,11 +2,10 @@
 """Generate localized NotchNest pages (landing + learn hub + articles) and keep
 hreflang consistent across the whole site.
 
-Locales: en (root, hand-authored), de, zh (hand-authored), and the generated set
-ar, fr, pt-br, pt-pt, es-mx. English/German/Chinese pages are only *patched*
-here (unified hreflang cluster + language switcher + correct rating); the five
-generated locales are written in full from the templates + translation tables
-below.
+Locales: en (root, hand-authored) plus seven generated locales — de, zh, ar, fr,
+pt-br, pt-pt, es-mx — all written in full from the templates + translation tables
+below. The English root page is only *patched* here (unified hreflang cluster +
+language switcher).
 
 Run:  python3 scripts/build_i18n.py
 """
@@ -28,6 +27,9 @@ SWITCH = {"en": "English", "de": "Deutsch", "zh": "中文", "ar": "العربي�
 # locales generated from scratch (landing/learn); de+zh are hand-authored but
 # their for/ + compare/ + remaining articles are generated here too (backfill)
 GEN = ["ar", "fr", "pt-BR", "pt-PT", "es-MX"]
+# de/zh have full LANDING copy (lifted from their hand-authored pages) so their
+# landing pages are generated too; their learn hubs are still hand-authored.
+GEN_LANDING = ["de", "zh"] + GEN
 FULL = ["de", "zh", "ar", "fr", "pt-BR", "pt-PT", "es-MX"]  # every non-English locale
 LANG_ATTR = {"de": "de", "zh": "zh-Hans", "ar": "ar", "fr": "fr",
              "pt-BR": "pt-BR", "pt-PT": "pt-PT", "es-MX": "es-MX"}
@@ -43,7 +45,7 @@ RATING = {"de": "4,0", "zh": "4.0", "ar": "4.0", "fr": "4,0",
 
 
 def store_url(loc):
-    return f"https://apps.apple.com/{STORE_CC[loc]}/app/notchnest-power-your-notch/id6747612321"
+    return f"https://apps.apple.com/{STORE_CC[loc]}/app/notchnest-dynamic-notch-bar/id6747612321"
 
 
 def hreflang(suffix, indent=""):
@@ -129,6 +131,13 @@ def build_landing(loc):
     faq_cards = "\n    ".join(
         f'<details class="faq-card"><summary class="faq-question">{q}<span class="faq-toggle"></span></summary>\n      <div class="faq-answer">{a}</div>\n    </details>'
         for q, a in faq)
+    steps = t["steps"]
+    how_steps = "\n    ".join(
+        f'<li class="how-step"><span class="how-num">{i}</span><h3 class="how-title">{h}</h3><p class="how-text">{txt}</p></li>'
+        for i, (h, txt) in enumerate(steps, 1))
+    how_json = ",\n      ".join(
+        '{ "@type": "HowToStep", "position": %d, "name": %s, "text": %s }' % (i, jstr(h), jstr(txt))
+        for i, (h, txt) in enumerate(steps, 1))
     return f"""<!DOCTYPE html>
 <html lang="{LANG_ATTR[loc]}"{rtl_attrs(loc)}>
 <head>
@@ -178,8 +187,60 @@ def build_landing(loc):
     "url": "{BASE}{d}",
     "downloadUrl": "{su}",
     "image": "{BASE}assets/notchnest-icon.png",
+    "applicationSubCategory": "Mac notch utility",
+    "softwareVersion": "1.2.5",
+    "screenshot": ["{BASE}assets/notchnest-settings.png"],
+    "creator": {{ "@type": "Person", "name": "Satnam Singh", "url": "https://silverseahog.com/", "jobTitle": "Swift Developer" }},
+    "publisher": {{ "@id": "{BASE}#organization" }},
     "aggregateRating": {{ "@type": "AggregateRating", "ratingValue": "4.0", "ratingCount": "15", "bestRating": "5", "worstRating": "1" }},
     "offers": {{ "@type": "Offer", "price": "0", "priceCurrency": "{CURRENCY[loc]}", "availability": "https://schema.org/InStock", "url": "{su}" }}
+  }},
+  {{
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "{BASE}#organization",
+    "name": "NotchNest",
+    "url": "{BASE}",
+    "logo": "{BASE}assets/notchnest-icon.png",
+    "founder": {{ "@type": "Person", "name": "Satnam Singh", "url": "https://silverseahog.com/" }},
+    "sameAs": [
+      "https://apps.apple.com/us/app/notchnest-dynamic-notch-bar/id6747612321",
+      "https://www.producthunt.com/products/notchnest-quick-access-hub",
+      "https://silverseahog.com/",
+      "https://twitter.com/codetard",
+      "https://github.com/29satnam"
+    ]
+  }},
+  {{
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "NotchNest",
+    "url": "{BASE}{d}",
+    "inLanguage": "{LANG_ATTR[loc]}",
+    "publisher": {{ "@id": "{BASE}#organization" }}
+  }},
+  {{
+    "@context": "https://schema.org",
+    "@type": "VideoObject",
+    "name": {jstr(t['title'])},
+    "description": {jstr(t['sa_desc'])},
+    "inLanguage": "{LANG_ATTR[loc]}",
+    "thumbnailUrl": "{BASE}assets/notchnest-poster.webp",
+    "contentUrl": "{BASE}assets/notchnest-demo.mp4",
+    "embedUrl": "{BASE}{d}",
+    "uploadDate": "2026-06-02T00:00:00+00:00",
+    "duration": "PT1M42S",
+    "publisher": {{ "@id": "{BASE}#organization" }}
+  }},
+  {{
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": {jstr(t['how_title'])},
+    "inLanguage": "{LANG_ATTR[loc]}",
+    "totalTime": "PT2M",
+    "step": [
+      {how_json}
+    ]
   }},
   {{
     "@context": "https://schema.org",
@@ -215,7 +276,7 @@ def build_landing(loc):
         <a class="btn-ghost" href="/{d}learn/">{t['ghost']}</a>
       </div>
       <div class="hero-meta">
-        <span><strong>★ {RATING[loc]}</strong> · {t['meta_ratings']}</span>
+        <span><strong>★ <span data-rating-value>{RATING[loc]}</span></strong> · <span data-rating-count>15</span> {t['meta_ratings']}</span>
         <span class="dot" aria-hidden="true"></span>
         <span><strong>{t['free']}</strong> {t['meta_store']}</span>
         <span class="dot" aria-hidden="true"></span>
@@ -230,8 +291,8 @@ def build_landing(loc):
     </div>
   </div>
   <div class="stats">
-    <div><div class="stat-num">★ {RATING[loc]}</div><div class="stat-label">{t['stat_rating']}</div></div>
-    <div><div class="stat-num">15</div><div class="stat-label">{t['stat_reviews']}</div></div>
+    <div><div class="stat-num">★ <span data-rating-value>{RATING[loc]}</span></div><div class="stat-label">{t['stat_rating']}</div></div>
+    <div><div class="stat-num"><span data-rating-count>15</span></div><div class="stat-label">{t['stat_reviews']}</div></div>
     <div><div class="stat-num">macOS 14+</div><div class="stat-label">{t['stat_os']}</div></div>
     <div><div class="stat-num">{t['free']}</div><div class="stat-label">{t['stat_store']}</div></div>
   </div>
@@ -246,6 +307,47 @@ def build_landing(loc):
   <div class="cases-grid">
     {cards}
   </div>
+</section>
+
+<section id="how" class="how-section" aria-label="{t['how_kicker']}">
+  <header class="section-head">
+    <span class="section-kicker">{t['how_kicker']}</span>
+    <h2 class="section-title">{t['how_title']}</h2>
+  </header>
+  <ol class="how-steps">
+    {how_steps}
+  </ol>
+</section>
+
+<section id="press" class="press-section" aria-label="{t['press_kicker']}">
+  <header class="section-head">
+    <span class="section-kicker">{t['press_kicker']}</span>
+    <h2 class="section-title">{t['press_title']}</h2>
+    <p class="section-lede">{t['press_lede']}</p>
+  </header>
+  <div class="press-quotes">
+    <a class="press-quote" href="https://www.macupdate.com/best-picks/the-5-best-notch-apps-for-mac-getting-more-from-your-menu-bar" target="_blank" rel="noopener">
+      <div class="press-pub"><span class="press-wordmark mu">MacUpdate</span><span class="press-meta">Best Picks · Editorial</span></div>
+      <p class="press-headline">"The 5 best notch apps for Mac — getting more from your menu bar."</p>
+      <p class="press-context">{t['press_ctx_mu']}</p>
+      <span class="press-cta">{t['press_cta']}</span>
+    </a>
+    <a class="press-quote" href="https://medium.com/the-useful-tech/5-new-mac-apps-from-2025-youve-probably-never-heard-of-4d75657d78bf" target="_blank" rel="noopener">
+      <div class="press-pub"><span class="press-wordmark md">Medium · The Useful Tech</span><span class="press-meta">2025 picks · Editorial</span></div>
+      <p class="press-headline">"5 new Mac apps from 2025 you've probably never heard of."</p>
+      <p class="press-context">{t['press_ctx_md']}</p>
+      <span class="press-cta">{t['press_cta']}</span>
+    </a>
+  </div>
+  <a class="ph-badge" href="https://www.producthunt.com/products/notchnest-quick-access-hub" target="_blank" rel="noopener">
+    <span class="ph-logo" aria-hidden="true">
+      <svg viewBox="0 0 40 40" width="36" height="36" fill="none"><circle cx="20" cy="20" r="20" fill="#DA552F"/><path d="M22 11h-7v18h3v-6h4a6 6 0 0 0 0-12zm0 9h-4v-6h4a3 3 0 0 1 0 6z" fill="#fff"/></svg>
+    </span>
+    <div class="ph-text">
+      <span class="ph-eyebrow">{t['ph_eyebrow']}</span>
+      <span class="ph-title">NotchNest · Quick Access Hub →</span>
+    </div>
+  </a>
 </section>
 
 <section class="faq-section">
@@ -488,11 +590,20 @@ def build_learn_index(loc):
 """
 
 
+
+# heading for the visible FAQ block on locale articles
+FAQ_H2 = {"de": "Häufige Fragen", "zh": "常见问题", "ar": "أسئلة شائعة", "fr": "Questions fréquentes",
+          "pt-BR": "Perguntas frequentes", "pt-PT": "Perguntas frequentes", "es-MX": "Preguntas frecuentes"}
+
+
 def build_article(loc, slug):
     t = ARTICLES[slug][loc]
     d = DIRS[loc]
     su = store_url(loc)
     url = f"{BASE}{d}learn/{slug}/"
+    faq_cards = "\n    ".join(
+        f'<details class="faq-card"><summary class="faq-question">{q}<span class="faq-toggle"></span></summary><div class="faq-answer">{a}</div></details>'
+        for q, a in t["faq"])
     faq_json = ",\n      ".join(
         '{ "@type": "Question", "name": %s, "acceptedAnswer": { "@type": "Answer", "text": %s } }'
         % (jstr(q), jstr(a)) for q, a in t["faq"])
@@ -592,6 +703,9 @@ def build_article(loc, slug):
   <article class="article-body">
     {body}
 
+    <h2>{FAQ_H2[loc]}</h2>
+    {faq_cards}
+
     <aside class="author-bio">
       <img class="author-avatar" src="https://github.com/29satnam.png" alt="Satnam Singh" width="56" height="56" loading="lazy" />
       <div>
@@ -617,7 +731,8 @@ def build_article(loc, slug):
 """
 
 
-COMPARE_SLUGS = ["notchnest-vs-notchnook", "notchnest-vs-alcove", "notchnest-vs-boring-notch"]
+COMPARE_SLUGS = ["notchnest-vs-notchnook", "notchnest-vs-alcove", "notchnest-vs-boring-notch",
+                 "notchnest-vs-notchdrop"]
 
 
 def build_compare(loc, slug):
@@ -914,8 +1029,24 @@ def jstr(s):
     return '"' + s.replace("\\", "\\\\").replace('"', '\\"') + '"'
 
 
+def write_if_changed(path: Path, content: str) -> bool:
+    """Quiet sibling of write(): skips no-op writes so mtimes stay stable."""
+    if path.exists() and path.read_text(encoding="utf-8") == content:
+        return False
+    path.write_text(content, encoding="utf-8")
+    return True
+
+
 def write(path: Path, content: str):
+    """Write only when the content actually changed.
+
+    Rewriting an identical file still bumps its mtime, which feeds the sitemap's
+    per-URL lastmod and makes consecutive builds produce different output. Skipping
+    no-op writes keeps the build idempotent.
+    """
     path.parent.mkdir(parents=True, exist_ok=True)
+    if path.exists() and path.read_text(encoding="utf-8") == content:
+        return
     path.write_text(content, encoding="utf-8")
     print("  wrote", path.relative_to(ROOT))
 
@@ -931,7 +1062,7 @@ def footer_lang_span(current):
 
 
 def patch_existing():
-    print("patching en/de/zh:")
+    print("patching en:")
     # root English homepage
     p = ROOT / "index.html"
     h = p.read_text(encoding="utf-8")
@@ -941,27 +1072,10 @@ def patch_existing():
     h = re.sub(r'<span class="footer-lang">.*?</span>',
                '<span class="footer-lang">\n' + footer_lang_span("en") + '\n                    </span>',
                h, count=1, flags=re.S)
-    p.write_text(h, encoding="utf-8")
+    write_if_changed(p, h)
     print("  patched index.html")
 
-    # German + Chinese homepages
-    for loc, h4 in (("de", "Sprache"), ("zh", "语言")):
-        p = ROOT / DIRS[loc] / "index.html"
-        h = p.read_text(encoding="utf-8")
-        h = patch_hreflang(h, "", indent="")
-        # stale rating → real 4.0 / 15
-        h = h.replace('"ratingValue": "4.7", "ratingCount": "1008"',
-                      '"ratingValue": "4.0", "ratingCount": "15"')
-        h = h.replace('"priceCurrency": "EUR"',
-                      '"priceCurrency": "%s"' % ({"de": "EUR", "zh": "CNY"}[loc]))
-        # expand footer language list to all 8
-        li = "\n      ".join(
-            f'<li><a href="/{DIRS[c]}"%s>{SWITCH[c]}</a></li>' % (' aria-current="page"' if c == loc else "")
-            for c in ORDER)
-        h = re.sub(r'(<h4>' + h4 + r'</h4><ul>).*?(</ul>)',
-                   lambda m: m.group(1) + "\n      " + li + "\n    " + m.group(2), h, count=1, flags=re.S)
-        p.write_text(h, encoding="utf-8")
-        print(f"  patched {DIRS[loc]}index.html")
+    # de/zh landing pages are generated from LANDING now — nothing to patch here.
 
 
 def patch_learn_hreflang():
@@ -978,7 +1092,7 @@ def patch_learn_hreflang():
             h = p.read_text(encoding="utf-8")
             ind = "" if loc in ("de", "zh") else "    "
             h = patch_hreflang(h, suffix, indent=ind)
-            p.write_text(h, encoding="utf-8")
+            write_if_changed(p, h)
     print("  patched en/de/zh learn hreflang")
 
 
@@ -991,6 +1105,61 @@ def xhtml_alts(suffix):
             lines.append(f'    <xhtml:link rel="alternate" hreflang="{e}" href="{url}"/>')
     lines.append(f'    <xhtml:link rel="alternate" hreflang="x-default" href="{BASE + suffix}"/>')
     return "\n".join(lines)
+
+
+EN_ONLY_PAGES = [
+    ("learn/mac-notch-app/", "monthly", "0.7"),
+    ("compare/notchnest-vs-notchdrop/", "monthly", "0.7"),
+]
+
+
+def _page_path(suffix):
+    """Map a sitemap suffix back to the file that backs it."""
+    if suffix.endswith("/") or suffix == "":
+        return ROOT / suffix / "index.html"
+    return ROOT / suffix
+
+
+def _mtime(f):
+    import datetime
+    return datetime.datetime.fromtimestamp(
+        f.stat().st_mtime, datetime.timezone.utc).isoformat(timespec="seconds")
+
+
+def lastmod_for(suffix):
+    """Real per-page modification date.
+
+    Uses the file's mtime when it has uncommitted edits (so the sitemap is honest
+    before the commit lands), otherwise the last commit date for that file.
+    """
+    import subprocess, datetime
+    f = _page_path(suffix)
+    if not f.exists():
+        return datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="seconds")
+    try:
+        rel = str(f.relative_to(ROOT))
+        dirty = subprocess.run(["git", "status", "--porcelain", "--", rel],
+                               cwd=str(ROOT), capture_output=True, text=True,
+                               timeout=10).stdout.strip()
+        if dirty:
+            return _mtime(f)
+        out = subprocess.run(["git", "log", "-1", "--format=%cI", "--", rel],
+                             cwd=str(ROOT), capture_output=True, text=True,
+                             timeout=10).stdout.strip()
+        if out:
+            return out
+    except (OSError, ValueError, subprocess.SubprocessError):
+        pass
+    return _mtime(f)
+
+
+def refresh_lastmods(xml):
+    """Give every <url> its own lastmod. A single shared date is a discounted signal."""
+    def one(m):
+        loc = m.group(1)
+        suffix = loc[len(BASE):] if loc.startswith(BASE) else ""
+        return f"<loc>{loc}</loc>\n    <lastmod>{lastmod_for(suffix)}</lastmod>"
+    return re.sub(r"<loc>([^<]+)</loc>\s*\n\s*<lastmod>[^<]*</lastmod>", one, xml)
 
 
 def update_sitemap():
@@ -1033,9 +1202,18 @@ def update_sitemap():
                 f"  <url>\n    <loc>{url}</loc>\n    <lastmod>2026-08-24T00:00:00+00:00</lastmod>\n"
                 f"    <changefreq>{cf}</changefreq>\n    <priority>{pr}</priority>\n"
                 f"{xhtml_alts(suffix)}\n  </url>")
+    # English-only pages (no locale builds yet): listed without an alternate cluster
+    for suffix, cf, pr in EN_ONLY_PAGES:
+        url = BASE + suffix
+        if f"<loc>{url}</loc>" in xml:
+            continue
+        entries.append(
+            f"  <url>\n    <loc>{url}</loc>\n    <lastmod>{lastmod_for(suffix)}</lastmod>\n"
+            f"    <changefreq>{cf}</changefreq>\n    <priority>{pr}</priority>\n  </url>")
     if entries:
         xml = xml.replace("</urlset>", "\n".join(entries) + "\n</urlset>")
-    p.write_text(xml, encoding="utf-8")
+    xml = refresh_lastmods(xml)
+    write_if_changed(p, xml)
     print(f"  sitemap: refreshed home alternates, added {len(entries)} URLs")
 
 
@@ -1062,7 +1240,7 @@ def build_llms(loc):
 
 def update_llms():
     for loc in GEN:
-        (ROOT / DIRS[loc] / "llms.txt").write_text(build_llms(loc), encoding="utf-8")
+        write_if_changed(ROOT / DIRS[loc] / "llms.txt", build_llms(loc))
     # add a Languages section to the root llms.txt (idempotent)
     for fn in ("llms.txt", "llms-full.txt"):
         p = ROOT / fn
@@ -1075,7 +1253,7 @@ def update_llms():
             block.append(f"- {SWITCH[code]}: {url}" + ("" if code in ("en",) else f" ({url}llms.txt)" if code in [c for c in GEN] else ""))
         section = "\n".join(block) + "\n"
         h = h.rstrip() + "\n" + section
-        p.write_text(h, encoding="utf-8")
+        write_if_changed(p, h)
     print(f"  llms: wrote {len(GEN)} localized llms.txt + root Languages section")
 
 
@@ -1089,7 +1267,7 @@ def patch_en_compare():
         h = h.replace('"ratingValue": "4.7", "ratingCount": "1008"',
                       '"ratingValue": "4.0", "ratingCount": "15"')
         h = h.replace('<td>Localised (EN/DE/ZH)</td>', '<td>Localized (8 languages)</td>')
-        p.write_text(h, encoding="utf-8")
+        write_if_changed(p, h)
     print("  patched en compare rating + language row")
 
 
@@ -1101,13 +1279,13 @@ def patch_simple_hreflang(suffixes):
             continue
         h = p.read_text(encoding="utf-8")
         h = patch_hreflang(h, suffix, indent="")
-        p.write_text(h, encoding="utf-8")
+        write_if_changed(p, h)
     print(f"  patched en hreflang for {len(suffixes)} page(s)")
 
 
 def main():
     print("landing pages:")
-    for loc in GEN:
+    for loc in GEN_LANDING:
         write(ROOT / DIRS[loc] / "index.html", build_landing(loc))
     print("learn hubs + articles:")
     for loc in GEN:

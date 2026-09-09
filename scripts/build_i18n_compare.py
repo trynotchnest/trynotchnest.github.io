@@ -114,49 +114,49 @@ FEATURES = {slug: {loc: [VOCAB[k][i] for k in order] for i, loc in enumerate(LOC
 CMP_UI = {
     "de": {"home": "Start", "compare": "Vergleich", "features": "Funktionen", "learn": "Lernen", "nav_aria": "Hauptnavigation",
            "kicker": "Vergleich", "th_feature": "Funktion", "verdict_h2": "Das Fazit", "faq_h2": "Häufig gefragt",
-           "related_h2": "Weitere Vergleiche", "cta_h3": "NotchNest kostenlos testen", "cta_p": "Zehn Widgets in einer Notch. macOS 14+. Kein Account, kein Abo.",
+           "related_h2": "Weitere Vergleiche", "cta_h3": "NotchNest kostenlos testen", "cta_p": "Zehn Widgets in einer Notch. macOS 14+. Kostenloser Download, optionales Premium-Upgrade.",
            "badge_alt": "Im Mac App Store laden", "readtime": "4 Min. Lesedauer", "updated": "Aktualisiert 13. Juni 2026",
            "byline": "Von Satnam Singh", "author_h3": "Über den Autor", "author_bio": '<strong>Satnam Singh</strong> entwickelt NotchNest. <a href="https://silverseahog.com/" target="_blank" rel="noopener">silverseahog.com</a> · <a href="https://twitter.com/codetard" target="_blank" rel="noopener nofollow">@codetard</a>',
            "hub_title": "Mac-Notch-Apps vergleichen — NotchNest vs. den Rest", "hub_desc": "Ehrliche Vergleiche von NotchNest mit jeder beliebten Mac-Notch-App — NotchNook, Alcove, Boring Notch und mehr.",
            "hub_h1": "NotchNest vs. alles.", "hub_p": "Direkte Vergleiche mit jeder beliebten Mac-Notch-App. Kein Spin — nur die Feature-Tabellen.", "compare_arrow": "Vergleichen →", "read_arrow": "Lesen →"},
     "zh": {"home": "首页", "compare": "对比", "features": "功能", "learn": "学习", "nav_aria": "主导航",
            "kicker": "对比", "th_feature": "功能", "verdict_h2": "结论", "faq_h2": "常见问题",
-           "related_h2": "更多对比", "cta_h3": "免费试用 NotchNest", "cta_p": "一个刘海，十个组件。macOS 14+。无账户，无订阅。",
+           "related_h2": "更多对比", "cta_h3": "免费试用 NotchNest", "cta_p": "一个刘海，十个组件。macOS 14+。免费下载，可选 Premium 升级。",
            "badge_alt": "在 Mac App Store 下载", "readtime": "阅读 4 分钟", "updated": "更新于 2026 年 6 月 13 日",
            "byline": "作者 Satnam Singh", "author_h3": "关于作者", "author_bio": '<strong>Satnam Singh</strong> 开发 NotchNest。<a href="https://silverseahog.com/" target="_blank" rel="noopener">silverseahog.com</a> · <a href="https://twitter.com/codetard" target="_blank" rel="noopener nofollow">@codetard</a>',
            "hub_title": "对比 Mac 刘海应用 — NotchNest 对阵其他", "hub_desc": "把 NotchNest 与每一款热门 Mac 刘海应用逐一对比——NotchNook、Alcove、Boring Notch 等。",
            "hub_h1": "NotchNest 对阵一切。", "hub_p": "与每款热门 Mac 刘海应用的直接对比。不夸张——只有功能表。", "compare_arrow": "对比 →", "read_arrow": "阅读 →"},
     "ar": {"home": "الرئيسية", "compare": "المقارنة", "features": "الميزات", "learn": "الأدلة", "nav_aria": "التنقل الرئيسي",
            "kicker": "مقارنة", "th_feature": "الميزة", "verdict_h2": "الخلاصة", "faq_h2": "أسئلة شائعة",
-           "related_h2": "مقارنات أخرى", "cta_h3": "جرّب NotchNest مجانًا", "cta_p": "عشر أدوات في نتش واحد. macOS 14+. بلا حساب، بلا اشتراك.",
+           "related_h2": "مقارنات أخرى", "cta_h3": "جرّب NotchNest مجانًا", "cta_p": "عشر أدوات في نتش واحد. macOS 14+. تنزيل مجاني وترقية Premium اختيارية.",
            "badge_alt": "التنزيل من Mac App Store", "readtime": "قراءة 4 دقائق", "updated": "تحديث 13 يونيو 2026",
            "byline": "بقلم Satnam Singh", "author_h3": "عن المؤلف", "author_bio": '<strong>Satnam Singh</strong> يطوّر NotchNest. <a href="https://silverseahog.com/" target="_blank" rel="noopener">silverseahog.com</a> · <a href="https://twitter.com/codetard" target="_blank" rel="noopener nofollow">@codetard</a>',
            "hub_title": "قارن تطبيقات نتش الماك — NotchNest في مواجهة البقية", "hub_desc": "مقارنات صادقة بين NotchNest وكل تطبيق نتش ماك شائع — NotchNook وAlcove وBoring Notch وغيرها.",
            "hub_h1": "NotchNest في مواجهة كل شيء.", "hub_p": "مقارنات مباشرة مع كل تطبيق نتش ماك شائع. بلا مبالغة — فقط جداول الميزات.", "compare_arrow": "قارن →", "read_arrow": "اقرأ →"},
     "fr": {"home": "Accueil", "compare": "Comparatif", "features": "Fonctionnalités", "learn": "Guides", "nav_aria": "Navigation principale",
            "kicker": "Comparatif", "th_feature": "Fonctionnalité", "verdict_h2": "Le verdict", "faq_h2": "Questions fréquentes",
-           "related_h2": "Autres comparatifs", "cta_h3": "Essayez NotchNest gratuitement", "cta_p": "Dix widgets dans une encoche. macOS 14+. Sans compte, sans abonnement.",
+           "related_h2": "Autres comparatifs", "cta_h3": "Essayez NotchNest gratuitement", "cta_p": "Dix widgets dans une encoche. macOS 14+. Téléchargement gratuit, option Premium.",
            "badge_alt": "Télécharger sur le Mac App Store", "readtime": "4 min de lecture", "updated": "Mis à jour le 13 juin 2026",
            "byline": "Par Satnam Singh", "author_h3": "À propos de l'auteur", "author_bio": '<strong>Satnam Singh</strong> développe NotchNest. <a href="https://silverseahog.com/" target="_blank" rel="noopener">silverseahog.com</a> · <a href="https://twitter.com/codetard" target="_blank" rel="noopener nofollow">@codetard</a>',
            "hub_title": "Comparer les apps d'encoche Mac — NotchNest face aux autres", "hub_desc": "Comparatifs honnêtes de NotchNest face à chaque app d'encoche Mac populaire — NotchNook, Alcove, Boring Notch et plus.",
            "hub_h1": "NotchNest face à tout.", "hub_p": "Comparatifs directs avec chaque app d'encoche Mac populaire. Sans esbroufe — juste les tableaux de fonctionnalités.", "compare_arrow": "Comparer →", "read_arrow": "Lire →"},
     "pt-BR": {"home": "Início", "compare": "Comparativo", "features": "Recursos", "learn": "Guias", "nav_aria": "Navegação principal",
               "kicker": "Comparativo", "th_feature": "Recurso", "verdict_h2": "O veredito", "faq_h2": "Perguntas frequentes",
-              "related_h2": "Mais comparativos", "cta_h3": "Teste o NotchNest grátis", "cta_p": "Dez widgets em um notch. macOS 14+. Sem conta, sem assinatura.",
+              "related_h2": "Mais comparativos", "cta_h3": "Teste o NotchNest grátis", "cta_p": "Dez widgets em um notch. macOS 14+. Download gratuito, upgrade Premium opcional.",
               "badge_alt": "Baixar na Mac App Store", "readtime": "4 min de leitura", "updated": "Atualizado em 13 de junho de 2026",
               "byline": "Por Satnam Singh", "author_h3": "Sobre o autor", "author_bio": '<strong>Satnam Singh</strong> desenvolve o NotchNest. <a href="https://silverseahog.com/" target="_blank" rel="noopener">silverseahog.com</a> · <a href="https://twitter.com/codetard" target="_blank" rel="noopener nofollow">@codetard</a>',
               "hub_title": "Compare apps de notch Mac — NotchNest vs. o resto", "hub_desc": "Comparativos honestos do NotchNest contra cada app de notch Mac popular — NotchNook, Alcove, Boring Notch e mais.",
               "hub_h1": "NotchNest vs. tudo.", "hub_p": "Comparativos diretos com cada app de notch Mac popular. Sem enrolação — só as tabelas de recursos.", "compare_arrow": "Comparar →", "read_arrow": "Ler →"},
     "pt-PT": {"home": "Início", "compare": "Comparação", "features": "Funcionalidades", "learn": "Guias", "nav_aria": "Navegação principal",
               "kicker": "Comparação", "th_feature": "Funcionalidade", "verdict_h2": "O veredito", "faq_h2": "Perguntas frequentes",
-              "related_h2": "Mais comparações", "cta_h3": "Experimente o NotchNest grátis", "cta_p": "Dez widgets num notch. macOS 14+. Sem conta, sem subscrição.",
+              "related_h2": "Mais comparações", "cta_h3": "Experimente o NotchNest grátis", "cta_p": "Dez widgets num notch. macOS 14+. Transferência gratuita, atualização Premium opcional.",
               "badge_alt": "Descarregar na Mac App Store", "readtime": "4 min de leitura", "updated": "Atualizado a 13 de junho de 2026",
               "byline": "Por Satnam Singh", "author_h3": "Sobre o autor", "author_bio": '<strong>Satnam Singh</strong> desenvolve o NotchNest. <a href="https://silverseahog.com/" target="_blank" rel="noopener">silverseahog.com</a> · <a href="https://twitter.com/codetard" target="_blank" rel="noopener nofollow">@codetard</a>',
               "hub_title": "Compare apps de notch Mac — NotchNest vs. os outros", "hub_desc": "Comparações honestas do NotchNest contra cada app de notch Mac popular — NotchNook, Alcove, Boring Notch e mais.",
               "hub_h1": "NotchNest vs. tudo.", "hub_p": "Comparações diretas com cada app de notch Mac popular. Sem rodeios — só as tabelas de funcionalidades.", "compare_arrow": "Comparar →", "read_arrow": "Ler →"},
     "es-MX": {"home": "Inicio", "compare": "Comparativa", "features": "Funciones", "learn": "Guías", "nav_aria": "Navegación principal",
               "kicker": "Comparativa", "th_feature": "Función", "verdict_h2": "El veredicto", "faq_h2": "Preguntas frecuentes",
-              "related_h2": "Más comparativas", "cta_h3": "Prueba NotchNest gratis", "cta_p": "Diez widgets en un notch. macOS 14+. Sin cuenta, sin suscripción.",
+              "related_h2": "Más comparativas", "cta_h3": "Prueba NotchNest gratis", "cta_p": "Diez widgets en un notch. macOS 14+. Descarga gratuita, mejora Premium opcional.",
               "badge_alt": "Descargar en el Mac App Store", "readtime": "4 min de lectura", "updated": "Actualizado el 13 de junio de 2026",
               "byline": "Por Satnam Singh", "author_h3": "Sobre el autor", "author_bio": '<strong>Satnam Singh</strong> desarrolla NotchNest. <a href="https://silverseahog.com/" target="_blank" rel="noopener">silverseahog.com</a> · <a href="https://twitter.com/codetard" target="_blank" rel="noopener nofollow">@codetard</a>',
               "hub_title": "Compara apps de notch Mac — NotchNest vs. el resto", "hub_desc": "Comparativas honestas de NotchNest contra cada app de notch Mac popular — NotchNook, Alcove, Boring Notch y más.",
@@ -192,7 +192,7 @@ CMP = {
                "verdict": "如果你只想要一个漂亮的媒体组件，别无他求，选 Alcove。如果你想在同一个刘海里要音乐加日历、AI 剪贴板、笔记、番茄钟和 AirDrop，选 NotchNest。NotchNest 更适合日常主力；Alcove 更适合做极简配件。",
                "faq": [("NotchNest 是好的 Alcove 替代品吗？", "是——NotchNest 具备像 Alcove 一样的音乐和“正在播放”控制，并加入日历、AI 剪贴板、快速笔记、番茄钟和 AirDrop。它是生产力中枢，而非单一用途的媒体组件。"),
                        ("Alcove 有番茄钟或日历吗？", "没有。Alcove 专注媒体和 AirPods。若要在刘海里用番茄钟、日历和笔记，请用 NotchNest。"),
-                       ("两款都免费吗？", "NotchNest 在 Mac App Store 完全免费。Alcove 有免费档位并含付费附加。"),
+                       ("两款都免费吗？", "两款都可免费下载并提供付费升级。NotchNest 提供可选的 Premium 升级（订阅或一次性 Lifetime 买断）；Alcove 有免费档位并含付费附加。"),
                        ("哪个更省资源？", "两者都是原生且轻量。NotchNest 在刘海面板关闭时休眠，占用个位数 MB 内存。")]},
         "ar": {"title": "NotchNest في مواجهة Alcove (2026) — NotchNest", "description": "NotchNest في مواجهة Alcove (2026): مقارنة ميزة بميزة بين تطبيقَي نتش للماك بوك — مركز إنتاجية مقابل أداة وسائط بسيطة.",
                "lede": "Alcove أداة نتش أنيقة تركّز على الموسيقى. NotchNest مركز إنتاجية كامل. إليك أيهما يناسب طريقة استخدامك الفعلية للماك.",
@@ -353,4 +353,151 @@ CMP = {
                           ("¿Cuál es más barato, NotchNest o NotchNook?", "NotchNest es gratis en el Mac App Store. NotchNook es una app de pago. Ambos evitan suscripciones."),
                           ("¿Puedo cambiar de NotchNook a NotchNest?", "Sí — funcionan de forma independiente. Instala NotchNest gratis, desactiva NotchNook, y conservas todos los widgets del notch más las herramientas de IA extra.")]},
     },
+}
+
+
+# ── NotchNest vs NotchDrop ──────────────────────────────────────────────────
+# Added after the ASO audit: NotchDrop draws real search demand and had no page.
+VOCAB["fileshelf"] = ["Datei-Ablage per Drag & Drop", "拖放文件托盘", "رف الملفات بالسحب والإفلات",
+                      "Bac à fichiers glisser-déposer", "Bandeja de arquivos por arrastar",
+                      "Tabuleiro de ficheiros por arrastar", "Bandeja de archivos al arrastrar"]
+VOCAB["airdrop_direct"] = ["Drag-to-AirDrop", "拖拽 AirDrop", "السحب إلى AirDrop",
+                           "Glisser vers AirDrop", "Arrastar para AirDrop",
+                           "Arrastar para AirDrop", "Arrastrar a AirDrop"]
+VOCAB["qnotes_ai2"] = ["Schnellnotizen mit KI", "AI 快速备忘录", "ملاحظات سريعة بالذكاء الاصطناعي",
+                        "Notes rapides avec IA", "Notas rápidas com IA",
+                        "Notas rápidas com IA", "Notas rápidas con IA"]
+VOCAB["mas"] = ["Mac App Store (sandboxed)", "Mac App Store（沙盒）", "Mac App Store (معزول)",
+                "Mac App Store (sandbox)", "Mac App Store (sandbox)",
+                "Mac App Store (sandbox)", "Mac App Store (sandbox)"]
+
+TOK_EXTRA = {
+ "de": {"Yes (its specialty)": "Ja (Spezialität)", "Via Finder share": "Über Finder-Teilen",
+        "Direct download": "Direkter Download", "Limited": "Eingeschränkt", "Free + Premium": "Kostenlos + Premium"},
+ "zh": {"Yes (its specialty)": "是（其专长）", "Via Finder share": "通过访达共享",
+        "Direct download": "直接下载", "Limited": "有限", "Free + Premium": "免费 + Premium"},
+ "ar": {"Yes (its specialty)": "نعم (تخصّصه)", "Via Finder share": "عبر مشاركة Finder",
+        "Direct download": "تنزيل مباشر", "Limited": "محدود", "Free + Premium": "مجاني + Premium"},
+ "fr": {"Yes (its specialty)": "Oui (sa spécialité)", "Via Finder share": "Via le partage Finder",
+        "Direct download": "Téléchargement direct", "Limited": "Limité", "Free + Premium": "Gratuit + Premium"},
+ "pt-BR": {"Yes (its specialty)": "Sim (sua especialidade)", "Via Finder share": "Via compartilhar do Finder",
+           "Direct download": "Download direto", "Limited": "Limitado", "Free + Premium": "Grátis + Premium"},
+ "pt-PT": {"Yes (its specialty)": "Sim (a sua especialidade)", "Via Finder share": "Via partilha do Finder",
+           "Direct download": "Transferência direta", "Limited": "Limitado", "Free + Premium": "Gratuito + Premium"},
+ "es-MX": {"Yes (its specialty)": "Sí (su especialidad)", "Via Finder share": "Vía compartir de Finder",
+           "Direct download": "Descarga directa", "Limited": "Limitado", "Free + Premium": "Gratis + Premium"},
+}
+for _l, _d in TOK_EXTRA.items():
+    TOK.setdefault(_l, {}).update(_d)
+
+FEATURE_ORDER["notchnest-vs-notchdrop"] = [
+    "price", "fileshelf", "airdrop_direct", "aiclip", "calendar", "qnotes_ai2",
+    "pomodoro", "music", "camera", "bookmarks", "mas", "notchless", "languages",
+]
+ROWS["notchnest-vs-notchdrop"] = [
+    ["partial", "Free + Premium", "partial", "Free"],
+    ["yes", "Yes", "partial", "Yes (its specialty)"],
+    ["yes", "Yes", "partial", "Via Finder share"],
+    ["yes", "Yes", "no", "No"],
+    ["yes", "Yes", "no", "No"],
+    ["yes", "Yes", "no", "No"],
+    ["yes", "Yes", "no", "No"],
+    ["yes", "Yes", "no", "No"],
+    ["yes", "Yes", "no", "No"],
+    ["yes", "Yes", "no", "No"],
+    ["yes", "Yes", "partial", "Direct download"],
+    ["yes", "Yes", "partial", "Limited"],
+    ["yes", "Yes", "partial", "EN only"],
+]
+FEATURES["notchnest-vs-notchdrop"] = {
+    loc: [VOCAB[k][i] for k in FEATURE_ORDER["notchnest-vs-notchdrop"]]
+    for i, loc in enumerate(LOCS7)
+}
+
+CMP["notchnest-vs-notchdrop"] = {
+ "competitor": "NotchDrop",
+ "de": {
+   "title": "NotchNest vs NotchDrop (2026) — NotchNest",
+   "description": "NotchNest vs NotchDrop (2026): Datei-Ablage per Drag & Drop gegen kompletten Notch-Hub. Funktionen, Preis, Sandboxing und welche Mac-Notch-App passt.",
+   "lede": "NotchDrop macht aus der Notch eine Datei-Ablage. NotchNest macht daraus eine Produktivitätszentrale — Ablage inklusive. Der ehrliche Vergleich.",
+   "intro": "NotchDrop macht eine Sache bewusst gut: Datei auf die Notch ziehen, sie bleibt dort liegen, und du ziehst sie woanders wieder heraus. NotchNest enthält dieselbe Ablage als eines von zehn Widgets — neben Kalender, KI-Zwischenablage, Schnellnotizen, Pomodoro, Musik, Kameraspiegel und Lesezeichen.",
+   "verdict": "Wenn eine Datei-Ablage wirklich alles ist, was du willst, löst NotchDrop genau das und nichts anderes — das ist ein legitimer Wunsch. Wenn du dabei merkst, dass du auch nach einem Zwischenablage-Verlauf, einem Timer oder dem Tagesplan greifst, sind das sonst eigene Apps und eigene Menüleisten-Plätze. NotchNest fasst sie in denselben Hover zusammen.",
+   "faq": [
+     ("Ist NotchNest eine gute NotchDrop-Alternative?", "Ja. NotchNest enthält dieselbe Datei-Ablage per Drag & Drop, ergänzt Drag-to-AirDrop als eigenes Ablageziel und bringt Kalender, KI-Zwischenablage, Schnellnotizen, Pomodoro, Musiksteuerung und Kameraspiegel mit."),
+     ("Ist NotchDrop kostenlos?", "Ja, NotchDrop ist kostenlos. NotchNest lässt sich ebenfalls kostenlos im Mac App Store laden, mit optionalem Premium-Upgrade. Der Preis ist also nicht das entscheidende Kriterium — Umfang und Vertriebsweg sind es."),
+     ("Welche App ist sicherer zu installieren?", "NotchNest kommt über den Mac App Store, ist also notarisiert, signiert und sandboxed und kann nicht auf Dateien außerhalb der freigegebenen Ordner zugreifen. NotchDrop ist ein direkter Download und läuft außerhalb der App-Sandbox."),
+     ("Kann ich NotchNest und NotchDrop zusammen nutzen?", "Nicht sinnvoll. Beide beanspruchen den Ablagebereich rund um die Notch, eine gezogene Datei landet also bei der App, die das Rennen macht. Entscheide dich für eine."),
+   ]},
+ "zh": {
+   "title": "NotchNest 与 NotchDrop 对比（2026）— NotchNest",
+   "description": "NotchNest 与 NotchDrop 对比（2026）：拖放文件托盘 vs 完整刘海中心。功能、价格、沙盒机制，以及该选哪一款 Mac 刘海应用。",
+   "lede": "NotchDrop 把刘海变成拖放文件托盘。NotchNest 把刘海变成生产力中心——文件托盘也包含在内。以下是坦率的对比。",
+   "intro": "NotchDrop 刻意把一件事做好：把文件拖到刘海上，它就停在那里，需要时再拖出来。NotchNest 把同样的托盘作为十个组件之一，另外还有日历、AI 剪贴板、快速备忘录、番茄钟、音乐控制、摄像头镜像和书签。",
+   "verdict": "如果你想要的就只是一个文件托盘，NotchDrop 精准地解决了这件事，别无其他，这是完全合理的需求。但如果你发现自己还会去找剪贴板历史、计时器或今天的日程，那些原本都是独立应用、各占一个菜单栏位置。NotchNest 把它们收进同一次悬停里。",
+   "faq": [
+     ("NotchNest 是好的 NotchDrop 替代品吗？", "是。NotchNest 内置同样的拖放文件托盘，并把拖拽 AirDrop 作为独立的投放目标，同时提供日历、AI 剪贴板、快速备忘录、番茄钟、音乐控制和摄像头镜像。"),
+     ("NotchDrop 免费吗？", "免费。NotchNest 同样可在 Mac App Store 免费下载，并提供可选的 Premium 升级。所以价格不是决定因素，功能范围和分发方式才是。"),
+     ("哪一款安装起来更安全？", "NotchNest 通过 Mac App Store 分发，经过公证、签名并运行在沙盒中，无法访问你未授权目录之外的文件。NotchDrop 是直接下载，运行在沙盒之外。"),
+     ("可以同时使用 NotchNest 和 NotchDrop 吗？", "没有意义。两者都会占用刘海周围的投放区域，拖动的文件会落到抢先响应的那一个。选一个就好。"),
+   ]},
+ "ar": {
+   "title": "NotchNest مقابل NotchDrop (2026) — NotchNest",
+   "description": "NotchNest مقابل NotchDrop (2026): رف ملفات بالسحب والإفلات مقابل مركز نتش متكامل. الميزات والسعر والعزل الأمني وأيّ تطبيق نتش تختار.",
+   "lede": "يحوّل NotchDrop النتش إلى رف ملفات. ويحوّله NotchNest إلى مركز إنتاجية كامل — بما في ذلك رف الملفات. إليك المقارنة الصريحة.",
+   "intro": "يؤدي NotchDrop مهمة واحدة بإتقان مقصود: تسحب ملفًا إلى النتش فيستقر هناك، ثم تسحبه إلى حيث تريد. ويضم NotchNest الرف نفسه بوصفه واحدًا من عشر أدوات، إلى جانب التقويم وحافظة الذكاء الاصطناعي والملاحظات السريعة وبومودورو والتحكم بالموسيقى ومرآة الكاميرا والإشارات المرجعية.",
+   "verdict": "إذا كان رف الملفات هو كل ما تريده فعلًا، فإن NotchDrop يحل هذه المسألة تحديدًا ولا شيء غيرها، وهذا مطلب مشروع. أما إذا وجدت نفسك تبحث أيضًا عن سجل الحافظة أو مؤقّت أو جدول اليوم، فتلك تطبيقات منفصلة تشغل مواضع منفصلة في شريط القوائم. يجمعها NotchNest في التمريرة نفسها.",
+   "faq": [
+     ("هل NotchNest بديل جيد لـ NotchDrop؟", "نعم. يتضمّن NotchNest رف الملفات نفسه بالسحب والإفلات، ويضيف السحب إلى AirDrop كهدف إفلات مستقل، ويجمع معه التقويم وحافظة الذكاء الاصطناعي والملاحظات السريعة وبومودورو والتحكم بالموسيقى ومرآة الكاميرا."),
+     ("هل NotchDrop مجاني؟", "نعم، NotchDrop مجاني. وNotchNest أيضًا مجاني للتنزيل من Mac App Store مع ترقية Premium اختيارية. لذا فالسعر ليس الفيصل بينهما، بل نطاق الميزات وطريقة التوزيع."),
+     ("أيّهما أكثر أمانًا عند التثبيت؟", "يصل NotchNest عبر Mac App Store، أي أنه موثّق وموقّع ويعمل داخل صندوق رمل، ولا يمكنه الوصول إلى ملفات خارج المجلدات التي تمنحه إياها. أما NotchDrop فهو تنزيل مباشر يعمل خارج صندوق الرمل."),
+     ("هل يمكنني استخدام NotchNest وNotchDrop معًا؟", "ليس بشكل مفيد. كلاهما يطالب بمنطقة الإفلات حول النتش، فيصل الملف المسحوب إلى أيّهما يسبق الآخر. اختر واحدًا."),
+   ]},
+ "fr": {
+   "title": "NotchNest vs NotchDrop (2026) — NotchNest",
+   "description": "NotchNest vs NotchDrop (2026) : bac à fichiers glisser-déposer contre hub d'encoche complet. Fonctionnalités, prix, sandboxing et quelle app choisir.",
+   "lede": "NotchDrop transforme l'encoche en bac à fichiers. NotchNest en fait un centre de productivité complet — bac à fichiers inclus. Voici le comparatif honnête.",
+   "intro": "NotchDrop fait délibérément une seule chose, et bien : vous glissez un fichier sur l'encoche, il y reste, puis vous le récupérez ailleurs. NotchNest intègre ce même bac comme l'un de ses dix widgets, aux côtés du calendrier, du presse-papiers IA, des notes rapides, du Pomodoro, de la musique, du miroir caméra et des favoris.",
+   "verdict": "Si un bac à fichiers est vraiment tout ce que vous voulez, NotchDrop répond exactement à ce besoin et à rien d'autre, ce qui est parfaitement légitime. Mais si vous vous surprenez à chercher aussi un historique de presse-papiers, un minuteur ou l'agenda du jour, ce sont autant d'apps distinctes et autant de places dans la barre des menus. NotchNest les réunit dans le même survol.",
+   "faq": [
+     ("NotchNest est-il une bonne alternative à NotchDrop ?", "Oui. NotchNest intègre le même bac à fichiers en glisser-déposer, ajoute le glisser-vers-AirDrop comme cible distincte, et y adjoint calendrier, presse-papiers IA, notes rapides, Pomodoro, contrôles musique et miroir caméra."),
+     ("NotchDrop est-il gratuit ?", "Oui, NotchDrop est gratuit. NotchNest est également gratuit au téléchargement sur le Mac App Store, avec une option Premium. Le prix n'est donc pas le critère décisif : l'étendue des fonctions et le mode de distribution le sont."),
+     ("Laquelle est la plus sûre à installer ?", "NotchNest passe par le Mac App Store : notarisée, signée et exécutée dans le bac à sable, elle ne peut pas accéder aux fichiers hors des dossiers que vous autorisez. NotchDrop est un téléchargement direct qui s'exécute hors du bac à sable."),
+     ("Puis-je utiliser NotchNest et NotchDrop ensemble ?", "Pas utilement. Les deux revendiquent la zone de dépôt autour de l'encoche : un fichier glissé atterrit dans celle qui répond la première. Choisissez-en une."),
+   ]},
+ "pt-BR": {
+   "title": "NotchNest vs NotchDrop (2026) — NotchNest",
+   "description": "NotchNest vs NotchDrop (2026): bandeja de arquivos por arrastar vs central completa no notch. Recursos, preço, sandbox e qual app de notch escolher.",
+   "lede": "O NotchDrop transforma o notch em uma bandeja de arquivos. O NotchNest transforma em uma central de produtividade completa — bandeja incluída. Eis a comparação honesta.",
+   "intro": "O NotchDrop faz uma coisa deliberadamente bem: você arrasta um arquivo até o notch, ele fica ali, e depois você o puxa para onde precisar. O NotchNest traz essa mesma bandeja como um entre dez widgets, ao lado de calendário, área de transferência com IA, notas rápidas, Pomodoro, controle de música, espelho da câmera e favoritos.",
+   "verdict": "Se uma bandeja de arquivos é realmente tudo o que você quer, o NotchDrop resolve exatamente isso e nada mais, o que é um desejo legítimo. Mas se você perceber que também procura um histórico de área de transferência, um timer ou a agenda do dia, esses são apps separados ocupando espaços separados na barra de menus. O NotchNest reúne tudo no mesmo hover.",
+   "faq": [
+     ("O NotchNest é uma boa alternativa ao NotchDrop?", "Sim. O NotchNest inclui a mesma bandeja de arquivos por arrastar, adiciona o arrastar-para-AirDrop como alvo separado e ainda traz calendário, área de transferência com IA, notas rápidas, Pomodoro, controle de música e espelho da câmera."),
+     ("O NotchDrop é grátis?", "Sim, o NotchDrop é grátis. O NotchNest também é gratuito para baixar na Mac App Store, com upgrade Premium opcional. Preço não é o fator decisivo entre eles — escopo e distribuição são."),
+     ("Qual é mais seguro de instalar?", "O NotchNest vem pela Mac App Store, então é notarizado, assinado e roda em sandbox, sem acessar arquivos fora das pastas que você autoriza. O NotchDrop é um download direto e roda fora da sandbox."),
+     ("Posso usar NotchNest e NotchDrop juntos?", "Não de forma útil. Os dois reivindicam a área de soltura ao redor do notch, então o arquivo arrastado cai no que responder primeiro. Escolha um."),
+   ]},
+ "pt-PT": {
+   "title": "NotchNest vs NotchDrop (2026) — NotchNest",
+   "description": "NotchNest vs NotchDrop (2026): tabuleiro de ficheiros por arrastar vs central completa no notch. Funcionalidades, preço, sandbox e que app escolher.",
+   "lede": "O NotchDrop transforma o notch num tabuleiro de ficheiros. O NotchNest transforma-o numa central de produtividade completa — tabuleiro incluído. Eis a comparação honesta.",
+   "intro": "O NotchDrop faz deliberadamente bem uma única coisa: arrasta um ficheiro até ao notch, ele fica ali, e depois puxa-o para onde precisar. O NotchNest traz esse mesmo tabuleiro como um entre dez widgets, a par de calendário, área de transferência com IA, notas rápidas, Pomodoro, controlo de música, espelho da câmara e marcadores.",
+   "verdict": "Se um tabuleiro de ficheiros é mesmo tudo o que quer, o NotchDrop resolve exatamente isso e nada mais, o que é um desejo legítimo. Mas se der por si a precisar também de um histórico da área de transferência, de um temporizador ou da agenda do dia, esses são aplicações distintas a ocupar lugares distintos na barra de menus. O NotchNest junta-os no mesmo hover.",
+   "faq": [
+     ("O NotchNest é uma boa alternativa ao NotchDrop?", "Sim. O NotchNest inclui o mesmo tabuleiro de ficheiros por arrastar, acrescenta o arrastar-para-AirDrop como alvo separado e junta calendário, área de transferência com IA, notas rápidas, Pomodoro, controlo de música e espelho da câmara."),
+     ("O NotchDrop é gratuito?", "Sim, o NotchDrop é gratuito. O NotchNest também é gratuito para transferir na Mac App Store, com atualização Premium opcional. O preço não é o fator decisivo entre os dois — o âmbito e a distribuição é que são."),
+     ("Qual é mais seguro de instalar?", "O NotchNest chega pela Mac App Store, pelo que é notarizado, assinado e corre em sandbox, sem aceder a ficheiros fora das pastas que autorizar. O NotchDrop é uma transferência direta e corre fora da sandbox."),
+     ("Posso usar o NotchNest e o NotchDrop em conjunto?", "Não de forma útil. Ambos reivindicam a área de largada à volta do notch, pelo que o ficheiro arrastado cai naquele que responder primeiro. Escolha um."),
+   ]},
+ "es-MX": {
+   "title": "NotchNest vs NotchDrop (2026) — NotchNest",
+   "description": "NotchNest vs NotchDrop (2026): bandeja de archivos al arrastrar vs centro completo en el notch. Funciones, precio, sandbox y qué app de notch elegir.",
+   "lede": "NotchDrop convierte el notch en una bandeja de archivos. NotchNest lo convierte en un centro de productividad completo — bandeja incluida. Esta es la comparación honesta.",
+   "intro": "NotchDrop hace una cosa deliberadamente bien: arrastras un archivo al notch, se queda ahí y luego lo sacas donde lo necesites. NotchNest incluye esa misma bandeja como uno de sus diez widgets, junto a calendario, portapapeles con IA, notas rápidas, Pomodoro, control de música, espejo de cámara y marcadores.",
+   "verdict": "Si una bandeja de archivos es realmente todo lo que quieres, NotchDrop resuelve exactamente eso y nada más, lo cual es un deseo legítimo. Pero si notas que también buscas un historial del portapapeles, un temporizador o la agenda del día, esas son apps separadas ocupando lugares separados en la barra de menús. NotchNest las reúne en el mismo cursor.",
+   "faq": [
+     ("¿NotchNest es una buena alternativa a NotchDrop?", "Sí. NotchNest incluye la misma bandeja de archivos al arrastrar, añade arrastrar-a-AirDrop como destino independiente y suma calendario, portapapeles con IA, notas rápidas, Pomodoro, control de música y espejo de cámara."),
+     ("¿NotchDrop es gratis?", "Sí, NotchDrop es gratis. NotchNest también es gratuito de descargar en el Mac App Store, con una mejora Premium opcional. El precio no es el factor decisivo entre ambos — el alcance y la distribución sí lo son."),
+     ("¿Cuál es más seguro de instalar?", "NotchNest llega por el Mac App Store, así que está notarizado, firmado y corre en sandbox, sin acceder a archivos fuera de las carpetas que autorices. NotchDrop es una descarga directa y corre fuera del sandbox."),
+     ("¿Puedo usar NotchNest y NotchDrop juntos?", "No de forma útil. Ambos reclaman la zona de soltado alrededor del notch, así que el archivo arrastrado cae en el que responda primero. Elige uno."),
+   ]},
 }

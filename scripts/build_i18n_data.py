@@ -18,7 +18,7 @@ LANDING = {
             ("NotchNest est-il sûr ?", "Oui. NotchNest passe exclusivement par le Mac App Store — notarisé, signé et en bac à sable par Apple. Toutes vos données restent en local sur votre Mac."),
         ],
         "nav_aria": "Navigation principale", "nav_learn": "Guides",
-        "eyebrow": "Mac App Store · ★ 4,0 · Gratuit · macOS 14+",
+        "eyebrow": "Mac App Store · Gratuit · macOS 14+",
         "h1": "Rendez votre <span class='grad'>encoche</span> utile.",
         "lede": "NotchNest transforme l'encoche du MacBook en centre de productivité — calendrier, presse-papiers IA, notes rapides, Pomodoro, musique, AirDrop et plus, à un survol près.",
         "badge_alt": "Télécharger sur le Mac App Store", "ghost": "Lire les guides",
@@ -58,7 +58,7 @@ LANDING = {
             ("¿NotchNest es seguro?", "Sí. NotchNest se distribuye solo por el Mac App Store: notarizado, firmado y en entorno aislado por Apple. Todos tus datos se quedan en tu Mac."),
         ],
         "nav_aria": "Navegación principal", "nav_learn": "Guías",
-        "eyebrow": "Mac App Store · ★ 4.0 · Gratis · macOS 14+",
+        "eyebrow": "Mac App Store · Gratis · macOS 14+",
         "h1": "Haz útil tu <span class='grad'>notch</span>.",
         "lede": "NotchNest convierte el notch del MacBook en un centro de productividad: calendario, portapapeles con IA, notas rápidas, Pomodoro, música, AirDrop y más, a un cursor de distancia.",
         "badge_alt": "Descargar en el Mac App Store", "ghost": "Leer las guías",
@@ -98,7 +98,7 @@ LANDING = {
             ("O NotchNest é seguro?", "Sim. O NotchNest é distribuído apenas pela Mac App Store: notarizado, assinado e em sandbox pela Apple. Todos os seus dados ficam no seu Mac."),
         ],
         "nav_aria": "Navegação principal", "nav_learn": "Guias",
-        "eyebrow": "Mac App Store · ★ 4,0 · Grátis · macOS 14+",
+        "eyebrow": "Mac App Store · Grátis · macOS 14+",
         "h1": "Torne seu <span class='grad'>notch</span> útil.",
         "lede": "O NotchNest transforma o notch do MacBook em uma central de produtividade: calendário, área de transferência com IA, notas rápidas, Pomodoro, música, AirDrop e mais, a um cursor de distância.",
         "badge_alt": "Baixar na Mac App Store", "ghost": "Ler os guias",
@@ -138,7 +138,7 @@ LANDING = {
             ("O NotchNest é seguro?", "Sim. O NotchNest é distribuído apenas pela Mac App Store — notarizado, assinado e em sandbox pela Apple. Todos os seus dados permanecem no seu Mac."),
         ],
         "nav_aria": "Navegação principal", "nav_learn": "Guias",
-        "eyebrow": "Mac App Store · ★ 4,0 · Gratuito · macOS 14+",
+        "eyebrow": "Mac App Store · Gratuito · macOS 14+",
         "h1": "Torne o seu <span class='grad'>notch</span> útil.",
         "lede": "O NotchNest transforma o notch do MacBook numa central de produtividade: calendário, área de transferência com IA, notas rápidas, Pomodoro, música, AirDrop e mais, a um cursor de distância.",
         "badge_alt": "Descarregar na Mac App Store", "ghost": "Ler os guias",
@@ -178,7 +178,7 @@ LANDING = {
             ("هل NotchNest آمن؟", "نعم. يُوزَّع NotchNest عبر Mac App Store فقط — موثّق ومُوقّع ومعزول بواسطة Apple. تبقى جميع بياناتك على جهاز الماك."),
         ],
         "nav_aria": "التنقل الرئيسي", "nav_learn": "الأدلة",
-        "eyebrow": "Mac App Store · ★ 4.0 · مجانًا · macOS 14+",
+        "eyebrow": "Mac App Store · مجانًا · macOS 14+",
         "h1": "اجعل <span class='grad'>النتش</span> مفيدًا.",
         "lede": "يحوّل NotchNest نتش الماك بوك إلى مركز إنتاجية: تقويم وحافظة بالذكاء الاصطناعي وملاحظات سريعة وبومودورو وموسيقى وAirDrop والمزيد، على بُعد تمريرة واحدة.",
         "badge_alt": "التنزيل من Mac App Store", "ghost": "اقرأ الأدلة",
@@ -281,3 +281,371 @@ from build_i18n_learn import LEARN_ARTICLES  # noqa: E402
 ARTICLES.update(LEARN_ARTICLES)
 
 UI = {}
+
+
+# ── setup-steps + social-proof strings (added for locale/EN parity) ──────────
+NEW_LANDING_SECTIONS = {
+    'fr': {
+        'how_kicker': 'Comment ça marche',
+        'how_title': 'Opérationnel en 90 secondes.',
+        'steps': [
+            ('Téléchargez depuis le Mac App Store', 'Gratuit. Signé et sandboxé par Apple. macOS 14 ou plus récent.'),
+            ('Autorisez Calendrier, Notes et Musique', "Toutes les autorisations sont facultatives et traitées sur l'appareil. Rien ne quitte votre Mac."),
+            ('Choisissez vos widgets', "Activez les outils que vous voulez dans l'encoche. Survolez l'encoche — ils sont là."),
+        ],
+        'press_kicker': 'Ils en parlent',
+        'press_title': 'Recommandé par la communauté Mac.',
+        'press_lede': 'Sélections éditoriales, avis de créateurs et un lancement sur Product Hunt.',
+        'press_ctx_mu': "NotchNest figure dans la sélection éditoriale des meilleurs utilitaires d'encoche de MacUpdate.",
+        'press_ctx_md': 'NotchNest présenté comme une nouvelle trouvaille de productivité pour le Mac moderne.',
+        'press_cta': "Lire l'article →",
+        'ph_eyebrow': 'En vedette sur Product Hunt',
+    },
+    'es-MX': {
+        'how_kicker': 'Cómo funciona',
+        'how_title': 'Listo en 90 segundos.',
+        'steps': [
+            ('Descárgalo del Mac App Store', 'Gratis. Firmado y en sandbox por Apple. macOS 14 o posterior.'),
+            ('Autoriza Calendario, Notas y Música', 'Todos los permisos son opcionales y se procesan en el dispositivo. Nada sale de tu Mac.'),
+            ('Elige tus widgets', 'Activa las herramientas que quieras en el notch. Pasa el cursor por el notch: ahí están.'),
+        ],
+        'press_kicker': 'Aparece en',
+        'press_title': 'Recomendado por la comunidad Mac.',
+        'press_lede': 'Selecciones editoriales, reseñas de creadores y un lanzamiento en Product Hunt.',
+        'press_ctx_mu': 'NotchNest aparece en la selección editorial de MacUpdate de las mejores utilidades para el notch.',
+        'press_ctx_md': 'NotchNest destacado como un nuevo hallazgo de productividad para el Mac moderno.',
+        'press_cta': 'Leer el artículo →',
+        'ph_eyebrow': 'Destacado en Product Hunt',
+    },
+    'pt-BR': {
+        'how_kicker': 'Como funciona',
+        'how_title': 'Pronto em 90 segundos.',
+        'steps': [
+            ('Baixe na Mac App Store', 'Grátis. Assinado e em sandbox pela Apple. macOS 14 ou mais recente.'),
+            ('Autorize Calendário, Notas e Música', 'Todas as permissões são opcionais e processadas no dispositivo. Nada sai do seu Mac.'),
+            ('Escolha seus widgets', 'Ative as ferramentas que quiser no notch. Passe o cursor pelo notch — elas estão lá.'),
+        ],
+        'press_kicker': 'Destaque em',
+        'press_title': 'Recomendado pela comunidade Mac.',
+        'press_lede': 'Seleções editoriais, análises de criadores e um lançamento no Product Hunt.',
+        'press_ctx_mu': 'O NotchNest aparece na seleção editorial da MacUpdate dos melhores utilitários para o notch.',
+        'press_ctx_md': 'O NotchNest apresentado como um novo achado de produtividade para o Mac moderno.',
+        'press_cta': 'Ler o artigo →',
+        'ph_eyebrow': 'Destaque no Product Hunt',
+    },
+    'pt-PT': {
+        'how_kicker': 'Como funciona',
+        'how_title': 'Pronto em 90 segundos.',
+        'steps': [
+            ('Transfira na Mac App Store', 'Gratuito. Assinado e em sandbox pela Apple. macOS 14 ou mais recente.'),
+            ('Autorize Calendário, Notas e Música', 'Todas as permissões são opcionais e processadas no dispositivo. Nada sai do seu Mac.'),
+            ('Escolha os seus widgets', 'Ative as ferramentas que quiser no notch. Passe o cursor pelo notch — estão lá.'),
+        ],
+        'press_kicker': 'Destaque em',
+        'press_title': 'Recomendado pela comunidade Mac.',
+        'press_lede': 'Seleções editoriais, análises de criadores e um lançamento no Product Hunt.',
+        'press_ctx_mu': 'O NotchNest surge na seleção editorial da MacUpdate dos melhores utilitários para o notch.',
+        'press_ctx_md': 'O NotchNest apresentado como uma nova descoberta de produtividade para o Mac moderno.',
+        'press_cta': 'Ler o artigo →',
+        'ph_eyebrow': 'Destaque no Product Hunt',
+    },
+    'ar': {
+        'how_kicker': 'كيف يعمل',
+        'how_title': 'جاهز خلال 90 ثانية.',
+        'steps': [
+            ('نزّله من Mac App Store', 'مجانًا. موقّع ومعزول في صندوق رمل من Apple. يتطلب macOS 14 أو أحدث.'),
+            ('امنح الوصول إلى التقويم والملاحظات والموسيقى', 'كل الأذونات اختيارية وتُعالَج على الجهاز. لا شيء يغادر جهاز الماك.'),
+            ('اختر أدواتك', 'فعّل الأدوات التي تريدها في النتش. مرّر المؤشر فوق النتش — ستجدها هناك.'),
+        ],
+        'press_kicker': 'ظهر في',
+        'press_title': 'موصى به في مجتمع الماك.',
+        'press_lede': 'اختيارات تحريرية ومراجعات من صنّاع المحتوى وإطلاق على Product Hunt.',
+        'press_ctx_mu': 'يظهر NotchNest ضمن اختيارات MacUpdate التحريرية لأفضل أدوات النتش.',
+        'press_ctx_md': 'عُرِض NotchNest بوصفه اكتشافًا جديدًا للإنتاجية على الماك الحديث.',
+        'press_cta': 'اقرأ المقال ←',
+        'ph_eyebrow': 'مميّز على Product Hunt',
+    },
+}
+
+for _loc, _extra in NEW_LANDING_SECTIONS.items():
+    LANDING[_loc].update(_extra)
+
+
+
+# ── de/zh landing copy, lifted from the hand-authored pages ────────────────
+DE_ZH_LANDING = {'de': {'title': 'NotchNest — Mach die Notch deines MacBooks nützlich',
+        'description': 'NotchNest verwandelt die Notch deines MacBooks in eine Produktivitätszentrale — '
+                       'KI-Zwischenablage, Kalender, Notizen, Pomodoro, Musik, AirDrop. Kostenlos im Mac App Store.',
+        'keywords': 'mac notch app, macbook notch, notch app deutsch, mac notch widget, notchnest deutsch, mac notch '
+                    'nützlich, macbook pro notch app, beste mac notch app, mac notch kalender, mac notch timer',
+        'og_desc': 'Verwandle die MacBook-Notch in eine Produktivitätszentrale — KI-Zwischenablage, Kalender, '
+                   'Notizen, Pomodoro, Musik, AirDrop.',
+        'wp_desc': 'NotchNest verwandelt die Notch deines MacBooks in eine Produktivitätszentrale — '
+                   'KI-Zwischenablage, Kalender, Notizen, Pomodoro, Musik, AirDrop. Kostenlos im Mac App Store.',
+        'sa_desc': 'NotchNest verwandelt die Notch deines MacBooks in eine Produktivitätszentrale — '
+                   'KI-Zwischenablage, Kalender, Notizen, Pomodoro, Musik, AirDrop. Kostenlos im Mac App Store.',
+        'h1': "Mach deine <span class='grad'>Notch</span> nützlich.",
+        'lede': 'NotchNest verwandelt die MacBook-Notch in eine Produktivitätszentrale — Kalender, '
+                'KI-Zwischenablage, Schnellnotizen, Pomodoro, Musik, AirDrop und mehr, einen Hover entfernt.',
+        'eyebrow': 'Mac App Store · Kostenlos · macOS 14+',
+        'ghost': 'Anleitungen lesen',
+        'feat_kicker': 'Funktionen',
+        'feat_title': 'Alles, was deiner Notch gefehlt hat.',
+        'faq_title': 'Häufige Fragen.',
+        'feat_lede': 'Zehn Produktivitätstools, alle nativ, alle einen Hover entfernt.',
+        'cards': [('KI',
+                   'KI-Zwischenablage',
+                   'Verlauf, Suche, Pin. Umformulieren und zusammenfassen mit Apple Intelligence — auf dem Gerät.'),
+                  ('Kalender',
+                   'Kalender mit KI-Briefings',
+                   'Apple Calendar in der Notch. Smarte Briefings für Meetings und Deadlines.'),
+                  ('Fokus', 'Pomodoro-Timer', 'Fokus-Sessions, Pausen, Streak. Kein Fenster. Lebt in der Notch.'),
+                  ('AirDrop', 'Drag-to-AirDrop', 'Datei auf die Notch ziehen. AirDrop in einer Geste.'),
+                  ('Notizen', 'Schnellnotizen + KI', 'Erfassen, verfeinern, mit Apple Notes synchronisieren.'),
+                  ('Musik', 'Musiksteuerung', 'Spotify und Apple Music mit Cover-Art, direkt aus der Notch.'),
+                  ('Kamera', 'Kamera-Spiegel', 'Webcam-Vorschau mit einem Tipp für Calls und Selfies.'),
+                  ('Bookmarks', 'Lesezeichen-Shelf', 'URLs und Apps für Ein-Klick-Start.')],
+        'faq': [('Was ist NotchNest?',
+                 'NotchNest ist eine kostenlose macOS-App, die die MacBook-Notch in eine Produktivitätszentrale '
+                 'verwandelt. Kalender, KI-Zwischenablage, Notizen, Pomodoro-Timer, Musiksteuerung und AirDrop — '
+                 'alles per Hover auf die Notch.'),
+                ('Funktioniert NotchNest ohne Notch?',
+                 'Ja. Auf älteren MacBooks, Mac mini, iMac und Mac Studio erscheint NotchNest als schmales '
+                 'Top-Bar-Panel. Alle Widgets funktionieren identisch.'),
+                ('Ist NotchNest kostenlos?',
+                 'Ja, vollständig kostenlos. Keine Testphase, kein Abo, keine In-App-Käufe. KI-Funktionen nutzen '
+                 'Apple Intelligence auf dem Gerät — keine Server-Kosten.'),
+                ('Ist NotchNest sicher und sandboxed?',
+                 'Ja. NotchNest läuft ausschließlich über den Mac App Store — von Apple notarisiert, signiert und '
+                 'sandboxed. Alle Daten bleiben lokal auf deinem Mac. Datenschutzerklärung lesen.')],
+        'cta_title': 'Mach deine Notch nützlich.',
+        'cta_lede': 'Kostenlos im Mac App Store. macOS 14 oder neuer. Privatsphäre by Design.',
+        'footer_tag': 'Mach die MacBook-Notch nützlich.',
+        'nav_aria': 'Hauptnavigation',
+        'nav_learn': 'Anleitungen',
+        'badge_alt': 'Im Mac App Store laden',
+        'meta_ratings': 'Rezensionen',
+        'meta_store': 'im Mac App Store',
+        'free': 'Kostenlos',
+        'stat_rating': 'Bewertung',
+        'stat_reviews': 'Rezensionen',
+        'stat_os': 'Mindest-OS',
+        'stat_store': 'Mac App Store',
+        'col_app': 'App',
+        'col_lang': 'Sprache',
+        'col_legal': 'Rechtliches',
+        'whats_new': 'Neuigkeiten',
+        'privacy': 'Datenschutz',
+        'support': 'Support',
+        'copyright': 'NotchNest von Satnam Singh.',
+        'how_kicker': "So funktioniert's",
+        'how_title': 'In 90 Sekunden einsatzbereit.',
+        'steps': [('Im Mac App Store laden', 'Kostenlos. Von Apple signiert und sandboxed. macOS 14 oder neuer.'),
+                  ('Zugriff auf Kalender, Notizen und Musik erlauben',
+                   'Alle Berechtigungen sind optional und werden auf dem Gerät verarbeitet. Nichts verlässt deinen '
+                   'Mac.'),
+                  ('Widgets auswählen',
+                   'Aktiviere die Tools, die du in der Notch willst. Mit dem Zeiger über die Notch — da sind sie.')],
+        'press_kicker': 'Bekannt aus',
+        'press_title': 'Empfohlen in der Mac-Community.',
+        'press_lede': 'Redaktionelle Empfehlungen, Creator-Reviews und ein Product-Hunt-Launch.',
+        'press_ctx_mu': 'NotchNest ist Teil der redaktionellen Auswahl der besten Notch-Tools bei MacUpdate.',
+        'press_ctx_md': 'NotchNest vorgestellt als frischer Produktivitätsfund für den modernen Mac.',
+        'press_cta': 'Artikel lesen →',
+        'ph_eyebrow': 'Featured auf Product Hunt'},
+ 'zh': {'title': 'NotchNest — 让你 MacBook 的刘海变得有用',
+        'description': 'NotchNest 将 MacBook 的刘海变为生产力中心 — AI 剪贴板、日历、备忘录、番茄钟、音乐、隔空投送。Mac App Store 免费下载。',
+        'keywords': 'mac 刘海, macbook 刘海, mac 刘海应用, notchnest 中文, 刘海工具, mac 通知栏, 苹果 mac 刘海, 最好的 mac 刘海 app, 刘海日历, '
+                    '刘海番茄钟',
+        'og_desc': '把 MacBook 刘海变为生产力中心 — AI 剪贴板、日历、备忘录、番茄钟、音乐、隔空投送。',
+        'wp_desc': 'NotchNest 将 MacBook 的刘海变为生产力中心 — AI 剪贴板、日历、备忘录、番茄钟、音乐、隔空投送。Mac App Store 免费下载。',
+        'sa_desc': 'NotchNest 将 MacBook 的刘海变为生产力中心 — AI 剪贴板、日历、备忘录、番茄钟、音乐、隔空投送。Mac App Store 免费下载。',
+        'h1': "让你的<span class='grad'>刘海</span>变得有用。",
+        'lede': 'NotchNest 将 MacBook 的刘海变为快捷生产力中心 — 日历、AI 剪贴板、备忘录、番茄钟、音乐、隔空投送等,只需一次悬停。',
+        'eyebrow': 'Mac App Store · 免费 · macOS 14+',
+        'ghost': '阅读指南',
+        'feat_kicker': '功能',
+        'feat_title': '你的刘海一直缺的一切。',
+        'faq_title': '常见问题。',
+        'feat_lede': '十款生产力工具,全部原生,全部一次悬停可用。',
+        'cards': [('AI', 'AI 剪贴板', '完整历史、搜索、置顶。使用苹果智能在设备本地改写、总结。'),
+                  ('日历', '日历 + AI 简报', '原生 Apple Calendar 在刘海里。会议和截止日期的智能简报。'),
+                  ('专注', '番茄钟', '专注时段、休息、连续记录。零屏幕干扰,藏在刘海里。'),
+                  ('AirDrop', '拖到隔空投送', '把文件拖到刘海。一个手势完成隔空投送。'),
+                  ('备忘', '速记 + AI', '记录、用 AI 优化、同步到 Apple Notes。'),
+                  ('音乐', '音乐控制', 'Spotify 和 Apple Music,带专辑封面,直接从刘海控制。'),
+                  ('摄像头', '即时摄像头镜子', '一键摄像头预览,适合视频通话或自拍。'),
+                  ('书签', '书签架', '固定常用网址和应用,一键启动。')],
+        'faq': [('NotchNest 是什么?',
+                 'NotchNest 是一款免费的 macOS 应用,把 MacBook 刘海变为生产力中心。包含日历、AI 剪贴板、备忘录、番茄钟、音乐控制和隔空投送等,只需将鼠标悬停在刘海上即可使用。'),
+                ('没有刘海的 Mac 能用吗?',
+                 '可以。在没有刘海的 Mac 上(MacBook Air M1、旧款 MacBook Pro、Mac mini、iMac、Mac Studio),NotchNest '
+                 '显示为顶部的细长面板,所有功能完全相同。'),
+                ('NotchNest 免费吗?', '完全免费。没有试用期,没有订阅,没有内购。AI 功能使用苹果智能在设备本地运行,不产生服务器费用。'),
+                ('NotchNest 安全吗?', '安全。NotchNest 仅通过 Mac App Store 发布,经苹果公证、签名和沙盒保护。所有数据保留在本地 Mac 上。阅读隐私政策。')],
+        'cta_title': '让刘海变得有用。',
+        'cta_lede': 'Mac App Store 免费下载。macOS 14 或更新版本。隐私优先。',
+        'footer_tag': '让 MacBook 的刘海变得有用。',
+        'nav_aria': '主导航',
+        'nav_learn': '指南',
+        'badge_alt': '在 Mac App Store 下载',
+        'meta_ratings': '条评分',
+        'meta_store': 'Mac App Store',
+        'free': '免费',
+        'stat_rating': '评分',
+        'stat_reviews': '条评价',
+        'stat_os': '最低系统',
+        'stat_store': 'Mac App Store',
+        'col_app': '应用',
+        'col_lang': '语言',
+        'col_legal': '法律',
+        'whats_new': '更新内容',
+        'privacy': '隐私政策',
+        'support': '支持',
+        'copyright': 'NotchNest · Satnam Singh.',
+        'how_kicker': '使用方法',
+        'how_title': '90 秒即可上手。',
+        'steps': [('从 Mac App Store 下载', '免费。由 Apple 签名并沙盒化。需要 macOS 14 或更新版本。'),
+                  ('授予日历、备忘录和音乐权限', '所有权限均为可选,且在设备端处理。数据不会离开你的 Mac。'),
+                  ('挑选你的小组件', '在设置中开启你想要的工具。将光标悬停在刘海上——它们就在那里。')],
+        'press_kicker': '媒体报道',
+        'press_title': 'Mac 社区推荐。',
+        'press_lede': '编辑精选、创作者评测,以及 Product Hunt 发布。',
+        'press_ctx_mu': 'NotchNest 入选 MacUpdate 编辑精选的最佳刘海工具。',
+        'press_ctx_md': 'NotchNest 被推荐为现代 Mac 上值得一试的生产力新发现。',
+        'press_cta': '阅读文章 →',
+        'ph_eyebrow': 'Product Hunt 精选'}}
+LANDING.update(DE_ZH_LANDING)
+
+
+# ── pricing copy corrected against the live App Store listing ────────────────
+# The listing is free-to-download with IAP (Monthly / Yearly / Lifetime), so the
+# earlier "no subscription / no in-app purchases" answers were wrong. Prices are
+# omitted here on purpose: storefront currencies differ, so only the model is stated.
+PRICING_FAQ = {
+    "de": {
+        "Was ist NotchNest?":
+            "NotchNest ist eine macOS-App, die die MacBook-Notch in eine Produktivitätszentrale verwandelt. "
+            "Kalender, KI-Zwischenablage, Notizen, Pomodoro-Timer, Musiksteuerung und AirDrop — alles per "
+            "Hover auf die Notch. Der Download ist kostenlos.",
+        "Ist NotchNest kostenlos?":
+            "Der Download ist kostenlos und die Notch lässt sich sofort nutzen. Für den vollen Funktionsumfang "
+            "gibt es optional NotchNest Premium — als Abo oder als einmaliger Lifetime-Kauf. KI-Funktionen laufen "
+            "über Apple Intelligence auf dem Gerät, es entstehen also keine Server-Kosten.",
+    },
+    "zh": {
+        "NotchNest 是什么?":
+            "NotchNest 是一款 macOS 应用,把 MacBook 刘海变为生产力中心。包含日历、AI 剪贴板、备忘录、番茄钟、"
+            "音乐控制和隔空投送等,只需将鼠标悬停在刘海上即可使用。应用可免费下载。",
+        "NotchNest 免费吗?":
+            "免费下载,安装后即可使用刘海面板。如需完整功能,可选择升级到 NotchNest Premium——订阅制,或一次性买断的 "
+            "Lifetime 版本。AI 功能通过苹果智能在设备本地运行,不产生服务器费用。",
+    },
+    "fr": {
+        "Qu'est-ce que NotchNest ?":
+            "NotchNest est une app macOS qui transforme l'encoche du MacBook en centre de productivité. "
+            "Calendrier, presse-papiers IA, notes, minuteur Pomodoro, contrôle de la musique et AirDrop — "
+            "le tout en survolant l'encoche. Le téléchargement est gratuit.",
+        "NotchNest est-il gratuit ?":
+            "Le téléchargement est gratuit sur le Mac App Store et l'encoche fonctionne dès l'installation. "
+            "Une option NotchNest Premium donne accès à l'ensemble des fonctionnalités — par abonnement ou en "
+            "achat unique à vie. L'IA s'exécute sur l'appareil via Apple Intelligence.",
+    },
+    "ar": {
+        "ما هو NotchNest؟":
+            "NotchNest تطبيق لنظام macOS يحوّل نتش الماك بوك إلى مركز إنتاجية. تقويم وحافظة بالذكاء الاصطناعي "
+            "وملاحظات ومؤقت بومودورو والتحكم بالموسيقى وAirDrop — كل ذلك عند تمرير المؤشر فوق النتش. والتنزيل مجاني.",
+        "هل NotchNest مجاني؟":
+            "التنزيل مجاني على Mac App Store، ولوحة النتش تعمل فور التثبيت. وتتوفّر ترقية اختيارية إلى "
+            "NotchNest Premium للحصول على جميع الميزات — باشتراك أو بشراء لمرة واحدة مدى الحياة. وتعمل ميزات "
+            "الذكاء الاصطناعي على الجهاز عبر Apple Intelligence.",
+    },
+    "es-MX": {
+        "¿Qué es NotchNest?":
+            "NotchNest es una app de macOS que convierte el notch del MacBook en un centro de productividad. "
+            "Calendario, portapapeles con IA, notas, temporizador Pomodoro, control de música y AirDrop, todo "
+            "al pasar el cursor sobre el notch. La descarga es gratuita.",
+        "¿NotchNest es gratis?":
+            "La descarga es gratuita en el Mac App Store y el panel del notch funciona desde que lo instalas. "
+            "Existe una mejora opcional a NotchNest Premium con el conjunto completo — por suscripción o con una "
+            "compra única de por vida. La IA se ejecuta en el dispositivo con Apple Intelligence.",
+    },
+    "pt-BR": {
+        "O que é o NotchNest?":
+            "O NotchNest é um app de macOS que transforma o notch do MacBook em uma central de produtividade. "
+            "Calendário, área de transferência com IA, notas, timer Pomodoro, controle de música e AirDrop, "
+            "tudo ao passar o cursor sobre o notch. O download é gratuito.",
+        "O NotchNest é grátis?":
+            "O download é gratuito na Mac App Store e o painel do notch funciona assim que você instala. Há um "
+            "upgrade opcional para o NotchNest Premium com o conjunto completo — por assinatura ou em uma compra "
+            "única vitalícia. A IA roda no dispositivo via Apple Intelligence.",
+    },
+    "pt-PT": {
+        "O que é o NotchNest?":
+            "O NotchNest é uma aplicação de macOS que transforma o notch do MacBook numa central de "
+            "produtividade. Calendário, área de transferência com IA, notas, temporizador Pomodoro, controlo "
+            "de música e AirDrop — tudo ao passar o cursor sobre o notch. A transferência é gratuita.",
+        "O NotchNest é gratuito?":
+            "A transferência é gratuita na Mac App Store e o painel do notch funciona assim que instala. "
+            "Existe uma atualização opcional para o NotchNest Premium com o conjunto completo — por subscrição ou "
+            "numa compra única vitalícia. A IA é executada no dispositivo através da Apple Intelligence.",
+    },
+}
+
+for _loc, _qs in PRICING_FAQ.items():
+    _faq = LANDING[_loc]["faq"]
+    for _i, (_q, _a) in enumerate(_faq):
+        if _q in _qs:
+            _faq[_i] = (_q, _qs[_q])
+
+
+# ── free-tier caps, stated explicitly ───────────────────────────────────────
+# Free: 1 bookmark, 1 note, 5 clipboard items, 2 File-Tray files, today's calendar
+# events, 3-second mirror, limited Pomodoro. Premium lifts all of them.
+# Prices omitted in locale copy — storefront currencies differ.
+PRICING_FAQ["de"]["Ist NotchNest kostenlos?"] = (
+    "Der Download ist kostenlos und jedes Widget funktioniert sofort — die Gratis-Stufe ist aber "
+    "begrenzt: ein Lesezeichen, eine Notiz, fünf Einträge in der Zwischenablage, zwei Dateien im "
+    "Datei-Tray, nur die heutigen Kalendertermine, ein Kameraspiegel für drei Sekunden und ein "
+    "eingeschränkter Pomodoro. NotchNest Premium hebt jede dieser Grenzen auf — als Abo oder als "
+    "einmaliger Lifetime-Kauf. KI-Funktionen laufen über Apple Intelligence auf dem Gerät, es "
+    "entstehen also keine Server-Kosten.")
+PRICING_FAQ["zh"]["NotchNest 免费吗?"] = (
+    "免费下载,安装后每个组件都能直接使用,但免费版有额度限制:一个书签、一条备忘录、五条剪贴板记录、"
+    "文件托盘两个文件、仅当天的日历事件、三秒摄像头镜像,以及受限的番茄钟。NotchNest Premium 解除全部"
+    "限制——订阅制,或一次性买断的 Lifetime 版本。AI 功能通过苹果智能在设备本地运行,不产生服务器费用。")
+PRICING_FAQ["fr"]["NotchNest est-il gratuit ?"] = (
+    "Le téléchargement est gratuit et chaque widget fonctionne dès l'installation, mais l'offre "
+    "gratuite est plafonnée : un favori, une note, cinq éléments de presse-papiers, deux fichiers "
+    "dans le bac, uniquement les événements du jour, un miroir caméra de trois secondes et un "
+    "Pomodoro limité. NotchNest Premium lève toutes ces limites — par abonnement ou en achat unique "
+    "à vie. L'IA s'exécute sur l'appareil via Apple Intelligence.")
+PRICING_FAQ["ar"]["هل NotchNest مجاني؟"] = (
+    "التنزيل مجاني وكل أداة تعمل فور التثبيت، لكن النسخة المجانية محدودة: إشارة مرجعية واحدة، "
+    "وملاحظة واحدة، وخمسة عناصر في الحافظة، وملفان في درج الملفات، وأحداث اليوم فقط في التقويم، "
+    "ومرآة كاميرا لثلاث ثوانٍ، وبومودورو مقيّد. وتزيل NotchNest Premium كل هذه الحدود — باشتراك أو "
+    "بشراء لمرة واحدة مدى الحياة. وتعمل ميزات الذكاء الاصطناعي على الجهاز عبر Apple Intelligence.")
+PRICING_FAQ["es-MX"]["¿NotchNest es gratis?"] = (
+    "La descarga es gratuita y cada widget funciona desde que lo instalas, pero el plan gratuito "
+    "tiene topes: un marcador, una nota, cinco elementos del portapapeles, dos archivos en la "
+    "bandeja, solo los eventos de hoy, un espejo de cámara de tres segundos y un Pomodoro limitado. "
+    "NotchNest Premium quita todos esos límites — por suscripción o con una compra única de por "
+    "vida. La IA se ejecuta en el dispositivo con Apple Intelligence.")
+PRICING_FAQ["pt-BR"]["O NotchNest é grátis?"] = (
+    "O download é gratuito e todo widget funciona assim que você instala, mas a versão gratuita tem "
+    "limites: um favorito, uma nota, cinco itens da área de transferência, dois arquivos na bandeja, "
+    "apenas os eventos de hoje, um espelho de câmera de três segundos e um Pomodoro limitado. O "
+    "NotchNest Premium remove todos esses limites — por assinatura ou em uma compra única vitalícia. "
+    "A IA roda no dispositivo via Apple Intelligence.")
+PRICING_FAQ["pt-PT"]["O NotchNest é gratuito?"] = (
+    "A transferência é gratuita e todos os widgets funcionam assim que instala, mas a versão gratuita "
+    "tem limites: um marcador, uma nota, cinco itens da área de transferência, dois ficheiros no "
+    "tabuleiro, apenas os eventos de hoje, um espelho de câmara de três segundos e um Pomodoro "
+    "limitado. O NotchNest Premium remove todos esses limites — por subscrição ou numa compra única "
+    "vitalícia. A IA é executada no dispositivo através da Apple Intelligence.")
+
+for _loc, _qs in PRICING_FAQ.items():
+    _faq = LANDING[_loc]["faq"]
+    for _i, (_q, _a) in enumerate(_faq):
+        if _q in _qs:
+            _faq[_i] = (_q, _qs[_q])

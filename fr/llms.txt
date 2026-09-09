@@ -6,4 +6,4 @@
 - Guides: https://notchnest.app/fr/learn/
 - Comment utiliser l'encoche du MacBook: https://notchnest.app/fr/learn/how-to-use-the-macbook-notch/
 - Les meilleures apps d'encoche macOS (2026): https://notchnest.app/fr/learn/best-macos-notch-apps/
-- Mac App Store: https://apps.apple.com/fr/app/notchnest-power-your-notch/id6747612321
+- Mac App Store: https://apps.apple.com/fr/app/notchnest-dynamic-notch-bar/id6747612321

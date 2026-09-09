@@ -6,4 +6,4 @@
 - Guías: https://notchnest.app/es-mx/learn/
 - Cómo usar el notch del MacBook: https://notchnest.app/es-mx/learn/how-to-use-the-macbook-notch/
 - Las mejores apps de notch para macOS (2026): https://notchnest.app/es-mx/learn/best-macos-notch-apps/
-- Mac App Store: https://apps.apple.com/mx/app/notchnest-power-your-notch/id6747612321
+- Mac App Store: https://apps.apple.com/mx/app/notchnest-dynamic-notch-bar/id6747612321

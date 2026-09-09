@@ -6,4 +6,4 @@
 - الأدلة: https://notchnest.app/ar/learn/
 - كيفية استخدام نتش الماك بوك: https://notchnest.app/ar/learn/how-to-use-the-macbook-notch/
 - أفضل تطبيقات النتش لنظام macOS (2026): https://notchnest.app/ar/learn/best-macos-notch-apps/
-- Mac App Store: https://apps.apple.com/sa/app/notchnest-power-your-notch/id6747612321
+- Mac App Store: https://apps.apple.com/sa/app/notchnest-dynamic-notch-bar/id6747612321
